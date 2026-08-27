@@ -152,9 +152,43 @@ def test_verify() -> None:
         check("Umbruch-Zusammenfuehrung kein Fehlalarm", rj.coverage == 100.0, str(rj.coverage))
 
 
+def test_repair() -> None:
+    print("Nachtrag fuer nicht zugeordneten Text")
+    if not FIXTURE_PDF.exists():
+        check("Fixture vorhanden", False, str(FIXTURE_PDF))
+        return
+    pages, _ = V.pdf_pages(FIXTURE_PDF)
+    with tempfile.TemporaryDirectory() as tmp:
+        # Extrakt, dem der Tabellentext fehlt (wie ein verschluckter Zellrest)
+        gap = Path(tmp) / "gap.md"
+        gap.write_text("---\nx: 1\n---\n" + " ".join(pages[1]), encoding="utf-8")
+        lines = V.unassigned_lines(FIXTURE_PDF, gap)
+        check("fehlende Quellzeilen gefunden", bool(lines), str(len(lines)))
+        check("Seitenzahl mitgeliefert", all(isinstance(p, int) for p, _ in lines))
+        check("Zellinhalt enthalten",
+              any("Schlüsselverwaltung" in text for _, text in lines))
+
+        md = extract.appendix(lines)
+        check("Nachtrag hat Ueberschrift", md.startswith("## Nachtrag"))
+        check("Nachtrag mit Seitenmarker", "<!-- page: 2 -->" in md)
+        check("Nachtrag als Zitat", "\n> " in md)
+
+        # Nach dem Anhaengen muss die Deckung 100 % erreichen
+        fixed = Path(tmp) / "fixed.md"
+        fixed.write_text(gap.read_text(encoding="utf-8") + "\n\n" + md, encoding="utf-8")
+        check("Deckung nach Nachtrag 100 %", V.verify(FIXTURE_PDF, fixed).coverage == 100.0,
+              str(V.verify(FIXTURE_PDF, fixed).coverage))
+
+        # Vollstaendiger Extrakt: kein Nachtrag noetig
+        full = Path(tmp) / "full.md"
+        full.write_text("---\nx: 1\n---\n" + "\n".join(" ".join(v) for v in pages.values()),
+                        encoding="utf-8")
+        check("kein Nachtrag bei vollstaendigem Extrakt", V.unassigned_lines(FIXTURE_PDF, full) == [])
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
-               test_pipeline_options, test_verify):
+               test_pipeline_options, test_verify, test_repair):
         fn()
     print()
     if failures:

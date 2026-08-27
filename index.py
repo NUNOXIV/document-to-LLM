@@ -142,7 +142,7 @@ def read_front_matter(md_path: Path) -> dict[str, str]:
         return {}
     meta: dict[str, str] = {}
     for line in m.group(1).splitlines():
-        km = re.match(r"^([a-z_]+):\s*(.*)$", line)
+        km = re.match(r"^([a-z0-9_]+):\s*(.*)$", line)
         if km:
             meta[km.group(1)] = km.group(2).strip().strip('"')
     return meta

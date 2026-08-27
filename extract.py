@@ -59,6 +59,7 @@ class Result:
     docling_status: str = "success"
     failed_pages: list[int] = field(default_factory=list)
     text_coverage: float | None = None   # Wortdeckung Quelle -> Extrakt (nur PDF)
+    repaired_lines: int = 0              # als Nachtrag ergaenzte Quellzeilen
     duration_s: float = 0.0
     status: str = "ok"          # ok | warn | error | skipped
     warnings: list[str] = field(default_factory=list)
@@ -248,10 +249,56 @@ def check_quality(md: str, pages: int, is_pdf: bool, ocr: bool) -> list[str]:
             f"vor Zitat aus Tabellen gegen die Quelle pruefen."
         )
 
+    # Zellverschiebung: rutscht der Rest einer Zelle in die naechste Zeile
+    # (kommt an Seitenumbruechen in fortgesetzten Tabellen vor), beginnt der
+    # Zellinhalt mitten im Satz. Fuer Normtabellen ist das gefaehrlich, weil die
+    # Anforderung dann beim falschen Control steht.
+    spilled: list[str] = []
+    for line in body.splitlines():
+        stripped = line.strip()
+        if not stripped.startswith("|") or re.match(r"^\|[\s:|-]+\|$", stripped):
+            continue
+        for cell in [c.strip() for c in stripped.strip("|").split("|")]:
+            # Inhaltsverzeichnisse mit Punktfuehrung sind keine Verschiebung.
+            if re.search(r"\.{5,}", cell):
+                continue
+            if len(cell) > 25 and cell[:1].islower() and " " in cell:
+                spilled.append(cell[:60])
+                break
+    if spilled:
+        warnings.append(
+            f"{len(spilled)} Tabellenzelle(n) beginnen mitten im Satz — moegliche "
+            f"Zellverschiebung, z. B. \"{spilled[0]}...\". Zeilen dieser Tabelle vor "
+            f"dem Zitat gegen die Quelle pruefen."
+        )
+
     if "�" in body:
         warnings.append("Ersatzzeichen (U+FFFD) im Text — Encoding-/Font-Problem.")
 
     return warnings
+
+
+def appendix(lines: list[tuple[int, str]]) -> str:
+    """Nachtrag mit Quelltext, den kein Docling-Element aufgenommen hat."""
+    out = [
+        "## Nachtrag: nicht zugeordneter Quelltext",
+        "",
+        "<!-- ACSOS: Diese Zeilen stehen woertlich im Quell-PDF, wurden vom Layout- "
+        "oder Tabellenmodell aber keinem Element zugeordnet. Sie sind hier ergaenzt, "
+        "damit kein Normtext verloren geht. Die urspruengliche Struktur (Tabellenzelle, "
+        "Spalte) ist an dieser Stelle nicht rekonstruiert — beim Zitieren die Seite "
+        "angeben und den Zusammenhang in der Quelle pruefen. -->",
+        "",
+    ]
+    current = None
+    for page_no, text in lines:
+        if page_no != current:
+            out.append(f"<!-- page: {page_no} -->")
+            out.append("")
+            current = page_no
+        out.append(f"> {text}")
+        out.append("")
+    return "\n".join(out).rstrip() + "\n"
 
 
 def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
@@ -273,6 +320,8 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
     ]
     if res.text_coverage is not None:
         lines.append(f"text_coverage_percent: {res.text_coverage}")
+    if res.repaired_lines:
+        lines.append(f"appended_source_lines: {res.repaired_lines}")
     lines += [
         "extraction_status: " + res.status,
     ]
@@ -318,6 +367,8 @@ def convert_file(
     claimed: dict[str, Path],
     do_verify: bool,
     min_coverage: float,
+    repair: bool,
+    mdir_ref: tuple[Path | None, ...] = (None,),
 ) -> Result:
     started = time.perf_counter()
     res = Result(
@@ -348,16 +399,27 @@ def convert_file(
             failed = sorted({e.page_no for e in (result.errors or []) if e.page_no is not None})
             status = str(getattr(result.status, "name", result.status)).lower()
 
-            # Einzelne Seiten scheitern mit dem ACCURATE-Tabellenmodell auf
-            # manchen Systemen. Statt eine luecken hafte Datei zu schreiben:
-            # denselben Lauf mit FAST wiederholen.
+            # Das ACCURATE-Tabellenmodell bricht auf manchen Systemen sporadisch
+            # bei einzelnen Seiten ab — derselbe Lauf gelingt beim zweiten Versuch.
+            # Deshalb erst ACCURATE wiederholen und nur danach auf FAST wechseln;
+            # FAST liefert grobere Tabellen und ist die schlechtere Wahl.
             if (failed or status != "success") and table_mode == "accurate":
-                click.echo("    Seitenfehler mit TableFormer ACCURATE — wiederhole mit FAST",
+                click.echo("    Seitenfehler mit TableFormer ACCURATE — zweiter Versuch",
                            err=True)
-                table_mode = "fast"
-                result = converter_for(ocr, table_mode).convert(src, raises_on_error=False)
-                failed = sorted({e.page_no for e in (result.errors or []) if e.page_no is not None})
-                status = str(getattr(result.status, "name", result.status)).lower()
+                retry = build_converter(ocr, mdir_ref[0], "accurate").convert(
+                    src, raises_on_error=False)
+                r_failed = sorted({e.page_no for e in (retry.errors or [])
+                                   if e.page_no is not None})
+                r_status = str(getattr(retry.status, "name", retry.status)).lower()
+                if not r_failed and r_status == "success":
+                    result, failed, status = retry, r_failed, r_status
+                else:
+                    click.echo("    erneut fehlgeschlagen — wiederhole mit FAST", err=True)
+                    table_mode = "fast"
+                    result = converter_for(ocr, table_mode).convert(src, raises_on_error=False)
+                    failed = sorted({e.page_no for e in (result.errors or [])
+                                     if e.page_no is not None})
+                    status = str(getattr(result.status, "name", result.status)).lower()
 
             res.table_mode = table_mode
             res.docling_status = status
@@ -428,6 +490,36 @@ def convert_file(
                 res.warnings.append(vres.note)
             else:
                 res.text_coverage = vres.coverage
+
+                # Fehlt Quelltext (typisch: ein Zellrest, den das Tabellenmodell
+                # verschluckt), wird er woertlich als markierter Nachtrag
+                # angehaengt. Lieber unstrukturiert vorhanden als still verloren.
+                if repair and vres.coverage < 100.0:
+                    from verify import unassigned_lines
+
+                    tmp2 = out_dir / f".{stem}.tmp2.md"
+                    tmp2.write_text(md_body, encoding="utf-8")
+                    try:
+                        extra = unassigned_lines(src, tmp2)
+                    finally:
+                        tmp2.unlink(missing_ok=True)
+                    if extra:
+                        md_body = md_body.rstrip() + "\n\n" + appendix(extra)
+                        res.repaired_lines = len(extra)
+                        tmp3 = out_dir / f".{stem}.tmp3.md"
+                        tmp3.write_text(md_body, encoding="utf-8")
+                        try:
+                            vres = verify_extract(src, tmp3)
+                        finally:
+                            tmp3.unlink(missing_ok=True)
+                        res.text_coverage = vres.coverage
+                        res.warnings.append(
+                            f"{len(extra)} Quellzeile(n) wurden vom Layout-/Tabellenmodell "
+                            f"keinem Element zugeordnet und stehen woertlich im Abschnitt "
+                            f"'Nachtrag: nicht zugeordneter Quelltext' — dort ohne "
+                            f"Tabellenstruktur."
+                        )
+
                 if vres.coverage < min_coverage:
                     worst = ", ".join(f"S.{p}: {c} %" for p, c in vres.worst_pages[:3])
                     res.warnings.append(
@@ -524,6 +616,8 @@ def run_doctor(models_dir: Path | None) -> int:
               help="PDF-Extrakte gegen den Textlayer der Quelle pruefen (Wortdeckung).")
 @click.option("--min-coverage", default=99.5, show_default=True,
               help="Geforderte Wortdeckung in Prozent; darunter Warnung (mit --strict Exit 1).")
+@click.option("--repair/--no-repair", "repair", default=True, show_default=True,
+              help="Fehlenden Quelltext woertlich als Nachtrag anhaengen, statt ihn zu verlieren.")
 @click.option("--models-dir", "models_dir", default=None, type=click.Path(file_okay=False),
               envvar="ACSOS_DOCLING_MODELS", show_envvar=True,
               help="Ordner mit vorab geladenen Docling-Modellen (fuer Umgebungen ohne "
@@ -534,7 +628,7 @@ def run_doctor(models_dir: Path | None) -> int:
 @click.option("--force", is_flag=True, help="Bereits konvertierte, unveraenderte Dokumente neu erzeugen.")
 @click.option("--strict", is_flag=True, help="Exit-Code 1 auch bei Warnungen (fuer CI/Automation).")
 def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
-         do_verify, min_coverage, models_dir, doctor, force, strict):
+         do_verify, min_coverage, repair, models_dir, doctor, force, strict):
     """Konvertiert Dokumente mit IBM Docling nach strukturiertem Markdown."""
     try:
         import docling  # noqa: F401
@@ -578,7 +672,8 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
                 converter_for, src, out_dir,
                 ocr_mode=ocr_mode, write_json=write_json,
                 page_markers=not no_page_markers, force=force, claimed=claimed,
-                do_verify=do_verify, min_coverage=min_coverage,
+                do_verify=do_verify, min_coverage=min_coverage, repair=repair,
+                mdir_ref=(mdir,),
             )
         except ExtractionError as exc:
             res = Result(

@@ -85,16 +85,27 @@ python verify.py output/iso-27001.md --source input/ISO-27001.pdf
 die ein Zitat belegen. Nur wenn ein Dokument klein ist (< ~2000 Zeilen), darfst
 du `output/<slug>.md` komplett lesen.
 
+### Der Abschnitt „Nachtrag: nicht zugeordneter Quelltext"
+
+Steht am Dateiende, wenn das Layout- oder Tabellenmodell Quelltext keinem
+Element zuordnen konnte — meist ein Zellrest. Die Zeilen sind wörtlich aus dem
+PDF übernommen, damit nichts verloren geht, aber **ohne Struktur**: du siehst
+nicht, zu welcher Tabellenzelle sie gehören. Zitierbar mit Seitenangabe; wenn
+die Zuordnung für die Aussage zählt, in der Quelle nachsehen und das kenntlich
+machen.
+
 ## Pflichten beim Zitieren
 
 1. Zitiere wörtlich aus `output/`. Formuliere Normtext nicht um und ergänze ihn nicht.
 2. Gib Dokument-Slug, Gliederungsnummer und Seite an: `iso-27001.md, A.8.24, S. 31`.
 3. Findest du eine Anforderung nicht im Output, existiert sie für dich nicht.
    Sag "steht nicht im extrahierten Dokument" — rate nicht aus dem Gedächtnis.
-4. Prüfe `text_coverage_percent`. Unter 100 % fehlen Wörter der Quelle — bei
+4. Prüfe `text_coverage_percent`. Steht `appended_source_lines`, sieh dir den
+   Nachtrag an, bevor du eine Tabelle zitierst.
+5. Unter 100 % fehlen Wörter der Quelle — bei
    Zitaten aus den betroffenen Seiten (siehe Warnung) ist der Extrakt nicht
    belastbar; dann neu konvertieren, notfalls mit `--ocr on`.
-5. Steht in der Front-Matter `extraction_status: warn`, lies die `warnings`.
+6. Steht in der Front-Matter `extraction_status: warn`, lies die `warnings`.
    Bei Tabellenwarnungen gilt: Tabelleninhalte vor dem Zitat gegen die Quelle
    prüfen oder als unsicher kennzeichnen.
 5. Versionsstände (Edition, Fassung, Datum) nimmst du aus dem Dokument selbst,
@@ -123,6 +134,17 @@ du `output/<slug>.md` komplett lesen.
 | Warnung "Seite(n) nicht verarbeiten" | Docling-Teilerfolg | Seiten fehlen im Extrakt — nicht zitieren, neu konvertieren |
 | `Index fehlt` | Index nicht gebaut | `python index.py build --output output` |
 | Datei wird übersprungen | Hash unverändert | `--force`, wenn Neuerzeugung gewollt |
+
+## Ausgabe in den Vault
+
+Sollen die Extrakte in den Obsidian-Vault:
+
+```bash
+python publish.py output/<slug>.md --vault <vault> --framework <slug> --dry-run
+```
+
+Erst `--dry-run` lesen: er sagt, wie viele Anforderungen belegt werden und
+welche IDs im Extrakt fehlen. Erst danach ohne `--dry-run` schreiben.
 
 ## Ablage
 

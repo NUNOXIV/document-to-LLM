@@ -187,6 +187,66 @@ def verify(pdf_path: Path, md_path: Path) -> VerifyResult:
     return res
 
 
+def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
+    """Zeilen des Quell-PDFs, deren Text im Extrakt fehlt — seitenweise.
+
+    Grundlage sind die Zeilen des Docling-PDF-Backends, woertlich uebernommen.
+    Damit laesst sich ein Extrakt auf 100 % Quelldeckung bringen, auch wenn das
+    Tabellen- oder Layoutmodell einen Zellrest verschluckt hat.
+    """
+    from docling.backend.docling_parse_backend import DoclingParseDocumentBackend
+    from docling.datamodel.base_models import InputFormat
+    from docling.datamodel.document import InputDocument
+    from docling_core.types.doc.page import TextCellUnit
+
+    res = verify(pdf_path, md_path)
+    if res.note or not res.missing_tokens:
+        return []
+
+    out = markdown_tokens(md_path)
+    stream = "".join(out)
+    missing: Counter[str] = Counter()
+    pages, _ = pdf_pages(pdf_path)
+    budget = Counter(out)
+    for toks in pages.values():
+        for i, tok in enumerate(toks):
+            if budget[tok] > 0:
+                budget[tok] -= 1
+                continue
+            if len(tok) > 3 and tok in stream:
+                continue
+            prev = toks[i - 1] if i else ""
+            nxt = toks[i + 1] if i + 1 < len(toks) else ""
+            if (prev and (prev + tok) in stream) or (nxt and (tok + nxt) in stream):
+                continue
+            missing[tok] += 1
+    if not missing:
+        return []
+
+    in_doc = InputDocument(
+        path_or_stream=pdf_path, format=InputFormat.PDF,
+        backend=DoclingParseDocumentBackend, filename=pdf_path.name,
+    )
+    backend = in_doc._backend
+    picked: list[tuple[int, str]] = []
+    try:
+        for i in range(backend.page_count()):
+            seg = backend.load_page(i).get_segmented_page()
+            for cell in seg.iterate_cells(TextCellUnit.LINE):
+                text = (cell.text or "").strip()
+                if not text or _mask(text) == "":
+                    continue
+                toks = tokenize(text)
+                if any(missing.get(t, 0) > 0 for t in toks):
+                    for t in toks:
+                        if missing.get(t, 0) > 0:
+                            missing[t] -= 1
+                    picked.append((i + 1, text))
+    finally:
+        backend.unload()
+    return picked
+
+
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
 @click.argument("extract_md", type=click.Path(exists=True, dir_okay=False))
 @click.option("--source", required=True, type=click.Path(exists=True, dir_okay=False),

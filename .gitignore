@@ -219,5 +219,11 @@ __marimo__/
 
 # ACSOS document-to-LLM
 .venv/
-output/*.docling.json
-output/*.db
+
+# Quelldokumente und Extrakte bleiben lokal. Normtexte (ISO, DIN, TISAX) sind
+# lizenziert — weder die PDFs noch die daraus erzeugten Markdown-Dateien
+# gehoeren in ein Repository.
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep

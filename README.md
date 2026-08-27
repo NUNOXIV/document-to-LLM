@@ -92,6 +92,11 @@ python index.py list
   ACCURATE eine Seite zum Absturz (kommt je nach System vor), wiederholt das
   Tool den Lauf automatisch mit FAST und vermerkt das im Extrakt, statt eine
   lückenhafte Datei zu schreiben.
+- **Kein Textverlust:** fehlt nach der Konvertierung Text der Quelle, wird er
+  wörtlich als Abschnitt „Nachtrag: nicht zugeordneter Quelltext" mit Seitenzahl
+  angehängt (abschaltbar mit `--no-repair`). Am realen ISO/IEC 27001:2022 hebt
+  das die Deckung von 99,826 % auf 100,0 %: TableFormer hatte den Rest einer
+  mehrzeiligen Control-Zelle verschluckt.
 - **Kein stiller Teilerfolg:** der Docling-Konvertierungsstatus wird geprüft.
   Nicht verarbeitete Seiten stehen als `docling_status` und als Warnung in der
   Datei; ein Fehlschlag bricht ab.
@@ -107,6 +112,30 @@ python index.py list
   Gliederung, kaputte Tabellenblöcke und Encoding-Fehler landen als Warnung in
   der Datei, im `manifest.json` und im Exit-Code (`--strict`).
 - **Idempotenz:** unveränderte Quellen (Hash-Vergleich) werden übersprungen.
+
+## Ausgabe in den Obsidian-Vault
+
+`publish.py` schreibt aus einem Extrakt je Anforderung eine Normtext-Notiz nach
+`Normen (lizenziert)/<framework>/<framework> <ID> (Normtext).md` — genau die
+Dateien, auf die die Framework-Notizen im Vault per Embed verweisen.
+
+```bash
+python publish.py output/iso-iec-27001-2022.md \
+    --vault ~/obsidian-vault --framework iso27001-2022 --dry-run
+python publish.py output/iso-iec-27001-2022.md \
+    --vault ~/obsidian-vault --framework iso27001-2022
+```
+
+Welche IDs gebraucht werden, liest das Tool aus dem Vault (`GRC/Frameworks/<framework>/`,
+Feld `id`). Nichts wird erfunden: was im Extrakt nicht steht, wird als fehlend
+gemeldet. Klauseln ohne eigenen Text werden aus ihren Unterklauseln
+zusammengesetzt; Klauseln, die das Layoutmodell nicht als Überschrift erkannt
+hat, werden über ID **und** den im Vault hinterlegten Titel angesteuert.
+Beginnt ein Normtext mitten im Satz, bekommt die Notiz einen Warnhinweis auf
+eine mögliche Zellverschiebung.
+
+Der Zielordner ist im Vault von der Versionierung ausgenommen — lizenzierter
+Normtext bleibt lokal. Dieses Repository enthält weder Quell-PDFs noch Extrakte.
 
 ## Regeln für Agenten
 
