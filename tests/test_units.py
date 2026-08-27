@@ -231,9 +231,64 @@ def test_office_verify() -> None:
                                         1, False, False, ".xlsx")))
 
 
+def test_broken_ooxml_styles() -> None:
+    """Web-Exporte schreiben `<fill />` ohne patternFill — openpyxl bricht ab.
+
+    Geprueft wird, dass die Container-Normalisierung die Datei lesbar macht
+    und dabei kein Zellinhalt verloren geht.
+    """
+    import re
+    import tempfile as tf
+    import zipfile
+    from openpyxl import Workbook, load_workbook
+
+    with tf.TemporaryDirectory() as tmp:
+        tmpdir = Path(tmp)
+        good = tmpdir / "good.xlsx"
+        wb = Workbook()
+        ws = wb.active
+        ws.append(("Control", "Anforderung"))
+        ws.append(("A.8.24", "Regeln fuer Kryptographie"))
+        wb.save(good)
+
+        # styles.xml gezielt beschaedigen: patternFill aus den fills entfernen
+        broken = tmpdir / "broken.xlsx"
+        with zipfile.ZipFile(good) as zin, \
+                zipfile.ZipFile(broken, "w", zipfile.ZIP_DEFLATED) as zout:
+            for item in zin.infolist():
+                data = zin.read(item.filename)
+                if item.filename.endswith("styles.xml"):
+                    text = data.decode("utf-8")
+                    text = re.sub(r"<fill>.*?</fill>", "<fill />", text, flags=re.S)
+                    data = text.encode("utf-8")
+                zout.writestr(item, data)
+
+        try:
+            load_workbook(broken, read_only=True, data_only=True)
+            check("defektes Stylesheet bricht openpyxl ab", False, "kein Fehler")
+        except TypeError:
+            check("defektes Stylesheet bricht openpyxl ab", True)
+
+        outdir = tmpdir / "fix"
+        outdir.mkdir()
+        repaired = V.normalize_ooxml_styles(broken, outdir)
+        check("Reparatur liefert eine Kopie", repaired is not None and repaired.exists())
+
+        readable, _tmp = V.readable_office_source(broken)
+        pages, _ = V.office_pages(broken)
+        check("repariertes xlsx wird gelesen",
+              bool(pages) and "kryptographie" in pages[1], str(pages))
+        check("Original bleibt unveraendert", readable != broken)
+
+        # An intakten Dateien darf nichts repariert werden.
+        check("intakte Datei wird nicht angefasst",
+              V.normalize_ooxml_styles(good, outdir) is None)
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
-               test_pipeline_options, test_verify, test_repair, test_office_verify):
+               test_pipeline_options, test_verify, test_repair, test_office_verify,
+               test_broken_ooxml_styles):
         fn()
     print()
     if failures:

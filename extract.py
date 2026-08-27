@@ -36,6 +36,9 @@ SUPPORTED_SUFFIXES = {
     ".md", ".adoc", ".asciidoc", ".csv", ".png", ".jpg", ".jpeg", ".tiff", ".bmp",
 }
 
+# OOXML-Formate, deren Stylesheet bei Bedarf normalisiert werden kann.
+OOXML_SUFFIXES = {".xlsx", ".xlsm", ".docx", ".pptx"}
+
 # Ab wie wenig Zeichen pro Seite ein PDF als "vermutlich gescannt" gilt.
 LOW_TEXT_CHARS_PER_PAGE = 120
 
@@ -471,9 +474,11 @@ def convert_file(
     mdir = mdir_ref[0]
     res_json = None
 
+    convert_src = [src]          # kann auf eine reparierte Kopie zeigen
+
     def run(mode: str, use_ocr: bool) -> dict:
-        return runner.run(str(src), use_ocr, str(mdir) if mdir else None, mode,
-                          page_markers, write_json)
+        return runner.run(str(convert_src[0]), use_ocr, str(mdir) if mdir else None,
+                          mode, page_markers, write_json)
 
     for attempt in ("first", "ocr-retry"):
         try:
@@ -487,6 +492,29 @@ def convert_file(
                 out = run(table_mode, ocr)
             failed = out["failed_pages"]
             status = out["status"]
+
+            # Kaputtes OOXML-Stylesheet: Container-Ebene einmalig normalisieren
+            # und denselben Docling-Pfad erneut fahren. Das ist kein
+            # Tabellenmodell-Problem, also vor der TableFormer-Leiter.
+            if (status in ("failure", "skipped")
+                    and src.suffix.lower() in OOXML_SUFFIXES
+                    and convert_src[0] == src
+                    and "could not load document" in "; ".join(out["errors"])):
+                import tempfile
+                from verify import normalize_ooxml_styles
+                workdir = Path(tempfile.mkdtemp(prefix="acsos-ooxml-"))
+                repaired = normalize_ooxml_styles(src, workdir)
+                if repaired is not None:
+                    click.echo("    Defektes OOXML-Stylesheet — normalisierte "
+                               "Kopie wird konvertiert", err=True)
+                    res.warnings.append(
+                        "Quelldatei enthaelt ein defektes Stylesheet (leere "
+                        "<fill/>-Elemente); konvertiert wurde eine stylesbereinigte "
+                        "Kopie. Zellinhalte sind unveraendert."
+                    )
+                    convert_src[0] = repaired
+                    out = run(table_mode, ocr)
+                    failed, status = out["failed_pages"], out["status"]
 
             # Seitenfehler mit ACCURATE: erst denselben Modus wiederholen (der
             # Fehler ist sporadisch), dann erst auf FAST wechseln — FAST liefert
@@ -548,7 +576,8 @@ def convert_file(
     res.characters = len(md_body)
     res.tables = out["tables"]
     res.headings = len(re.findall(r"^#{1,6}\s+\S", md_body, flags=re.M))
-    res.warnings = check_quality(md_body, res.pages, is_pdf, ocr, src.suffix)
+    # Bereits gesammelte Hinweise (z. B. Stylesheet-Reparatur) bleiben erhalten.
+    res.warnings = res.warnings + check_quality(md_body, res.pages, is_pdf, ocr, src.suffix)
     if res.failed_pages:
         res.warnings.insert(0, (
             f"Docling konnte {len(res.failed_pages)} Seite(n) nicht verarbeiten: "

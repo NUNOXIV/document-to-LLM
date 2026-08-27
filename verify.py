@@ -110,6 +110,67 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     return content, boiler
 
 
+def normalize_ooxml_styles(src: Path, workdir: Path) -> Path | None:
+    """Repariert leere <fill/>-Elemente in der styles.xml einer Office-Datei.
+
+    Web-Exporte (z. B. der CIS Controls Navigator) schreiben `<fill />` ohne
+    patternFill. Excel oeffnet das, openpyxl — und damit Doclings
+    MsExcelDocumentBackend — bricht mit `expected Fill` ab. Repariert wird
+    ausschliesslich das Stylesheet auf Container-Ebene; Zellinhalte, Formeln
+    und Blattstruktur werden unveraendert uebernommen. Gibt den Pfad der
+    reparierten Kopie zurueck, oder None, wenn nichts zu reparieren war.
+    """
+    import zipfile
+
+    empty_fill = re.compile(r"<((?:\w+:)?)fill\s*/>")
+    target = workdir / src.name
+    replaced = 0
+    try:
+        with zipfile.ZipFile(src) as zin:
+            names = zin.namelist()
+            if not any(n.endswith("styles.xml") for n in names):
+                return None
+            with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as zout:
+                for item in zin.infolist():
+                    data = zin.read(item.filename)
+                    if item.filename.endswith("styles.xml"):
+                        text = data.decode("utf-8", "replace")
+                        fixed, n = empty_fill.subn(
+                            r"<\1fill><\1patternFill patternType='none'/></\1fill>", text)
+                        replaced += n
+                        data = fixed.encode("utf-8")
+                    zout.writestr(item, data)
+    except (OSError, zipfile.BadZipFile):
+        return None
+    if not replaced:
+        target.unlink(missing_ok=True)
+        return None
+    return target
+
+
+def readable_office_source(path: Path) -> tuple[Path, object]:
+    """Liefert einen fuer openpyxl lesbaren Pfad zur Office-Quelle.
+
+    Normalfall: die Quelle selbst. Bei defektem Stylesheet (leere <fill/>-
+    Elemente aus Web-Exporten) eine stylesbereinigte Kopie in einem
+    TemporaryDirectory — dessen Handle wird mit zurueckgegeben, damit der
+    Aufrufer es offen haelt, solange gelesen wird.
+    """
+    import tempfile
+    from openpyxl import load_workbook
+
+    try:
+        load_workbook(path, read_only=True, data_only=True).close()
+        return path, None
+    except TypeError:
+        tmp = tempfile.TemporaryDirectory(prefix="acsos-ooxml-")
+        repaired = normalize_ooxml_styles(path, Path(tmp.name))
+        if repaired is None:
+            tmp.cleanup()
+            raise
+        return repaired, tmp
+
+
 def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
     """Quelltext aus Office-Formaten — je Blatt, Abschnitt oder Folie.
 
@@ -123,7 +184,8 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
     if suffix in (".xlsx", ".xlsm"):
         from openpyxl import load_workbook
 
-        wb = load_workbook(path, read_only=True, data_only=True)
+        readable, _tmp = readable_office_source(path)
+        wb = load_workbook(readable, read_only=True, data_only=True)
         try:
             for i, ws in enumerate(wb.worksheets, 1):
                 words: list[str] = []
@@ -276,7 +338,8 @@ def office_unassigned(path: Path, md_path: Path) -> list[tuple[int, str]]:
     if suffix in (".xlsx", ".xlsm"):
         from openpyxl import load_workbook
 
-        wb = load_workbook(path, read_only=True, data_only=True)
+        readable, _tmp = readable_office_source(path)
+        wb = load_workbook(readable, read_only=True, data_only=True)
         try:
             for i, ws in enumerate(wb.worksheets, 1):
                 for row in ws.iter_rows(values_only=True):
