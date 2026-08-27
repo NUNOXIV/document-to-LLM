@@ -88,7 +88,13 @@ python index.py list
   Tabellenanzahl, Docling-Version, Konvertierungszeitpunkt.
 - **Seitenmarker:** `<!-- page: N -->` im Text, damit jede Aussage zitierfähig ist.
 - **Tabellen im ACCURATE-Modus:** TableFormer mit Cell-Matching gegen den
-  PDF-Textlayer — Zellwerte werden übernommen, nicht rekonstruiert.
+  PDF-Textlayer — Zellwerte werden übernommen, nicht rekonstruiert. Bringt
+  ACCURATE eine Seite zum Absturz (kommt je nach System vor), wiederholt das
+  Tool den Lauf automatisch mit FAST und vermerkt das im Extrakt, statt eine
+  lückenhafte Datei zu schreiben.
+- **Kein stiller Teilerfolg:** der Docling-Konvertierungsstatus wird geprüft.
+  Nicht verarbeitete Seiten stehen als `docling_status` und als Warnung in der
+  Datei; ein Fehlschlag bricht ab.
 - **OCR-Automatik:** textarme (gescannte) PDFs werden erkannt und mit OCR
   wiederholt.
 - **Abweichungsprüfung:** jeder PDF-Extrakt wird Wort für Wort gegen den

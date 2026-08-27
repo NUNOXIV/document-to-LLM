@@ -55,6 +55,9 @@ class Result:
     headings: int = 0
     tables: int = 0
     ocr_used: bool = False
+    table_mode: str = "accurate"
+    docling_status: str = "success"
+    failed_pages: list[int] = field(default_factory=list)
     text_coverage: float | None = None   # Wortdeckung Quelle -> Extrakt (nur PDF)
     duration_s: float = 0.0
     status: str = "ok"          # ok | warn | error | skipped
@@ -120,13 +123,17 @@ def collect_inputs(paths: tuple[str, ...], recursive: bool) -> list[Path]:
 # --------------------------------------------------------------------------
 # Docling-Pipeline
 # --------------------------------------------------------------------------
-def build_converter(ocr: bool, models_dir: Path | None = None):
+def build_converter(ocr: bool, models_dir: Path | None = None, table_mode: str = "accurate"):
     """DocumentConverter mit Compliance-tauglichen Defaults.
 
     - TableFormer im ACCURATE-Modus: verschachtelte Control-Tabellen bleiben
       als Markdown-Tabellen erhalten statt zu Fliesstext zu zerfallen.
     - Cell-Matching an: Zellinhalte werden aus dem PDF-Textlayer uebernommen,
       nicht aus dem Modell rekonstruiert (keine erfundenen Zellwerte).
+
+    ACCURATE ist der Standard. Faellt eine Seite damit aus (das Modell bringt auf
+    manchen Systemen einzelne Seiten zum Absturz), wiederholt convert_file den
+    Lauf mit FAST und vermerkt das im Extrakt.
     """
     from docling.document_converter import DocumentConverter, PdfFormatOption
     from docling.datamodel.base_models import InputFormat
@@ -142,7 +149,9 @@ def build_converter(ocr: bool, models_dir: Path | None = None):
     try:
         from docling.datamodel.pipeline_options import TableFormerMode
 
-        opts.table_structure_options.mode = TableFormerMode.ACCURATE
+        opts.table_structure_options.mode = (
+            TableFormerMode.ACCURATE if table_mode == "accurate" else TableFormerMode.FAST
+        )
     except Exception:
         pass  # aeltere Docling-Version: Default-Modus ist ausreichend
 
@@ -258,6 +267,8 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         f"tables: {res.tables}",
         f"converter: {esc('IBM Docling ' + docling_version())}",
         f"ocr: {str(res.ocr_used).lower()} # mode={ocr_mode}",
+        f"table_mode: {res.table_mode}",
+        f"docling_status: {res.docling_status}",
         f"converted_at: {esc(datetime.now(timezone.utc).isoformat(timespec='seconds'))}",
     ]
     if res.text_coverage is not None:
@@ -327,12 +338,34 @@ def convert_file(
 
     is_pdf = src.suffix.lower() == ".pdf"
     ocr = ocr_mode == "on"
+    table_mode = "accurate"
     doc = None
 
     for attempt in ("first", "ocr-retry"):
-        conv = converter_for(ocr)
+        conv = converter_for(ocr, table_mode)
         try:
-            doc = conv.convert(src).document
+            result = conv.convert(src, raises_on_error=False)
+            failed = sorted({e.page_no for e in (result.errors or []) if e.page_no is not None})
+            status = str(getattr(result.status, "name", result.status)).lower()
+
+            # Einzelne Seiten scheitern mit dem ACCURATE-Tabellenmodell auf
+            # manchen Systemen. Statt eine luecken hafte Datei zu schreiben:
+            # denselben Lauf mit FAST wiederholen.
+            if (failed or status != "success") and table_mode == "accurate":
+                click.echo("    Seitenfehler mit TableFormer ACCURATE — wiederhole mit FAST",
+                           err=True)
+                table_mode = "fast"
+                result = converter_for(ocr, table_mode).convert(src, raises_on_error=False)
+                failed = sorted({e.page_no for e in (result.errors or []) if e.page_no is not None})
+                status = str(getattr(result.status, "name", result.status)).lower()
+
+            res.table_mode = table_mode
+            res.docling_status = status
+            res.failed_pages = failed
+            if status in ("failure", "skipped"):
+                msgs = "; ".join(e.error_message for e in (result.errors or [])[:3])
+                raise ExtractionError(f"Docling meldet Status {status}: {msgs}")
+            doc = result.document
         except Exception as exc:
             detail = str(exc)
             if any(t in detail for t in ("403", "huggingface", "Forbidden", "Connection", "resolve")):
@@ -367,6 +400,16 @@ def convert_file(
     res.tables = count_tables(doc, md_body)
     res.headings = len(re.findall(r"^#{1,6}\s+\S", md_body, flags=re.M))
     res.warnings = check_quality(md_body, res.pages, is_pdf, ocr)
+    if res.failed_pages:
+        res.warnings.insert(0, (
+            f"Docling konnte {len(res.failed_pages)} Seite(n) nicht verarbeiten: "
+            f"{', '.join(str(p) for p in res.failed_pages)}. Inhalt dieser Seiten fehlt."
+        ))
+    if res.table_mode != "accurate":
+        res.warnings.append(
+            "Tabellenmodell auf FAST zurueckgefallen (ACCURATE brach ab). "
+            "Tabellenstruktur ist etwas grober; Zellinhalte stammen weiterhin aus dem Textlayer."
+        )
     res.status = "warn" if res.warnings else "ok"
 
     # Abweichungspruefung: enthaelt der Extrakt den Text der Quelle vollstaendig?
@@ -517,12 +560,13 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
 
     # Converter werden pro OCR-Modus einmal gebaut und wiederverwendet
     # (Modell-Laden ist teuer).
-    cache: dict[bool, object] = {}
+    cache: dict[tuple[bool, str], object] = {}
 
-    def converter_for(ocr: bool):
-        if ocr not in cache:
-            cache[ocr] = build_converter(ocr, mdir)
-        return cache[ocr]
+    def converter_for(ocr: bool, table_mode: str = "accurate"):
+        key = (ocr, table_mode)
+        if key not in cache:
+            cache[key] = build_converter(ocr, mdir, table_mode)
+        return cache[key]
 
     click.echo(f"Docling {docling_version()} — {len(files)} Datei(en) -> {out_dir}/")
     claimed: dict[str, Path] = {}

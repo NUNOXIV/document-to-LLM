@@ -119,6 +119,8 @@ du `output/<slug>.md` komplett lesen.
 | Warnung "Keine Überschriften erkannt" | flaches Layout | Zitate über Seitenmarker statt Gliederung belegen |
 | Warnung "inkonsistente Spaltenstruktur" | Tabelle unsicher rekonstruiert | Tabellenwerte nicht als Fakt zitieren, Quelle prüfen |
 | Warnung "Wortdeckung nur X %" | Text der Quelle fehlt im Extrakt | `--ocr on --force`; bleibt es dabei, betroffene Seiten nicht zitieren und melden |
+| Warnung "FAST zurueckgefallen" | ACCURATE-Tabellenmodell brach ab | kein Handlungsbedarf, Zellinhalte stammen weiter aus dem Textlayer; Tabellenstruktur ist etwas grober |
+| Warnung "Seite(n) nicht verarbeiten" | Docling-Teilerfolg | Seiten fehlen im Extrakt — nicht zitieren, neu konvertieren |
 | `Index fehlt` | Index nicht gebaut | `python index.py build --output output` |
 | Datei wird übersprungen | Hash unverändert | `--force`, wenn Neuerzeugung gewollt |
 
