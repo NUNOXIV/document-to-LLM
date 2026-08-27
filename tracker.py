@@ -74,7 +74,7 @@ def read_doc(md: Path) -> Doc:
         cov = val("text_coverage_percent")
         doc.coverage = float(cov) if cov else None
         doc.appended = int(val("appended_source_lines") or 0)
-        doc.warnings = [w.strip().strip('"')
+        doc.warnings = [w.strip().strip('"').replace('\\"', '"').replace("\\\\", "\\")
                         for w in re.findall(r"^\s+-\s+(.*)$", block, flags=re.M)]
     doc.headings = len(re.findall(r"^#{1,6}\s+\S", body, flags=re.M))
     doc.words = len(re.findall(r"[0-9A-Za-zÀ-ɏ]+", re.sub(r"<!--.*?-->", " ", body, flags=re.S)))
