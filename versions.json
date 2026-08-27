@@ -36,7 +36,8 @@
       "titel": "NIST SP 800-218 Secure Software Development Framework",
       "dokument_version": "1.1",
       "quelle": "https://csrc.nist.gov/pubs/sp/800/218/final",
-      "muster": "800-218[^<]{0,40}?Version ([0-9]+\\.[0-9]+)"
+      "muster": "Version ([0-9]+\\.[0-9]+)",
+      "anmerkung": "SP 800-218A (Generative AI) ist eine eigene Publikation, keine neuere Fassung von 800-218."
     },
     "celex-32016r0679-de-txt": {
       "titel": "DSGVO (Verordnung (EU) 2016/679)",
