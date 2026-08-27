@@ -152,15 +152,67 @@ def id_variants(ident: str) -> list[str]:
     return out
 
 
-def paragraph_of(text: str, number: int) -> str:
-    """Absatz (N) aus einem Artikeltext herausloesen — die Nummerierung stammt
-    aus dem Dokument selbst, es wird nichts umformuliert."""
-    marks = list(re.finditer(rf"^\({number}\)\s*", text, flags=re.M))
+def paragraph_of(text: str, marker: str) -> str:
+    """Absatz (N) oder Buchstabenpunkt a) aus einem Artikeltext herausloesen.
+    Die Gliederung stammt aus dem Dokument selbst, es wird nichts umformuliert."""
+    if marker.isdigit():
+        nxt_marker = str(int(marker) + 1)
+        pats = (rf"^[-*\s]*\({marker}\)\s*", rf"^[-*\s]*\({nxt_marker}\)")
+    else:
+        nxt_marker = chr(ord(marker) + 1)
+        pats = (rf"^[-*\s]*{marker}\)\s*", rf"^[-*\s]*{nxt_marker}\)")
+    marks = list(re.finditer(pats[0], text, flags=re.M))
     if not marks:
         return ""
     start = marks[0].start()
-    nxt = re.search(rf"^\({number + 1}\)", text[start:], flags=re.M)
+    nxt = re.search(pats[1], text[start:], flags=re.M)
     return text[start: start + nxt.start()].strip() if nxt else text[start:].strip()
+
+
+def sections_by_anchor(body: str, wanted: dict[str, str]) -> dict[str, Section]:
+    """Anforderungen finden, die als ID am Zeilen-, Listen- oder Zellanfang
+    stehen — etwa "GV.OC-01: ...", "- o PO.1.1: ..." oder "| ASI01: ... |".
+
+    Der Abschnitt reicht bis zum naechsten so verankerten Treffer oder zur
+    naechsten Ueberschrift. Es wird nur uebernommen, was im Dokument steht.
+    """
+    hits: list[tuple[int, int, str, str]] = []   # (start, textstart, id, variante)
+    for ident in wanted:
+        for variant in id_variants(ident):
+            if len(variant) < 3 or variant.isdigit():
+                continue                      # zu unspezifisch fuer einen Anker
+            # Anker: Zeilenanfang, Listenpunkt oder Zellgrenze einer Tabelle —
+            # in Norm-Tabellen steht die ID oft mitten in der Zeile hinter "|".
+            pat = re.compile(
+                rf"(?:^|\|)[-*>\s]*(?:o\s+)?({re.escape(variant)})\s*(?:[:.)\]–—-]|\s)\s*",
+                flags=re.M)
+            for m in pat.finditer(body):
+                hits.append((m.start(), m.end(), ident, variant))
+    if not hits:
+        return {}
+
+    bounds = sorted({h[0] for h in hits})
+    heads = [m.start() for m in re.finditer(r"^#{1,6}\s", body, flags=re.M)]
+    out: dict[str, Section] = {}
+    for start, tstart, ident, variant in sorted(hits):
+        later = sorted([b for b in bounds if b > start] + [h for h in heads if h > start])
+        end = later[0] if later else min(start + 4000, len(body))
+        text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", body[tstart:end]).strip()
+
+        # Steht die ID allein und der Titel folgt erst als eigene Ueberschrift
+        # (so setzt der EU-Amtsblattsatz Artikelnummer und Artikelueberschrift),
+        # gehoert der Abschnitt hinter dieser Ueberschrift dazu.
+        if len(text) < 40 and end in heads and len(later) > 1:
+            end = later[1]
+            text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", body[tstart:end]).strip()
+        if len(text) < 15:
+            continue
+        prev = out.get(ident)
+        if prev and len(prev.text) >= len(text):
+            continue
+        title = wanted.get(ident) or ""
+        out[ident] = Section(ident, title, text, page_at(body, start))
+    return out
 
 
 def vault_ids(vault: Path, framework: str) -> dict[str, str]:
@@ -244,6 +296,7 @@ def main(extract_md: str, vault: str, framework: str, dry_run: bool, overwrite: 
 
     found = sections_from_headings(body)
     found.update(sections_from_tables(body))
+    anchored = sections_by_anchor(body, wanted)
 
     target_dir = vault_path / LICENSED_DIR / framework
     written, missing, skipped = [], [], []
@@ -258,18 +311,35 @@ def main(extract_md: str, vault: str, framework: str, dry_run: bool, overwrite: 
 
         # Absatz-IDs wie Art.20.1: Artikel holen, Absatz herausloesen.
         if sec is None:
-            pm = re.match(r"^(.*)\.([0-9]+)$", ident)
+            pm = re.match(r"^(.*)\.([0-9]+|[a-z])$", ident)
             if pm:
                 for variant in id_variants(pm.group(1)):
-                    parent = found.get(norm_key(variant))
+                    parent = found.get(norm_key(variant)) or anchored.get(pm.group(1))
                     if parent and parent.text.strip():
-                        para = paragraph_of(parent.text, int(pm.group(2)))
+                        para = paragraph_of(parent.text, pm.group(2))
                         if para:
                             sec = Section(ident, parent.title, para, parent.page)
                         break
 
         if sec is None or not sec.text.strip():
+            sec = anchored.get(ident)
+        if sec is None or not sec.text.strip():
             sec = inline_section(body, ident, wanted[ident])
+        # Gruppen-IDs ohne eigenen Text (PO ueber PO.1.x, CIS-Kategorie 13 ueber
+        # 13.1 ...) aus ihren Unterpunkten zusammensetzen.
+        if sec is None or not sec.text.strip():
+            kids = sorted(k for k in wanted
+                          if k != ident and re.match(rf"^{re.escape(ident)}[.\-]", k))
+            parts = []
+            for k in kids:
+                child = found.get(norm_key(k)) or anchored.get(k)
+                if child and child.text.strip():
+                    parts.append(f"### {k} {child.title}".rstrip() + f"\n\n{child.text}")
+            if parts:
+                first = found.get(norm_key(kids[0])) or anchored.get(kids[0])
+                sec = Section(ident, wanted[ident], "\n\n".join(parts),
+                              first.page if first else 0)
+
         if sec is None or not sec.text.strip():
             missing.append(ident)
             continue

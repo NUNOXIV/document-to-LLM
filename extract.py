@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -219,6 +220,20 @@ class _Runner:
                 "Konvertierungsprozess abgestuerzt (Speicherzugriffsfehler im "
                 "Docling-Modell)"
             ) from exc
+        except Exception as exc:
+            # Kein Zugriff auf huggingface.co, obwohl die Modelle im Cache
+            # liegen: einmal offline wiederholen. Betrifft abgeschottete
+            # Umgebungen und Netze, die den Host sperren.
+            detail = str(exc)
+            if (not os.environ.get("HF_HUB_OFFLINE")
+                    and any(t in detail for t in ("403", "Forbidden", "huggingface",
+                                                  "Connection", "resolve", "Max retries"))):
+                click.echo("    Kein Zugriff auf huggingface.co — nutze den lokalen "
+                           "Modell-Cache (offline)", err=True)
+                os.environ["HF_HUB_OFFLINE"] = "1"
+                self.reset()
+                return self._get().submit(_worker, *args).result()
+            raise
 
 
 def page_count(doc) -> int:
