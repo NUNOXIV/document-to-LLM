@@ -1,10 +1,19 @@
 name: verify
 
+# Ein Push auf einen Branch mit offenem Pull Request loeste bisher zwei Laeufe
+# aus (push und pull_request) — doppelte Rechenzeit und doppelte Mails. Der
+# Push-Trigger bleibt deshalb auf main; alles andere laeuft ueber den PR.
 on:
   push:
-    branches: ["**"]
+    branches: [main]
   pull_request:
   workflow_dispatch:
+
+# Schnelle Folge-Pushes brechen den vorherigen Lauf ab, statt ihn zu Ende
+# rechnen zu lassen.
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   extraction:
