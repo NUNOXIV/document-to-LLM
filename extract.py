@@ -161,6 +161,66 @@ def build_converter(ocr: bool, models_dir: Path | None = None, table_mode: str =
     )
 
 
+# --------------------------------------------------------------------------
+# Konvertierung im eigenen Prozess
+# --------------------------------------------------------------------------
+# Das Tabellenmodell bringt auf manchen Systemen den Prozess per Speicherzugriffs-
+# fehler zum Absturz (Signal 11). In einem Batch wuerde das alle noch offenen
+# Dokumente mitreissen. Deshalb laeuft die eigentliche Konvertierung in einem
+# Worker-Prozess: stirbt er, verliert nur dieses eine Dokument seinen Versuch.
+def _worker(src_str: str, ocr: bool, models: str | None, table_mode: str,
+            page_markers: bool, want_json: bool) -> dict:
+    src = Path(src_str)
+    conv = build_converter(ocr, Path(models) if models else None, table_mode)
+    result = conv.convert(src, raises_on_error=False)
+    doc = result.document
+    md = to_markdown(doc, page_markers)
+    return {
+        "markdown": md,
+        "pages": page_count(doc),
+        "tables": count_tables(doc, md),
+        "status": str(getattr(result.status, "name", result.status)).lower(),
+        "failed_pages": sorted({e.page_no for e in (result.errors or [])
+                                if e.page_no is not None}),
+        "errors": [e.error_message for e in (result.errors or [])][:3],
+        "json": doc.export_to_dict() if want_json else None,
+    }
+
+
+class _Runner:
+    """Haelt einen Worker-Prozess, damit die Modelle nicht je Dokument neu
+    geladen werden, und ersetzt ihn, wenn er abgestuerzt ist."""
+
+    def __init__(self) -> None:
+        self._pool = None
+
+    def _get(self):
+        if self._pool is None:
+            from concurrent.futures import ProcessPoolExecutor
+
+            self._pool = ProcessPoolExecutor(max_workers=1)
+        return self._pool
+
+    def reset(self) -> None:
+        if self._pool is not None:
+            self._pool.shutdown(wait=False, cancel_futures=True)
+        self._pool = None
+
+    def run(self, *args) -> dict:
+        """Fuehrt eine Konvertierung aus. Stirbt der Worker, wird das als
+        ExtractionError sichtbar — der Batch laeuft weiter."""
+        from concurrent.futures.process import BrokenProcessPool
+
+        try:
+            return self._get().submit(_worker, *args).result()
+        except BrokenProcessPool as exc:
+            self.reset()
+            raise ExtractionError(
+                "Konvertierungsprozess abgestuerzt (Speicherzugriffsfehler im "
+                "Docling-Modell)"
+            ) from exc
+
+
 def page_count(doc) -> int:
     try:
         return len(doc.pages)
@@ -356,7 +416,7 @@ def target_name(src: Path, claimed: dict[str, Path]) -> str:
 
 
 def convert_file(
-    converter_for,
+    runner: "_Runner",
     src: Path,
     out_dir: Path,
     *,
@@ -390,44 +450,52 @@ def convert_file(
     is_pdf = src.suffix.lower() == ".pdf"
     ocr = ocr_mode == "on"
     table_mode = "accurate"
-    doc = None
+    mdir = mdir_ref[0]
+    res_json = None
+
+    def run(mode: str, use_ocr: bool) -> dict:
+        return runner.run(str(src), use_ocr, str(mdir) if mdir else None, mode,
+                          page_markers, write_json)
 
     for attempt in ("first", "ocr-retry"):
-        conv = converter_for(ocr, table_mode)
         try:
-            result = conv.convert(src, raises_on_error=False)
-            failed = sorted({e.page_no for e in (result.errors or []) if e.page_no is not None})
-            status = str(getattr(result.status, "name", result.status)).lower()
+            try:
+                out = run(table_mode, ocr)
+            except ExtractionError:
+                # Absturz mit ACCURATE: derselbe Lauf mit FAST hat gute Chancen.
+                click.echo("    Konvertierung abgestuerzt — wiederhole mit "
+                           "TableFormer FAST", err=True)
+                table_mode = "fast"
+                out = run(table_mode, ocr)
+            failed = out["failed_pages"]
+            status = out["status"]
 
-            # Das ACCURATE-Tabellenmodell bricht auf manchen Systemen sporadisch
-            # bei einzelnen Seiten ab — derselbe Lauf gelingt beim zweiten Versuch.
-            # Deshalb erst ACCURATE wiederholen und nur danach auf FAST wechseln;
-            # FAST liefert grobere Tabellen und ist die schlechtere Wahl.
+            # Seitenfehler mit ACCURATE: erst denselben Modus wiederholen (der
+            # Fehler ist sporadisch), dann erst auf FAST wechseln — FAST liefert
+            # grobere Tabellen und ist die schlechtere Wahl.
             if (failed or status != "success") and table_mode == "accurate":
                 click.echo("    Seitenfehler mit TableFormer ACCURATE — zweiter Versuch",
                            err=True)
-                retry = build_converter(ocr, mdir_ref[0], "accurate").convert(
-                    src, raises_on_error=False)
-                r_failed = sorted({e.page_no for e in (retry.errors or [])
-                                   if e.page_no is not None})
-                r_status = str(getattr(retry.status, "name", retry.status)).lower()
-                if not r_failed and r_status == "success":
-                    result, failed, status = retry, r_failed, r_status
+                try:
+                    retry = run("accurate", ocr)
+                except ExtractionError:
+                    retry = None
+                if retry and not retry["failed_pages"] and retry["status"] == "success":
+                    out, failed, status = retry, retry["failed_pages"], retry["status"]
                 else:
                     click.echo("    erneut fehlgeschlagen — wiederhole mit FAST", err=True)
                     table_mode = "fast"
-                    result = converter_for(ocr, table_mode).convert(src, raises_on_error=False)
-                    failed = sorted({e.page_no for e in (result.errors or [])
-                                     if e.page_no is not None})
-                    status = str(getattr(result.status, "name", result.status)).lower()
+                    out = run(table_mode, ocr)
+                    failed, status = out["failed_pages"], out["status"]
 
             res.table_mode = table_mode
             res.docling_status = status
             res.failed_pages = failed
             if status in ("failure", "skipped"):
-                msgs = "; ".join(e.error_message for e in (result.errors or [])[:3])
-                raise ExtractionError(f"Docling meldet Status {status}: {msgs}")
-            doc = result.document
+                raise ExtractionError(
+                    f"Docling meldet Status {status}: {'; '.join(out['errors'])}")
+        except ExtractionError:
+            raise
         except Exception as exc:
             detail = str(exc)
             if any(t in detail for t in ("403", "huggingface", "Forbidden", "Connection", "resolve")):
@@ -439,8 +507,9 @@ def convert_file(
                 ) from exc
             raise ExtractionError(f"Docling-Konvertierung fehlgeschlagen: {exc}") from exc
 
-        res.pages = page_count(doc)
-        md_body = to_markdown(doc, page_markers)
+        res.pages = out["pages"]
+        md_body = out["markdown"]
+        res_json = out["json"]
         plain = md_body.strip()
 
         # Automatischer OCR-Fallback bei Textarmut (nur einmal).
@@ -459,7 +528,7 @@ def convert_file(
 
     res.ocr_used = ocr
     res.characters = len(md_body)
-    res.tables = count_tables(doc, md_body)
+    res.tables = out["tables"]
     res.headings = len(re.findall(r"^#{1,6}\s+\S", md_body, flags=re.M))
     res.warnings = check_quality(md_body, res.pages, is_pdf, ocr)
     if res.failed_pages:
@@ -535,11 +604,9 @@ def convert_file(
     target.write_text(front_matter(src, res, ocr_mode) + md_body.rstrip() + "\n", encoding="utf-8")
     res.output = str(target)
 
-    if write_json:
+    if write_json and res_json is not None:
         jtarget = out_dir / f"{stem}.docling.json"
-        jtarget.write_text(
-            json.dumps(doc.export_to_dict(), ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        jtarget.write_text(json.dumps(res_json, ensure_ascii=False, indent=2), encoding="utf-8")
         res.json_output = str(jtarget)
 
     res.duration_s = round(time.perf_counter() - started, 2)
@@ -652,15 +719,9 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
     out_dir = Path(output_dir).expanduser()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Converter werden pro OCR-Modus einmal gebaut und wiederverwendet
-    # (Modell-Laden ist teuer).
-    cache: dict[tuple[bool, str], object] = {}
-
-    def converter_for(ocr: bool, table_mode: str = "accurate"):
-        key = (ocr, table_mode)
-        if key not in cache:
-            cache[key] = build_converter(ocr, mdir, table_mode)
-        return cache[key]
+    # Ein Worker-Prozess fuer den ganzen Batch: die Modelle werden einmal
+    # geladen, ein Absturz kostet nur das laufende Dokument.
+    runner = _Runner()
 
     click.echo(f"Docling {docling_version()} — {len(files)} Datei(en) -> {out_dir}/")
     claimed: dict[str, Path] = {}
@@ -669,7 +730,7 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
         click.echo(f"[{i}/{len(files)}] {src.name}")
         try:
             res = convert_file(
-                converter_for, src, out_dir,
+                runner, src, out_dir,
                 ocr_mode=ocr_mode, write_json=write_json,
                 page_markers=not no_page_markers, force=force, claimed=claimed,
                 do_verify=do_verify, min_coverage=min_coverage, repair=repair,
@@ -704,6 +765,7 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
                 click.secho(f"    WARNUNG: {w}", fg="yellow", err=True)
         results.append(res)
 
+    runner.reset()
     manifest = write_manifest(out_dir, results)
     errors = [r for r in results if r.status == "error"]
     warns = [r for r in results if r.status == "warn"]
