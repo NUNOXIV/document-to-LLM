@@ -128,6 +128,19 @@ python publish.py output/iso-iec-27001-2022.md \
     --vault ~/obsidian-vault --framework iso27001-2022
 ```
 
+Für alles, was kein Anforderungsraster hat — Leitfäden, Fachartikel, Studien,
+Handbuchkapitel, Behördenschreiben — gibt es denselben Weg ohne Framework:
+
+```bash
+python publish.py output/<slug>.md --vault ~/obsidian-vault --as-document \
+    --titel "OWASP Web Security Testing Guide v4.2" \
+    --autor "OWASP Foundation" --art Leitfaden
+```
+
+Das legt den Volltext nach `Normen (lizenziert)/dokumente/` und eine
+Metadatennotiz nach `GRC/Handbuch/` an, die ihn per Embed einbindet — dieselbe
+Trennung wie bei den Normen: Text lokal, Metadaten versioniert.
+
 Welche IDs gebraucht werden, liest das Tool aus dem Vault (`GRC/Frameworks/<framework>/`,
 Feld `id`). Nichts wird erfunden: was im Extrakt nicht steht, wird als fehlend
 gemeldet. Klauseln ohne eigenen Text werden aus ihren Unterklauseln

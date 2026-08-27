@@ -163,6 +163,18 @@ python publish.py output/<slug>.md --vault <vault> --framework <slug> --dry-run
 Erst `--dry-run` lesen: er sagt, wie viele Anforderungen belegt werden und
 welche IDs im Extrakt fehlen. Erst danach ohne `--dry-run` schreiben.
 
+Dokumente ohne Anforderungsraster — Leitfäden, Fachartikel, Studien,
+Handbuchkapitel — kommen genauso in den Bestand, nur ohne Framework:
+
+```bash
+python publish.py output/<slug>.md --vault <vault> --as-document \
+    --titel "<Titel>" --autor "<Urheber>" --art "<Art>"
+```
+
+Der Bestand umfasst **alle** aufgenommenen Dokumente, nicht nur Normen. Was
+kein Normtext ist, ist deshalb nicht weniger wert — aber zitiere es als das,
+was es ist: ein Fachartikel ist keine Anforderung.
+
 ## Was wurde schon aufgenommen?
 
 `output/_TRACKER.md` (und im Vault `document-to-LLM Tracker.md`) listet jedes

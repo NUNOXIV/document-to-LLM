@@ -307,20 +307,103 @@ def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) ->
     ])
 
 
+def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
+                   titel: str, autor: str, art: str, dry_run: bool) -> tuple[Path, Path]:
+    """Ein Dokument ohne Anforderungsraster ablegen: Volltext in den lizenzierten
+    Ordner, Metadatennotiz nach GRC/Handbuch mit Embed darauf.
+
+    Damit landet auch alles, was keine Norm ist — Leitfaden, Fachartikel,
+    Handbuchkapitel, Behoerdenschreiben — im selben Bestand und nach denselben
+    Regeln wie die Normen.
+    """
+    slug = md_path.stem
+    full_dir = vault / LICENSED_DIR / "dokumente"
+    full = full_dir / f"{slug} (Volltext).md"
+    # Schraegstriche im Titel (z. B. "2003/361/EG") wuerden Unterordner anlegen.
+    safe = re.sub(r"[/\\:]+", "-", titel).strip()
+    note = vault / "GRC" / "Handbuch" / f"{safe} ({slug}).md"
+
+    esc = lambda v: '"' + str(v).replace('"', '\"') + '"'
+    head = "\n".join([
+        "---", "type: dokument-volltext", f"slug: {slug}",
+        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_sha256: {meta.get('source_sha256', '')}",
+        f"pages: {meta.get('pages', '')}",
+        f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
+        'tags: ["grc/dokument/volltext"]', "generated-by: document-to-LLM", "---", "",
+    ])
+
+    meta_note = "\n".join([
+        "---", "type: document", f"slug: {slug}",
+        f"work: {esc(titel)}", f"autor: {esc(autor)}", f"art: {esc(art)}",
+        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_sha256: {meta.get('source_sha256', '')}",
+        f"pages: {meta.get('pages', '')}",
+        f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
+        f"converter: {esc(meta.get('converter', ''))}",
+        "licensed: true",
+        'tags: ["grc/handbuch", "grc/dokument"]',
+        "generated-by: document-to-LLM", "---", "",
+        f"# {titel}", "",
+        f"*{autor} · {art}*" if autor or art else "",
+        "",
+        "> [!info] Aufnahme",
+        f"> Quelle `{meta.get('source_file', '')}`, {meta.get('pages', '?')} Seiten, "
+        f"Wortdeckung {meta.get('text_coverage_percent', '—')} %. "
+        f"Extrahiert mit {meta.get('converter', 'IBM Docling')}.",
+        "",
+        "## Volltext",
+        "",
+        f"![[{slug} (Volltext)]]",
+        "",
+        "> [!info]- Kein Text zu sehen?",
+        "> Der Volltext liegt unter `Normen (lizenziert)/dokumente/` — einem",
+        "> Ordner ausserhalb der Versionierung. Auf diesem Rechner loest der",
+        "> Verweis auf, im Repository bleibt er leer.",
+        "",
+    ])
+
+    if not dry_run:
+        full_dir.mkdir(parents=True, exist_ok=True)
+        note.parent.mkdir(parents=True, exist_ok=True)
+        full.write_text(head + body.strip() + "\n", encoding="utf-8")
+        note.write_text(meta_note, encoding="utf-8")
+    return note, full
+
+
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
 @click.argument("extract_md", type=click.Path(exists=True, dir_okay=False))
 @click.option("--vault", required=True, type=click.Path(file_okay=False, exists=True),
               help="Wurzel des Obsidian-Vaults (der Ordner mit GRC/ und .obsidian/).")
-@click.option("--framework", required=True,
+@click.option("--framework", default=None,
               help="Framework-Slug wie im Vault, z. B. iso27001-2022.")
+@click.option("--as-document", "as_document", is_flag=True,
+              help="Dokument ohne Anforderungsraster ablegen (Leitfaden, Fachartikel, "
+                   "Handbuchkapitel): Volltext plus Metadatennotiz unter GRC/Handbuch.")
+@click.option("--titel", default=None, help="Titel der Dokumentnotiz (--as-document).")
+@click.option("--autor", default="", help="Urheber (--as-document).")
+@click.option("--art", default="Dokument", show_default=True,
+              help="Art des Dokuments, z. B. Fachartikel, Leitfaden (--as-document).")
 @click.option("--dry-run", is_flag=True, help="Nur berichten, nichts schreiben.")
 @click.option("--overwrite/--keep", default=True, show_default=True,
               help="Vorhandene Normtext-Notizen ersetzen oder stehen lassen.")
-def main(extract_md: str, vault: str, framework: str, dry_run: bool, overwrite: bool) -> None:
-    """Schreibt Normtext-Notizen aus einem Extrakt in den Vault."""
+def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
+         titel: str | None, autor: str, art: str, dry_run: bool, overwrite: bool) -> None:
+    """Schreibt Normtext- oder Dokumentnotizen aus einem Extrakt in den Vault."""
     vault_path = Path(vault).expanduser()
     md_path = Path(extract_md)
     meta, body = split_front_matter(md_path.read_text(encoding="utf-8"))
+
+    if as_document:
+        name = titel or Path(meta.get("source_file", md_path.stem)).stem
+        note, full = document_notes(md_path, vault_path, meta, body, name, autor, art, dry_run)
+        click.secho(f"Dokument abgelegt{' (Probelauf)' if dry_run else ''}: {note.name}",
+                    fg="green")
+        click.echo(f"Volltext: {full}")
+        return
+
+    if not framework:
+        raise click.ClickException("Entweder --framework oder --as-document angeben.")
 
     wanted = vault_ids(vault_path, framework)
     if not wanted:
