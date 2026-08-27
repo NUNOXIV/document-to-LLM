@@ -120,7 +120,7 @@ def collect_inputs(paths: tuple[str, ...], recursive: bool) -> list[Path]:
 # --------------------------------------------------------------------------
 # Docling-Pipeline
 # --------------------------------------------------------------------------
-def build_converter(ocr: bool):
+def build_converter(ocr: bool, models_dir: Path | None = None):
     """DocumentConverter mit Compliance-tauglichen Defaults.
 
     - TableFormer im ACCURATE-Modus: verschachtelte Control-Tabellen bleiben
@@ -133,6 +133,9 @@ def build_converter(ocr: bool):
     from docling.datamodel.pipeline_options import PdfPipelineOptions
 
     opts = PdfPipelineOptions()
+    if models_dir is not None:
+        # Vorab geladene Docling-Checkpoints (air-gapped Betrieb, kein HF-Zugriff).
+        opts.artifacts_path = str(models_dir)
     opts.do_ocr = ocr
     opts.do_table_structure = True
     opts.table_structure_options.do_cell_matching = True
@@ -420,11 +423,50 @@ def write_manifest(out_dir: Path, results: list[Result]) -> Path:
     return path
 
 
+def run_doctor(models_dir: Path | None) -> int:
+    """Preflight: laeuft der PDF-Pfad in dieser Umgebung wirklich?"""
+    click.echo(f"Docling:        {docling_version()}")
+    fixture = Path(__file__).parent / "tests" / "fixtures" / "Muster-Norm-Zweispaltig.pdf"
+    if not fixture.exists():
+        click.secho("Test-PDF fehlt (tests/fixtures) — Pruefung nicht moeglich.", fg="yellow")
+        return 1
+
+    try:
+        from verify import pdf_pages
+
+        pages, _ = pdf_pages(fixture)
+        click.secho(f"PDF-Textlayer:  ok ({len(pages)} Seiten gelesen)", fg="green")
+    except Exception as exc:
+        click.secho(f"PDF-Textlayer:  FEHLER — {exc}", fg="red")
+        return 1
+
+    click.echo("PDF-Modelle:    lade Layout-/Tabellenmodell ...")
+    try:
+        conv = build_converter(False, models_dir)
+        doc = conv.convert(fixture).document
+        md = doc.export_to_markdown()
+    except Exception as exc:
+        click.secho(f"PDF-Modelle:    FEHLER — {exc}", fg="red")
+        click.echo(
+            "\nDie Layout- und Tabellenmodelle kommen von huggingface.co. Ist der Host\n"
+            "gesperrt, einmalig auf einer Maschine mit Zugriff holen und mitgeben:\n"
+            "  docling-tools models download -o ./docling-models\n"
+            "  python extract.py datei.pdf --models-dir ./docling-models\n"
+            "  (oder ACSOS_DOCLING_MODELS=./docling-models setzen)"
+        )
+        return 1
+
+    ok_table = "| A.8.24" in md or "A.8.24" in md
+    click.secho(f"PDF-Modelle:    ok ({len(md)} Zeichen, Tabelle erkannt: {ok_table})", fg="green")
+    click.secho("Bereit fuer PDF-Extraktion.", fg="green")
+    return 0
+
+
 # --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
-@click.argument("inputs", nargs=-1, required=True, type=click.Path())
+@click.argument("inputs", nargs=-1, type=click.Path())
 @click.option("-o", "--output", "output_dir", default="output", show_default=True,
               type=click.Path(file_okay=False), help="Zielordner fuer die Markdown-Dateien.")
 @click.option("--ocr", "ocr_mode", type=click.Choice(["auto", "on", "off"]), default="auto",
@@ -439,10 +481,17 @@ def write_manifest(out_dir: Path, results: list[Result]) -> Path:
               help="PDF-Extrakte gegen den Textlayer der Quelle pruefen (Wortdeckung).")
 @click.option("--min-coverage", default=99.5, show_default=True,
               help="Geforderte Wortdeckung in Prozent; darunter Warnung (mit --strict Exit 1).")
+@click.option("--models-dir", "models_dir", default=None, type=click.Path(file_okay=False),
+              envvar="ACSOS_DOCLING_MODELS", show_envvar=True,
+              help="Ordner mit vorab geladenen Docling-Modellen (fuer Umgebungen ohne "
+                   "Zugriff auf huggingface.co). Einmalig erzeugen mit: "
+                   "docling-tools models download -o <ordner>")
+@click.option("--doctor", is_flag=True,
+              help="Nur pruefen, ob Docling und die PDF-Modelle einsatzbereit sind.")
 @click.option("--force", is_flag=True, help="Bereits konvertierte, unveraenderte Dokumente neu erzeugen.")
 @click.option("--strict", is_flag=True, help="Exit-Code 1 auch bei Warnungen (fuer CI/Automation).")
 def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
-         do_verify, min_coverage, force, strict):
+         do_verify, min_coverage, models_dir, doctor, force, strict):
     """Konvertiert Dokumente mit IBM Docling nach strukturiertem Markdown."""
     try:
         import docling  # noqa: F401
@@ -450,6 +499,14 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
         raise click.ClickException(
             "Docling ist nicht installiert. Ausfuehren: pip install -r requirements.txt"
         )
+
+    mdir = Path(models_dir).expanduser() if models_dir else None
+
+    if doctor:
+        sys.exit(run_doctor(mdir))
+
+    if not inputs:
+        raise click.ClickException("Keine Eingabedatei angegeben (oder --doctor nutzen).")
 
     files = collect_inputs(tuple(inputs), recursive)
     if not files:
@@ -464,7 +521,7 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
 
     def converter_for(ocr: bool):
         if ocr not in cache:
-            cache[ocr] = build_converter(ocr)
+            cache[ocr] = build_converter(ocr, mdir)
         return cache[ocr]
 
     click.echo(f"Docling {docling_version()} — {len(files)} Datei(en) -> {out_dir}/")

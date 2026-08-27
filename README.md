@@ -27,9 +27,24 @@ export HF_HOME=/pfad/zum/model-cache   # in der abgeschotteten Umgebung
 
 Office-Formate (DOCX, XLSX, PPTX) und HTML brauchen keine Modelle.
 
+Air-gapped oder hinter einer Egress-Policy: Modelle einmal mitbringen statt HF-Zugriff.
+
+```bash
+docling-tools models download -o ./docling-models     # Maschine mit HF-Zugriff
+python extract.py datei.pdf --models-dir ./docling-models
+export ACSOS_DOCLING_MODELS=./docling-models          # alternativ dauerhaft
+```
+
+Preflight, bevor ein Bestand konvertiert wird:
+
+```bash
+python extract.py --doctor
+```
+
 Tests:
 
 ```bash
+python tests/test_units.py   # Unit-Tests, ohne Modelle lauffaehig
 ./tests/smoke.sh        # Office-Pfad (DOCX), ohne Modelle lauffaehig
 ./tests/smoke_pdf.sh    # PDF-Pfad: Layout, Tabellen, Lesereihenfolge, Vollstaendigkeit
 ```

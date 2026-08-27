@@ -74,11 +74,13 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     from docling.datamodel.document import InputDocument
     from docling_core.types.doc.page import TextCellUnit
 
+    # InputDocument instanziiert das Backend bereits selbst; ein zweites wuerde
+    # dieselbe Datei ein zweites Mal offen halten.
     in_doc = InputDocument(
         path_or_stream=pdf_path, format=InputFormat.PDF,
         backend=DoclingParseDocumentBackend, filename=pdf_path.name,
     )
-    backend = DoclingParseDocumentBackend(in_doc, pdf_path)
+    backend = in_doc._backend
     lines_by_page: dict[int, list[str]] = {}
     try:
         n = backend.page_count()

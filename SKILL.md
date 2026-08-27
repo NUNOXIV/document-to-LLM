@@ -34,6 +34,9 @@ Ist der Slug da (z. B. `iso-27001.md`), direkt zu Schritt 3.
 
 ### 2. Konvertieren (einmal pro Dokument)
 
+Vor dem ersten PDF-Lauf einmal `python extract.py --doctor` — das sagt in zehn
+Sekunden, ob Textlayer und Modelle einsatzbereit sind.
+
 ```bash
 # Einzelne Datei
 python extract.py pfad/zur/ISO-27001.pdf
@@ -60,6 +63,7 @@ Optionen, die zählen:
 | `--force` | Quelldatei wurde ersetzt |
 | `--strict` | in CI: Exit 1 auch bei Warnungen |
 | `--min-coverage 99.5` | geforderte Wortdeckung gegen die Quelle |
+| `--models-dir DIR` | Umgebung ohne Zugriff auf huggingface.co |
 
 ### 3. Kontext holen — gezielt, nicht als Volltext
 
@@ -110,7 +114,7 @@ du `output/<slug>.md` komplett lesen.
 | Symptom | Ursache | Handlung |
 | --- | --- | --- |
 | `Docling ist nicht installiert` | Umgebung frisch | `pip install -r requirements.txt` |
-| `Docling-Modelle nicht verfügbar (403 …)` | kein Zugriff auf huggingface.co | Modelle vorab per `docling-tools models download` holen, `HF_HOME` setzen. Betrifft nur PDF/Bild — DOCX/XLSX/HTML laufen ohne Modelle. |
+| `Docling-Modelle nicht verfügbar (403 …)` | kein Zugriff auf huggingface.co | `docling-tools models download -o ./docling-models`, dann `--models-dir ./docling-models`. Betrifft nur PDF/Bild — DOCX/XLSX/HTML laufen ohne Modelle. |
 | Warnung "Zeichen/Seite" | gescanntes PDF | `python extract.py datei.pdf --ocr on --force` |
 | Warnung "Keine Überschriften erkannt" | flaches Layout | Zitate über Seitenmarker statt Gliederung belegen |
 | Warnung "inkonsistente Spaltenstruktur" | Tabelle unsicher rekonstruiert | Tabellenwerte nicht als Fakt zitieren, Quelle prüfen |

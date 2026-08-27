@@ -33,6 +33,9 @@ jobs:
       - name: Fixture-Generator pruefen
         run: python tests/make_fixture.py "$RUNNER_TEMP/fixture.pdf"
 
+      - name: Unit-Tests (modellfrei)
+        run: python tests/test_units.py
+
       - name: Office-Pfad (DOCX)
         run: ./tests/smoke.sh
 
