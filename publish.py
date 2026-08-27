@@ -56,16 +56,22 @@ def page_at(body: str, pos: int) -> int:
     return markers[-1][1] if markers else 0
 
 
+def norm_key(s: str) -> str:
+    return re.sub(r"\s+", " ", s).strip().casefold()
+
+
 def sections_from_headings(body: str) -> dict[str, Section]:
     """Nummerierte Abschnitte (4.1, 6.1.2 ...) aus den Docling-Ueberschriften."""
     out: dict[str, Section] = {}
-    heads = list(re.finditer(r"^(#{1,6})\s+([0-9]+(?:\.[0-9]+)*)\s+(.*\S)\s*$", body, flags=re.M))
+    heads = list(re.finditer(
+        r"^(#{1,6})\s+((?:Artikel|Article|Art\.?|Anhang|Annex)?\s*"
+        r"[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*)\s*[—–-]?\s*(.*)$", body, flags=re.M))
     for i, m in enumerate(heads):
         start = m.end()
         end = heads[i + 1].start() if i + 1 < len(heads) else len(body)
         text = body[start:end]
         text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", text).strip()
-        ident = m.group(2)
+        ident = norm_key(m.group(2))
         if ident in out:            # Wiederholte Kopfzeile o. ae.: laengeren Text behalten
             if len(text) <= len(out[ident].text):
                 continue
@@ -76,8 +82,7 @@ def sections_from_headings(body: str) -> dict[str, Section]:
     for ident, sec in list(out.items()):
         if sec.text.strip():
             continue
-        kids = sorted((k for k in out if k.startswith(ident + ".") and out[k].text.strip()),
-                      key=lambda k: [int(x) for x in k.split(".")])
+        kids = sorted(k for k in out if k.startswith(ident + ".") and out[k].text.strip())
         if not kids:
             continue
         parts = [f"### {k} {out[k].title}\n\n{out[k].text}".rstrip() for k in kids]
@@ -88,17 +93,18 @@ def sections_from_headings(body: str) -> dict[str, Section]:
 def sections_from_tables(body: str) -> dict[str, Section]:
     """Control-Tabellen (Anhang A): jede Zeile ist eine Anforderung."""
     out: dict[str, Section] = {}
-    for m in re.finditer(r"^\|\s*(A\.)?([0-9]+\.[0-9]+(?:\.[0-9]+)*)\s*\|(.+)$", body, flags=re.M):
+    for m in re.finditer(r"^\|\s*(A\.)?([0-9A-Z]+(?:[.\-][0-9A-Za-z]+)+)\s*\|(.+)$", body, flags=re.M):
         cells = [c.strip() for c in m.group(3).split("|") if c.strip()]
         if not cells:
             continue
         title = cells[0]
         text = "\n\n".join(cells[1:]) if len(cells) > 1 else ""
-        ident = f"A.{m.group(2)}"
-        prev = out.get(ident)
-        if prev and len(prev.text) >= len(text):
-            continue
-        out[ident] = Section(ident, title, text, page_at(body, m.start()))
+        raw = m.group(2)
+        for ident in {norm_key(raw), norm_key(f"A.{raw}")}:
+            prev = out.get(ident)
+            if prev and len(prev.text) >= len(text):
+                continue
+            out[ident] = Section(raw, title, text, page_at(body, m.start()))
     return out
 
 
@@ -117,6 +123,44 @@ def inline_section(body: str, ident: str, title: str) -> Section | None:
     text = rest[: nxt.start()] if nxt else rest[:4000]
     text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", text).strip()
     return Section(ident, title, text, page_at(body, anchor.start())) if text else None
+
+
+def id_variants(ident: str) -> list[str]:
+    """Schreibweisen, unter denen eine Anforderungs-ID im Dokument stehen kann.
+
+    Die Vault-IDs folgen je Framework eigenen Konventionen (Art.32, AnnexI.1.1,
+    PO.1.1, APP.1.1.A1, 5.1). Hier werden daraus die Formen erzeugt, die in
+    Ueberschriften oder in der ersten Tabellenspalte tatsaechlich auftauchen.
+    """
+    v = [ident]
+    m = re.match(r"^Art\.?\s*([0-9]+)(?:\.([0-9]+))?$", ident, flags=re.I)
+    if m:
+        num = m.group(1)
+        v += [f"Artikel {num}", f"Art. {num}", f"Art.{num}", f"Article {num}", num]
+    m = re.match(r"^Annex([IVX]+)\.(.+)$", ident, flags=re.I)
+    if m:
+        v += [f"Anhang {m.group(1)} {m.group(2)}", f"Annex {m.group(1)} {m.group(2)}", m.group(2)]
+    if "." in ident:
+        v.append(ident.replace(".", " "))
+    v.append(ident.removeprefix("A."))
+    seen, out = set(), []
+    for x in v:
+        k = x.strip().casefold()
+        if k and k not in seen:
+            seen.add(k)
+            out.append(x.strip())
+    return out
+
+
+def paragraph_of(text: str, number: int) -> str:
+    """Absatz (N) aus einem Artikeltext herausloesen — die Nummerierung stammt
+    aus dem Dokument selbst, es wird nichts umformuliert."""
+    marks = list(re.finditer(rf"^\({number}\)\s*", text, flags=re.M))
+    if not marks:
+        return ""
+    start = marks[0].start()
+    nxt = re.search(rf"^\({number + 1}\)", text[start:], flags=re.M)
+    return text[start: start + nxt.start()].strip() if nxt else text[start:].strip()
 
 
 def vault_ids(vault: Path, framework: str) -> dict[str, str]:
@@ -205,7 +249,25 @@ def main(extract_md: str, vault: str, framework: str, dry_run: bool, overwrite: 
     written, missing, skipped = [], [], []
 
     for ident in sorted(wanted):
-        sec = found.get(ident) or found.get(ident.removeprefix("A."))
+        sec = None
+        for variant in id_variants(ident):
+            sec = found.get(norm_key(variant))
+            if sec and sec.text.strip():
+                break
+            sec = None
+
+        # Absatz-IDs wie Art.20.1: Artikel holen, Absatz herausloesen.
+        if sec is None:
+            pm = re.match(r"^(.*)\.([0-9]+)$", ident)
+            if pm:
+                for variant in id_variants(pm.group(1)):
+                    parent = found.get(norm_key(variant))
+                    if parent and parent.text.strip():
+                        para = paragraph_of(parent.text, int(pm.group(2)))
+                        if para:
+                            sec = Section(ident, parent.title, para, parent.page)
+                        break
+
         if sec is None or not sec.text.strip():
             sec = inline_section(body, ident, wanted[ident])
         if sec is None or not sec.text.strip():

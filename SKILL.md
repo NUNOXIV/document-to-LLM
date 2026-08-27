@@ -146,6 +146,16 @@ python publish.py output/<slug>.md --vault <vault> --framework <slug> --dry-run
 Erst `--dry-run` lesen: er sagt, wie viele Anforderungen belegt werden und
 welche IDs im Extrakt fehlen. Erst danach ohne `--dry-run` schreiben.
 
+## Was wurde schon aufgenommen?
+
+`output/_TRACKER.md` (und im Vault `document-to-LLM Tracker.md`) listet jedes
+aufgenommene Dokument mit Wortdeckung, Seiten, Tabellen und offenen Warnungen.
+Erste Anlaufstelle bei der Frage, ob eine Norm im Bestand ist und wie gut.
+
+```bash
+python tracker.py --output output --vault <vault> --to output/_TRACKER.md
+```
+
 ## Ablage
 
 ```

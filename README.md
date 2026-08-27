@@ -137,6 +137,28 @@ eine mögliche Zellverschiebung.
 Der Zielordner ist im Vault von der Versionierung ausgenommen — lizenzierter
 Normtext bleibt lokal. Dieses Repository enthält weder Quell-PDFs noch Extrakte.
 
+## Aufnahmeprotokoll
+
+`tracker.py` schreibt eine Übersicht über alle Extrakte — je Dokument Wortdeckung,
+Seiten, Tabellen, Überschriften, entfernte Kopf-/Fußzeilen, Nachträge und offene
+Warnungen. Die Datei wird bei jedem Lauf neu erzeugt und veraltet damit nicht.
+
+```bash
+python tracker.py --output output --input input \
+    --vault ~/obsidian-vault \
+    --to output/_TRACKER.md \
+    --to ~/obsidian-vault/"document-to-LLM Tracker.md"
+```
+
+Typischer Durchlauf für einen ganzen Bestand:
+
+```bash
+python extract.py input/ --recursive --json      # konvertieren + prüfen
+python publish.py output/<slug>.md --vault ~/obsidian-vault --framework <fw>
+python index.py build --output output            # Retrieval-Index
+python tracker.py --output output --vault ~/obsidian-vault --to output/_TRACKER.md
+```
+
 ## Regeln für Agenten
 
 Siehe [`SKILL.md`](SKILL.md). Kurzfassung: Kontext kommt aus `output/`, niemals
