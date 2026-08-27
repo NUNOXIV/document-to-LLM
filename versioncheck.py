@@ -36,8 +36,9 @@ class Finding:
     aufgenommen: str
     aktuell: str | None
     quelle: str
-    status: str          # aktuell | veraltet | manuell | unerreichbar
+    status: str          # aktuell | veraltet | belegt | manuell | unerreichbar
     hinweis: str = ""
+    beleg: str = ""      # Fundstelle im Dokument, wenn die Fassung dort steht
 
 
 def fetch(url: str) -> str | None:
@@ -58,33 +59,65 @@ def newest(values: list[str]) -> str:
     return max(values, key=key)
 
 
-def check(slug: str, entry: dict) -> Finding:
+def from_document(slug: str, pattern: str, out_dir: Path) -> tuple[str, str] | None:
+    """Fassung aus dem Extrakt lesen — mit Seitenzahl als Beleg.
+
+    Fuer lizenzierte Normen ist das oft die einzige belastbare Angabe: der
+    Katalog ist kostenpflichtig, das Dokument selbst sagt aber, welche Ausgabe
+    vorliegt.
+    """
+    md = out_dir / f"{slug}.md"
+    if not md.exists():
+        return None
+    text = md.read_text(encoding="utf-8")
+    m = re.search(pattern, text)
+    if not m:
+        return None
+    value = m.group(1) if m.groups() else m.group(0)
+    page = 0
+    for pm in re.finditer(r"<!--\s*page:\s*(\d+)\s*-->", text[: m.start()]):
+        page = int(pm.group(1))
+    return value.strip(), (f"{md.name}, S. {page}" if page else md.name)
+
+
+def check(slug: str, entry: dict, out_dir: Path) -> Finding:
     titel = entry.get("titel", slug)
     have = str(entry.get("dokument_version", "?"))
     url = entry.get("quelle", "")
     pattern = entry.get("muster")
     note = entry.get("anmerkung", "")
 
+    beleg = ""
+    doc_pattern = entry.get("dokument_muster")
+    if doc_pattern:
+        read = from_document(slug, doc_pattern, out_dir)
+        if read:
+            have, beleg = read[0], read[1]
+        else:
+            note = (note + " " if note else "") + \
+                "Fassung im Extrakt nicht gefunden — Registryeintrag ungeprueft."
+
     if not pattern:
-        return Finding(slug, titel, have, None, url, "manuell", note)
+        status = "belegt" if beleg else "manuell"
+        return Finding(slug, titel, have, None, url, status, note, beleg)
 
     page = fetch(url)
     if page is None:
         return Finding(slug, titel, have, None, url, "unerreichbar",
                        (note + " " if note else "") +
-                       "Fundstelle nicht erreichbar (Netzsperre oder Ausfall).")
+                       "Fundstelle nicht erreichbar (Netzsperre oder Ausfall).", beleg)
 
     hits = [m if isinstance(m, str) else m[0]
             for m in re.findall(pattern, page, flags=re.I)]
     if not hits:
         return Finding(slug, titel, have, None, url, "manuell",
                        (note + " " if note else "") +
-                       "Muster auf der Seite nicht gefunden — Seite umgebaut?")
+                       "Muster auf der Seite nicht gefunden — Seite umgebaut?", beleg)
 
     current = newest(hits)
     same = re.findall(r"\d+", current) == re.findall(r"\d+", have)
     return Finding(slug, titel, have, current, url,
-                   "aktuell" if same else "veraltet", note)
+                   "aktuell" if same else "veraltet", note, beleg)
 
 
 def render(findings: list[Finding]) -> str:
@@ -117,10 +150,12 @@ def render(findings: list[Finding]) -> str:
     lines += ["| Dokument | Aufgenommen | Aktuell | Befund | Fundstelle |",
               "| --- | --- | --- | --- | --- |"]
     symbol = {"aktuell": "aktuell", "veraltet": "VERALTET",
-              "manuell": "manuell pruefen", "unerreichbar": "Quelle offline"}
+              "belegt": "aus Dokument belegt", "manuell": "manuell pruefen",
+              "unerreichbar": "Quelle offline"}
     for f in sorted(findings, key=lambda x: (x.status != "veraltet", x.titel)):
-        lines.append(f"| {f.titel} | {f.aufgenommen} | {f.aktuell or '—'} "
-                     f"| {symbol[f.status]} | {f.quelle} |")
+        lines.append(f"| {f.titel} | {f.aufgenommen}"
+                     + (f" <br><sub>{f.beleg}</sub>" if f.beleg else "")
+                     + f" | {f.aktuell or '—'} | {symbol[f.status]} | {f.quelle} |")
     hints = [f for f in findings if f.hinweis]
     if hints:
         lines += ["", "## Anmerkungen", ""]
@@ -131,12 +166,15 @@ def render(findings: list[Finding]) -> str:
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
 @click.option("--registry", default=str(REGISTRY), show_default=True,
               type=click.Path(exists=True, dir_okay=False))
+@click.option("--output", "out_dir", default="output", show_default=True,
+              type=click.Path(file_okay=False),
+              help="Ordner mit den Extrakten (fuer die Fassung aus dem Dokument).")
 @click.option("--only", default=None, help="Nur dieses Dokument pruefen (Slug).")
 @click.option("--to", "targets", multiple=True, help="Bericht zusaetzlich hierhin schreiben.")
 @click.option("--json", "as_json", is_flag=True, help="Ergebnis als JSON ausgeben.")
 @click.option("--strict", is_flag=True, help="Exit-Code 1, wenn ein Dokument veraltet ist.")
-def main(registry: str, only: str | None, targets: tuple[str, ...], as_json: bool,
-         strict: bool) -> None:
+def main(registry: str, out_dir: str, only: str | None, targets: tuple[str, ...],
+         as_json: bool, strict: bool) -> None:
     """Prueft, ob die aufgenommenen Dokumente dem aktuellen Stand entsprechen."""
     data = json.loads(Path(registry).read_text(encoding="utf-8"))
     docs = data.get("documents", {})
@@ -145,15 +183,16 @@ def main(registry: str, only: str | None, targets: tuple[str, ...], as_json: boo
         if not docs:
             raise click.ClickException(f"Kein Eintrag fuer {only} in der Registry.")
 
-    findings = [check(slug, entry) for slug, entry in docs.items()]
+    findings = [check(slug, entry, Path(out_dir)) for slug, entry in docs.items()]
 
     if as_json:
         click.echo(json.dumps([asdict(f) for f in findings], ensure_ascii=False, indent=2))
     else:
         for f in findings:
-            colour = {"aktuell": "green", "veraltet": "red",
+            colour = {"aktuell": "green", "veraltet": "red", "belegt": "cyan",
                       "manuell": "yellow", "unerreichbar": "yellow"}[f.status]
             detail = f"aufgenommen {f.aufgenommen}" + (f", aktuell {f.aktuell}" if f.aktuell else "")
+            detail += f", Beleg: {f.beleg}" if f.beleg else ""
             click.secho(f"{f.status.upper():14s} {f.titel} ({detail})", fg=colour)
 
     text = render(findings)

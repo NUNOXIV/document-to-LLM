@@ -162,9 +162,17 @@ python versioncheck.py --to ~/obsidian-vault/"document-to-LLM Versionsstand.md"
 ```
 
 Die Fundstellen und Suchmuster stehen in `versions.json`. Nichts wird aus dem
-Gedächtnis beantwortet: Was nicht abrufbar ist — ISO-Katalog hinter Paywall,
-ENX-Portal mit Anmeldung, gesperrte Hosts — erscheint als „manuell prüfen"
-beziehungsweise „Quelle offline" **mit** Fundstelle, statt als Vermutung.
+Gedächtnis beantwortet. Es gibt drei Befunde:
+
+| Befund | Bedeutung |
+| --- | --- |
+| `aktuell` / `VERALTET` | Stand von der offiziellen Seite geholt und verglichen |
+| `aus Dokument belegt` | Die Fassung steht im lizenzierten Dokument selbst und wird von dort gelesen — mit Datei und Seitenzahl als Beleg. Belegt, **welche** Fassung vorliegt, nicht dass keine neuere existiert |
+| `manuell prüfen` / `Quelle offline` | Weder Seite noch Dokument geben es her |
+
+Der mittlere Fall greift für ISO 27001 und ISO 42001 (Katalog kostenpflichtig),
+VDA ISA (ENX verlangt Anmeldung) und die EU-Rechtsakte (EUR-Lex führt
+konsolidierte Fassungen ohne Versionsnummer, das Amtsblattdatum steht im Text).
 
 ## Aufnahmeprotokoll
 

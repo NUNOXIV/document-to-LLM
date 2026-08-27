@@ -103,10 +103,11 @@ python versioncheck.py --only <slug>
 ```
 
 Meldet der Lauf **VERALTET**, sag das in deiner Antwort dazu und nenne die
-aktuelle Fassung. Steht dort **manuell prüfen** oder **Quelle offline**, ist der
-Stand ungeprüft — dann kennzeichne die Aussage als „Stand des vorliegenden
-Dokuments" und nenne Datum beziehungsweise Ausgabe aus der Front-Matter. Rate
-nie aus dem Gedächtnis, welche Fassung aktuell ist.
+aktuelle Fassung. Steht dort **aus Dokument belegt**, nenne die Ausgabe mit dem
+angegebenen Beleg (Datei und Seite) und den Zusatz, dass eine neuere Ausgabe
+nicht maschinell prüfbar war. Bei **manuell prüfen** oder **Quelle offline** ist
+der Stand ungeprüft — dann kennzeichne die Aussage als „Stand des vorliegenden
+Dokuments". Rate nie aus dem Gedächtnis, welche Fassung aktuell ist.
 
 ## Pflichten beim Zitieren
 
