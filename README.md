@@ -148,6 +148,24 @@ falsch, deshalb liegt in `mappings/cra.json` eine geprüfte Kreuzreferenz: je ID
 ein wörtliches Textstück, an dem der Abschnitt beginnt. Findet `publish.py` den
 Anker nicht, meldet es die ID als fehlend, statt etwas Falsches abzulegen.
 
+## Versionsstand prüfen
+
+Ein Extrakt ist nur so gut wie seine Fassung. `versioncheck.py` holt zu jedem
+aufgenommenen Dokument den aktuellen Stand von der offiziellen Fundstelle und
+meldet, was veraltet ist.
+
+```bash
+python versioncheck.py                                   # alle Dokumente
+python versioncheck.py --only wstg-v4-2                  # eines
+python versioncheck.py --strict                          # Exit 1 bei Veraltetem
+python versioncheck.py --to ~/obsidian-vault/"document-to-LLM Versionsstand.md"
+```
+
+Die Fundstellen und Suchmuster stehen in `versions.json`. Nichts wird aus dem
+Gedächtnis beantwortet: Was nicht abrufbar ist — ISO-Katalog hinter Paywall,
+ENX-Portal mit Anmeldung, gesperrte Hosts — erscheint als „manuell prüfen"
+beziehungsweise „Quelle offline" **mit** Fundstelle, statt als Vermutung.
+
 ## Aufnahmeprotokoll
 
 `tracker.py` schreibt eine Übersicht über alle Extrakte — je Dokument Wortdeckung,

@@ -94,6 +94,20 @@ nicht, zu welcher Tabellenzelle sie gehören. Zitierbar mit Seitenangabe; wenn
 die Zuordnung für die Aussage zählt, in der Quelle nachsehen und das kenntlich
 machen.
 
+## Versionsstand — immer prüfen
+
+Bevor du aus einem Extrakt zitierst oder eine Norm für eine Aussage heranziehst:
+
+```bash
+python versioncheck.py --only <slug>
+```
+
+Meldet der Lauf **VERALTET**, sag das in deiner Antwort dazu und nenne die
+aktuelle Fassung. Steht dort **manuell prüfen** oder **Quelle offline**, ist der
+Stand ungeprüft — dann kennzeichne die Aussage als „Stand des vorliegenden
+Dokuments" und nenne Datum beziehungsweise Ausgabe aus der Front-Matter. Rate
+nie aus dem Gedächtnis, welche Fassung aktuell ist.
+
 ## Pflichten beim Zitieren
 
 1. Zitiere wörtlich aus `output/`. Formuliere Normtext nicht um und ergänze ihn nicht.
@@ -105,7 +119,9 @@ machen.
 5. Unter 100 % fehlen Wörter der Quelle — bei
    Zitaten aus den betroffenen Seiten (siehe Warnung) ist der Extrakt nicht
    belastbar; dann neu konvertieren, notfalls mit `--ocr on`.
-6. Steht in der Front-Matter `extraction_status: warn`, lies die `warnings`.
+6. Prüfe die Fassung (siehe oben). Eine korrekt extrahierte, aber veraltete
+   Norm ist für eine Compliance-Aussage genauso falsch wie ein kaputter Extrakt.
+7. Steht in der Front-Matter `extraction_status: warn`, lies die `warnings`.
    Bei Tabellenwarnungen gilt: Tabelleninhalte vor dem Zitat gegen die Quelle
    prüfen oder als unsicher kennzeichnen.
 5. Versionsstände (Edition, Fassung, Datum) nimmst du aus dem Dokument selbst,
