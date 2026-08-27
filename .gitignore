@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ACSOS document-to-LLM
+.venv/
+output/*.docling.json
+output/*.db
