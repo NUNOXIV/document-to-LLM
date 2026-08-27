@@ -35,6 +35,20 @@ python extract.py datei.pdf --models-dir ./docling-models
 export ACSOS_DOCLING_MODELS=./docling-models          # alternativ dauerhaft
 ```
 
+Konkret geholt werden (Stand Docling 2.123):
+
+| Modell | Repository | Groesse |
+| --- | --- | --- |
+| Layout | `docling-project/docling-layout-heron` | 172 MB |
+| Layout (ONNX-Engine) | `docling-project/docling-layout-heron-onnx` | 171 MB |
+| Tabellen (ACCURATE) | `ds4sd/docling-models` → `model_artifacts/tableformer/accurate` | 213 MB |
+| OCR | in `rapidocr` enthalten, kein Download | — |
+
+Die Groessen sind der Grund, warum ein HF-Connector oder API-Zugang das Problem
+nicht loest: die Gewichte muessen als Dateien auf die Maschine, die konvertiert.
+Entweder der Host `huggingface.co` ist erreichbar, oder der Ordner wird per
+`--models-dir` mitgebracht.
+
 Preflight, bevor ein Bestand konvertiert wird:
 
 ```bash
