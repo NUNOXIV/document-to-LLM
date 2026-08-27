@@ -1,0 +1,52 @@
+name: verify
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  extraction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Docling-Modelle cachen
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: docling-models-${{ hashFiles('requirements.txt') }}
+
+      - name: Abhaengigkeiten installieren
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Fixture-Generator pruefen
+        run: python tests/make_fixture.py "$RUNNER_TEMP/fixture.pdf"
+
+      - name: Office-Pfad (DOCX)
+        run: ./tests/smoke.sh
+
+      - name: PDF-Pfad (Layout, Tabellen, Vollstaendigkeit)
+        run: ./tests/smoke_pdf.sh
+
+      - name: Extrakt als Artefakt sichern
+        if: always()
+        run: |
+          mkdir -p ci-output
+          python extract.py tests/fixtures/Muster-Norm-Zweispaltig.pdf -o ci-output --json || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: extraktion
+          path: ci-output/

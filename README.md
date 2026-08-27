@@ -27,10 +27,11 @@ export HF_HOME=/pfad/zum/model-cache   # in der abgeschotteten Umgebung
 
 Office-Formate (DOCX, XLSX, PPTX) und HTML brauchen keine Modelle.
 
-Smoke-Test der Pipeline:
+Tests:
 
 ```bash
-./tests/smoke.sh
+./tests/smoke.sh        # Office-Pfad (DOCX), ohne Modelle lauffaehig
+./tests/smoke_pdf.sh    # PDF-Pfad: Layout, Tabellen, Lesereihenfolge, Vollstaendigkeit
 ```
 
 ## Nutzung
@@ -42,6 +43,9 @@ python extract.py input/ --recursive --json          # ganzer Bestand + JSON fü
 
 # 2) Index bauen
 python index.py build --output output --db output/acsos.db
+
+# 2b) Abweichungspruefung gegen die Quelle (laeuft bei PDFs automatisch mit)
+python verify.py output/iso-27001.md --source input/ISO-27001.pdf --min-coverage 99.5
 
 # 3) Gezielt Kontext holen
 python index.py search "Schlüsselverwaltung Kryptographie" -n 5
@@ -58,6 +62,12 @@ python index.py list
   PDF-Textlayer — Zellwerte werden übernommen, nicht rekonstruiert.
 - **OCR-Automatik:** textarme (gescannte) PDFs werden erkannt und mit OCR
   wiederholt.
+- **Abweichungsprüfung:** jeder PDF-Extrakt wird Wort für Wort gegen den
+  Textlayer der Quelle geprüft (Docling-PDF-Backend, keine ML-Modelle nötig).
+  Die Wortdeckung steht als `text_coverage_percent` in der Front-Matter; unter
+  `--min-coverage` (Default 99.5 %) gibt es eine Warnung mit den fehlenden
+  Wörtern und den schwächsten Seiten. Laufende Kopf-/Fußzeilen werden nicht
+  mitgezählt, über Zeilenumbrüche getrennte Wörter gelten als vorhanden.
 - **Qualitätsgates:** leerer Output bricht ab; textarme Seiten, fehlende
   Gliederung, kaputte Tabellenblöcke und Encoding-Fehler landen als Warnung in
   der Datei, im `manifest.json` und im Exit-Code (`--strict`).

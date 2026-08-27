@@ -55,6 +55,7 @@ class Result:
     headings: int = 0
     tables: int = 0
     ocr_used: bool = False
+    text_coverage: float | None = None   # Wortdeckung Quelle -> Extrakt (nur PDF)
     duration_s: float = 0.0
     status: str = "ok"          # ok | warn | error | skipped
     warnings: list[str] = field(default_factory=list)
@@ -255,6 +256,10 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         f"converter: {esc('IBM Docling ' + docling_version())}",
         f"ocr: {str(res.ocr_used).lower()} # mode={ocr_mode}",
         f"converted_at: {esc(datetime.now(timezone.utc).isoformat(timespec='seconds'))}",
+    ]
+    if res.text_coverage is not None:
+        lines.append(f"text_coverage_percent: {res.text_coverage}")
+    lines += [
         "extraction_status: " + res.status,
     ]
     if res.warnings:
@@ -297,6 +302,8 @@ def convert_file(
     page_markers: bool,
     force: bool,
     claimed: dict[str, Path],
+    do_verify: bool,
+    min_coverage: float,
 ) -> Result:
     started = time.perf_counter()
     res = Result(
@@ -359,6 +366,33 @@ def convert_file(
     res.warnings = check_quality(md_body, res.pages, is_pdf, ocr)
     res.status = "warn" if res.warnings else "ok"
 
+    # Abweichungspruefung: enthaelt der Extrakt den Text der Quelle vollstaendig?
+    if is_pdf and do_verify:
+        try:
+            from verify import verify as verify_extract
+
+            tmp = out_dir / f".{stem}.tmp.md"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            tmp.write_text(md_body, encoding="utf-8")
+            try:
+                vres = verify_extract(src, tmp)
+            finally:
+                tmp.unlink(missing_ok=True)
+            if vres.note:
+                res.warnings.append(vres.note)
+            else:
+                res.text_coverage = vres.coverage
+                if vres.coverage < min_coverage:
+                    worst = ", ".join(f"S.{p}: {c} %" for p, c in vres.worst_pages[:3])
+                    res.warnings.append(
+                        f"Wortdeckung nur {vres.coverage} % (gefordert {min_coverage} %). "
+                        f"Schwaechste Seiten: {worst}. Fehlend u. a.: "
+                        f"{', '.join(vres.missing_sample[:8])}"
+                    )
+        except Exception as exc:
+            res.warnings.append(f"Abweichungspruefung nicht durchfuehrbar: {exc}")
+        res.status = "warn" if res.warnings else "ok"
+
     out_dir.mkdir(parents=True, exist_ok=True)
     target.write_text(front_matter(src, res, ocr_mode) + md_body.rstrip() + "\n", encoding="utf-8")
     res.output = str(target)
@@ -401,9 +435,14 @@ def write_manifest(out_dir: Path, results: list[Result]) -> Path:
               help="Zusaetzlich das verlustfreie DoclingDocument als JSON ablegen (Basis fuer index.py).")
 @click.option("--no-page-markers", is_flag=True,
               help="Ohne <!-- page: N --> Marker exportieren (nicht empfohlen: Zitate werden unbelegbar).")
+@click.option("--verify/--no-verify", "do_verify", default=True, show_default=True,
+              help="PDF-Extrakte gegen den Textlayer der Quelle pruefen (Wortdeckung).")
+@click.option("--min-coverage", default=99.5, show_default=True,
+              help="Geforderte Wortdeckung in Prozent; darunter Warnung (mit --strict Exit 1).")
 @click.option("--force", is_flag=True, help="Bereits konvertierte, unveraenderte Dokumente neu erzeugen.")
 @click.option("--strict", is_flag=True, help="Exit-Code 1 auch bei Warnungen (fuer CI/Automation).")
-def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers, force, strict):
+def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
+         do_verify, min_coverage, force, strict):
     """Konvertiert Dokumente mit IBM Docling nach strukturiertem Markdown."""
     try:
         import docling  # noqa: F401
@@ -438,6 +477,7 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers, f
                 converter_for, src, out_dir,
                 ocr_mode=ocr_mode, write_json=write_json,
                 page_markers=not no_page_markers, force=force, claimed=claimed,
+                do_verify=do_verify, min_coverage=min_coverage,
             )
         except ExtractionError as exc:
             res = Result(
@@ -459,7 +499,9 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers, f
                 click.secho(
                     f"    -> {Path(res.output).name} "
                     f"({res.pages} S., {res.characters} Z., {res.tables} Tab., "
-                    f"{res.headings} Ueberschriften, {res.duration_s}s)",
+                    f"{res.headings} Ueberschriften"
+                    + (f", Deckung {res.text_coverage} %" if res.text_coverage is not None else "")
+                    + f", {res.duration_s}s)",
                     fg="green",
                 )
             for w in res.warnings:

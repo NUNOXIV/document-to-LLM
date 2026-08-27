@@ -43,7 +43,12 @@ python extract.py input/ --recursive --json
 ```
 
 Ergebnis: `output/<slug>.md` mit YAML-Front-Matter (Quell-Hash, Seitenzahl,
-Docling-Version, Warnungen) und `<!-- page: N -->` Markern im Text.
+Docling-Version, Wortdeckung, Warnungen) und `<!-- page: N -->` Markern im Text.
+
+Bei PDFs läuft automatisch die Abweichungsprüfung mit: der Extrakt wird Wort für
+Wort gegen den Textlayer der Quelle verglichen. `text_coverage_percent: 100.0`
+heißt, dass kein Wort der Quelle fehlt. Alles unter der Schwelle erzeugt eine
+Warnung samt fehlender Wörter und schwächster Seiten.
 
 Optionen, die zählen:
 
@@ -54,6 +59,7 @@ Optionen, die zählen:
 | `--json` | wenn das Dokument in den Suchindex soll |
 | `--force` | Quelldatei wurde ersetzt |
 | `--strict` | in CI: Exit 1 auch bei Warnungen |
+| `--min-coverage 99.5` | geforderte Wortdeckung gegen die Quelle |
 
 ### 3. Kontext holen — gezielt, nicht als Volltext
 
@@ -63,6 +69,12 @@ Ganze Normen gehören nicht in einen Prompt. Erst suchen, dann den Abschnitt les
 python index.py build --output output --db output/acsos.db     # einmal nach neuen Extraktionen
 python index.py search "Kryptographie Schlüsselverwaltung" -n 5
 python index.py show iso-27001 --heading "A.8"
+```
+
+Zweifel an der Vollständigkeit? Prüfen statt raten:
+
+```bash
+python verify.py output/iso-27001.md --source input/ISO-27001.pdf
 ```
 
 `search` liefert Dokument, Gliederungspfad und Seitenzahl — genau die Angaben,
@@ -75,7 +87,10 @@ du `output/<slug>.md` komplett lesen.
 2. Gib Dokument-Slug, Gliederungsnummer und Seite an: `iso-27001.md, A.8.24, S. 31`.
 3. Findest du eine Anforderung nicht im Output, existiert sie für dich nicht.
    Sag "steht nicht im extrahierten Dokument" — rate nicht aus dem Gedächtnis.
-4. Steht in der Front-Matter `extraction_status: warn`, lies die `warnings`.
+4. Prüfe `text_coverage_percent`. Unter 100 % fehlen Wörter der Quelle — bei
+   Zitaten aus den betroffenen Seiten (siehe Warnung) ist der Extrakt nicht
+   belastbar; dann neu konvertieren, notfalls mit `--ocr on`.
+5. Steht in der Front-Matter `extraction_status: warn`, lies die `warnings`.
    Bei Tabellenwarnungen gilt: Tabelleninhalte vor dem Zitat gegen die Quelle
    prüfen oder als unsicher kennzeichnen.
 5. Versionsstände (Edition, Fassung, Datum) nimmst du aus dem Dokument selbst,
@@ -99,6 +114,7 @@ du `output/<slug>.md` komplett lesen.
 | Warnung "Zeichen/Seite" | gescanntes PDF | `python extract.py datei.pdf --ocr on --force` |
 | Warnung "Keine Überschriften erkannt" | flaches Layout | Zitate über Seitenmarker statt Gliederung belegen |
 | Warnung "inkonsistente Spaltenstruktur" | Tabelle unsicher rekonstruiert | Tabellenwerte nicht als Fakt zitieren, Quelle prüfen |
+| Warnung "Wortdeckung nur X %" | Text der Quelle fehlt im Extrakt | `--ocr on --force`; bleibt es dabei, betroffene Seiten nicht zitieren und melden |
 | `Index fehlt` | Index nicht gebaut | `python index.py build --output output` |
 | Datei wird übersprungen | Hash unverändert | `--force`, wenn Neuerzeugung gewollt |
 
