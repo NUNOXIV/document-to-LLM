@@ -20,6 +20,7 @@ lizenzierter Normtext bleibt lokal.
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -215,6 +216,37 @@ def sections_by_anchor(body: str, wanted: dict[str, str]) -> dict[str, Section]:
     return out
 
 
+def load_crosswalk(framework: str) -> dict[str, str]:
+    """Gepruefte Kreuzreferenz ID -> woertlicher Textanker, falls vorhanden.
+
+    Noetig, wo die Nummerierung im Vault nicht der Reihenfolge des Dokuments
+    folgt (CRA Anhang I). Die Datei liegt im Repository unter mappings/ und ist
+    nachlesbar — eine Zuordnung nach Position waere hier schlicht falsch.
+    """
+    path = Path(__file__).parent / "mappings" / f"{framework}.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("anchors", {})
+
+
+def section_at_anchor(body: str, ident: str, anchor: str, title: str) -> Section | None:
+    """Abschnitt ab einem woertlichen Textstueck bis zum naechsten Listenpunkt."""
+    # Der ganze Anker wird gesucht, nicht nur sein Anfang: im Amtsblattsatz
+    # kommen Formulierungen wie "Produkte mit digitalen Elementen" hundertfach
+    # vor, und ein zu kurzes Fenster trifft die falsche Stelle.
+    words = re.sub(r"\s+", " ", anchor).split()
+    m = re.search(r"\s+".join(re.escape(w) for w in words), body)
+    if not m:
+        return None
+    line_start = body.rfind("\n", 0, m.start()) + 1
+    rest = body[line_start:]
+    nxt = re.search(r"(?m)^(?:-\s*(?:\([0-9]+\)|[a-z]\))|#{1,6}\s)", rest[1:])
+    text = rest[: nxt.start() + 1] if nxt else rest[:3000]
+    text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", text).strip()
+    return Section(ident, title, text, page_at(body, line_start)) if text else None
+
+
 def vault_ids(vault: Path, framework: str) -> dict[str, str]:
     """IDs und Titel der Anforderungsnotizen des Frameworks aus dem Vault."""
     folder = vault / "GRC" / "Frameworks" / framework
@@ -297,12 +329,26 @@ def main(extract_md: str, vault: str, framework: str, dry_run: bool, overwrite: 
     found = sections_from_headings(body)
     found.update(sections_from_tables(body))
     anchored = sections_by_anchor(body, wanted)
+    crosswalk = load_crosswalk(framework)
 
     target_dir = vault_path / LICENSED_DIR / framework
     written, missing, skipped = [], [], []
 
     for ident in sorted(wanted):
         sec = None
+        if ident in crosswalk:
+            sec = section_at_anchor(body, ident, crosswalk[ident], wanted[ident])
+            if sec:
+                target = target_dir / f"{framework} {ident} (Normtext).md"
+                if target.exists() and not overwrite:
+                    skipped.append(ident)
+                    continue
+                if not dry_run:
+                    target_dir.mkdir(parents=True, exist_ok=True)
+                    target.write_text(note_text(framework, ident, sec, meta), encoding="utf-8")
+                written.append(ident)
+                continue
+
         for variant in id_variants(ident):
             sec = found.get(norm_key(variant))
             if sec and sec.text.strip():

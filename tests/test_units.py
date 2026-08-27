@@ -186,9 +186,54 @@ def test_repair() -> None:
         check("kein Nachtrag bei vollstaendigem Extrakt", V.unassigned_lines(FIXTURE_PDF, full) == [])
 
 
+def test_office_verify() -> None:
+    print("Pruefung von Office-Formaten")
+    import tempfile as tf
+    from docx import Document as Docx
+    from openpyxl import Workbook
+
+    with tf.TemporaryDirectory() as tmp:
+        xlsx = Path(tmp) / "controls.xlsx"
+        wb = Workbook()
+        ws = wb.active
+        for row in [("Control", "Anforderung"),
+                    ("A.8.24", "Regeln fuer Kryptographie und Schluesselverwaltung"),
+                    ("A.8.25", "Regeln fuer sichere Entwicklung")]:
+            ws.append(row)
+        wb.save(xlsx)
+
+        pages, _ = V.office_pages(xlsx)
+        check("xlsx gelesen", bool(pages) and "schluesselverwaltung" in pages[1],
+              str(list(pages)))
+
+        full = Path(tmp) / "full.md"
+        full.write_text("---\nx: 1\n---\n" + " ".join(pages[1]), encoding="utf-8")
+        check("xlsx vollstaendig = 100 %", V.verify(xlsx, full).coverage == 100.0)
+
+        gap = Path(tmp) / "gap.md"
+        gap.write_text(full.read_text(encoding="utf-8").replace("schluesselverwaltung", ""),
+                       encoding="utf-8")
+        rg = V.verify(xlsx, gap)
+        check("xlsx Luecke erkannt", rg.coverage < 100.0, str(rg.coverage))
+        check("xlsx Nachtrag findet die Zelle",
+              any("Schluesselverwaltung" in text for _, text in V.unassigned_lines(xlsx, gap)))
+
+        docx = Path(tmp) / "policy.docx"
+        d = Docx()
+        d.add_paragraph("Die Organisation muss Kryptographie regeln.")
+        d.save(docx)
+        dpages, _ = V.office_pages(docx)
+        check("docx gelesen", "kryptographie" in dpages[1], str(dpages))
+
+    check("Tabellenkalkulation ohne Ueberschriften-Warnung",
+          not any("Ueberschriften" in w for w in
+                  extract.check_quality("| a | b |\n|---|---|\n| 1 | 2 |\n" + "Text " * 60,
+                                        1, False, False, ".xlsx")))
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
-               test_pipeline_options, test_verify, test_repair):
+               test_pipeline_options, test_verify, test_repair, test_office_verify):
         fn()
     print()
     if failures:

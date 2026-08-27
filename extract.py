@@ -278,7 +278,8 @@ def count_tables(doc, markdown: str) -> int:
 # --------------------------------------------------------------------------
 # Qualitaetspruefung des Outputs
 # --------------------------------------------------------------------------
-def check_quality(md: str, pages: int, is_pdf: bool, ocr: bool) -> list[str]:
+def check_quality(md: str, pages: int, is_pdf: bool, ocr: bool,
+                  suffix: str = ".pdf") -> list[str]:
     warnings: list[str] = []
     body = re.sub(r"^---\n.*?\n---\n", "", md, flags=re.S)
     text = body.strip()
@@ -299,7 +300,9 @@ def check_quality(md: str, pages: int, is_pdf: bool, ocr: bool) -> list[str]:
             )
 
     headings = len(re.findall(r"^#{1,6}\s+\S", body, flags=re.M))
-    if headings == 0:
+    # Tabellenkalkulationen haben keine Ueberschriftenhierarchie — dort ist das
+    # kein Strukturverlust, sondern das Format.
+    if headings == 0 and suffix.lower() not in (".xlsx", ".xlsm", ".csv"):
         warnings.append(
             "Keine Ueberschriften erkannt — Gliederung (z. B. 4.1, A.5.1) ging "
             "moeglicherweise verloren. Fuer Zitate Seitenmarker nutzen."
@@ -545,7 +548,7 @@ def convert_file(
     res.characters = len(md_body)
     res.tables = out["tables"]
     res.headings = len(re.findall(r"^#{1,6}\s+\S", md_body, flags=re.M))
-    res.warnings = check_quality(md_body, res.pages, is_pdf, ocr)
+    res.warnings = check_quality(md_body, res.pages, is_pdf, ocr, src.suffix)
     if res.failed_pages:
         res.warnings.insert(0, (
             f"Docling konnte {len(res.failed_pages)} Seite(n) nicht verarbeiten: "
@@ -559,7 +562,10 @@ def convert_file(
     res.status = "warn" if res.warnings else "ok"
 
     # Abweichungspruefung: enthaelt der Extrakt den Text der Quelle vollstaendig?
-    if is_pdf and do_verify:
+    # Fuer PDFs gegen den Textlayer, fuer Office-Formate gegen den Standardleser
+    # des Formats — in beiden Faellen eine von Docling unabhaengige Quelle.
+    verifiable = src.suffix.lower() in {".pdf", ".xlsx", ".xlsm", ".docx", ".pptx"}
+    if verifiable and do_verify:
         try:
             from verify import verify as verify_extract
 

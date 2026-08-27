@@ -102,8 +102,10 @@ python index.py list
   Datei; ein Fehlschlag bricht ab.
 - **OCR-Automatik:** textarme (gescannte) PDFs werden erkannt und mit OCR
   wiederholt.
-- **Abweichungsprüfung:** jeder PDF-Extrakt wird Wort für Wort gegen den
-  Textlayer der Quelle geprüft (Docling-PDF-Backend, keine ML-Modelle nötig).
+- **Abweichungsprüfung für alle Formate:** jeder Extrakt wird Wort für Wort
+  gegen die Quelle geprüft — PDFs gegen den Textlayer (Docling-PDF-Backend,
+  keine ML-Modelle nötig), XLSX/DOCX/PPTX gegen den Standardleser des Formats.
+  Der Abgleich kommt damit immer aus einer von Docling unabhängigen Quelle.
   Die Wortdeckung steht als `text_coverage_percent` in der Front-Matter; unter
   `--min-coverage` (Default 99.5 %) gibt es eine Warnung mit den fehlenden
   Wörtern und den schwächsten Seiten. Laufende Kopf-/Fußzeilen werden nicht
@@ -136,6 +138,15 @@ eine mögliche Zellverschiebung.
 
 Der Zielordner ist im Vault von der Versionierung ausgenommen — lizenzierter
 Normtext bleibt lokal. Dieses Repository enthält weder Quell-PDFs noch Extrakte.
+
+## Kreuzreferenzen für abweichende Nummerierungen
+
+Manche Frameworks nummerieren ihre Anforderungen thematisch statt in der
+Reihenfolge des Dokuments. Beim CRA ist `AnnexI.1.3` der Buchstabe d) des
+Anhangs I, `AnnexI.1.11` der Buchstabe c). Eine Zuordnung nach Position wäre
+falsch, deshalb liegt in `mappings/cra.json` eine geprüfte Kreuzreferenz: je ID
+ein wörtliches Textstück, an dem der Abschnitt beginnt. Findet `publish.py` den
+Anker nicht, meldet es die ID als fehlend, statt etwas Falsches abzulegen.
 
 ## Aufnahmeprotokoll
 

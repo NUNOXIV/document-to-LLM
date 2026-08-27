@@ -110,6 +110,69 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     return content, boiler
 
 
+def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
+    """Quelltext aus Office-Formaten — je Blatt, Abschnitt oder Folie.
+
+    Gelesen wird mit dem Standardleser des jeweiligen Formats, also unabhaengig
+    von Docling. Genau das ist der Sinn der Pruefung: die Extraktion macht
+    Docling, der Abgleich kommt aus einer zweiten Quelle.
+    """
+    suffix = path.suffix.lower()
+    pages: dict[int, list[str]] = {}
+
+    if suffix in (".xlsx", ".xlsm"):
+        from openpyxl import load_workbook
+
+        wb = load_workbook(path, read_only=True, data_only=True)
+        try:
+            for i, ws in enumerate(wb.worksheets, 1):
+                words: list[str] = []
+                for row in ws.iter_rows(values_only=True):
+                    for cell in row:
+                        if cell is not None:
+                            words.extend(tokenize(str(cell)))
+                pages[i] = words
+        finally:
+            wb.close()
+
+    elif suffix == ".docx":
+        from docx import Document as DocxDocument
+
+        doc = DocxDocument(str(path))
+        words = []
+        for para in doc.paragraphs:
+            words.extend(tokenize(para.text))
+        for table in doc.tables:
+            for row in table.rows:
+                for cell in row.cells:
+                    words.extend(tokenize(cell.text))
+        pages[1] = words
+
+    elif suffix == ".pptx":
+        from pptx import Presentation
+
+        prs = Presentation(str(path))
+        for i, slide in enumerate(prs.slides, 1):
+            words = []
+            for shape in slide.shapes:
+                if shape.has_text_frame:
+                    words.extend(tokenize(shape.text_frame.text))
+                if getattr(shape, "has_table", False):
+                    for row in shape.table.rows:
+                        for cell in row.cells:
+                            words.extend(tokenize(cell.text))
+            pages[i] = words
+
+    return pages, {p: [] for p in pages}
+
+
+def source_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
+    """Quelltext je Seite (PDF) bzw. je Blatt/Folie (Office)."""
+    if path.suffix.lower() == ".pdf":
+        return pdf_pages(path)
+    return office_pages(path)
+
+
 @dataclass
 class VerifyResult:
     source: str
@@ -132,7 +195,7 @@ class VerifyResult:
 
 def verify(pdf_path: Path, md_path: Path) -> VerifyResult:
     res = VerifyResult(source=str(pdf_path), extract=str(md_path))
-    pages, boiler = pdf_pages(pdf_path)
+    pages, boiler = source_pages(pdf_path)
     src_all = [t for toks in pages.values() for t in toks]
     out = markdown_tokens(md_path)
     res.source_tokens = len(src_all)
@@ -140,8 +203,13 @@ def verify(pdf_path: Path, md_path: Path) -> VerifyResult:
     res.boilerplate_tokens = sum(len(t) for t in boiler.values())
 
     if not src_all:
-        res.note = ("Kein Textlayer im PDF (gescannt) — ein Wortvergleich ist nicht "
-                    "moeglich. Extraktion mit --ocr on pruefen.")
+        res.note = (
+            "Kein Textlayer im PDF (gescannt) — ein Wortvergleich ist nicht "
+            "moeglich. Extraktion mit --ocr on pruefen."
+            if pdf_path.suffix.lower() == ".pdf" else
+            f"Format {pdf_path.suffix} wird fuer den Wortvergleich nicht "
+            f"unterstuetzt — Extrakt nicht gegen die Quelle geprueft."
+        )
         return res
 
     stream = "".join(out)  # fuer Woerter, die im PDF ueber einen Zeilenumbruch getrennt sind
@@ -187,6 +255,52 @@ def verify(pdf_path: Path, md_path: Path) -> VerifyResult:
     return res
 
 
+def office_unassigned(path: Path, md_path: Path) -> list[tuple[int, str]]:
+    """Fehlende Zellen bzw. Absaetze aus Office-Quellen — Nachtrag wie beim PDF."""
+    out = markdown_tokens(md_path)
+    budget = Counter(out)
+    stream = "".join(out)
+    picked: list[tuple[int, str]] = []
+    suffix = path.suffix.lower()
+
+    def consider(page_no: int, text: str) -> None:
+        toks = tokenize(text)
+        if not toks:
+            return
+        miss = [t for t in toks if budget[t] <= 0 and not (len(t) > 3 and t in stream)]
+        for t in toks:
+            budget[t] -= 1
+        if miss:
+            picked.append((page_no, " ".join(text.split())))
+
+    if suffix in (".xlsx", ".xlsm"):
+        from openpyxl import load_workbook
+
+        wb = load_workbook(path, read_only=True, data_only=True)
+        try:
+            for i, ws in enumerate(wb.worksheets, 1):
+                for row in ws.iter_rows(values_only=True):
+                    cells = [str(c) for c in row if c is not None]
+                    if cells:
+                        consider(i, " | ".join(cells))
+        finally:
+            wb.close()
+    elif suffix == ".docx":
+        from docx import Document as DocxDocument
+
+        for para in DocxDocument(str(path)).paragraphs:
+            if para.text.strip():
+                consider(1, para.text)
+    elif suffix == ".pptx":
+        from pptx import Presentation
+
+        for i, slide in enumerate(Presentation(str(path)).slides, 1):
+            for shape in slide.shapes:
+                if shape.has_text_frame and shape.text_frame.text.strip():
+                    consider(i, shape.text_frame.text)
+    return picked
+
+
 def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
     """Zeilen des Quell-PDFs, deren Text im Extrakt fehlt — seitenweise.
 
@@ -202,11 +316,13 @@ def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
     res = verify(pdf_path, md_path)
     if res.note or not res.missing_tokens:
         return []
+    if pdf_path.suffix.lower() != ".pdf":
+        return office_unassigned(pdf_path, md_path)
 
     out = markdown_tokens(md_path)
     stream = "".join(out)
     missing: Counter[str] = Counter()
-    pages, _ = pdf_pages(pdf_path)
+    pages, _ = source_pages(pdf_path)
     budget = Counter(out)
     for toks in pages.values():
         for i, tok in enumerate(toks):
@@ -250,7 +366,7 @@ def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
 @click.argument("extract_md", type=click.Path(exists=True, dir_okay=False))
 @click.option("--source", required=True, type=click.Path(exists=True, dir_okay=False),
-              help="Quell-PDF, aus dem der Extrakt erzeugt wurde.")
+              help="Quelldatei, aus der der Extrakt erzeugt wurde (PDF, XLSX, DOCX, PPTX).")
 @click.option("--min-coverage", default=99.5, show_default=True,
               help="Geforderte Wortdeckung in Prozent; darunter Exit-Code 1.")
 @click.option("--show-missing", default=25, show_default=True,
