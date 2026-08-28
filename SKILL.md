@@ -234,8 +234,30 @@ gilt: nennbar als „kommende Fassung ab <Datum>", nie als geltende Anforderung.
 7. Steht in der Front-Matter `extraction_status: warn`, lies die `warnings`.
    Bei Tabellenwarnungen gilt: Tabelleninhalte vor dem Zitat gegen die Quelle
    prüfen oder als unsicher kennzeichnen.
-5. Versionsstände (Edition, Fassung, Datum) nimmst du aus dem Dokument selbst,
+8. Versionsstände (Edition, Fassung, Datum) nimmst du aus dem Dokument selbst,
    nie aus dem Dateinamen.
+9. Steht `deckung_pruefbar: false` oder der Warnblock „Maschinell gelesen", ist
+   der Text **OCR und damit erzeugt, nicht extrahiert** — siehe unten.
+
+### Gescannte Dokumente: erzeugter Text, kein Wortlaut
+
+Ein PDF ohne Textlayer enthält keine Zeichen, sondern Bilder von Zeichen.
+Docling liest sie per OCR. Das Ergebnis ist brauchbar zum Suchen, Überblicken
+und Verweisen — aber es ist **erzeugter Text**, und das ändert, was du damit
+tun darfst:
+
+- Es gibt **keine Wortdeckung**. Nicht "0 %", sondern keine: es existiert
+  nichts, wogegen sich prüfen ließe. Die Vaultnotiz trägt deshalb
+  `text_coverage_percent: null` und `deckung_pruefbar: false` statt einer Zahl.
+- **Lesefehler fallen nicht auf.** Ein falsch erkanntes "rn" statt "m" oder eine
+  vertauschte Ziffer in einer Kontrollnummer sieht aus wie gültiger Text. Bei
+  einem Extrakt mit Textlayer würde die Deckungsprüfung anschlagen; hier nicht.
+- **Zitiere daraus nicht wörtlich.** Für ein Zitat gehst du ins Original. Im
+  Fließtext kennzeichnest du die Herkunft: "sinngemäß nach `<slug>` (OCR)".
+
+Diese Dokumente sind Teil des Bestands, aber sie tragen nicht dieselbe
+Zusicherung wie der Rest. Die Unterscheidung darf nicht verwischen — sonst
+wandert maschinell geratener Text als belegter Normwortlaut in ein Audit.
 
 ## Was du nicht tust
 
@@ -253,6 +275,7 @@ gilt: nennbar als „kommende Fassung ab <Datum>", nie als geltende Anforderung.
 | `Docling ist nicht installiert` | Umgebung frisch | `pip install -r requirements.txt` |
 | `Docling-Modelle nicht verfügbar (403 …)` | kein Zugriff auf huggingface.co | `docling-tools models download -o ./docling-models`, dann `--models-dir ./docling-models`. Betrifft nur PDF/Bild — DOCX/XLSX/HTML laufen ohne Modelle. |
 | Warnung "Zeichen/Seite" | gescanntes PDF | `python extract.py datei.pdf --ocr on --force` |
+| `Docling-Modelle nicht verfügbar (… modelscope.cn … .pth)` | **nicht** fehlende Modelle: RapidOCRs ONNX-Modelle liegen im Paket `rapidocr`. Ohne `onnxruntime` fällt RapidOCR auf das Torch-Backend zurück und lädt `.pth`-Gewichte von modelscope.cn — dort meist gesperrt | `pip install onnxruntime`. Danach läuft OCR offline, ohne jeden Download |
 | Warnung "Keine Überschriften erkannt" | flaches Layout | Zitate über Seitenmarker statt Gliederung belegen |
 | Warnung "inkonsistente Spaltenstruktur" | Tabelle unsicher rekonstruiert | Tabellenwerte nicht als Fakt zitieren, Quelle prüfen |
 | Warnung "Wortdeckung nur X %" | Text der Quelle fehlt im Extrakt | `--ocr on --force`; bleibt es dabei, betroffene Seiten nicht zitieren und melden |
@@ -336,3 +359,30 @@ output/       *.md  ← einzige zulässige Textquelle
               manifest.json   Hashes, Seitenzahlen, Warnungen pro Lauf
               acsos.db        SQLite-FTS5-Index
 ```
+
+## Quellen, die der Drive-Connector nicht liefert
+
+Der Connector überträgt base64-kodiert. Das bläht den Umfang um rund ein
+Drittel und lässt Dateien ab etwa 7 MB mit `session expired` scheitern — die
+Meldung nennt eine Sitzung, gemeint ist die Größe. Für solche Dateien:
+
+```bash
+python fetch_drive.py <file-id> --name <Dateiname.pdf> \
+       --expect-bytes <Groesse laut Drive-Metadaten>
+```
+
+Voraussetzung ist eine **befristete** Linkfreigabe der Datei. Dazu drei Dinge,
+die in dieser Reihenfolge zusammengehören:
+
+1. **Einzeln freigeben, nicht den Ordner.** Eine Ordnerfreigabe vererbt sich auf
+   alles darin — im GRC-Bestand also auch auf lizenzierten Normtext, dessen
+   Weitergabe an Dritte vertraglich ausgeschlossen ist (ENX/TISAX). Prüfe vor
+   dem Bezug mit `get_file_permissions`, was tatsächlich offen steht.
+2. **Sofort zurücknehmen.** Das Skript erinnert nach jedem Lauf daran.
+3. **Bytes prüfen.** Ohne `--expect-bytes` meldet das Skript den Bezug
+   ausdrücklich als ungeprüft. Eine Datei, deren Größe nicht zu den
+   Drive-Metadaten passt, gehört nicht in den Bestand.
+
+Liefert Google die Anmeldeseite, bricht das Skript ab, statt HTML als
+vermeintliches Dokument abzulegen. Ab etwa 25 MB schiebt Google eine
+Virenscan-Bestätigung vor den Download; die beantwortet das Skript selbst.
