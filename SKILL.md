@@ -139,6 +139,19 @@ nicht maschinell prüfbar war. Bei **manuell prüfen** oder **Quelle offline** i
 der Stand ungeprüft — dann kennzeichne die Aussage als „Stand des vorliegenden
 Dokuments". Rate nie aus dem Gedächtnis, welche Fassung aktuell ist.
 
+### Neueste Fassung ist nicht immer die geltende
+
+Eine veröffentlichte Fassung kann ein Stichtag in der Zukunft haben. **Maßgeblich
+ist, was heute gilt, nicht was zuletzt erschienen ist.** Beispiel aus dem
+Bestand: VDA ISA 2027 erschien am 01.07.2026, gilt aber erst für Assessments ab
+dem 01.01.2027 — bis dahin ist ISA 6.0.2 die geltende Fassung, obwohl sie älter
+ist. Wer hier die neuere zitiert, sagt einem Kunden das Falsche über sein
+laufendes Assessment.
+
+Steht in der Registry eine `anmerkung` mit einem Stichtag, lies sie, bevor du
+die Fassung als geltend bezeichnest. Für noch nicht in Kraft getretene Fassungen
+gilt: nennbar als „kommende Fassung ab <Datum>", nie als geltende Anforderung.
+
 ## Pflichten beim Zitieren
 
 1. Zitiere wörtlich aus `output/`. Formuliere Normtext nicht um und ergänze ihn nicht.

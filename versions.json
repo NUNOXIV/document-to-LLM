@@ -105,7 +105,7 @@
       "titel": "VDA ISA (TISAX)",
       "dokument_version": "6.0.2",
       "quelle": "https://portal.enx.com/de-DE/TISAX/downloads/",
-      "anmerkung": "Fassung aus der lizenzierten Arbeitsmappe gelesen. Das ENX-Portal verlangt eine Anmeldung; neuere ISA-Releases sind dort manuell zu pruefen.",
+      "anmerkung": "Fassung aus der lizenzierten Arbeitsmappe gelesen. Das ENX-Portal verlangt eine Anmeldung; neuere ISA-Releases sind dort manuell zu pruefen. GELTEND fuer Assessments bis 31.12.2026. Nachfolger ist VDA ISA 2027 (veroeffentlicht 01.07.2026), der fuer Assessments ab 01.01.2027 gilt und als tisax-isa2027-en im Bestand liegt — bis dahin ist 6.0.2 die massgebliche Fassung, ISA 2027 also kein Grund, diese als veraltet zu behandeln.",
       "dokument_muster": "(6\\.0\\.[0-9])"
     },
     "version-und-lizenz": {
@@ -113,6 +113,13 @@
       "dokument_version": "1.1.0",
       "quelle": "https://www.bsi.bund.de/dok/c5",
       "dokument_muster": "version: '([0-9]+\\.[0-9]+\\.[0-9]+)'"
+    },
+    "tisax-isa2027-en": {
+      "titel": "VDA ISA 2027 (TISAX, Nachfolgefassung)",
+      "dokument_version": "2027",
+      "quelle": "https://portal.enx.com/de-DE/TISAX/downloads/",
+      "anmerkung": "Veroeffentlicht 01.07.2026, GILT ERST fuer Assessments ab 01.01.2027. Der VDA ist auf jahresbasierte Versionsnamen gewechselt (kein ISA 7.0). Gegen 6.0.2: Kriterium 6.1.3 neu, 1.2.4 entfallen, Prototypenschutz vollstaendig neu strukturiert. Bis zum Stichtag NICHT als geltende Anforderung zitieren — dafuer gilt ISA 6.0.2.",
+      "dokument_muster": "Version:\\s*(2027)"
     }
   }
 }
