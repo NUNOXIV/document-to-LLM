@@ -307,6 +307,9 @@ def test_text_passthrough() -> None:
         # .yml gilt als unterstuetzt, laeuft aber nicht ueber Docling.
         check("Suffix unterstuetzt", ".yml" in extract.SUPPORTED_SUFFIXES)
         check("nicht im Docling-Pfad", ".yml" not in extract.DOCLING_SUFFIXES)
+        # .mm (FreeMind-Mindmap) ist XML und laeuft ueber denselben Pfad.
+        check("mm unterstuetzt", ".mm" in extract.SUPPORTED_SUFFIXES)
+        check("mm als XML eingezaeunt", extract.TEXT_FENCE_LANG[".mm"] == "xml")
 
         out = d / "out"
         res = extract.convert_file(

@@ -48,7 +48,7 @@ python extract.py input/ --recursive --json
 Ergebnis: `output/<slug>.md` mit YAML-Front-Matter (Quell-Hash, Seitenzahl,
 Docling-Version, Wortdeckung, Warnungen) und `<!-- page: N -->` Markern im Text.
 
-**Formate ohne Docling-Reader (`.yml`, `.yaml`, `.json`, `.xml`, `.txt`)** — etwa der
+**Formate ohne Docling-Reader (`.yml`, `.yaml`, `.json`, `.xml`, `.mm`, `.txt`)** — etwa der
 maschinenlesbare C5:2026-Kriterienkatalog — laufen nicht durch Docling, sondern
 werden **wörtlich** in einen Codeblock übernommen. Das Front-Matter sagt das
 offen: `converter: "ACSOS Passthrough (wörtlich, kein Parser)"` und

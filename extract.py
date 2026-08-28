@@ -40,11 +40,13 @@ DOCLING_SUFFIXES = {
 # Sie werden woertlich uebernommen statt geparst: ein selbst geschriebener
 # YAML-/JSON-Parser waere genau die Fehlerquelle, die dieses Werkzeug vermeidet.
 # Der Zeichenbestand bleibt dadurch exakt erhalten.
-TEXT_SUFFIXES = {".yml", ".yaml", ".json", ".txt", ".xml"}
+# .mm ist FreeMind/Freeplane — eine XML-Mindmap. Sie kommt hier als
+# Strukturuebersicht des IT-Grundschutz-Kompendiums vor.
+TEXT_SUFFIXES = {".yml", ".yaml", ".json", ".txt", ".xml", ".mm"}
 
 TEXT_FENCE_LANG = {
     ".yml": "yaml", ".yaml": "yaml", ".json": "json", ".txt": "text",
-    ".xml": "xml",
+    ".xml": "xml", ".mm": "xml",
 }
 
 SUPPORTED_SUFFIXES = DOCLING_SUFFIXES | TEXT_SUFFIXES
