@@ -613,6 +613,7 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
     nennt die geltende Fassung. Loeschen wuerde die Frage "was stand da frueher"
     unbeantwortbar machen.
     """
+    deckung = str(meta.get('text_coverage_percent', '') or '').strip()
     slug = md_path.stem
     full_dir = vault / LICENSED_DIR / "dokumente"
     full = full_dir / f"{slug} (Volltext).md"
@@ -626,7 +627,8 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
         f"source_file: {esc(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
-        f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
+        (f"text_coverage_percent: {deckung}" if deckung
+         else "text_coverage_percent: null\ndeckung_pruefbar: false"),
         *(["status: historisch", f"superseded_by: {superseded_by}"] if superseded_by else []),
         ('tags: ["grc/dokument/volltext", "grc/historisch"]' if superseded_by
          else 'tags: ["grc/dokument/volltext"]'),
@@ -640,7 +642,8 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
         f"source_file: {esc(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
-        f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
+        (f"text_coverage_percent: {deckung}" if deckung
+         else "text_coverage_percent: null\ndeckung_pruefbar: false"),
         f"converter: {esc(meta.get('converter', ''))}",
         "licensed: true",
         ('tags: ["grc/handbuch", "grc/dokument", "grc/historisch"]' if superseded_by
@@ -655,10 +658,18 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
            "> Vergangenheit, fuer Aenderungsnachweise und um Abweichungen zur neuen",
            "> Fassung belegen zu koennen. Fuer jede Aussage ueber den geltenden Stand",
            f"> ist `{superseded_by}` massgeblich.", ""] if superseded_by else []),
-        "> [!info] Aufnahme",
-        f"> Quelle `{meta.get('source_file', '')}`, {meta.get('pages', '?')} Seiten, "
-        f"Wortdeckung {meta.get('text_coverage_percent', '—')} %. "
-        f"Extrahiert mit {meta.get('converter', 'IBM Docling')}.",
+        *(["> [!info] Aufnahme",
+           f"> Quelle `{meta.get('source_file', '')}`, {meta.get('pages', '?')} Seiten, "
+           f"Wortdeckung {deckung} %. "
+           f"Extrahiert mit {meta.get('converter', 'IBM Docling')}."] if deckung else
+          ["> [!warning] Maschinell gelesen, nicht woertlich extrahiert",
+           f"> Quelle `{meta.get('source_file', '')}`, {meta.get('pages', '?')} Seiten, "
+           f"gelesen mit {meta.get('converter', 'IBM Docling')} und OCR.",
+           "> Das PDF traegt keinen Textlayer. Der Text stammt damit aus der",
+           "> Zeichenerkennung, nicht aus der Datei — er ist **erzeugt, nicht",
+           "> extrahiert**. Eine Wortdeckung laesst sich nicht berechnen, weil es",
+           "> nichts gibt, wogegen zu pruefen waere. Lesefehler sind moeglich und",
+           "> faellen nicht auf. Fuer woertliche Zitate das Original heranziehen."]),
         "",
         "## Volltext",
         "",

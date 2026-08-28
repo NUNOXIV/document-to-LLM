@@ -571,3 +571,40 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+def test_document_note_ohne_pruefbare_deckung(tmp_path: Path) -> None:
+    """Ein Scan ohne Textlayer darf nicht wie ein geprueftes Dokument aussehen.
+
+    Frueher stand in der Notiz "Wortdeckung — %": das liest sich wie ein
+    Formatierungsfehler, nicht wie eine Aussage. Genau hier muss aber stehen,
+    dass der Text aus der Zeichenerkennung stammt und niemand ihn gegen ein
+    Original gehalten hat — sonst wandert OCR-Text als belegter Wortlaut in
+    ein Audit.
+    """
+    import publish
+
+    vault = tmp_path / "vault"
+    (vault / "GRC" / "Handbuch").mkdir(parents=True)
+    (vault / publish.LICENSED_DIR / "dokumente").mkdir(parents=True)
+    md = tmp_path / "scan-ohne-textlayer.md"
+    md.write_text("# Titel\n\nText aus OCR.\n", encoding="utf-8")
+
+    meta = {"source_file": "Scan.pdf", "source_sha256": "abc", "pages": "14",
+            "text_coverage_percent": "", "converter": "IBM Docling 2.123.0"}
+    note, _ = publish.document_notes(md, vault, meta, "Text aus OCR.",
+                                     "Titel", "Autor", "Foliensatz", False)
+    t = note.read_text(encoding="utf-8")
+    assert "Wortdeckung —" not in t, "kein Strich als Scheinwert"
+    assert "Maschinell gelesen" in t, "Warnhinweis fehlt"
+    assert "laesst sich nicht berechnen" in t
+    assert "text_coverage_percent: null" in t
+    assert "deckung_pruefbar: false" in t
+    assert "erzeugt, nicht" in t and "extrahiert" in t
+
+    meta["text_coverage_percent"] = "100.0"
+    note2, _ = publish.document_notes(md, vault, meta, "Text.",
+                                      "Titel2", "Autor", "Fachbuch", False)
+    t2 = note2.read_text(encoding="utf-8")
+    assert "Wortdeckung 100.0 %" in t2
+    assert "deckung_pruefbar" not in t2
