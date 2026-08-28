@@ -129,6 +129,19 @@ def block_for(doc: Doc) -> str:
     return "\n".join(lines)
 
 
+def vault_exceptions() -> list[dict]:
+    """Bewusst nicht in den Vault uebernommene Extrakte, aus mappings/ gelesen.
+
+    Die Datei wird geschrieben, nicht erzeugt: eine Entscheidung, etwas nicht
+    abzulegen, ist eine Aussage und darf beim Neuerzeugen des Protokolls nicht
+    verschwinden.
+    """
+    path = Path(__file__).parent / "mappings" / "vault-ausnahmen.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8")).get("ausnahmen", [])
+
+
 def render(docs: list[Doc], vault: Path | None) -> str:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     complete = [d for d in docs if d.coverage is not None and d.coverage >= 100.0]
@@ -177,6 +190,18 @@ def render(docs: list[Doc], vault: Path | None) -> str:
                     "| Framework | Normtext-Notizen |", "| --- | ---: |"]
             for fw, n in sorted(counts.items()):
                 out.append(f"| {fw} | {n} |")
+
+    ausnahmen = vault_exceptions()
+    if ausnahmen:
+        out += ["", "## Bewusst nicht im Vault", "",
+                "Diese Extrakte sind aufgenommen und geprueft, werden aber nicht "
+                "als Vault-Notiz abgelegt. Der Grund steht dabei — nicht abgelegt "
+                "ist nicht dasselbe wie nicht vorhanden.", ""]
+        for a in ausnahmen:
+            treffer = [d.slug for d in docs if re.fullmatch(a.get("muster", ""), d.slug)]
+            out += [f"- **{len(treffer)} Extrakt(e)** (`{a.get('muster', '')}`): "
+                    f"{a.get('grund', '')}"]
+        out.append("")
 
     out += ["", "## Je Dokument", ""]
     for d in sorted(docs, key=lambda x: x.slug):
