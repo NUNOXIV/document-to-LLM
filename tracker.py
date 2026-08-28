@@ -129,6 +129,19 @@ def block_for(doc: Doc) -> str:
     return "\n".join(lines)
 
 
+def not_ingested() -> list[dict]:
+    """Quellen, die technisch nicht aufgenommen werden konnten, mit Grund.
+
+    Gehoert ins Protokoll: sonst sieht der Bestand vollstaendig aus, obwohl
+    etwas fehlt, und niemand kann pruefen, ob der Grund noch gilt.
+    """
+    path = Path(__file__).parent / "mappings" / "vault-ausnahmen.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("nicht_aufgenommen", {}).get("eintraege", [])
+
+
 def vault_exceptions() -> list[dict]:
     """Bewusst nicht in den Vault uebernommene Extrakte, aus mappings/ gelesen.
 
@@ -213,6 +226,16 @@ def render(docs: list[Doc], vault: Path | None) -> str:
             # toter Beleg — das gehoert benannt, nicht stillschweigend gedruckt.
             mark = lambda s: s if s in bekannt else f"{s} ⚠ nicht im Bestand"
             out.append(f"| {mark(slug)} | {mark(neu)} | {a.get('grund', '')} |")
+        out.append("")
+
+    fehlend = not_ingested()
+    if fehlend:
+        out += ["", "## Nicht aufgenommen", "",
+                "Quellen aus dem Drive-Ordner, die der Zugangsweg nicht hergibt. "
+                "Kein Versaeumnis, aber auch keine Vollstaendigkeit — hier steht, "
+                "was fehlt und warum.", ""]
+        for e in fehlend:
+            out.append(f"- **{e.get('datei', '?')}**: {e.get('grund', '')}")
         out.append("")
 
     ausnahmen = vault_exceptions()

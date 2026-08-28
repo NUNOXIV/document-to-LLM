@@ -13,5 +13,30 @@
       "muster": "^einzeln-docx-.*$",
       "grund": "Bausteine als DOCX aus EU_LEX/Einzeln_DOCX. Inhaltsgleich mit den bereits aufgenommenen Baustein-PDFs; auf Entscheidung des Auftraggebers ausgelassen. Die Bausteine liegen als PDF vor."
     }
-  ]
+  ],
+  "nicht_aufgenommen": {
+    "hinweis": "Quellen aus dem Drive-Ordner, die technisch nicht aufgenommen werden konnten. Kein Versaeumnis, sondern eine Grenze des Zugangswegs — hier festgehalten, damit sie nicht als Luecke im Bestand missverstanden wird.",
+    "eintraege": [
+      {
+        "datei": "TISAX-Teilnehmerhandbuch.pdf",
+        "groesse_bytes": 7674670,
+        "grund": "Der Drive-Connector uebertraegt base64-kodiert, was den Umfang um ein Drittel erhoeht (hier rund 10,2 MB). Sieben Versuche brachen mit 'session expired' ab, waehrend kleinere Dateien dazwischen fehlerfrei liefen. Die groesste erfolgreich geladene Datei mass 5,86 MB; die praktische Grenze liegt also unter den nominellen 10 MB."
+      },
+      {
+        "datei": "758080161-ISO-42001.pdf",
+        "groesse_bytes": 16000000,
+        "grund": "Ueber der Groessengrenze des Connectors. Die Norm ISO/IEC 42001 liegt als ISO-42001.pdf im Bestand; diese Datei ist eine zweite, groessere Fassung derselben Norm."
+      },
+      {
+        "datei": "CISM-Buecher (6 Titel) und CISM_Strategic_Blueprint.pdf",
+        "groesse_bytes": 40275061,
+        "grund": "19 bis 40 MB je Band, deutlich ueber der Groessengrenze. Kleinere CISM-Materialien (Review Manual Preview, Practice Exams, Training Certificate) sind aufgenommen."
+      },
+      {
+        "datei": "Medien: mp4, m4a, epub, png",
+        "groesse_bytes": 0,
+        "grund": "Formate ohne extrahierbaren Textlayer. Docling bringt keinen Reader mit, und ein Transkript waere erzeugter, nicht extrahierter Text — das widerspraeche der Zusicherung, dass jeder Extrakt woertlich aus der Quelle stammt."
+      }
+    ]
+  }
 }
