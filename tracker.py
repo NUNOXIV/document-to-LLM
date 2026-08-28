@@ -47,6 +47,10 @@ class Doc:
             return "kein Textlayer"
         if self.coverage >= 100.0:
             return "vollstaendig"
+        # Der Fehlbetrag ist nur dann wirklich verloren, wenn --repair ihn nicht
+        # woertlich nachgetragen hat. Sonst steht er im Abschnitt "Nachtrag".
+        if self.appended:
+            return "Rest woertlich angehaengt"
         if self.coverage >= 99.5:
             return "Rest fehlt"
         return "unvollstaendig"
@@ -129,6 +133,9 @@ def render(docs: list[Doc], vault: Path | None) -> str:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     complete = [d for d in docs if d.coverage is not None and d.coverage >= 100.0]
     partial = [d for d in docs if d.coverage is not None and d.coverage < 100.0]
+    # Fehlbetrag, den --repair woertlich nachgetragen hat, ist nicht verloren.
+    repaired = [d for d in partial if d.appended]
+    lost = [d for d in partial if not d.appended]
     unchecked = [d for d in docs if d.coverage is None]
 
     out = [
@@ -147,7 +154,9 @@ def render(docs: list[Doc], vault: Path | None) -> str:
         "## Bilanz",
         "",
         f"- **{len(complete)} von {len(docs)}** Dokumenten mit 100,0 % Wortdeckung",
-        f"- {len(partial)} mit fehlendem Text" if partial else "- kein Dokument mit fehlendem Text",
+        f"- {len(repaired)} mit woertlich nachgetragenem Rest (Abschnitt \"Nachtrag\")"
+        if repaired else "- kein Dokument mit nachgetragenem Rest",
+        f"- {len(lost)} mit fehlendem Text" if lost else "- kein Dokument mit fehlendem Text",
         f"- {len(unchecked)} ohne pruefbaren Textlayer (Office-Format oder Scan)"
         if unchecked else "- alle Quellen hatten einen pruefbaren Textlayer",
         "",
