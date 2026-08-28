@@ -1,0 +1,6 @@
+{
+  "hinweis": "Zuordnung Framework -> Registryeintrag fuer die Ausgabenbezeichnung, noetig wo der Extrakt selbst nicht in versions.json steht. Der C5-Katalog verteilt sich auf 18 Kriterienbereiche; seine Fassung steht in einer 19. Datei (Version-und-Lizenz.yml). Ohne diese Zeile bliebe 'edition' im Export leer, obwohl die Angabe vorliegt.",
+  "edition_slug": {
+    "bsi-c5": "version-und-lizenz"
+  }
+}

@@ -422,6 +422,79 @@ def export_json(framework: str, slug: str, meta: dict[str, str],
     }, ensure_ascii=False, indent=2) + "\n"
 
 
+def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, str],
+                           framework: str) -> dict[str, Section]:
+    """Je Anforderungs-ID den Abschnitt aus dem Extrakt — oder nichts.
+
+    Die Reihenfolge der Versuche ist die Reihenfolge der Verlaesslichkeit:
+    gepruefte Kreuzreferenz, Ueberschrift oder Tabellenzeile, Absatz aus einem
+    Artikel, Textanker, Inline-Fund, zuletzt Zusammensetzung aus Unterpunkten.
+    Was hier fehlt, steht nicht im Dokument — ergaenzt wird nichts.
+
+    Herausgeloest aus main(), damit der JSON-Export dieselbe Aufloesung nutzt
+    wie die Vault-Notizen und beide nicht auseinanderlaufen koennen.
+    """
+    found = sections_from_headings(body)
+    found.update(sections_from_tables(body))
+    found.update(sections_from_yaml(body, meta))
+    anchored = sections_by_anchor(body, wanted)
+    crosswalk = load_crosswalk(framework)
+    out: dict[str, Section] = {}
+
+    for ident in sorted(wanted):
+        sec = None
+        if ident in crosswalk:
+            sec = section_at_anchor(body, ident, crosswalk[ident], wanted[ident])
+            if sec:
+                out[ident] = sec
+                continue
+
+        for variant in id_variants(ident):
+            sec = found.get(norm_key(variant))
+            if sec and sec.text.strip():
+                break
+            sec = None
+
+        # Absatz-IDs wie Art.20.1: Artikel holen, Absatz herausloesen.
+        if sec is None:
+            pm = re.match(r"^(.*)\.([0-9]+|[a-z])$", ident)
+            if pm:
+                for variant in id_variants(pm.group(1)):
+                    parent = found.get(norm_key(variant)) or anchored.get(pm.group(1))
+                    if parent and parent.text.strip():
+                        para = paragraph_of(parent.text, pm.group(2))
+                        if para:
+                            sec = Section(ident, parent.title, para, parent.page)
+                        break
+
+        if sec is None or not sec.text.strip():
+            sec = anchored.get(ident)
+        if sec is None or not sec.text.strip():
+            sec = inline_section(body, ident, wanted[ident])
+        # Gruppen-IDs ohne eigenen Text (PO ueber PO.1.x, CIS-Kategorie 13 ueber
+        # 13.1 ...) aus ihren Unterpunkten zusammensetzen.
+        if sec is None or not sec.text.strip():
+            kids = sorted(k for k in wanted
+                          if k != ident and re.match(rf"^{re.escape(ident)}[.\-]", k))
+            parts = []
+            for k in kids:
+                child = found.get(norm_key(k)) or anchored.get(k)
+                if child and child.text.strip():
+                    parts.append(f"### {k} {child.title}".rstrip() + f"\n\n{child.text}")
+            if parts:
+                first = found.get(norm_key(kids[0])) or anchored.get(kids[0])
+                sec = Section(ident, wanted[ident], "\n\n".join(parts),
+                              first.page if first else 0)
+
+        if sec is None or not sec.text.strip():
+            continue
+        if not sec.title and wanted[ident]:
+            sec = Section(ident, wanted[ident], sec.text, sec.page)
+        out[ident] = sec
+
+    return out
+
+
 def vault_ids(vault: Path, framework: str) -> dict[str, str]:
     """IDs und Titel der Anforderungsnotizen des Frameworks aus dem Vault."""
     folder = vault / "GRC" / "Frameworks" / framework
@@ -667,74 +740,15 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
     if not wanted:
         raise click.ClickException(f"Keine Anforderungsnotizen fuer {framework} im Vault gefunden.")
 
-    found = sections_from_headings(body)
-    found.update(sections_from_tables(body))
-    found.update(sections_from_yaml(body, meta))
-    anchored = sections_by_anchor(body, wanted)
-    crosswalk = load_crosswalk(framework)
+    aufgeloest = aufgeloeste_abschnitte(body, meta, wanted, framework)
 
     target_dir = vault_path / LICENSED_DIR / framework
     written, missing, skipped = [], [], []
-    aufgeloest: dict[str, Section] = {}     # fuer den JSON-Export
-
     for ident in sorted(wanted):
-        sec = None
-        if ident in crosswalk:
-            sec = section_at_anchor(body, ident, crosswalk[ident], wanted[ident])
-            if sec:
-                target = target_dir / f"{framework} {ident} (Normtext).md"
-                if target.exists() and not overwrite:
-                    skipped.append(ident)
-                    continue
-                if not dry_run:
-                    target_dir.mkdir(parents=True, exist_ok=True)
-                    target.write_text(note_text(framework, ident, sec, meta), encoding="utf-8")
-                written.append(ident)
-                aufgeloest[ident] = sec
-                continue
-
-        for variant in id_variants(ident):
-            sec = found.get(norm_key(variant))
-            if sec and sec.text.strip():
-                break
-            sec = None
-
-        # Absatz-IDs wie Art.20.1: Artikel holen, Absatz herausloesen.
+        sec = aufgeloest.get(ident)
         if sec is None:
-            pm = re.match(r"^(.*)\.([0-9]+|[a-z])$", ident)
-            if pm:
-                for variant in id_variants(pm.group(1)):
-                    parent = found.get(norm_key(variant)) or anchored.get(pm.group(1))
-                    if parent and parent.text.strip():
-                        para = paragraph_of(parent.text, pm.group(2))
-                        if para:
-                            sec = Section(ident, parent.title, para, parent.page)
-                        break
-
-        if sec is None or not sec.text.strip():
-            sec = anchored.get(ident)
-        if sec is None or not sec.text.strip():
-            sec = inline_section(body, ident, wanted[ident])
-        # Gruppen-IDs ohne eigenen Text (PO ueber PO.1.x, CIS-Kategorie 13 ueber
-        # 13.1 ...) aus ihren Unterpunkten zusammensetzen.
-        if sec is None or not sec.text.strip():
-            kids = sorted(k for k in wanted
-                          if k != ident and re.match(rf"^{re.escape(ident)}[.\-]", k))
-            parts = []
-            for k in kids:
-                child = found.get(norm_key(k)) or anchored.get(k)
-                if child and child.text.strip():
-                    parts.append(f"### {k} {child.title}".rstrip() + f"\n\n{child.text}")
-            if parts:
-                first = found.get(norm_key(kids[0])) or anchored.get(kids[0])
-                sec = Section(ident, wanted[ident], "\n\n".join(parts),
-                              first.page if first else 0)
-
-        if sec is None or not sec.text.strip():
             missing.append(ident)
             continue
-        if not sec.title and wanted[ident]:
-            sec = Section(ident, wanted[ident], sec.text, sec.page)
         target = target_dir / f"{framework} {ident} (Normtext).md"
         if target.exists() and not overwrite:
             skipped.append(ident)
@@ -743,7 +757,6 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
             target_dir.mkdir(parents=True, exist_ok=True)
             target.write_text(note_text(framework, ident, sec, meta), encoding="utf-8")
         written.append(ident)
-        aufgeloest[ident] = sec
 
     withdrawn: list[str] = []
     if mark_withdrawn and missing:

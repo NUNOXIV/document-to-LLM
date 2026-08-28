@@ -146,6 +146,20 @@ nicht still auf einen Teilbestand zurück.
 ### Anforderungen je Framework rechenfertig exportieren
 
 ```bash
+python export.py --vault <vault> --to export/        # alle Frameworks auf einmal
+python export.py --vault <vault> --only iso27001-2022
+```
+
+Welcher Extrakt ein Framework belegt hat, wird **nicht gepflegt, sondern
+gelesen**: jede Normtext-Notiz im Vault nennt ihre Quelle. Eine gepflegte Liste
+könnte veralten, diese Ableitung nicht. Frameworks, die sich auf mehrere
+Quellen verteilen (der C5-Katalog liegt als eine Datei je Kriterienbereich vor),
+werden zu einer Datei zusammengeführt — einzeln exportiert meldete jeder Teil
+die Anforderungen der anderen 17 als fehlend.
+
+Für ein einzelnes Dokument geht es auch direkt:
+
+```bash
 python publish.py output/<slug>.md --vault <vault> --framework <framework> \
     --dry-run --export-json export/<framework>.json
 ```
