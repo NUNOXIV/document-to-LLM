@@ -526,12 +526,40 @@ def test_korpus_json() -> None:
           d["documents"][0]["befund"])
 
 
+
+def test_export_json() -> None:
+    """Anforderungs-Export in der Form, die ein rechnendes System erwartet."""
+    print("\ntest_export_json")
+    import json as J
+    g = publish.gruppe
+    check("A.5.1 -> A.5", g("A.5.1") == "A.5", g("A.5.1"))
+    check("APP.1.1.A1 -> APP.1.1", g("APP.1.1.A1") == "APP.1.1", g("APP.1.1.A1"))
+    check("AM-01.01B -> AM-01", g("AM-01.01B") == "AM-01", g("AM-01.01B"))
+    check("GC-01 -> GC", g("GC-01") == "GC", g("GC-01"))
+    check("ohne Gliederung leer", g("PO") == "", g("PO"))
+
+    treffer = {"A.5.1": publish.Section("A.5.1", "Policies", "Wortlaut.", 12)}
+    d = J.loads(publish.export_json("iso27001-2022", "unbekannt",
+                                    {"source_file": "n.pdf", "source_sha256": "ab"},
+                                    treffer, ["A.5.2"]))
+    check("Pflichtfelder vorhanden",
+          set(d) >= {"frameworkId", "edition", "sourceFile", "sourceSha256",
+                     "requirements", "missing"}, str(sorted(d)))
+    r = d["requirements"][0]
+    check("Anforderung vollstaendig",
+          r == {"id": "A.5.1", "title": "Policies", "text": "Wortlaut.", "group": "A.5"}, str(r))
+    # Nicht aufgeloeste IDs duerfen nicht als Anforderung ohne Wortlaut erscheinen.
+    check("Luecke getrennt gefuehrt", d["missing"] == ["A.5.2"]
+          and all(x["text"] for x in d["requirements"]), str(d["missing"]))
+    check("keine Ausgabe erfunden", d["edition"] is None, str(d["edition"]))
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
                test_pipeline_options, test_verify, test_repair, test_office_verify,
                test_broken_ooxml_styles, test_text_passthrough,
                test_yaml_catalogue, test_gs_struktur,
-               test_versioncheck_historie, test_fts5_query, test_korpus_json):
+               test_versioncheck_historie, test_fts5_query, test_korpus_json, test_export_json):
         fn()
     print()
     if failures:

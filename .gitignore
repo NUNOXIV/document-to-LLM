@@ -227,3 +227,6 @@ input/*
 !input/.gitkeep
 output/*
 !output/.gitkeep
+
+# Anforderungs-Exporte: abgeleiteter lizenzierter Normtext, bleibt lokal.
+export/

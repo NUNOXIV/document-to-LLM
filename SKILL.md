@@ -143,6 +143,34 @@ Erzeugt mit `extract.py --json` bzw. `tracker.py --korpus output/_KORPUS.json`.
 wo gar keine liegt — ein verarbeitendes System muss also nicht raten und fällt
 nicht still auf einen Teilbestand zurück.
 
+### Anforderungen je Framework rechenfertig exportieren
+
+```bash
+python publish.py output/<slug>.md --vault <vault> --framework <framework> \
+    --dry-run --export-json export/<framework>.json
+```
+
+Ergibt genau die Form, mit der ein Rechensystem ohne Übersetzung arbeiten kann:
+
+```json
+{
+  "frameworkId": "iso27001-2022",
+  "edition": "ISO/IEC 27001 2022",
+  "sourceFile": "ISO-IEC-27001-2022.pdf",
+  "sourceSha256": "e739019c…",
+  "requirements": [
+    {"id": "A.5.1", "title": "…", "text": "<Wortlaut>", "group": "A.5"}
+  ],
+  "missing": []
+}
+```
+
+`group` wird aus der ID abgeleitet (`A.5.1` → `A.5`, `APP.1.1.A1` → `APP.1.1`,
+`AM-01.01B` → `AM-01`), `edition` aus `versions.json` — steht das Dokument dort
+nicht, bleibt das Feld `null` statt eine Ausgabe zu behaupten. IDs ohne
+gefundenen Wortlaut stehen unter **`missing`**, nicht als Anforderung mit leerem
+`text`: eine Lücke soll als Lücke sichtbar sein.
+
 **Größenordnung:** das JSON ist rund siebenmal so groß wie das Markdown
 (444 MB gegen 63 MB). Für die programmatische Verarbeitung ist es die richtige
 Wahl, für den Kontext eines Agenten nicht — dort kostet dieselbe Aussage ein

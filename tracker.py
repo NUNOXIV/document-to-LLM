@@ -228,6 +228,20 @@ def render(docs: list[Doc], vault: Path | None) -> str:
             out.append(f"| {mark(slug)} | {mark(neu)} | {a.get('grund', '')} |")
         out.append("")
 
+    nach_sha: dict[str, list[str]] = {}
+    for d in docs:
+        if d.sha256:
+            nach_sha.setdefault(d.sha256, []).append(d.slug)
+    doppelt = {s: sl for s, sl in nach_sha.items() if len(sl) > 1}
+    if doppelt:
+        out += ["", "## Dubletten", "",
+                "Dieselbe Quelle liegt unter mehreren Slugs im Bestand. Ein "
+                "rechnendes System zaehlt sie doppelt — einer der Extrakte "
+                "gehoert entfernt.", ""]
+        for sha, slugs in doppelt.items():
+            out.append(f"- `{sha[:16]}…`: " + ", ".join(f"`{s}`" for s in slugs))
+        out.append("")
+
     fehlend = not_ingested()
     if fehlend:
         out += ["", "## Nicht aufgenommen", "",
@@ -299,6 +313,16 @@ def korpus_json(docs: list[Doc], out_dir: Path) -> str:
             "converted_at": d.converted_at,
         })
     ohne = [e["slug"] for e in eintraege if not e["struktur_art"]]
+    # Zwei Extrakte mit derselben Quell-Pruefsumme sind dasselbe Dokument unter
+    # zwei Namen. Das passiert, wenn eine Quelle unter mehreren Dateinamen
+    # ankommt und die Deduplizierung erst nach der Konvertierung laeuft: input/
+    # ist dann bereinigt, der Extrakt bleibt liegen. Fuer ein rechnendes System
+    # waere das eine doppelt gezaehlte Norm.
+    nach_sha: dict[str, list[str]] = {}
+    for e in eintraege:
+        if e["source_sha256"]:
+            nach_sha.setdefault(e["source_sha256"], []).append(e["slug"])
+    dubletten = {s: sl for s, sl in nach_sha.items() if len(sl) > 1}
     return json.dumps({
         "format": "acsos-korpus/1",
         "hinweis": ("Bestandsregister der Extrakte. 'markdown' ist die verbindliche "
@@ -310,6 +334,7 @@ def korpus_json(docs: list[Doc], out_dir: Path) -> str:
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "documents_total": len(eintraege),
         "ohne_struktur_json": ohne,
+        "dubletten": dubletten,
         "documents": eintraege,
     }, ensure_ascii=False, indent=2) + "\n"
 

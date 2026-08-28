@@ -370,6 +370,58 @@ def section_at_anchor(body: str, ident: str, anchor: str, title: str) -> Section
     return Section(ident, title, text, page_at(body, line_start)) if text else None
 
 
+def gruppe(ident: str) -> str:
+    """Uebergeordnete Gliederungsebene einer Anforderungs-ID.
+
+    A.5.1 -> A.5, APP.1.1.A1 -> APP.1.1, AM-01.01B -> AM-01, GC-01 -> GC.
+    Abgeleitet aus der ID selbst, nicht geraten: die Konvention steckt in der
+    Nummerierung des jeweiligen Frameworks.
+    """
+    if "." in ident:
+        return ident.rsplit(".", 1)[0]
+    if "-" in ident:
+        return ident.split("-", 1)[0]
+    return ""
+
+
+def edition_aus_registry(slug: str) -> str | None:
+    """Bezeichnung der Ausgabe aus versions.json — oder None.
+
+    Erfunden wird nichts: steht das Dokument nicht in der Registry, bleibt das
+    Feld leer, statt eine Ausgabe zu behaupten.
+    """
+    path = Path(__file__).parent / "versions.json"
+    if not path.exists():
+        return None
+    eintrag = json.loads(path.read_text(encoding="utf-8")).get("documents", {}).get(slug)
+    if not eintrag:
+        return None
+    titel, fassung = eintrag.get("titel", ""), eintrag.get("dokument_version", "")
+    return f"{titel} {fassung}".strip() or None
+
+
+def export_json(framework: str, slug: str, meta: dict[str, str],
+                treffer: dict[str, Section], fehlend: list[str]) -> str:
+    """Anforderungen als JSON, in der Form, die ein rechnendes System erwartet.
+
+    Nicht aufgeloeste IDs stehen unter 'missing' statt mit leerem Text in
+    'requirements': ein Verarbeiter soll eine Luecke als Luecke sehen und nicht
+    als Anforderung ohne Wortlaut.
+    """
+    return json.dumps({
+        "frameworkId": framework,
+        "edition": edition_aus_registry(slug),
+        "sourceFile": meta.get("source_file", ""),
+        "sourceSha256": meta.get("source_sha256", ""),
+        "requirements": [
+            {"id": i, "title": treffer[i].title, "text": treffer[i].text,
+             "group": gruppe(i)}
+            for i in sorted(treffer)
+        ],
+        "missing": fehlend,
+    }, ensure_ascii=False, indent=2) + "\n"
+
+
 def vault_ids(vault: Path, framework: str) -> dict[str, str]:
     """IDs und Titel der Anforderungsnotizen des Frameworks aus dem Vault."""
     folder = vault / "GRC" / "Frameworks" / framework
@@ -575,12 +627,17 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
               help="IDs, die der Katalog nicht kennt, als 'entfallen' festhalten. "
                    "Nur bei maschinenlesbaren Katalogen (YAML) moeglich, weil nur "
                    "dort das Fehlen einer ID eine Aussage ist.")
+@click.option("--export-json", "export_ziel", default=None,
+              help="Anforderungen zusaetzlich als JSON schreiben (frameworkId, edition, "
+                   "sourceFile, sourceSha256, requirements[id,title,text,group]) — fuer "
+                   "Systeme, die damit rechnen, ohne uebersetzen zu muessen.")
 @click.option("--dry-run", is_flag=True, help="Nur berichten, nichts schreiben.")
 @click.option("--overwrite/--keep", default=True, show_default=True,
               help="Vorhandene Normtext-Notizen ersetzen oder stehen lassen.")
 def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
          titel: str | None, autor: str, art: str, superseded_by: str,
-         mark_withdrawn: bool, dry_run: bool, overwrite: bool) -> None:
+         export_ziel: str | None, mark_withdrawn: bool, dry_run: bool,
+         overwrite: bool) -> None:
     """Schreibt Normtext- oder Dokumentnotizen aus einem Extrakt in den Vault."""
     vault_path = Path(vault).expanduser()
     md_path = Path(extract_md)
@@ -618,6 +675,7 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
 
     target_dir = vault_path / LICENSED_DIR / framework
     written, missing, skipped = [], [], []
+    aufgeloest: dict[str, Section] = {}     # fuer den JSON-Export
 
     for ident in sorted(wanted):
         sec = None
@@ -632,6 +690,7 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
                     target_dir.mkdir(parents=True, exist_ok=True)
                     target.write_text(note_text(framework, ident, sec, meta), encoding="utf-8")
                 written.append(ident)
+                aufgeloest[ident] = sec
                 continue
 
         for variant in id_variants(ident):
@@ -684,6 +743,7 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
             target_dir.mkdir(parents=True, exist_ok=True)
             target.write_text(note_text(framework, ident, sec, meta), encoding="utf-8")
         written.append(ident)
+        aufgeloest[ident] = sec
 
     withdrawn: list[str] = []
     if mark_withdrawn and missing:
@@ -704,6 +764,14 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
                 target.write_text(withdrawn_note(framework, ident, meta), encoding="utf-8")
             withdrawn.append(ident)
             missing.remove(ident)
+
+    if export_ziel:
+        ep = Path(export_ziel).expanduser()
+        ep.parent.mkdir(parents=True, exist_ok=True)
+        ep.write_text(export_json(framework, md_path.stem, meta, aufgeloest,
+                                  sorted(missing)), encoding="utf-8")
+        click.echo(f"JSON-Export: {ep} ({len(aufgeloest)} Anforderungen, "
+                   f"{len(missing)} ohne Wortlaut)")
 
     click.secho(f"{len(written)} von {len(wanted)} Anforderungen belegt"
                 + (" (Probelauf, nichts geschrieben)" if dry_run else f" -> {target_dir}"),
