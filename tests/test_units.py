@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import extract  # noqa: E402
+import publish  # noqa: E402
 import verify as V  # noqa: E402
 
 FIXTURE_PDF = Path(__file__).parent / "fixtures" / "Muster-Norm-Zweispaltig.pdf"
@@ -321,10 +322,70 @@ def test_text_passthrough() -> None:
         check("Quelltext im Extrakt", "noch ein: wert" in md)
 
 
+
+def test_yaml_catalogue() -> None:
+    """Maschinenlesbarer Katalog (BSI C5 als YAML) -> Anforderungsabschnitte."""
+    print("\ntest_yaml_catalogue")
+
+    flach = """<!-- irgendein Vorspann -->
+```yaml
+-
+  id: 'GC-01'
+  name: 'Angaben zum Recht'
+  condition: 'Der Anbieter macht Angaben zu:\n\n1. dem anwendbaren Recht.'
+  hint: 'Vgl. Abschnitt 1.2.'
+```
+"""
+    got = publish.sections_from_yaml(flach, {"source_file": "GC.yml"})
+    check("flache Form gefunden", "gc-01" in got, str(sorted(got)))
+    sec = got.get("gc-01")
+    check("Titel aus name", bool(sec) and sec.title == "Angaben zum Recht")
+    check("Normtext woertlich", bool(sec) and "dem anwendbaren Recht." in sec.text)
+    check("Hinweis getrennt", bool(sec) and "[!info] Hinweis der Quelle" in sec.text)
+    check("Schluesselpfad statt Seite",
+          bool(sec) and sec.page == 0 and sec.locator == "GC-01 in GC.yml")
+
+    verschachtelt = """```yaml
+-
+  identifier: '01'
+  name: 'Rahmenwerk'
+  basic:
+    -
+      identifier: '01B'
+      criterion: 'Ein Rahmenwerk ist dokumentiert.'
+  additional_complement:
+    -
+      identifier: '01AC'
+      criterion: 'Zusaetzlich werden Informationen beruecksichtigt.'
+  information:
+    -
+      information_text: 'Assets sind Objekte im Verantwortungsbereich.'
+```
+"""
+    got = publish.sections_from_yaml(verschachtelt, {"source_file": "AM.yml"})
+    check("Unterkriterium Basic", "am-01.01b" in got, str(sorted(got)))
+    check("Unterkriterium Complement", "am-01.01ac" in got)
+    check("Kriterienbereich aus information", "am-01" in got)
+    check("Gruppe aus Dateiname",
+          got.get("am-01.01b") is not None
+          and got["am-01.01b"].text.startswith("Ein Rahmenwerk"))
+    check("Belegstelle nennt Zweig",
+          got.get("am-01.01b") is not None
+          and got["am-01.01b"].locator == "basic/01B in AM.yml")
+
+    # Kein Katalog: Passthrough einer Konfigurationsdatei darf nichts liefern.
+    check("Nicht-Katalog ergibt nichts",
+          publish.sections_from_yaml("```yaml\nversion: '1.1.0'\n```\n",
+                                     {"source_file": "Version-und-Lizenz.yml"}) == {})
+    check("ohne YAML-Block nichts",
+          publish.sections_from_yaml("# Ohne Block\n", {"source_file": "AM.yml"}) == {})
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
                test_pipeline_options, test_verify, test_repair, test_office_verify,
-               test_broken_ooxml_styles, test_text_passthrough):
+               test_broken_ooxml_styles, test_text_passthrough,
+               test_yaml_catalogue):
         fn()
     print()
     if failures:

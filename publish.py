@@ -26,6 +26,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import click
+import yaml
 
 LICENSED_DIR = "Normen (lizenziert)"
 
@@ -36,6 +37,9 @@ class Section:
     title: str
     text: str
     page: int
+    # Belegstelle fuer Quellen ohne Seiten (maschinenlesbare Kataloge):
+    # der Schluesselpfad, unter dem die Anforderung in der Datei steht.
+    locator: str = ""
 
 
 def split_front_matter(md: str) -> tuple[dict[str, str], str]:
@@ -88,6 +92,111 @@ def sections_from_headings(body: str) -> dict[str, Section]:
             continue
         parts = [f"### {k} {out[k].title}\n\n{out[k].text}".rstrip() for k in kids]
         out[ident] = Section(ident, sec.title, "\n\n".join(parts), sec.page or out[kids[0]].page)
+    return out
+
+
+def _yaml_block(body: str) -> str | None:
+    """Der woertlich uebernommene YAML-Block eines Passthrough-Extrakts."""
+    m = re.search(r"^```yaml\n(.*?)\n```", body, flags=re.S | re.M)
+    return m.group(1) if m else None
+
+
+def _c5_text(entry: dict) -> str:
+    """Normativer Text eines C5-Eintrags, Hinweise davon getrennt.
+
+    'criterion' bzw. 'condition' ist die Anforderung, 'hint' die Auslegungshilfe
+    des BSI. Beides steht in der Notiz, aber erkennbar getrennt — sonst liest ein
+    Agent den Hinweis als Anforderung.
+    """
+    parts = []
+    for key in ("criterion", "condition"):
+        v = entry.get(key)
+        if isinstance(v, str) and v.strip():
+            parts.append(v.strip())
+    hint = entry.get("hint")
+    if isinstance(hint, str) and hint.strip():
+        parts.append("> [!info] Hinweis der Quelle\n"
+                     + "\n".join("> " + z for z in hint.strip().splitlines()))
+    return "\n\n".join(parts)
+
+
+def sections_from_yaml(body: str, meta: dict[str, str]) -> dict[str, Section]:
+    """Anforderungen aus einem maschinenlesbaren Katalog (BSI C5 als YAML).
+
+    Der Passthrough-Pfad von extract.py legt solche Dateien woertlich in einem
+    Codeblock ab, weil Docling keinen YAML-Reader mitbringt. Fuer die Ablage im
+    Vault wird der Block hier mit PyYAML gelesen — kein selbst geschriebener
+    Parser, der Zeichenbestand bleibt der der Quelle.
+
+    Zwei Formen kommen vor:
+      * flach          - [{id: 'GC-01', name, condition, hint}]
+      * verschachtelt  - [{identifier: '01', name,
+                           basic|additional_sharpen|additional_complement:
+                             [{identifier: '01B', criterion}]}]
+    Die Vault-IDs entstehen aus dem Dateinamen als Gruppe: GC-01, AM-01,
+    AM-01.01B. Erfunden wird dabei nichts — Gruppe und Nummer stehen in der
+    Quelle, nur zusammengesetzt werden sie hier.
+    """
+    block = _yaml_block(body)
+    if block is None:
+        return {}
+    try:
+        data = yaml.safe_load(block)
+    except yaml.YAMLError:
+        return {}                      # kein Katalog: die anderen Pfade greifen
+    if not isinstance(data, list) or not data or not isinstance(data[0], dict):
+        return {}
+
+    src = meta.get("source_file", "")
+    group = Path(src).stem.upper()
+    if not re.fullmatch(r"[A-Z]{2,4}", group):
+        return {}                      # kein Kriterienbereich (z. B. Version-und-Lizenz)
+
+    out: dict[str, Section] = {}
+
+    def add(ident: str, title: str, text: str, path: str) -> None:
+        if text.strip():
+            out[norm_key(ident)] = Section(ident, title, text, 0, f"{path} in {src}")
+
+    for entry in data:
+        if not isinstance(entry, dict):
+            continue
+        name = str(entry.get("name") or "").strip()
+
+        flat_id = entry.get("id")
+        if isinstance(flat_id, str) and flat_id.strip():
+            ident = flat_id.strip()
+            add(ident, name, _c5_text(entry), ident)
+            continue
+
+        crit = entry.get("identifier")
+        if not isinstance(crit, str) or not crit.strip():
+            continue
+        crit_id = f"{group}-{crit.strip()}"
+
+        for key in ("basic", "additional_sharpen", "additional_complement"):
+            subs = entry.get(key)
+            if not isinstance(subs, list):
+                continue
+            for sub in subs:
+                if not isinstance(sub, dict):
+                    continue
+                sub_id = sub.get("identifier")
+                if not isinstance(sub_id, str) or not sub_id.strip():
+                    continue
+                ident = f"{crit_id}.{sub_id.strip()}"
+                add(ident, name, _c5_text(sub), f"{key}/{sub_id.strip()}")
+
+        # Der Kriterienbereich selbst traegt keine eigene Anforderung, aber oft
+        # erlaeuternde Informationen. Die gehoeren in seine Notiz; fehlen sie,
+        # setzt main() ihn aus seinen Unterkriterien zusammen.
+        infos = entry.get("information")
+        texts = [str(i.get("information_text")).strip()
+                 for i in infos if isinstance(i, dict) and i.get("information_text")] \
+            if isinstance(infos, list) else []
+        if texts:
+            add(crit_id, name, "\n\n".join(texts), f"{crit.strip()}/information")
+
     return out
 
 
@@ -271,7 +380,7 @@ def vault_ids(vault: Path, framework: str) -> dict[str, str]:
 
 def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) -> str:
     esc = lambda v: '"' + str(v).replace('"', '\\"') + '"'
-    return "\n".join([
+    return "\n".join([z for z in [
         "---",
         "type: normtext",
         f"framework: {framework}",
@@ -279,6 +388,7 @@ def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) ->
         f"source_file: {esc(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"source_page: {sec.page}",
+        (f"source_locator: {esc(sec.locator)}" if sec.locator else None),
         f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
         f'tags: ["grc/normtext", "grc/framework/{framework}"]',
         "generated-by: document-to-LLM",
@@ -286,7 +396,9 @@ def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) ->
         "",
         f"# {ident} — {sec.title}".rstrip(" —"),
         "",
-        f"> [!quote] Normtext, Seite {sec.page} der Quelle" if sec.page else "> [!quote] Normtext",
+        (f"> [!quote] Normtext, Seite {sec.page} der Quelle" if sec.page
+         else f"> [!quote] Normtext, Schluesselpfad {sec.locator}" if sec.locator
+         else "> [!quote] Normtext"),
         "",
         sec.text,
         "",
@@ -300,11 +412,13 @@ def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) ->
         "",
         "---",
         "",
+        # Der Konverter steht in der Kopfzeile des Extrakts. Bei Passthrough-Dateien
+        # war Docling nicht beteiligt, "IBM Docling" davorzuschreiben waere falsch.
         f"Woertlich aus {meta.get('source_file', 'der Quelle')} extrahiert "
-        f"(IBM Docling, {meta.get('converter', 'docling')}). Lizenzierter Text — "
+        f"({meta.get('converter', 'IBM Docling')}). Lizenzierter Text — "
         f"bleibt lokal, nicht versionieren.",
         "",
-    ])
+    ] if z is not None])
 
 
 def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
@@ -411,6 +525,7 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
 
     found = sections_from_headings(body)
     found.update(sections_from_tables(body))
+    found.update(sections_from_yaml(body, meta))
     anchored = sections_by_anchor(body, wanted)
     crosswalk = load_crosswalk(framework)
 

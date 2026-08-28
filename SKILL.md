@@ -178,6 +178,13 @@ python publish.py output/<slug>.md --vault <vault> --framework <slug> --dry-run
 Erst `--dry-run` lesen: er sagt, wie viele Anforderungen belegt werden und
 welche IDs im Extrakt fehlen. Erst danach ohne `--dry-run` schreiben.
 
+Maschinenlesbare Kataloge, die als Passthrough vorliegen (BSI C5 als YAML),
+werden dabei mit PyYAML gelesen und je Kriterium abgelegt. Die Anforderung
+steht unter `criterion`/`condition`, der `hint` des BSI kommt als eigener
+Hinweisblock in die Notiz — er ist Auslegungshilfe, keine Anforderung. Da
+solche Quellen keine Seiten haben, trägt die Notiz statt `source_page` einen
+`source_locator` mit dem Schlüsselpfad (`basic/01B in AM.yml`).
+
 Dokumente ohne Anforderungsraster — Leitfäden, Fachartikel, Studien,
 Handbuchkapitel — kommen genauso in den Bestand, nur ohne Framework:
 
