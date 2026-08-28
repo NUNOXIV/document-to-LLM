@@ -6,10 +6,6 @@
       "grund": "Einzelne Baustein-PDFs des IT-Grundschutz-Kompendiums Edition 2023. Inhaltsgleich mit den Abschnitten des Kompendium-PDFs, aus dem der Vault bereits die vollstaendigen Normtext-Notizen je Anforderung mit Seitenbeleg fuehrt. Eine zweite Ablage erzeugte nur Volltext-Dubletten. Stichprobe APP.1.1.A1: wortgleich."
     },
     {
-      "muster": "^gs-struktur-edition-2023-pdf-clean$",
-      "grund": "Grafische Strukturuebersicht ohne eigenen Anforderungstext; der Textlayer steht vollstaendig im Extrakt. Als Vault-Notiz ohne Mehrwert."
-    },
-    {
       "muster": "^einzeln-docx-.*$",
       "grund": "Bausteine als DOCX aus EU_LEX/Einzeln_DOCX. Inhaltsgleich mit den bereits aufgenommenen Baustein-PDFs; auf Entscheidung des Auftraggebers ausgelassen. Die Bausteine liegen als PDF vor."
     }

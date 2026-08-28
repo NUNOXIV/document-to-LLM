@@ -109,6 +109,21 @@ es gibt **keine** abgeleiteten Überschriften, Tabellen oder Seitenmarken.
 Zitiere solche Dateien über den Schlüsselpfad im YAML (z. B. `GC-05`,
 `SIM-01.02B`) statt über eine Seitenzahl — eine Seitenzahl existiert nicht.
 
+### Baustein-Struktur des IT-Grundschutz
+
+Die Struktur des Kompendiums liegt in zwei Dateien, die einander brauchen: die
+Mindmap `GS_Struktur_Edition-2023.mm` trägt die Hierarchie und je Baustein ein
+Symbol für die Umsetzungsreihenfolge, das Plakat `GS_Struktur_Edition-2023.pdf`
+die Legende, die diese Symbole erklärt. Getrennt ist keine brauchbar.
+
+```bash
+python gs_struktur.py --output output --to output/_GS-STRUKTUR.md
+```
+
+Das Ergebnis ist **abgeleitet**, nicht extrahiert — es ordnet um und löst
+Symbole in Klartext auf. Für wörtliche Zitate die beiden Extrakte heranziehen,
+nicht diese Gliederung.
+
 ## Versionsstand — immer prüfen
 
 Bevor du aus einem Extrakt zitierst oder eine Norm für eine Aussage heranziehst:

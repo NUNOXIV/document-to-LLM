@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import extract  # noqa: E402
+import gs_struktur as GS  # noqa: E402
 import publish  # noqa: E402
 import verify as V  # noqa: E402
 
@@ -419,11 +420,52 @@ def test_yaml_catalogue() -> None:
         check("ohne Nachfolger keine Warnung", "status: historisch" not in t2)
 
 
+
+def test_gs_struktur() -> None:
+    """Mindmap-Hierarchie und Plakat-Legende zu einer Gliederung fuegen."""
+    print("\ntest_gs_struktur")
+    import xml.etree.ElementTree as ET
+
+    mm = ET.fromstring(
+        '<map><node TEXT="Wurzel">'
+        '<node TEXT="APP (Anwendungen)">'
+        '<node TEXT="APP.1.1 Office"><icon BUILTIN="full-2"/></node>'
+        '<node TEXT="APP.1.9 Ohne Symbol"/>'
+        "</node>"
+        '<node><richcontent TYPE="NODE"><html><body><p>SYS.1.3 Linux</p>'
+        "</body></html></richcontent><icon BUILTIN=\"full-1\"/></node>"
+        "</node></map>")
+    wurzel = mm.find("node")
+
+    zeilen, ohne = [], []
+    GS.gliederung(wurzel, 0, zeilen, ohne)
+    check("Hierarchie eingerueckt", zeilen[1].startswith("- APP (") and
+          zeilen[2].startswith("  - APP.1.1"), str(zeilen[:3]))
+    check("Rang aus Symbol", "· **R2**" in zeilen[2], zeilen[2])
+    check("richcontent gelesen", any("SYS.1.3 Linux" in z for z in zeilen), str(zeilen))
+    check("Rang R1 erkannt", any("SYS.1.3 Linux · **R1**" in z for z in zeilen))
+    # Ein rangloses Blatt ist auffaellig, ein Gruppenknoten nicht.
+    check("rangloses Blatt gemeldet", ohne == ["APP.1.9 Ohne Symbol"], str(ohne))
+
+    with tempfile.TemporaryDirectory() as tmp:
+        plakat = Path(tmp) / "plakat.md"
+        plakat.write_text(
+            "> IT-Grundschutz-Kompendium 2023\n"
+            "> : Zuerst umsetzen.\n> : Danach umsetzen.\n> : Zuletzt umsetzen.\n"
+            "> Farben: neuer Baustein\n> Stand: Februar 2023\n", encoding="utf-8")
+        erkl, fuss = GS.legende(plakat)
+        check("drei Rangstufen erklaert", erkl == {1: "Zuerst umsetzen.",
+                                                  2: "Danach umsetzen.",
+                                                  3: "Zuletzt umsetzen."}, str(erkl))
+        check("Fusszeilen erkannt", fuss == ["Farben: neuer Baustein",
+                                             "Stand: Februar 2023"], str(fuss))
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
                test_pipeline_options, test_verify, test_repair, test_office_verify,
                test_broken_ooxml_styles, test_text_passthrough,
-               test_yaml_catalogue):
+               test_yaml_catalogue, test_gs_struktur):
         fn()
     print()
     if failures:
