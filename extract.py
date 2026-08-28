@@ -195,8 +195,9 @@ class _Runner:
     """Haelt einen Worker-Prozess, damit die Modelle nicht je Dokument neu
     geladen werden, und ersetzt ihn, wenn er abgestuerzt ist."""
 
-    def __init__(self) -> None:
+    def __init__(self, timeout: float | None = None) -> None:
         self._pool = None
+        self.timeout = timeout
 
     def _get(self):
         if self._pool is None:
@@ -213,10 +214,19 @@ class _Runner:
     def run(self, *args) -> dict:
         """Fuehrt eine Konvertierung aus. Stirbt der Worker, wird das als
         ExtractionError sichtbar — der Batch laeuft weiter."""
+        from concurrent.futures import TimeoutError as FutureTimeout
         from concurrent.futures.process import BrokenProcessPool
 
         try:
-            return self._get().submit(_worker, *args).result()
+            return self._get().submit(_worker, *args).result(timeout=self.timeout)
+        except FutureTimeout as exc:
+            # Ein einzelnes pathologisches Dokument darf den Batch nicht
+            # blockieren: Worker verwerfen, Dokument als Fehler markieren.
+            self.reset()
+            raise ExtractionError(
+                f"Zeitueberschreitung nach {self.timeout:.0f}s — Dokument "
+                f"uebersprungen. Mit --timeout 0 ohne Grenze erneut versuchen."
+            ) from exc
         except BrokenProcessPool as exc:
             self.reset()
             raise ExtractionError(
@@ -235,7 +245,7 @@ class _Runner:
                            "Modell-Cache (offline)", err=True)
                 os.environ["HF_HUB_OFFLINE"] = "1"
                 self.reset()
-                return self._get().submit(_worker, *args).result()
+                return self._get().submit(_worker, *args).result(timeout=self.timeout)
             raise
 
 
@@ -744,8 +754,11 @@ def run_doctor(models_dir: Path | None) -> int:
               help="Nur pruefen, ob Docling und die PDF-Modelle einsatzbereit sind.")
 @click.option("--force", is_flag=True, help="Bereits konvertierte, unveraenderte Dokumente neu erzeugen.")
 @click.option("--strict", is_flag=True, help="Exit-Code 1 auch bei Warnungen (fuer CI/Automation).")
+@click.option("--timeout", default=1800.0, show_default=True, type=float,
+              help="Zeitgrenze je Dokument in Sekunden; 0 = keine Grenze. "
+                   "Verhindert, dass ein einzelnes Dokument den Batch blockiert.")
 def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
-         do_verify, min_coverage, repair, models_dir, doctor, force, strict):
+         do_verify, min_coverage, repair, models_dir, doctor, force, strict, timeout):
     """Konvertiert Dokumente mit IBM Docling nach strukturiertem Markdown."""
     try:
         import docling  # noqa: F401
@@ -771,7 +784,7 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
 
     # Ein Worker-Prozess fuer den ganzen Batch: die Modelle werden einmal
     # geladen, ein Absturz kostet nur das laufende Dokument.
-    runner = _Runner()
+    runner = _Runner(timeout or None)
 
     click.echo(f"Docling {docling_version()} — {len(files)} Datei(en) -> {out_dir}/")
     claimed: dict[str, Path] = {}
