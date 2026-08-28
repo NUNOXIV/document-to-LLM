@@ -16,7 +16,7 @@
       {
         "datei": "TISAX-Teilnehmerhandbuch.pdf",
         "groesse_bytes": 7674670,
-        "grund": "Der Drive-Connector uebertraegt base64-kodiert, was den Umfang um ein Drittel erhoeht (hier rund 10,2 MB). Sieben Versuche brachen mit 'session expired' ab, waehrend kleinere Dateien dazwischen fehlerfrei liefen. Die groesste erfolgreich geladene Datei mass 5,86 MB; die praktische Grenze liegt also unter den nominellen 10 MB."
+        "grund": "Der Drive-Connector uebertraegt base64-kodiert, was den Umfang um ein Drittel erhoeht (hier rund 10,2 MB). Sieben Versuche brachen mit 'session expired' ab, waehrend kleinere Dateien dazwischen fehlerfrei liefen. Die groesste erfolgreich geladene Datei mass 5,86 MB; die praktische Grenze liegt also unter den nominellen 10 MB. Unabhaengig bestaetigt: ein zweiter, mit anderer Pipeline erstellter Bestand desselben Drive-Ordners scheiterte an derselben Datei mit derselben Ursache und nennt dieselbe Schwelle von rund 7 MB."
       },
       {
         "datei": "758080161-ISO-42001.pdf",
@@ -32,6 +32,32 @@
         "datei": "Medien: mp4, m4a, epub, png",
         "groesse_bytes": 0,
         "grund": "Formate ohne extrahierbaren Textlayer. Docling bringt keinen Reader mit, und ein Transkript waere erzeugter, nicht extrahierter Text — das widerspraeche der Zusicherung, dass jeder Extrakt woertlich aus der Quelle stammt."
+      },
+      {
+        "datei": "TISAX-Training-TUEV-SUED.pptx",
+        "groesse_bytes": 36922705,
+        "grund": "37 MB, weit ueber der Groessengrenze des Connectors. Schulungsfolien TUEV SUED zu TISAX."
+      }
+    ]
+  },
+  "lizenzgrundlagen": {
+    "hinweis": "Woher die lizenzierten Dokumente stammen. Gehoert dokumentiert, weil der Bestand Normtext fuehrt, der nicht frei verteilbar ist: bei einer Rueckfrage muss belegbar sein, auf welcher Grundlage er vorliegt.",
+    "eintraege": [
+      {
+        "betrifft": "ISO/IEC 42001 (iso-42001, iso-42005) und begleitende Fachbuecher",
+        "grundlage": "Schulungslizenz — Training Edition. Erworben ueber die Teilnahme an der Schulung, nicht frei verteilbar."
+      },
+      {
+        "betrifft": "CISM-Material (Review Manual, Practice Exams, Training Certificate, Strategic Blueprint)",
+        "grundlage": "Schulungslizenz — Training Edition. Erworben ueber die Teilnahme an der Schulung, nicht frei verteilbar."
+      },
+      {
+        "betrifft": "VDA ISA / TISAX (isa6-de-6-0-2, isa6-en-redline, tisax-isa2027-en und die TISAX-Dokumente)",
+        "grundlage": "Bezug ueber das ENX-Portal. Verteilung an Dritte ausgeschlossen."
+      },
+      {
+        "betrifft": "BSI-Material, EU-Rechtstexte, NIST, CIS, OWASP",
+        "grundlage": "Amtliche bzw. frei veroeffentlichte Dokumente. Bleiben dennoch ausserhalb der Versionierung, weil der Bestand einheitlich behandelt wird."
       }
     ]
   }

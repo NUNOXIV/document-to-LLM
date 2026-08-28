@@ -129,6 +129,19 @@ def block_for(doc: Doc) -> str:
     return "\n".join(lines)
 
 
+def lizenzgrundlagen() -> list[dict]:
+    """Auf welcher Grundlage der lizenzierte Normtext vorliegt.
+
+    Der Bestand fuehrt Text, der nicht frei verteilbar ist. Bei einer Rueckfrage
+    muss belegbar sein, woher er stammt — im Protokoll, nicht im Gedaechtnis.
+    """
+    path = Path(__file__).parent / "mappings" / "vault-ausnahmen.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("lizenzgrundlagen", {}).get("eintraege", [])
+
+
 def not_ingested() -> list[dict]:
     """Quellen, die technisch nicht aufgenommen werden konnten, mit Grund.
 
@@ -240,6 +253,15 @@ def render(docs: list[Doc], vault: Path | None) -> str:
                 "gehoert entfernt.", ""]
         for sha, slugs in doppelt.items():
             out.append(f"- `{sha[:16]}…`: " + ", ".join(f"`{s}`" for s in slugs))
+        out.append("")
+
+    lizenzen = lizenzgrundlagen()
+    if lizenzen:
+        out += ["", "## Lizenzgrundlagen", "",
+                "Der Bestand enthaelt Text, der nicht frei verteilbar ist. "
+                "Hier steht, worauf sich der Besitz stuetzt.", ""]
+        for l in lizenzen:
+            out.append(f"- **{l.get('betrifft', '?')}**: {l.get('grundlage', '')}")
         out.append("")
 
     fehlend = not_ingested()
