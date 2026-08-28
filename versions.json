@@ -8,13 +8,6 @@
       "muster": "\\[Version ([0-9]+\\.[0-9]+)\\]",
       "dokument_muster": "(Version 4\\.[0-9]|v4\\.[0-9])"
     },
-    "8-1-owasp-8-1-owasp-z-library-sk-1lib-sk-z-lib-sk": {
-      "titel": "OWASP Testing Guide (Vorgaenger des WSTG)",
-      "dokument_version": "4.0",
-      "quelle": "https://owasp.org/www-project-web-security-testing-guide/",
-      "muster": "\\[Version ([0-9]+\\.[0-9]+)\\]",
-      "anmerkung": "Projekt wurde in Web Security Testing Guide umbenannt; v4.0 ist der alte Testing Guide."
-    },
     "owasp-top-10-for-agentic-applications-2026-12-6-1": {
       "titel": "OWASP Top 10 for Agentic Applications",
       "dokument_version": "2026",
@@ -128,6 +121,13 @@
       "anmerkung": "Aufgenommen ist Fassung 2.8 vom 13.03.2025, ENX doc ID 602-DE, Klassifizierung 'Oeffentlich'. Die Fundstelle liegt hinter der Netzsperre dieser Umgebung (enx.com und portal.enx.com sind vom Egress-Proxy blockiert), die geltende Fassung ist von hier aus also NICHT pruefbar. Achtung: der VDA hat am 01.07.2026 die ISA2027 veroeffentlicht; eine daran angepasste Handbuchfassung ist wahrscheinlich. Vor Verwendung als geltender Stand manuell im ENX-Portal abgleichen.",
       "muster": "Version\\s*([0-9]+\\.[0-9]+)",
       "dokument_muster": "ENX doc ID[\\s\\S]{0,200}?\\n([0-9]+\\.[0-9]+)\\n"
+    },
+    "owasp-testing-guide-v4": {
+      "titel": "OWASP Testing Guide (Vorgaenger des WSTG)",
+      "dokument_version": "4.0",
+      "quelle": "https://owasp.org/www-project-web-security-testing-guide/",
+      "muster": "\\[Version ([0-9]+\\.[0-9]+)\\]",
+      "anmerkung": "Projekt wurde in Web Security Testing Guide umbenannt; v4.0 ist der alte Testing Guide."
     }
   }
 }
