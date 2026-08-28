@@ -40,10 +40,11 @@ DOCLING_SUFFIXES = {
 # Sie werden woertlich uebernommen statt geparst: ein selbst geschriebener
 # YAML-/JSON-Parser waere genau die Fehlerquelle, die dieses Werkzeug vermeidet.
 # Der Zeichenbestand bleibt dadurch exakt erhalten.
-TEXT_SUFFIXES = {".yml", ".yaml", ".json", ".txt"}
+TEXT_SUFFIXES = {".yml", ".yaml", ".json", ".txt", ".xml"}
 
 TEXT_FENCE_LANG = {
     ".yml": "yaml", ".yaml": "yaml", ".json": "json", ".txt": "text",
+    ".xml": "xml",
 }
 
 SUPPORTED_SUFFIXES = DOCLING_SUFFIXES | TEXT_SUFFIXES
