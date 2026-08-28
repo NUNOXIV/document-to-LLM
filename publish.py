@@ -473,13 +473,20 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
 
 
 def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
-                   titel: str, autor: str, art: str, dry_run: bool) -> tuple[Path, Path]:
+                   titel: str, autor: str, art: str, dry_run: bool,
+                   superseded_by: str = "") -> tuple[Path, Path]:
     """Ein Dokument ohne Anforderungsraster ablegen: Volltext in den lizenzierten
     Ordner, Metadatennotiz nach GRC/Handbuch mit Embed darauf.
 
     Damit landet auch alles, was keine Norm ist — Leitfaden, Fachartikel,
     Handbuchkapitel, Behoerdenschreiben — im selben Bestand und nach denselben
     Regeln wie die Normen.
+
+    Ist das Dokument von einer neueren Fassung abgeloest (`superseded_by`), wird
+    es nicht verworfen, sondern als Historiendokument abgelegt: der Wortlaut
+    bleibt nachlesbar, die Notiz sagt aber vorweg, dass er nicht mehr gilt, und
+    nennt die geltende Fassung. Loeschen wuerde die Frage "was stand da frueher"
+    unbeantwortbar machen.
     """
     slug = md_path.stem
     full_dir = vault / LICENSED_DIR / "dokumente"
@@ -495,23 +502,34 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
         f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
-        'tags: ["grc/dokument/volltext"]', "generated-by: document-to-LLM", "---", "",
+        *(["status: historisch", f"superseded_by: {superseded_by}"] if superseded_by else []),
+        ('tags: ["grc/dokument/volltext", "grc/historisch"]' if superseded_by
+         else 'tags: ["grc/dokument/volltext"]'),
+        "generated-by: document-to-LLM", "---", "",
     ])
 
     meta_note = "\n".join([
         "---", "type: document", f"slug: {slug}",
         f"work: {esc(titel)}", f"autor: {esc(autor)}", f"art: {esc(art)}",
+        *(["status: historisch", f"superseded_by: {superseded_by}"] if superseded_by else []),
         f"source_file: {esc(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
         f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
         f"converter: {esc(meta.get('converter', ''))}",
         "licensed: true",
-        'tags: ["grc/handbuch", "grc/dokument"]',
+        ('tags: ["grc/handbuch", "grc/dokument", "grc/historisch"]' if superseded_by
+         else 'tags: ["grc/handbuch", "grc/dokument"]'),
         "generated-by: document-to-LLM", "---", "",
         f"# {titel}", "",
         f"*{autor} · {art}*" if autor or art else "",
         "",
+        *(["> [!warning] Ueberholte Fassung — nicht als geltend zitieren",
+           f"> Diese Fassung ist durch `{superseded_by}` abgeloest. Sie bleibt hier,",
+           "> damit nachlesbar ist, was frueher galt: fuer Audits mit Stichtag in der",
+           "> Vergangenheit, fuer Aenderungsnachweise und um Abweichungen zur neuen",
+           "> Fassung belegen zu koennen. Fuer jede Aussage ueber den geltenden Stand",
+           f"> ist `{superseded_by}` massgeblich.", ""] if superseded_by else []),
         "> [!info] Aufnahme",
         f"> Quelle `{meta.get('source_file', '')}`, {meta.get('pages', '?')} Seiten, "
         f"Wortdeckung {meta.get('text_coverage_percent', '—')} %. "
@@ -549,6 +567,10 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
 @click.option("--autor", default="", help="Urheber (--as-document).")
 @click.option("--art", default="Dokument", show_default=True,
               help="Art des Dokuments, z. B. Fachartikel, Leitfaden (--as-document).")
+@click.option("--superseded-by", "superseded_by", default="",
+              help="Slug der geltenden Fassung. Legt das Dokument als Historiendokument "
+                   "ab: Wortlaut bleibt nachlesbar, die Notiz warnt vor dem Zitieren "
+                   "als geltender Stand und nennt die Nachfolgefassung (--as-document).")
 @click.option("--mark-withdrawn", "mark_withdrawn", is_flag=True,
               help="IDs, die der Katalog nicht kennt, als 'entfallen' festhalten. "
                    "Nur bei maschinenlesbaren Katalogen (YAML) moeglich, weil nur "
@@ -557,8 +579,8 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
 @click.option("--overwrite/--keep", default=True, show_default=True,
               help="Vorhandene Normtext-Notizen ersetzen oder stehen lassen.")
 def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
-         titel: str | None, autor: str, art: str, mark_withdrawn: bool,
-         dry_run: bool, overwrite: bool) -> None:
+         titel: str | None, autor: str, art: str, superseded_by: str,
+         mark_withdrawn: bool, dry_run: bool, overwrite: bool) -> None:
     """Schreibt Normtext- oder Dokumentnotizen aus einem Extrakt in den Vault."""
     vault_path = Path(vault).expanduser()
     md_path = Path(extract_md)
@@ -566,11 +588,20 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
 
     if as_document:
         name = titel or Path(meta.get("source_file", md_path.stem)).stem
-        note, full = document_notes(md_path, vault_path, meta, body, name, autor, art, dry_run)
-        click.secho(f"Dokument abgelegt{' (Probelauf)' if dry_run else ''}: {note.name}",
-                    fg="green")
+        note, full = document_notes(md_path, vault_path, meta, body, name, autor, art,
+                                    dry_run, superseded_by)
+        click.secho(f"{'Historiendokument' if superseded_by else 'Dokument'} abgelegt"
+                    f"{' (Probelauf)' if dry_run else ''}: {note.name}",
+                    fg="yellow" if superseded_by else "green")
+        if superseded_by:
+            click.echo(f"Abgeloest durch: {superseded_by}")
         click.echo(f"Volltext: {full}")
         return
+
+    if superseded_by:
+        raise click.ClickException(
+            "--superseded-by gilt nur mit --as-document. Eine ueberholte Fassung als "
+            "Normtext abzulegen wuerde die geltenden Notizen ueberschreiben.")
 
     if not framework:
         raise click.ClickException("Entweder --framework oder --as-document angeben.")

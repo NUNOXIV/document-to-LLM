@@ -142,6 +142,14 @@ def vault_exceptions() -> list[dict]:
     return json.loads(path.read_text(encoding="utf-8")).get("ausnahmen", [])
 
 
+def superseded() -> list[dict]:
+    """Abgeloeste Fassungen und die Fassung, die an ihre Stelle getreten ist."""
+    path = Path(__file__).parent / "mappings" / "historie.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8")).get("abgeloest", [])
+
+
 def render(docs: list[Doc], vault: Path | None) -> str:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     complete = [d for d in docs if d.coverage is not None and d.coverage >= 100.0]
@@ -190,6 +198,22 @@ def render(docs: list[Doc], vault: Path | None) -> str:
                     "| Framework | Normtext-Notizen |", "| --- | ---: |"]
             for fw, n in sorted(counts.items()):
                 out.append(f"| {fw} | {n} |")
+
+    alt = superseded()
+    if alt:
+        bekannt = {d.slug for d in docs}
+        out += ["", "## Historienstand", "",
+                "Ueberholte Fassungen werden nicht geloescht, sondern als "
+                "Historiendokument gefuehrt — nachlesbar, aber nicht zitierfaehig "
+                "als geltender Stand.", "",
+                "| Ueberholt | Gilt stattdessen | Grund |", "| --- | --- | --- |"]
+        for a in alt:
+            slug, neu = a.get("slug", ""), a.get("gilt_stattdessen", "")
+            # Ein Verweis auf einen Slug, den es im Bestand nicht gibt, waere ein
+            # toter Beleg — das gehoert benannt, nicht stillschweigend gedruckt.
+            mark = lambda s: s if s in bekannt else f"{s} ⚠ nicht im Bestand"
+            out.append(f"| {mark(slug)} | {mark(neu)} | {a.get('grund', '')} |")
+        out.append("")
 
     ausnahmen = vault_exceptions()
     if ausnahmen:

@@ -185,6 +185,26 @@ Hinweisblock in die Notiz — er ist Auslegungshilfe, keine Anforderung. Da
 solche Quellen keine Seiten haben, trägt die Notiz statt `source_page` einen
 `source_locator` mit dem Schlüsselpfad (`basic/01B in AM.yml`).
 
+### Überholte Fassungen
+
+Wird ein Dokument von einer neueren Fassung abgelöst, wird die alte **nie
+gelöscht**, sondern als Historiendokument abgelegt:
+
+```bash
+python publish.py output/<alt>.md --vault <vault> --as-document \
+    --titel "<Titel> (Vorgängerfassung)" --superseded-by <geltender-slug>
+```
+
+Die Notiz trägt dann `status: historisch`, den Tag `grc/historisch` und vorweg
+eine Warnung, die die geltende Fassung nennt. Der Wortlaut bleibt nachlesbar —
+für Audits mit Stichtag in der Vergangenheit, für Änderungsnachweise und um
+Abweichungen zur neuen Fassung belegen zu können. **Zitiere ein solches Dokument
+nie als geltenden Stand**; `mappings/historie.json` und der Abschnitt
+„Historienstand" im Tracker sagen dir, was stattdessen gilt.
+
+`--superseded-by` gilt nur mit `--as-document`: eine überholte Fassung als
+Normtext abzulegen würde die geltenden Notizen überschreiben.
+
 Kennt der Vault eine ID, die der aktuelle Katalog nicht mehr führt, hält
 `--mark-withdrawn` sie als `status: entfallen` fest, statt eine leere Notiz
 stehen zu lassen. Der Schalter greift **nur** bei maschinenlesbaren Katalogen:

@@ -394,6 +394,30 @@ def test_yaml_catalogue() -> None:
     check("Entfallen-Notiz erfindet keinen Text", "> [!quote]" not in note)
     check("Entfallen-Notiz warnt vor Zitat", "Nicht als geltende Anforderung zitieren" in note)
 
+    # Ueberholte Fassungen: Wortlaut bleibt, Geltung nicht.
+    with tempfile.TemporaryDirectory() as tmp:
+        d = Path(tmp)
+        src = d / "alt.md"
+        src.write_text("# Alt\n\nAlter Wortlaut.\n", encoding="utf-8")
+        vault = d / "vault"
+        (vault / "GRC" / "Handbuch").mkdir(parents=True)
+        m = {"source_file": "Alt.pdf", "source_sha256": "ab" * 32, "pages": "3"}
+        note, full = publish.document_notes(src, vault, m, "Alter Wortlaut.",
+                                            "Alte Fassung", "BSI", "Leitfaden",
+                                            dry_run=False, superseded_by="neu-2026")
+        txt = note.read_text(encoding="utf-8")
+        check("Historie: Status gesetzt", "status: historisch" in txt)
+        check("Historie: Nachfolger genannt", "superseded_by: neu-2026" in txt)
+        check("Historie: warnt vor Zitat", "nicht als geltend zitieren" in txt)
+        check("Historie: eigener Tag", "grc/historisch" in txt)
+        check("Historie: Wortlaut bleibt", "Alter Wortlaut." in full.read_text(encoding="utf-8"))
+
+        note2, _ = publish.document_notes(src, vault, m, "Alter Wortlaut.",
+                                          "Normale Fassung", "BSI", "Leitfaden",
+                                          dry_run=False)
+        t2 = note2.read_text(encoding="utf-8")
+        check("ohne Nachfolger keine Warnung", "status: historisch" not in t2)
+
 
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
