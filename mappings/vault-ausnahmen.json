@@ -14,11 +14,6 @@
     "hinweis": "Quellen aus dem Drive-Ordner, die technisch nicht aufgenommen werden konnten. Kein Versaeumnis, sondern eine Grenze des Zugangswegs — hier festgehalten, damit sie nicht als Luecke im Bestand missverstanden wird.",
     "eintraege": [
       {
-        "datei": "TISAX-Teilnehmerhandbuch.pdf",
-        "groesse_bytes": 7674670,
-        "grund": "Der Drive-Connector uebertraegt base64-kodiert, was den Umfang um ein Drittel erhoeht (hier rund 10,2 MB). Sieben Versuche brachen mit 'session expired' ab, waehrend kleinere Dateien dazwischen fehlerfrei liefen. Die groesste erfolgreich geladene Datei mass 5,86 MB; die praktische Grenze liegt also unter den nominellen 10 MB. Unabhaengig bestaetigt: ein zweiter, mit anderer Pipeline erstellter Bestand desselben Drive-Ordners scheiterte an derselben Datei mit derselben Ursache und nennt dieselbe Schwelle von rund 7 MB."
-      },
-      {
         "datei": "758080161-ISO-42001.pdf",
         "groesse_bytes": 16000000,
         "grund": "Ueber der Groessengrenze des Connectors. Die Norm ISO/IEC 42001 liegt als ISO-42001.pdf im Bestand; diese Datei ist eine zweite, groessere Fassung derselben Norm."
@@ -53,7 +48,7 @@
       },
       {
         "betrifft": "VDA ISA / TISAX (isa6-de-6-0-2, isa6-en-redline, tisax-isa2027-en und die TISAX-Dokumente)",
-        "grundlage": "Bezug ueber das ENX-Portal. Verteilung an Dritte ausgeschlossen."
+        "grundlage": "Bezug ueber das ENX-Portal. Verteilung an Dritte ausgeschlossen. Ausnahme: das TISAX-Teilnehmerhandbuch (tisax-teilnehmerhandbuch) traegt im Dokument selbst die Klassifizierung 'Oeffentlich' (ENX doc ID 602-DE) und ist damit frei verteilbar; es bleibt dennoch ausserhalb der Versionierung, weil der Bestand einheitlich behandelt wird."
       },
       {
         "betrifft": "BSI-Material, EU-Rechtstexte, NIST, CIS, OWASP",
