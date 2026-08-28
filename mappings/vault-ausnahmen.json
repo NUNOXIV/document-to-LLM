@@ -15,13 +15,8 @@
     "eintraege": [
       {
         "datei": "758080161-ISO-42001.pdf",
-        "groesse_bytes": 16000000,
-        "grund": "Ueber der Groessengrenze des Connectors. Die Norm ISO/IEC 42001 liegt als ISO-42001.pdf im Bestand; diese Datei ist eine zweite, groessere Fassung derselben Norm."
-      },
-      {
-        "datei": "CISM-Buecher (6 Titel) und CISM_Strategic_Blueprint.pdf",
-        "groesse_bytes": 40275061,
-        "grund": "19 bis 40 MB je Band, deutlich ueber der Groessengrenze. Kleinere CISM-Materialien (Review Manual Preview, Practice Exams, Training Certificate) sind aufgenommen."
+        "groesse_bytes": 16246126,
+        "grund": "Geprueft, nicht vermutet: die Datei ist ein Scan ohne Textlayer (61 Seiten, 63 eingebettete Bilder, pypdfium2 liest auf keiner Seite Text). Die im Bestand liegende ISO-42001.pdf ist dieselbe Norm als digitaler Satz mit sauberem Textlayer (62 Seiten, 1,95 MB, Wortdeckung 100 %). Der Scan wuerde OCR erfordern; die OCR-Modelle sind in dieser Umgebung nicht ladbar (modelscope.cn gesperrt). Er brachte also nichts hinzu ausser einer schlechteren Kopie derselben Norm."
       },
       {
         "datei": "Medien: mp4, m4a, epub, png",
@@ -31,7 +26,7 @@
       {
         "datei": "TISAX-Training-TUEV-SUED.pptx",
         "groesse_bytes": 36922705,
-        "grund": "37 MB, weit ueber der Groessengrenze des Connectors. Schulungsfolien TUEV SUED zu TISAX."
+        "grund": "Nicht per Link freigegeben. Die Datei liegt nicht im GRC-Ordner, sondern in Ordner 1Sqp9SQqmrgC05vNrgt1jrIZZDt-8TObx; beide tragen nur die Eigentuemerberechtigung. 36,9 MB liegen ausserdem weit ueber der Connector-Grenze, der Bezug ginge also nur ueber fetch_drive.py mit befristeter Einzelfreigabe. Inhaltlich gehoert sie in den Bestand — sie fehlt aus Zugangs-, nicht aus Sachgruenden."
       }
     ]
   },
@@ -43,8 +38,8 @@
         "grundlage": "Schulungslizenz — Training Edition. Erworben ueber die Teilnahme an der Schulung, nicht frei verteilbar."
       },
       {
-        "betrifft": "CISM-Material (Review Manual, Practice Exams, Training Certificate, Strategic Blueprint)",
-        "grundlage": "Schulungslizenz — Training Edition. Erworben ueber die Teilnahme an der Schulung, nicht frei verteilbar."
+        "betrifft": "CISM-Material (Review Manual 15./16. Edition, Review Questions, Exam Guide, All-in-One, Study Guide, Strategic Blueprint, Practice Exams, Training Certificate)",
+        "grundlage": "Teils Schulungslizenz (Training Edition, ueber die Schulungsteilnahme erworben), teils privat beschaffte Kopien urheberrechtlich geschuetzter ISACA- und Verlagswerke. Die Dateinamen trugen urspruenglich die Downloadquelle; sie wurde aus den Namen entfernt, weil sie kein Bestandteil des Werks ist. Der Bestand bleibt privat und ausserhalb der Versionierung; eine Weitergabe an Dritte ist ausgeschlossen."
       },
       {
         "betrifft": "VDA ISA / TISAX (isa6-de-6-0-2, isa6-en-redline, tisax-isa2027-en und die TISAX-Dokumente)",
