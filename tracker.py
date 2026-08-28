@@ -328,6 +328,15 @@ def korpus_json(docs: list[Doc], out_dir: Path) -> str:
             "headings": d.headings,
             "words": d.words,
             "text_coverage_percent": d.coverage,
+            # Die wichtigste Unterscheidung fuer ein rechnendes System: stammt
+            # der Text woertlich aus der Datei, oder hat ihn eine
+            # Zeichenerkennung aus einem Bild geraten? Bei einem Scan gibt es
+            # keine Deckung -- nicht null Prozent, sondern keine, weil nichts
+            # existiert, wogegen zu pruefen waere. Ein leeres Deckungsfeld
+            # allein liesse sich als "unbekannt" missdeuten; diese beiden
+            # Flags sagen es ausdruecklich.
+            "woertlich": d.coverage is not None,
+            "ocr": d.ocr,
             "befund": d.verdict,
             "angehaengte_quellzeilen": d.appended,
             "status": d.status,
@@ -352,7 +361,13 @@ def korpus_json(docs: list[Doc], out_dir: Path) -> str:
                     "'struktur_json' ist die Struktur fuer die programmatische "
                     "Verarbeitung. 'struktur_art' sagt, welcher Art sie ist: "
                     "docling = verlustfreies DoclingDocument, passthrough = "
-                    "woertlicher Inhalt ohne abgeleitete Struktur."),
+                    "woertlicher Inhalt ohne abgeleitete Struktur. "
+                    "'woertlich' = false bedeutet: das PDF trug keinen "
+                    "Textlayer, der Text stammt aus der Zeichenerkennung "
+                    "('ocr': true) und ist damit erzeugt, nicht extrahiert. "
+                    "Solche Dokumente sind durchsuchbar, aber nicht "
+                    "zitierfaehig -- Lesefehler fallen nicht auf, weil es "
+                    "keine Quelle gibt, gegen die sich pruefen liesse."),
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "documents_total": len(eintraege),
         "ohne_struktur_json": ohne,

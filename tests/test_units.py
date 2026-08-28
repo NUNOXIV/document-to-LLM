@@ -511,19 +511,30 @@ def test_korpus_json() -> None:
         (out / "b.passthrough.json").write_text("{}", encoding="utf-8")
         docs = [TR.Doc(slug="a", source="a.pdf", coverage=100.0, pages=3),
                 TR.Doc(slug="b", source="b.yml", coverage=100.0),
-                TR.Doc(slug="c", source="c.pdf", coverage=99.0)]
+                TR.Doc(slug="c", source="c.pdf", coverage=99.0),
+                TR.Doc(slug="scan", source="scan.pdf", coverage=None, ocr=True)]
         d = J.loads(TR.korpus_json(docs, out))
-    check("alle Dokumente gelistet", d["documents_total"] == 3, str(d["documents_total"]))
+    check("alle Dokumente gelistet", d["documents_total"] == 4, str(d["documents_total"]))
     arten = {e["slug"]: e["struktur_art"] for e in d["documents"]}
     check("Docling erkannt", arten["a"] == "docling", str(arten))
     check("Passthrough erkannt", arten["b"] == "passthrough", str(arten))
     # Ohne Struktur-JSON darf nicht stillschweigend fehlen: es wird benannt.
-    check("fehlende Struktur benannt", d["ohne_struktur_json"] == ["c"],
+    check("fehlende Struktur benannt", d["ohne_struktur_json"] == ["c", "scan"],
           str(d["ohne_struktur_json"]))
     check("kein Pfad erfunden", arten["c"] is None
           and d["documents"][2]["struktur_json"] is None)
     check("Befund mitgefuehrt", d["documents"][0]["befund"] == "vollstaendig",
           d["documents"][0]["befund"])
+    # Ein Scan darf nicht wie ein woertlicher Extrakt aussehen: ein leeres
+    # Deckungsfeld allein liesse sich als "unbekannt" lesen. Die Flags sagen
+    # ausdruecklich, dass der Text geraten und nicht gelesen wurde.
+    nach_slug = {e["slug"]: e for e in d["documents"]}
+    check("Scan als nicht woertlich markiert",
+          nach_slug["scan"]["woertlich"] is False and nach_slug["scan"]["ocr"] is True,
+          str(nach_slug["scan"]))
+    check("Extrakt mit Textlayer bleibt woertlich",
+          nach_slug["a"]["woertlich"] is True and nach_slug["a"]["ocr"] is False,
+          str(nach_slug["a"]))
 
 
 
