@@ -264,6 +264,56 @@ def render(docs: list[Doc], vault: Path | None) -> str:
     return "\n".join(out).rstrip() + "\n"
 
 
+def korpus_json(docs: list[Doc], out_dir: Path) -> str:
+    """Maschinenlesbares Gegenstueck zum Protokoll.
+
+    Ein nachgelagertes System soll den Bestand nicht aus Markdown zurueckparsen
+    muessen. Hier steht je Dokument, was es ist, wie belastbar es ist und wo
+    seine Dateien liegen -- inklusive des Struktur-JSON, dessen Name sich je
+    nach Konverter unterscheidet (*.docling.json bzw. *.passthrough.json).
+    """
+    eintraege = []
+    for d in sorted(docs, key=lambda x: x.slug):
+        docling = out_dir / f"{d.slug}.docling.json"
+        passthrough = out_dir / f"{d.slug}.passthrough.json"
+        art = ("docling" if docling.exists()
+               else "passthrough" if passthrough.exists() else None)
+        eintraege.append({
+            "slug": d.slug,
+            "markdown": str(out_dir / f"{d.slug}.md"),
+            "struktur_json": (str(docling) if art == "docling"
+                              else str(passthrough) if art == "passthrough" else None),
+            "struktur_art": art,
+            "source_file": d.source,
+            "source_sha256": d.sha256,
+            "converter": d.converter,
+            "pages": d.pages,
+            "tables": d.tables,
+            "headings": d.headings,
+            "words": d.words,
+            "text_coverage_percent": d.coverage,
+            "befund": d.verdict,
+            "angehaengte_quellzeilen": d.appended,
+            "status": d.status,
+            "warnungen": d.warnings,
+            "converted_at": d.converted_at,
+        })
+    ohne = [e["slug"] for e in eintraege if not e["struktur_art"]]
+    return json.dumps({
+        "format": "acsos-korpus/1",
+        "hinweis": ("Bestandsregister der Extrakte. 'markdown' ist die verbindliche "
+                    "Textquelle fuer Agenten (kompakt, mit Seitenmarken); "
+                    "'struktur_json' ist die Struktur fuer die programmatische "
+                    "Verarbeitung. 'struktur_art' sagt, welcher Art sie ist: "
+                    "docling = verlustfreies DoclingDocument, passthrough = "
+                    "woertlicher Inhalt ohne abgeleitete Struktur."),
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "documents_total": len(eintraege),
+        "ohne_struktur_json": ohne,
+        "documents": eintraege,
+    }, ensure_ascii=False, indent=2) + "\n"
+
+
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
 @click.option("-o", "--output", "out_dir", default="output", show_default=True,
               type=click.Path(exists=True, file_okay=False),
@@ -275,7 +325,11 @@ def render(docs: list[Doc], vault: Path | None) -> str:
               help="Zieldatei; mehrfach angebbar (z. B. Repo und Vault).")
 @click.option("--vault", default=None, type=click.Path(file_okay=False),
               help="Vault-Wurzel, um die abgelegten Normtext-Notizen mitzuzaehlen.")
-def main(out_dir: str, src_dir: str, targets: tuple[str, ...], vault: str | None) -> None:
+@click.option("--korpus", "korpus_ziel", default=None,
+              help="Zusaetzlich ein maschinenlesbares Bestandsregister (JSON) schreiben, "
+                   "fuer Systeme, die den Bestand programmatisch verarbeiten.")
+def main(out_dir: str, src_dir: str, targets: tuple[str, ...], vault: str | None,
+         korpus_ziel: str | None) -> None:
     """Schreibt das Aufnahmeprotokoll aller Extrakte."""
     out = Path(out_dir)
     docs = []
@@ -295,6 +349,12 @@ def main(out_dir: str, src_dir: str, targets: tuple[str, ...], vault: str | None
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8")
         written.append(str(target))
+    if korpus_ziel:
+        kp = Path(korpus_ziel).expanduser()
+        kp.parent.mkdir(parents=True, exist_ok=True)
+        kp.write_text(korpus_json(docs, out), encoding="utf-8")
+        written.append(str(kp))
+
     ok = sum(1 for d in docs if d.coverage is not None and d.coverage >= 100.0)
     click.secho(f"{len(docs)} Dokumente, {ok} mit 100,0 % Deckung -> " + ", ".join(written),
                 fg="green")

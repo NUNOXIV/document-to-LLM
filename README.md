@@ -219,5 +219,8 @@ aus dem PDF; Zitate mit Slug, Gliederung und Seitenzahl belegen; bei
 
 ```
 input/     Quelldokumente
-output/    *.md (verbindliche Textquelle), *.docling.json, manifest.json, acsos.db
+output/    *.md (verbindliche Textquelle für Agenten)
+           *.docling.json / *.passthrough.json (Struktur für verarbeitende Systeme)
+           _KORPUS.json (Bestandsregister: Pfade, Deckung, Befund je Dokument)
+           manifest.json (Lauf-Protokoll), acsos.db (Suchindex)
 ```

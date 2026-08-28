@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import extract  # noqa: E402
 import gs_struktur as GS  # noqa: E402
 import index as IDX  # noqa: E402
+import tracker as TR  # noqa: E402
 import publish  # noqa: E402
 import versioncheck as VC  # noqa: E402
 import verify as V  # noqa: E402
@@ -499,12 +500,38 @@ def test_fts5_query() -> None:
     check("NEAR bleibt", q("NEAR(Backup Test)") == "NEAR(Backup Test)")
 
 
+
+def test_korpus_json() -> None:
+    """Bestandsregister: ein verarbeitendes System darf nicht raten muessen."""
+    print("\ntest_korpus_json")
+    import json as J
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp)
+        (out / "a.docling.json").write_text("{}", encoding="utf-8")
+        (out / "b.passthrough.json").write_text("{}", encoding="utf-8")
+        docs = [TR.Doc(slug="a", source="a.pdf", coverage=100.0, pages=3),
+                TR.Doc(slug="b", source="b.yml", coverage=100.0),
+                TR.Doc(slug="c", source="c.pdf", coverage=99.0)]
+        d = J.loads(TR.korpus_json(docs, out))
+    check("alle Dokumente gelistet", d["documents_total"] == 3, str(d["documents_total"]))
+    arten = {e["slug"]: e["struktur_art"] for e in d["documents"]}
+    check("Docling erkannt", arten["a"] == "docling", str(arten))
+    check("Passthrough erkannt", arten["b"] == "passthrough", str(arten))
+    # Ohne Struktur-JSON darf nicht stillschweigend fehlen: es wird benannt.
+    check("fehlende Struktur benannt", d["ohne_struktur_json"] == ["c"],
+          str(d["ohne_struktur_json"]))
+    check("kein Pfad erfunden", arten["c"] is None
+          and d["documents"][2]["struktur_json"] is None)
+    check("Befund mitgefuehrt", d["documents"][0]["befund"] == "vollstaendig",
+          d["documents"][0]["befund"])
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
                test_pipeline_options, test_verify, test_repair, test_office_verify,
                test_broken_ooxml_styles, test_text_passthrough,
                test_yaml_catalogue, test_gs_struktur,
-               test_versioncheck_historie, test_fts5_query):
+               test_versioncheck_historie, test_fts5_query, test_korpus_json):
         fn()
     print()
     if failures:

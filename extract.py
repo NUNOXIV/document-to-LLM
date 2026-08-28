@@ -414,6 +414,20 @@ def converter_label(res: Result) -> str:
     return "IBM Docling " + docling_version()
 
 
+def passthrough_text(src: Path) -> str:
+    """Der Inhalt einer Textquelle, zeichengetreu und ohne Codeblock-Rahmen.
+
+    Fuer den JSON-Zwilling: dort waere der Markdown-Zaun nur Beiwerk, das ein
+    verarbeitendes System wieder abschneiden muesste.
+    """
+    raw = src.read_bytes()
+    try:
+        text = raw.decode("utf-8")
+    except UnicodeDecodeError:
+        text = raw.decode("utf-8", "replace")
+    return text.replace("\r\n", "\n").replace("\r", "\n")
+
+
 def passthrough_body(src: Path) -> tuple[str, int]:
     """Textdatei woertlich als Markdown-Block. Rueckgabe: (Markdown, Zeilen).
 
@@ -549,6 +563,30 @@ def convert_file(
         target.write_text(front_matter(src, res, ocr_mode) + md_body.rstrip() + "\n",
                           encoding="utf-8")
         res.output = str(target)
+        # Auch Passthrough-Dateien bekommen einen JSON-Zwilling. Sonst faellt ein
+        # nachgelagertes System, das ueber *.json arbeitet, still auf 435 von 460
+        # Dokumenten zurueck. Der Name sagt, was es ist: kein DoclingDocument --
+        # Docling war hier nicht beteiligt --, sondern der woertliche Inhalt mit
+        # denselben Kopfdaten.
+        if write_json:
+            jtarget = out_dir / f"{stem}.passthrough.json"
+            jtarget.write_text(json.dumps({
+                "format": "acsos-passthrough/1",
+                "hinweis": ("Woertlich uebernommener Inhalt. Kein DoclingDocument: "
+                            "fuer dieses Format bringt Docling keinen Reader mit. "
+                            "Es gibt keine abgeleiteten Ueberschriften, Tabellen "
+                            "oder Seitenmarken; zitiert wird ueber den "
+                            "Schluesselpfad in der Quelle."),
+                "source_file": src.name,
+                "source_sha256": res.source_sha256,
+                "source_bytes": res.source_bytes,
+                "converter": converter_label(res),
+                "lines": lines,
+                "characters": res.characters,
+                "text_coverage_percent": res.text_coverage,
+                "text": passthrough_text(src),
+            }, ensure_ascii=False, indent=2), encoding="utf-8")
+            res.json_output = str(jtarget)
         res.duration_s = round(time.perf_counter() - started, 2)
         return res
 

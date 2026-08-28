@@ -124,6 +124,30 @@ Das Ergebnis ist **abgeleitet**, nicht extrahiert — es ordnet um und löst
 Symbole in Klartext auf. Für wörtliche Zitate die beiden Extrakte heranziehen,
 nicht diese Gliederung.
 
+## Für nachgelagerte Systeme: die JSON-Schnittstelle
+
+Ein **Agent** liest das Markdown: kompakt, mit Seitenmarken, sparsam im Kontext.
+Ein **verarbeitendes System** liest JSON. Beides liegt für jeden Extrakt vor:
+
+| Datei | Inhalt |
+| --- | --- |
+| `<slug>.md` | verbindliche Textquelle für Agenten |
+| `<slug>.docling.json` | verlustfreies DoclingDocument: Elemente, Tabellen als Zellraster, Positionen |
+| `<slug>.passthrough.json` | wörtlicher Inhalt, wo Docling keinen Reader hat (YAML, XML, `.mm`) |
+| `output/_KORPUS.json` | **Einstiegspunkt**: alle Dokumente mit Pfaden, Deckung, Befund, Warnungen |
+
+Erzeugt mit `extract.py --json` bzw. `tracker.py --korpus output/_KORPUS.json`.
+
+`_KORPUS.json` sagt je Dokument, welche der beiden JSON-Arten vorliegt
+(`struktur_art: docling | passthrough`) und listet unter `ohne_struktur_json`,
+wo gar keine liegt — ein verarbeitendes System muss also nicht raten und fällt
+nicht still auf einen Teilbestand zurück.
+
+**Größenordnung:** das JSON ist rund siebenmal so groß wie das Markdown
+(444 MB gegen 63 MB). Für die programmatische Verarbeitung ist es die richtige
+Wahl, für den Kontext eines Agenten nicht — dort kostet dieselbe Aussage ein
+Vielfaches an Token. Deshalb bleibt Markdown die Quelle fürs Zitieren.
+
 ## Versionsstand — immer prüfen
 
 Bevor du aus einem Extrakt zitierst oder eine Norm für eine Aussage heranziehst:
