@@ -185,6 +185,12 @@ Hinweisblock in die Notiz — er ist Auslegungshilfe, keine Anforderung. Da
 solche Quellen keine Seiten haben, trägt die Notiz statt `source_page` einen
 `source_locator` mit dem Schlüsselpfad (`basic/01B in AM.yml`).
 
+Kennt der Vault eine ID, die der aktuelle Katalog nicht mehr führt, hält
+`--mark-withdrawn` sie als `status: entfallen` fest, statt eine leere Notiz
+stehen zu lassen. Der Schalter greift **nur** bei maschinenlesbaren Katalogen:
+aus einem PDF folgt aus einer fehlenden ID nicht, dass die Anforderung entfallen
+ist — sie kann auch nur nicht gefunden worden sein.
+
 Dokumente ohne Anforderungsraster — Leitfäden, Fachartikel, Studien,
 Handbuchkapitel — kommen genauso in den Bestand, nur ohne Framework:
 

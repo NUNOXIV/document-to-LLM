@@ -380,6 +380,17 @@ def test_yaml_catalogue() -> None:
     check("ohne YAML-Block nichts",
           publish.sections_from_yaml("# Ohne Block\n", {"source_file": "AM.yml"}) == {})
 
+    # Nur ein Katalog darf das Fehlen einer ID belegen.
+    check("Katalog nennt seine Gruppe",
+          publish.yaml_catalogue_group(verschachtelt, {"source_file": "AM.yml"}) == "AM")
+    check("PDF-Extrakt ist kein Katalog",
+          publish.yaml_catalogue_group("## 4.1 Kontext\n\nText.\n",
+                                       {"source_file": "norm.pdf"}) is None)
+    note = publish.withdrawn_note("bsi-c5", "AM-01.02AC", {"source_file": "AM.yml"})
+    check("Entfallen-Notiz kennzeichnet Status", "status: entfallen" in note)
+    check("Entfallen-Notiz erfindet keinen Text", "> [!quote]" not in note)
+    check("Entfallen-Notiz warnt vor Zitat", "Nicht als geltende Anforderung zitieren" in note)
+
 
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,

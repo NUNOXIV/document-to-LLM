@@ -120,6 +120,20 @@ def _c5_text(entry: dict) -> str:
     return "\n\n".join(parts)
 
 
+def yaml_catalogue_group(body: str, meta: dict[str, str]) -> str | None:
+    """Kriterienbereich, den dieser Extrakt vollstaendig abdeckt — oder None.
+
+    Nur bei einem maschinenlesbaren Katalog ist Abwesenheit einer ID eine
+    Aussage: die Datei enthaelt den Bereich ganz. Aus einem PDF laesst sich das
+    nicht schliessen, dort heisst eine fehlende ID meist, dass die Extraktion
+    sie nicht gefunden hat.
+    """
+    if not sections_from_yaml(body, meta):
+        return None
+    group = Path(meta.get("source_file", "")).stem.upper()
+    return group if re.fullmatch(r"[A-Z]{2,4}", group) else None
+
+
 def sections_from_yaml(body: str, meta: dict[str, str]) -> dict[str, Section]:
     """Anforderungen aus einem maschinenlesbaren Katalog (BSI C5 als YAML).
 
@@ -421,6 +435,43 @@ def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) ->
     ] if z is not None])
 
 
+def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
+    """Notiz fuer eine ID, die es in der aktuellen Fassung der Norm nicht gibt.
+
+    Die Notiz erfindet keinen Text: sie haelt fest, dass die Anforderung in der
+    vorliegenden — aktuellen — Fassung nicht vorkommt, und nennt die Quelle, aus
+    der das hervorgeht. Eine leere Platzhalternotiz stehen zu lassen waere
+    schlechter: sie sieht aus wie eine Luecke in der Extraktion.
+    """
+    esc = lambda v: '"' + str(v).replace('"', '\\"') + '"'
+    src = meta.get("source_file", "der Quelle")
+    return "\n".join([
+        "---",
+        "type: normtext",
+        f"framework: {framework}",
+        f"id: {ident}",
+        "status: entfallen",
+        f"source_file: {esc(src)}",
+        f"source_sha256: {meta.get('source_sha256', '')}",
+        f'tags: ["grc/normtext", "grc/framework/{framework}", "grc/entfallen"]',
+        "generated-by: document-to-LLM",
+        "---",
+        "",
+        f"# {ident} — entfallen",
+        "",
+        "> [!warning] In der aktuellen Fassung nicht enthalten",
+        f"> Diese Anforderung kommt in {src} nicht vor. Der Katalog enthaelt den",
+        f"> Kriterienbereich vollstaendig, die ID stammt also aus einer frueheren",
+        "> Fassung. Nicht als geltende Anforderung zitieren.",
+        "",
+        "---",
+        "",
+        f"Festgestellt beim Abgleich der Vault-IDs gegen {src} "
+        f"({meta.get('converter', 'IBM Docling')}).",
+        "",
+    ])
+
+
 def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
                    titel: str, autor: str, art: str, dry_run: bool) -> tuple[Path, Path]:
     """Ein Dokument ohne Anforderungsraster ablegen: Volltext in den lizenzierten
@@ -498,11 +549,16 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
 @click.option("--autor", default="", help="Urheber (--as-document).")
 @click.option("--art", default="Dokument", show_default=True,
               help="Art des Dokuments, z. B. Fachartikel, Leitfaden (--as-document).")
+@click.option("--mark-withdrawn", "mark_withdrawn", is_flag=True,
+              help="IDs, die der Katalog nicht kennt, als 'entfallen' festhalten. "
+                   "Nur bei maschinenlesbaren Katalogen (YAML) moeglich, weil nur "
+                   "dort das Fehlen einer ID eine Aussage ist.")
 @click.option("--dry-run", is_flag=True, help="Nur berichten, nichts schreiben.")
 @click.option("--overwrite/--keep", default=True, show_default=True,
               help="Vorhandene Normtext-Notizen ersetzen oder stehen lassen.")
 def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
-         titel: str | None, autor: str, art: str, dry_run: bool, overwrite: bool) -> None:
+         titel: str | None, autor: str, art: str, mark_withdrawn: bool,
+         dry_run: bool, overwrite: bool) -> None:
     """Schreibt Normtext- oder Dokumentnotizen aus einem Extrakt in den Vault."""
     vault_path = Path(vault).expanduser()
     md_path = Path(extract_md)
@@ -598,9 +654,32 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
             target.write_text(note_text(framework, ident, sec, meta), encoding="utf-8")
         written.append(ident)
 
+    withdrawn: list[str] = []
+    if mark_withdrawn and missing:
+        group = yaml_catalogue_group(body, meta)
+        if not group:
+            raise click.ClickException(
+                "--mark-withdrawn nur bei maschinenlesbaren Katalogen: aus einem "
+                "PDF laesst sich nicht schliessen, dass eine fehlende ID entfallen "
+                "ist — sie kann auch nur nicht gefunden worden sein.")
+        for ident in list(missing):
+            if not ident.startswith(group + "-"):
+                continue          # anderer Kriterienbereich: diese Datei sagt nichts
+            target = target_dir / f"{framework} {ident} (Normtext).md"
+            if target.exists() and not overwrite:
+                continue
+            if not dry_run:
+                target_dir.mkdir(parents=True, exist_ok=True)
+                target.write_text(withdrawn_note(framework, ident, meta), encoding="utf-8")
+            withdrawn.append(ident)
+            missing.remove(ident)
+
     click.secho(f"{len(written)} von {len(wanted)} Anforderungen belegt"
                 + (" (Probelauf, nichts geschrieben)" if dry_run else f" -> {target_dir}"),
                 fg="green" if not missing else "yellow")
+    if withdrawn:
+        click.secho(f"{len(withdrawn)} als entfallen festgehalten (nicht in der aktuellen "
+                    f"Fassung): " + ", ".join(withdrawn), fg="yellow")
     if skipped:
         click.echo(f"{len(skipped)} vorhandene Notizen unveraendert gelassen (--overwrite ersetzt sie).")
     if missing:

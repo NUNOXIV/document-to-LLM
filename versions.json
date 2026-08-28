@@ -107,6 +107,12 @@
       "quelle": "https://portal.enx.com/de-DE/TISAX/downloads/",
       "anmerkung": "Fassung aus der lizenzierten Arbeitsmappe gelesen. Das ENX-Portal verlangt eine Anmeldung; neuere ISA-Releases sind dort manuell zu pruefen.",
       "dokument_muster": "(6\\.0\\.[0-9])"
+    },
+    "version-und-lizenz": {
+      "titel": "BSI Kriterienkatalog C5 (maschinenlesbarer Katalog)",
+      "dokument_version": "1.1.0",
+      "quelle": "https://www.bsi.bund.de/dok/c5",
+      "dokument_muster": "version: '([0-9]+\\.[0-9]+\\.[0-9]+)'"
     }
   }
 }
