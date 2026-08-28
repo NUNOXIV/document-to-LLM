@@ -36,7 +36,7 @@ class Finding:
     aufgenommen: str
     aktuell: str | None
     quelle: str
-    status: str          # aktuell | veraltet | belegt | manuell | unerreichbar
+    status: str          # aktuell | veraltet | historisch | belegt | manuell | unerreichbar
     hinweis: str = ""
     beleg: str = ""      # Fundstelle im Dokument, wenn die Fassung dort steht
 
@@ -116,8 +116,29 @@ def check(slug: str, entry: dict, out_dir: Path) -> Finding:
 
     current = newest(hits)
     same = re.findall(r"\d+", current) == re.findall(r"\d+", have)
-    return Finding(slug, titel, have, current, url,
-                   "aktuell" if same else "veraltet", note, beleg)
+    status = "aktuell" if same else "veraltet"
+    if status == "veraltet" and slug in historisch():
+        status = "historisch"
+        nachfolger = historisch()[slug]
+        note = (note + " " if note else "") + \
+            f"Bewusst als Historiendokument gefuehrt; geltend ist {nachfolger}."
+    return Finding(slug, titel, have, current, url, status, note, beleg)
+
+
+def historisch() -> dict[str, str]:
+    """Slugs, die bewusst als Historiendokument gefuehrt werden, mit Nachfolger.
+
+    Ein solches Dokument ist zwar nicht der aktuelle Stand, aber auch kein
+    Mangel: es liegt absichtlich im Bestand, damit nachlesbar ist, was frueher
+    galt. Es als "nicht auf dem aktuellen Stand" zu melden waere eine
+    Fehlermeldung fuer eine getroffene Entscheidung.
+    """
+    path = Path(__file__).parent / "mappings" / "historie.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {e["slug"]: e.get("gilt_stattdessen", "")
+            for e in data.get("abgeloest", []) if e.get("slug")}
 
 
 def render(findings: list[Finding]) -> str:
@@ -149,7 +170,7 @@ def render(findings: list[Finding]) -> str:
 
     lines += ["| Dokument | Aufgenommen | Aktuell | Befund | Fundstelle |",
               "| --- | --- | --- | --- | --- |"]
-    symbol = {"aktuell": "aktuell", "veraltet": "VERALTET",
+    symbol = {"aktuell": "aktuell", "veraltet": "VERALTET", "historisch": "historisch",
               "belegt": "aus Dokument belegt", "manuell": "manuell pruefen",
               "unerreichbar": "Quelle offline"}
     for f in sorted(findings, key=lambda x: (x.status != "veraltet", x.titel)):
@@ -190,7 +211,8 @@ def main(registry: str, out_dir: str, only: str | None, targets: tuple[str, ...]
     else:
         for f in findings:
             colour = {"aktuell": "green", "veraltet": "red", "belegt": "cyan",
-                      "manuell": "yellow", "unerreichbar": "yellow"}[f.status]
+                      "manuell": "yellow", "unerreichbar": "yellow",
+                      "historisch": "cyan"}[f.status]
             detail = f"aufgenommen {f.aufgenommen}" + (f", aktuell {f.aktuell}" if f.aktuell else "")
             detail += f", Beleg: {f.beleg}" if f.beleg else ""
             click.secho(f"{f.status.upper():14s} {f.titel} ({detail})", fg=colour)

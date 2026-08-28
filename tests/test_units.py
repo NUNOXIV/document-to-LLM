@@ -13,7 +13,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import extract  # noqa: E402
 import gs_struktur as GS  # noqa: E402
+import index as IDX  # noqa: E402
 import publish  # noqa: E402
+import versioncheck as VC  # noqa: E402
 import verify as V  # noqa: E402
 
 FIXTURE_PDF = Path(__file__).parent / "fixtures" / "Muster-Norm-Zweispaltig.pdf"
@@ -461,11 +463,48 @@ def test_gs_struktur() -> None:
                                              "Stand: Februar 2023"], str(fuss))
 
 
+
+def test_versioncheck_historie() -> None:
+    """Bewusst gefuehrte Altfassungen sind kein Mangel."""
+    print("\ntest_versioncheck_historie")
+    hist = VC.historisch()
+    check("Historienregistry gelesen", isinstance(hist, dict) and hist, str(hist)[:80])
+    check("OWASP 4.0 als historisch gefuehrt",
+          any("owasp" in s for s in hist), str(list(hist)[:3]))
+    check("Nachfolger benannt", all(v for v in hist.values()), str(hist))
+
+    # Der Bericht darf eine Altfassung nicht als 'veraltet' zaehlen.
+    f_hist = VC.Finding("alt", "Alt", "4.0", "4.2", "u", "historisch", "", "")
+    f_alt = VC.Finding("x", "X", "1.0", "2.0", "u", "veraltet", "", "")
+    text = VC.render([f_hist, f_alt])
+    check("nur echte Veraltung gezaehlt", "veraltet: 1" in text, text[:200])
+    check("historisch im Bericht benannt", "historisch" in text)
+
+
+
+def test_fts5_query() -> None:
+    """Alltagsschreibweisen duerfen nicht als FTS5-Syntax gelesen werden."""
+    print("\ntest_fts5_query")
+    q = IDX.fts5_query
+    # Der Bindestrich im Wort war der Fehler: FTS5 las ihn als Spaltenfilter.
+    check("Bindestrich gequotet", q("Mehrfaktor-Authentisierung Fernzugriff")
+          == '"Mehrfaktor-Authentisierung" "Fernzugriff"', q("Mehrfaktor-Authentisierung Fernzugriff"))
+    check("Punkte in IDs gequotet", q("OPS.1.1.3") == q("OPS.1.1.3"))
+    check("Schraegstrich gequotet", '"IT/OT"' in q("IT/OT Netz") or q("IT/OT Netz") == "IT/OT Netz")
+    # Ohne Sonderzeichen bleibt die Eingabe unangetastet.
+    check("harmlose Eingabe unveraendert", q("Backup Konzept") == "Backup Konzept")
+    # Bewusste FTS5-Syntax wird nicht entschaerft.
+    check("Phrase bleibt", q('"genau so"') == '"genau so"')
+    check("OR bleibt", q("Backup OR Sicherung") == "Backup OR Sicherung")
+    check("NEAR bleibt", q("NEAR(Backup Test)") == "NEAR(Backup Test)")
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
                test_pipeline_options, test_verify, test_repair, test_office_verify,
                test_broken_ooxml_styles, test_text_passthrough,
-               test_yaml_catalogue, test_gs_struktur):
+               test_yaml_catalogue, test_gs_struktur,
+               test_versioncheck_historie, test_fts5_query):
         fn()
     print()
     if failures:

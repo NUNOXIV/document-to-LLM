@@ -217,6 +217,27 @@ def build(out_dir: str, db_path: str | None, chunker: str) -> None:
     click.secho(f"Index geschrieben: {db_file} ({len(md_files)} Dokumente, {total} Chunks)", fg="green")
 
 
+# Zeichen, die FTS5 als Syntax liest. In deutschem Normtext stehen sie mitten
+# im Wort ("Mehrfaktor-Authentisierung", "OPS.1.1.3", "IT/OT"), wo sie als
+# Operator gemeint sind — mit dem Ergebnis "no such column: Authentisierung".
+FTS5_SYNTAX = re.compile(r'[-+*:^(){}\[\]]')
+
+
+def fts5_query(roh: str) -> str:
+    """Suchbegriff so aufbereiten, dass alltaegliche Schreibweisen funktionieren.
+
+    Wer FTS5-Syntax will, nutzt Anfuehrungszeichen, NEAR oder OR und bekommt die
+    Eingabe unveraendert. Alles andere wird in Phrasen zerlegt und gequotet:
+    ein Bindestrich im Wort ist dann Text, kein Ausschlussoperator.
+    """
+    if '"' in roh or re.search(r"\b(AND|OR|NOT|NEAR)\b", roh):
+        return roh                      # bewusste FTS5-Syntax nicht anfassen
+    begriffe = [w for w in roh.split() if w]
+    if not any(FTS5_SYNTAX.search(w) for w in begriffe):
+        return roh                      # nichts zu entschaerfen
+    return " ".join('"' + w.replace('"', '') + '"' for w in begriffe)
+
+
 @cli.command()
 @click.argument("query")
 @click.option("--db", "db_path", default="output/acsos.db", show_default=True)
@@ -231,7 +252,7 @@ def search(query: str, db_path: str, limit: int, slug: str | None, as_json: bool
     conn = sqlite3.connect(db_file)
     sql = ("SELECT slug, headings, page, snippet(chunks,3,'**','**','…',40), text "
            "FROM chunks WHERE chunks MATCH ?")
-    params: list = [query]
+    params: list = [fts5_query(query)]
     if slug:
         sql += " AND slug = ?"
         params.append(slug)
@@ -240,7 +261,9 @@ def search(query: str, db_path: str, limit: int, slug: str | None, as_json: bool
     try:
         rows = conn.execute(sql, params).fetchall()
     except sqlite3.OperationalError as exc:
-        raise click.ClickException(f"Ungueltige FTS5-Query: {exc}")
+        raise click.ClickException(
+            f"Ungueltige FTS5-Query: {exc}\n"
+            "Fuer eine woertliche Suche den Begriff in Anfuehrungszeichen setzen.")
     conn.close()
 
     if as_json:
