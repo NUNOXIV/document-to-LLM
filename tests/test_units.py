@@ -285,10 +285,46 @@ def test_broken_ooxml_styles() -> None:
               V.normalize_ooxml_styles(good, outdir) is None)
 
 
+def test_text_passthrough() -> None:
+    """Formate ohne Docling-Reader werden zeichengetreu uebernommen."""
+    print("\ntest_text_passthrough")
+    with tempfile.TemporaryDirectory() as td:
+        d = Path(td)
+        # Inhalt mit Backticks, damit der Zaun wachsen muss, und mit CRLF.
+        content = "a: 1\r\n```\r\nnoch ein: wert\r\n"
+        src = d / "kriterien.yml"
+        src.write_bytes(content.encode("utf-8"))
+
+        body, lines = extract.passthrough_body(src)
+        check("Zeilen gezaehlt", lines == 3, f"{lines}")
+        check("Zaun waechst ueber Quell-Backticks", "````yaml" in body, body[:80])
+
+        fence = "`" * 4
+        inner = body.split(fence + "yaml\n", 1)[1].rsplit("\n" + fence, 1)[0]
+        check("Inhalt zeichengetreu", inner == "a: 1\n```\nnoch ein: wert", repr(inner))
+
+        # .yml gilt als unterstuetzt, laeuft aber nicht ueber Docling.
+        check("Suffix unterstuetzt", ".yml" in extract.SUPPORTED_SUFFIXES)
+        check("nicht im Docling-Pfad", ".yml" not in extract.DOCLING_SUFFIXES)
+
+        out = d / "out"
+        res = extract.convert_file(
+            None, src, out, ocr_mode="auto", page_markers=True,
+            write_json=False, force=True, claimed={}, do_verify=True,
+            min_coverage=99.0, repair=True,
+        )
+        check("Konverter markiert", res.converter == "passthrough", res.converter)
+        check("Deckung 100 %", res.text_coverage == 100.0, str(res.text_coverage))
+        check("Warnung gesetzt", any("keinen Reader" in w for w in res.warnings))
+        md = Path(res.output).read_text(encoding="utf-8")
+        check("Front-Matter nennt Passthrough", "ACSOS Passthrough" in md)
+        check("Quelltext im Extrakt", "noch ein: wert" in md)
+
+
 def main() -> int:
     for fn in (test_page_markers, test_quality_gates, test_target_names,
                test_pipeline_options, test_verify, test_repair, test_office_verify,
-               test_broken_ooxml_styles):
+               test_broken_ooxml_styles, test_text_passthrough):
         fn()
     print()
     if failures:

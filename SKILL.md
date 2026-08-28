@@ -48,6 +48,13 @@ python extract.py input/ --recursive --json
 Ergebnis: `output/<slug>.md` mit YAML-Front-Matter (Quell-Hash, Seitenzahl,
 Docling-Version, Wortdeckung, Warnungen) und `<!-- page: N -->` Markern im Text.
 
+**Formate ohne Docling-Reader (`.yml`, `.yaml`, `.json`, `.txt`)** — etwa der
+maschinenlesbare C5:2026-Kriterienkatalog — laufen nicht durch Docling, sondern
+werden **wörtlich** in einen Codeblock übernommen. Das Front-Matter sagt das
+offen: `converter: "ACSOS Passthrough (wörtlich, kein Parser)"` und
+`docling_status: not-applicable`. Es wird kein eigener YAML-Parser geschrieben —
+genau der wäre die Fehlerquelle, die dieses Werkzeug vermeidet.
+
 Bei PDFs läuft automatisch die Abweichungsprüfung mit: der Extrakt wird Wort für
 Wort gegen den Textlayer der Quelle verglichen. `text_coverage_percent: 100.0`
 heißt, dass kein Wort der Quelle fehlt. Alles unter der Schwelle erzeugt eine
@@ -93,6 +100,14 @@ PDF übernommen, damit nichts verloren geht, aber **ohne Struktur**: du siehst
 nicht, zu welcher Tabellenzelle sie gehören. Zitierbar mit Seitenangabe; wenn
 die Zuordnung für die Aussage zählt, in der Quelle nachsehen und das kenntlich
 machen.
+
+### Passthrough-Dateien richtig lesen
+
+Bei `converter: "ACSOS Passthrough …"` gilt: der Zeichenbestand ist exakt der
+der Quelle (Wortdeckung 100 % gilt per Konstruktion, nicht per Messung), aber
+es gibt **keine** abgeleiteten Überschriften, Tabellen oder Seitenmarken.
+Zitiere solche Dateien über den Schlüsselpfad im YAML (z. B. `GC-05`,
+`SIM-01.02B`) statt über eine Seitenzahl — eine Seitenzahl existiert nicht.
 
 ## Versionsstand — immer prüfen
 

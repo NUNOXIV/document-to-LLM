@@ -31,10 +31,22 @@ import click
 # --------------------------------------------------------------------------
 # Von Docling unterstuetzte Eingabeformate (Dateiendungen).
 # --------------------------------------------------------------------------
-SUPPORTED_SUFFIXES = {
+DOCLING_SUFFIXES = {
     ".pdf", ".docx", ".xlsx", ".pptx", ".html", ".htm",
     ".md", ".adoc", ".asciidoc", ".csv", ".png", ".jpg", ".jpeg", ".tiff", ".bmp",
 }
+
+# Reine Textformate, fuer die Docling keinen Reader mitbringt (Stand 2.x).
+# Sie werden woertlich uebernommen statt geparst: ein selbst geschriebener
+# YAML-/JSON-Parser waere genau die Fehlerquelle, die dieses Werkzeug vermeidet.
+# Der Zeichenbestand bleibt dadurch exakt erhalten.
+TEXT_SUFFIXES = {".yml", ".yaml", ".json", ".txt"}
+
+TEXT_FENCE_LANG = {
+    ".yml": "yaml", ".yaml": "yaml", ".json": "json", ".txt": "text",
+}
+
+SUPPORTED_SUFFIXES = DOCLING_SUFFIXES | TEXT_SUFFIXES
 
 # OOXML-Formate, deren Stylesheet bei Bedarf normalisiert werden kann.
 OOXML_SUFFIXES = {".xlsx", ".xlsm", ".docx", ".pptx"}
@@ -60,6 +72,7 @@ class Result:
     tables: int = 0
     ocr_used: bool = False
     table_mode: str = "accurate"
+    converter: str = "docling"   # docling | passthrough
     docling_status: str = "success"
     failed_pages: list[int] = field(default_factory=list)
     text_coverage: float | None = None   # Wortdeckung Quelle -> Extrakt (nur PDF)
@@ -392,6 +405,40 @@ def appendix(lines: list[tuple[int, str]]) -> str:
     return "\n".join(out).rstrip() + "\n"
 
 
+def converter_label(res: Result) -> str:
+    if res.converter == "passthrough":
+        return "ACSOS Passthrough (woertlich, kein Parser)"
+    return "IBM Docling " + docling_version()
+
+
+def passthrough_body(src: Path) -> tuple[str, int]:
+    """Textdatei woertlich als Markdown-Block. Rueckgabe: (Markdown, Zeilen).
+
+    Der Inhalt wird zeichengetreu uebernommen und nur in einen Codeblock
+    gefasst; es wird nichts umsortiert, zusammengefasst oder interpretiert.
+    Der Zaun waechst, falls die Quelle selbst Backticks enthaelt, damit kein
+    Quellzeichen den Block vorzeitig schliesst.
+    """
+    raw = src.read_bytes()
+    try:
+        text = raw.decode("utf-8")
+    except UnicodeDecodeError:
+        text = raw.decode("utf-8", "replace")
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    longest = 0
+    for line in text.splitlines():
+        stripped = line.lstrip()
+        if stripped.startswith("`"):
+            longest = max(longest, len(stripped) - len(stripped.lstrip("`")))
+    fence = "`" * max(3, longest + 1)
+    lang = TEXT_FENCE_LANG.get(src.suffix.lower(), "text")
+    body = (
+        f"# {src.name}\n\n"
+        f"{fence}{lang}\n{text.rstrip(chr(10))}\n{fence}\n"
+    )
+    return body, len(text.splitlines())
+
+
 def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
     def esc(v: str) -> str:
         return '"' + str(v).replace("\\", "\\\\").replace('"', '\\"') + '"'
@@ -403,7 +450,7 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         f"source_bytes: {res.source_bytes}",
         f"pages: {res.pages}",
         f"tables: {res.tables}",
-        f"converter: {esc('IBM Docling ' + docling_version())}",
+        f"converter: {esc(converter_label(res))}",
         f"ocr: {str(res.ocr_used).lower()} # mode={ocr_mode}",
         f"table_mode: {res.table_mode}",
         f"docling_status: {res.docling_status}",
@@ -477,6 +524,30 @@ def convert_file(
             res.output = str(target)
             res.duration_s = round(time.perf_counter() - started, 2)
             return res
+
+    # Formate ohne Docling-Reader: woertlich uebernehmen statt selbst parsen.
+    if src.suffix.lower() in TEXT_SUFFIXES:
+        md_body, lines = passthrough_body(src)
+        res.converter = "passthrough"
+        res.docling_status = "not-applicable"
+        res.table_mode = "not-applicable"
+        res.characters = len(md_body)
+        res.headings = 1
+        res.pages = 0
+        res.text_coverage = 100.0
+        res.warnings.append(
+            f"Docling bringt fuer {src.suffix.lower()} keinen Reader mit. Der Inhalt "
+            f"({lines} Zeile(n)) wurde woertlich und unveraendert uebernommen; es "
+            f"wurden keine Ueberschriften, Tabellen oder Seitenmarken abgeleitet. "
+            f"Zitate sind zeichengetreu, Strukturangaben gibt es fuer diese Datei nicht."
+        )
+        res.status = "warn"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        target.write_text(front_matter(src, res, ocr_mode) + md_body.rstrip() + "\n",
+                          encoding="utf-8")
+        res.output = str(target)
+        res.duration_s = round(time.perf_counter() - started, 2)
+        return res
 
     is_pdf = src.suffix.lower() == ".pdf"
     ocr = ocr_mode == "on"
