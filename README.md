@@ -42,12 +42,19 @@ Konkret geholt werden (Stand Docling 2.123):
 | Layout | `docling-project/docling-layout-heron` | 172 MB |
 | Layout (ONNX-Engine) | `docling-project/docling-layout-heron-onnx` | 171 MB |
 | Tabellen (ACCURATE) | `ds4sd/docling-models` → `model_artifacts/tableformer/accurate` | 213 MB |
-| OCR | in `rapidocr` enthalten, kein Download | — |
+| OCR | ONNX-Modelle in `rapidocr` enthalten, kein Download — **aber nur mit `onnxruntime`** (siehe unten) | — |
 
 Die Groessen sind der Grund, warum ein HF-Connector oder API-Zugang das Problem
 nicht loest: die Gewichte muessen als Dateien auf die Maschine, die konvertiert.
 Entweder der Host `huggingface.co` ist erreichbar, oder der Ordner wird per
 `--models-dir` mitgebracht.
+
+Für OCR gilt das **nicht**: RapidOCRs Modelle liegen als ONNX bereits im Paket.
+Fehlt aber `onnxruntime`, fällt RapidOCR auf das Torch-Backend zurück und will
+dessen `.pth`-Gewichte von `modelscope.cn` nachladen. Ist der Host gesperrt,
+scheitert jedes gescannte PDF mit der Meldung „Docling-Modelle nicht
+verfügbar" — obwohl die Modelle lokal vorliegen. Es fehlt dann nicht das
+Modell, sondern die Laufzeit, die es lesen kann.
 
 Preflight, bevor ein Bestand konvertiert wird:
 
@@ -101,10 +108,16 @@ python index.py list
   Nicht verarbeitete Seiten stehen als `docling_status` und als Warnung in der
   Datei; ein Fehlschlag bricht ab.
 - **OCR-Automatik:** textarme (gescannte) PDFs werden erkannt und mit OCR
-  wiederholt.
-- **Abweichungsprüfung für alle Formate:** jeder Extrakt wird Wort für Wort
-  gegen die Quelle geprüft — PDFs gegen den Textlayer (Docling-PDF-Backend,
-  keine ML-Modelle nötig), XLSX/DOCX/PPTX gegen den Standardleser des Formats.
+  wiederholt. Ein solcher Extrakt ist **erzeugter Text, kein Wortlaut** — siehe
+  den nächsten Punkt.
+- **Abweichungsprüfung, wo es etwas zu prüfen gibt:** jeder Extrakt mit
+  Textlayer wird Wort für Wort gegen die Quelle geprüft — PDFs gegen den
+  Textlayer (Docling-PDF-Backend, keine ML-Modelle nötig), XLSX/DOCX/PPTX gegen
+  den Standardleser des Formats. Bei einem **Scan ohne Textlayer entfällt diese
+  Prüfung**, weil es nichts gibt, wogegen zu prüfen wäre: der Extrakt trägt dann
+  keine Deckungszahl, sondern `deckung_pruefbar: false` und den Vermerk, dass
+  der Text aus der Zeichenerkennung stammt. Solche Dokumente sind durchsuchbar,
+  aber nicht zitierfähig.
   Der Abgleich kommt damit immer aus einer von Docling unabhängigen Quelle.
   Die Wortdeckung steht als `text_coverage_percent` in der Front-Matter; unter
   `--min-coverage` (Default 99.5 %) gibt es eine Warnung mit den fehlenden
