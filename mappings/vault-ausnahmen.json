@@ -57,5 +57,76 @@
         "folge": "Fuer Inhalte dieser Schulung ist der Foliensatz im Original anzusehen. Die Volltextsuche findet hier nur Titel und Kopfzeilen."
       }
     ]
+  },
+  "vault_luecken": {
+    "hinweis": "Anforderungen, die in den BSI-Einzelbaustein-PDFs stehen, aber im Vault-Geruest fehlen. publish.py legt sie nicht an, weil es keine IDs erfindet: welche Anforderungen gebraucht werden, sagt der Vault. Diese Liste ist damit ein Befund ueber den Vault, nicht ueber die Extraktion — die Wortlaute liegen als Baustein-Dokumente vollstaendig vor.",
+    "methode": "Anforderungs-IDs aus 110 Einzelbaustein-PDFs gegen die bsi-grundschutz-Normtextnotizen des Vaults verglichen (Stand Kompendium 2023). 99 Bausteine deckungsgleich (1823 Anforderungen), 11 abweichend. Von 17 Abweichungen ist eine (APP.2.2.A2) im BSI-Text als ENTFALLEN gekennzeichnet und fehlt zu Recht.",
+    "eintraege": [
+      {
+        "id": "APP.2.2.A8",
+        "titel": "Absicherung des 'Sicheren Kanals' (S)"
+      },
+      {
+        "id": "APP.3.6.A16",
+        "titel": "Integration eines DNS-Servers in eine \"P-A-P\"-Struktur (S)"
+      },
+      {
+        "id": "NET.1.2.A9",
+        "titel": "Absicherung der Netzmanagement-Kommunikation und des Zugriffs auf Netzmanagement-Werkzeuge (S)"
+      },
+      {
+        "id": "NET.3.1.A16",
+        "titel": "Schutz vor 'IPv6 Routing Header Type-0'-Angriffen (S)"
+      },
+      {
+        "id": "NET.3.2.A16",
+        "titel": "Aufbau einer 'P-A-P'-Struktur (S)"
+      },
+      {
+        "id": "NET.3.2.A27",
+        "titel": "Einsatz verschiedener Firewall-Betriebssysteme und -Produkte in einer mehrstufigen Firewall-Architektur (H)"
+      },
+      {
+        "id": "OPS.1.1.2.A24",
+        "titel": "Pruefen von IT-Administrationstaetigkeiten (S)"
+      },
+      {
+        "id": "OPS.1.1.2.A25",
+        "titel": "Zeitfenster fuer schwerwiegende IT-Administrationstaetigkeiten (S)"
+      },
+      {
+        "id": "OPS.1.1.7.A15",
+        "titel": "Statusueberwachung, Protokollierung und Alarmierung bei relevanten Ereignissen (S)"
+      },
+      {
+        "id": "OPS.1.1.7.A19",
+        "titel": "Absicherung der Systemmanagement-Kommunikation (S)"
+      },
+      {
+        "id": "OPS.2.3.A22",
+        "titel": "Durchfuehrung von gemeinsamen Notfall- und Krisenuebungen (H)"
+      },
+      {
+        "id": "SYS.1.2.3.A5",
+        "titel": "Sichere Authentisierung und Autorisierung in Windows Server (S)"
+      },
+      {
+        "id": "SYS.1.2.3.A8",
+        "titel": "Nutzung des Virtual Secure Mode (VSM) (H)"
+      },
+      {
+        "id": "SYS.2.2.3.A25",
+        "titel": "Umgang mit Fernzugriffsfunktionen der 'Connected User Experience and Telemetry' (S)"
+      },
+      {
+        "id": "SYS.2.2.3.A26",
+        "titel": "Nutzung des Virtual Secure Mode (VSM) (H)"
+      },
+      {
+        "id": "SYS.3.2.3.A13",
+        "titel": "Verwendung der Konfigurationsoption 'Einschraenkungen unter iOS' (S)"
+      }
+    ],
+    "folge": "Wer das ISMS gegen den Grundschutz fuehrt, hat diese 16 Anforderungen im Raster nicht stehen und wuerde sie in einer Abdeckungsanalyse uebersehen. Ergaenzen ist eine Entscheidung ueber den Vault, nicht ueber die Extraktion — deshalb steht sie hier und wurde nicht stillschweigend vollzogen."
   }
 }
