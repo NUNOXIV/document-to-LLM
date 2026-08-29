@@ -619,3 +619,47 @@ def test_document_note_ohne_pruefbare_deckung(tmp_path: Path) -> None:
     t2 = note2.read_text(encoding="utf-8")
     assert "Wortdeckung 100.0 %" in t2
     assert "deckung_pruefbar" not in t2
+
+
+def test_deckung_braucht_tragfaehige_grundlage(tmp_path: Path) -> None:
+    """Eine Deckungszahl gegen zwei Woerter ist kein Befund, sondern Zufall.
+
+    Beobachtet an einem 291-Seiten-Scan: dessen Textlayer enthielt zwei
+    Streuzeichen aus einer Kopfzeile. Der Vergleich fand beide im Extrakt
+    wieder und meldete 100,0 % — fuer ein Dokument, dessen 195773 Woerter
+    saemtlich aus der Zeichenerkennung stammten. Im Tracker haette es als
+    "vollstaendig" gestanden, im Korpusregister als woertlich.
+
+    Die alte Schutzklausel griff nur bei einer voellig leeren Grundlage.
+    """
+    import verify as V
+
+    class Fake:
+        def __init__(self, ref: int, ext: int) -> None:
+            self.ref, self.ext = ref, ext
+
+    def lauf(ref_woerter: int, ext_woerter: int) -> V.VerifyResult:
+        md = tmp_path / f"e{ref_woerter}-{ext_woerter}.md"
+        md.write_text(" ".join(f"wort{i}" for i in range(ext_woerter)), encoding="utf-8")
+        quelle = tmp_path / f"q{ref_woerter}-{ext_woerter}.pdf"
+        quelle.write_bytes(b"%PDF-1.4\n")
+        seiten = {1: [f"wort{i}" for i in range(ref_woerter)]}
+        echt = V.source_pages
+        V.source_pages = lambda p: (seiten, {})
+        try:
+            return V.verify(quelle, md)
+        finally:
+            V.source_pages = echt
+
+    duenn = lauf(2, 5000)
+    assert duenn.coverage is None, "keine Zahl ohne tragfaehige Grundlage"
+    assert "zu duenn" in (duenn.note or ""), duenn.note
+
+    # Gegenprobe: ein kleines Dokument ist nicht verdaechtig, nur weil es klein
+    # ist. Sonst faellt jede winzige Tabelle faelschlich in denselben Zweig.
+    klein = lauf(30, 30)
+    assert klein.coverage == 100.0, str(klein.coverage)
+    assert not klein.note
+
+    gesund = lauf(4800, 5000)
+    assert gesund.coverage is not None and gesund.coverage > 90.0

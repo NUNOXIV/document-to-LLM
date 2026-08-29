@@ -242,7 +242,11 @@ class VerifyResult:
     source_tokens: int = 0
     extract_tokens: int = 0
     missing_tokens: int = 0
-    coverage: float = 100.0
+    # Kein Vorgabewert 100.0: ein ungeprueftes Ergebnis darf nicht wie ein
+    # perfektes aussehen. Ist keine Pruefung moeglich, bleibt das Feld None,
+    # und wer die Zahl liest, ohne 'note' zu beachten, bekommt keinen Wert
+    # geschenkt, sondern faellt auf.
+    coverage: float | None = None
     per_page: dict[int, float] = field(default_factory=dict)
     missing_sample: list[str] = field(default_factory=list)
     worst_pages: list[tuple[int, float]] = field(default_factory=list)
@@ -264,14 +268,42 @@ def verify(pdf_path: Path, md_path: Path) -> VerifyResult:
     res.extract_tokens = len(out)
     res.boilerplate_tokens = sum(len(t) for t in boiler.values())
 
-    if not src_all:
-        res.note = (
-            "Kein Textlayer im PDF (gescannt) — ein Wortvergleich ist nicht "
-            "moeglich. Extraktion mit --ocr on pruefen."
-            if pdf_path.suffix.lower() == ".pdf" else
-            f"Format {pdf_path.suffix} wird fuer den Wortvergleich nicht "
-            f"unterstuetzt — Extrakt nicht gegen die Quelle geprueft."
-        )
+    # Eine Deckung ist nur so viel wert wie die Grundlage, gegen die sie
+    # rechnet. Ist die Grundlage leer, faellt das auf. Gefaehrlich ist der Fall
+    # dazwischen: ein gescanntes PDF, dessen Textlayer nur ein paar Streuzeichen
+    # aus Kopf- oder Fusszeilen enthaelt. Dann rechnet der Vergleich gegen eine
+    # Handvoll Woerter und meldet 100 % — ein perfekter Wert ueber eine
+    # Stichprobe, die nichts aussagt. Beobachtet an einem 291-Seiten-Scan:
+    # 2 Referenzwoerter gegen 195773 Extraktwoerter, Ergebnis "Deckung 100,0 %".
+    # Deshalb gilt die Grundlage erst ab einem absoluten Mindestumfang und einem
+    # plausiblen Verhaeltnis zum Extrakt als brauchbar.
+    # Rein relativ gemessen, nicht an einer absoluten Untergrenze: ein kleines
+    # Tabellenblatt hat legitim wenig Text, und sein Extrakt ist genauso klein
+    # — das Verhaeltnis bleibt gesund. Verdaechtig ist allein, wenn der Extrakt
+    # umfangreich ist und die Vergleichsgrundlage dazu verschwindet.
+    MIN_ANTEIL = 0.05
+    EXTRAKT_ERHEBLICH = 200
+    zu_duenn = bool(src_all) and len(out) > EXTRAKT_ERHEBLICH \
+        and len(src_all) < MIN_ANTEIL * len(out)
+
+    if not src_all or zu_duenn:
+        if zu_duenn:
+            res.note = (
+                f"Textlayer zu duenn fuer einen Wortvergleich: {len(src_all)} "
+                f"Referenzwoerter gegen {len(out)} Woerter im Extrakt. Eine "
+                f"Deckungszahl waere hier eine Scheingenauigkeit — sie wuerde "
+                f"gegen Streuzeichen aus Kopf- oder Fusszeilen rechnen, nicht "
+                f"gegen den Inhalt. Behandelt wie ein Scan ohne Textlayer: der "
+                f"Text stammt aus der Zeichenerkennung und ist nicht geprueft."
+            )
+        else:
+            res.note = (
+                "Kein Textlayer im PDF (gescannt) — ein Wortvergleich ist nicht "
+                "moeglich. Extraktion mit --ocr on pruefen."
+                if pdf_path.suffix.lower() == ".pdf" else
+                f"Format {pdf_path.suffix} wird fuer den Wortvergleich nicht "
+                f"unterstuetzt — Extrakt nicht gegen die Quelle geprueft."
+            )
         return res
 
     stream = "".join(out)  # fuer Woerter, die im PDF ueber einen Zeilenumbruch getrennt sind
