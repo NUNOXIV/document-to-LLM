@@ -703,3 +703,9 @@ def test_tracker_befund_trennt_duenn_von_fehlend() -> None:
     assert duenn.verdict == "Textlayer zu duenn", duenn.verdict
     assert leer.verdict == "kein Textlayer", leer.verdict
     assert voll.verdict == "vollstaendig", voll.verdict
+
+    # Dritter Fall: Markdown-Quelle. Kein zweiter Leser, also keine
+    # Gegenprobe -- aber ein Textlayer fehlt hier nicht, es gibt schlicht
+    # nur Text. "kein Textlayer" waere eine Falschaussage.
+    md_quelle = TR.Doc(slug="md", coverage=None, warnings=[])
+    assert md_quelle.verdict == "nicht gegengeprueft (Format)", md_quelle.verdict

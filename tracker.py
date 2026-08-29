@@ -51,7 +51,13 @@ class Doc:
             # frueher als volle Deckung ausgab — er gehoert benannt.
             if any("zu duenn" in w for w in self.warnings):
                 return "Textlayer zu duenn"
-            return "kein Textlayer"
+            if any("Kein Textlayer" in w for w in self.warnings):
+                return "kein Textlayer"
+            # Bleibt der dritte Fall: ein Format, fuer das es keinen zweiten,
+            # von Docling unabhaengigen Leser gibt (Markdown, HTML). Hier fehlt
+            # nicht der Text, sondern die Gegenprobe. "kein Textlayer" waere
+            # fuer eine Markdown-Datei schlicht falsch.
+            return "nicht gegengeprueft (Format)"
         if self.coverage >= 100.0:
             return "vollstaendig"
         # Der Fehlbetrag ist nur dann wirklich verloren, wenn --repair ihn nicht
