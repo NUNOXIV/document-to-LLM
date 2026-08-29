@@ -709,3 +709,22 @@ def test_tracker_befund_trennt_duenn_von_fehlend() -> None:
     # nur Text. "kein Textlayer" waere eine Falschaussage.
     md_quelle = TR.Doc(slug="md", coverage=None, warnings=[])
     assert md_quelle.verdict == "nicht gegengeprueft (Format)", md_quelle.verdict
+
+
+def test_tracker_vault_luecken() -> None:
+    """Fehlende Anforderungen im Vault-Geruest gehoeren ins Protokoll.
+
+    Sie sind kein Extraktionsfehler: der Wortlaut liegt vor, nur das Raster
+    kennt die ID nicht. Genau deshalb faellt so etwas sonst niemandem auf —
+    eine Abdeckungsanalyse gegen ein unvollstaendiges Raster meldet keine
+    Luecke, sie hat die Anforderung nie gesehen.
+    """
+    import tracker as TR
+
+    g = TR.vault_gaps()
+    assert g.get("eintraege"), "Luecken-Registry ist leer"
+    for e in g["eintraege"]:
+        assert e.get("id") and e.get("titel"), str(e)
+    assert g.get("hinweis") and g.get("methode") and g.get("folge")
+    # Die Methode muss nachvollziehbar sein, sonst ist der Befund nicht pruefbar.
+    assert "verglichen" in g["methode"]

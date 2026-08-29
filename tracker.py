@@ -155,6 +155,19 @@ def lizenzgrundlagen() -> list[dict]:
     return data.get("lizenzgrundlagen", {}).get("eintraege", [])
 
 
+def vault_gaps() -> dict:
+    """Anforderungen, die in der Quelle stehen, aber im Vault-Geruest fehlen.
+
+    Ein Befund ueber den Vault, nicht ueber die Extraktion: publish.py erfindet
+    keine IDs, also legt es sie auch nicht an. Wer das ISMS gegen den
+    Grundschutz fuehrt, haette sie in einer Abdeckungsanalyse uebersehen.
+    """
+    path = Path(__file__).parent / "mappings" / "vault-ausnahmen.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8")).get("vault_luecken", {})
+
+
 def partly_covered() -> list[dict]:
     """Dokumente, die vollstaendig konvertiert sind, deren Inhalt aber kaum als
     Text vorliegt (etwa ein Foliensatz aus Bildern).
@@ -300,6 +313,17 @@ def render(docs: list[Doc], vault: Path | None) -> str:
                 "was fehlt und warum.", ""]
         for e in fehlend:
             out.append(f"- **{e.get('datei', '?')}**: {e.get('grund', '')}")
+        out.append("")
+
+    luecken = vault_gaps()
+    if luecken.get("eintraege"):
+        out += ["", "## Im Vault-Geruest nicht vorgesehen", "",
+                luecken.get("hinweis", ""), "",
+                f"*Methode:* {luecken.get('methode', '')}", ""]
+        for e in luecken["eintraege"]:
+            out.append(f"- `{e['id']}` — {e['titel']}")
+        if luecken.get("folge"):
+            out += ["", luecken["folge"]]
         out.append("")
 
     teilweise = partly_covered()
