@@ -663,3 +663,25 @@ def test_deckung_braucht_tragfaehige_grundlage(tmp_path: Path) -> None:
 
     gesund = lauf(4800, 5000)
     assert gesund.coverage is not None and gesund.coverage > 90.0
+
+
+def test_tracker_befund_trennt_duenn_von_fehlend() -> None:
+    """Ein zu duenner Textlayer ist nicht dasselbe wie gar keiner.
+
+    Beide fuehren zu 'keine Deckungszahl', aber nur der zweite Fall ist
+    offensichtlich. Der erste gab sich vorher als volle Deckung aus und
+    gehoert deshalb im Protokoll beim Namen genannt, statt unter dem
+    harmloseren Befund mitzulaufen.
+    """
+    import tracker as TR
+
+    duenn = TR.Doc(slug="scan", coverage=None,
+                   warnings=["Textlayer zu duenn fuer einen Wortvergleich: 2 "
+                             "Referenzwoerter gegen 195773 Woerter im Extrakt."])
+    leer = TR.Doc(slug="bild", coverage=None,
+                  warnings=["Kein Textlayer im PDF (gescannt)"])
+    voll = TR.Doc(slug="ok", coverage=100.0)
+
+    assert duenn.verdict == "Textlayer zu duenn", duenn.verdict
+    assert leer.verdict == "kein Textlayer", leer.verdict
+    assert voll.verdict == "vollstaendig", voll.verdict

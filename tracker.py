@@ -44,6 +44,13 @@ class Doc:
     @property
     def verdict(self) -> str:
         if self.coverage is None:
+            # Zwei Wege fuehren hierher, und sie sind nicht dasselbe: ein PDF
+            # ohne jeden Textlayer, oder eines mit einem Textlayer, der zu
+            # duenn ist, um etwas zu belegen (ein paar Streuzeichen aus einer
+            # Kopfzeile). Der zweite Fall ist der gefaehrlichere, weil er sich
+            # frueher als volle Deckung ausgab — er gehoert benannt.
+            if any("zu duenn" in w for w in self.warnings):
+                return "Textlayer zu duenn"
             return "kein Textlayer"
         if self.coverage >= 100.0:
             return "vollstaendig"
@@ -204,7 +211,7 @@ def render(docs: list[Doc], vault: Path | None) -> str:
         f"- {len(repaired)} mit woertlich nachgetragenem Rest (Abschnitt \"Nachtrag\")"
         if repaired else "- kein Dokument mit nachgetragenem Rest",
         f"- {len(lost)} mit fehlendem Text" if lost else "- kein Dokument mit fehlendem Text",
-        f"- {len(unchecked)} ohne pruefbaren Textlayer (Office-Format oder Scan)"
+        f"- {len(unchecked)} ohne pruefbaren Textlayer (Office-Format, Scan oder Textlayer zu duenn fuer einen Vergleich)"
         if unchecked else "- alle Quellen hatten einen pruefbaren Textlayer",
         "",
         "## Uebersicht",

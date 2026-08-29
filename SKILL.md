@@ -244,7 +244,20 @@ gilt: nennbar als „kommende Fassung ab <Datum>", nie als geltende Anforderung.
 Ein PDF ohne Textlayer enthält keine Zeichen, sondern Bilder von Zeichen.
 Docling liest sie per OCR. Das Ergebnis ist brauchbar zum Suchen, Überblicken
 und Verweisen — aber es ist **erzeugter Text**, und das ändert, was du damit
-tun darfst:
+tun darfst.
+
+Zwei Wege führen dorthin, und der zweite ist der tückische:
+
+- **Kein Textlayer** — offensichtlich, fällt sofort auf (Befund `kein Textlayer`).
+- **Textlayer zu dünn** — das PDF trägt ein paar Streuzeichen, etwa aus einer
+  Kopfzeile. Der Wortvergleich fand früher genau diese wieder und meldete
+  *volle Deckung*, für ein Dokument, dessen gesamter Inhalt aus der
+  Zeichenerkennung stammte. Beobachtet an einem 291-Seiten-Scan: zwei
+  Referenzwörter gegen 195.773 Extraktwörter, gemeldet als 100,0 %. Seit
+  `verify.py` das Verhältnis prüft, trägt so ein Extrakt den Befund
+  `Textlayer zu dünn` und keine Deckungszahl.
+
+In beiden Fällen gilt:
 
 - Es gibt **keine Wortdeckung**. Nicht "0 %", sondern keine: es existiert
   nichts, wogegen sich prüfen ließe. Die Vaultnotiz trägt deshalb
