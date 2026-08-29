@@ -664,6 +664,24 @@ def test_deckung_braucht_tragfaehige_grundlage(tmp_path: Path) -> None:
     gesund = lauf(4800, 5000)
     assert gesund.coverage is not None and gesund.coverage > 90.0
 
+    # Office-Formate bleiben aussen vor. Ein XLSX mit verbundenen Zellen
+    # blaeht den Extrakt durch reine Wiederholung auf -- A3_Modellierung
+    # kommt auf 4995 Quellwoerter gegen 114056 Extraktwoerter, ein
+    # Verhaeltnis von 4,4 %, ohne dass ein einziges Wort ungeprueft waere.
+    # Der Schutz gilt dem OCR-Fall, und OCR gibt es nur bei PDFs.
+    md = tmp_path / "tabelle.md"
+    md.write_text(" ".join(f"wort{i%20}" for i in range(5000)), encoding="utf-8")
+    xlsx = tmp_path / "tabelle.xlsx"
+    xlsx.write_bytes(b"PK\x03\x04")
+    echt = V.source_pages
+    V.source_pages = lambda p: ({1: [f"wort{i%20}" for i in range(200)]}, {})
+    try:
+        office = V.verify(xlsx, md)
+    finally:
+        V.source_pages = echt
+    assert office.coverage == 100.0, str(office.coverage)
+    assert not office.note, office.note
+
 
 def test_tracker_befund_trennt_duenn_von_fehlend() -> None:
     """Ein zu duenner Textlayer ist nicht dasselbe wie gar keiner.

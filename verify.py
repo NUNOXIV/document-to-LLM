@@ -281,9 +281,20 @@ def verify(pdf_path: Path, md_path: Path) -> VerifyResult:
     # Tabellenblatt hat legitim wenig Text, und sein Extrakt ist genauso klein
     # — das Verhaeltnis bleibt gesund. Verdaechtig ist allein, wenn der Extrakt
     # umfangreich ist und die Vergleichsgrundlage dazu verschwindet.
+    # Nur fuer PDFs: das Risiko, gegen das diese Pruefung schuetzt, ist
+    # OCR-Text ueber einem fast leeren Textlayer — und OCR gibt es nur hier.
+    # Office-Formate haben immer einen echten Leser; liefert er ueberhaupt
+    # Text, ist die Deckung ueber diesen Text aussagekraeftig.
+    #
+    # Das ist nicht theoretisch: A3_Modellierung_Recplast_GmbH.xlsx verbindet
+    # Zellen ueber 45 Spalten, Docling schreibt den Wert in jede davon. Aus
+    # 4995 Quellwoertern werden 114056 Extraktwoerter — ein Verhaeltnis von
+    # 4,4 %, allein durch Wiederholung. Ohne diese Einschraenkung haette die
+    # Pruefung dieser Datei ihre berechtigte Deckungszahl genommen.
     MIN_ANTEIL = 0.05
     EXTRAKT_ERHEBLICH = 200
-    zu_duenn = bool(src_all) and len(out) > EXTRAKT_ERHEBLICH \
+    zu_duenn = bool(src_all) and pdf_path.suffix.lower() == ".pdf" \
+        and len(out) > EXTRAKT_ERHEBLICH \
         and len(src_all) < MIN_ANTEIL * len(out)
 
     if not src_all or zu_duenn:
