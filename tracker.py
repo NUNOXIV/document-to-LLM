@@ -155,6 +155,21 @@ def lizenzgrundlagen() -> list[dict]:
     return data.get("lizenzgrundlagen", {}).get("eintraege", [])
 
 
+def partly_covered() -> list[dict]:
+    """Dokumente, die vollstaendig konvertiert sind, deren Inhalt aber kaum als
+    Text vorliegt (etwa ein Foliensatz aus Bildern).
+
+    Der heikelste Fall im Bestand, weil nichts an ihm auffaellt: die Deckung
+    ist 100 %, der Extrakt ist korrekt, die Datei ist da. Nur findet eine
+    Suche nichts, und wer das nicht weiss, haelt das Thema fuer nicht belegt.
+    """
+    path = Path(__file__).parent / "mappings" / "vault-ausnahmen.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("teilweise_erfasst", {}).get("eintraege", [])
+
+
 def not_ingested() -> list[dict]:
     """Quellen, die technisch nicht aufgenommen werden konnten, mit Grund.
 
@@ -285,6 +300,22 @@ def render(docs: list[Doc], vault: Path | None) -> str:
                 "was fehlt und warum.", ""]
         for e in fehlend:
             out.append(f"- **{e.get('datei', '?')}**: {e.get('grund', '')}")
+        out.append("")
+
+    teilweise = partly_covered()
+    if teilweise:
+        out += ["", "## Aufgenommen, aber inhaltlich duenn", "",
+                "Diese Dokumente sind konvertiert und deckungsgeprueft — der "
+                "Extrakt enthaelt alles, was die Datei an Text fuehrt. Nur fuehrt "
+                "sie wenig, weil der Inhalt in Bildern steckt. Eine Suche laeuft "
+                "hier ins Leere, ohne dass etwas kaputt waere.", ""]
+        for e in teilweise:
+            out.append(f"- **{e.get('slug', e.get('datei', '?'))}**: "
+                       f"{e.get('befund', '')}")
+            if e.get("versucht"):
+                out.append(f"  - Versucht: {e['versucht']}")
+            if e.get("folge"):
+                out.append(f"  - Folge: {e['folge']}")
         out.append("")
 
     ausnahmen = vault_exceptions()

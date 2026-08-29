@@ -22,11 +22,6 @@
         "datei": "Medien: mp4, m4a, epub, png",
         "groesse_bytes": 0,
         "grund": "Formate ohne extrahierbaren Textlayer. Docling bringt keinen Reader mit, und ein Transkript waere erzeugter, nicht extrahierter Text — das widerspraeche der Zusicherung, dass jeder Extrakt woertlich aus der Quelle stammt."
-      },
-      {
-        "datei": "TISAX-Training-TUEV-SUED.pptx",
-        "groesse_bytes": 36922705,
-        "grund": "Nicht per Link freigegeben. Die Datei liegt nicht im GRC-Ordner, sondern in Ordner 1Sqp9SQqmrgC05vNrgt1jrIZZDt-8TObx; beide tragen nur die Eigentuemerberechtigung. 36,9 MB liegen ausserdem weit ueber der Connector-Grenze, der Bezug ginge also nur ueber fetch_drive.py mit befristeter Einzelfreigabe. Inhaltlich gehoert sie in den Bestand — sie fehlt aus Zugangs-, nicht aus Sachgruenden."
       }
     ]
   },
@@ -48,6 +43,18 @@
       {
         "betrifft": "BSI-Material, EU-Rechtstexte, NIST, CIS, OWASP",
         "grundlage": "Amtliche bzw. frei veroeffentlichte Dokumente. Bleiben dennoch ausserhalb der Versionierung, weil der Bestand einheitlich behandelt wird."
+      }
+    ]
+  },
+  "teilweise_erfasst": {
+    "hinweis": "Dokumente, die vollstaendig konvertiert sind, deren Inhalt aber groesstenteils nicht als Text vorliegt. Der Extrakt ist korrekt und deckungsgeprueft — er enthaelt alles, was die Datei an Text fuehrt. Nur fuehrt sie wenig. Das gehoert benannt, weil eine Suche hier ins Leere laeuft, ohne dass etwas kaputt waere.",
+    "eintraege": [
+      {
+        "slug": "tisax-training-tuev-sued",
+        "datei": "TISAX-Training-TUEV-SUED.pptx",
+        "befund": "73 Folien, davon 52 mit eingebetteten Bildern und nur 12 mit befuelltem Textrahmen. Der Extrakt umfasst 2688 Zeichen, rund 37 je Folie, bei 100 % Wortdeckung. Der Schulungsinhalt steckt in Grafiken.",
+        "versucht": "Umweg ueber PDF (LibreOffice) fuer eine OCR-Lesung: soffice laedt die Datei in diesem Headless-Build nicht ('source file could not be loaded'), obwohl python-pptx sie fehlerfrei oeffnet und die Datei als 'Microsoft PowerPoint 2007+' erkannt wird. Ein eigener Parser kommt nicht in Frage.",
+        "folge": "Fuer Inhalte dieser Schulung ist der Foliensatz im Original anzusehen. Die Volltextsuche findet hier nur Titel und Kopfzeilen."
       }
     ]
   }
