@@ -68,9 +68,18 @@ def norm_key(s: str) -> str:
 def sections_from_headings(body: str) -> dict[str, Section]:
     """Nummerierte Abschnitte (4.1, 6.1.2 ...) aus den Docling-Ueberschriften."""
     out: dict[str, Section] = {}
+    # Zwei Bauformen von Kennungen, und die zweite fehlte lange: numerische
+    # ("4.1", "Artikel 32", "Annex A.8.24") und solche mit Buchstabenpraefix
+    # ("APP.1.1.A1", "SYS.2.2.3.A5", "ORP.4.A9"), wie der BSI-Grundschutz sie
+    # fuehrt. Ohne den zweiten Zweig wurde im Kompendium keine einzige
+    # Ueberschrift erkannt; die Aufloesung fiel auf den Textanker zurueck, und
+    # der findet kein Ende -- jede Anforderung schleppte den Rest des Dokuments
+    # mit. Im Export waren das im Median 54019 Zeichen je Anforderung statt der
+    # ueblichen paar hundert.
     heads = list(re.finditer(
         r"^(#{1,6})\s+((?:Artikel|Article|Art\.?|Anhang|Annex)?\s*"
-        r"[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*)\s*[—–-]?\s*(.*)$", body, flags=re.M))
+        r"(?:[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*"
+        r"|[A-Z]{2,6}(?:\.[0-9]+)+(?:\.A[0-9]+)?))\s*[—–-]?\s*(.*)$", body, flags=re.M))
     for i, m in enumerate(heads):
         start = m.end()
         end = heads[i + 1].start() if i + 1 < len(heads) else len(body)
