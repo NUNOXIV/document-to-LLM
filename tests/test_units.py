@@ -758,6 +758,27 @@ def test_export_laengen_plausibel(tmp_path: Path) -> None:
     for ident in ("app.1.1.a1", "app.1.1.a2", "sys.2.2.3.a7"):
         assert ident in s, f"{ident} nicht erkannt — Buchstabenpraefix faellt durch"
 
+    # INF, IND und ISMS beginnen mit Buchstaben, die auch roemische Ziffern
+    # sind. Stand der roemische Zweig im Regex vorn, matchte er das blosse "I"
+    # und lieferte die Kennung "I" statt "INF.1.A1" -- 49 Anforderungen
+    # verloren dadurch ihre Abschnittsgrenze, waehrend der Median gesund
+    # aussah. Ein Test nur mit APP und SYS haette das durchgelassen.
+    roem = "\n".join([
+        "## INF.1.A1 Planung der Gebaeudeabsicherung (B)", "",
+        "Die Institution MUSS planen.", "",
+        "## IND.2.1.A3 Nutzung sicherer Protokolle (S)", "",
+        "Die Institution SOLLTE sichere Protokolle nutzen.", "",
+        "## ISMS.1.A6 Integration in Ablaeufe (B)", "",
+        "Die Institution MUSS integrieren.", "",
+        "## X Nachfolgende Ueberschrift", "", "Ende.", "",
+    ])
+    sr = publish.sections_from_headings(roem)
+    for ident in ("inf.1.a1", "ind.2.1.a3", "isms.1.a6"):
+        assert ident in sr, f"{ident} nicht erkannt — roemischer Zweig greift zu frueh"
+        assert len(sr[ident].text) < 120, \
+            f"{ident} laeuft ueber seine Grenze hinaus: {len(sr[ident].text)}"
+    assert "I" not in sr, "blosses 'I' als Kennung erkannt"
+
     # Die entscheidende Zusicherung: ein Abschnitt endet an der naechsten
     # Ueberschrift. Ohne sie sieht der Export vollstaendig aus und ist es nicht.
     assert "das andere" not in s["app.1.1.a1"].text, \
