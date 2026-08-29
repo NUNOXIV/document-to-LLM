@@ -283,6 +283,7 @@ wandert maschinell geratener Text als belegter Normwortlaut in ein Audit.
 | Warnung "Seite(n) nicht verarbeiten" | Docling-Teilerfolg | Seiten fehlen im Extrakt — nicht zitieren, neu konvertieren |
 | `Index fehlt` | Index nicht gebaut | `python index.py build --output output` |
 | Datei wird übersprungen | Hash unverändert | `--force`, wenn Neuerzeugung gewollt |
+| `Zeitueberschreitung nach 1800s` | Standardgrenze je Dokument, gedacht gegen einen Blocker im Stapel. Bei OCR über hunderte Seiten ist sie zu eng: ein dichter 300-Seiten-Scan braucht deutlich länger als 30 Minuten | `--timeout 0` für diesen Lauf. Der Extrakt fehlt sonst ganz — die Grenze überspringt das Dokument, sie kürzt es nicht |
 
 ## Ausgabe in den Vault
 
