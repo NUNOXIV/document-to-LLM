@@ -316,14 +316,14 @@ def render(docs: list[Doc], vault: Path | None) -> str:
         out.append("")
 
     luecken = vault_gaps()
-    if luecken.get("eintraege"):
-        out += ["", "## Im Vault-Geruest nicht vorgesehen", "",
+    if luecken.get("offen_nach_korrektur"):
+        out += ["", "## Anforderungen ohne Normtext im Extrakt", "",
                 luecken.get("hinweis", ""), "",
-                f"*Methode:* {luecken.get('methode', '')}", ""]
-        for e in luecken["eintraege"]:
-            out.append(f"- `{e['id']}` — {e['titel']}")
-        if luecken.get("folge"):
-            out += ["", luecken["folge"]]
+                f"*Ursache:* {luecken.get('ursache', '')}", ""]
+        for e in luecken["offen_nach_korrektur"]:
+            out.append(f"- `{e['id']}` — {e['befund']}")
+        if luecken.get("lehre"):
+            out += ["", f"*Lehre:* {luecken['lehre']}"]
         out.append("")
 
     teilweise = partly_covered()

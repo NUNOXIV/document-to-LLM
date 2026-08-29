@@ -722,12 +722,14 @@ def test_tracker_vault_luecken() -> None:
     import tracker as TR
 
     g = TR.vault_gaps()
-    assert g.get("eintraege"), "Luecken-Registry ist leer"
-    for e in g["eintraege"]:
-        assert e.get("id") and e.get("titel"), str(e)
-    assert g.get("hinweis") and g.get("methode") and g.get("folge")
-    # Die Methode muss nachvollziehbar sein, sonst ist der Befund nicht pruefbar.
-    assert "verglichen" in g["methode"]
+    assert g.get("offen_nach_korrektur"), "Registry ist leer"
+    for e in g["offen_nach_korrektur"]:
+        assert e.get("id") and e.get("befund"), str(e)
+    assert g.get("hinweis") and g.get("ursache") and g.get("lehre")
+    # Der Eintrag haelt eine Korrektur fest: der frueher gemeldete Mangel am
+    # Vault existierte nicht, verglichen wurde gegen die falsche Menge. Das
+    # gehoert benannt, nicht stillschweigend ersetzt.
+    assert "KORREKTUR" in g["hinweis"]
 
 
 def test_export_laengen_plausibel(tmp_path: Path) -> None:
