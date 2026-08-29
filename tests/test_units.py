@@ -722,9 +722,67 @@ def test_tracker_vault_luecken() -> None:
     import tracker as TR
 
     g = TR.vault_gaps()
-    assert g.get("eintraege"), "Luecken-Registry ist leer"
-    for e in g["eintraege"]:
-        assert e.get("id") and e.get("titel"), str(e)
-    assert g.get("hinweis") and g.get("methode") and g.get("folge")
-    # Die Methode muss nachvollziehbar sein, sonst ist der Befund nicht pruefbar.
-    assert "verglichen" in g["methode"]
+    assert g.get("offen_nach_korrektur"), "Registry ist leer"
+    for e in g["offen_nach_korrektur"]:
+        assert e.get("id") and e.get("befund"), str(e)
+    assert g.get("hinweis") and g.get("ursache") and g.get("lehre")
+    # Der Eintrag haelt eine Korrektur fest: der frueher gemeldete Mangel am
+    # Vault existierte nicht, verglichen wurde gegen die falsche Menge. Das
+    # gehoert benannt, nicht stillschweigend ersetzt.
+    assert "KORREKTUR" in g["hinweis"]
+
+
+def test_export_laengen_plausibel(tmp_path: Path) -> None:
+    """Ein befuelltes Feld ist noch kein richtiges Feld.
+
+    Der Grundschutz-Export trug im Median 54019 Zeichen je Anforderung statt
+    der ueblichen paar hundert: die Ueberschriftenerkennung kannte keine
+    Kennungen mit Buchstabenpraefix (APP.1.1.A1), fiel auf den Textanker
+    zurueck, und der findet kein Ende — jede Anforderung schleppte den Rest
+    des Dokuments mit. Die damalige Pruefung sah nur nach, ob ein Text da ist,
+    ob IDs fehlen und ob welche doppelt sind. Alles gruen, alles falsch.
+
+    Deshalb prueft dieser Test die Verteilung, nicht die Anwesenheit.
+    """
+    import publish
+
+    body = "\n".join([
+        "## APP.1.1.A1 Erste Anforderung (B)", "",
+        "Die Institution MUSS das eine tun.", "",
+        "## APP.1.1.A2 Zweite Anforderung (S)", "",
+        "Die Institution SOLLTE das andere tun.", "",
+        "## SYS.2.2.3.A7 Dritte Anforderung (H)", "",
+        "Die Institution KANN das dritte tun.", "",
+    ])
+    s = publish.sections_from_headings(body)
+    for ident in ("app.1.1.a1", "app.1.1.a2", "sys.2.2.3.a7"):
+        assert ident in s, f"{ident} nicht erkannt — Buchstabenpraefix faellt durch"
+
+    # INF, IND und ISMS beginnen mit Buchstaben, die auch roemische Ziffern
+    # sind. Stand der roemische Zweig im Regex vorn, matchte er das blosse "I"
+    # und lieferte die Kennung "I" statt "INF.1.A1" -- 49 Anforderungen
+    # verloren dadurch ihre Abschnittsgrenze, waehrend der Median gesund
+    # aussah. Ein Test nur mit APP und SYS haette das durchgelassen.
+    roem = "\n".join([
+        "## INF.1.A1 Planung der Gebaeudeabsicherung (B)", "",
+        "Die Institution MUSS planen.", "",
+        "## IND.2.1.A3 Nutzung sicherer Protokolle (S)", "",
+        "Die Institution SOLLTE sichere Protokolle nutzen.", "",
+        "## ISMS.1.A6 Integration in Ablaeufe (B)", "",
+        "Die Institution MUSS integrieren.", "",
+        "## X Nachfolgende Ueberschrift", "", "Ende.", "",
+    ])
+    sr = publish.sections_from_headings(roem)
+    for ident in ("inf.1.a1", "ind.2.1.a3", "isms.1.a6"):
+        assert ident in sr, f"{ident} nicht erkannt — roemischer Zweig greift zu frueh"
+        assert len(sr[ident].text) < 120, \
+            f"{ident} laeuft ueber seine Grenze hinaus: {len(sr[ident].text)}"
+    assert "I" not in sr, "blosses 'I' als Kennung erkannt"
+
+    # Die entscheidende Zusicherung: ein Abschnitt endet an der naechsten
+    # Ueberschrift. Ohne sie sieht der Export vollstaendig aus und ist es nicht.
+    assert "das andere" not in s["app.1.1.a1"].text, \
+        "Abschnitt laeuft in die naechste Anforderung hinein"
+    assert "das dritte" not in s["app.1.1.a2"].text
+    laengen = [len(s[i].text) for i in ("app.1.1.a1", "app.1.1.a2", "sys.2.2.3.a7")]
+    assert max(laengen) < 200, f"unplausibel lang: {laengen}"

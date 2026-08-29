@@ -68,9 +68,24 @@ def norm_key(s: str) -> str:
 def sections_from_headings(body: str) -> dict[str, Section]:
     """Nummerierte Abschnitte (4.1, 6.1.2 ...) aus den Docling-Ueberschriften."""
     out: dict[str, Section] = {}
+    # Zwei Bauformen von Kennungen, und die zweite fehlte lange: numerische
+    # ("4.1", "Artikel 32", "Annex A.8.24") und solche mit Buchstabenpraefix
+    # ("APP.1.1.A1", "SYS.2.2.3.A5", "ORP.4.A9"), wie der BSI-Grundschutz sie
+    # fuehrt. Ohne den zweiten Zweig wurde im Kompendium keine einzige
+    # Ueberschrift erkannt; die Aufloesung fiel auf den Textanker zurueck, und
+    # der findet kein Ende -- jede Anforderung schleppte den Rest des Dokuments
+    # mit. Im Export waren das im Median 54019 Zeichen je Anforderung statt der
+    # ueblichen paar hundert.
     heads = list(re.finditer(
         r"^(#{1,6})\s+((?:Artikel|Article|Art\.?|Anhang|Annex)?\s*"
-        r"[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*)\s*[—–-]?\s*(.*)$", body, flags=re.M))
+        # Der Buchstabenzweig steht VOR dem roemischen, und das ist keine
+        # Kosmetik: "INF" beginnt mit "I", und "I" liegt in [0-9IVX]. Stuende
+        # der roemische Zweig vorn, matchte er das blosse "I", brichts dort ab
+        # und liefert die Kennung "I" statt "INF.1.A1". Betroffen waren INF,
+        # IND und ISMS -- 49 Anforderungen, die dadurch ihre Abschnittsgrenze
+        # verloren und den Rest des Dokuments mitschleppten.
+        r"(?:[A-Z]{2,6}(?:\.[0-9]+)+(?:\.A[0-9]+)?"
+        r"|[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*))\s*[—–-]?\s*(.*)$", body, flags=re.M))
     for i, m in enumerate(heads):
         start = m.end()
         end = heads[i + 1].start() if i + 1 < len(heads) else len(body)
@@ -599,7 +614,8 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
 
 def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
                    titel: str, autor: str, art: str, dry_run: bool,
-                   superseded_by: str = "") -> tuple[Path, Path]:
+                   superseded_by: str = "", ablage: Path | None = None
+                   ) -> tuple[Path, Path]:
     """Ein Dokument ohne Anforderungsraster ablegen: Volltext in den lizenzierten
     Ordner, Metadatennotiz nach GRC/Handbuch mit Embed darauf.
 
@@ -615,11 +631,23 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
     """
     deckung = str(meta.get('text_coverage_percent', '') or '').strip()
     slug = md_path.stem
-    full_dir = vault / LICENSED_DIR / "dokumente"
+    # Ohne --unterordner bleibt die Ablage der Vaultwurzel; mit ihm wandert
+    # der gesamte erzeugte Bestand in einen eigenen Ordner. Das Register unter
+    # GRC/Frameworks bleibt davon unberuehrt: es gehoert dem Nutzer, nicht
+    # diesem Werkzeug.
+    wurzel = ablage or vault
+    full_dir = wurzel / LICENSED_DIR / "dokumente"
     full = full_dir / f"{slug} (Volltext).md"
     # Schraegstriche im Titel (z. B. "2003/361/EG") wuerden Unterordner anlegen.
     safe = re.sub(r"[/\\:]+", "-", titel).strip()
-    note = vault / "GRC" / "Handbuch" / f"{safe} ({slug}).md"
+    note = wurzel / "GRC" / "Handbuch" / f"{safe} ({slug}).md"
+    # Der Hinweis nennt den tatsaechlichen Pfad. Ein Verweis auf einen Ordner,
+    # den es nicht gibt, ist schlechter als keiner: er laesst den Leser suchen.
+    # Immer relativ zur Vaultwurzel, nie zur Ablage: mit Unterordner ergibt das
+    # "Document to LLM/Normen (lizenziert)/dokumente/", ohne ihn schlicht
+    # "Normen (lizenziert)/dokumente/". Eine Fallunterscheidung ueber 'ablage'
+    # waere hier falsch, weil ablage auch ohne Unterordner gesetzt ist.
+    volltext_pfad = f"{full_dir.relative_to(vault)}/"
 
     esc = lambda v: '"' + str(v).replace('"', '\"') + '"'
     head = "\n".join([
@@ -676,7 +704,7 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
         f"![[{slug} (Volltext)]]",
         "",
         "> [!info]- Kein Text zu sehen?",
-        "> Der Volltext liegt unter `Normen (lizenziert)/dokumente/` — einem",
+        f"> Der Volltext liegt unter `{volltext_pfad}` — einem",
         "> Ordner ausserhalb der Versionierung. Auf diesem Rechner loest der",
         "> Verweis auf, im Repository bleibt er leer.",
         "",
@@ -715,22 +743,33 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
               help="Anforderungen zusaetzlich als JSON schreiben (frameworkId, edition, "
                    "sourceFile, sourceSha256, requirements[id,title,text,group]) — fuer "
                    "Systeme, die damit rechnen, ohne uebersetzen zu muessen.")
+@click.option("--unterordner", default="",
+              help="Unterordner im Vault, in den der erzeugte Bestand geschrieben "
+                   "wird (z. B. 'Document to LLM'). Ohne Angabe liegt er in der "
+                   "Vaultwurzel. Das Anforderungsregister unter GRC/Frameworks "
+                   "wird immer aus der Wurzel gelesen — es gehoert dem Nutzer.")
 @click.option("--dry-run", is_flag=True, help="Nur berichten, nichts schreiben.")
 @click.option("--overwrite/--keep", default=True, show_default=True,
               help="Vorhandene Normtext-Notizen ersetzen oder stehen lassen.")
 def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
+         unterordner: str,
          titel: str | None, autor: str, art: str, superseded_by: str,
          export_ziel: str | None, mark_withdrawn: bool, dry_run: bool,
          overwrite: bool) -> None:
     """Schreibt Normtext- oder Dokumentnotizen aus einem Extrakt in den Vault."""
     vault_path = Path(vault).expanduser()
+    # Ablageort des erzeugten Bestands. Getrennt vom Vaultpfad gehalten, weil
+    # gelesen und geschrieben an verschiedenen Stellen wird: das
+    # Anforderungsregister liegt beim Nutzer, die Ausgabe dort, wo er sie haben
+    # will. Ein gemeinsamer Pfad wuerde beides koppeln.
+    ablage_path = vault_path / unterordner if unterordner else vault_path
     md_path = Path(extract_md)
     meta, body = split_front_matter(md_path.read_text(encoding="utf-8"))
 
     if as_document:
         name = titel or Path(meta.get("source_file", md_path.stem)).stem
         note, full = document_notes(md_path, vault_path, meta, body, name, autor, art,
-                                    dry_run, superseded_by)
+                                    dry_run, superseded_by, ablage=ablage_path)
         click.secho(f"{'Historiendokument' if superseded_by else 'Dokument'} abgelegt"
                     f"{' (Probelauf)' if dry_run else ''}: {note.name}",
                     fg="yellow" if superseded_by else "green")
@@ -753,7 +792,7 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
 
     aufgeloest = aufgeloeste_abschnitte(body, meta, wanted, framework)
 
-    target_dir = vault_path / LICENSED_DIR / framework
+    target_dir = ablage_path / LICENSED_DIR / framework
     written, missing, skipped = [], [], []
     for ident in sorted(wanted):
         sec = aufgeloest.get(ident)
@@ -811,7 +850,7 @@ def main(extract_md: str, vault: str, framework: str | None, as_document: bool,
         click.echo("Diese IDs stehen so nicht im Dokument — pruefen, ob der richtige "
                    "Normstand extrahiert wurde.")
 
-    warn = (vault_path / ".gitignore")
+    warn = (vault_path / ".gitignore")  # immer die Vaultwurzel, dort greift sie
     if warn.exists() and LICENSED_DIR not in warn.read_text(encoding="utf-8"):
         click.secho(f"ACHTUNG: '{LICENSED_DIR}/' steht nicht in der .gitignore des Vaults — "
                     f"lizenzierter Normtext koennte versioniert werden.", fg="red")
