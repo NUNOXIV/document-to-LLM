@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ACSOS document-to-LLM
+.venv/
+
+# Quelldokumente und Extrakte bleiben lokal. Normtexte (ISO, DIN, TISAX) sind
+# lizenziert — weder die PDFs noch die daraus erzeugten Markdown-Dateien
+# gehoeren in ein Repository.
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
+# Anforderungs-Exporte: abgeleiteter lizenzierter Normtext, bleibt lokal.
+export/

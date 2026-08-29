@@ -1,0 +1,29 @@
+{
+  "framework": "cra",
+  "source": "CELEX_32024R2847_DE_TXT.pdf (Verordnung (EU) 2024/2847, Anhang I)",
+  "hinweis": "Die Anforderungs-IDs im Vault sind thematisch nummeriert und folgen NICHT der Reihenfolge des Verordnungstexts (AnnexI.1.3 ist Buchstabe d, AnnexI.1.11 ist Buchstabe c, AnnexI.1.12 ist Teil I Nummer 1). Eine Zuordnung nach Position waere falsch. Diese Datei ist eine gepruefte Kreuzreferenz: je ID ein woertliches Textstueck aus Anhang I, an dem der Abschnitt beginnt. Wird der Anker im Extrakt nicht gefunden, meldet publish.py die ID als fehlend, statt etwas Falsches abzulegen.",
+  "anchors": {
+    "AnnexI.1.12": "Produkte mit digitalen Elementen werden so konzipiert, entwickelt und hergestellt, dass sie angesichts der Risiken",
+    "AnnexI.1.1": "ohne bekannte ausnutzbare Schwachstellen auf dem Markt bereitgestellt werden",
+    "AnnexI.1.2": "mit einer sicheren Standardkonfiguration auf dem Markt bereitgestellt werden",
+    "AnnexI.1.11": "sicherstellen, dass Schwachstellen durch Sicherheitsaktualisierungen behoben werden",
+    "AnnexI.1.3": "durch geeignete Kontrollmechanismen Schutz vor unbefugtem Zugriff bieten",
+    "AnnexI.1.4": "die  Vertraulichkeit  gespeicherter",
+    "AnnexI.1.5": "die Integrität gespeicherter",
+    "AnnexI.1.6": "die Verarbeitung personenbezogener oder sonstiger Daten auf solche, die angemessen und von Bedeutung sind",
+    "AnnexI.1.7": "die  Verfügbarkeit  wesentlicher  und  grundlegender  Funktionen",
+    "AnnexI.1.13": "die negativen Auswirkungen von den Produkten selbst oder  von vernetzten Geräten",
+    "AnnexI.1.8": "möglichst geringe Angriffsfl",
+    "AnnexI.1.9": "dass  die  Auswirkungen  eines  Sicherheitsvorfalls  durch  geeignete",
+    "AnnexI.1.10": "sicherheitsbezogene  Informationen  durch  Aufzeichnung",
+    "AnnexI.1.14": "den  Nutzern  die  Möglichkeit  bieten,  alle  Daten  und  Einstellungen  dauerhaft  sicher",
+    "AnnexI.2.1": "Schwachstellen  und  Komponenten  der  Produkte  mit  digitalen  Elementen  ermitteln  und  dokumentieren",
+    "AnnexI.2.2": "unverzüglich Schwachstellen  behandeln  und  beheben",
+    "AnnexI.2.3": "die  Sicherheit  des  Produkts  mit  digitalen  Elementen  regelmäßig  und  wirksam  testen",
+    "AnnexI.2.8": "Informationen über beseitigte Schwachstellen teilen und veröffentlichen",
+    "AnnexI.2.4": "eine  Strategie  für  die  koordinierte  Offenlegung  von  Schwachstellen  aufstellen",
+    "AnnexI.2.5": "um  den  Austausch  von  Informationen  über  mögliche  Schwachstellen",
+    "AnnexI.2.6": "Mechanismen  für  die  sichere  Verbreitung  von  Aktualisierungen",
+    "AnnexI.2.7": "dass  Sicherheitsaktualisierungen,  die  zur  Bewältigung  festgestellter  Sicherheitsprobleme"
+  }
+}

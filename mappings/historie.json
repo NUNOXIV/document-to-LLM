@@ -1,0 +1,15 @@
+{
+  "hinweis": "Abgeloeste Fassungen und die Fassung, die an ihre Stelle getreten ist. Veraltetes wird nie geloescht, sondern als Historiendokument gefuehrt: der Wortlaut bleibt fuer Audits mit Stichtag in der Vergangenheit, fuer Aenderungsnachweise und fuer den Abgleich mit der neuen Fassung nachlesbar. tracker.py schreibt diese Liste in jedem Lauf mit aus. Abgelegt wird mit: publish.py <extrakt> --as-document --superseded-by <geltender-slug>",
+  "abgeloest": [
+    {
+      "slug": "checkliste-sys-1-2-3-kompendium-2022",
+      "gilt_stattdessen": "checkliste-sys-1-2-3",
+      "grund": "Die Checkliste aus checklisten_2023.zip trug 'Kompendium: 2022'. Die einzeln aus dem Drive geladene Fassung traegt 'Kompendium: 2023' und ist damit die geltende. Inhaltlich unterscheiden sich beide nur in dieser Kennzeichnung und einem Zeilenumbruch in einer Zelle."
+    },
+    {
+      "slug": "owasp-testing-guide-v4",
+      "gilt_stattdessen": "wstg-v4-2",
+      "grund": "OWASP Testing Guide v4.0. Das Projekt wurde in Web Security Testing Guide umbenannt; die geltende Fassung ist WSTG v4.2, die im Bestand liegt und von versioncheck.py als aktuell belegt wird."
+    }
+  ]
+}

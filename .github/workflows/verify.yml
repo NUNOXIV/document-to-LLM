@@ -1,0 +1,64 @@
+name: verify
+
+# Ein Push auf einen Branch mit offenem Pull Request loeste bisher zwei Laeufe
+# aus (push und pull_request) — doppelte Rechenzeit und doppelte Mails. Der
+# Push-Trigger bleibt deshalb auf main; alles andere laeuft ueber den PR.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Schnelle Folge-Pushes brechen den vorherigen Lauf ab, statt ihn zu Ende
+# rechnen zu lassen.
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  extraction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Docling-Modelle cachen
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: docling-models-${{ hashFiles('requirements.txt') }}
+
+      - name: Abhaengigkeiten installieren
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Fixture-Generator pruefen
+        run: python tests/make_fixture.py "$RUNNER_TEMP/fixture.pdf"
+
+      - name: Unit-Tests (modellfrei)
+        run: python tests/test_units.py
+
+      - name: Office-Pfad (DOCX)
+        run: ./tests/smoke.sh
+
+      - name: PDF-Pfad (Layout, Tabellen, Vollstaendigkeit)
+        run: ./tests/smoke_pdf.sh
+
+      - name: Extrakt als Artefakt sichern
+        if: always()
+        run: |
+          mkdir -p ci-output
+          python extract.py tests/fixtures/Muster-Norm-Zweispaltig.pdf -o ci-output --json || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: extraktion
+          path: ci-output/

@@ -1,0 +1,61 @@
+{
+  "hinweis": "Extrakte, die bewusst NICHT in den Vault gehen, mit Begruendung. tracker.py schreibt sie in jedem Lauf mit aus, damit die Entscheidung das Neuerzeugen der Datei ueberlebt und nachlesbar bleibt. Ein Muster trifft auf den Slug des Extrakts zu (Python-Regex, voller Treffer).",
+  "ausnahmen": [
+    {
+      "muster": "^(app|con|ccon|der|inf|ind|isms|net|ops|orp|sys)-.*-pdf-clean$",
+      "grund": "Einzelne Baustein-PDFs des IT-Grundschutz-Kompendiums Edition 2023. Inhaltsgleich mit den Abschnitten des Kompendium-PDFs, aus dem der Vault bereits die vollstaendigen Normtext-Notizen je Anforderung mit Seitenbeleg fuehrt. Eine zweite Ablage erzeugte nur Volltext-Dubletten. Stichprobe APP.1.1.A1: wortgleich."
+    },
+    {
+      "muster": "^einzeln-docx-.*$",
+      "grund": "Bausteine als DOCX aus EU_LEX/Einzeln_DOCX. Inhaltsgleich mit den bereits aufgenommenen Baustein-PDFs; auf Entscheidung des Auftraggebers ausgelassen. Die Bausteine liegen als PDF vor."
+    }
+  ],
+  "nicht_aufgenommen": {
+    "hinweis": "Quellen aus dem Drive-Ordner, die technisch nicht aufgenommen werden konnten. Kein Versaeumnis, sondern eine Grenze des Zugangswegs — hier festgehalten, damit sie nicht als Luecke im Bestand missverstanden wird.",
+    "eintraege": [
+      {
+        "datei": "758080161-ISO-42001.pdf",
+        "groesse_bytes": 16246126,
+        "grund": "Geprueft, nicht vermutet: die Datei ist ein Scan ohne Textlayer (61 Seiten, 63 eingebettete Bilder, pypdfium2 liest auf keiner Seite Text). Die im Bestand liegende ISO-42001.pdf ist dieselbe Norm als digitaler Satz mit sauberem Textlayer (62 Seiten, 1,95 MB, Wortdeckung 100 %). Der Scan wuerde OCR erfordern; die OCR-Modelle sind in dieser Umgebung nicht ladbar (modelscope.cn gesperrt). Er brachte also nichts hinzu ausser einer schlechteren Kopie derselben Norm."
+      },
+      {
+        "datei": "Medien: mp4, m4a, epub, png",
+        "groesse_bytes": 0,
+        "grund": "Formate ohne extrahierbaren Textlayer. Docling bringt keinen Reader mit, und ein Transkript waere erzeugter, nicht extrahierter Text — das widerspraeche der Zusicherung, dass jeder Extrakt woertlich aus der Quelle stammt."
+      }
+    ]
+  },
+  "lizenzgrundlagen": {
+    "hinweis": "Woher die lizenzierten Dokumente stammen. Gehoert dokumentiert, weil der Bestand Normtext fuehrt, der nicht frei verteilbar ist: bei einer Rueckfrage muss belegbar sein, auf welcher Grundlage er vorliegt.",
+    "eintraege": [
+      {
+        "betrifft": "ISO/IEC 42001 (iso-42001, iso-42005) und begleitende Fachbuecher",
+        "grundlage": "Schulungslizenz — Training Edition. Erworben ueber die Teilnahme an der Schulung, nicht frei verteilbar."
+      },
+      {
+        "betrifft": "CISM-Material (Review Manual 15./16. Edition, Review Questions, Exam Guide, All-in-One, Study Guide, Strategic Blueprint, Practice Exams, Training Certificate)",
+        "grundlage": "Teils Schulungslizenz (Training Edition, ueber die Schulungsteilnahme erworben), teils privat beschaffte Kopien urheberrechtlich geschuetzter ISACA- und Verlagswerke. Die Dateinamen trugen urspruenglich die Downloadquelle; sie wurde aus den Namen entfernt, weil sie kein Bestandteil des Werks ist. Der Bestand bleibt privat und ausserhalb der Versionierung; eine Weitergabe an Dritte ist ausgeschlossen."
+      },
+      {
+        "betrifft": "VDA ISA / TISAX (isa6-de-6-0-2, isa6-en-redline, tisax-isa2027-en und die TISAX-Dokumente)",
+        "grundlage": "Bezug ueber das ENX-Portal. Verteilung an Dritte ausgeschlossen. Ausnahme: das TISAX-Teilnehmerhandbuch (tisax-teilnehmerhandbuch) traegt im Dokument selbst die Klassifizierung 'Oeffentlich' (ENX doc ID 602-DE) und ist damit frei verteilbar; es bleibt dennoch ausserhalb der Versionierung, weil der Bestand einheitlich behandelt wird."
+      },
+      {
+        "betrifft": "BSI-Material, EU-Rechtstexte, NIST, CIS, OWASP",
+        "grundlage": "Amtliche bzw. frei veroeffentlichte Dokumente. Bleiben dennoch ausserhalb der Versionierung, weil der Bestand einheitlich behandelt wird."
+      }
+    ]
+  },
+  "teilweise_erfasst": {
+    "hinweis": "Dokumente, die vollstaendig konvertiert sind, deren Inhalt aber groesstenteils nicht als Text vorliegt. Der Extrakt ist korrekt und deckungsgeprueft — er enthaelt alles, was die Datei an Text fuehrt. Nur fuehrt sie wenig. Das gehoert benannt, weil eine Suche hier ins Leere laeuft, ohne dass etwas kaputt waere.",
+    "eintraege": [
+      {
+        "slug": "tisax-training-tuev-sued",
+        "datei": "TISAX-Training-TUEV-SUED.pptx",
+        "befund": "73 Folien, davon 52 mit eingebetteten Bildern und nur 12 mit befuelltem Textrahmen. Der Extrakt umfasst 2688 Zeichen, rund 37 je Folie, bei 100 % Wortdeckung. Der Schulungsinhalt steckt in Grafiken.",
+        "versucht": "Umweg ueber PDF (LibreOffice) fuer eine OCR-Lesung: soffice laedt die Datei in diesem Headless-Build nicht ('source file could not be loaded'), obwohl python-pptx sie fehlerfrei oeffnet und die Datei als 'Microsoft PowerPoint 2007+' erkannt wird. Ein eigener Parser kommt nicht in Frage.",
+        "folge": "Fuer Inhalte dieser Schulung ist der Foliensatz im Original anzusehen. Die Volltextsuche findet hier nur Titel und Kopfzeilen."
+      }
+    ]
+  }
+}

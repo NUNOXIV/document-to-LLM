@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<title>ACSOS document-to-LLM — Architektur</title>
+<style>
+@page { size: A4; margin: 18mm 16mm 16mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+       font-size: 9.6pt; line-height: 1.45; color: #16202b; margin: 0; }
+h1 { font-size: 21pt; margin: 0 0 2mm; letter-spacing: -.4pt; }
+h2 { font-size: 13pt; margin: 9mm 0 2.5mm; padding-bottom: 1.5mm;
+     border-bottom: 1.6pt solid #16202b; page-break-after: avoid; }
+h3 { font-size: 10.4pt; margin: 5mm 0 1.5mm; color: #0b3c5d; page-break-after: avoid; }
+p { margin: 0 0 2.5mm; }
+code, .mono { font-family: "DejaVu Sans Mono", "Liberation Mono", Consolas, monospace; font-size: 8.4pt; }
+code { background: #eef2f6; padding: .3mm 1mm; border-radius: 1.5mm; }
+pre { background: #10202e; color: #e6edf3; padding: 3mm 3.5mm; border-radius: 2mm;
+      font-family: "DejaVu Sans Mono", monospace; font-size: 8pt; line-height: 1.4;
+      overflow: hidden; white-space: pre-wrap; page-break-inside: avoid; }
+pre .c { color: #7fa8c4; }
+table { border-collapse: collapse; width: 100%; font-size: 8.6pt; margin: 0 0 3mm;
+        page-break-inside: avoid; }
+th { background: #16202b; color: #fff; text-align: left; padding: 1.6mm 2mm; font-weight: 600; }
+td { border-bottom: .4pt solid #ccd6e0; padding: 1.6mm 2mm; vertical-align: top; }
+tr:nth-child(even) td { background: #f6f8fa; }
+ul { margin: 0 0 2.5mm; padding-left: 5mm; }
+li { margin-bottom: 1mm; }
+.lead { font-size: 10.4pt; color: #44515f; margin-bottom: 5mm; }
+.meta { font-size: 8pt; color: #6b7885; border-top: .4pt solid #ccd6e0; padding-top: 2mm; margin-top: 2mm; }
+.rule { background: #fff4e5; border-left: 2.4mm solid #d97706; padding: 2.5mm 3mm;
+        margin: 0 0 3mm; page-break-inside: avoid; }
+.rule b { color: #92400e; }
+.note { background: #eef6ff; border-left: 2.4mm solid #0b6bcb; padding: 2.5mm 3mm; margin: 0 0 3mm; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.card { border: .4pt solid #ccd6e0; border-left: 2mm solid #0b3c5d; border-radius: 1.5mm;
+        padding: 2.5mm 3mm; page-break-inside: avoid; }
+.card h4 { margin: 0 0 1.5mm; font-size: 9.4pt; }
+.card .mono { color: #0b3c5d; }
+.pill { display: inline-block; background: #0b3c5d; color: #fff; font-size: 7.2pt;
+        padding: .4mm 1.6mm; border-radius: 1mm; vertical-align: 1pt; }
+.page-break { page-break-before: always; }
+svg { display: block; margin: 0 auto 3mm; }
+.small { font-size: 8.4pt; color: #55636f; }
+</style></head><body>
+
+<h1>ACSOS · document-to-LLM</h1>
+<p class="lead">Architektur- und Entwicklerdokumentation — Extraktions-, Verifikations- und
+Publikations-Pipeline fuer lizenzierte GRC-Normen und Fachdokumente.</p>
+
+<div class="rule"><b>Kernregel der Architektur.</b> Konvertiert wird ausschliesslich mit
+<b>IBM Docling</b>. Es existiert kein eigener PDF-Parser, kein PyPDF-, pdfminer- oder
+Regex-Pfad. Layout-, Tabellen- und Hierarchieerkennung machen die Docling-Layoutmodelle.
+Ein LLM-Agent liest <b>nie</b> ein PDF im Kontextfenster, sondern ausschliesslich das
+erzeugte Markdown aus <code>output/</code>.</p></div>
+
+<h2>1 Zweck und Systemgrenze</h2>
+<p>Die Pipeline nimmt lizenzierte Quelldokumente (PDF, DOCX, XLSX, PPTX, HTML, MD) entgegen und
+erzeugt daraus strukturerhaltendes Markdown mit vollstaendiger Provenienz. Anschliessend wird
+maschinell geprueft, dass der Zieltext den Quelltext <b>wortdeckend</b> abbildet; erst danach
+werden Inhalte in den Obsidian-Vault veroeffentlicht und in einen Retrieval-Index gestellt.</p>
+<p>Systemgrenze: alles laeuft lokal als CLI. Keine Serverkomponente, kein Netzwerkzugriff zur
+Laufzeit ausser dem einmaligen Modell-Download von Hugging Face (danach
+<code>HF_HUB_OFFLINE=1</code>). Lizenzierter Normtext verlaesst die Maschine nicht und wird
+niemals versioniert.</p>
+
+<h2>2 Datenfluss</h2>
+<svg width="640" height="332" viewBox="0 0 640 332" xmlns="http://www.w3.org/2000/svg"
+     font-family="DejaVu Sans, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#16202b"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b91c1c"/></marker>
+  </defs>
+  <rect x="8" y="16" width="112" height="52" rx="5" fill="#eef2f6" stroke="#8ea0b0"/>
+  <text x="64" y="38" font-size="11" text-anchor="middle" font-weight="bold">input/</text>
+  <text x="64" y="52" font-size="8.5" text-anchor="middle" fill="#55636f">PDF DOCX XLSX</text>
+  <text x="64" y="63" font-size="8.5" text-anchor="middle" fill="#55636f">PPTX HTML MD</text>
+
+  <rect x="160" y="8" width="150" height="68" rx="5" fill="#0b3c5d"/>
+  <text x="235" y="28" font-size="11" text-anchor="middle" fill="#fff" font-weight="bold">extract.py</text>
+  <text x="235" y="43" font-size="8.5" text-anchor="middle" fill="#cfe3f0">Docling-Konvertierung</text>
+  <text x="235" y="55" font-size="8.5" text-anchor="middle" fill="#cfe3f0">im Worker-Prozess</text>
+  <text x="235" y="68" font-size="8.5" text-anchor="middle" fill="#cfe3f0">Qualitaets-Gates</text>
+
+  <rect x="352" y="8" width="132" height="68" rx="5" fill="#146c43"/>
+  <text x="418" y="28" font-size="11" text-anchor="middle" fill="#fff" font-weight="bold">verify.py</text>
+  <text x="418" y="43" font-size="8.5" text-anchor="middle" fill="#d3ecdd">Wortdeckung vs.</text>
+  <text x="418" y="55" font-size="8.5" text-anchor="middle" fill="#d3ecdd">unabhaengiger</text>
+  <text x="418" y="68" font-size="8.5" text-anchor="middle" fill="#d3ecdd">Quell-Lesung</text>
+
+  <rect x="522" y="16" width="110" height="52" rx="5" fill="#eef2f6" stroke="#8ea0b0"/>
+  <text x="577" y="36" font-size="11" text-anchor="middle" font-weight="bold">output/</text>
+  <text x="577" y="50" font-size="8.5" text-anchor="middle" fill="#55636f">*.md + Front-</text>
+  <text x="577" y="61" font-size="8.5" text-anchor="middle" fill="#55636f">Matter, *.json</text>
+
+  <line x1="122" y1="42" x2="156" y2="42" stroke="#16202b" stroke-width="1.4" marker-end="url(#a)"/>
+  <line x1="312" y1="42" x2="348" y2="42" stroke="#16202b" stroke-width="1.4" marker-end="url(#a)"/>
+  <line x1="486" y1="42" x2="518" y2="42" stroke="#16202b" stroke-width="1.4" marker-end="url(#a)"/>
+
+  <path d="M418 78 L418 96 L235 96 L235 80" fill="none" stroke="#b91c1c" stroke-width="1.3"
+        stroke-dasharray="4 3" marker-end="url(#ar)"/>
+  <text x="326" y="110" font-size="8" text-anchor="middle" fill="#b91c1c">Deckung &lt; Schwelle → Nachtrag-Reparatur / Warnung</text>
+
+  <rect x="30" y="146" width="130" height="60" rx="5" fill="#fff" stroke="#0b3c5d" stroke-width="1.2"/>
+  <text x="95" y="166" font-size="10" text-anchor="middle" font-weight="bold">publish.py</text>
+  <text x="95" y="181" font-size="8.5" text-anchor="middle" fill="#55636f">Abschnitte → Notizen</text>
+  <text x="95" y="194" font-size="8.5" text-anchor="middle" fill="#55636f">Anker + Crosswalk</text>
+
+  <rect x="184" y="146" width="126" height="60" rx="5" fill="#fff" stroke="#0b3c5d" stroke-width="1.2"/>
+  <text x="247" y="166" font-size="10" text-anchor="middle" font-weight="bold">index.py</text>
+  <text x="247" y="181" font-size="8.5" text-anchor="middle" fill="#55636f">Chunking →</text>
+  <text x="247" y="194" font-size="8.5" text-anchor="middle" fill="#55636f">SQLite FTS5</text>
+
+  <rect x="334" y="146" width="126" height="60" rx="5" fill="#fff" stroke="#0b3c5d" stroke-width="1.2"/>
+  <text x="397" y="166" font-size="10" text-anchor="middle" font-weight="bold">tracker.py</text>
+  <text x="397" y="181" font-size="8.5" text-anchor="middle" fill="#55636f">Bestandsbericht</text>
+  <text x="397" y="194" font-size="8.5" text-anchor="middle" fill="#55636f">je Dokument</text>
+
+  <rect x="484" y="146" width="126" height="60" rx="5" fill="#fff" stroke="#0b3c5d" stroke-width="1.2"/>
+  <text x="547" y="166" font-size="10" text-anchor="middle" font-weight="bold">versioncheck.py</text>
+  <text x="547" y="181" font-size="8.5" text-anchor="middle" fill="#55636f">Aktualitaet gegen</text>
+  <text x="547" y="194" font-size="8.5" text-anchor="middle" fill="#55636f">versions.json</text>
+
+  <line x1="577" y1="72" x2="577" y2="140" stroke="#16202b" stroke-width="1.4" marker-end="url(#a)"/>
+  <path d="M577 120 L95 120 L95 142" fill="none" stroke="#16202b" stroke-width="1.1" marker-end="url(#a)" opacity=".55"/>
+  <path d="M577 128 L247 128 L247 142" fill="none" stroke="#16202b" stroke-width="1.1" marker-end="url(#a)" opacity=".55"/>
+  <path d="M577 136 L397 136 L397 142" fill="none" stroke="#16202b" stroke-width="1.1" marker-end="url(#a)" opacity=".55"/>
+
+  <rect x="30" y="252" width="284" height="56" rx="5" fill="#16202b"/>
+  <text x="172" y="273" font-size="10.5" text-anchor="middle" fill="#fff" font-weight="bold">Obsidian-Vault (ausserhalb Repo)</text>
+  <text x="172" y="289" font-size="8.5" text-anchor="middle" fill="#b9c6d2">Framework-/Dokumentnotizen, Tracker,</text>
+  <text x="172" y="301" font-size="8.5" text-anchor="middle" fill="#b9c6d2">Versionsbericht</text>
+
+  <rect x="338" y="252" width="272" height="56" rx="5" fill="#16202b"/>
+  <text x="474" y="273" font-size="10.5" text-anchor="middle" fill="#fff" font-weight="bold">LLM-Agent</text>
+  <text x="474" y="289" font-size="8.5" text-anchor="middle" fill="#b9c6d2">liest Markdown / fragt FTS5-Index —</text>
+  <text x="474" y="301" font-size="8.5" text-anchor="middle" fill="#b9c6d2">nie das Quell-PDF</text>
+
+  <line x1="95" y1="210" x2="95" y2="248" stroke="#16202b" stroke-width="1.4" marker-end="url(#a)"/>
+  <line x1="397" y1="210" x2="230" y2="248" stroke="#16202b" stroke-width="1.1" marker-end="url(#a)" opacity=".55"/>
+  <line x1="547" y1="210" x2="280" y2="248" stroke="#16202b" stroke-width="1.1" marker-end="url(#a)" opacity=".55"/>
+  <line x1="247" y1="210" x2="430" y2="248" stroke="#16202b" stroke-width="1.4" marker-end="url(#a)"/>
+</svg>
+<p class="small">Durchgezogen = Hauptpfad, gestrichelt rot = Ruecklauf bei Deckungsunterschreitung,
+transparent = Nebenpfade auf denselben <code>output/</code>-Bestand.</p>
+
+<h2>3 Module</h2>
+<div class="grid2">
+<div class="card"><h4>extract.py <span class="pill">802 LOC</span></h4>
+<p class="small">Konvertierung. Baut den <code class="mono">DocumentConverter</code> mit
+<code>PdfPipelineOptions</code> (TableFormer, Cell-Matching, Layoutmodell), exportiert
+seitenweise Markdown mit <code>&lt;!-- page: N --&gt;</code>-Markern, schreibt YAML-Front-Matter
+und ruft die Qualitaets-Gates auf.</p></div>
+
+<div class="card"><h4>verify.py <span class="pill">405 LOC</span></h4>
+<p class="small">Unabhaengige Gegenlesung der Quelle: PDF ueber den Docling-Textlayer-Backend,
+Office-Formate ueber openpyxl / python-docx / python-pptx — bewusst <b>nicht</b> ueber denselben
+Pfad wie die Konvertierung, damit der Vergleich aussagekraeftig ist.</p></div>
+
+<div class="card"><h4>publish.py <span class="pill">504 LOC</span></h4>
+<p class="small">Schreibt Abschnitte in den Vault. Findet die Fundstelle einer Control-ID ueber
+ID-Varianten, Ueberschriften, Tabellenzeilen und Volltext-Anker; optionaler Crosswalk aus
+<code>mappings/*.json</code>. <code>--as-document</code> erzeugt stattdessen eine Dokumentnotiz.</p></div>
+
+<div class="card"><h4>index.py <span class="pill">306 LOC</span></h4>
+<p class="small">Retrieval-Layer: zerlegt die Extrakte (HierarchicalChunker bzw.
+Ueberschriftenpfad) und legt sie in SQLite-FTS5. Ein Agent holt sich damit den einzelnen Absatz
+mit Dokument, Gliederungspfad und Seitenzahl als Beleg.</p></div>
+
+<div class="card"><h4>tracker.py <span class="pill">223 LOC</span></h4>
+<p class="small">Erzeugt aus Front-Matter und Vault-Stand den Bestandsbericht je Dokument
+(Seiten, Tabellen, Ueberschriften, Wortdeckung, entfernte Kopf-/Fusszeilen) — in
+<code>output/_TRACKER.md</code> und in den Vault.</p></div>
+
+<div class="card"><h4>versioncheck.py <span class="pill">213 LOC</span></h4>
+<p class="small">Prueft je Dokument die Aktualitaet gegen <code>versions.json</code>. Statuswerte:
+<span class="mono">aktuell · VERALTET · belegt (aus Dokument, mit Datei und Seite) · manuell ·
+unerreichbar</span>.</p></div>
+</div>
+
+<div class="page-break"></div>
+<h2>4 Konvertierungspfad im Detail</h2>
+<h3>4.1 Prozessisolation</h3>
+<p>Docling-Layoutmodelle koennen bei einzelnen Dokumenten hart abstuerzen (beobachtet:
+Signal 11 mitten in einem 14-Dokument-Lauf). Deshalb laeuft jede Konvertierung in einem
+<code>ProcessPoolExecutor(max_workers=1)</code>. Ein <code>BrokenProcessPool</code> wird
+abgefangen, der Pool zurueckgesetzt und nur <b>das eine</b> Dokument als Fehler markiert —
+der Batch laeuft weiter.</p>
+<h3>4.2 Modelle und Offline-Betrieb</h3>
+<p>Layout- und Tabellenmodelle kommen aus dem Hugging-Face-Cache
+(<span class="mono">docling-layout-heron</span>, <span class="mono">ds4sd/docling-models</span>
+TableFormer). Netzwerkfehler beim Modell-Download loesen einen automatischen Retry mit
+<code>HF_HUB_OFFLINE=1</code> gegen den lokalen Cache aus. <code>--models-dir</code>
+(bzw. <code>ACSOS_DOCLING_MODELS</code>) setzt <code>artifacts_path</code> fuer den
+vollstaendig luftdichten Betrieb.</p>
+<h3>4.3 Tabellenmodus mit Ruecknahme</h3>
+<p><code>TableFormerMode.ACCURATE</code> ist nicht deterministisch. Bei einem gescheiterten
+Lauf wird ACCURATE einmal wiederholt, danach auf <code>FAST</code> zurueckgenommen; der
+tatsaechlich verwendete Modus steht als <code>table_mode</code> im Front-Matter samt Warnung.</p>
+<h3>4.4 Docling-Status auswerten</h3>
+<div class="note"><p style="margin:0"><b>Erfahrung aus dem Betrieb:</b> Ein ignorierter
+<code>PARTIAL_SUCCESS</code> hat einmal eine stillschweigend abgeschnittene Datei erzeugt
+(fehlende Seite, verlorener Anhang, 60,9 % Deckung). Seitdem werden
+<code>result.status</code> und <code>result.errors</code> ausgewertet und in
+<code>docling_status</code> festgehalten.</p></div>
+
+<h2>5 Qualitaets-Gates</h2>
+<table>
+<tr><th style="width:32%">Gate</th><th>Prueft</th><th style="width:18%">Reaktion</th></tr>
+<tr><td>Leeres Ergebnis</td><td>Markdown ohne Inhalt</td><td>Abbruch (Fehler)</td></tr>
+<tr><td>Zeichen pro Seite</td><td>Auffaellig duenne Seiten → fehlender Textlayer / OCR noetig</td><td>Warnung</td></tr>
+<tr><td>Ueberschriften</td><td>Dokument ohne jede Gliederung (uebersprungen fuer xlsx/xlsm/csv)</td><td>Warnung</td></tr>
+<tr><td>Tabellenkonsistenz</td><td>Ungleiche Spaltenzahl innerhalb eines Tabellenblocks</td><td>Warnung</td></tr>
+<tr><td>Cell-Spill</td><td>Zelle &gt; 25 Zeichen, die klein beginnt → Text aus der Nachbarzelle uebergelaufen (Inhaltsverzeichnis-Zeilen mit Punktfuehrung ausgenommen)</td><td>Warnung + Hinweis-Callout in der Vault-Notiz</td></tr>
+<tr><td>U+FFFD</td><td>Ersetzungszeichen = kaputte Kodierung</td><td>Warnung</td></tr>
+<tr><td>Wortdeckung</td><td>Anteil der Quellwoerter, die im Extrakt wiederzufinden sind, Schwelle <code>--min-coverage</code> (Standard 99,5 %)</td><td>Reparatur, sonst Warnung / <code>--strict</code> = Exit 1</td></tr>
+</table>
+
+<h3>5.1 Wie die Wortdeckung gemessen wird</h3>
+<ul>
+<li>Quelle wird unabhaengig gelesen (Textlayer-Backend bzw. openpyxl/python-docx/python-pptx).</li>
+<li>Normalisierte Tokenisierung, Vergleich seitenweise gegen die Seitenmarker im Extrakt.</li>
+<li>Laufende Kopf-/Fusszeilen werden erkannt (Ziffern maskiert, Wiederholung ueber Seiten) und
+    aus der Bezugsmenge genommen — sie fehlen im Extrakt <b>absichtlich</b>.</li>
+<li>Am Zeilenumbruch getrennte Woerter werden vor dem Vergleich wieder zusammengefuehrt.</li>
+<li>Was danach fehlt, haengt <code>--repair</code> als
+    <span class="mono">## Nachtrag: nicht zugeordneter Quelltext</span> mit Seitenmarker und
+    Zitatpraefix an — nichts geht verloren, und es ist sichtbar, dass es Nachtrag ist.</li>
+</ul>
+
+<h2>6 Datenvertrag: Front-Matter</h2>
+<p>Jedes Extrakt traegt seine eigene Provenienz. Der Tracker, <code>versioncheck.py</code> und
+<code>index.py</code> lesen ausschliesslich diese Felder — sie sind die stabile Schnittstelle
+zwischen den Modulen.</p>
+<pre><span class="c">---</span>
+source_file:            ISO_IEC_27001_2022.pdf
+source_sha256:          3f9c…                  <span class="c"># Identitaet der Quelle</span>
+source_bytes:           1300551
+pages:                  31
+tables:                 12
+converter:              docling 2.123.0
+ocr:                    false
+table_mode:             accurate               <span class="c"># oder fast nach Ruecknahme</span>
+docling_status:         SUCCESS                <span class="c"># PARTIAL_SUCCESS wird nicht verschluckt</span>
+converted_at:           2026-08-27T09:14:02Z
+text_coverage_percent:  100.0                  <span class="c"># Ergebnis von verify.py</span>
+appended_source_lines:  0                      <span class="c"># Umfang des Nachtrags</span>
+extraction_status:      ok | warn | error
+warnings:               []
+<span class="c">---</span></pre>
+
+<div class="page-break"></div>
+<h2>7 Publikation in den Vault</h2>
+<p>Der Vault liegt bewusst <b>ausserhalb</b> des Repositories. <code>publish.py</code> loest
+eine Control-/Artikel-ID in der Reihenfolge auf:</p>
+<ul>
+<li><b>ID-Varianten</b> — <code>A.8.1</code>, <code>A 8.1</code>, <code>8.1</code>, normalisiert ueber <code>norm_key()</code>.</li>
+<li><b>Ueberschriften</b> — Abschnitt inkl. Aggregation der Elternebene.</li>
+<li><b>Tabellenzeilen</b> — Control-Kataloge, die als Tabelle vorliegen.</li>
+<li><b>Volltext-Anker</b> — Regex auf Zeilenanfang/Zellgrenze; wenn der Treffer kuerzer als
+40 Zeichen ist, wird ueber die naechste Ueberschrift hinaus verlaengert (EU-Rechtsakte setzen
+&#8222;Artikel 7&#8220; allein, der Titel folgt als naechste Zeile).</li>
+<li><b>Crosswalk</b> — <code>mappings/*.json</code> fuer thematische statt positioneller
+Zuordnung; die Suche laeuft ueber die <b>vollstaendige</b> Phrase, nicht die ersten Woerter
+(sonst trifft &#8222;Produkte mit digitalen Elementen&#8220; die Titelseite).</li>
+</ul>
+<div class="rule"><b>Lizenzgrenze.</b> Weder <code>input/</code> noch <code>output/</code> werden
+versioniert (nur <code>.gitkeep</code>). Lizenzierter Normtext existiert ausschliesslich lokal
+und im Vault. Das gilt fuer beide Repositories.</div>
+
+<h2>8 Betrieb</h2>
+<pre><span class="c"># Vorflug: Modelle, Backends, Schreibrechte</span>
+python extract.py --doctor
+
+<span class="c"># Batch mit Verifikation und Reparatur (Standard)</span>
+python extract.py input/ --recursive --json
+
+<span class="c"># Einzelne Datei gegen ihre Quelle nachpruefen</span>
+python verify.py output/iso-27001.md --source input/ISO_27001.pdf --show-missing 25
+
+<span class="c"># Retrieval-Index bauen und abfragen</span>
+python index.py build --output output --db output/acsos.db
+python index.py search "Kryptographie Schluesselverwaltung" --db output/acsos.db
+
+<span class="c"># Bestandsbericht und Aktualitaetspruefung</span>
+python tracker.py --output output --input input --vault "$VAULT" \
+  --to output/_TRACKER.md --to "$VAULT/document-to-LLM Tracker.md"
+python versioncheck.py --output output --to "$VAULT/document-to-LLM Versionen.md"
+
+<span class="c"># In den Vault veroeffentlichen</span>
+python publish.py output/iso-27001.md --vault "$VAULT" --framework "ISO 27001"</pre>
+
+<h3>8.1 Exit-Codes</h3>
+<table>
+<tr><th style="width:14%">Code</th><th>Bedeutung</th></tr>
+<tr><td class="mono">0</td><td>Alle Dokumente konvertiert; ggf. Warnungen (ohne <code>--strict</code>)</td></tr>
+<tr><td class="mono">1</td><td>Mindestens ein Fehler — oder mit <code>--strict</code> bereits eine Warnung; ebenso <code>versioncheck --strict</code> bei veralteter Version</td></tr>
+</table>
+
+<h2>9 Tests und CI</h2>
+<p>Workflow <code>.github/workflows/verify.yml</code> laeuft auf <code>push</code> (nur
+<code>main</code>), <code>pull_request</code> und <code>workflow_dispatch</code>, mit
+Concurrency-Gruppe je Ref und <code>cancel-in-progress</code>, damit parallele Pushes keine
+doppelten Laeufe und Mails erzeugen.</p>
+<table>
+<tr><th style="width:30%">Stufe</th><th>Inhalt</th></tr>
+<tr><td>Fixture-Generator</td><td><code>tests/make_fixture.py</code> erzeugt die Testdokumente reproduzierbar — kein lizenzierter Text im Repo</td></tr>
+<tr><td>Unit-Tests</td><td><code>tests/test_units.py</code>, 35+ Pruefungen: Kopfzeilenerkennung, Zeilenzusammenfuehrung, Slug-Kollision, Anker-Aufloesung, Office-Verifikation</td></tr>
+<tr><td>DOCX-Smoke</td><td><code>tests/smoke.sh</code> — Pfad ohne Layoutmodelle</td></tr>
+<tr><td>PDF-Smoke</td><td><code>tests/smoke_pdf.sh</code> — voller Pfad inkl. Modell-Cache (HF-Cache wird in CI gecacht)</td></tr>
+<tr><td>Artefakt</td><td>Extraktionsergebnis wird als Build-Artefakt hochgeladen</td></tr>
+</table>
+
+<h2>10 Erweiterungspunkte</h2>
+<ul>
+<li><b>Neues Quellformat:</b> von Docling unterstuetzte Formate laufen ohne Codeaenderung. Neu
+ist nur der <b>unabhaengige</b> Gegenleser in <code>verify.py::source_pages()</code> — genau der
+macht die Deckungszahl belastbar.</li>
+<li><b>Neues Framework:</b> Crosswalk als <code>mappings/&lt;framework&gt;.json</code>; ohne
+Crosswalk greift die Anker-Aufloesung.</li>
+<li><b>Neue Versionsquelle:</b> Eintrag in <code>versions.json</code>; ist online nichts
+erreichbar, belegt <code>from_document()</code> die Version aus dem Extrakt selbst (mit Datei
+und Seite als Nachweis).</li>
+<li><b>Anderes Chunking:</b> <code>index.py --chunker hierarchical|hybrid|markdown</code>;
+<code>hybrid</code> braucht zusaetzlich <code>transformers</code>.</li>
+</ul>
+
+<h2>11 Bewusste Entwurfsentscheidungen</h2>
+<table>
+<tr><th style="width:34%">Entscheidung</th><th>Begruendung</th></tr>
+<tr><td>Nur Docling, kein eigener Parser</td><td>Eigene Regex-/PyPDF-Pfade verlieren Tabellenstruktur und Lesereihenfolge genau bei den Dokumenten, auf die es ankommt.</td></tr>
+<tr><td>Gegenlesen mit anderer Bibliothek</td><td>Eine Deckungszahl aus derselben Engine wuerde nur bestaetigen, was die Engine ohnehin gelesen hat.</td></tr>
+<tr><td>Ein Worker-Prozess je Dokument</td><td>Native Abstuerze der Layoutmodelle duerfen keinen Batch von Dutzenden Dokumenten toeten.</td></tr>
+<tr><td>Nachtrag statt stiller Verlust</td><td>Unzuordenbarer Quelltext bleibt sichtbar erhalten — fuer eine Norm ist stiller Textverlust der teuerste Fehler.</td></tr>
+<tr><td>Front-Matter als Modulschnittstelle</td><td>Alle nachgelagerten Werkzeuge lesen nur Dateien, keinen gemeinsamen Zustand — jeder Schritt ist einzeln wiederholbar.</td></tr>
+<tr><td>Vault ausserhalb des Repos</td><td>Lizenzbindung des Normtextes; das Repo bleibt frei verteilbar.</td></tr>
+</table>
+
+<p class="meta">ACSOS · document-to-LLM — Architekturdokumentation · Quelle:
+<span class="mono">docs/architektur.html</span> im Repository, gerendert mit Chromium.
+Stand des beschriebenen Codes: Branch <span class="mono">claude/document-llm-acsos-skill-8w6cw8</span>.</p>
+</body></html>
