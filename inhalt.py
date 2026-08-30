@@ -67,32 +67,70 @@ class Bericht:
         self.befunde.append(Befund(*a))
 
 
-def extrakt_zu(source_file: str, out_dir: Path) -> Path | None:
-    """Der Extrakt, aus dem dieses Framework stammt — ueber source_file."""
-    for md in out_dir.glob("*.md"):
+def quellen_index(out_dir: Path) -> dict[str, Path]:
+    """Zuordnung Quelldateiname -> Extrakt, einmal aufgebaut."""
+    idx: dict[str, Path] = {}
+    for md in sorted(out_dir.glob("*.md")):
         if md.name.startswith("_"):
             continue
         kopf = md.read_text(encoding="utf-8", errors="replace")[:1200]
         m = re.search(r'^source_file:\s*"(.+?)"', kopf, re.M)
-        if m and m.group(1) == source_file:
-            return md
-    return None
+        if m:
+            idx[m.group(1)] = md
+    return idx
 
 
-def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht) -> None:
+def extrakte_zu(d: dict, fw: str, vault: Path | None,
+                idx: dict[str, Path]) -> list[Path]:
+    """Alle Extrakte, aus denen dieses Framework stammt.
+
+    Der Regelfall ist eine Quelle, dann steht ihr Name im Export. Der BSI-C5
+    kommt aber aus 18 YAML-Katalogen, und der Export vermerkt statt eines
+    Namens '18 Quelldateien'. Wer nur nach einem Dateinamen sucht, findet
+    nichts und meldet das Framework als nicht pruefbar -- 796 Anforderungen
+    blieben so ungeprueft, obwohl jede einzelne Quelle vorliegt. Die Namen
+    stehen in den Vaultnotizen des Frameworks; von dort werden sie geholt.
+    """
+    einzeln = idx.get(str(d.get("sourceFile", "")))
+    if einzeln:
+        return [einzeln]
+    if vault is None:
+        return []
+    ordner = vault / "Normen (lizenziert)" / fw
+    if not ordner.is_dir():
+        return []
+    namen = set()
+    for p in ordner.glob("*.md"):
+        m = re.search(r'^source_file:\s*"(.+?)"',
+                      p.read_text(encoding="utf-8", errors="replace")[:900], re.M)
+        if m:
+            namen.add(m.group(1))
+    return [idx[n] for n in sorted(namen) if n in idx]
+
+
+def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
+                    vault: Path | None, idx: dict[str, Path]) -> None:
     d = json.loads(pfad.read_text(encoding="utf-8"))
     fw = d.get("frameworkId", pfad.stem)
     reqs = d.get("requirements", [])
-    quelle = extrakt_zu(d.get("sourceFile", ""), out_dir)
-    if quelle is None:
+    quellen = extrakte_zu(d, fw, vault, idx)
+    if not quellen:
         b.melde("Quelle", fw, "—",
                 f"Extrakt zu '{d.get('sourceFile')}' nicht gefunden — "
                 f"Zuordnung nicht pruefbar")
         return
 
-    body = quelle.read_text(encoding="utf-8", errors="replace")
-    abschnitte = publish.sections_from_headings(body)
-    abschnitte.update(publish.sections_from_tables(body))
+    abschnitte: dict[str, publish.Section] = {}
+    for q in quellen:
+        roh = q.read_text(encoding="utf-8", errors="replace")
+        # Die Metadaten des Extrakts mitgeben, nicht ein leeres dict: der
+        # YAML-Pfad braucht den Quelldateinamen, um den Katalog zuzuordnen.
+        # Ohne ihn galten alle 796 C5-Anforderungen als "ohne Ueberschrift"
+        # und blieben ungeprueft -- die Pruefung lief, sah aber nichts.
+        q_meta, body = publish.split_front_matter(roh)
+        abschnitte.update(publish.sections_from_headings(body))
+        abschnitte.update(publish.sections_from_tables(body))
+        abschnitte.update(publish.sections_from_yaml(body, q_meta))
 
     # Leckage: eine fremde Anforderungsueberschrift im eigenen Text.
     fremde = re.compile(r"^#{1,6}\s+([A-Z]{2,6}(?:\.\d+)+\.A\d+|\d+(?:\.\d+)+)\s",
@@ -117,7 +155,13 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht) -> None:
             # zu Recht. Ohne diese Unterscheidung meldet die Pruefung 28 mal
             # Leckage, wo Struktur ist -- und Laerm macht den naechsten echten
             # Fund unsichtbar.
-            if treffer != ident and not treffer.startswith(ident + "."):
+            # "A.4" und "4.1": im ISO-42001-Anhang tragen die Oberpunkte das
+            # Praefix A., ihre Unterpunkte im Dokument nicht. Ohne diese
+            # Normalisierung meldet die Pruefung sieben mal Leckage, wo
+            # Struktur ist.
+            kern = ident[2:] if ident.startswith("A.") else ident
+            if (treffer != ident and not treffer.startswith(ident + ".")
+                    and treffer != kern and not treffer.startswith(kern + ".")):
                 b.melde("Leckage", fw, ident,
                         f"fremde Ueberschrift im Text: {treffer}")
                 break
@@ -180,11 +224,12 @@ def main(export_dir: Path, out_dir: Path, vault: Path | None,
          only: str | None, strict: bool) -> None:
     """Prueft, ob jeder Wortlaut zu der Kennung gehoert, unter der er steht."""
     b = Bericht()
+    idx = quellen_index(out_dir)
     for pfad in sorted(export_dir.glob("*.json")):
         if only and pfad.stem != only:
             continue
         b.frameworks += 1
-        pruefe_framework(pfad, out_dir, b)
+        pruefe_framework(pfad, out_dir, b, vault, idx)
         if vault:
             pruefe_kennungen(pfad, vault, b)
 
