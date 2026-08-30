@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -229,21 +230,104 @@ def sections_from_yaml(body: str, meta: dict[str, str]) -> dict[str, Section]:
     return out
 
 
+KENNUNG_IN_ZELLE = re.compile(r"^(A\.)?([0-9A-Z]+(?:[.\-][0-9A-Za-z]+)+)$")
+
+
+def zeilen_kennung(zellen: list[str]) -> tuple[int, str] | None:
+    """Position und Wert der Anforderungskennung in einer Tabellenzeile.
+
+    Frueher wurde nur die erste Spalte betrachtet. Das traegt, solange die
+    Tabelle mit der Kennung beginnt — die VDA-ISA tut das nicht: dort stehen
+    davor eine leere Spalte und eine Referenzspalte, die in der Quelldatei
+    #REF! enthaelt (ein kaputter Formelverweis der Arbeitsmappe selbst). Die
+    Kennung sitzt in der vierten Zelle, der Kriterientext in der neunten bis
+    zwoelften. Ohne diese Suche fiel das gesamte TISAX-Kapitel 8
+    (Prototypenschutz, 23 Kriterien) auf Tabellenfuellzeichen zurueck: befuellt,
+    aber ohne Inhalt — und damit schlimmer als leer, weil es wie Text aussieht.
+
+    Gesucht wird nur in den ersten Zellen: weiter hinten stehen Datumsangaben
+    und Versionsnummern, die wie Kennungen aussehen.
+    """
+    for i, z in enumerate(zellen[:4]):
+        m = KENNUNG_IN_ZELLE.match(z)
+        if m:
+            return i, m.group(2)
+    return None
+
+
+def zellmarke(texte: list[str]) -> str | None:
+    """Das Wort, mit dem die Textzellen dieser Tabelle regulaer beginnen.
+
+    ISO 27001 Anhang A leitet jede Control-Zelle mit "Control" ein. Wo eine
+    Zelle nicht damit beginnt, ist ihr Anfang der Schwanz der vorigen Zeile:
+    das Layoutmodell hat eine mehrzeilige Zelle an der Zeilengrenze getrennt.
+    Die Marke wird nicht fest verdrahtet, sondern aus der Tabelle selbst
+    gelesen -- beginnt die Mehrheit der Zellen mit demselben Wort, ist es die
+    Marke; sonst gibt es keine, und es wird nichts verschoben.
+    """
+    erste = [t.split(None, 1)[0] for t in texte if t.split()]
+    if len(erste) < 5:
+        return None
+    haeufig = Counter(erste).most_common(1)[0]
+    return haeufig[0] if haeufig[1] >= 0.6 * len(erste) else None
+
+
+def repariere_zellversatz(zeilen: list[tuple[str, str, str, int]]
+                          ) -> list[tuple[str, str, str, int]]:
+    """Text, der vor der Zellmarke steht, der vorigen Anforderung zurueckgeben.
+
+    Beobachtet in ISO/IEC 27001 Anhang A: A.5.16 trug nur "Control", waehrend
+    der zugehoerige Satz ("The full life cycle of identities shall be managed.")
+    am Anfang der Zelle von A.5.17 stand -- und deren eigener Text erst
+    dahinter. Neun von 94 Zeilen waren so verschoben. Laengen und Kennungen
+    bleiben dabei unauffaellig; auffallen kann es nur, wer den Wortlaut gegen
+    die Nummer haelt. Genau das ist der teuerste Fehler in einem
+    Compliance-Bestand: eine Anforderung, die etwas anderes sagt, als ihre
+    Nummer verspricht.
+
+    Verschoben wird ausschliesslich der Teil vor der Marke, und nur, wenn es
+    eine vorige Zeile gibt, an die er anschliesst. Verworfen wird nichts.
+    """
+    marke = zellmarke([z[2] for z in zeilen])
+    if not marke:
+        return zeilen
+    ergebnis = [list(z) for z in zeilen]
+    for i, (_, _, text, _) in enumerate(zeilen):
+        if not text or text.startswith(marke) or marke not in text:
+            continue
+        kopf, _, rest = text.partition(marke)
+        kopf = kopf.strip()
+        if not kopf or i == 0:
+            continue
+        ergebnis[i][2] = (marke + rest).strip()
+        vorher = ergebnis[i - 1][2]
+        ergebnis[i - 1][2] = f"{vorher} {kopf}".strip() if vorher else kopf
+    return [tuple(z) for z in ergebnis]
+
+
 def sections_from_tables(body: str) -> dict[str, Section]:
     """Control-Tabellen (Anhang A): jede Zeile ist eine Anforderung."""
-    out: dict[str, Section] = {}
-    for m in re.finditer(r"^\|\s*(A\.)?([0-9A-Z]+(?:[.\-][0-9A-Za-z]+)+)\s*\|(.+)$", body, flags=re.M):
-        cells = [c.strip() for c in m.group(3).split("|") if c.strip()]
-        if not cells:
+    zeilen: list[tuple[str, str, str, int]] = []
+    for zeile in re.finditer(r"^\|(.+)\|\s*$", body, flags=re.M):
+        roh = [c.strip() for c in zeile.group(1).split("|")]
+        gefunden = zeilen_kennung([c for c in roh if c] or roh)
+        if not gefunden:
             continue
-        title = cells[0]
-        text = "\n\n".join(cells[1:]) if len(cells) > 1 else ""
-        raw = m.group(2)
+        nicht_leer = [c for c in roh if c]
+        pos, raw = gefunden
+        rest = nicht_leer[pos + 1:]
+        if not rest:
+            continue
+        text = "\n\n".join(rest[1:]) if len(rest) > 1 else ""
+        zeilen.append((raw, rest[0], text, zeile.start()))
+
+    out: dict[str, Section] = {}
+    for raw, title, text, start in repariere_zellversatz(zeilen):
         for ident in {norm_key(raw), norm_key(f"A.{raw}")}:
             prev = out.get(ident)
             if prev and len(prev.text) >= len(text):
                 continue
-            out[ident] = Section(raw, title, text, page_at(body, m.start()))
+            out[ident] = Section(raw, title, text, page_at(body, start))
     return out
 
 
