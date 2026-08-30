@@ -786,3 +786,58 @@ def test_export_laengen_plausibel(tmp_path: Path) -> None:
     assert "das dritte" not in s["app.1.1.a2"].text
     laengen = [len(s[i].text) for i in ("app.1.1.a1", "app.1.1.a2", "sys.2.2.3.a7")]
     assert max(laengen) < 200, f"unplausibel lang: {laengen}"
+
+
+def test_zellversatz_repariert() -> None:
+    """Text, der vor der Zellmarke steht, gehoert der vorigen Anforderung.
+
+    Beobachtet in ISO/IEC 27001 Anhang A: A.5.16 trug nur "Control", waehrend
+    ihr Satz am Anfang der Zelle von A.5.17 stand. Neun von 94 Zeilen waren so
+    verschoben. Laengen, Kennungen und Feldbelegung bleiben dabei voellig
+    unauffaellig — auffallen kann es nur, wer den Wortlaut gegen die Nummer
+    haelt. In einem Compliance-Bestand ist das der teuerste Fehler: eine
+    Anforderung, die etwas anderes sagt, als ihre Nummer verspricht.
+    """
+    import publish
+
+    body = "\n".join([
+        "| 5.15 | Access control | Control Rules to control access shall be established. |",
+        "| 5.16 | Identity management | Control |",
+        "| 5.17 | Authentication information | The full life cycle of identities shall be "
+        "managed. Control Allocation of authentication information shall be controlled. |",
+        "| 5.18 | Access rights | Control Access rights shall be provisioned. |",
+        "| 5.19 | Supplier relationships | Control Processes shall be defined. |",
+        "| 5.20 | Supplier agreements | Control Requirements shall be agreed. |",
+    ])
+    s = publish.sections_from_tables(body)
+    assert "full life cycle of identities" in s["5.16"].text, s["5.16"].text
+    assert "full life cycle" not in s["5.17"].text, s["5.17"].text
+    assert "Allocation of authentication" in s["5.17"].text
+    # Unverschobene Zeilen bleiben unangetastet.
+    assert s["5.18"].text.startswith("Control Access rights")
+
+    # Ohne erkennbare Marke wird nichts verschoben: lieber unrepariert als
+    # falsch repariert.
+    ohne = "\n".join([
+        "| 1.1 | Alpha | Erster Text ohne gemeinsame Marke. |",
+        "| 1.2 | Beta | Zweiter Text, ganz anders. |",
+        "| 1.3 | Gamma | Dritter Text. |",
+    ])
+    o = publish.sections_from_tables(ohne)
+    assert o["1.2"].text == "Zweiter Text, ganz anders."
+
+
+def test_kennung_nicht_nur_in_erster_spalte() -> None:
+    """Die VDA-ISA fuehrt vor der Kennung eine Referenzspalte mit #REF!.
+
+    Wurde nur die erste Spalte betrachtet, fiel das gesamte TISAX-Kapitel 8
+    (Prototypenschutz, 23 Kriterien) auf Tabellenfuellzeichen zurueck: befuellt,
+    aber ohne Inhalt — und damit schlimmer als leer, weil es wie Text aussieht.
+    """
+    import publish
+
+    body = ("|  | #REF! |  | 8.1.1 |  |  | Sicherheitskonzept | "
+            "Die erforderlichen Massnahmen sind umzusetzen. |")
+    s = publish.sections_from_tables(body)
+    assert "8.1.1" in s, list(s)
+    assert "erforderlichen Massnahmen" in s["8.1.1"].text

@@ -51,6 +51,13 @@ jobs:
       - name: PDF-Pfad (Layout, Tabellen, Vollstaendigkeit)
         run: ./tests/smoke_pdf.sh
 
+      - name: Waechter belegen (Plausibilitaet und Inhalt)
+        # Nicht der Bestand wird hier geprueft -- den sieht CI nicht --, sondern
+        # ob die Waechter selbst funktionieren. Sie muessen bei gesunden Daten
+        # schweigen UND bei einem eingebauten Versatz anschlagen. Ohne die
+        # zweite Probe koennte ein blinder Waechter unbemerkt gruen bleiben.
+        run: ./tests/pruefungen.sh
+
       - name: Extrakt als Artefakt sichern
         if: always()
         run: |

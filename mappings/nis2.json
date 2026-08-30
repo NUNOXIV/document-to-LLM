@@ -1,0 +1,13 @@
+{
+  "framework": "nis2",
+  "source": "CELEX_32022L2555_DE_TXT.pdf (Richtlinie (EU) 2022/2555, Artikel 23 Absatz 4)",
+  "hinweis": "Die Melde-IDs des Registers benennen die Fristen (early, notification, final), nicht die Buchstaben des Richtlinientexts. Die Zeichenfolge 'Art.23.early' steht nirgends im Dokument, deshalb findet die Ankersuche sie nicht und legt — richtigerweise — nichts ab. Diese Kreuzreferenz nennt je ID das woertliche Textstueck, an dem der jeweilige Absatz beginnt.",
+  "belegfuehrung": "Artikel 23 Absatz 4 der Richtlinie fuehrt die Meldekette als Buchstaben a bis d. Zugeordnet sind: a) Fruehwarnung binnen 24 Stunden -> Art.23.early, b) Meldung binnen 72 Stunden -> Art.23.notification, d) Abschlussbericht binnen eines Monats -> Art.23.final. Buchstabe c (Zwischenbericht auf Ersuchen) hat im Register keine eigene ID und bleibt daher ohne Zuordnung. Zusaetzlich Artikel 20: die beiden Absaetze tragen im Register eigene IDs (Art.20.1, Art.20.2), im Text stehen sie als (1) und (2) unter derselben Ueberschrift 'Governance'. Ohne Anker loesten beide auf denselben Abschnitt auf — Art.20.2 trug den Wortlaut von Art.20.1, ein Versatz, den weder Laenge noch Kennung verraet.",
+  "anchors": {
+    "Art.20.1": "Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane wesentlicher und wichtiger Einrichtungen die von diesen Einrichtungen zur  Einhaltung  von  Artikel  21  ergriffenen",
+    "Art.20.2": "Die Mitgliedstaaten stellen sicher, dass die Mitglieder der Leitungsorgane wesentlicher  und wichtiger Einrichtungen an Schulungen teilnehmen müssen",
+    "Art.23.early": "in  jedem  Fall  aber  innerhalb  von  24  Stunden  nach  Kenntnisnahme  des  erheblichen  Sicherheitsvorfalls, eine Frühwarnung",
+    "Art.23.notification": "in  jedem  Fall  aber  innerhalb  von  72  Stunden  nach  Kenntnisnahme  des  erheblichen  Sicherheitsvorfalls, eine  Meldung  über  den  Sicherheitsvorfall",
+    "Art.23.final": "spätestens einen Monat nach Übermittlung der Meldung des Sicherheitsvorfalls gemäß Buchstabe b einen Abschlussbericht"
+  }
+}

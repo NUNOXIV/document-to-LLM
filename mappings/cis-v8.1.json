@@ -1,0 +1,13 @@
+{
+  "framework": "cis-v8.1",
+  "source": "CIS_Controls_Version_8.1.2___March_2025.xlsx, Blatt 'Controls v8.1.2'",
+  "hinweis": "CIS legt die Safeguard-Nummer in der XLSX als Fliesskommazahl ab. 3.10 ist numerisch 3.1, die abschliessende Null geht dabei verloren — die Quelldatei selbst fuehrt zwei Zellen mit dem Wert 3.1: die echte 3.1 und, neun Zeilen spaeter, die, die 3.10 sein muesste. Das ist kein Extraktionsfehler, Docling gibt die Zelle getreu wieder. Ohne diese Kreuzreferenz fallen 3.10, 4.10, 8.10, 13.10 und 16.10 aus dem Bestand, weil ihre Zeichenfolge im Extrakt nirgends steht und die Ankersuche nichts erfindet.",
+  "belegfuehrung": "Die Zuordnung stuetzt sich auf zwei unabhaengige Merkmale: die Position in der Quelltabelle (die zweite x.1-Zeile folgt auf x.9 und geht x.11 voraus) und den Wortlaut, der in der offiziellen CIS-Liste zu genau dieser Nummer gehoert. Geraten wird nichts; findet publish.py den Anker im Extrakt nicht, meldet es die ID als fehlend, statt etwas Falsches abzulegen.",
+  "anchors": {
+    "3.10": "Encrypt sensitive data in transit. Example implementations can include: Transport Layer Security (TLS) and Open Secure Shell (OpenSSH).",
+    "4.10": "Enforce automatic device lockout following a predetermined threshold of local failed authentication attempts on portable end-user devices, where supported.",
+    "8.10": "Retain audit logs across enterprise assets for a minimum of 90 days.",
+    "13.10": "Perform application layer filtering. Example implementations include a filtering proxy, application layer firewall, or gateway.",
+    "16.10": "Apply secure design principles in application architectures."
+  }
+}
