@@ -3,6 +3,9 @@
   "kurzname": "muster-norm-99001",
   "herkunft": "Frei erfunden, in diesem Repo geschrieben. Kein lizenzierter Normtext — deshalb darf dieser Primaertext als einziger im Repository liegen. ISO-, DIN- und TISAX-Woertlaut bleibt ausserhalb (siehe .gitignore).",
   "rolle": "Primaertext im Sinne von Phase 0 des Entwicklungsleitfadens. Das Fixture-PDF wird aus dieser Datei erzeugt (tests/make_fixture.py), und der Fundstellen-Resolver (fundstellen.py) prueft den Extrakt gegen dieselbe Datei. Eine Wahrheit, zwei Richtungen: wer den Woertlaut hier aendert, aendert Quelle und Sollwert zugleich — wer ihn in der Pipeline verliert, faellt auf.",
+  "bestand_muster": [
+    "muster-norm"
+  ],
   "kopfzeile": "MUSTER-NORM 99001:2026-08 (Entwurf)",
   "kopfzeile_rechts": "Vertraulich - nur zu Testzwecken",
   "fundstellen": [

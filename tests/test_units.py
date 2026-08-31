@@ -920,6 +920,16 @@ def test_resolver_ohne_bestand_ist_nicht_gruen() -> None:
     assert F.passend({"kurzname": "iso27001"},
                      [Path("bsi-grundschutz.md"), Path("nis2.md")]) == []
 
+    # Kein Raten ueber den Wortstamm: aus "bsi-kritisv" wurde einmal "bsi",
+    # und die Verordnung wurde gegen "bsi-benutzerdefinierte-bausteine.md"
+    # geprueft — 22 Fundstellen "unverifiziert" gegen ein fremdes Dokument.
+    kandidaten = [Path("bsi-benutzerdefinierte-bausteine.md"), Path("bsi-recplast.md")]
+    assert F.passend({"kurzname": "bsi-kritisv"}, kandidaten) == []
+
+    # Die Zuordnung steht in der Ground Truth, nicht in einer Regel.
+    assert F.passend({"kurzname": "bsig", "bestand_muster": ["bsi-recplast"]},
+                     kandidaten) == [Path("bsi-recplast.md")]
+
 
 def test_ground_truth_deckt_das_fixture() -> None:
     """Die Ground Truth und der Fixture-Generator duerfen nicht auseinanderlaufen.
@@ -1086,6 +1096,29 @@ def test_rechtsakt_klebt_die_aufzaehlungsmarke_nicht_an() -> None:
     assert "1. Konzepte" in text, text
     assert "2. Bewaeltigung" in text, text
     assert "1.Konzepte" not in text
+
+
+def test_alle_ground_truths_sind_lesbar() -> None:
+    """Jede Ground-Truth-Datei muss gueltig und vollstaendig deklariert sein.
+
+    Ein Primaertext, der sich nicht laden laesst oder seine Zuordnung nicht
+    nennt, faellt sonst erst im Bericht auf — als "unverifiziert", also als
+    Aussage ueber die Daten statt ueber das Werkzeug.
+    """
+    import json
+
+    ordner = Path(__file__).resolve().parents[1] / "fixtures" / "ground-truth"
+    dateien = sorted(ordner.glob("*.json"))
+    assert dateien, "kein Primaertext vorhanden"
+    for datei in dateien:
+        gt = json.loads(datei.read_text(encoding="utf-8"))
+        for feld in ("quelle", "kurzname", "herkunft", "fundstellen"):
+            assert feld in gt, f"{datei.name}: {feld} fehlt"
+        assert isinstance(gt.get("bestand_muster", []), list), datei.name
+        assert gt["fundstellen"], f"{datei.name}: keine Fundstellen"
+        for f in gt["fundstellen"]:
+            assert f.get("id"), f"{datei.name}: Fundstelle ohne Kennung"
+            assert f.get("text") or f.get("titel"), f"{datei.name}: {f['id']} ohne Inhalt"
 
 
 # Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die

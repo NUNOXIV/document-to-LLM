@@ -289,14 +289,23 @@ def bestand_dateien(pfad: Path) -> list[Path]:
 
 
 def passend(gt: dict, kandidaten: list[Path]) -> list[Path]:
-    """Bestandsdateien, die zu dieser Ground Truth gehoeren koennen.
+    """Bestandsdateien, die zu dieser Ground Truth gehoeren.
 
-    Zuordnung ueber den Kurznamen. Findet sich keine, wird nichts geprueft und
-    das steht auch so im Bericht — ein leerer Lauf darf nicht gruen aussehen.
+    Die Zuordnung steht in der Ground Truth selbst (`bestand_muster`), nicht in
+    einer Regel. Der erste Anlauf riet ueber den Wortstamm des Kurznamens: aus
+    "bsi-kritisv" wurde "bsi", und der Resolver pruefte die Verordnung gegen
+    "bsi-benutzerdefinierte-bausteine.md" — ein voellig fremdes Dokument, 22
+    Fundstellen "unverifiziert", der Befund wertlos.
+
+    Ohne Muster wird der vollstaendige Kurzname verlangt. Findet sich nichts,
+    wird nichts geprueft, und genau das steht im Bericht: ein leerer Lauf darf
+    nicht gruen aussehen.
     """
-    kurz = str(gt.get("kurzname", "")).lower()
-    treffer = [k for k in kandidaten if kurz and kurz.split("-")[0] in k.name.lower()]
-    return treffer or ([kandidaten[0]] if len(kandidaten) == 1 else [])
+    muster = [str(m).lower() for m in gt.get("bestand_muster", [])]
+    if not muster:
+        kurz = str(gt.get("kurzname", "")).lower()
+        muster = [kurz] if kurz else []
+    return [k for k in kandidaten if any(m in k.name.lower() for m in muster)]
 
 
 @click.command()

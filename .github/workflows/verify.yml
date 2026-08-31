@@ -58,7 +58,8 @@ jobs:
           python tests/make_fixture.py "$RUNNER_TEMP/Muster-Norm-99001.pdf"
           python extract.py "$RUNNER_TEMP/Muster-Norm-99001.pdf" \
             -o "$RUNNER_TEMP/gt-out" --json
-          python fundstellen.py --bestand "$RUNNER_TEMP/gt-out" --strict
+          python fundstellen.py --ground-truth fixtures/ground-truth/muster-norm-99001.json \
+            --bestand "$RUNNER_TEMP/gt-out" --strict
 
       - name: Office-Pfad (DOCX)
         run: ./tests/smoke.sh

@@ -189,6 +189,10 @@ def als_ground_truth(a: Rechtsakt) -> dict:
             "waere dieselbe Hand zweimal. Hier kommt der Woertlaut aus anderem Format, "
             "anderer Herkunft und anderem Leseweg."
         ),
+        # Welche Bestandsdateien geprueft werden, steht hier und wird nicht
+        # geraten. Leer heisst: noch keine zugeordnet, also ungeprueft — und
+        # der Bericht sagt das auch.
+        "bestand_muster": [],
         "amtliche_fundstelle": a.fundstelle,
         "ausfertigung": a.ausfertigung,
         "stand": a.stand,
