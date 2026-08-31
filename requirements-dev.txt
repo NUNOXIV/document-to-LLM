@@ -1,2 +1,16 @@
-# Nur fuer Tests: erzeugt das Norm-aehnliche Fixture-PDF.
+# Nur fuer Tests und Pruefungen, nicht zur Laufzeit.
+
+# Erzeugt das Norm-aehnliche Fixture-PDF aus fixtures/ground-truth/.
 reportlab>=4.0
+
+# Testlauf. Ohne pytest laufen die Tests mit Fixtures (tmp_path) nicht mit —
+# der Skriptpfad von tests/test_units.py sagt das dann ausdruecklich.
+pytest>=8.0
+
+# Eigenschaftstests: sucht die Kennungsformen, die in keiner Beispielliste
+# stehen. Genau daran ist die Ueberschriftenerkennung zweimal zerbrochen.
+hypothesis>=6.100
+
+# Linter. Konfiguration in pyproject.toml, damit lokal, im Hook und in CI
+# dieselben Regeln gelten.
+ruff>=0.6

@@ -1,0 +1,44 @@
+# Dieselben Pruefungen wie in CI, nur frueher. Zweck ist nicht Ordnung,
+# sondern Zeit: eine rote CI kostet einen Push, eine Mail und einen
+# Kontextwechsel; ein roter Commit kostet zehn Sekunden.
+#
+#   pip install pre-commit && pre-commit install
+#
+# Was hier NICHT laeuft: smoke_pdf.sh. Der Lauf braucht die Docling-Modelle und
+# eine halbe Minute — vor jedem Commit ist das zu teuer, in CI ist es richtig.
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.5
+    hooks:
+      - id: ruff
+        args: [--fix]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-json
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-merge-conflict
+      # Lizenzierter Normtext gehoert nicht ins Repo. Die .gitignore deckt
+      # input/, output/ und export/ ab; diese Grenze faengt das versehentlich
+      # anderswo abgelegte grosse PDF.
+      - id: check-added-large-files
+        args: [--maxkb=2048]
+
+  - repo: local
+    hooks:
+      - id: tests
+        name: Testlauf (pytest, inkl. Eigenschaftstests)
+        entry: python -m pytest
+        language: system
+        pass_filenames: false
+        types: [python]
+
+      - id: waechter
+        name: Waechter belegen (schweigen bei gesund, anschlagen bei kaputt)
+        entry: ./tests/pruefungen.sh
+        language: system
+        pass_filenames: false
+        files: '^(pruefe|inhalt|fundstellen|publish)\.py$|^tests/pruefungen\.sh$'

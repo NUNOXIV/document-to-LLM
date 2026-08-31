@@ -95,7 +95,7 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     n = len(lines_by_page)
     seen: Counter[str] = Counter()
     for lines in lines_by_page.values():
-        seen.update({_mask(l) for l in lines if _mask(l) and len(tokenize(l)) <= 12})
+        seen.update({_mask(z) for z in lines if _mask(z) and len(tokenize(z)) <= 12})
     threshold = max(2, int(0.6 * n))
     running = {m for m, c in seen.items() if c >= threshold} if n >= 2 else set()
 

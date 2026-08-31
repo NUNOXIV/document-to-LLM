@@ -566,22 +566,35 @@ def test_export_json() -> None:
 
 
 def main() -> int:
-    for fn in (test_page_markers, test_quality_gates, test_target_names,
-               test_pipeline_options, test_verify, test_repair, test_office_verify,
-               test_broken_ooxml_styles, test_text_passthrough,
-               test_yaml_catalogue, test_gs_struktur,
-               test_versioncheck_historie, test_fts5_query, test_korpus_json, test_export_json):
+    """Laeuft ohne pytest — findet die Tests aber selbst.
+
+    Vorher stand hier eine handgepflegte Liste. Jeder danach geschriebene Test
+    fehlte darin und lief im CI-Skriptpfad nie mit: fuenf Waechtertests waren
+    vorhanden und wurden nicht ausgefuehrt. Eine Liste, die man vergessen kann,
+    ist keine Pruefung. Tests mit Fixtures (tmp_path) braucht pytest; sie werden
+    hier ausdruecklich als nicht ausgefuehrt benannt statt stillschweigend
+    uebergangen.
+    """
+    import inspect
+
+    hier = sys.modules[__name__]
+    alle = [(n, f) for n, f in vars(hier).items()
+            if n.startswith("test_") and inspect.isfunction(f)]
+    alle.sort(key=lambda nf: nf[1].__code__.co_firstlineno)
+    ohne_fixture = [(n, f) for n, f in alle if not inspect.signature(f).parameters]
+    mit_fixture = [n for n, f in alle if inspect.signature(f).parameters]
+    for _, fn in ohne_fixture:
         fn()
     print()
+    print(f"{len(ohne_fixture)} Test(s) ohne Fixture ausgefuehrt.")
+    if mit_fixture:
+        print(f"{len(mit_fixture)} Test(s) brauchen pytest und liefen hier NICHT: "
+              + ", ".join(mit_fixture))
     if failures:
         print(f"{len(failures)} Test(s) fehlgeschlagen: {', '.join(failures)}")
         return 1
     print("Alle Unit-Tests bestanden.")
     return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
 
 
 def test_document_note_ohne_pruefbare_deckung(tmp_path: Path) -> None:
@@ -841,3 +854,112 @@ def test_kennung_nicht_nur_in_erster_spalte() -> None:
     s = publish.sections_from_tables(body)
     assert "8.1.1" in s, list(s)
     assert "erforderlichen Massnahmen" in s["8.1.1"].text
+
+
+def test_resolver_normalisiert_nur_was_er_darf() -> None:
+    """Der Vergleich muss Satzform ueberstehen und Woertlaut nicht.
+
+    Ein Resolver, der grosszuegig normalisiert, findet fast jeden Text wieder
+    und belegt damit nichts. Einer, der gar nicht normalisiert, meldet
+    Umbrueche als Abweichung. Beide Fehler sind hier festgenagelt.
+    """
+    import fundstellen as F
+
+    # Darf angeglichen werden: Umbruch, Trennung am Zeilenende, Typografie.
+    assert F.normalisiere("Informations-\nsicherheit") == "Informationssicherheit"
+    assert F.normalisiere("a  b\n c") == "a b c"
+    assert F.normalisiere("„Zweck“") == '"Zweck"'
+    assert F.normalisiere("ﬁnden") == "finden"
+
+    # Darf NICHT angeglichen werden: Gross-/Kleinschreibung und Verneinung
+    # sind bei Normtext bedeutungstragend. MUSS und muss sind nicht dasselbe.
+    assert F.normalisiere("MUSS") != F.normalisiere("muss")
+    assert F.normalisiere("ist zulaessig") != F.normalisiere("ist nicht zulaessig")
+
+
+def test_resolver_trennt_abweichend_von_unverifiziert() -> None:
+    """Zwei Befunde, die nie zusammenfallen duerfen.
+
+    'Unverifiziert' heisst: nicht geprueft. 'Abweichend' heisst: geprueft und
+    falsch. Wer beides in ein Feld schreibt, verliert genau die Unterscheidung,
+    an der der Zellversatz haengt — Kennung richtig, Wortlaut der Nachbarzeile.
+    """
+    import fundstellen as F
+
+    gt = {"id": "1.1", "art": "abschnitt", "titel": "Erste Anforderung",
+          "text": "Die Institution MUSS das eine tun."}
+
+    treffer = F.pruefe_fundstelle(gt, F.normalisiere("## 1.1 Erste Anforderung\n\n"
+                                                    "Die Institution MUSS das eine tun."), {}, "q")
+    assert treffer.status == "verifiziert", treffer
+
+    fehlt = F.pruefe_fundstelle(gt, F.normalisiere("## 2.1 Etwas ganz anderes"), {}, "q")
+    assert fehlt.status == "unverifiziert", fehlt
+
+    versatz = F.pruefe_fundstelle(
+        gt, "", {"1.1": F.normalisiere("Erste Anforderung Die Institution SOLLTE das andere tun.")},
+        "q")
+    assert versatz.status == "abweichend", versatz
+
+    # Teiltreffer ist kein Treffer: fehlt der halbe Satz, ist er nicht belegt.
+    halb = F.pruefe_fundstelle(gt, F.normalisiere("1.1 Erste Anforderung Die Institution MUSS"),
+                               {}, "q")
+    assert halb.status == "abweichend", halb
+
+
+def test_resolver_ohne_bestand_ist_nicht_gruen() -> None:
+    """Ein Lauf ohne zugeordnete Bestandsdatei darf nicht wie Erfolg aussehen.
+
+    Das ist derselbe Fehler wie die Wortdeckung, die als 100.0 startete: ein
+    ungeprueftes Ergebnis, das die Form eines geprueften hat.
+    """
+    import fundstellen as F
+
+    b = F.Bericht("muster", "leer")
+    assert b.quote == 0.0
+    assert F.passend({"kurzname": "iso27001"},
+                     [Path("bsi-grundschutz.md"), Path("nis2.md")]) == []
+
+
+def test_ground_truth_deckt_das_fixture() -> None:
+    """Die Ground Truth und der Fixture-Generator duerfen nicht auseinanderlaufen.
+
+    Das PDF wird aus der Ground Truth gebaut. Wuerde der Generator eigene
+    Literale enthalten, pruefte der Resolver das Ergebnis gegen eine zweite,
+    moeglicherweise veraltete Fassung desselben Texts — eine Selbstbestaetigung.
+    """
+    import json
+    import re
+
+    gt_pfad = Path(__file__).resolve().parents[1] / "fixtures" / "ground-truth" \
+        / "muster-norm-99001.json"
+    gt = json.loads(gt_pfad.read_text(encoding="utf-8"))
+    assert len(gt["fundstellen"]) >= 10
+    assert any(f["art"] == "control" for f in gt["fundstellen"])
+
+    # Kommentare zaehlen nicht: dort darf ein Wort aus dem Primaertext stehen,
+    # etwa in der Begruendung einer Spaltenbreite. Verboten ist der Woertlaut
+    # als Literal, aus dem das PDF gesetzt wuerde.
+    quelltext = "\n".join(
+        z for z in (Path(__file__).parent / "make_fixture.py").read_text(
+            encoding="utf-8").splitlines() if not z.lstrip().startswith("#"))
+    for f in gt["fundstellen"]:
+        for feld in ("titel", "text"):
+            wert = f.get(feld, "")
+            if len(wert) > 30:
+                assert wert[:30] not in quelltext, \
+                    f"Woertlaut steht doppelt: {feld} von {f['id']} auch im Generator"
+
+    # Kein Wort darf so lang sein, dass der Satz es in einer Tabellenzelle
+    # umbricht: genau daran zerbrach der erste Resolver-Lauf.
+    for f in gt["fundstellen"]:
+        if f["art"] == "control":
+            laengstes = max(re.findall(r"\S+", f["titel"]), key=len)
+            assert len(laengstes) <= 40, laengstes
+
+
+# Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
+# Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
+# definierte existierte noch nicht und lief im Skriptpfad nie mit.
+if __name__ == "__main__":
+    raise SystemExit(main())

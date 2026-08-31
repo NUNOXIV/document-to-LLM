@@ -222,15 +222,52 @@ python index.py build --output output            # Retrieval-Index
 python tracker.py --output output --vault ~/obsidian-vault --to output/_TRACKER.md
 ```
 
+## Drei Prüfebenen — Konsistenz ist nicht Wahrheit
+
+Die Abweichungsprüfung oben misst, ob der Extrakt zur Quelle passt. Sie misst
+nicht, ob der *Wortlaut* stimmt, den ein Export unter einer Kennung führt.
+Dafür gibt es drei Wächter, die verschiedene Dinge messen:
+
+```bash
+python pruefe.py     --export export/ --strict                   # Plausibilität
+python inhalt.py     --export export/ --output output/ --strict  # Wortlaut je Kennung
+python fundstellen.py --bestand output/ --strict                 # gegen den Primärtext
+```
+
+| Wächter | Frage | Blind für |
+|---|---|---|
+| `pruefe.py` | Ist der Bestand in sich plausibel? Längenverteilung, doppelte Kennungen, leere Texte | Ob der Inhalt stimmt |
+| `inhalt.py` | Steht unter jeder Kennung ihr eigener Wortlaut? | Ob die Quelle richtig gelesen wurde |
+| `fundstellen.py` | Stimmt der Wortlaut mit einem Primärtext überein, den niemand aus dem Ergebnis abgeleitet hat? | Alles, wofür keine Ground Truth vorliegt |
+
+Der Befund des Resolvers ist dreiwertig und nie zweiwertig: `verifiziert`,
+`abweichend` (Kennung da, Wortlaut nicht — der gefährliche Fall) und
+`unverifiziert` (nicht geprüft). „Unverifiziert" ist ausdrücklich erlaubt.
+Ein ungeprüftes Ergebnis, das wie ein geprüftes aussieht, nicht.
+
+`fixtures/ground-truth/` hält den Primärtext. `tests/make_fixture.py` **erzeugt
+das Test-PDF daraus**, `fundstellen.py` prüft **dagegen** — eine Datei, zwei
+Richtungen. Stünde der Wortlaut zweimal, wäre die Prüfung eine
+Selbstbestätigung.
+
+`tests/pruefungen.sh` belegt für jeden Wächter beide Richtungen: bei gesunden
+Daten muss er schweigen, bei absichtlich beschädigten anschlagen. Ein Wächter,
+der nur die erste Probe besteht, könnte kaputt sein und schwiege genauso.
+
 ## Regeln für Agenten
 
 Siehe [`SKILL.md`](SKILL.md). Kurzfassung: Kontext kommt aus `output/`, niemals
 aus dem PDF; Zitate mit Slug, Gliederung und Seitenzahl belegen; bei
 `extraction_status: warn` die Warnungen lesen.
 
+Wer am Repo selbst arbeitet: [`CLAUDE.md`](CLAUDE.md) (Befehle, vier
+Verifikationsregeln, Codestil) und [`lessons-learned.md`](lessons-learned.md)
+(jeder gefundene Defekt mit Ursache, Fix und Regressionstest).
+
 ## Ordner
 
 ```
+fixtures/ground-truth/   Primärtexte als Prüfmaßstab (frei erfunden, deshalb im Repo)
 input/     Quelldokumente
 output/    *.md (verbindliche Textquelle für Agenten)
            *.docling.json / *.passthrough.json (Struktur für verarbeitende Systeme)

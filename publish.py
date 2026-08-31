@@ -616,17 +616,27 @@ def vault_ids(vault: Path, framework: str) -> dict[str, str]:
     return ids
 
 
+def yaml_wert(v: object) -> str:
+    """Ein Wert als YAML-String, mit escapten Anfuehrungszeichen.
+
+    Vorher stand diese Zeile dreimal als Lambda im Modul — und eine der drei
+    Fassungen schrieb `.replace('"', '\\"')` ohne doppelten Backslash, ersetzte
+    also ein Anfuehrungszeichen durch sich selbst. Ein Dateiname mit " haette
+    dort das Front-Matter zerbrochen. Eine Fassung, eine Wahrheit.
+    """
+    return '"' + str(v).replace('"', '\\"') + '"'
+
+
 def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) -> str:
-    esc = lambda v: '"' + str(v).replace('"', '\\"') + '"'
     return "\n".join([z for z in [
         "---",
         "type: normtext",
         f"framework: {framework}",
         f"id: {ident}",
-        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_file: {yaml_wert(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"source_page: {sec.page}",
-        (f"source_locator: {esc(sec.locator)}" if sec.locator else None),
+        (f"source_locator: {yaml_wert(sec.locator)}" if sec.locator else None),
         f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
         f'tags: ["grc/normtext", "grc/framework/{framework}"]',
         "generated-by: document-to-LLM",
@@ -667,7 +677,6 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
     der das hervorgeht. Eine leere Platzhalternotiz stehen zu lassen waere
     schlechter: sie sieht aus wie eine Luecke in der Extraktion.
     """
-    esc = lambda v: '"' + str(v).replace('"', '\\"') + '"'
     src = meta.get("source_file", "der Quelle")
     return "\n".join([
         "---",
@@ -675,7 +684,7 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
         f"framework: {framework}",
         f"id: {ident}",
         "status: entfallen",
-        f"source_file: {esc(src)}",
+        f"source_file: {yaml_wert(src)}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f'tags: ["grc/normtext", "grc/framework/{framework}", "grc/entfallen"]',
         "generated-by: document-to-LLM",
@@ -685,7 +694,7 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
         "",
         "> [!warning] In der aktuellen Fassung nicht enthalten",
         f"> Diese Anforderung kommt in {src} nicht vor. Der Katalog enthaelt den",
-        f"> Kriterienbereich vollstaendig, die ID stammt also aus einer frueheren",
+        "> Kriterienbereich vollstaendig, die ID stammt also aus einer frueheren",
         "> Fassung. Nicht als geltende Anforderung zitieren.",
         "",
         "---",
@@ -733,10 +742,9 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
     # waere hier falsch, weil ablage auch ohne Unterordner gesetzt ist.
     volltext_pfad = f"{full_dir.relative_to(vault)}/"
 
-    esc = lambda v: '"' + str(v).replace('"', '\"') + '"'
     head = "\n".join([
         "---", "type: dokument-volltext", f"slug: {slug}",
-        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_file: {yaml_wert(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
         (f"text_coverage_percent: {deckung}" if deckung
@@ -749,14 +757,14 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
 
     meta_note = "\n".join([
         "---", "type: document", f"slug: {slug}",
-        f"work: {esc(titel)}", f"autor: {esc(autor)}", f"art: {esc(art)}",
+        f"work: {yaml_wert(titel)}", f"autor: {yaml_wert(autor)}", f"art: {yaml_wert(art)}",
         *(["status: historisch", f"superseded_by: {superseded_by}"] if superseded_by else []),
-        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_file: {yaml_wert(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
         (f"text_coverage_percent: {deckung}" if deckung
          else "text_coverage_percent: null\ndeckung_pruefbar: false"),
-        f"converter: {esc(meta.get('converter', ''))}",
+        f"converter: {yaml_wert(meta.get('converter', ''))}",
         "licensed: true",
         ('tags: ["grc/handbuch", "grc/dokument", "grc/historisch"]' if superseded_by
          else 'tags: ["grc/handbuch", "grc/dokument"]'),

@@ -278,7 +278,9 @@ def render(docs: list[Doc], vault: Path | None) -> str:
             slug, neu = a.get("slug", ""), a.get("gilt_stattdessen", "")
             # Ein Verweis auf einen Slug, den es im Bestand nicht gibt, waere ein
             # toter Beleg — das gehoert benannt, nicht stillschweigend gedruckt.
-            mark = lambda s: s if s in bekannt else f"{s} ⚠ nicht im Bestand"
+            def mark(s: str) -> str:
+                return s if s in bekannt else f"{s} ⚠ nicht im Bestand"
+
             out.append(f"| {mark(slug)} | {mark(neu)} | {a.get('grund', '')} |")
         out.append("")
 
@@ -301,8 +303,8 @@ def render(docs: list[Doc], vault: Path | None) -> str:
         out += ["", "## Lizenzgrundlagen", "",
                 "Der Bestand enthaelt Text, der nicht frei verteilbar ist. "
                 "Hier steht, worauf sich der Besitz stuetzt.", ""]
-        for l in lizenzen:
-            out.append(f"- **{l.get('betrifft', '?')}**: {l.get('grundlage', '')}")
+        for eintrag in lizenzen:
+            out.append(f"- **{eintrag.get('betrifft', '?')}**: {eintrag.get('grundlage', '')}")
         out.append("")
 
     fehlend = not_ingested()

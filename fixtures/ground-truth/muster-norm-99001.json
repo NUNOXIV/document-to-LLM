@@ -1,0 +1,97 @@
+{
+  "quelle": "MUSTER-NORM 99001:2026-08 (Entwurf)",
+  "kurzname": "muster-norm-99001",
+  "herkunft": "Frei erfunden, in diesem Repo geschrieben. Kein lizenzierter Normtext — deshalb darf dieser Primaertext als einziger im Repository liegen. ISO-, DIN- und TISAX-Woertlaut bleibt ausserhalb (siehe .gitignore).",
+  "rolle": "Primaertext im Sinne von Phase 0 des Entwicklungsleitfadens. Das Fixture-PDF wird aus dieser Datei erzeugt (tests/make_fixture.py), und der Fundstellen-Resolver (fundstellen.py) prueft den Extrakt gegen dieselbe Datei. Eine Wahrheit, zwei Richtungen: wer den Woertlaut hier aendert, aendert Quelle und Sollwert zugleich — wer ihn in der Pipeline verliert, faellt auf.",
+  "kopfzeile": "MUSTER-NORM 99001:2026-08 (Entwurf)",
+  "kopfzeile_rechts": "Vertraulich - nur zu Testzwecken",
+  "fundstellen": [
+    {
+      "id": "4",
+      "art": "ueberschrift",
+      "ebene": 1,
+      "titel": "Kontext der Organisation"
+    },
+    {
+      "id": "4.1",
+      "art": "abschnitt",
+      "ebene": 2,
+      "titel": "Verstehen der Organisation und ihres Kontextes",
+      "text": "Die Organisation muss externe und interne Themen bestimmen, die für ihren Zweck relevant sind und die ihre Fähigkeit beeinflussen, die beabsichtigten Ergebnisse ihres Informationssicherheitsmanagementsystems zu erreichen."
+    },
+    {
+      "id": "4.1.2",
+      "art": "abschnitt",
+      "ebene": 3,
+      "titel": "Dokumentierte Information",
+      "text": "Die Organisation muss dokumentierte Information über den Anwendungsbereich aufrechterhalten. Der Anwendungsbereich muss die Schnittstellen und Abhängigkeiten zwischen Tätigkeiten der Organisation und Tätigkeiten anderer Organisationen berücksichtigen."
+    },
+    {
+      "id": "4.2",
+      "art": "abschnitt",
+      "ebene": 2,
+      "titel": "Verstehen der Erfordernisse und Erwartungen interessierter Parteien",
+      "text": "Die Organisation muss die interessierten Parteien bestimmen, die für das Informationssicherheitsmanagementsystem relevant sind, sowie deren Anforderungen, einschließlich gesetzlicher und vertraglicher Verpflichtungen."
+    },
+    {
+      "id": "5",
+      "art": "ueberschrift",
+      "ebene": 1,
+      "titel": "Führung"
+    },
+    {
+      "id": "5.1",
+      "art": "abschnitt",
+      "ebene": 2,
+      "titel": "Führung und Verpflichtung",
+      "text": "Die oberste Leitung muss Führung und Verpflichtung in Bezug auf das Informationssicherheitsmanagementsystem nachweisen, indem sie sicherstellt, dass die Informationssicherheitspolitik und die Informationssicherheitsziele festgelegt und mit der strategischen Ausrichtung der Organisation vereinbar sind."
+    },
+    {
+      "id": "Anhang A",
+      "art": "ueberschrift",
+      "ebene": 1,
+      "titel": "(normativ) Referenzmaßnahmen"
+    },
+    {
+      "id": "A.5.1",
+      "art": "control",
+      "titel": "Informationssicherheitsrichtlinien",
+      "attribut": "Präventiv",
+      "text": "Richtlinien für Informationssicherheit müssen definiert, von der Leitung genehmigt, veröffentlicht und den relevanten Beschäftigten kommuniziert werden."
+    },
+    {
+      "id": "A.8.24",
+      "art": "control",
+      "titel": "Verwendung von Kryptographie",
+      "attribut": "Präventiv",
+      "text": "Regeln für den wirksamen Einsatz von Kryptographie, einschließlich der Schlüsselverwaltung, müssen festgelegt und umgesetzt werden."
+    },
+    {
+      "id": "A.8.25",
+      "art": "control",
+      "titel": "Sicherer Entwicklungszyklus",
+      "attribut": "Präventiv",
+      "text": "Regeln für die sichere Entwicklung von Software und Systemen müssen festgelegt und auf Entwicklungen innerhalb der Organisation angewendet werden."
+    },
+    {
+      "id": "A.8.28",
+      "art": "control",
+      "titel": "Sicheres Programmieren",
+      "attribut": "Präventiv",
+      "text": "Grundsätze für sicheres Programmieren müssen auf die Softwareentwicklung angewendet werden."
+    },
+    {
+      "id": "Anhang B",
+      "art": "ueberschrift",
+      "ebene": 1,
+      "titel": "(informativ) Hinweise zur Anwendung"
+    },
+    {
+      "id": "B.1",
+      "art": "abschnitt",
+      "ebene": 2,
+      "titel": "Zweck dieses Dokuments",
+      "text": "Dieses Dokument ist frei erfunden und dient ausschließlich der Regressionsprüfung der Extraktionspipeline. Ende der Beispielnorm."
+    }
+  ]
+}
