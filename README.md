@@ -229,9 +229,10 @@ nicht, ob der *Wortlaut* stimmt, den ein Export unter einer Kennung führt.
 Dafür gibt es drei Wächter, die verschiedene Dinge messen:
 
 ```bash
-python pruefe.py     --export export/ --strict                   # Plausibilität
-python inhalt.py     --export export/ --output output/ --strict  # Wortlaut je Kennung
-python fundstellen.py --bestand output/ --strict                 # gegen den Primärtext
+python pruefe.py      --export export/ --strict                   # Plausibilität
+python inhalt.py      --export export/ --output output/ --strict  # Wortlaut je Kennung
+python fundstellen.py --bestand output/ --strict                  # gegen den Primärtext
+python bindestriche.py                                            # verlorene Bindestriche
 ```
 
 | Wächter | Frage | Blind für |
@@ -244,6 +245,34 @@ Der Befund des Resolvers ist dreiwertig und nie zweiwertig: `verifiziert`,
 `abweichend` (Kennung da, Wortlaut nicht — der gefährliche Fall) und
 `unverifiziert` (nicht geprüft). „Unverifiziert" ist ausdrücklich erlaubt.
 Ein ungeprüftes Ergebnis, das wie ein geprüftes aussieht, nicht.
+
+### Primärtexte importieren
+
+```bash
+python rechtsakte.py import input/ --alle   # amtliches XML -> fixtures/ground-truth/
+python rechtsakte.py liste                  # welche Primärtexte liegen vor, mit Stand
+```
+
+`rechtsakte.py` liest das XML von gesetze-im-internet.de über den XML-Parser der
+Standardbibliothek — keine Ausnahme von der Parser-Regel: die gilt PDFs, wo ein
+Parser aus Koordinaten und Schriftgrößen raten muss. Hier ist jeder Paragraf ein
+Element mit Bezeichnung, Titel und Text, nach veröffentlichter DTD. Amtliche
+Werke sind nach § 5 UrhG gemeinfrei; dieser Primärtext darf deshalb — anders als
+ISO- oder TISAX-Wortlaut — im Repository liegen.
+
+Was der erste Lauf gegen den BSIG-Extrakt fand: **Docling verliert Bindestriche.**
+Beim Zeilenumbruch entfernt es den Trennstrich — richtig bei „Informations-/
+sicherheit", falsch bei „IKT-/Systemen", woraus „IKTSystemen" wird. Die
+Wortdeckung sah das nie, weil sie denselben Strich auch auf der Quellseite
+entfernt: beide Seiten hießen gleich, die Deckung blieb 100,0 %. Betroffen waren
+**187 von 269 PDF-Extrakten mit 1058 Wörtern.**
+
+`bindestriche.py` setzt sie zurück — nur mit doppeltem Beleg: die Form ohne
+Bindestrich kommt in der Quelle nirgends vor, **und** die Form mit Bindestrich
+steht dort zusammenhängend, also ohne Umbruch dazwischen. Der zweite Beleg ist
+der entscheidende: ohne ihn kehrt die Reparatur die echte Silbentrennung um und
+macht aus dem richtigen „Abnahme" wieder „Ab-nahme". Ohne Schalter wird nur
+gezählt und angezeigt; `--reparieren` ändert.
 
 `fixtures/ground-truth/` hält den Primärtext. `tests/make_fixture.py` **erzeugt
 das Test-PDF daraus**, `fundstellen.py` prüft **dagegen** — eine Datei, zwei
@@ -267,7 +296,7 @@ Verifikationsregeln, Codestil) und [`lessons-learned.md`](lessons-learned.md)
 ## Ordner
 
 ```
-fixtures/ground-truth/   Primärtexte als Prüfmaßstab (frei erfunden, deshalb im Repo)
+fixtures/ground-truth/   Primärtexte als Prüfmaßstab (erfunden oder amtlich, deshalb im Repo)
 input/     Quelldokumente
 output/    *.md (verbindliche Textquelle für Agenten)
            *.docling.json / *.passthrough.json (Struktur für verarbeitende Systeme)

@@ -211,6 +211,96 @@ unterschiedlich falsch zu schreiben. Gefunden hat das der Linter, nachdem er
 
 ---
 
+## 14 Verlorene Bindestriche: 1058 Wörter, unsichtbar für jede Prüfung
+
+**Ursache:** Docling löst die Trennung am Zeilenende auf, indem es den
+Trennstrich entfernt — richtig bei „Informations-/sicherheit", falsch bei
+„IKT-/Systemen": daraus wurde „IKTSystemen", ein Wort, das in keiner Quelle
+steht und das keine Suche findet.
+
+**Warum es niemand sah:** `verify.tokenize()` entfernt denselben Trennstrich
+auch auf der Quellseite. Beide Seiten hießen „iktsystemen", die Wortdeckung
+blieb 100,0 %. Die Prüfung war nicht nachlässig — sie war blind an genau der
+Stelle, an der der Fehler entstand.
+
+**Gefunden durch:** den Abgleich gegen das amtliche XML von
+gesetze-im-internet.de. Der erste Lauf des Fundstellen-Resolvers gegen den
+BSIG-Extrakt meldete 55 von 68 Paragrafen als abweichend.
+
+**Ausmaß:** 187 von 269 PDF-Extrakten, 1058 verschiedene Wörter.
+
+**Fix:** `verify.verlorene_bindestriche()` mit doppeltem Beleg, inline in
+`extract.py` und als Bestandslauf `bindestriche.py`.
+
+**Test:** `test_bindestrich_nur_mit_doppeltem_beleg`.
+
+**Lehre:** Zwei Prüfungen, die denselben Vorverarbeitungsschritt teilen, sind
+eine Prüfung. Die Zwei-Quellen-Regel meint auch: zwei *Lesewege*.
+
+---
+
+## 15 Der Fix kehrte die Silbentrennung um
+
+**Ursache:** Die erste Fassung verlangte nur einen Beleg — die Form mit
+Bindestrich muss in der Quelle stehen. Bei zwischenraumfreiem Vergleich steht
+sie das immer, auch bei echter Silbentrennung: aus dem richtigen „Abnahme"
+hätte der Fix wieder „Ab-nahme" gemacht. 93 Fehlalarme in einer Datei, 3831
+statt 1058 Treffer im Bestand.
+
+**Fix:** Zweiter Beleg — die Form mit Bindestrich muss ZUSAMMENHÄNGEND in der
+Quelle stehen, ohne Umbruch dazwischen. Ein Bindestrich, der zum Wort gehört,
+steht irgendwo auch mitten in der Zeile; ein Trennstrich nur am Zeilenende.
+
+**Test:** derselbe, mit „Ab-\nnahme" als Gegenprobe.
+
+**Lehre:** Aufgefallen ist es nur, weil der Probelauf jeden Treffer im
+Klartext ausgab und „Abnahme -> Ab-nahme" dort stand. Ein Werkzeug, das seine
+Änderungen erst zeigt und dann macht, ist kein Komfort, sondern die Prüfung.
+
+---
+
+## 16 Dieselbe Regel, zwei Bedeutungen: U+FFFE
+
+**Ursache:** Im BSIG-Druck bildet die Schrift den geschützten Bindestrich
+U+2011 nicht ab; im Textlayer steht das Nichtzeichen U+FFFE. Ich habe geprüft,
+ob es dort ein Bindestrich ist: 24 von 24 Stellen bestätigt das amtliche XML.
+Daraus wurde eine Regel — und die hielt genau ein Dokument weit. In einer
+anderen Datei desselben Bestandes stehen 1639 solche Zeichen, und dort sind es
+Trennstriche am Zeilenende.
+
+**Fix:** Das Zeichen taugt nicht als Beleg. Es wird gezählt und gemeldet
+(`unlesbar_im_wort`), nicht gedeutet.
+
+**Test:** `test_unlesbares_zeichen_ist_kein_bindestrichbeleg`.
+
+**Lehre:** 24 von 24 in einem Dokument sind keine Grundgesamtheit. Eine Regel
+gilt erst, wenn sie an einem zweiten Fall geprüft wurde, der sie widerlegen
+könnte.
+
+---
+
+## 17 Ein vertauschter Variablenname, 187 zerstörte Extrakte
+
+**Ursache:** In `bindestriche.py` hieß der Markdown-Text `roh`. Beim Umbau
+habe ich `roh = verify.quelltext(quelle)` ergänzt und damit dieselbe Variable
+mit dem PDF-Text überschrieben. Die nächste Zeile schnitt das Front-Matter aus
+dem PDF-Text statt aus dem Markdown: 187 Extrakte bekamen einen Kopf aus
+Seitentext und verloren ihre Provenienz.
+
+**Fix:** Variable umbenannt; zusätzlich schreibt die Funktion nichts mehr,
+wenn das Ergebnis nicht mit `---` beginnt. Die Rümpfe wurden gesichert und die
+187 Dokumente aus der Quelle neu extrahiert — rekonstruiert wurde nichts, weil
+geratene Provenienz schlimmer ist als keine.
+
+**Test:** `test_front_matter_ueberlebt_die_reparatur`.
+
+**Lehre:** Ein Schreibvorgang über einen ganzen Bestand braucht eine Zusage,
+die er vor dem Schreiben prüft. „Das Ergebnis beginnt mit `---`" wäre hier eine
+Zeile gewesen. Und: der Probelauf sah gut aus, weil er nur zählt — die Zeile,
+die den Schaden anrichtet, lief in keinem Test.
+
+---
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -220,5 +310,10 @@ unterschiedlich falsch zu schreiben. Gefunden hat das der Linter, nachdem er
    gesund aus. Verteilungen prüfen, nicht Mittelwerte.
 3. **Befüllt ist gefährlicher als leer.** Nr. 5, 6 und 8 sahen alle vollständig
    aus.
-4. **Ein Fix ist erst fertig, wenn die Gegenprobe steht.** Nr. 2 und 11 zeigen,
-   wie leicht ein Wächter blind wird, ohne dass es jemand merkt.
+4. **Ein Fix ist erst fertig, wenn die Gegenprobe steht.** Nr. 2, 11 und 15
+   zeigen, wie leicht ein Wächter blind wird, ohne dass es jemand merkt.
+5. **Zwei Prüfungen mit derselben Vorverarbeitung sind eine Prüfung.** Nr. 14
+   blieb unsichtbar, weil Extrakt und Quelle denselben Schritt durchliefen.
+   Die Zwei-Quellen-Regel meint auch zwei Lesewege.
+6. **Wer über einen ganzen Bestand schreibt, braucht eine Zusage vorab.**
+   Nr. 17: eine Zeile Prüfung vor dem Schreiben hätte 187 Dateien gerettet.

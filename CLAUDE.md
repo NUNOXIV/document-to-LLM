@@ -27,7 +27,9 @@ ruff check .                          # Linter, Konfiguration in pyproject.toml
 # Prüfebenen einzeln
 python pruefe.py    --export export/ --strict     # Plausibilität (Konsistenz)
 python inhalt.py    --export export/ --output output/ --strict  # Wortlaut je Kennung
-python fundstellen.py --bestand output/ --strict  # gegen den Primärtext
+python fundstellen.py --bestand output/ --strict   # gegen den Primärtext
+python bindestriche.py                            # verlorene Bindestriche (zählt nur)
+python rechtsakte.py import input/ --alle         # amtliches XML als Ground Truth
 ```
 
 `python tests/test_units.py` läuft auch ohne pytest, lässt dann aber die Tests
@@ -49,6 +51,9 @@ Regex über Rohtext. Inhalt kommt aus `output/` oder nirgendwoher. Begründung i
 2. **Zwei Quellen für Zahlen, Fristen und Ausgabestände.** Eine Quelle heißt
    unbestätigt und wird so gekennzeichnet. Die Wortdeckung liest deshalb mit
    einem *zweiten*, unabhängigen Leser gegen (`verify.py`), nie mit demselben.
+   Und zwei Prüfungen, die denselben Vorverarbeitungsschritt teilen, sind eine
+   Prüfung: die verlorenen Bindestriche blieben unsichtbar, weil Extrakt und
+   Quelle beide durch dieselbe Trennstrich-Entfernung liefen.
 3. **Jede Summe wird gerechnet, nie geschrieben.** Anzahlen, Quoten und Mediane
    kommen aus Code (`pruefe.py`, `tracker.py`), nicht aus dem Kopf. Steht eine
    Zahl in einem Bericht, muss der Befehl daneben stehen, der sie erzeugt.
@@ -65,6 +70,7 @@ Drei Wächter, die verschiedene Dinge messen — keiner ersetzt einen anderen:
 | `pruefe.py` | Ist der Bestand in sich plausibel? | Ob der Inhalt stimmt |
 | `inhalt.py` | Steht unter jeder Kennung ihr eigener Wortlaut? | Ob die Quelle richtig gelesen wurde |
 | `fundstellen.py` | Stimmt der Wortlaut mit dem Primärtext überein? | Alles, wofür keine Ground Truth vorliegt |
+| `bindestriche.py` | Fehlt ein Bindestrich, den die Quelle hat? | Alles außer Bindestrichen |
 
 Ein Wächter, der nur auf gesunden Daten läuft, belegt nichts: er könnte kaputt
 sein und schwiege genauso. `tests/pruefungen.sh` führt deshalb für jeden die
@@ -104,3 +110,9 @@ Linter-Regelsatz ist bewusst schmal, damit Rot etwas bedeutet.
 
 Neuer Wächter oder neue Prüfung: erst der Test, der ohne den Fix rot ist, dann
 der Fix. Ein Fix ohne Regressionstest ist unfertig.
+
+Wer über den ganzen Bestand schreibt, prüft **vor** dem Schreiben eine Zusage
+über das Ergebnis (`beginnt mit ---`, `Rumpf unverändert`) und bietet einen
+Probelauf an, der nur zählt. Ein vertauschter Variablenname hat so einmal 187
+Extrakte um ihre Provenienz gebracht — der Probelauf sah gut aus, weil er die
+schreibende Zeile nie ausführt.

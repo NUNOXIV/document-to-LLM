@@ -80,6 +80,7 @@ class Result:
     failed_pages: list[int] = field(default_factory=list)
     text_coverage: float | None = None   # Wortdeckung Quelle -> Extrakt (nur PDF)
     repaired_lines: int = 0              # als Nachtrag ergaenzte Quellzeilen
+    restored_hyphens: int = 0            # belegte Bindestriche zurueckgesetzt
     duration_s: float = 0.0
     status: str = "ok"          # ok | warn | error | skipped
     warnings: list[str] = field(default_factory=list)
@@ -477,6 +478,8 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         lines.append(f"text_coverage_percent: {res.text_coverage}")
     if res.repaired_lines:
         lines.append(f"appended_source_lines: {res.repaired_lines}")
+    if res.restored_hyphens:
+        lines.append(f"restored_hyphens: {res.restored_hyphens}")
     lines += [
         "extraction_status: " + res.status,
     ]
@@ -711,6 +714,43 @@ def convert_file(
             "Tabellenstruktur ist etwas grober; Zellinhalte stammen weiterhin aus dem Textlayer."
         )
     res.status = "warn" if res.warnings else "ok"
+
+    # Verlorene Bindestriche zuruecksetzen, bevor geprueft wird.
+    #
+    # Docling loest die Trennung am Zeilenende auf, indem es den Trennstrich
+    # entfernt — richtig bei "Informations-/sicherheit", falsch bei
+    # "IKT-/Systeme": daraus wird "IKTSysteme", ein Wort, das es nicht gibt.
+    # Die Deckungspruefung sah das nie, weil sie denselben Strich auch auf der
+    # Quellseite entfernt: beide Seiten hiessen gleich, die Deckung blieb
+    # 100 %. Aufgefallen ist es erst beim Abgleich gegen das amtliche
+    # Gesetzes-XML. Angefasst wird nur, was die Quelle belegt.
+    if is_pdf:
+        try:
+            from verify import (quelle_kompakt, quelltext, repariere_bindestriche,
+                                unlesbar_im_wort, zusammenhaengende_quelle)
+
+            roh_quelle = quelltext(src)
+            md_body, ersetzt = repariere_bindestriche(
+                md_body, quelle_kompakt(src, roh_quelle),
+                zusammenhaengende_quelle(src, roh_quelle))
+            res.restored_hyphens = len(ersetzt)
+            if ersetzt:
+                beispiele = ", ".join(f"{a} -> {b}" for a, b in sorted(ersetzt.items())[:5])
+                res.warnings.append(
+                    f"{len(ersetzt)} Wort(e) hatten einen Bindestrich der Quelle verloren und "
+                    f"wurden zurueckgesetzt (belegt durch den Textlayer): {beispiele}"
+                )
+            unlesbar = unlesbar_im_wort(roh_quelle)
+            if unlesbar:
+                res.warnings.append(
+                    f"Der Textlayer der Quelle enthaelt {unlesbar} unlesbare Zeichen innerhalb "
+                    f"von Woertern (die Schrift bildet den Codepunkt nicht ab). Sie wurden als "
+                    f"Bindestrich gelesen; das ist die Form, die das amtliche XML an solchen "
+                    f"Stellen fuehrt. Kein Textverlust dieses Werkzeugs, sondern der Quelle."
+                )
+        except Exception as exc:
+            res.warnings.append(f"Bindestrich-Pruefung nicht durchfuehrbar: {exc}")
+        res.status = "warn" if res.warnings else "ok"
 
     # Abweichungspruefung: enthaelt der Extrakt den Text der Quelle vollstaendig?
     # Fuer PDFs gegen den Textlayer, fuer Office-Formate gegen den Standardleser

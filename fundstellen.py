@@ -34,6 +34,7 @@ Nutzung
 """
 from __future__ import annotations
 
+import difflib
 import json
 import re
 import sys
@@ -52,8 +53,12 @@ GT_STANDARD = Path("fixtures/ground-truth")
 ERSETZUNGEN = {
     "­": "",           # weiches Trennzeichen
     "‐": "-", "‑": "-", "‒": "-", "–": "-", "—": "-",
-    "‘": "'", "’": "'", "‚": "'",
-    "“": '"', "”": '"', "„": '"',
+    # Alle Anfuehrungszeichen auf dieselbe Form. Der Extrakt gibt „Wort" teils
+    # als 'Wort' wieder — Typografie, kein Woertlaut. Wer das als Abweichung
+    # meldet, verschuettet die echten Befunde unter Formalien.
+    "‘": '"', "’": '"', "‚": '"', "'": '"',
+    "“": '"', "”": '"', "„": '"', "»": '"', "«": '"',
+    "‹": '"', "›": '"',
     " ": " ", " ": " ", " ": " ", " ": " ",
     "ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi", "ﬄ": "ffl",
 }
@@ -71,6 +76,78 @@ def normalisiere(text: str) -> str:
     # Trennung am Zeilenende zusammenziehen: "Informations-\nsicherheit".
     t = re.sub(r"-\s*\n\s*", "", t)
     return re.sub(r"\s+", " ", t).strip()
+
+
+
+# Wie viele Woerter den Ankerpunkt bilden. Kurz genug, um in einem knappen
+# Absatz zu stehen, lang genug, um nicht zufaellig mehrfach vorzukommen.
+ANKER = 6
+
+# Wie viele Fundstellen des Ankers geprueft werden, bevor aufgegeben wird.
+# Mehr als eine Handvoll ist Rechenzeit ohne Erkenntnis.
+MAX_ANKER = 8
+
+
+def wortfolge(text: str) -> list[str]:
+    return text.split()
+
+
+def _fehlende_woerter(s_woerter: list[str], fenster: str) -> tuple[int, list[str]]:
+    sm = difflib.SequenceMatcher(None, s_woerter, wortfolge(fenster), autojunk=False)
+    fehlend: list[str] = []
+    einschuebe = 0
+    for tag, a1, a2, _b1, _b2 in sm.get_opcodes():
+        if tag == "insert":
+            einschuebe += 1
+        elif tag in ("delete", "replace"):
+            fehlend += s_woerter[a1:a2]
+    return einschuebe, fehlend
+
+
+def enthalten_mit_einschueben(soll: str, voll: str) -> tuple[bool, int, list[str]]:
+    """Steht der Woertlaut vollstaendig und in Reihenfolge im Bestand?
+
+    Rueckgabe: (vollstaendig, Zahl der Einschuebe, fehlende Woerter).
+
+    Warum nicht schlicht `soll in voll`: der Extrakt eines PDF traegt Material,
+    das im Primaertext nicht vorkommt und mitten im Absatz steht — Seitenkopf,
+    Fusszeile, ein eingeschobener Verweis ("Nichtamtliches Inhaltsverzeichnis").
+    Der Extrakt gibt die Quelle damit korrekt wieder; die Ground Truth kennt
+    diese Zutaten nur nicht.
+
+    Was hier deshalb erlaubt ist: Einschuebe im Bestand. Was nicht erlaubt ist:
+    ein Wort des Primaertexts, das fehlt oder ersetzt wurde. Genau diese
+    Unterscheidung trennt Layoutrauschen von einer anderen Fassung.
+
+    Geprueft werden ALLE Stellen, an denen der Anker vorkommt, und die beste
+    gewinnt. Der erste Treffer ist naemlich regelmaessig der falsche: ein
+    Gesetzesdruck fuehrt vorn ein Inhaltsverzeichnis mit denselben
+    Ueberschriften. Wer dort stehenbleibt, meldet Woerter als fehlend, die
+    zwanzig Seiten weiter unten stehen — so entstanden hier 13 Fehlalarme.
+    """
+    s_woerter = wortfolge(soll)
+    if not s_woerter:
+        return True, 0, []
+
+    spanne = 3 * len(soll) + 2000
+    anker = " ".join(s_woerter[:ANKER])
+    stellen = [m.start() for m in re.finditer(re.escape(anker), voll)][:MAX_ANKER]
+    if not stellen:
+        ende_anker = " ".join(s_woerter[-ANKER:])
+        stellen = [max(0, m.start() - spanne)
+                   for m in re.finditer(re.escape(ende_anker), voll)][:MAX_ANKER]
+    if not stellen:
+        return False, 0, s_woerter[:ANKER]
+
+    bestes: tuple[int, list[str]] | None = None
+    for start in stellen:
+        einschuebe, fehlend = _fehlende_woerter(s_woerter, voll[start:start + spanne])
+        if bestes is None or len(fehlend) < len(bestes[1]):
+            bestes = (einschuebe, fehlend)
+        if not fehlend:
+            break
+    einschuebe, fehlend = bestes or (0, s_woerter)
+    return (not fehlend), einschuebe, fehlend
 
 
 @dataclass
@@ -101,6 +178,10 @@ class Bericht:
 def bestandstext(pfad: Path) -> tuple[str, dict[str, str]]:
     """Liefert (Volltext, Kennung -> Text) fuer Markdown-Extrakt oder Export-JSON."""
     roh = pfad.read_text(encoding="utf-8")
+    # Die <!-- page: N --> Marken und der ACSOS-Hinweis stammen von uns, nicht
+    # aus der Quelle. Sie stehen mitten im Satz und wuerden jeden Absatz, den
+    # sie durchschneiden, als Abweichung erscheinen lassen.
+    roh = re.sub(r"<!--.*?-->", " ", roh, flags=re.S)
     if pfad.suffix.lower() == ".json":
         daten = json.loads(roh)
         if isinstance(daten, dict) and "requirements" in daten:
@@ -140,6 +221,36 @@ def pruefe_fundstelle(f: dict, voll: str, je_kennung: dict[str, str], quelle: st
         return Befund(kennung, art, "unverifiziert", "Kennung im Extrakt nicht gefunden", quelle)
     if soll_titel and soll_titel not in voll:
         return Befund(kennung, art, "abweichend", "Titel nicht woertlich im Extrakt", quelle)
+
+    # Fuehrt die Ground Truth Absaetze, wird je Absatz geprueft. Ein ganzer
+    # Paragraf steht im Extrakt fast nie zusammenhaengend: Seitenmarken, Kopf-
+    # und Fusszeilen liegen dazwischen. Wer trotzdem am Stueck vergleicht,
+    # meldet jeden laengeren Paragrafen als Abweichung -- und nach dem dritten
+    # Fehlalarm liest niemand mehr hin.
+    absaetze = [normalisiere(a) for a in f.get("absaetze", []) if normalisiere(a)]
+    if absaetze:
+        offen: list[tuple[str, list[str]]] = []
+        einschuebe = 0
+        for a in absaetze:
+            if a in voll:
+                continue
+            ok, n, fehlt = enthalten_mit_einschueben(a, voll)
+            einschuebe += n
+            if not ok:
+                offen.append((a, fehlt))
+        ort = f"{kennung} ({len(absaetze)} Absaetze)"
+        if offen:
+            a, fehlt = offen[0]
+            return Befund(kennung, art, "abweichend",
+                          f"{len(offen)} von {len(absaetze)} Absaetzen weichen ab; "
+                          f"im ersten fehlen {len(fehlt)} Woerter: "
+                          f"\u201e{' '.join(fehlt)[:110]}\u201c "
+                          f"(Absatzanfang: \u201e{a[:60]}...\u201c)",
+                          quelle, ort)
+        grund = (f"vollstaendig, im Extrakt durch {einschuebe} Einschub/Einschuebe getrennt"
+                 if einschuebe else "")
+        return Befund(kennung, art, "verifiziert", grund, quelle, ort)
+
     if soll_text and soll_text not in voll:
         return Befund(kennung, art, "abweichend", "Woertlaut nicht vollstaendig im Extrakt", quelle)
     if not soll_text and not soll_titel:

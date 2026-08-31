@@ -110,6 +110,127 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     return content, boiler
 
 
+# --------------------------------------------------------------------------
+# Verlorene Bindestriche
+# --------------------------------------------------------------------------
+# Docling loest die Silbentrennung am Zeilenende auf, indem es den Trennstrich
+# entfernt. Das ist richtig fuer ein Wort, das nur der Umbruch getrennt hat
+# ("Informations-\nsicherheit"), und falsch fuer ein Wort, das den Bindestrich
+# selbst traegt ("IKT-\nSysteme"). Aus "IKT-Systemen" wird dann "IKTSystemen".
+#
+# Die Deckungspruefung sah das nicht: tokenize() entfernt denselben Trennstrich
+# auf der Quellseite, beide Seiten hiessen "iktsystemen", die Deckung blieb
+# 100 %. Gefunden hat es erst der Abgleich gegen den amtlichen Gesetzestext.
+#
+# Repariert wird nur mit Beleg. Ein Wort wird angefasst, wenn seine Form ohne
+# Bindestrich in der Quelle NICHT vorkommt und die Form mit Bindestrich dort
+# vorkommt. Damit bleibt echtes Binnenmajuskel ("OpenLDAP", "PowerShell")
+# unangetastet: es steht so in der Quelle.
+_WORT = re.compile(r"[A-Za-zÄÖÜäöüß0-9]+")
+
+# Kuerzere Woerter bleiben unangetastet: bei drei, vier Zeichen ist die Gefahr
+# eines zufaelligen Belegtreffers zu gross.
+MIN_WORTLAENGE = 6
+
+
+# Zeichen, die im Textlayer stehen, aber keinen Text bedeuten: Nichtzeichen und
+# das Ersatzzeichen. Sie entstehen, wenn die Schrift des PDF einen Codepunkt
+# nicht abbildet — im BSIG-Druck trifft es den geschuetzten Bindestrich U+2011,
+# der als U+FFFE ankommt. Docling wirft das Zeichen weg, und aus "IKT-Systemen"
+# wird "IKTSystemen": ein Wort, das es nirgends gibt.
+UNLESBAR = "\ufffe\uffff\ufffd"
+_UNLESBAR_IM_WORT = re.compile(rf"(?<=\w)[{UNLESBAR}](?=\w)")
+
+
+def quelltext(pdf_path: Path) -> str:
+    """Roher Textlayer der Quelle (Docling-unabhaengig, ohne ML-Modelle)."""
+    import pypdfium2
+
+    doc = pypdfium2.PdfDocument(pdf_path)
+    try:
+        return "".join(doc[i].get_textpage().get_text_range() for i in range(len(doc)))
+    finally:
+        doc.close()
+
+
+def unlesbar_im_wort(text: str) -> int:
+    """Zahl der unlesbaren Zeichen, die zwischen zwei Wortzeichen stehen."""
+    return len(_UNLESBAR_IM_WORT.findall(text))
+
+
+def quelle_kompakt(pdf_path: Path | str, text: str | None = None) -> str:
+    """Textlayer der Quelle ohne jeden Zwischenraum.
+
+    Dient dem ersten Beleg: kommt ein Wort hier vor, ist es richtig, egal wie
+    es aussieht.
+
+    Unlesbare Zeichen werden NICHT zu Bindestrichen gemacht. Der erste Anlauf
+    tat das — mit dem Argument, im BSIG-Druck seien alle 24 solchen Stellen
+    laut amtlichem XML Bindestriche. Das stimmte fuer das BSIG und nur dafuer:
+    in einer anderen Datei desselben Bestandes stehen 1639 solche Zeichen, und
+    dort sind es Trennstriche am Zeilenende ("Ab-nahme"). Dasselbe Zeichen,
+    zwei Bedeutungen, kein Merkmal, das sie unterscheidet. Also wird geraten
+    nicht — sondern gemeldet (siehe unlesbar_im_wort).
+    """
+    roh = text if text is not None else quelltext(Path(pdf_path))
+    return re.sub(r"\s+", "", roh)
+
+
+def verlorene_bindestriche(body: str, kompakt: str, zusammenhaengend: str = "") -> dict[str, str]:
+    """Woerter im Extrakt, denen ein Bindestrich der Quelle fehlt.
+
+    Rueckgabe: {"IKTSystemen": "IKT-Systemen", ...} — jeder Eintrag doppelt
+    belegt.
+
+    Zwei Belege, und der zweite ist der entscheidende:
+
+    1. Die Form OHNE Bindestrich kommt in der Quelle nirgends vor. Sonst waere
+       sie richtig — auch Binnenmajuskel wie "OpenLDAP" faellt darunter.
+    2. Die Form MIT Bindestrich steht in der Quelle ZUSAMMENHAENGEND, also
+       ohne Zeilenumbruch dazwischen.
+
+    Ohne Beleg 2 kehrt die Reparatur die Silbentrennung um: in einem Dokument
+    stand "Ab-\nnahme", der Extrakt hatte richtig "Abnahme" daraus gemacht, und
+    die erste Fassung dieser Funktion haette daraus wieder "Ab-nahme" gemacht —
+    93 solcher Fehlalarme in einer einzigen Datei. Der Unterschied ist genau
+    die Zusammenhaengendheit: ein Bindestrich, der zum Wort gehoert, steht
+    irgendwo auch mitten in der Zeile; ein Trennstrich steht nur am Zeilenende.
+    """
+    zusammenhaengend = zusammenhaengend or kompakt
+    treffer: dict[str, str] = {}
+    for wort in set(_WORT.findall(body)):
+        if len(wort) < MIN_WORTLAENGE or wort in kompakt:
+            continue
+        # Jede Trennstelle wird geprueft, nicht nur der Wechsel von klein zu
+        # gross: "IKTSystemen" und "Beratungsoder" haben keinen solchen
+        # Wechsel und waeren sonst unsichtbar.
+        for i in range(1, len(wort)):
+            mit = wort[:i] + "-" + wort[i:]
+            if mit in zusammenhaengend:
+                treffer[wort] = mit
+                break
+    return treffer
+
+
+def zusammenhaengende_quelle(pdf_path: Path | str, text: str | None = None) -> str:
+    """Quelltext unveraendert, mit erhaltenen Umbruechen.
+
+    Der zweite Beleg beruht genau darauf: ein am Zeilenende getrenntes Wort ist
+    hier NICHT zusammenhaengend zu finden, ein Wort mit eigenem Bindestrich
+    schon. Deshalb wird hier nichts ersetzt — auch kein unlesbares Zeichen.
+    """
+    return text if text is not None else quelltext(Path(pdf_path))
+
+
+def repariere_bindestriche(body: str, kompakt: str,
+                           zusammenhaengend: str = "") -> tuple[str, dict[str, str]]:
+    """Setzt belegte Bindestriche zurueck. Ohne Beleg bleibt alles, wie es ist."""
+    treffer = verlorene_bindestriche(body, kompakt, zusammenhaengend)
+    for falsch, richtig in treffer.items():
+        body = re.sub(rf"\b{re.escape(falsch)}\b", richtig, body)
+    return body, treffer
+
+
 def normalize_ooxml_styles(src: Path, workdir: Path) -> Path | None:
     """Repariert leere <fill/>-Elemente in der styles.xml einer Office-Datei.
 

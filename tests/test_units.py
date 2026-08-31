@@ -958,6 +958,136 @@ def test_ground_truth_deckt_das_fixture() -> None:
             assert len(laengstes) <= 40, laengstes
 
 
+def test_bindestrich_nur_mit_doppeltem_beleg() -> None:
+    """Ein verlorener Bindestrich wird nur mit zwei Belegen zurueckgesetzt.
+
+    Beleg 1: die Form ohne Bindestrich kommt in der Quelle nicht vor.
+    Beleg 2: die Form mit Bindestrich steht dort ZUSAMMENHAENGEND.
+
+    Ohne Beleg 2 kehrt die Reparatur die Silbentrennung um. Genau das ist
+    passiert: in einem Dokument stand "Ab-\nnahme", der Extrakt hatte richtig
+    "Abnahme" daraus gemacht, und die erste Fassung haette wieder "Ab-nahme"
+    geschrieben — 93 Fehlalarme in einer Datei.
+    """
+    import re
+
+    import verify
+
+    quelle_roh = ("Die Verwaltung von IKT-Systemen ist geregelt.\n"
+                  "Die Ab-\nnahme erfolgt spaeter. OpenLDAP bleibt OpenLDAP.")
+    kompakt = re.sub(r"\s+", "", quelle_roh)
+
+    treffer = verify.verlorene_bindestriche(
+        "IKTSystemen und Abnahme und OpenLDAP", kompakt, quelle_roh)
+
+    assert treffer == {"IKTSystemen": "IKT-Systemen"}, treffer
+    assert "Abnahme" not in treffer, "Silbentrennung wurde umgekehrt"
+    assert "OpenLDAP" not in treffer, "Binnenmajuskel der Quelle angetastet"
+
+
+def test_unlesbares_zeichen_ist_kein_bindestrichbeleg() -> None:
+    """Ein unlesbares Zeichen taugt nicht als Beleg fuer einen Bindestrich.
+
+    Im BSIG-Druck standen 24 solche Zeichen, alle 24 waren laut amtlichem XML
+    Bindestriche — und daraus wurde kurzzeitig eine Regel. Sie hielt genau ein
+    Dokument weit: in einer anderen Datei desselben Bestandes stehen 1639
+    davon, und dort sind es Trennstriche am Zeilenende. Dasselbe Zeichen, zwei
+    Bedeutungen. Gemeldet statt geraten.
+    """
+    import verify
+
+    roh = "Die Ab\ufffenahme des IKT\ufffeSystems."
+    assert verify.unlesbar_im_wort(roh) == 2
+    # Die Belegquellen lassen das Zeichen stehen, machen also keinen
+    # Bindestrich daraus.
+    assert "-" not in verify.zusammenhaengende_quelle("", roh)
+    assert "-" not in verify.quelle_kompakt("", roh)
+
+
+def test_front_matter_ueberlebt_die_reparatur() -> None:
+    """Der Kopf muss nach dem Vermerk noch an erster Stelle stehen.
+
+    Diese Zeile hat gefehlt, und ein einziger vertauschter Variablenname
+    ("roh" hielt ploetzlich den PDF-Text statt des Markdowns) hat den Kopf von
+    187 Extrakten aus dem falschen Text geschnitten. Der Schaden faellt beim
+    Schreiben nicht auf — nur beim naechsten Lesen.
+    """
+    import bindestriche
+    import publish
+
+    roh = ('---\nsource_file: "X.pdf"\npages: 3\nextraction_status: ok\n---\n'
+           "\n<!-- ACSOS -->\n\nText mit IKT-Systemen.\n")
+    meta, koerper = publish.split_front_matter(roh)
+    kopf = roh[:len(roh) - len(koerper)]
+    ergebnis = bindestriche.vermerke(kopf, 2, "a -> b") + koerper
+
+    assert ergebnis.startswith("---\n"), ergebnis[:60]
+    neu_meta, neu_koerper = publish.split_front_matter(ergebnis)
+    assert neu_meta["source_file"] == "X.pdf"
+    assert neu_meta["pages"] == "3"
+    assert neu_meta["restored_hyphens"] == "2"
+    assert neu_koerper == koerper, "Rumpf veraendert"
+
+
+def test_resolver_erlaubt_einschuebe_aber_keine_luecke() -> None:
+    """Eingeschobenes Fremdmaterial ist erlaubt, fehlender Woertlaut nicht.
+
+    Ein Gesetzesdruck schiebt mitten in den Absatz Seitenkopf, Fusszeile und
+    Verweise ein. Wer am Stueck vergleicht, meldet jeden laengeren Paragrafen
+    als Abweichung — und nach dem dritten Fehlalarm liest niemand mehr hin.
+    """
+    import fundstellen as F
+
+    soll = "Die Institution MUSS die Anlage schuetzen und den Vorfall melden."
+    mit_einschub = ("Die Institution MUSS die Anlage schuetzen "
+                    "Seite 4 von 12 Nichtamtliches Inhaltsverzeichnis "
+                    "und den Vorfall melden.")
+    ok, einschuebe, fehlt = F.enthalten_mit_einschueben(soll, mit_einschub)
+    assert ok and einschuebe >= 1 and not fehlt
+
+    ohne_wort = "Die Institution MUSS die Anlage schuetzen und den melden."
+    ok2, _, fehlt2 = F.enthalten_mit_einschueben(soll, ohne_wort)
+    assert not ok2 and "Vorfall" in fehlt2
+
+
+def test_resolver_nimmt_nicht_das_inhaltsverzeichnis() -> None:
+    """Der erste Ankertreffer ist im Gesetzesdruck regelmaessig der falsche.
+
+    Vorn steht ein Inhaltsverzeichnis mit denselben Ueberschriften. Wer dort
+    stehenbleibt, meldet Woerter als fehlend, die zwanzig Seiten weiter unten
+    stehen — so entstanden 13 Fehlalarme.
+    """
+    import fundstellen as F
+
+    soll = "Die Institution MUSS die kritische Anlage besonders schuetzen."
+    bestand = ("Inhaltsuebersicht Die Institution MUSS die kritische Anlage ... 12 "
+               + "Fuelltext " * 60
+               + "Die Institution MUSS die kritische Anlage besonders schuetzen.")
+    ok, _, fehlt = F.enthalten_mit_einschueben(soll, bestand)
+    assert ok, fehlt
+
+
+def test_rechtsakt_klebt_die_aufzaehlungsmarke_nicht_an() -> None:
+    """Aus <DT>1.</DT><DD>Konzepte</DD> muss "1. Konzepte" werden.
+
+    Ohne Leerzeichen an der Elementgrenze entstand "1.Konzepte" — und der
+    Resolver meldete jeden Absatz mit Aufzaehlung als Abweichung, obwohl der
+    Extrakt richtig war. Ein Pruefmassstab, der selbst falsch zusammensetzt,
+    erzeugt genau die Fehlalarme, die ihn unbrauchbar machen.
+    """
+    import xml.etree.ElementTree as ET
+
+    import rechtsakte
+
+    el = ET.fromstring("<Content><P>Folgendes umfassen: <DL><DT>1.</DT>"
+                       "<DD>Konzepte zur Risikoanalyse,</DD><DT>2.</DT>"
+                       "<DD>Bewaeltigung von Vorfaellen.</DD></DL></P></Content>")
+    text = rechtsakte.blocktext(el)
+    assert "1. Konzepte" in text, text
+    assert "2. Bewaeltigung" in text, text
+    assert "1.Konzepte" not in text
+
+
 # Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
 # Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
 # definierte existierte noch nicht und lief im Skriptpfad nie mit.
