@@ -1169,6 +1169,37 @@ def test_vollstaendigkeit_findet_die_nie_eingelesene_quelle(tmp_path: Path) -> N
     assert "Checkliste_APP.1.1.xlsx" in aus
 
 
+def test_seitenmarken_muessen_lueckenlos_sein(tmp_path: Path) -> None:
+    """Jede Seite eines PDF-Extrakts braucht ihre Marke.
+
+    Laenge und Deckung sehen eine fehlende Seitenmarke nicht: die Woerter sind
+    da, nur nicht dort, wo ein Zitat mit Seitenzahl sie sucht. Beide
+    Richtungen: lueckenlos schweigt, eine Luecke schlaegt an.
+    """
+    import json
+
+    import pruefe
+
+    md = tmp_path / "doc.md"
+    md.write_text("---\npages: 3\n---\n<!-- page: 1 -->\nA\n<!-- page: 2 -->\nB\n"
+                  "<!-- page: 3 -->\nC\n", encoding="utf-8")
+    reg = tmp_path / "_KORPUS.json"
+    eintrag = {"slug": "doc", "source_file": "doc.pdf", "markdown": str(md),
+               "pages": 3, "words": 300, "text_coverage_percent": 100.0, "woertlich": True}
+    reg.write_text(json.dumps({"documents": [eintrag]}), encoding="utf-8")
+
+    b = pruefe.Bericht()
+    pruefe.pruefe_korpus(reg, b)
+    assert not [f for f in b.befunde if "Marke" in f.aussage], b.befunde
+
+    md.write_text("---\npages: 3\n---\n<!-- page: 1 -->\nA\n<!-- page: 3 -->\nC\n",
+                  encoding="utf-8")
+    b = pruefe.Bericht()
+    pruefe.pruefe_korpus(reg, b)
+    treffer = [f for f in b.befunde if "Marke" in f.aussage]
+    assert treffer and "[2]" in treffer[0].zahl, b.befunde
+
+
 # Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
 # Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
 # definierte existierte noch nicht und lief im Skriptpfad nie mit.

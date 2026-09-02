@@ -1,0 +1,1161 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Videokonferenzdienste",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 7188207177955282854,
+    "filename": "BSI---Videokonferenzdienste.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/pictures/7"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/22"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 371.6754921385205,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            43
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund Videokonferenzdienste",
+      "text": "Mindeststandards Bund Videokonferenzdienste"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 516.8341887652414,
+            "b": 371.41107103311015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            103
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Videokonferenzdienste",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Videokonferenzdienste",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 259.20000428000003,
+            "r": 548.3396542025135,
+            "b": 109.15429624619048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            837
+          ]
+        }
+      ],
+      "orig": "Videokonferenzdienste sind inzwischen zum zentralen Kommunikationsmittel für Zusammenarbeit über Distanzen hinweg geworden und in vielen Bereichen nicht mehr aus dem Arbeitsalltag wegzudenken. Ihre Funktionsvielfalt geht dabei meist weit über die reine Ton- und Bildübertragung hinaus. Wie bei jeder Datenübertragung gehen mit dem Einsatz von Videkonferenzdiensten jedoch auch Risiken für die Informationssicherheit einher, die durch die Komplexität der Systeme noch verschärft werden. Dieser Mindeststandard beschreibt daher Sicherheitsanforderungen, die Anwendende in der Bundesverwaltung beim sicheren Einsatz von Videokonferenzdiensten unterstützen. Er regelt nicht nur funktionale Anforderungen an den Dienst selbst, sondern thematisiert auch die Konzeption, Planung, Beschaffung, den Betrieb sowie Anforderungen an die Benutzenden.",
+      "text": "Videokonferenzdienste sind inzwischen zum zentralen Kommunikationsmittel für Zusammenarbeit über Distanzen hinweg geworden und in vielen Bereichen nicht mehr aus dem Arbeitsalltag wegzudenken. Ihre Funktionsvielfalt geht dabei meist weit über die reine Ton- und Bildübertragung hinaus. Wie bei jeder Datenübertragung gehen mit dem Einsatz von Videkonferenzdiensten jedoch auch Risiken für die Informationssicherheit einher, die durch die Komplexität der Systeme noch verschärft werden. Dieser Mindeststandard beschreibt daher Sicherheitsanforderungen, die Anwendende in der Bundesverwaltung beim sicheren Einsatz von Videokonferenzdiensten unterstützen. Er regelt nicht nur funktionale Anforderungen an den Dienst selbst, sondern thematisiert auch die Konzeption, Planung, Beschaffung, den Betrieb sowie Anforderungen an die Benutzenden."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 85.95001149874997,
+            "r": 549.1368441692974,
+            "b": 25.90429971494052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            357
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG)"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 823.19998078,
+            "r": 519.7194408200224,
+            "b": 781.1542682461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            181
+          ]
+        }
+      ],
+      "orig": "neue Rechtsgrundlage in ersetzt. § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "neue Rechtsgrundlage in ersetzt. § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 733.3574845234375,
+            "r": 256.4132112411157,
+            "b": 723.9110563456102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard",
+      "text": "Download Mindeststandard",
+      "hyperlink": "https://www.gesetze-im-internet.de/bsig_2025/__44.html",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 697.94998599875,
+            "r": 456.2035473415182,
+            "b": 691.9042719649404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Videokonferenzdienste",
+      "text": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Videokonferenzdienste",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_Videokonferenzdienste_Version_1_0.pdf?__blob=publicationFile&v=2"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 644.1074882421875,
+            "r": 543.5131959036161,
+            "b": 634.6610600643602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Download Referenztabelle IT (Informationstechnik)-Grundschutz",
+      "text": "Download Referenztabelle IT (Informationstechnik)-Grundschutz",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 608.6999897175001,
+            "r": 533.4714691220214,
+            "b": 566.6542771836905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            192
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Referenztabelle zum Mindeststandards des BSI nach § 8 Abs. 1 Satz 1 BSIG für Videokonferenzdienste Version 1.0 in der Bundesverwaltung (IT-Grundschutz-Kompendium - Edition 2021)",
+      "text": "IT-Grundschutz-Referenztabelle zum Mindeststandards des BSI nach § 8 Abs. 1 Satz 1 BSIG für Videokonferenzdienste Version 1.0 in der Bundesverwaltung (IT-Grundschutz-Kompendium - Edition 2021)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Referenztabelle_Mindeststandard_Videokonferenzdienste_V1_0-Grundschutz2021.xlsx?__blob=publicationFile&v=4"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 230.60155289160156,
+            "t": 518.8574934609376,
+            "r": 364.8889830212916,
+            "b": 509.41106528311025,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Ähnliche Themen",
+      "text": "Ähnliche Themen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 361.6171724326172,
+            "t": 414.4499978112501,
+            "r": 498.3810736591212,
+            "b": 408.40428377744047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Mobile Device Management",
+      "text": "Mobile Device Management",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Mobile_Device_Management/Mobile_Device_Management_node.html"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 357.1874851171875,
+            "t": 286.9500031237501,
+            "r": 502.80735027469274,
+            "b": 280.90428908994045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Transport Layer Security (TLS)",
+      "text": "Transport Layer Security (TLS)",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 398.9648308764647,
+            "t": 159.45000843625007,
+            "r": 461.02879446546626,
+            "b": 153.40429440244043,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Webbrowser",
+      "text": "Webbrowser",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Webbrowser/Webbrowser_node.html"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 109.80468292480468,
+            "t": 414.4499978112501,
+            "r": 221.1765933843082,
+            "b": 408.40428377744047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Externe Cloud-Dienste",
+      "text": "Externe Cloud-Dienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Externe_Cloud-Dienste/Externe_Cloud-Dienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 104.77733938427734,
+            "t": 286.9500031237501,
+            "r": 226.2052427497811,
+            "b": 280.90428908994045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "HV-Benchmark kompakt",
+      "text": "HV-Benchmark kompakt",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/HV-Benchmark-kompakt/HV-Benchmark-kompakt_node.html"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/pictures/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 90.84374621484375,
+            "t": 159.45000843625007,
+            "r": 240.1476085188492,
+            "b": 153.40429440244043,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Protokollierung und Detektion",
+      "text": "Protokollierung und Detektion",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/PDCA/PDCA_node.html"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 106.51171431201172,
+            "t": 754.1999836549999,
+            "r": 224.47162982201505,
+            "b": 748.1542696211907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Schnittstellenkontrollen",
+      "text": "Schnittstellenkontrollen"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 346.39452056689436,
+            "t": 754.1999836549999,
+            "r": 513.6023773999001,
+            "b": 748.1542696211907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Nutzerpflichten Netze des Bundes",
+      "text": "Nutzerpflichten Netze des Bundes"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 138.5039004790039,
+            "t": 626.6999889674998,
+            "r": 192.4798744550049,
+            "b": 620.6542749336907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "ISMS ITKB",
+      "text": "ISMS ITKB"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 373.93358191943344,
+            "t": 626.6999889674998,
+            "r": 486.06147404743774,
+            "b": 620.6542749336907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 555.44999193625,
+            "r": 387.1355325693521,
+            "b": 549.4042779024405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund",
+      "text": "Zurück zu Mindeststandards Bund"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 453.44999618625,
+            "r": 377.18730715886153,
+            "b": 447.4042821524406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Videokonferenz",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Videokonferenz",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST-Videokonferenz",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 337.20000102999984,
+            "r": 158.39995432500166,
+            "b": 277.15428924619073,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 246.45000481124998,
+            "r": 313.9438494440058,
+            "b": 240.40429077744056,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 186.39750731343747,
+            "r": 509.74872171046906,
+            "b": 181.4853646609672,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.26318265412993,
+            "t": 553.1601631163282,
+            "r": 170.55653019922593,
+            "b": 491.12168698373466,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 404.0484001305865,
+            "t": 476.90975039892925,
+            "r": 454.1802191981129,
+            "b": 420.44166768173835,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 404.7843430342659,
+            "t": 350.1464689823323,
+            "r": 454.549121373449,
+            "b": 293.3914872638287,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 404.9106773055779,
+            "t": 222.31212237257716,
+            "r": 456.63473540897866,
+            "b": 166.41765456994426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 139.61319333239027,
+            "t": 477.93443328172845,
+            "r": 190.15903177818387,
+            "b": 422.01033572688596,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 139.7857738810389,
+            "t": 350.38704670264167,
+            "r": 190.02880677750173,
+            "b": 293.8499397841139,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 140.56375191967774,
+            "t": 221.89285069867424,
+            "r": 189.7349880501278,
+            "b": 166.17048567921552,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 42.73723614654182,
+            "t": 829.7465717022314,
+            "r": 552.2345028459042,
+            "b": 526.6456238555807,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    }
+  }
+}

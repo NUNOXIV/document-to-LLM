@@ -1,0 +1,6755 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "NACE-Produktgruppen-in-EU-NIS2-OpenKRITIS",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10372109283838416353,
+    "filename": "NACE-Produktgruppen-in-EU-NIS2-OpenKRITIS.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/texts/80"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/103"
+      },
+      {
+        "$ref": "#/texts/104"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/106"
+      },
+      {
+        "$ref": "#/texts/107"
+      },
+      {
+        "$ref": "#/texts/108"
+      },
+      {
+        "$ref": "#/texts/109"
+      },
+      {
+        "$ref": "#/texts/110"
+      },
+      {
+        "$ref": "#/texts/111"
+      },
+      {
+        "$ref": "#/texts/112"
+      },
+      {
+        "$ref": "#/texts/113"
+      },
+      {
+        "$ref": "#/texts/114"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/123"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/126"
+      },
+      {
+        "$ref": "#/texts/127"
+      },
+      {
+        "$ref": "#/groups/10"
+      },
+      {
+        "$ref": "#/texts/129"
+      },
+      {
+        "$ref": "#/groups/11"
+      },
+      {
+        "$ref": "#/texts/132"
+      },
+      {
+        "$ref": "#/texts/133"
+      },
+      {
+        "$ref": "#/texts/134"
+      },
+      {
+        "$ref": "#/texts/135"
+      },
+      {
+        "$ref": "#/texts/136"
+      },
+      {
+        "$ref": "#/texts/137"
+      },
+      {
+        "$ref": "#/texts/138"
+      },
+      {
+        "$ref": "#/texts/139"
+      },
+      {
+        "$ref": "#/groups/12"
+      },
+      {
+        "$ref": "#/texts/141"
+      },
+      {
+        "$ref": "#/texts/142"
+      },
+      {
+        "$ref": "#/groups/13"
+      },
+      {
+        "$ref": "#/texts/154"
+      },
+      {
+        "$ref": "#/texts/155"
+      },
+      {
+        "$ref": "#/texts/156"
+      },
+      {
+        "$ref": "#/groups/14"
+      },
+      {
+        "$ref": "#/texts/163"
+      },
+      {
+        "$ref": "#/texts/164"
+      },
+      {
+        "$ref": "#/texts/165"
+      },
+      {
+        "$ref": "#/texts/166"
+      },
+      {
+        "$ref": "#/texts/167"
+      },
+      {
+        "$ref": "#/texts/168"
+      },
+      {
+        "$ref": "#/texts/169"
+      },
+      {
+        "$ref": "#/texts/170"
+      },
+      {
+        "$ref": "#/texts/171"
+      },
+      {
+        "$ref": "#/texts/172"
+      },
+      {
+        "$ref": "#/texts/173"
+      },
+      {
+        "$ref": "#/texts/174"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        },
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/87"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/92"
+        },
+        {
+          "$ref": "#/texts/93"
+        },
+        {
+          "$ref": "#/texts/94"
+        },
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        },
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/105"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/115"
+        },
+        {
+          "$ref": "#/texts/116"
+        },
+        {
+          "$ref": "#/texts/117"
+        },
+        {
+          "$ref": "#/texts/118"
+        },
+        {
+          "$ref": "#/texts/119"
+        },
+        {
+          "$ref": "#/texts/120"
+        },
+        {
+          "$ref": "#/texts/121"
+        },
+        {
+          "$ref": "#/texts/122"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/124"
+        },
+        {
+          "$ref": "#/texts/125"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/128"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/130"
+        },
+        {
+          "$ref": "#/texts/131"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/140"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/143"
+        },
+        {
+          "$ref": "#/texts/144"
+        },
+        {
+          "$ref": "#/texts/145"
+        },
+        {
+          "$ref": "#/texts/146"
+        },
+        {
+          "$ref": "#/texts/147"
+        },
+        {
+          "$ref": "#/texts/148"
+        },
+        {
+          "$ref": "#/texts/149"
+        },
+        {
+          "$ref": "#/texts/150"
+        },
+        {
+          "$ref": "#/texts/151"
+        },
+        {
+          "$ref": "#/texts/152"
+        },
+        {
+          "$ref": "#/texts/153"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/texts/158"
+        },
+        {
+          "$ref": "#/texts/159"
+        },
+        {
+          "$ref": "#/texts/160"
+        },
+        {
+          "$ref": "#/texts/161"
+        },
+        {
+          "$ref": "#/texts/162"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 138.3960246421712,
+            "r": 115.15931112836819,
+            "b": 133.79973003723484,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 126.67292925863353,
+            "r": 81.01274292136625,
+            "b": 122.07663465369717,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NIS2",
+      "text": "NIS2",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 114.9498338750958,
+            "r": 89.1028999178277,
+            "b": 110.3535392701595,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Europa",
+      "text": "Europa",
+      "hyperlink": "https://www.openkritis.de/eu/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 103.22673849155814,
+            "r": 97.77819411878673,
+            "b": 98.63044388662183,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Betreiber",
+      "text": "Betreiber",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 91.50364310802047,
+            "r": 93.73820370446569,
+            "b": 86.90734850308417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Security",
+      "text": "Security",
+      "hyperlink": "https://www.openkritis.de/massnahmen/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 79.78054772448274,
+            "r": 87.95806639730475,
+            "b": 75.1842531195465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "School",
+      "text": "School",
+      "hyperlink": "https://www.openkritis.de/school/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 51.80081620363205,
+            "r": 289.08750952477595,
+            "b": 42.41148517885415,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "NACE-Produkte in EU NIS2",
+      "text": "NACE-Produkte in EU NIS2",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "1/9",
+      "text": "1/9"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 564.9864618755688,
+            "r": 164.63138439411534,
+            "b": 560.3901672706324,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Europäische Regulierung",
+      "text": "Europäische Regulierung",
+      "hyperlink": "https://www.openkritis.de/eu/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 553.2633664920312,
+            "r": 97.50852207649075,
+            "b": 548.6670718870948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "EU NIS2",
+      "text": "EU NIS2",
+      "hyperlink": "https://www.openkritis.de/eu/eu-nis-2-direktive-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 541.5402711084935,
+            "r": 138.605502338316,
+            "b": 536.9439765035571,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Implementing Acts",
+      "text": "Implementing Acts",
+      "hyperlink": "https://www.openkritis.de/eu/eu-nis-2-implementing-acts.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 529.8171757249559,
+            "r": 95.7734633196632,
+            "b": 525.2208811200195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "EU CER",
+      "text": "EU CER",
+      "hyperlink": "https://www.openkritis.de/eu/eu-rce-direktive-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 518.0940803414181,
+            "r": 105.03389462091454,
+            "b": 513.4977857364818,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "EU DORA",
+      "text": "EU DORA",
+      "hyperlink": "https://www.openkritis.de/eu/dora-digital-operational-resilience-act_nis-2.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 506.3709849578804,
+            "r": 96.93356135242843,
+            "b": 501.77469035294416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "EU CRA",
+      "text": "EU CRA",
+      "hyperlink": "https://www.openkritis.de/eu/eu-cra-cyber-resilience-act.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 494.6478895743428,
+            "r": 115.16948750459812,
+            "b": 490.0193700385248,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "EU NCCS en",
+      "text": "EU NCCS en",
+      "hyperlink": "https://www.openkritis.de/eu/nccs_network-code-cybersecurity.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 482.9247941908051,
+            "r": 107.64920322644332,
+            "b": 478.2962746549871,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "EU CSA en",
+      "text": "EU CSA en",
+      "hyperlink": "https://www.openkritis.de/eu/eu-csa-cyber-security-act.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 471.20169880726746,
+            "r": 128.46990908991387,
+            "b": 466.5731792714495,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "EU Countries en",
+      "text": "EU Countries en",
+      "hyperlink": "https://www.openkritis.de/eu/eu-nis-2-member-states.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 459.47860342372974,
+            "r": 113.41407599531064,
+            "b": 454.8823088187934,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "EU-Sektoren",
+      "text": "EU-Sektoren",
+      "hyperlink": "https://www.openkritis.de/eu/eu-nis-2-sektoren-rce-cer.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 447.7555080401921,
+            "r": 128.47499714777223,
+            "b": 443.15921343525577,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "NACE-Produkte",
+      "text": "NACE-Produkte",
+      "hyperlink": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "2/9",
+      "text": "2/9"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "3/9",
+      "text": "3/9"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.9863616515731,
+            "r": 786.4896975979896,
+            "b": 548.6347467322171,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            316
+          ]
+        }
+      ],
+      "orig": "EU NIS2 referenziert in einigen Sektoren Dienst­ leistungen und Produkt­ kategorien von NACE. Die Statistische Systematik der Wirtschaftszweige in der Europäischen Gemeinschaft (NACE) ist der Standard für produktive Wirtschafts­ tätigkeiten in der EU. Seit 2007 wird die überarbeitete Fassung NACE Rev. 2 angewendet.",
+      "text": "EU NIS2 referenziert in einigen Sektoren Dienst­ leistungen und Produkt­ kategorien von NACE. Die Statistische Systematik der Wirtschaftszweige in der Europäischen Gemeinschaft (NACE) ist der Standard für produktive Wirtschafts­ tätigkeiten in der EU. Seit 2007 wird die überarbeitete Fassung NACE Rev. 2 angewendet."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 531.1196416546866,
+            "r": 167.24160473337517,
+            "b": 526.5233470497499,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "1. Pharmazeutik (NACE 21)",
+      "text": "Pharmazeutik (NACE 21)",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 519.3965462711487,
+            "r": 187.48734982068075,
+            "b": 514.8002516662123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "2. Datenverarbeitung (NACE 26)",
+      "text": "Datenverarbeitung (NACE 26)",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 507.6734508876111,
+            "r": 143.51556565197922,
+            "b": 503.07715628267465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "3. Elektrik (NACE 27)",
+      "text": "Elektrik (NACE 27)",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 495.9503555040735,
+            "r": 170.71681069565852,
+            "b": 491.3540608991368,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "4. Maschinenbau (NACE 28)",
+      "text": "Maschinenbau (NACE 28)",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 484.2272601205359,
+            "r": 159.1310951928644,
+            "b": 479.6309655155992,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "5. Kraftwagen (NACE 29)",
+      "text": "Kraftwagen (NACE 29)",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 472.50416473699806,
+            "r": 181.72247692155676,
+            "b": 467.9078701320616,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "6. Sonst. Fahrzeuge (NACE 30)",
+      "text": "Sonst. Fahrzeuge (NACE 30)",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 450.3605401236491,
+            "r": 781.9612428440179,
+            "b": 422.3180547516372,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            421
+          ]
+        }
+      ],
+      "orig": "NACE wird im Essential Sektor Gesundheit und im Important Sektor Herstellung referenziert. Dort werden konkret Produkt­ kategorien aus dem Abschnitt NACE C Verarbeitendes Gewerbe bzw. Herstellung von Waren als im Scope von NIS2 benannt. Die deutsche NIS2-Umsetzung nutzt die NACE-Definitionen im Sektor Gesundheit und im verarbeitenden Gewerbe zur Identifikation betroffener Unternehmen über von ihnen hergestellte Güter.",
+      "text": "NACE wird im Essential Sektor Gesundheit und im Important Sektor Herstellung referenziert. Dort werden konkret Produkt­ kategorien aus dem Abschnitt NACE C Verarbeitendes Gewerbe bzw. Herstellung von Waren als im Scope von NIS2 benannt. Die deutsche NIS2-Umsetzung nutzt die NACE-Definitionen im Sektor Gesundheit und im verarbeitenden Gewerbe zur Identifikation betroffener Unternehmen über von ihnen hergestellte Güter."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 400.6238833163368,
+            "r": 145.0242018873342,
+            "b": 393.58188504775353,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "NACE und NIS2",
+      "text": "NACE und NIS2",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 370.29044989354384,
+            "r": 167.56005161620268,
+            "b": 364.80062570341056,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Betroffene NIS2-Sektoren",
+      "text": "Betroffene NIS2-Sektoren",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 344.201398594947,
+            "r": 790.8858564390182,
+            "b": 327.8820086064727,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            209
+          ]
+        }
+      ],
+      "orig": "Es geht in NIS2 um die Herstellung dieser Güter - im Sektor Gesundheit die Herstellung von Pharmazeutik, im Sektor Herstellung die Produktion vieler verschiedener Güter von der Elektrotechnik bis Maschinenbau.",
+      "text": "Es geht in NIS2 um die Herstellung dieser Güter - im Sektor Gesundheit die Herstellung von Pharmazeutik, im Sektor Herstellung die Produktion vieler verschiedener Güter von der Elektrotechnik bis Maschinenbau."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 152.35877204063308,
+            "t": 310.33467859806024,
+            "r": 320.79176976257213,
+            "b": 305.73838399312376,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Eigene Zusammenstellung aus EU NIS2",
+      "text": "Eigene Zusammenstellung aus EU NIS2"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 172.262666303061,
+            "r": 43.3807926884669,
+            "b": 167.66637169812452,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 148.20292068319145,
+            "r": 227.4820099409622,
+            "b": 142.71309649305817,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Produktkategorien für Pharmazeutik",
+      "text": "Produktkategorien für Pharmazeutik",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 122.11386938459418,
+            "r": 801.74905443975,
+            "b": 105.7944793961201,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            271
+          ]
+        }
+      ],
+      "orig": "Die Produktkategorien aus dem NACE Abschnitt C Verarbeitendes Gewerbe/Herstellung von Waren werden im NIS2 Essential Sektor Gesundheit genutzt, hier die Kategorie NACE 21 (Herstellung von pharmazeutischen Erzeugnissen), deren Hersteller zu EU NIS2 in Deutschland gehören.",
+      "text": "Die Produktkategorien aus dem NACE Abschnitt C Verarbeitendes Gewerbe/Herstellung von Waren werden im NIS2 Essential Sektor Gesundheit genutzt, hier die Kategorie NACE 21 (Herstellung von pharmazeutischen Erzeugnissen), deren Hersteller zu EU NIS2 in Deutschland gehören."
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 85.13829036457037,
+            "r": 213.84905012980875,
+            "b": 80.44362485218153,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "NACE 21: Pharmazeutische Erzeugnisse",
+      "text": "NACE 21: Pharmazeutische Erzeugnisse",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 45.410022675915116,
+            "r": 64.44064162185147,
+            "b": 40.71535716352582,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NACE",
+      "text": "NACE"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 265.2444433411477,
+            "t": 58.93941092886371,
+            "r": 576.3542314548088,
+            "b": 40.71535716352582,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 21 Produkte und Beispiele",
+      "text": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 21 Produkte und Beispiele"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "4/9",
+      "text": "4/9"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 564.335196462705,
+            "r": 269.89501195264387,
+            "b": 545.4106741667779,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "21 Herstellung von pharmazeutischen Erzeugnissen Pharmazeutische Grundstoffe",
+      "text": "21 Herstellung von pharmazeutischen Erzeugnissen Pharmazeutische Grundstoffe",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 538.2838733881767,
+            "r": 797.4292165968533,
+            "b": 521.9322584688211,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            201
+          ]
+        }
+      ],
+      "orig": "21.1 Beispiele: Aktive Substanzen für die Herstellung pharmazeutischer Präparate: Antibiotika, Vitamine, Salicyl- und o-Acetylsalicylsäure, Verarbeitung von Blut, Herstellung von chemisch reinem Zucker",
+      "text": "Beispiele: Aktive Substanzen für die Herstellung pharmazeutischer Präparate: Antibiotika, Vitamine, Salicyl- und o-Acetylsalicylsäure, Verarbeitung von Blut, Herstellung von chemisch reinem Zucker",
+      "enumerated": true,
+      "marker": "21.1"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 512.2325503136485,
+            "r": 374.63964833534845,
+            "b": 507.63625570871227,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Pharmazeutische Spezialitäten und sonstige pharmazeutische Erzeugnisse",
+      "text": "Pharmazeutische Spezialitäten und sonstige pharmazeutische Erzeugnisse",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 500.41278013746614,
+            "r": 719.3363018271555,
+            "b": 495.8809353942929,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            151
+          ]
+        }
+      ],
+      "orig": "Beispiele: Antisera und sonstige Blutbestandteile, Impfstoffe, Arzneiwaren einschl. homöopathischer Zubereitungen, medizinische Watte/Gaze/Verbandszeug",
+      "text": "Beispiele: Antisera und sonstige Blutbestandteile, Impfstoffe, Arzneiwaren einschl. homöopathischer Zubereitungen, medizinische Watte/Gaze/Verbandszeug",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 506.37100262188005,
+            "r": 53.150038841414954,
+            "b": 501.77470801694335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "21.2",
+      "text": "21.2",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 476.41198108617255,
+            "r": 43.3807926884669,
+            "b": 471.81568648123584,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 451.7009523894394,
+            "r": 214.6241501043142,
+            "b": 446.21112819930613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Produktkategorien für Herstellung",
+      "text": "Produktkategorien für Herstellung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 426.26318416770573,
+            "r": 798.5587882102664,
+            "b": 398.2206987956938,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            343
+          ]
+        }
+      ],
+      "orig": "Die Produktkategorien aus dem NACE Abschnitt C Verarbeitendes Gewerbe/Herstellung von Waren werden im NIS2 Important Sektor Herstellung genutzt, hier die Kategorien NACE 26 (DV, Elektronik), NACE 27 (Elektrik), NACE 28 (Maschinenbau), NACE 29 (Kfz) und NACE 30 (Fahrzeuge), deren Hersteller zu EU NIS2 und der deutschen NIS2-Umsetzung gehören.",
+      "text": "Die Produktkategorien aus dem NACE Abschnitt C Verarbeitendes Gewerbe/Herstellung von Waren werden im NIS2 Important Sektor Herstellung genutzt, hier die Kategorien NACE 26 (DV, Elektronik), NACE 27 (Elektrik), NACE 28 (Maschinenbau), NACE 29 (Kfz) und NACE 30 (Fahrzeuge), deren Hersteller zu EU NIS2 und der deutschen NIS2-Umsetzung gehören."
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 380.67336878728156,
+            "r": 773.3317434823516,
+            "b": 364.3539787988075,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            281
+          ]
+        }
+      ],
+      "orig": "NACE ist in Abschnitte ( C ), Abteilungen ( 28 ), Gruppen ( 28.2 ) und Klassen ( 28.29 ) gegliedert. Nachfolgend werden die durch NIS2 betroffenen NACE-Gruppen aufgeführt. Alle darunter liegenden Klassen sind ebenfalls betroffen, werden aber zur Übersichtlichkeit nicht aufgezählt.",
+      "text": "NACE ist in Abschnitte ( C ), Abteilungen ( 28 ), Gruppen ( 28.2 ) und Klassen ( 28.29 ) gegliedert. Nachfolgend werden die durch NIS2 betroffenen NACE-Gruppen aufgeführt. Alle darunter liegenden Klassen sind ebenfalls betroffen, werden aber zur Übersichtlichkeit nicht aufgezählt."
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 343.0465066903944,
+            "r": 267.8393990118574,
+            "b": 338.35184117800554,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "NACE 26: Daten­ verarbeitung, Elektronik und Optik",
+      "text": "NACE 26: Daten­ verarbeitung, Elektronik und Optik",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 265.2444433411477,
+            "t": 317.49891033155063,
+            "r": 576.3542314548088,
+            "b": 312.9026157266144,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 26",
+      "text": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 26"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 207.51430761248565,
+            "t": 304.6253049116244,
+            "r": 634.0682451626218,
+            "b": 300.76916960227436,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "Hinweis: Abgebildet sind nur Abteilungen ( 26 ) und Gruppen ( 26.1 ), die detaillierten Klassen ( 26.12 ) sind nicht aufgeführt.",
+      "text": "Hinweis: Abgebildet sind nur Abteilungen ( 26 ) und Gruppen ( 26.1 ), die detaillierten Klassen ( 26.12 ) sind nicht aufgeführt."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 385.1314142307726,
+            "t": 292.24642669506466,
+            "r": 488.5887485030691,
+            "b": 287.55176118267536,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Produkte und Beispiele",
+      "text": "Produkte und Beispiele",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 292.24642669506466,
+            "r": 64.44064162185147,
+            "b": 287.55176118267536,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NACE",
+      "text": "NACE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 277.7706426428954,
+            "r": 433.67744299088474,
+            "b": 258.8461203469683,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            134
+          ]
+        }
+      ],
+      "orig": "26 Herstellung von Datenverarbeitungs­ geräten, elektronischen und optischen Erzeugnissen Elektronische Bauelemente und Leiterplatten:",
+      "text": "26 Herstellung von Datenverarbeitungs­ geräten, elektronischen und optischen Erzeugnissen Elektronische Bauelemente und Leiterplatten:",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 251.71931956836715,
+            "r": 434.83753951267306,
+            "b": 247.12302496343045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "Herstellung von elektronischen Bauelementen; Herstellung von bestückten Leiterplatten",
+      "text": "Herstellung von elektronischen Bauelementen; Herstellung von bestückten Leiterplatten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 245.85777187659824,
+            "r": 777.351376871796,
+            "b": 209.34860650536484,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            339
+          ]
+        }
+      ],
+      "orig": "26.1 Beispiele: Elektronische Widerstände und Kondensatoren, elektronische Anschlüsse, integrierte elektronische Schaltungen, Anzeigebauelemente (Plasma, LCD, Polymer), Leuchtdioden (LED), Drucker-, Monitor-, USB-Kabel und -Anschlüsse, Sound-, Grafik-, Kontroller-, Netzwerk- und Modemkarten Datenverarbeitungs­ geräte und periphere Geräte",
+      "text": "Beispiele: Elektronische Widerstände und Kondensatoren, elektronische Anschlüsse, integrierte elektronische Schaltungen, Anzeigebauelemente (Plasma, LCD, Polymer), Leuchtdioden (LED), Drucker-, Monitor-, USB-Kabel und -Anschlüsse, Sound-, Grafik-, Kontroller-, Netzwerk- und Modemkarten Datenverarbeitungs­ geräte und periphere Geräte",
+      "enumerated": true,
+      "marker": "26.1"
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 202.2218057267637,
+            "r": 744.1206782009702,
+            "b": 171.57418804729878,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            276
+          ]
+        }
+      ],
+      "orig": "26.2 Beispiele: Desktop-PCs, Laptops, Mainframes, PDAs, Flash-Speicher, CD- und DV-Laufwerke, Drucker, Bildschirme, Tastaturen, Mäuse, Server, Chipkartenleser, Computerterminals wie Geldautomaten, Multifunktionsbürogeräte Geräte und Einrichtungen der Telekommunikationstechnik",
+      "text": "Beispiele: Desktop-PCs, Laptops, Mainframes, PDAs, Flash-Speicher, CD- und DV-Laufwerke, Drucker, Bildschirme, Tastaturen, Mäuse, Server, Chipkartenleser, Computerterminals wie Geldautomaten, Multifunktionsbürogeräte Geräte und Einrichtungen der Telekommunikationstechnik",
+      "enumerated": true,
+      "marker": "26.2"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 164.35071247605265,
+            "r": 737.6841689514973,
+            "b": 136.3726769658042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            358
+          ]
+        }
+      ],
+      "orig": "26.3 Beispiele: Telefonvermittlungseinrichtungen, PBX-Anlagen, Telefon- und Faxgeräte (auch schnurlose und Mobiltelefone), Router/Bridges/Gateways, Sende- und Empfangsantennen, Fernsehkameras, Einbruchs- und Diebstahlalarmgeräte und Feuermelder, die ein Signal an die Kontrollstation übertragen, Rundfunk- und Fernsehsendegeräte, Fernbedienungen via Infrarot",
+      "text": "Beispiele: Telefonvermittlungseinrichtungen, PBX-Anlagen, Telefon- und Faxgeräte (auch schnurlose und Mobiltelefone), Router/Bridges/Gateways, Sende- und Empfangsantennen, Fernsehkameras, Einbruchs- und Diebstahlalarmgeräte und Feuermelder, die ein Signal an die Kontrollstation übertragen, Rundfunk- und Fernsehsendegeräte, Fernbedienungen via Infrarot",
+      "enumerated": true,
+      "marker": "26.3"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 126.67296881063203,
+            "r": 214.61736059546885,
+            "b": 122.07667420569533,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Geräte der Unterhaltungselektronik",
+      "text": "Geräte der Unterhaltungselektronik",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 114.94987342709419,
+            "r": 756.3169711193998,
+            "b": 98.59825850773859,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            200
+          ]
+        }
+      ],
+      "orig": "26.4 Beispiele: Videorecorder, Fernsehempfangsgeräte, Stereoanlagen, Lautsprechersysteme, Amateur-Videokameras, Musikboxen, Verstärker, Mikrofone, CD- und DVDAbspielgeräte, Kopfhörer, Videospielgeräte",
+      "text": "Beispiele: Videorecorder, Fernsehempfangsgeräte, Stereoanlagen, Lautsprechersysteme, Amateur-Videokameras, Musikboxen, Verstärker, Mikrofone, CD- und DVDAbspielgeräte, Kopfhörer, Videospielgeräte",
+      "enumerated": true,
+      "marker": "26.4"
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 88.89855035256596,
+            "r": 379.80921035005673,
+            "b": 84.30225574762972,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "Mess-, Kontroll-, Navigations- u. ä. Instrumente und Vorrichtungen; Uhren",
+      "text": "Mess-, Kontroll-, Navigations- u. ä. Instrumente und Vorrichtungen; Uhren",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 77.07878017638359,
+            "r": 740.7828527967653,
+            "b": 72.54693543321036,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            157
+          ]
+        }
+      ],
+      "orig": "Beispiele: Instrumente für Flugzeugtriebwerke, meteorologische Instrumente, Lügendetektoren, Strahlungsdetektoren, geodätische Instrumente, Flüssigkeits- und",
+      "text": "Beispiele: Instrumente für Flugzeugtriebwerke, meteorologische Instrumente, Lügendetektoren, Strahlungsdetektoren, geodätische Instrumente, Flüssigkeits- und",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 65.45235958549074,
+            "r": 771.8714538394362,
+            "b": 37.37764928259776,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            370
+          ]
+        }
+      ],
+      "orig": "26.5 Bimetallthermometer, Flammen- und Brennerregler, pneumatische Messgeräte, Verbrauchsmessgeräte (z. B. für Strom/Wasser/Gas), Minensuchgeräte, Metalldetektoren, Radargeräte, GPS-Geräte, Laborwaagen, Klein- und Großuhren inkl. Gehäusen, Parkuhren, Stechuhren, Zeitschaltuhren, Zeitschlösser, Uhrwerke, Federn/Steine/Zifferblätter/Zeiger/Brücken als Bauteile für Uhren",
+      "text": "Bimetallthermometer, Flammen- und Brennerregler, pneumatische Messgeräte, Verbrauchsmessgeräte (z. B. für Strom/Wasser/Gas), Minensuchgeräte, Metalldetektoren, Radargeräte, GPS-Geräte, Laborwaagen, Klein- und Großuhren inkl. Gehäusen, Parkuhren, Stechuhren, Zeitschaltuhren, Zeitschlösser, Uhrwerke, Federn/Steine/Zifferblätter/Zeiger/Brücken als Bauteile für Uhren",
+      "enumerated": true,
+      "marker": "26.5"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "5/9",
+      "text": "5/9"
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 564.3349783507138,
+            "r": 370.57421703255505,
+            "b": 553.877136054009,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "26.6 Bestrahlungs- und Elektrotherapiegeräte und elektromedizinische Geräte",
+      "text": "Bestrahlungs- und Elektrotherapiegeräte und elektromedizinische Geräte",
+      "enumerated": true,
+      "marker": "26.6"
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 552.5152081745314,
+            "r": 753.5693766046361,
+            "b": 533.6873606712497,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            206
+          ]
+        }
+      ],
+      "orig": "Beispiele: Bestrahlungsgeräte und -röhren, Computertomografen, MRT-Geräte, medizinische Ultraschallgeräte, Elektrokardiografen, Herzschrittmacher, Hörgeräte Optische und fotografische Instrumente und Geräte",
+      "text": "Beispiele: Bestrahlungsgeräte und -röhren, Computertomografen, MRT-Geräte, medizinische Ultraschallgeräte, Elektrokardiografen, Herzschrittmacher, Hörgeräte Optische und fotografische Instrumente und Geräte",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 532.4221075844171,
+            "r": 53.150038841414954,
+            "b": 527.8258129794808,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "26.7",
+      "text": "26.7",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 506.37078450988884,
+            "r": 53.150038841414954,
+            "b": 501.7744899049526,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "26.8",
+      "text": "26.8",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 526.4638851000036,
+            "r": 788.209491673241,
+            "b": 507.6360375967215,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            207
+          ]
+        }
+      ],
+      "orig": "Beispiele: optische Spiegel, militärische Sichtgeräte, optische Vergrößerungsgeräte, analoge und digitale Kameras, Tageslichtprojektoren, Linsen, Ferngläser, Laseranlagen Magnetische und optische Datenträger",
+      "text": "Beispiele: optische Spiegel, militärische Sichtgeräte, optische Vergrößerungsgeräte, analoge und digitale Kameras, Tageslichtprojektoren, Linsen, Ferngläser, Laseranlagen Magnetische und optische Datenträger",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 500.4125620254754,
+            "r": 439.7984849679995,
+            "b": 495.88071728230216,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Beispiele: Magnetische Ton- und Videobänder und -bandkassetten, Disketten, Festplatten",
+      "text": "Beispiele: Magnetische Ton- und Videobänder und -bandkassetten, Disketten, Festplatten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 473.3029039510443,
+            "r": 186.1033731520898,
+            "b": 468.60823843865546,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "NACE 27: Elektrische Ausrüstung",
+      "text": "NACE 27: Elektrische Ausrüstung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 265.2444433411477,
+            "t": 447.1040245153372,
+            "r": 576.3542314548088,
+            "b": 442.50772991040094,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 27",
+      "text": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 27"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 207.51430761248565,
+            "t": 434.23041909541143,
+            "r": 634.0682451626218,
+            "b": 430.37428378606137,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "Hinweis: Abgebildet sind nur Abteilungen ( 27 ) und Gruppen ( 27.1 ), die detaillierten Klassen ( 27.12 ) sind nicht aufgeführt.",
+      "text": "Hinweis: Abgebildet sind nur Abteilungen ( 27 ) und Gruppen ( 27.1 ), die detaillierten Klassen ( 27.12 ) sind nicht aufgeführt."
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 421.8515408788512,
+            "r": 64.44064162185147,
+            "b": 417.1568753664624,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NACE",
+      "text": "NACE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 407.37575682668194,
+            "r": 246.77446079620225,
+            "b": 402.7794622217457,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "27 Herstellung von elektrischen Ausrüstungen",
+      "text": "27 Herstellung von elektrischen Ausrüstungen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 393.0475291356911,
+            "r": 471.6045024552645,
+            "b": 388.45123453075485,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Elektromotoren, Generatoren, Transformatoren, Elektrizitätsverteilungs- und schalteinrichtungen",
+      "text": "Elektromotoren, Generatoren, Transformatoren, Elektrizitätsverteilungs- und schalteinrichtungen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 381.3244337521537,
+            "r": 740.7167097900449,
+            "b": 364.9728188327981,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            278
+          ]
+        }
+      ],
+      "orig": "27.1 Beispiele: Elektromotoren, Transformatoren, Umspanntransformatoren für Stromverteilnetze, Übertragungs- und Verteilungsspannungsregler, Stromgeneratoren, Leistungsschalter, elektrische Relais, elektrische Sicherungen, Stromschaltergeräte, Kraftmaschinen-Generator-Aggregate",
+      "text": "Beispiele: Elektromotoren, Transformatoren, Umspanntransformatoren für Stromverteilnetze, Übertragungs- und Verteilungsspannungsregler, Stromgeneratoren, Leistungsschalter, elektrische Relais, elektrische Sicherungen, Stromschaltergeräte, Kraftmaschinen-Generator-Aggregate",
+      "enumerated": true,
+      "marker": "27.1"
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 355.2731106776255,
+            "r": 190.9167622201859,
+            "b": 344.8152683809203,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "27.2 Batterien und Akkumulatoren",
+      "text": "Batterien und Akkumulatoren",
+      "enumerated": true,
+      "marker": "27.2"
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 343.4533405014431,
+            "r": 758.5303166412875,
+            "b": 324.625492998161,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            207
+          ]
+        }
+      ],
+      "orig": "Beispiele: Primärelemente und -batterien, elektrische Akkumulatoren, Bleibatterien, Nickel-Cadmium-Batterien, Lithium-Batterien, Trocken- und Nasszellenbatterien Kabel und elektrisches Installationsmaterial:",
+      "text": "Beispiele: Primärelemente und -batterien, elektrische Akkumulatoren, Bleibatterien, Nickel-Cadmium-Batterien, Lithium-Batterien, Trocken- und Nasszellenbatterien Kabel und elektrisches Installationsmaterial:",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 317.49869221955987,
+            "r": 787.0188584809049,
+            "b": 275.12797915655756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            505
+          ]
+        }
+      ],
+      "orig": "27.3 Herstellung von Glasfaserkabeln; Herstellung von sonstigen elektronischen und elektrischen Drähten und Kabeln; Herstellung von elektrischem Installationsmaterial Beispiele: Glasfaserkabel, isolierte Elektrokabel, -leitungen und -dräte aus Stahl, Kupfer oder Aluminium, Stromschienen, FI-Schutzschalter, Lampenfassungen, Steckdosen, Isolierrohre und Rohrverbindungsstücke, Bauelemente aus Metall für Strommasten und -leitungen, nichtstromführendes Installationsmaterial Elektrische Lampen und Leuchten",
+      "text": "Herstellung von Glasfaserkabeln; Herstellung von sonstigen elektronischen und elektrischen Drähten und Kabeln; Herstellung von elektrischem Installationsmaterial Beispiele: Glasfaserkabel, isolierte Elektrokabel, -leitungen und -dräte aus Stahl, Kupfer oder Aluminium, Stromschienen, FI-Schutzschalter, Lampenfassungen, Steckdosen, Isolierrohre und Rohrverbindungsstücke, Bauelemente aus Metall für Strommasten und -leitungen, nichtstromführendes Installationsmaterial Elektrische Lampen und Leuchten",
+      "enumerated": true,
+      "marker": "27.3"
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 268.00117837795597,
+            "r": 752.180307332231,
+            "b": 237.35356069849195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            277
+          ]
+        }
+      ],
+      "orig": "27.4 Beispiele: Glühlampen, Leuchtstofflampen, Infrarotlampen, Decken- und Wandleuchten, Kronleuchter, Tischlampen, Weihnachtsbaum-Lichterketten, Elektrokamine, Blitzlichtgeräte, elektrische Insektenlampen, Scheinwerfer, Straßenbeleuchtung, Fahrzeugbeleuchtung Haushaltsgeräte:",
+      "text": "Beispiele: Glühlampen, Leuchtstofflampen, Infrarotlampen, Decken- und Wandleuchten, Kronleuchter, Tischlampen, Weihnachtsbaum-Lichterketten, Elektrokamine, Blitzlichtgeräte, elektrische Insektenlampen, Scheinwerfer, Straßenbeleuchtung, Fahrzeugbeleuchtung Haushaltsgeräte:",
+      "enumerated": true,
+      "marker": "27.4"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 230.22675991989036,
+            "r": 481.7146568471976,
+            "b": 225.6304653149541,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "Herstellung von elektrischen Haushaltsgeräten; Herstellung von nichtelektrischen Haushaltsgeräten",
+      "text": "Herstellung von elektrischen Haushaltsgeräten; Herstellung von nichtelektrischen Haushaltsgeräten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 218.50366453635252,
+            "r": 792.7583036474741,
+            "b": 190.42895423345954,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            385
+          ]
+        }
+      ],
+      "orig": "27.5 Beispiele: Kühlschränke, Gefrierschränke, Geschirrspülmaschinen, Staubsauger, Waschmaschinen, Abfallzerkleinerer, Saftpressen, Dosenöffner, Messerschleifmaschinen, Abluft- und Dunstabzugshauben, Warmwasserbereiter, Heizdecken, Bügeleisen, Haartrockner, Raumheizkörper und Ventilatoren (tragbar), Herde, Mikrowellenherde, Toaster, Kaffeemaschinen, elektrische Röst- und Grillgeräte",
+      "text": "Beispiele: Kühlschränke, Gefrierschränke, Geschirrspülmaschinen, Staubsauger, Waschmaschinen, Abfallzerkleinerer, Saftpressen, Dosenöffner, Messerschleifmaschinen, Abluft- und Dunstabzugshauben, Warmwasserbereiter, Heizdecken, Bügeleisen, Haartrockner, Raumheizkörper und Ventilatoren (tragbar), Herde, Mikrowellenherde, Toaster, Kaffeemaschinen, elektrische Röst- und Grillgeräte",
+      "enumerated": true,
+      "marker": "27.5"
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 180.7292460782869,
+            "r": 370.0399615789506,
+            "b": 176.13295147335066,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Sonstige elektrische Ausrüstungen und Geräte anderweitig nicht genannt",
+      "text": "Sonstige elektrische Ausrüstungen und Geräte anderweitig nicht genannt",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 168.90947590210453,
+            "r": 791.2522081846334,
+            "b": 140.93144039185609,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            481
+          ]
+        }
+      ],
+      "orig": "27.9 Beispiele: Akku-Ladegeräte, elektrische Klingeln, Verlängerungs­ kabel aus zugekauftem isoliertem Draht, Ultraschall-Reinigungsgeräte, unterbrechungsfreie Stromversorgungen, Überspannungs­ ableiter, Teilchenbeschleuniger, Elektromagnete, Sirenen, elektronische Anzeigetafeln, elektrische Zeichen und Schilder, Verkahrsampeln, elektrische Löt- und Schweißgeräte, Halbleiter-Wechselrichter, -Gleichrichter, Brennstoffzellen, geregelte und ungeregelte Stromversorgungs­ einheiten",
+      "text": "Beispiele: Akku-Ladegeräte, elektrische Klingeln, Verlängerungs­ kabel aus zugekauftem isoliertem Draht, Ultraschall-Reinigungsgeräte, unterbrechungsfreie Stromversorgungen, Überspannungs­ ableiter, Teilchenbeschleuniger, Elektromagnete, Sirenen, elektronische Anzeigetafeln, elektrische Zeichen und Schilder, Verkahrsampeln, elektrische Löt- und Schweißgeräte, Halbleiter-Wechselrichter, -Gleichrichter, Brennstoffzellen, geregelte und ungeregelte Stromversorgungs­ einheiten",
+      "enumerated": true,
+      "marker": "27.9"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 118.35362706059823,
+            "r": 147.0213004303366,
+            "b": 113.65896154820939,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "NACE 28: Maschinenbau",
+      "text": "NACE 28: Maschinenbau",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 67.5535470652685,
+            "r": 64.44064162185147,
+            "b": 62.858881552879666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NACE",
+      "text": "NACE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 53.077763013098775,
+            "r": 127.81862619540993,
+            "b": 48.48146840816253,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "28 Maschinenbau",
+      "text": "28 Maschinenbau",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 385.1314142307726,
+            "t": 421.8515408788512,
+            "r": 488.5887485030691,
+            "b": 417.1568753664624,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Produkte und Beispiele",
+      "text": "Produkte und Beispiele",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 265.2444433411477,
+            "t": 92.80603070175448,
+            "r": 576.3542314548088,
+            "b": 88.20973609681823,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 28",
+      "text": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 28"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 207.51430761248565,
+            "t": 79.93242528182827,
+            "r": 634.0682451626218,
+            "b": 76.07628997247866,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "Hinweis: Abgebildet sind nur Abteilungen ( 28 ) und Gruppen ( 28.1 ), die detaillierten Klassen ( 28.12 ) sind nicht aufgeführt.",
+      "text": "Hinweis: Abgebildet sind nur Abteilungen ( 28 ) und Gruppen ( 28.1 ), die detaillierten Klassen ( 28.12 ) sind nicht aufgeführt."
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 385.1314142307726,
+            "t": 67.5535470652685,
+            "r": 488.5887485030691,
+            "b": 62.858881552879666,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Produkte und Beispiele",
+      "text": "Produkte und Beispiele",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "6/9",
+      "text": "6/9"
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 564.3350002387133,
+            "r": 260.3547326496877,
+            "b": 559.738705633777,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Nicht wirtschaftszweigspezifische Maschinen:",
+      "text": "Nicht wirtschaftszweigspezifische Maschinen:"
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 552.6119048551759,
+            "r": 784.8665770258424,
+            "b": 536.2925148667018,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            307
+          ]
+        }
+      ],
+      "orig": "Herstellung von Verbrennungs­ motoren und Turbinen (ohne Motoren für Luft- und Straßenfahrzeuge); Herstellung von hydraulischen und pneumatischen Komponenten und Systemen; Herstellung von Pumpen und Kompressoren; Herstellung von Armaturen; Herstellung von Lagern, Getrieben, Zahnrädern und Antriebselementen",
+      "text": "Herstellung von Verbrennungs­ motoren und Turbinen (ohne Motoren für Luft- und Straßenfahrzeuge); Herstellung von hydraulischen und pneumatischen Komponenten und Systemen; Herstellung von Pumpen und Kompressoren; Herstellung von Armaturen; Herstellung von Lagern, Getrieben, Zahnrädern und Antriebselementen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 535.0272617798691,
+            "r": 792.5802109804662,
+            "b": 486.7950010250984,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            514
+          ]
+        }
+      ],
+      "orig": "28.1 Beispiele: Kolben, Vergaser, Ein- und Auslassventile für Kolbenverbrennungs­ motoren, Dampf-/Wasserkraft-/Windturbinen, Turbinen-Generator-Aggregate, Industriemotoren, Luftaufbereitungs­ einrichtungen für pneumatische Systeme, Hydraulikgetriebe, Luft- und Vakuumpumpen, Pumpen für Flüssigkeiten, Handpumpen, Sanitärarmaturen, Heizungsarmaturen, Kugel- und Rollenlager, Zahnräder und Getriebe, Wellen- und andere Kupplungen, Schwungräder und Riemenscheiben Sonstige nicht wirtschaftszweigspezifische Maschinen:",
+      "text": "Beispiele: Kolben, Vergaser, Ein- und Auslassventile für Kolbenverbrennungs­ motoren, Dampf-/Wasserkraft-/Windturbinen, Turbinen-Generator-Aggregate, Industriemotoren, Luftaufbereitungs­ einrichtungen für pneumatische Systeme, Hydraulikgetriebe, Luft- und Vakuumpumpen, Pumpen für Flüssigkeiten, Handpumpen, Sanitärarmaturen, Heizungsarmaturen, Kugel- und Rollenlager, Zahnräder und Getriebe, Wellen- und andere Kupplungen, Schwungräder und Riemenscheiben Sonstige nicht wirtschaftszweigspezifische Maschinen:",
+      "enumerated": true,
+      "marker": "28.1"
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 479.6682002464968,
+            "r": 802.2273425334274,
+            "b": 451.6257148744853,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            375
+          ]
+        }
+      ],
+      "orig": "Herstellung von Öfen und Brennern; Herstellung von Hebezeugen und Fördermitteln; Herstellung von Büromaschinen (ohne Datenverarbeitungsgeräte und periphere Geräte); Herstellung von handgeführten Werkzeugen mit Motorantrieb; Herstellung von kälte- und lufttechnischen Erzeugnissen, nicht für den Haushalt; Herstellung von sonstigen nicht wirtschaftszweigspezifischen Maschinen",
+      "text": "Herstellung von Öfen und Brennern; Herstellung von Hebezeugen und Fördermitteln; Herstellung von Büromaschinen (ohne Datenverarbeitungsgeräte und periphere Geräte); Herstellung von handgeführten Werkzeugen mit Motorantrieb; Herstellung von kälte- und lufttechnischen Erzeugnissen, nicht für den Haushalt; Herstellung von sonstigen nicht wirtschaftszweigspezifischen Maschinen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 444.4989140958837,
+            "r": 794.0608621160609,
+            "b": 392.9780130259155,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            755
+          ]
+        }
+      ],
+      "orig": "28.2 Beispiele: Industrie- und Laboröfen, Brenner, elektrische Raumheizgeräte, elektrische Haushalts­ heizgeräte wie Umwälz­ lufterhitzer und Wärmepumpen, Flaschenzüge, Kräne, Stetigförderer, Seilbahnen, Aufzüge, Fahrtreppen, Rechenmaschinen, Briefmarkenzählgeräte und Postbearbeitungsmaschinen, Stenografiermaschinen, Münzzähl- und Münz­ - einwickelmaschinen, Wahlmaschinen, Klebestreifenspender, Locher, Kreis- und Stichsägen, Bohrer und Bohrhämmer, Druckluftnagler, Poliermaschinen, Oberfräsmaschinen, Scheren und Blechknabber, Kühl- und Gefriereinrichtungen, Ventilatoren, Wärmeaustauscher, Hallenentlüftungssysteme, Wiegevorrichtungen, Spritzpistolen, Feuerlöscher, Sandstrahlmaschinen, Zentrifugen, Warenverkaufs­ automaten, Wasserwagen und Bandmaße",
+      "text": "Beispiele: Industrie- und Laboröfen, Brenner, elektrische Raumheizgeräte, elektrische Haushalts­ heizgeräte wie Umwälz­ lufterhitzer und Wärmepumpen, Flaschenzüge, Kräne, Stetigförderer, Seilbahnen, Aufzüge, Fahrtreppen, Rechenmaschinen, Briefmarkenzählgeräte und Postbearbeitungsmaschinen, Stenografiermaschinen, Münzzähl- und Münz­ - einwickelmaschinen, Wahlmaschinen, Klebestreifenspender, Locher, Kreis- und Stichsägen, Bohrer und Bohrhämmer, Druckluftnagler, Poliermaschinen, Oberfräsmaschinen, Scheren und Blechknabber, Kühl- und Gefriereinrichtungen, Ventilatoren, Wärmeaustauscher, Hallenentlüftungssysteme, Wiegevorrichtungen, Spritzpistolen, Feuerlöscher, Sandstrahlmaschinen, Zentrifugen, Warenverkaufs­ automaten, Wasserwagen und Bandmaße",
+      "enumerated": true,
+      "marker": "28.2"
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 383.2783048707429,
+            "r": 242.11880618490218,
+            "b": 372.8204625740377,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "28.3 Land- und forstwirtschaftliche Maschinen",
+      "text": "Land- und forstwirtschaftliche Maschinen",
+      "enumerated": true,
+      "marker": "28.3"
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 371.4585346945605,
+            "r": 636.775996708978,
+            "b": 352.6306871912784,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "Beispiele: Zugmaschinen, Mähmaschinen inkl. Rasenmäher, Pflüge, Sämaschinen, Eggen, Ernte- und Dreschmaschinen, Melkmaschinen Werkzeugmaschinen:",
+      "text": "Beispiele: Zugmaschinen, Mähmaschinen inkl. Rasenmäher, Pflüge, Sämaschinen, Eggen, Ernte- und Dreschmaschinen, Melkmaschinen Werkzeugmaschinen:",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 345.5038864126768,
+            "r": 535.2470742175733,
+            "b": 335.04604411597165,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            109
+          ]
+        }
+      ],
+      "orig": "28.4 Herstellung von Werkzeugmaschinen für die Metallbearbeitung; Herstellung von sonstigen Werkzeugmaschinen",
+      "text": "Herstellung von Werkzeugmaschinen für die Metallbearbeitung; Herstellung von sonstigen Werkzeugmaschinen",
+      "enumerated": true,
+      "marker": "28.4"
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 333.68411623649445,
+            "r": 721.905821611247,
+            "b": 317.42917610978384,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            242
+          ]
+        }
+      ],
+      "orig": "Beispiele: Werkzeugmaschinen zum Bohren, Drehen, Fräsen, Hobeln, Sägen, Schleifen, Stanzen oder Pressen, Lochstanzen, Drahtzieh- und -walzmaschinen, Aufspannvorrichtungen, ortsfeste Maschinen zum Nageln, Heften, Leimen, Bohren, Feilen, Nieten",
+      "text": "Beispiele: Werkzeugmaschinen zum Bohren, Drehen, Fräsen, Hobeln, Sägen, Schleifen, Stanzen oder Pressen, Lochstanzen, Drahtzieh- und -walzmaschinen, Aufspannvorrichtungen, ortsfeste Maschinen zum Nageln, Heften, Leimen, Bohren, Feilen, Nieten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 307.7294679546112,
+            "r": 292.75097883808337,
+            "b": 303.13317334967496,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Maschinen für sonstige bestimmte Wirtschaftszweige:",
+      "text": "Maschinen für sonstige bestimmte Wirtschaftszweige:"
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 296.00637257107337,
+            "r": 799.433951433932,
+            "b": 256.24079181552406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            559
+          ]
+        }
+      ],
+      "orig": "Herstellung von Maschinen für die Metallerzeugung, von Walzwerkseinrichtungen und Gießmaschinen; Herstellung von Berkwerks- Bau- und Baustoffmaschinen; Herstellung von maschinen für die Mahrungs- und Genussmittelerzeugung und die Tabakverarbeitung; Herstellung von Maschinen für die Textil- und Bekleidungsherstellung und die Lederverarbeitung; Herstellung von Maschinen für die Papiererzeugung und -verarbeitung; Herstellung von Maschinen für die Verarbeitung von Kunststoffen und Kautschuk; Herstellung von Maschinen für sonstige bestimmte Wirtschaftszweige",
+      "text": "Herstellung von Maschinen für die Metallerzeugung, von Walzwerkseinrichtungen und Gießmaschinen; Herstellung von Berkwerks- Bau- und Baustoffmaschinen; Herstellung von maschinen für die Mahrungs- und Genussmittelerzeugung und die Tabakverarbeitung; Herstellung von Maschinen für die Textil- und Bekleidungsherstellung und die Lederverarbeitung; Herstellung von Maschinen für die Papiererzeugung und -verarbeitung; Herstellung von Maschinen für die Verarbeitung von Kunststoffen und Kautschuk; Herstellung von Maschinen für sonstige bestimmte Wirtschaftszweige",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 254.9755387286914,
+            "r": 793.5673125581459,
+            "b": 197.59308996695427,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            704
+          ]
+        }
+      ],
+      "orig": "28.9 Beispiele: Gießpfannen und -maschinen, Metallwalzwerke, Stetigförderer für den Untertageeinsatz, Beton- und Mörtelmischmaschinen, Planiermaschinen, Erd- oder Straßenhobel, Gleiskettenzugmaschinen, Planierschilde, landwirtschaftliche Trockner, milchwirtschaftliche Maschinen, Maschinen für Mahl- und Schälmühlen, Bäckereiöfen, Teigmischmaschinen, Maschinen zur Herstellung von Süßwaren, Kakao oder Schokolade, Textilmaschinen, Spinnmaschinen, Webmaschinen inkl. Handwebstühlen, Textildruckmaschinen, Nähmaschinen, Trockner für Holz/Zellstoff/Papier, Druckerei- und Buchbindereimaschinen, Auswuchtgeräte, Zentralschmieranlagen, Sonnenbänke, Kegelaufsteller für automatische Bowlingmaschinen, Karussels",
+      "text": "Beispiele: Gießpfannen und -maschinen, Metallwalzwerke, Stetigförderer für den Untertageeinsatz, Beton- und Mörtelmischmaschinen, Planiermaschinen, Erd- oder Straßenhobel, Gleiskettenzugmaschinen, Planierschilde, landwirtschaftliche Trockner, milchwirtschaftliche Maschinen, Maschinen für Mahl- und Schälmühlen, Bäckereiöfen, Teigmischmaschinen, Maschinen zur Herstellung von Süßwaren, Kakao oder Schokolade, Textilmaschinen, Spinnmaschinen, Webmaschinen inkl. Handwebstühlen, Textildruckmaschinen, Nähmaschinen, Trockner für Holz/Zellstoff/Papier, Druckerei- und Buchbindereimaschinen, Auswuchtgeräte, Zentralschmieranlagen, Sonnenbänke, Kegelaufsteller für automatische Bowlingmaschinen, Karussels",
+      "enumerated": true,
+      "marker": "28.9"
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 175.0152766356964,
+            "r": 134.83518352341844,
+            "b": 170.32061112330757,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "NACE 29: Kraftwagen",
+      "text": "NACE 29: Kraftwagen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 123.56391356350332,
+            "r": 64.44064162185147,
+            "b": 118.86924805111448,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NACE",
+      "text": "NACE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 109.08812951133405,
+            "r": 278.86033042733226,
+            "b": 104.4918349063978,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "29 Herstellung von Kraftwagen und Kraftwagenteilen",
+      "text": "29 Herstellung von Kraftwagen und Kraftwagenteilen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 94.7599018203432,
+            "r": 220.98263500292208,
+            "b": 90.16360721540696,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Kraftwagen und Kraftwagenmotoren",
+      "text": "Kraftwagen und Kraftwagenmotoren"
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 88.89835412857474,
+            "r": 660.0898998995341,
+            "b": 64.11228414087918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            174
+          ]
+        }
+      ],
+      "orig": "29.1 Beispiele: PKW, LKW, Sattelstraßenzugmaschinen, Busse, Fahrgestelle für Kraftfahrzeuge, Schneemobile, Löschfahrzeuge, Betonmischwagen Karosserien, Aufbauten und Anhänger",
+      "text": "Beispiele: PKW, LKW, Sattelstraßenzugmaschinen, Busse, Fahrgestelle für Kraftfahrzeuge, Schneemobile, Löschfahrzeuge, Betonmischwagen Karosserien, Aufbauten und Anhänger",
+      "enumerated": true,
+      "marker": "29.1"
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 56.98548336227759,
+            "r": 802.9447733192743,
+            "b": 40.63386844292245,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            182
+          ]
+        }
+      ],
+      "orig": "29.2 Beispiele: Führerhäuser für Kranwagen, Ausrüstung von Kraftwagen/Anhängern/Sattelanhängern, Transportcontainer für eine oder mehrere Beförderungsarten, Camping- und Wohnanhänger",
+      "text": "Beispiele: Führerhäuser für Kranwagen, Ausrüstung von Kraftwagen/Anhängern/Sattelanhängern, Transportcontainer für eine oder mehrere Beförderungsarten, Camping- und Wohnanhänger",
+      "enumerated": true,
+      "marker": "29.2"
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 265.2444433411477,
+            "t": 148.8163971999893,
+            "r": 576.3542314548088,
+            "b": 144.22010259505305,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 29",
+      "text": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 29"
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 207.51430761248565,
+            "t": 135.94279178006354,
+            "r": 634.0682451626218,
+            "b": 132.08665647071348,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "Hinweis: Abgebildet sind nur Abteilungen ( 29 ) und Gruppen ( 29.1 ), die detaillierten Klassen ( 29.12 ) sind nicht aufgeführt.",
+      "text": "Hinweis: Abgebildet sind nur Abteilungen ( 29 ) und Gruppen ( 29.1 ), die detaillierten Klassen ( 29.12 ) sind nicht aufgeführt."
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 385.1314142307726,
+            "t": 123.56391356350332,
+            "r": 488.5887485030691,
+            "b": 118.86924805111448,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Produkte und Beispiele",
+      "text": "Produkte und Beispiele",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "7/9",
+      "text": "7/9"
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 564.3349981267129,
+            "r": 213.30970614942214,
+            "b": 559.7387035217766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Teile und Zubehör für Kraftwagen:",
+      "text": "Teile und Zubehör für Kraftwagen:"
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 552.6119027431755,
+            "r": 751.1321450743989,
+            "b": 524.5371924402825,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            333
+          ]
+        }
+      ],
+      "orig": "29.3 Herstellung elektrischer und elektronischer Ausrüstungsgegenstände für Kraftwagen; Herstellung von sonstigen Teilen und sonstigem Zubehör für Kraftwagen Beispiele: Lichtmaschinen, Zündkerzen, Zündkabel, elektrische Fensterheber und Türverriegelungen, Bremsen, Getriebe, Räder, Sicherheitsgurte, Airbags, Sitze für Kraftfahrzeuge",
+      "text": "Herstellung elektrischer und elektronischer Ausrüstungsgegenstände für Kraftwagen; Herstellung von sonstigen Teilen und sonstigem Zubehör für Kraftwagen Beispiele: Lichtmaschinen, Zündkerzen, Zündkabel, elektrische Fensterheber und Türverriegelungen, Bremsen, Getriebe, Räder, Sicherheitsgurte, Airbags, Sitze für Kraftfahrzeuge",
+      "enumerated": true,
+      "marker": "29.3"
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 501.9593791090242,
+            "r": 168.1269426920374,
+            "b": 497.26471359663583,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "NACE 30: Sonstige Fahrzeuge",
+      "text": "NACE 30: Sonstige Fahrzeuge",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 450.5080160368311,
+            "r": 64.44064162185147,
+            "b": 445.81335052444274,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NACE",
+      "text": "NACE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 436.03223198466185,
+            "r": 45.33464191905651,
+            "b": 431.4359373797256,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "30",
+      "text": "30",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 436.03223198466185,
+            "r": 162.84035588063884,
+            "b": 431.4359373797256,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Sonstiger Fahrzeugbau",
+      "text": "Sonstiger Fahrzeugbau",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 421.70400429367146,
+            "r": 158.90721694780856,
+            "b": 417.1077096887352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Schiff- und Bootsbau:",
+      "text": "Schiff- und Bootsbau:",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 409.9809089101336,
+            "r": 315.5102687686182,
+            "b": 405.3846143051974,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "Schiffbau (ohne Boots- und Yachtbau); Boot- und Yachtbau",
+      "text": "Schiffbau (ohne Boots- und Yachtbau); Boot- und Yachtbau",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 404.1193612183647,
+            "r": 802.7514248151143,
+            "b": 367.61019584713176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            274
+          ]
+        }
+      ],
+      "orig": "30.1 Beispiele: Fahrgastschiffe, Frachtschiffe, Tankschiffe, Luftkissenfahrzeuge, schwimmende oder tauchende Bohrplattformen, Schwimmdocks, Bojen, Schwimmkräne, aufblasbare Boote und Flöße, Seegelboote und -yachten, Motorboote, Jet Skis, Kanus, Ruderbote Schienenfahrzeugbau",
+      "text": "Beispiele: Fahrgastschiffe, Frachtschiffe, Tankschiffe, Luftkissenfahrzeuge, schwimmende oder tauchende Bohrplattformen, Schwimmdocks, Bojen, Schwimmkräne, aufblasbare Boote und Flöße, Seegelboote und -yachten, Motorboote, Jet Skis, Kanus, Ruderbote Schienenfahrzeugbau",
+      "enumerated": true,
+      "marker": "30.1"
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 360.38672027588564,
+            "r": 800.4922854959873,
+            "b": 318.11268200552786,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            489
+          ]
+        }
+      ],
+      "orig": "30.2 Beispiele: Schienenfahrzeuge, die elektrisch, mit Dieselkraftstoff, Dampf oder anderweitig betrieben werden; Personenwagen, Kesselwagen, Kranwagen, Tender, Schienenfahrzeugteile wie Drehgestelle, Achsen und Räder, Bremsvorrichtungen etc., Schienenfahrzeuge für den Einsatz im Bergbau, Sitze für Schienenfahrzeuge, mechanische und elektromechanische Signal-, Sicherungs-, Überwachungs- und Steuerungsgeräte für Schienenwege/Binnenwasserstraßen/Parkplätze etc. Luft- und Raumfahrzeugbau",
+      "text": "Beispiele: Schienenfahrzeuge, die elektrisch, mit Dieselkraftstoff, Dampf oder anderweitig betrieben werden; Personenwagen, Kesselwagen, Kranwagen, Tender, Schienenfahrzeugteile wie Drehgestelle, Achsen und Räder, Bremsvorrichtungen etc., Schienenfahrzeuge für den Einsatz im Bergbau, Sitze für Schienenfahrzeuge, mechanische und elektromechanische Signal-, Sicherungs-, Überwachungs- und Steuerungsgeräte für Schienenwege/Binnenwasserstraßen/Parkplätze etc. Luft- und Raumfahrzeugbau",
+      "enumerated": true,
+      "marker": "30.2"
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 310.9858812269267,
+            "r": 762.4685441530025,
+            "b": 294.6342663075716,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            178
+          ]
+        }
+      ],
+      "orig": "30.3 Beispiele: Hubschrauber, Luftschiffe und Heißluftballons, Flugzeuge, Teile und Zubehör für Luft- und Raumfahrzeuge, Satelliten, ICBMs, Raumstationen und -sonden, Bodengeräte",
+      "text": "Beispiele: Hubschrauber, Luftschiffe und Heißluftballons, Flugzeuge, Teile und Zubehör für Luft- und Raumfahrzeuge, Satelliten, ICBMs, Raumstationen und -sonden, Bodengeräte",
+      "enumerated": true,
+      "marker": "30.3"
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 284.9345581523985,
+            "r": 189.8329868788887,
+            "b": 280.33826354746225,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "Militärische Kampffahrzeuge",
+      "text": "Militärische Kampffahrzeuge",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 279.0730104606296,
+            "r": 442.5308210925818,
+            "b": 254.28694047293402,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "30.4 Beispiele: Panzer, gepanzerte Amphibienfahrzeuge, sonstige militärische Kampffahrzeuge Fahrzeuge anderweitig nicht genannt:",
+      "text": "Beispiele: Panzer, gepanzerte Amphibienfahrzeuge, sonstige militärische Kampffahrzeuge Fahrzeuge anderweitig nicht genannt:",
+      "enumerated": true,
+      "marker": "30.4"
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 34.91411268924524,
+            "t": 247.16013969433288,
+            "r": 620.9060617742476,
+            "b": 236.70229739762726,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            131
+          ]
+        }
+      ],
+      "orig": "30.9 Herstellung von Krafträdern; Herstellung von Fahrrädern sowie von Behindertenfahrzeugen; Herstellung von sonsteigen Fahrzeugen",
+      "text": "Herstellung von Krafträdern; Herstellung von Fahrrädern sowie von Behindertenfahrzeugen; Herstellung von sonsteigen Fahrzeugen",
+      "enumerated": true,
+      "marker": "30.9"
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 67.05086201321396,
+            "t": 235.3403695181505,
+            "r": 786.6219881052829,
+            "b": 219.0854293914399,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            224
+          ]
+        }
+      ],
+      "orig": "Beispiele: Kleinkrafträder, Fahrräder mit Hilfsmotor, Beiwagen, Fahrräder, Dreiräder, Tandems, Teile und Zubehör für Fahrräder, Rollstühle, Kinderwagen, Gepäckwagen, Handkarren, Schlitten, Einkaufswagen, Sulkies, Eselskarren",
+      "text": "Beispiele: Kleinkrafträder, Fahrräder mit Hilfsmotor, Beiwagen, Fahrräder, Dreiräder, Tandems, Teile und Zubehör für Fahrräder, Rollstühle, Kinderwagen, Gepäckwagen, Handkarren, Schlitten, Einkaufswagen, Sulkies, Eselskarren",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 199.61647508331862,
+            "r": 43.3807926884669,
+            "b": 195.02018047838283,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 173.97729211994556,
+            "r": 185.92528823535025,
+            "b": 166.93529385136208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 143.6438586971517,
+            "r": 73.58056747768259,
+            "b": 138.15403450701888,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Quellen",
+      "text": "Quellen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 117.55480739855466,
+            "r": 598.9201726336962,
+            "b": 112.95851279361887,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            125
+          ]
+        }
+      ],
+      "orig": "1. NACE Rev. 2, Statistische Systematik der Wirtschaftszweige in der Europäischen Gemeinschaft, ISSN 1977-0383, Eurostat 2008",
+      "text": "NACE Rev. 2, Statistische Systematik der Wirtschaftszweige in der Europäischen Gemeinschaft, ISSN 1977-0383, Eurostat 2008",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 105.83171201501773,
+            "r": 564.432698115507,
+            "b": 101.23541741008103,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            120
+          ]
+        }
+      ],
+      "orig": "2. NACE Category C, Statistical Classification of Economic Activities in the European Community, Rev. 2 (2008), Eurostat",
+      "text": "NACE Category C, Statistical Classification of Economic Activities in the European Community, Rev. 2 (2008), Eurostat",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 83.68808740166878,
+            "r": 115.15931112836819,
+            "b": 79.09179279673208,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 71.96499201813094,
+            "r": 72.90223338085548,
+            "b": 67.36869741319424,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "EU",
+      "text": "EU",
+      "hyperlink": "https://www.openkritis.de/eu/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 60.241896634593104,
+            "r": 128.47499714777223,
+            "b": 55.64560202965731,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "NACE-Produkte",
+      "text": "NACE-Produkte",
+      "hyperlink": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 48.518801251055265,
+            "r": 69.43211576299505,
+            "b": 43.92250664611947,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 265.2444433411477,
+            "t": 475.7604996733171,
+            "r": 576.3542314548088,
+            "b": 471.16420506838085,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 30",
+      "text": "eigene Zusammenstellung NIS2-relevante NACE Sektoren Abschnitt C 30"
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 207.51430761248565,
+            "t": 462.88689425339135,
+            "r": 634.0682451626218,
+            "b": 459.03075894404174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "Hinweis: Abgebildet sind nur Abteilungen ( 30 ) und Gruppen ( 30.1 ), die detaillierten Klassen ( 30.12 ) sind nicht aufgeführt.",
+      "text": "Hinweis: Abgebildet sind nur Abteilungen ( 30 ) und Gruppen ( 30.1 ), die detaillierten Klassen ( 30.12 ) sind nicht aufgeführt."
+    },
+    {
+      "self_ref": "#/texts/165",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 385.1314142307726,
+            "t": 450.5080160368311,
+            "r": 488.5887485030691,
+            "b": 445.81335052444274,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Produkte und Beispiele",
+      "text": "Produkte und Beispiele",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/166",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/167",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "8/9",
+      "text": "8/9"
+    },
+    {
+      "self_ref": "#/texts/168",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/169",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 377.70701926220687,
+            "t": 577.7496212324044,
+            "r": 544.4774099883178,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS",
+      "text": "NACE-Produktgruppen in EU NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/170",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.9916073317845,
+            "r": 499.7419679639876,
+            "b": 548.0437718316907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X",
+      "text": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X"
+    },
+    {
+      "self_ref": "#/texts/171",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 531.1197990946803,
+            "r": 805.5041114908197,
+            "b": 514.8004091062057,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar.",
+      "text": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar."
+    },
+    {
+      "self_ref": "#/texts/172",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 497.25816733801094,
+            "r": 354.0377355507722,
+            "b": 492.033427221455,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt",
+      "text": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt"
+    },
+    {
+      "self_ref": "#/texts/173",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 245.73200732434117,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html",
+      "text": "https://www.openkritis.de/eu/eu-nis-2-nace_wirtschaft-produkte.html"
+    },
+    {
+      "self_ref": "#/texts/174",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "9/9",
+      "text": "9/9"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 52.02876160897334,
+            "t": 542.3468587922058,
+            "r": 422.231597656105,
+            "b": 173.6816098025908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 526.2604065621781,
+            "t": 542.7181869517374,
+            "r": 777.0692101257586,
+            "b": 173.430253427519,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 30.965164149947768,
+            "t": 568.6037015139591,
+            "r": 815.2641882954026,
+            "b": 46.734464697064595,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 33.53281981196252,
+            "t": 308.5274237778464,
+            "r": 440.3667148303339,
+            "b": 185.64418364381322,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 36.93919600636677,
+              "t": 298.1546696548884,
+              "r": 97.17779250625213,
+              "b": 302.8493351672772,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "NIS2 Annex I",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 151.9313675214416,
+              "t": 298.1546696548884,
+              "r": 195.9285922659995,
+              "b": 302.8493351672772,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Subsector",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 305.094826606715,
+              "t": 298.1546696548884,
+              "r": 381.8088496916242,
+              "b": 302.8493351672772,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Essential Entities",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 312.6304537070574,
+              "r": 82.37636701985653,
+              "b": 317.2267483119939,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Gesundheit",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 248.657077477288,
+              "t": 312.6304537070574,
+              "r": 429.8460646941952,
+              "b": 317.2267483119939,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Pharmazeutik (Abschnitt C Abt. 21 NACE)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 326.81112503686916,
+              "r": 99.20796401148863,
+              "b": 331.5057905492582,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "NIS2 Annex II",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 151.9313675214416,
+              "t": 326.81112503686916,
+              "r": 195.9285922659995,
+              "b": 331.5057905492582,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Subsector",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 301.9096485653463,
+              "t": 326.81112503686916,
+              "r": 384.9838578174911,
+              "b": 331.5057905492582,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Important Entities",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 341.28690908903843,
+              "r": 83.53137681240412,
+              "b": 345.8832036939749,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Herstellung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 101.81309624078747,
+              "t": 341.28690908903843,
+              "r": 246.04685690356627,
+              "b": 345.8832036939749,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "DV (Computer), Elektronik, Optik",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 248.657077477288,
+              "t": 341.28690908903843,
+              "r": 438.24659879499995,
+              "b": 345.8832036939749,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Unternehmen aus Abschnitt C Abt. 26 NACE",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 101.81309624078747,
+              "t": 355.6151367800288,
+              "r": 198.77286436089958,
+              "b": 360.2114313849655,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Elektrische Ausrüstung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 248.657077477288,
+              "t": 355.6151367800288,
+              "r": 438.24659879499995,
+              "b": 360.2114313849655,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Unternehmen aus Abschnitt C Abt. 27 NACE",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 101.81309624078747,
+              "t": 369.94336447101944,
+              "r": 162.58086042298345,
+              "b": 374.5396590759559,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Maschinenbau",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 248.657077477288,
+              "t": 369.94336447101944,
+              "r": 438.24659879499995,
+              "b": 374.5396590759559,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Unternehmen aus Abschnitt C Abt. 28 NACE",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 101.81309624078747,
+              "t": 384.2715921620098,
+              "r": 192.3312676787995,
+              "b": 388.8678867669465,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Kraftwagen und Teile",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 248.657077477288,
+              "t": 384.2715921620098,
+              "r": 438.24659879499995,
+              "b": 388.8678867669465,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Unternehmen aus Abschnitt C Abt. 29 NACE",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 101.81309624078747,
+              "t": 398.59981985300044,
+              "r": 155.6304487068273,
+              "b": 403.1961144579369,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Fahrzeugbau",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 248.657077477288,
+              "t": 398.59981985300044,
+              "r": 438.24659879499995,
+              "b": 403.1961144579369,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Unternehmen aus Abschnitt C Abt. 30 NACE",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 36.93919600636677,
+                "t": 298.1546696548884,
+                "r": 97.17779250625213,
+                "b": 302.8493351672772,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "NIS2 Annex I",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 151.9313675214416,
+                "t": 298.1546696548884,
+                "r": 195.9285922659995,
+                "b": 302.8493351672772,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Subsector",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 305.094826606715,
+                "t": 298.1546696548884,
+                "r": 381.8088496916242,
+                "b": 302.8493351672772,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Essential Entities",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 312.6304537070574,
+                "r": 82.37636701985653,
+                "b": 317.2267483119939,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Gesundheit",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 248.657077477288,
+                "t": 312.6304537070574,
+                "r": 429.8460646941952,
+                "b": 317.2267483119939,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Pharmazeutik (Abschnitt C Abt. 21 NACE)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 326.81112503686916,
+                "r": 99.20796401148863,
+                "b": 331.5057905492582,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "NIS2 Annex II",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 151.9313675214416,
+                "t": 326.81112503686916,
+                "r": 195.9285922659995,
+                "b": 331.5057905492582,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Subsector",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 301.9096485653463,
+                "t": 326.81112503686916,
+                "r": 384.9838578174911,
+                "b": 331.5057905492582,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Important Entities",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 341.28690908903843,
+                "r": 83.53137681240412,
+                "b": 345.8832036939749,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Herstellung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 101.81309624078747,
+                "t": 341.28690908903843,
+                "r": 246.04685690356627,
+                "b": 345.8832036939749,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "DV (Computer), Elektronik, Optik",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 248.657077477288,
+                "t": 341.28690908903843,
+                "r": 438.24659879499995,
+                "b": 345.8832036939749,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Unternehmen aus Abschnitt C Abt. 26 NACE",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 101.81309624078747,
+                "t": 355.6151367800288,
+                "r": 198.77286436089958,
+                "b": 360.2114313849655,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Elektrische Ausrüstung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 248.657077477288,
+                "t": 355.6151367800288,
+                "r": 438.24659879499995,
+                "b": 360.2114313849655,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Unternehmen aus Abschnitt C Abt. 27 NACE",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 101.81309624078747,
+                "t": 369.94336447101944,
+                "r": 162.58086042298345,
+                "b": 374.5396590759559,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Maschinenbau",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 248.657077477288,
+                "t": 369.94336447101944,
+                "r": 438.24659879499995,
+                "b": 374.5396590759559,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Unternehmen aus Abschnitt C Abt. 28 NACE",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 101.81309624078747,
+                "t": 384.2715921620098,
+                "r": 192.3312676787995,
+                "b": 388.8678867669465,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Kraftwagen und Teile",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 248.657077477288,
+                "t": 384.2715921620098,
+                "r": 438.24659879499995,
+                "b": 388.8678867669465,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Unternehmen aus Abschnitt C Abt. 29 NACE",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 101.81309624078747,
+                "t": 398.59981985300044,
+                "r": 155.6304487068273,
+                "b": 403.1961144579369,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Fahrzeugbau",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 248.657077477288,
+                "t": 398.59981985300044,
+                "r": 438.24659879499995,
+                "b": 403.1961144579369,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Unternehmen aus Abschnitt C Abt. 30 NACE",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 7
+    },
+    "8": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 8
+    },
+    "9": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 9
+    }
+  }
+}

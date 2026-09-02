@@ -1,0 +1,902 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Transport-Layer-Security-TLS",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 15073912724128047771,
+    "filename": "BSI---Transport-Layer-Security-TLS.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 401.26446158064687,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            52
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund Transport Layer Security (TLS)",
+      "text": "Mindeststandards Bund Transport Layer Security (TLS)"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 527.4749048218782,
+            "b": 345.1610721268601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            154
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Verwendung von Transport Layer Security (TLS (Transport Layer Security))",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Verwendung von Transport Layer Security (TLS (Transport Layer Security))"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 232.95000537374995,
+            "r": 535.9316202945148,
+            "b": 172.9042935899405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            292
+          ]
+        }
+      ],
+      "orig": "Bei der Übertragung von Informationen über Kommunikationsnetze besteht die Gefahr, dass Informationen unbefugt abgehört oder manipuliert werden. Um die Vertraulichkeit und die Integrität der Informationen sicherzustellen, sind geeignete Maßnahmen zur Absicherung der Übertragung erforderlich.",
+      "text": "Bei der Übertragung von Informationen über Kommunikationsnetze besteht die Gefahr, dass Informationen unbefugt abgehört oder manipuliert werden. Um die Vertraulichkeit und die Integrität der Informationen sicherzustellen, sind geeignete Maßnahmen zur Absicherung der Übertragung erforderlich."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 149.70000884249998,
+            "r": 549.9772579842801,
+            "b": 53.65429855869047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            506
+          ]
+        }
+      ],
+      "orig": "Eine mögliche Maßnahme ist der Einsatz des Protokolls Transport Layer Security (TLS (Transport Layer Security)). Durch den Einsatz sicherer Versionen dieses Protokolls und einer sicheren Konfiguration kann ein wirksamer Schutz erzielt werden. Der Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Verwendung von Transport Layer Security (TLS (Transport Layer Security)) definiert Vorgaben für den sicheren Einsatz von TLS (Transport Layer Security) für die Bundesverwaltung.",
+      "text": "Eine mögliche Maßnahme ist der Einsatz des Protokolls Transport Layer Security (TLS (Transport Layer Security)). Durch den Einsatz sicherer Versionen dieses Protokolls und einer sicheren Konfiguration kann ein wirksamer Schutz erzielt werden. Der Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Verwendung von Transport Layer Security (TLS (Transport Layer Security)) definiert Vorgaben für den sicheren Einsatz von TLS (Transport Layer Security) für die Bundesverwaltung."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 823.19998078,
+            "r": 496.3234704198546,
+            "b": 799.1542674961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Aktualisierung Mai 2023: Der Mindeststandard wurde auf die Version 2.4 aktualisiert. Die vorgenommenen Anpassungen sind in der",
+      "text": "Aktualisierung Mai 2023: Der Mindeststandard wurde auf die Version 2.4 aktualisiert. Die vorgenommenen Anpassungen sind in der"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 787.19998228,
+            "r": 547.415713416011,
+            "b": 655.1542734961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            664
+          ]
+        }
+      ],
+      "orig": "(TLS (Transport Layer Security)) aufgelistet. Zeitgleich wurden das Hilfsdokument und die Referenztabelle aktualisiert. Bei den Anpassungen wurden die aktuellen Versionen der einschlägigen technischen Richtlinien des BSI (Bundesamt für Sicherheit in der Informationstechnik) (TR-02102-2 und TR-03116-4) und die aktuelle Version des IT (Informationstechnik)-Grundschutz-Kompendiums (Edition 2023) berücksichtigt. Der Mindeststandard, das Hilfsdokument und die Referenztabelle stehen zum Download zur Verfügung. Ältere Versionen dieser Dokumente stehen Ihnen im zur Verfügung. Änderungsübersicht zum Mindeststandard zur Verwendung von Transport Layer Security Archiv",
+      "text": "(TLS (Transport Layer Security)) aufgelistet. Zeitgleich wurden das Hilfsdokument und die Referenztabelle aktualisiert. Bei den Anpassungen wurden die aktuellen Versionen der einschlägigen technischen Richtlinien des BSI (Bundesamt für Sicherheit in der Informationstechnik) (TR-02102-2 und TR-03116-4) und die aktuelle Version des IT (Informationstechnik)-Grundschutz-Kompendiums (Edition 2023) berücksichtigt. Der Mindeststandard, das Hilfsdokument und die Referenztabelle stehen zum Download zur Verfügung. Ältere Versionen dieser Dokumente stehen Ihnen im zur Verfügung. Änderungsübersicht zum Mindeststandard zur Verwendung von Transport Layer Security Archiv"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 631.94998874875,
+            "r": 549.1368441692974,
+            "b": 517.9042792149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            539
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 470.1074954921876,
+            "r": 344.2428447565475,
+            "b": 460.66106731436025,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard Version 2.4",
+      "text": "Download Mindeststandard Version 2.4",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 434.69999696750006,
+            "r": 549.0714585720218,
+            "b": 410.65428368369044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Verwendung von Transport Layer Security (TLS) Version 2.4",
+      "text": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Verwendung von Transport Layer Security (TLS) Version 2.4",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_BSI_TLS_Version_2_4.pdf?__blob=publicationFile&v=4"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 362.8574999609375,
+            "r": 439.26778109717503,
+            "b": 353.4110717831102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "Download Hilfsdokument zum Mindeststandard 2.4",
+      "text": "Download Hilfsdokument zum Mindeststandard 2.4",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 327.45000143625,
+            "r": 520.16350057652,
+            "b": 303.4042881524406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            93
+          ]
+        }
+      ],
+      "orig": "Hilfsdokument zum 'Mindeststandard des BSI zur Verwendung von Transport Layer Security (TLS)\"",
+      "text": "Hilfsdokument zum 'Mindeststandard des BSI zur Verwendung von Transport Layer Security (TLS)\"",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Hilfsdokument_Mindeststandard_BSI_TLS_Version_2_4.pdf?__blob=publicationFile&v=3"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 255.60750442968765,
+            "r": 246.85540341435774,
+            "b": 246.1610762518601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Referenztabelle",
+      "text": "Download Referenztabelle",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 208.3050064006252,
+            "r": 487.4472921896953,
+            "b": 176.74215057288689,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "Mindeststandard TLS (Transport Layer Security) Version 2.4 und IT (Informationstechnik)-Grundschutz Version 2023:",
+      "text": "Mindeststandard TLS (Transport Layer Security) Version 2.4 und IT (Informationstechnik)-Grundschutz Version 2023:"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 151.20000877999996,
+            "r": 529.66749883052,
+            "b": 109.1542962461906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            191
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Verwendung von Transport Layer Security (TLS) Version 2.4 (IT-Grundschutz-Kompendium - Edition 2023)",
+      "text": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Verwendung von Transport Layer Security (TLS) Version 2.4 (IT-Grundschutz-Kompendium - Edition 2023)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Referenztabelle_Mindeststandard_TLS_V2_4-Grundschutz2023.xlsx?__blob=publicationFile&v=3"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 176.75390263525372,
+            "t": 783.6074824296875,
+            "r": 468.5600032266656,
+            "b": 774.1610542518602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Weitere empfehlenswerte Dokumente",
+      "text": "Weitere empfehlenswerte Dokumente",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 199.25390169775372,
+            "t": 748.199983905,
+            "r": 548.8255368072686,
+            "b": 688.1542721211906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            229
+          ]
+        }
+      ],
+      "orig": "Download BSI TR-02102-2 \"Kryptographische Verfahren: Verwendung von Transport Layer Security (TLS)\" Version: 2026-01 (PDF) Download BSI TR-03116-4 Kryptographische Vorgaben für Projekte der Bundesregierung Teil 4 Stand 2025 (PDF)",
+      "text": "Download BSI TR-02102-2 \"Kryptographische Verfahren: Verwendung von Transport Layer Security (TLS)\" Version: 2026-01 (PDF) Download BSI TR-03116-4 Kryptographische Vorgaben für Projekte der Bundesregierung Teil 4 Stand 2025 (PDF)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102-2.pdf?__blob=publicationFile&v=14"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 580.3574908984374,
+            "r": 385.34051271914456,
+            "b": 570.9110627206101,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 61.75780992675781,
+            "t": 475.94999524874993,
+            "r": 269.2256596822637,
+            "b": 454.1542818711905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht zum Mindeststandard TLS (Transport Layer Security)",
+      "text": "Änderungsübersicht zum Mindeststandard TLS (Transport Layer Security)"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 354.17577024267564,
+            "t": 475.94999524874993,
+            "r": 505.80766822467945,
+            "b": 469.9042812149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "FAQ zum Mindeststandard TLS",
+      "text": "FAQ zum Mindeststandard TLS"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 404.6999982174998,
+            "r": 387.1355325693521,
+            "b": 398.6542841836904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund",
+      "text": "Zurück zu Mindeststandards Bund"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 302.70000246749987,
+            "r": 316.65937410585894,
+            "b": 296.65428843369045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-TLS",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-TLS",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST-TLS"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 802.1999816550001,
+            "r": 158.39995432500166,
+            "b": 742.1542698711905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 711.4499854362502,
+            "r": 313.9438494440058,
+            "b": 705.4042714024408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        },
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 651.3974879384373,
+            "r": 509.74872171046906,
+            "b": 646.4853452859675,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            54,
+            57
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik TOP",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.188488279104796,
+            "t": 553.0817098795303,
+            "r": 170.60105234942986,
+            "b": 491.13813439510534,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 42.90187121550616,
+            "t": 551.2331306943017,
+            "r": 551.6270608157744,
+            "b": 376.53351791894835,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    }
+  }
+}

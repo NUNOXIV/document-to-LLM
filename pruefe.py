@@ -23,6 +23,7 @@ geglaubt werden zu muessen.
 from __future__ import annotations
 
 import json
+import re
 import statistics
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -149,6 +150,19 @@ def pruefe_korpus(register: Path, b: Bericht) -> None:
                         "oder Endlos-Abschnitt",
                         f"{je_seite_md/1000:.1f} kB/Seite",
                         f"<= {EXTRAKT_UEBERHANG} kB")
+            # Jede Seite der Quelle muss im Extrakt eine Marke haben. Fehlt
+            # eine, ist ihr Inhalt entweder verloren oder einer Nachbarseite
+            # zugeschlagen -- beides unsichtbar fuer Laenge und Deckung, weil
+            # die Woerter ja da sind, nur nicht dort, wo das Zitat sie sucht.
+            marken = {int(m) for m in re.findall(
+                r"<!-- page: (\d+) -->", md.read_text(encoding="utf-8", errors="replace"))}
+            fehlend = sorted(set(range(1, seiten + 1)) - marken)
+            if fehlend:
+                b.melde("Korpus", slug,
+                        "Seiten ohne Marke im Extrakt — Zitate mit Seitenzahl sind "
+                        "dort nicht belegbar",
+                        f"{len(fehlend)} von {seiten} Seiten, z. B. {fehlend[:5]}",
+                        "0")
 
 
 def pruefe_vault(vault: Path, b: Bericht) -> None:

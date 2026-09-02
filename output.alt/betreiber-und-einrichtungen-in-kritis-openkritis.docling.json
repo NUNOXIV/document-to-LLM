@@ -1,0 +1,6341 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Betreiber-und-Einrichtungen-in-KRITIS-OpenKRITIS",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 13717121667590124617,
+    "filename": "Betreiber-und-Einrichtungen-in-KRITIS-OpenKRITIS.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/texts/69"
+      },
+      {
+        "$ref": "#/texts/70"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/texts/72"
+      },
+      {
+        "$ref": "#/texts/73"
+      },
+      {
+        "$ref": "#/texts/74"
+      },
+      {
+        "$ref": "#/texts/75"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/texts/92"
+      },
+      {
+        "$ref": "#/texts/93"
+      },
+      {
+        "$ref": "#/texts/94"
+      },
+      {
+        "$ref": "#/texts/95"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/101"
+      },
+      {
+        "$ref": "#/texts/102"
+      },
+      {
+        "$ref": "#/texts/103"
+      },
+      {
+        "$ref": "#/texts/104"
+      },
+      {
+        "$ref": "#/texts/105"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/45"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/50"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        },
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 372.0585819975584,
+            "t": 577.7496212324044,
+            "r": 550.1343847276105,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS",
+      "text": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 138.3960246421712,
+            "r": 115.15931112836819,
+            "b": 133.79973003723484,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 126.67292925863353,
+            "r": 81.01274292136625,
+            "b": 122.07663465369717,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NIS2",
+      "text": "NIS2",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 114.9498338750958,
+            "r": 89.1028999178277,
+            "b": 110.3535392701595,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Europa",
+      "text": "Europa",
+      "hyperlink": "https://www.openkritis.de/eu/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 103.22673849155814,
+            "r": 97.77819411878673,
+            "b": 98.63044388662183,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Betreiber",
+      "text": "Betreiber",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 91.50364310802047,
+            "r": 93.73820370446569,
+            "b": 86.90734850308417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Security",
+      "text": "Security",
+      "hyperlink": "https://www.openkritis.de/massnahmen/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 79.78054772448274,
+            "r": 87.95806639730475,
+            "b": 75.1842531195465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "School",
+      "text": "School",
+      "hyperlink": "https://www.openkritis.de/school/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 51.80081620363205,
+            "r": 253.47046654538408,
+            "b": 42.41148517885415,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Regulierte Unternehmen",
+      "text": "Regulierte Unternehmen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 139.38466420548068,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/",
+      "text": "https://www.openkritis.de/betreiber/"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "1/7",
+      "text": "1/7"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 372.0585819975584,
+            "t": 577.7496212324044,
+            "r": 550.1343847276105,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS",
+      "text": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 564.9864618755688,
+            "r": 161.73113946851018,
+            "b": 560.3901672706324,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Regulierte Unternehmen",
+      "text": "Regulierte Unternehmen",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 553.2633664920312,
+            "r": 115.15931112836819,
+            "b": 548.6670718870948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Identifikation",
+      "text": "Identifikation",
+      "hyperlink": "https://www.openkritis.de/betreiber/identifikation-kritische-infrastruktur.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 541.5402711084935,
+            "r": 115.7342720608411,
+            "b": 536.9439765035571,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Registrierung",
+      "text": "Registrierung",
+      "hyperlink": "https://www.openkritis.de/betreiber/registrierung-kritis-anlagen.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 529.8171757249559,
+            "r": 112.26415444298067,
+            "b": 525.2208811200195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Meldepflicht",
+      "text": "Meldepflicht",
+      "hyperlink": "https://www.openkritis.de/betreiber/meldepflichten-bsig.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 518.0940803414181,
+            "r": 127.29963491538061,
+            "b": 513.4977857364818,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Geltungsbereich",
+      "text": "Geltungsbereich",
+      "hyperlink": "https://www.openkritis.de/betreiber/geltungsbereich-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 506.3709849578804,
+            "r": 119.19421340667688,
+            "b": 501.77469035294416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Betriebsführer",
+      "text": "Betriebsführer",
+      "hyperlink": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 494.6478895743428,
+            "r": 118.04937988615393,
+            "b": 490.05159496940644,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Komponenten",
+      "text": "Komponenten",
+      "hyperlink": "https://www.openkritis.de/betreiber/kritische-komponenten.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 482.9247941908051,
+            "r": 102.42367407324409,
+            "b": 478.3284995858688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Prüfungen",
+      "text": "Prüfungen",
+      "hyperlink": "https://www.openkritis.de/pruefung/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 471.20169880726746,
+            "r": 104.71842945871288,
+            "b": 466.6054042023311,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Reifegrade",
+      "text": "Reifegrade",
+      "hyperlink": "https://www.openkritis.de/betreiber/reifegrade-kritis-nis2-run.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 459.47860342372974,
+            "r": 102.41858604143704,
+            "b": 454.8823088187934,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Bußgelder",
+      "text": "Bußgelder",
+      "hyperlink": "https://www.openkritis.de/betreiber/bussgelder-kritis-bsig.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 139.38466420548068,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/",
+      "text": "https://www.openkritis.de/betreiber/"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "2/7",
+      "text": "2/7"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 372.0585819975584,
+            "t": 577.7496212324044,
+            "r": 550.1343847276105,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS",
+      "text": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 112.99600442050564,
+            "r": 797.9990884033635,
+            "b": 96.67661443203133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            331
+          ]
+        }
+      ],
+      "orig": "Unternehmen in NIS2 und KRITIS, Einrichtungen und Betreiber, fallen als regulierte Kritische Infrastruktur unter die deutsche NIS2 und KRITIS-Regulierung. Mit EU NIS2 vertiefen sich Cybersecurity-Anforderungen ab Ende 2025 deutlich, mit dem KRITIS-Dachgesetz die Resilienz-Vorgaben zusätzlich noch für Betreiber kritischer Anlagen.",
+      "text": "Unternehmen in NIS2 und KRITIS, Einrichtungen und Betreiber, fallen als regulierte Kritische Infrastruktur unter die deutsche NIS2 und KRITIS-Regulierung. Mit EU NIS2 vertiefen sich Cybersecurity-Anforderungen ab Ende 2025 deutlich, mit dem KRITIS-Dachgesetz die Resilienz-Vorgaben zusätzlich noch für Betreiber kritischer Anlagen."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 79.12928442361908,
+            "r": 165.34881349965207,
+            "b": 74.53298981868238,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "1. Wie werde ich Betreiber?",
+      "text": "Wie werde ich Betreiber?",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 67.40618904008147,
+            "r": 146.70074713212256,
+            "b": 62.80989443514477,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "2. Reguliert - und nun?",
+      "text": "Reguliert - und nun?",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 55.68309365654363,
+            "r": 114.38082439068347,
+            "b": 51.08679905160716,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "3. Betroffenheit",
+      "text": "Betroffenheit",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 43.95999827300602,
+            "r": 99.52342925184425,
+            "b": 39.36370366806955,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "4. Behörden",
+      "text": "Behörden",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 139.38466420548068,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/",
+      "text": "https://www.openkritis.de/betreiber/"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "3/7",
+      "text": "3/7"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 372.0585819975584,
+            "t": 577.7496212324044,
+            "r": 550.1343847276105,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS",
+      "text": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 564.9863616515731,
+            "r": 117.46424278586164,
+            "b": 560.3900670466364,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "5. Cybersecurity",
+      "text": "5. Cybersecurity",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 542.8427370382242,
+            "r": 787.5785594340657,
+            "b": 526.5233470497499,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            318
+          ]
+        }
+      ],
+      "orig": "Die Pflichten als KRITIS-Betreiber und NIS2-Einrichtung beginnen mit der Identifikation als Kritische Infrastruktur, gefolgt von Meldepflichten, der Umsetzung von CybersecurityMaßnahmen bis zu regelmäßigen Prüfungen und Nachweisen. Im eigenen Geltungsbereich müssen Unternehmen vom BSI vorgegebene Reifegrade umsetzen.",
+      "text": "Die Pflichten als KRITIS-Betreiber und NIS2-Einrichtung beginnen mit der Identifikation als Kritische Infrastruktur, gefolgt von Meldepflichten, der Umsetzung von CybersecurityMaßnahmen bis zu regelmäßigen Prüfungen und Nachweisen. Im eigenen Geltungsbereich müssen Unternehmen vom BSI vorgegebene Reifegrade umsetzen."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 385.8835155141919,
+            "r": 303.26818093274164,
+            "b": 381.28722090925544,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS-Konferenz 2026: Sicherheit mit NIS2 und KRITIS",
+      "text": "OpenKRITIS-Konferenz 2026: Sicherheit mit NIS2 und KRITIS",
+      "hyperlink": "https://www.openkritis.de/konferenz/"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 363.73989090084297,
+            "r": 322.1096002461816,
+            "b": 346.79714364096685,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Die Umsetzung von NIS2 und KRITIS-Dachgesetz bei Betreibern Konferenz ∙ Vorträge & Diskussion ∙ 28. September 2026 in Siegburg",
+      "text": "Die Umsetzung von NIS2 und KRITIS-Dachgesetz bei Betreibern Konferenz ∙ Vorträge & Diskussion ∙ 28. September 2026 in Siegburg"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/pictures/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 213.9447832223061,
+            "r": 160.87124218990957,
+            "b": 209.34848861736964,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "NIS2 und KRITIS-Dachgesetz",
+      "text": "NIS2 und KRITIS-Dachgesetz",
+      "hyperlink": "https://www.openkritis.de/r/OpenKRITIS_NIS2_KRITIS-Dachgesetz_Betreiber.pdf"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 191.80115860895717,
+            "r": 305.57820093465796,
+            "b": 174.85841134908105,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            107
+          ]
+        }
+      ],
+      "orig": "Die neue NIS2 und KRITIS-Regulierung in Deutschland ab 2026 Deutsch ∙ PDF ∙ März 2026 ∙ OpenKRITIS-Briefing",
+      "text": "Die neue NIS2 und KRITIS-Regulierung in Deutschland ab 2026 Deutsch ∙ PDF ∙ März 2026 ∙ OpenKRITIS-Briefing"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 153.78759718518245,
+            "r": 267.7121957939083,
+            "b": 146.7455989165992,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Pflichten regulierter Einrichtungen",
+      "text": "Pflichten regulierter Einrichtungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 123.45416376238973,
+            "r": 165.5072838021197,
+            "b": 117.96433957225645,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Wie werde ich Betreiber?",
+      "text": "Wie werde ich Betreiber?",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 97.36511246379268,
+            "r": 763.7812878813197,
+            "b": 81.0457224753186,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            276
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen sind für die Identifikation und Feststellung der Betroffenheit ihrer Anlagen und Schwellenwerte selbst verantwortlich. Die Analyse beginnt bei der Unternehmensgröße als regulierte Einrichtung (NIS2) oder möglichen KRITIS-Anlagen im eigenen Betrieb.",
+      "text": "Betreiber und Einrichtungen sind für die Identifikation und Feststellung der Betroffenheit ihrer Anlagen und Schwellenwerte selbst verantwortlich. Die Analyse beginnt bei der Unternehmensgröße als regulierte Einrichtung (NIS2) oder möglichen KRITIS-Anlagen im eigenen Betrieb."
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 63.4983924669059,
+            "r": 805.9518686452403,
+            "b": 47.17900247843181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            268
+          ]
+        }
+      ],
+      "orig": "1. Werden Schwellenwerte von Anlagen überschritten, müssen Betreiber diese Anlage beim BSI als Kritische Infrastruktur und sich selbst als KRITIS-Betreiber registrieren. Anlagen und Betreiber, die in KRITIS-Sektoren über 500 Tsd. Personen versorgen, sind meist KRITIS.",
+      "text": "Werden Schwellenwerte von Anlagen überschritten, müssen Betreiber diese Anlage beim BSI als Kritische Infrastruktur und sich selbst als KRITIS-Betreiber registrieren. Anlagen und Betreiber, die in KRITIS-Sektoren über 500 Tsd. Personen versorgen, sind meist KRITIS.",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 139.38466420548068,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/",
+      "text": "https://www.openkritis.de/betreiber/"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "4/7",
+      "text": "4/7"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 372.0585819975584,
+            "t": 577.7496212324044,
+            "r": 550.1343847276105,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS",
+      "text": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 564.9864795395683,
+            "r": 800.1717345684433,
+            "b": 548.6670895510943,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            191
+          ]
+        }
+      ],
+      "orig": "2. Mit NIS2 kommen viele Unternehmen als regulierte Einrichtungen hinzu: Hier werden nicht einzelne Anlagen speziell reguliert, sondern die gesamte (betroffene und registrierte) Legaleinheit.",
+      "text": "Mit NIS2 kommen viele Unternehmen als regulierte Einrichtungen hinzu: Hier werden nicht einzelne Anlagen speziell reguliert, sondern die gesamte (betroffene und registrierte) Legaleinheit.",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 528.0109005195445,
+            "r": 100.1187426241612,
+            "b": 523.3162350071552,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gibt es Listen?",
+      "text": "Gibt es Listen?",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 501.8120210838374,
+            "r": 792.9872622652487,
+            "b": 497.2157264789007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "Nein. Die Listen registrierter Betreiber und Anlagen sind nicht öffentlich. Die Bundesverwaltung spricht 2025 von etwa 2.000 registrierten Betreibern und über 30.000 Einrichtungen.",
+      "text": "Nein. Die Listen registrierter Betreiber und Anlagen sind nicht öffentlich. Die Bundesverwaltung spricht 2025 von etwa 2.000 registrierten Betreibern und über 30.000 Einrichtungen."
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 479.66839647048846,
+            "r": 43.3807926884669,
+            "b": 475.07210186555176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 455.6086508506187,
+            "r": 143.67099498350433,
+            "b": 450.1188266604854,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Reguliert - und nun?",
+      "text": "Reguliert - und nun?",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 429.51959955202165,
+            "r": 798.9912807091621,
+            "b": 413.20020956354756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            183
+          ]
+        }
+      ],
+      "orig": "Die Pflichten als Betreiber und Einrichtung beginnen unmittelbar nach Registrierung: Meldung von Sicherheitsvorfällen, Umsetzung der Maßnahmen und sowie Nachweise und Audits (KRITIS).",
+      "text": "Die Pflichten als Betreiber und Einrichtung beginnen unmittelbar nach Registrierung: Meldung von Sicherheitsvorfällen, Umsetzung der Maßnahmen und sowie Nachweise und Audits (KRITIS)."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 171.8260270035819,
+            "t": 395.6528795551353,
+            "r": 410.01754795826173,
+            "b": 379.3334895666608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "eigene Zusammenstellung KRITIS-Pflichten, Stand 2026 † - als Betreiber kritischer Anlagen",
+      "text": "eigene Zusammenstellung KRITIS-Pflichten, Stand 2026 † - als Betreiber kritischer Anlagen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 42.65745189527843,
+            "r": 43.3807926884669,
+            "b": 38.06115729034218,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 139.38466420548068,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/",
+      "text": "https://www.openkritis.de/betreiber/"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "5/7",
+      "text": "5/7"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 372.0585819975584,
+            "t": 577.7496212324044,
+            "r": 550.1343847276105,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS",
+      "text": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.3727065747826,
+            "r": 118.0385975856183,
+            "b": 558.8828823846493,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Geltungsbereich",
+      "text": "Geltungsbereich",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 538.283655276186,
+            "r": 806.2418915121981,
+            "b": 510.24116990417406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            358
+          ]
+        }
+      ],
+      "orig": "Der Geltungsbereich von regulierten Einrichtungen und Betreibern beschreibt in Unternehmen die notwendigen Prozesse und Technologien (IT und OT) und legt die Grenzen der Kritischen Infrastruktur fest: Bei Einrichtungen in der Regel das ganze Unternehmen, bei Betreibern die kritische Anlage (KRITIS). Der Geltungsbereich ist im weiteren Verlauf relevant für:",
+      "text": "Der Geltungsbereich von regulierten Einrichtungen und Betreibern beschreibt in Unternehmen die notwendigen Prozesse und Technologien (IT und OT) und legt die Grenzen der Kritischen Infrastruktur fest: Bei Einrichtungen in der Regel das ganze Unternehmen, bei Betreibern die kritische Anlage (KRITIS). Der Geltungsbereich ist im weiteren Verlauf relevant für:"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 492.69383989576136,
+            "r": 799.5051814043552,
+            "b": 488.0975452908251,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            163
+          ]
+        }
+      ],
+      "orig": "Cybersecurity und Resilienz-Maßnahmen: Der Geltungsbereich definiert die Grenzen der notwendigen Sicherheitsvorkehrungen, durch angemessene und wirksame Maßnahmen.",
+      "text": "Cybersecurity und Resilienz-Maßnahmen: Der Geltungsbereich definiert die Grenzen der notwendigen Sicherheitsvorkehrungen, durch angemessene und wirksame Maßnahmen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 480.970744512224,
+            "r": 769.1594645015608,
+            "b": 476.3744499072877,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            163
+          ]
+        }
+      ],
+      "orig": "Nachweisprüfungen: Bei der Prüfung der Sicherheitsvorkehrungen in den kritischen Anlagen definiert der Geltungsbereich den Scope der Prüfung für den KRITIS-Prüfer.",
+      "text": "Nachweisprüfungen: Bei der Prüfung der Sicherheitsvorkehrungen in den kritischen Anlagen definiert der Geltungsbereich den Scope der Prüfung für den KRITIS-Prüfer.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 458.827119898875,
+            "r": 665.2645480833795,
+            "b": 454.2308252939388,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            145
+          ]
+        }
+      ],
+      "orig": "Zum Geltungsbereich gehören weiterhin der Netzstrukturplan (NSP) der Anlage und eine Dokumentation der (externen) Schnittstellen und Datenflüsse.",
+      "text": "Zum Geltungsbereich gehören weiterhin der Netzstrukturplan (NSP) der Anlage und eine Dokumentation der (externen) Schnittstellen und Datenflüsse."
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 436.6834952855261,
+            "r": 43.3807926884669,
+            "b": 432.08720068058983,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 412.6237496656563,
+            "r": 151.13223452695712,
+            "b": 407.13392547552303,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Meldungen an das BSI",
+      "text": "Meldungen an das BSI",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 386.53469836705926,
+            "r": 369.6329090046281,
+            "b": 381.938403762123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "Betroffene Unternehmen müssen sich beim BSI über das BSI-Portal registrieren.",
+      "text": "Betroffene Unternehmen müssen sich beim BSI über das BSI-Portal registrieren."
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 364.3910737537103,
+            "r": 805.3565519383538,
+            "b": 348.07168376523623,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            355
+          ]
+        }
+      ],
+      "orig": "Nach der Registrierung unterliegen Einrichtungen und Betreiber einem Austausch mit dem BSI sowie Meldepflichten. Stören Angriffe oder Vorfälle die kritische Dienstleistung oder Versorgungssicherheit oder haben das Potenzial dazu, müssen Betreiber den Vorfall an das BSI melden. Bei Betreibern kritischer Anlagen muss zusätzlich an das BBK gemeldet werden.",
+      "text": "Nach der Registrierung unterliegen Einrichtungen und Betreiber einem Austausch mit dem BSI sowie Meldepflichten. Stören Angriffe oder Vorfälle die kritische Dienstleistung oder Versorgungssicherheit oder haben das Potenzial dazu, müssen Betreiber den Vorfall an das BSI melden. Bei Betreibern kritischer Anlagen muss zusätzlich an das BBK gemeldet werden."
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 330.52435375682353,
+            "r": 776.5830678129075,
+            "b": 314.2049637683499,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            263
+          ]
+        }
+      ],
+      "orig": "Die Informationspflichten an das BSI haben zugenommen - mit mehr Informationen zur IT/OT und tieferen Daten zu Angriffen und Schwachstellen. Ebenfalls müssen Betreiber bestimmter Sektoren den Einsatz von kritischen Komponenten im Betrieb vom BMI freigeben lassen.",
+      "text": "Die Informationspflichten an das BSI haben zugenommen - mit mehr Informationen zur IT/OT und tieferen Daten zu Angriffen und Schwachstellen. Ebenfalls müssen Betreiber bestimmter Sektoren den Einsatz von kritischen Komponenten im Betrieb vom BMI freigeben lassen."
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 296.6576337599372,
+            "r": 453.5415766268019,
+            "b": 292.06133915500095,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Die Informationspflichten an Kunden und die Öffentlichkeit haben mit NIS2 ebenfalls zugenommen.",
+      "text": "Die Informationspflichten an Kunden und die Öffentlichkeit haben mit NIS2 ebenfalls zugenommen."
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 274.51400914658825,
+            "r": 43.3807926884669,
+            "b": 269.917714541652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 249.8029804498551,
+            "r": 106.72774372761813,
+            "b": 244.31315625972184,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Cybersecurity",
+      "text": "Cybersecurity",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 223.71392915125807,
+            "r": 802.7972129852686,
+            "b": 207.39453916278444,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            277
+          ]
+        }
+      ],
+      "orig": "Mit der Betroffenheit als Kritische Infrastruktur sind Einrichtungen und Betreiber für Cybersecurity und Resilienz in ihrem Geltungsbereich (Unternehmen oder Anlage) verantwortlich. Dazu müssen Unternehmen wirksame Cybersecurity und Resilienz-Maßnahmen umsetzen, unter anderem:",
+      "text": "Mit der Betroffenheit als Kritische Infrastruktur sind Einrichtungen und Betreiber für Cybersecurity und Resilienz in ihrem Geltungsbereich (Unternehmen oder Anlage) verantwortlich. Dazu müssen Unternehmen wirksame Cybersecurity und Resilienz-Maßnahmen umsetzen, unter anderem:"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 189.84720915437174,
+            "r": 651.216164955319,
+            "b": 185.2509145494355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Sicherheitsmanagement: Management-Systeme wie ISMS und Risikomanagement zur Steuerung von Cyber-Risiken in den KRITIS-Anlagen.",
+      "text": "Sicherheitsmanagement: Management-Systeme wie ISMS und Risikomanagement zur Steuerung von Cyber-Risiken in den KRITIS-Anlagen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 178.1241137708339,
+            "r": 572.899373412465,
+            "b": 173.52781916589765,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            111
+          ]
+        }
+      ],
+      "orig": "Resilienz: Management-Systeme wie BCMS und Krisenmanagement zur Vorbereitung auf und Bewältigung von Notfällen.",
+      "text": "Resilienz: Management-Systeme wie BCMS und Krisenmanagement zur Vorbereitung auf und Bewältigung von Notfällen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 166.40101838729652,
+            "r": 596.4575040705822,
+            "b": 161.77249885147876,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            124
+          ]
+        }
+      ],
+      "orig": "Technologie: Maßnahmen nach Stand der Technik schützen die IT, OT, Infrastruktur und Betriebsorganisation bei Einrichtungen.",
+      "text": "Technologie: Maßnahmen nach Stand der Technik schützen die IT, OT, Infrastruktur und Betriebsorganisation bei Einrichtungen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 154.67792300375868,
+            "r": 786.2607285466605,
+            "b": 150.08162839882243,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            160
+          ]
+        }
+      ],
+      "orig": "Angriffserkennung: Systeme und Prozesse zur Detektion wie SIEM und IDS aber auch CSIRT und SOC ermöglichen eine angemessene Reaktion auf Störungen und Angriffe.",
+      "text": "Angriffserkennung: Systeme und Prozesse zur Detektion wie SIEM und IDS aber auch CSIRT und SOC ermöglichen eine angemessene Reaktion auf Störungen und Angriffe.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 142.95482762022084,
+            "r": 454.3149737174974,
+            "b": 138.3585330152846,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Reifegrade: Umsetzung von Security-Maßnahmen in definierten Reifegraden vom BSI (RUN).",
+      "text": "Reifegrade: Umsetzung von Security-Maßnahmen in definierten Reifegraden vom BSI (RUN).",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 120.81120300687189,
+            "r": 43.3807926884669,
+            "b": 116.21490840193565,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 96.75145738700212,
+            "r": 169.7258281968602,
+            "b": 91.26163319686884,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Prüfungen und Nachweise",
+      "text": "Prüfungen und Nachweise",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 70.80996244958442,
+            "r": 801.7948509984304,
+            "b": 54.34301609993145,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            234
+          ]
+        }
+      ],
+      "orig": "Betreiber kritischer Anlagen (KRITIS) müssen die Angemessenheit und Wirksamkeit der Schutzmaßnahmen in ihren Anlagen alle drei Jahre durch Prüfungen oder Audits nachweisen. Betreiber müssen die Prüfungen selbst planen und beauftragen.",
+      "text": "Betreiber kritischer Anlagen (KRITIS) müssen die Angemessenheit und Wirksamkeit der Schutzmaßnahmen in ihren Anlagen alle drei Jahre durch Prüfungen oder Audits nachweisen. Betreiber müssen die Prüfungen selbst planen und beauftragen."
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 139.38466420548068,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/",
+      "text": "https://www.openkritis.de/betreiber/"
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "6/7",
+      "text": "6/7"
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 372.0585819975584,
+            "t": 577.7496212324044,
+            "r": 550.1343847276105,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS",
+      "text": "Betreiber und Einrichtungen in KRITIS - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.9862833155767,
+            "r": 796.5337066255579,
+            "b": 548.6668933271026,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "In den Nachweisprüfungen untersuchen (in der Regel externe) Prüfer den KRITIS-Geltungsbereich, das dortige Risiko-Management und das Vorhandensein (Angemessenheit) und die Effektivität (Wirksamkeit) von Cybersecurity-Maßnahmen.",
+      "text": "In den Nachweisprüfungen untersuchen (in der Regel externe) Prüfer den KRITIS-Geltungsbereich, das dortige Risiko-Management und das Vorhandensein (Angemessenheit) und die Effektivität (Wirksamkeit) von Cybersecurity-Maßnahmen."
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 531.1195633186899,
+            "r": 679.1602779610041,
+            "b": 526.5232687137536,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "In regulierten Einrichtungen (NIS2) müssen die Maßnahmen wirksam umgesetzt und dokumentiert werden. Hier haben Aufsichtsbehörden Prüfbefugnisse.",
+      "text": "In regulierten Einrichtungen (NIS2) müssen die Maßnahmen wirksam umgesetzt und dokumentiert werden. Hier haben Aufsichtsbehörden Prüfbefugnisse."
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 508.9759387053409,
+            "r": 43.3807926884669,
+            "b": 504.3796441004047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 484.26491000860824,
+            "r": 78.53688591160514,
+            "b": 478.77508581847496,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Verstöße",
+      "text": "Verstöße",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 458.82714178687456,
+            "r": 800.4210510447368,
+            "b": 454.2308471819383,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            173
+          ]
+        }
+      ],
+      "orig": "Verstöße gegen NIS2 und KRITIS-Regularien ziehen als Ordnungswidrigkeiten Sanktionen nach sich - kommen Betreiber ihren Pflichten nicht nach, kann dies zu Bußgeldern führen.",
+      "text": "Verstöße gegen NIS2 und KRITIS-Regularien ziehen als Ordnungswidrigkeiten Sanktionen nach sich - kommen Betreiber ihren Pflichten nicht nach, kann dies zu Bußgeldern führen."
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 436.6835171735256,
+            "r": 43.3807926884669,
+            "b": 432.08722256858937,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 410.39305113328874,
+            "r": 185.92528823535025,
+            "b": 403.35105286470525,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 380.05961771049533,
+            "r": 73.58056747768259,
+            "b": 374.56979352036205,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Quellen",
+      "text": "Quellen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 353.97056641189874,
+            "r": 483.5718287842152,
+            "b": 349.3742718069625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "1. Gesetz zur Umsetzung der NIS-2-Richtlinie verkündet, 05.12.2025 Bundesgesetzblatt, BGBl.-Nr. 301",
+      "text": "Gesetz zur Umsetzung der NIS-2-Richtlinie verkündet, 05.12.2025 Bundesgesetzblatt, BGBl.-Nr. 301",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 342.2474710283609,
+            "r": 773.4894746566812,
+            "b": 337.65117642342466,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            167
+          ]
+        }
+      ],
+      "orig": "2. Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und die Sicherheit in der Informationstechnik von Einrichtungen, BSI-Gesetz vom 2. Dezember 2025",
+      "text": "Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und die Sicherheit in der Informationstechnik von Einrichtungen, BSI-Gesetz vom 2. Dezember 2025",
+      "hyperlink": "https://www.gesetze-im-internet.de/bsig_2025/",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 320.10384641501196,
+            "r": 115.15931112836819,
+            "b": 315.5075518100757,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 308.3807510314741,
+            "r": 161.73113946851018,
+            "b": 303.7844564265379,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Regulierte Unternehmen",
+      "text": "Regulierte Unternehmen",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 296.65765564793674,
+            "r": 69.43211576299505,
+            "b": 292.0613610430005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 274.5191192748057,
+            "r": 499.7419679639876,
+            "b": 257.5712837747119,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X",
+      "text": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X"
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 240.647311037701,
+            "r": 805.5041114908197,
+            "b": 224.32792104922692,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar.",
+      "text": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar."
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 206.78567928103212,
+            "r": 354.0377355507722,
+            "b": 201.56093916447617,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt",
+      "text": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt"
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 139.38466420548068,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/",
+      "text": "https://www.openkritis.de/betreiber/"
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "7/7",
+      "text": "7/7"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 54.529172456804396,
+            "t": 542.5607154021427,
+            "r": 421.4541446933904,
+            "b": 173.80068137907858,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 526.2687675839139,
+            "t": 542.6379196790556,
+            "r": 776.9568550818494,
+            "b": 173.90998798773552,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 32.24142720159499,
+            "t": 568.4214780595776,
+            "r": 814.4593941813185,
+            "b": 127.82895221617935,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 31.950362946753422,
+            "t": 512.1079384778299,
+            "r": 228.60888717994382,
+            "b": 400.5869479009723,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/40"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 31.77988125584102,
+            "t": 332.6734733419405,
+            "r": 228.30670032501945,
+            "b": 229.02581612061988,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/40"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.81501160147515,
+            "t": 374.22728693395277,
+            "r": 549.8470319668369,
+            "b": 58.67879025465311,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 59.988511148478594,
+              "t": 230.42111177312006,
+              "r": 88.93499090839427,
+              "b": 235.1157772855089,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Pflicht",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 211.22865315380574,
+              "t": 230.42111177312006,
+              "r": 255.83136743849997,
+              "b": 235.1157772855089,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Handlung",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 357.43153086793444,
+              "t": 224.55956408135114,
+              "r": 424.7680952497698,
+              "b": 241.36903614563823,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Verantwortlich (A) (R)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 435.524442303063,
+              "t": 224.55956408135114,
+              "r": 462.1354617978218,
+              "b": 241.36903614563823,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "Dritte (C/I)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 494.40450297072704,
+              "t": 230.42111177312006,
+              "r": 521.0562275535843,
+              "b": 235.1157772855089,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "Wann",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 256.6199912088267,
+              "r": 91.06183728442963,
+              "b": 261.2162858137634,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Identifikation",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 250.7584435170578,
+              "r": 223.8014693876114,
+              "b": 267.07783350553234,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Betroffenheit Einrichtung Betroffenheit Anlagen†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 256.6199912088267,
+              "r": 366.3663172961848,
+              "b": 261.2162858137634,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 250.7584435170578,
+              "r": 535.3590146687186,
+              "b": 267.07783350553234,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "jährlich bei Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 282.67131428335495,
+              "r": 91.63679821690256,
+              "b": 287.26760888829165,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Registrierung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 276.809766591586,
+              "r": 282.4830923860759,
+              "b": 293.1291565800601,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Registrierung Einrichtung beim BSI Registrierung Anlagen† beim BSI/BBK",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 282.67131428335495,
+              "r": 366.3663172961848,
+              "b": 287.26760888829165,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.7592120149476,
+              "t": 276.809766591586,
+              "r": 453.18540767906774,
+              "b": 293.1291565800601,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "BSI BBK",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 276.809766591586,
+              "r": 546.9396418270898,
+              "b": 307.45738427105096,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "nach Identifikation bei Änderungen nach Identifikation",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 308.7226373578832,
+              "r": 103.20216107144208,
+              "b": 313.3189319628194,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Geltungsbereich",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 308.7226373578832,
+              "r": 350.44041114593136,
+              "b": 313.3189319628194,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Anlagen und eigenen Scope definieren im Unternehmen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 302.86108966611425,
+              "r": 413.54363856313523,
+              "b": 319.18047965458834,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF Stabsstelle CISO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 314.5841850496521,
+              "r": 535.3590146687186,
+              "b": 319.18047965458834,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "bei Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 334.7739604324114,
+              "r": 88.16668059904212,
+              "b": 339.37025503734765,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Meldepflicht",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 328.9124127406425,
+              "r": 243.07028983357083,
+              "b": 345.23180272911657,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Erhebliche Sicherheits­ vorfälle Vorfälle†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 328.9124127406425,
+              "r": 392.71275627133195,
+              "b": 345.23180272911657,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF CISO SOC",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.7592120149476,
+              "t": 328.9124127406425,
+              "r": 453.18540767906774,
+              "b": 345.23180272911657,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "BSI BBK",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 334.7739604324114,
+              "r": 522.9134020957345,
+              "b": 339.37025503734765,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "unverzüglich",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 360.8252835069392,
+              "r": 93.9519060422154,
+              "b": 365.4215781118759,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Komponenten",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 360.8252835069392,
+              "r": 260.7414316118568,
+              "b": 365.4215781118759,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Freigabe Kritische Komponenten†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 354.9637358151707,
+              "r": 413.54363856313523,
+              "b": 371.2831258036448,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF Stabsstelle CISO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.7592120149476,
+              "t": 360.8252835069392,
+              "r": 451.44526068202254,
+              "b": 365.4215781118759,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "BMI",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 360.8252835069392,
+              "r": 515.6831422736683,
+              "b": 365.4215781118759,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "vor Einsatz",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 386.8766065814674,
+              "r": 93.36676894192308,
+              "b": 391.4729011864041,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Cybersecurity",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 386.8766065814674,
+              "r": 255.25640702705348,
+              "b": 391.4729011864041,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Maßnahmen §30 BSIG umsetzen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 381.0150588896985,
+              "r": 424.5136879411525,
+              "b": 397.334448878173,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF Fachbereiche CISO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 386.8766065814674,
+              "r": 515.388029655516,
+              "b": 391.4729011864041,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "regelmäßig",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 412.9279296559956,
+              "r": 73.69089665107813,
+              "b": 417.52422426093233,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Resilienz",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 407.0663819642267,
+              "r": 255.25640702705348,
+              "b": 423.38577195270125,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Maßnahmen §30 BSIG umsetzen Maßnahmen DachG umsetzen†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 407.0663819642267,
+              "r": 424.5136879411525,
+              "b": 423.38577195270125,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF Fachbereiche CISO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 412.9279296559956,
+              "r": 515.388029655516,
+              "b": 417.52422426093233,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "regelmäßig",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 433.11770503875493,
+              "r": 114.01956584806288,
+              "b": 437.71399964369164,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Angriffserkennung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 433.11770503875493,
+              "r": 274.95263186194785,
+              "b": 437.71399964369164,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Maßnahmen §31 BSIG und OH SzA†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 433.11770503875493,
+              "r": 415.879098828292,
+              "b": 437.71399964369164,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF SOC/CISO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 433.11770503875493,
+              "r": 515.388029655516,
+              "b": 437.71399964369164,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "regelmäßig",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 447.4459327297453,
+              "r": 99.742219621401,
+              "b": 452.042227334682,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Dokumentation",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 447.4459327297453,
+              "r": 234.1304122213033,
+              "b": 452.042227334682,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Nachweis Umsetzung BSIG",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 447.4459327297453,
+              "r": 392.71275627133195,
+              "b": 452.042227334682,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF CISO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.7592120149476,
+              "t": 447.4459327297453,
+              "r": 454.9153781956776,
+              "b": 452.042227334682,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "(BSI)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 447.4459327297453,
+              "r": 515.388029655516,
+              "b": 452.042227334682,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "regelmäßig",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 467.63570811250463,
+              "r": 78.32620022930554,
+              "b": 472.23200271744133,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Prüfungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 461.77416042073617,
+              "r": 275.80744407859214,
+              "b": 478.09355040921025,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Audit Umsetzung BSIG in Anlagen† Audit Umsetzung DachG in Anlagen†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 467.63570811250463,
+              "r": 395.01259958440244,
+              "b": 472.23200271744133,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF Prüfer",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.7592120149476,
+              "t": 461.77416042073617,
+              "r": 453.18540767906774,
+              "b": 478.09355040921025,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "BSI BBK",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 467.63570811250463,
+              "r": 515.962990587989,
+              "b": 472.23200271744133,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "alle 3 Jahre",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 487.82548349526394,
+              "r": 80.62095561477435,
+              "b": 492.42177810020064,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Reifegrade",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 487.82548349526394,
+              "r": 210.97424583216267,
+              "b": 492.42177810020064,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Reifegrade BSI RUN†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 487.82548349526394,
+              "r": 395.01259958440244,
+              "b": 492.42177810020064,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF Prüfer",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.7592120149476,
+              "t": 487.82548349526394,
+              "r": 447.97514295995677,
+              "b": 492.42177810020064,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "BSI",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 487.82548349526394,
+              "r": 511.9280882054749,
+              "b": 492.42177810020064,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "Prüfungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 502.1537111862548,
+              "r": 102.63228827498145,
+              "b": 506.75000579119103,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Betriebsführung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 502.1537111862548,
+              "r": 229.49510822625476,
+              "b": 506.75000579119103,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Betriebsführung im EnWG",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 502.1537111862548,
+              "r": 503.82775504119417,
+              "b": 506.75000579119103,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 5,
+            "text": "GF Betriebsführer BNetzA konstant",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 522.3434865690141,
+              "r": 78.32111219749851,
+              "b": 526.9397811739503,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Bußgelder",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 116.62978623942536,
+              "t": 516.4819388772452,
+              "r": 239.7273764236097,
+              "b": 532.8013288657193,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Sanktionen Verstöße BSIG Sanktionen Verstöße DachG†",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 353.0455431407684,
+              "t": 522.3434865690141,
+              "r": 366.3663172961848,
+              "b": 526.9397811739503,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "GF",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 431.7592120149476,
+              "t": 516.4819388772452,
+              "r": 453.18540767906774,
+              "b": 532.8013288657193,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "BSI BBK",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 468.51600066541465,
+              "t": 522.3434865690141,
+              "r": 508.7479951479085,
+              "b": 526.9397811739503,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "bei Anlaß",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 14,
+        "num_cols": 5,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 59.988511148478594,
+                "t": 230.42111177312006,
+                "r": 88.93499090839427,
+                "b": 235.1157772855089,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Pflicht",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 211.22865315380574,
+                "t": 230.42111177312006,
+                "r": 255.83136743849997,
+                "b": 235.1157772855089,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Handlung",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 357.43153086793444,
+                "t": 224.55956408135114,
+                "r": 424.7680952497698,
+                "b": 241.36903614563823,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Verantwortlich (A) (R)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 435.524442303063,
+                "t": 224.55956408135114,
+                "r": 462.1354617978218,
+                "b": 241.36903614563823,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "Dritte (C/I)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 494.40450297072704,
+                "t": 230.42111177312006,
+                "r": 521.0562275535843,
+                "b": 235.1157772855089,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "Wann",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 256.6199912088267,
+                "r": 91.06183728442963,
+                "b": 261.2162858137634,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Identifikation",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 250.7584435170578,
+                "r": 223.8014693876114,
+                "b": 267.07783350553234,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Betroffenheit Einrichtung Betroffenheit Anlagen†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 256.6199912088267,
+                "r": 366.3663172961848,
+                "b": 261.2162858137634,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 250.7584435170578,
+                "r": 535.3590146687186,
+                "b": 267.07783350553234,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "jährlich bei Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 282.67131428335495,
+                "r": 91.63679821690256,
+                "b": 287.26760888829165,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Registrierung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 276.809766591586,
+                "r": 282.4830923860759,
+                "b": 293.1291565800601,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Registrierung Einrichtung beim BSI Registrierung Anlagen† beim BSI/BBK",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 282.67131428335495,
+                "r": 366.3663172961848,
+                "b": 287.26760888829165,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.7592120149476,
+                "t": 276.809766591586,
+                "r": 453.18540767906774,
+                "b": 293.1291565800601,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "BSI BBK",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 276.809766591586,
+                "r": 546.9396418270898,
+                "b": 307.45738427105096,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "nach Identifikation bei Änderungen nach Identifikation",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 308.7226373578832,
+                "r": 103.20216107144208,
+                "b": 313.3189319628194,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Geltungsbereich",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 308.7226373578832,
+                "r": 350.44041114593136,
+                "b": 313.3189319628194,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Anlagen und eigenen Scope definieren im Unternehmen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 302.86108966611425,
+                "r": 413.54363856313523,
+                "b": 319.18047965458834,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF Stabsstelle CISO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 314.5841850496521,
+                "r": 535.3590146687186,
+                "b": 319.18047965458834,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "bei Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 334.7739604324114,
+                "r": 88.16668059904212,
+                "b": 339.37025503734765,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Meldepflicht",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 328.9124127406425,
+                "r": 243.07028983357083,
+                "b": 345.23180272911657,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Erhebliche Sicherheits­ vorfälle Vorfälle†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 328.9124127406425,
+                "r": 392.71275627133195,
+                "b": 345.23180272911657,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF CISO SOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.7592120149476,
+                "t": 328.9124127406425,
+                "r": 453.18540767906774,
+                "b": 345.23180272911657,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "BSI BBK",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 334.7739604324114,
+                "r": 522.9134020957345,
+                "b": 339.37025503734765,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "unverzüglich",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 360.8252835069392,
+                "r": 93.9519060422154,
+                "b": 365.4215781118759,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Komponenten",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 360.8252835069392,
+                "r": 260.7414316118568,
+                "b": 365.4215781118759,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Freigabe Kritische Komponenten†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 354.9637358151707,
+                "r": 413.54363856313523,
+                "b": 371.2831258036448,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF Stabsstelle CISO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.7592120149476,
+                "t": 360.8252835069392,
+                "r": 451.44526068202254,
+                "b": 365.4215781118759,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "BMI",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 360.8252835069392,
+                "r": 515.6831422736683,
+                "b": 365.4215781118759,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "vor Einsatz",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 386.8766065814674,
+                "r": 93.36676894192308,
+                "b": 391.4729011864041,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Cybersecurity",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 386.8766065814674,
+                "r": 255.25640702705348,
+                "b": 391.4729011864041,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Maßnahmen §30 BSIG umsetzen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 381.0150588896985,
+                "r": 424.5136879411525,
+                "b": 397.334448878173,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF Fachbereiche CISO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 386.8766065814674,
+                "r": 515.388029655516,
+                "b": 391.4729011864041,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "regelmäßig",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 412.9279296559956,
+                "r": 73.69089665107813,
+                "b": 417.52422426093233,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Resilienz",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 407.0663819642267,
+                "r": 255.25640702705348,
+                "b": 423.38577195270125,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Maßnahmen §30 BSIG umsetzen Maßnahmen DachG umsetzen†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 407.0663819642267,
+                "r": 424.5136879411525,
+                "b": 423.38577195270125,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF Fachbereiche CISO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 412.9279296559956,
+                "r": 515.388029655516,
+                "b": 417.52422426093233,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "regelmäßig",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 433.11770503875493,
+                "r": 114.01956584806288,
+                "b": 437.71399964369164,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Angriffserkennung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 433.11770503875493,
+                "r": 274.95263186194785,
+                "b": 437.71399964369164,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Maßnahmen §31 BSIG und OH SzA†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 433.11770503875493,
+                "r": 415.879098828292,
+                "b": 437.71399964369164,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF SOC/CISO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 433.11770503875493,
+                "r": 515.388029655516,
+                "b": 437.71399964369164,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "regelmäßig",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 447.4459327297453,
+                "r": 99.742219621401,
+                "b": 452.042227334682,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Dokumentation",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 447.4459327297453,
+                "r": 234.1304122213033,
+                "b": 452.042227334682,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Nachweis Umsetzung BSIG",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 447.4459327297453,
+                "r": 392.71275627133195,
+                "b": 452.042227334682,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF CISO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.7592120149476,
+                "t": 447.4459327297453,
+                "r": 454.9153781956776,
+                "b": 452.042227334682,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "(BSI)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 447.4459327297453,
+                "r": 515.388029655516,
+                "b": 452.042227334682,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "regelmäßig",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 467.63570811250463,
+                "r": 78.32620022930554,
+                "b": 472.23200271744133,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Prüfungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 461.77416042073617,
+                "r": 275.80744407859214,
+                "b": 478.09355040921025,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Audit Umsetzung BSIG in Anlagen† Audit Umsetzung DachG in Anlagen†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 467.63570811250463,
+                "r": 395.01259958440244,
+                "b": 472.23200271744133,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF Prüfer",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.7592120149476,
+                "t": 461.77416042073617,
+                "r": 453.18540767906774,
+                "b": 478.09355040921025,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "BSI BBK",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 467.63570811250463,
+                "r": 515.962990587989,
+                "b": 472.23200271744133,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "alle 3 Jahre",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 487.82548349526394,
+                "r": 80.62095561477435,
+                "b": 492.42177810020064,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Reifegrade",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 487.82548349526394,
+                "r": 210.97424583216267,
+                "b": 492.42177810020064,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Reifegrade BSI RUN†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 487.82548349526394,
+                "r": 395.01259958440244,
+                "b": 492.42177810020064,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF Prüfer",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.7592120149476,
+                "t": 487.82548349526394,
+                "r": 447.97514295995677,
+                "b": 492.42177810020064,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "BSI",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 487.82548349526394,
+                "r": 511.9280882054749,
+                "b": 492.42177810020064,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "Prüfungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 502.1537111862548,
+                "r": 102.63228827498145,
+                "b": 506.75000579119103,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Betriebsführung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 502.1537111862548,
+                "r": 229.49510822625476,
+                "b": 506.75000579119103,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Betriebsführung im EnWG",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 502.1537111862548,
+                "r": 503.82775504119417,
+                "b": 506.75000579119103,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 5,
+              "text": "GF Betriebsführer BNetzA konstant",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 502.1537111862548,
+                "r": 503.82775504119417,
+                "b": 506.75000579119103,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 5,
+              "text": "GF Betriebsführer BNetzA konstant",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 502.1537111862548,
+                "r": 503.82775504119417,
+                "b": 506.75000579119103,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 5,
+              "text": "GF Betriebsführer BNetzA konstant",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 522.3434865690141,
+                "r": 78.32111219749851,
+                "b": 526.9397811739503,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Bußgelder",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 116.62978623942536,
+                "t": 516.4819388772452,
+                "r": 239.7273764236097,
+                "b": 532.8013288657193,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Sanktionen Verstöße BSIG Sanktionen Verstöße DachG†",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 353.0455431407684,
+                "t": 522.3434865690141,
+                "r": 366.3663172961848,
+                "b": 526.9397811739503,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "GF",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 431.7592120149476,
+                "t": 516.4819388772452,
+                "r": 453.18540767906774,
+                "b": 532.8013288657193,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "BSI BBK",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 468.51600066541465,
+                "t": 522.3434865690141,
+                "r": 508.7479951479085,
+                "b": 526.9397811739503,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "bei Anlaß",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 7
+    }
+  }
+}

@@ -1,0 +1,1259 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Hilfsmittel_Empfehlung_ApplicationDeliveryController_v1",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 16321191391384708615,
+    "filename": "Hilfsmittel_Empfehlung_ApplicationDeliveryController_v1.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 106.7,
+            "t": 700.649,
+            "r": 492.8599999999999,
+            "b": 652.649,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "Empfehlungen für den sicheren Einsatz von Application Delivery Controllern",
+      "text": "Empfehlungen für den sicheren Einsatz von Application Delivery Controllern",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 256.1,
+            "t": 652.825,
+            "r": 339.3799999999999,
+            "b": 638.425,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "(z. B. Citrix ADC)",
+      "text": "(z. B. Citrix ADC)"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 228.00000000000003,
+            "t": 632.605,
+            "r": 367.5239999999999,
+            "b": 618.7338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "Hilfsmittel IT-Grundschutz",
+      "text": "Hilfsmittel IT-Grundschutz"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.8,
+            "t": 612.469,
+            "r": 525.7340000000003,
+            "b": 360.7138562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1444
+          ]
+        }
+      ],
+      "orig": "Application Delivery Controller (ADC) sind Netzkomponenten, die wie ein Loadbalancer mit zusätzlichen (Kern-)Funktionen unterschiedliche Sicherheitsleistungen wie beispielsweise Transportverschlüsselung und betriebliche Funktionen (z. B. Lastverteilung) in einem IT-System vereinen. Durch diese Funktionsvielfalt und oft nicht klar abgegrenzten Aufgaben hinsichtlich ihres korrekten und sicheren Einsatzes stellen ADC eine Herausforderung dar. Daher sind die Komponenten bereits in der Planung (NET.1.1.A13 Netzplanung) besonders zu berücksichtigen, weil sie ansonsten ein Sicherheitsproblem erzeugen können. Besonders bei den über das Internet erreichbaren ADC-Systemen sind elementare Absicherungsmaßnahmen zu treffen. Durch die Aggregation unterschiedlicher Sicherheitsund betrieblicher Funktionen auf einem IT-System (vgl. Abbildung 1) führt eine nicht sachgerechte Adressierung von z. B. Gefährdungen durch Softwareschwachstellen (vgl. ITGrundschutz Kompendium G0.28 Software-Schwachstellen oder -Fehler) durch wechselseitige Abhängigkeiten der Komponenten schnell zu erheblichen Sicherheitslücken. In der Folge kann dies dazu führen, dass die weiteren IT-Grundschutz-Anforderungen vorgesehenen flankierenden Sicherheitsmaßnahmen aufgrund der engen Integration nicht mehr greifen (u.a. NET.1.1.A10 DMZ-Segmentierung für Zugriffe aus dem Internet (B), NET.1.1.A11 Absicherung eingehender Kommunikation vom Internet in das interne Netz (B) ,",
+      "text": "Application Delivery Controller (ADC) sind Netzkomponenten, die wie ein Loadbalancer mit zusätzlichen (Kern-)Funktionen unterschiedliche Sicherheitsleistungen wie beispielsweise Transportverschlüsselung und betriebliche Funktionen (z. B. Lastverteilung) in einem IT-System vereinen. Durch diese Funktionsvielfalt und oft nicht klar abgegrenzten Aufgaben hinsichtlich ihres korrekten und sicheren Einsatzes stellen ADC eine Herausforderung dar. Daher sind die Komponenten bereits in der Planung (NET.1.1.A13 Netzplanung) besonders zu berücksichtigen, weil sie ansonsten ein Sicherheitsproblem erzeugen können. Besonders bei den über das Internet erreichbaren ADC-Systemen sind elementare Absicherungsmaßnahmen zu treffen. Durch die Aggregation unterschiedlicher Sicherheitsund betrieblicher Funktionen auf einem IT-System (vgl. Abbildung 1) führt eine nicht sachgerechte Adressierung von z. B. Gefährdungen durch Softwareschwachstellen (vgl. ITGrundschutz Kompendium G0.28 Software-Schwachstellen oder -Fehler) durch wechselseitige Abhängigkeiten der Komponenten schnell zu erheblichen Sicherheitslücken. In der Folge kann dies dazu führen, dass die weiteren IT-Grundschutz-Anforderungen vorgesehenen flankierenden Sicherheitsmaßnahmen aufgrund der engen Integration nicht mehr greifen (u.a. NET.1.1.A10 DMZ-Segmentierung für Zugriffe aus dem Internet (B), NET.1.1.A11 Absicherung eingehender Kommunikation vom Internet in das interne Netz (B) ,"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.80000000000001,
+            "t": 359.94500000000005,
+            "r": 303.18199999999996,
+            "b": 346.0738562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "NET.1.1.A4 Netztrennung in Sicherheitszonen (B) ).",
+      "text": "NET.1.1.A4 Netztrennung in Sicherheitszonen (B) )."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 69.6,
+            "t": 98.43899999999996,
+            "r": 254.5400000000001,
+            "b": 86.91748898216156,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 784.7049999999999,
+            "r": 526.2279999999997,
+            "b": 698.8338562434417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            45,
+            543
+          ]
+        }
+      ],
+      "orig": "Abbildung 1: risikobehaftete ADC Integration Aus Sicht des IT-Grundschutzes erfüllt ein ADC zunächst die Funktion eines Loadbalancers bzw. eines Proxies oder einer Web Application Firewall (WAF). Diese Komponenten sind besonders zu schützen, da der (HTTP-) Datenverkehr durch und zwischen Komponenten oft im Klartext transportiert bzw. verarbeitet oder an dahinterliegende Systeme weitergeleitet wird. In solchen Fällen fließen auch ungeschützt kritische Daten wie z. B. Zugangsdaten/Benutzerkennungen in großem Umfang über diese  Komponenten.",
+      "text": "Abbildung 1: risikobehaftete ADC Integration Aus Sicht des IT-Grundschutzes erfüllt ein ADC zunächst die Funktion eines Loadbalancers bzw. eines Proxies oder einer Web Application Firewall (WAF). Diese Komponenten sind besonders zu schützen, da der (HTTP-) Datenverkehr durch und zwischen Komponenten oft im Klartext transportiert bzw. verarbeitet oder an dahinterliegende Systeme weitergeleitet wird. In solchen Fällen fließen auch ungeschützt kritische Daten wie z. B. Zugangsdaten/Benutzerkennungen in großem Umfang über diese  Komponenten."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 491.0,
+            "t": 67.26599999999996,
+            "r": 538.679,
+            "b": 56.46600000000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 1 von 4",
+      "text": "Seite 1 von 4"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 692.8489999999999,
+            "r": 539.8919999999999,
+            "b": 650.0338562434417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            249
+          ]
+        }
+      ],
+      "orig": "Wird ein ADC als Loadbalancer eingesetzt, muss vielfach eine Risikoanalyse durchgeführt werden, weil ADCs als Zielobjekte häufig mit den bestehenden IT-Grundschutz-Bausteinen des IT-Grundschutz-Kompendiums nicht hinreichend modelliert werden können.",
+      "text": "Wird ein ADC als Loadbalancer eingesetzt, muss vielfach eine Risikoanalyse durchgeführt werden, weil ADCs als Zielobjekte häufig mit den bestehenden IT-Grundschutz-Bausteinen des IT-Grundschutz-Kompendiums nicht hinreichend modelliert werden können."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 643.949,
+            "r": 524.8559999999998,
+            "b": 601.1338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            206
+          ]
+        }
+      ],
+      "orig": "Wird ein ADC als WAF eingesetzt, muss eine Risikoanalyse durchgeführt werden, weil diese Zielobjekte mit den bestehenden Bausteinen des IT-Grundschutz-Kompendiums nicht hinreichend abgebildet werden können.",
+      "text": "Wird ein ADC als WAF eingesetzt, muss eine Risikoanalyse durchgeführt werden, weil diese Zielobjekte mit den bestehenden Bausteinen des IT-Grundschutz-Kompendiums nicht hinreichend abgebildet werden können."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 595.149,
+            "r": 505.888,
+            "b": 566.7338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            134
+          ]
+        }
+      ],
+      "orig": "Wird ein ADC stattdessen als Sicherheits-Proxy eingesetzt, so kann er mit dem Baustein NET.3.2 Firewall hinreichend abgebildet werden.",
+      "text": "Wird ein ADC stattdessen als Sicherheits-Proxy eingesetzt, so kann er mit dem Baustein NET.3.2 Firewall hinreichend abgebildet werden."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 560.505,
+            "r": 540.792,
+            "b": 489.0338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            404
+          ]
+        }
+      ],
+      "orig": "Zudem besteht die Möglichkeit, TLS-Verbindungen auf dem ADC zu terminieren. Hierbei sollte bei einer Modellierung nochmals überprüft werden, ob der TLS-Kanal in der Gesamtarchitektur lediglich der Übertragungssicherheit (Transportverschlüsselung) der WebAnwendung (APP.3.2.A11 V erschlüsselung über TLS (B)) oder als VPN (NET.1.1.A11 Sichere Anbindung eines externen Netzes (S) ) dient bzw. genutzt wird.",
+      "text": "Zudem besteht die Möglichkeit, TLS-Verbindungen auf dem ADC zu terminieren. Hierbei sollte bei einer Modellierung nochmals überprüft werden, ob der TLS-Kanal in der Gesamtarchitektur lediglich der Übertragungssicherheit (Transportverschlüsselung) der WebAnwendung (APP.3.2.A11 V erschlüsselung über TLS (B)) oder als VPN (NET.1.1.A11 Sichere Anbindung eines externen Netzes (S) ) dient bzw. genutzt wird."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 482.90500000000003,
+            "r": 539.592,
+            "b": 411.43385624344177,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            411
+          ]
+        }
+      ],
+      "orig": "ADCs sollten immer in einer Demilitarisierten Zone (DMZ) verortet sein (siehe NET.1.1.A10 DMZ-Segmentierung für Zugriffe aus dem Internet ) . Außerdem sollten sie ausschließlich über ein separates VPN-Gateway erreichbar sein (siehe NET.1.1.A11 Absicherung eingehender Kommunikation vom Internet in das interne Netz ). Kann dies nicht sichergestellt werden, dürfen ADC nach außen keine internen Dienste anbieten.",
+      "text": "ADCs sollten immer in einer Demilitarisierten Zone (DMZ) verortet sein (siehe NET.1.1.A10 DMZ-Segmentierung für Zugriffe aus dem Internet ) . Außerdem sollten sie ausschließlich über ein separates VPN-Gateway erreichbar sein (siehe NET.1.1.A11 Absicherung eingehender Kommunikation vom Internet in das interne Netz ). Kann dies nicht sichergestellt werden, dürfen ADC nach außen keine internen Dienste anbieten."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 405.20500000000004,
+            "r": 530.2839999999998,
+            "b": 304.625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            549
+          ]
+        }
+      ],
+      "orig": "Wird der ADC als VPN-Gateway genutzt, muss dafür der Baustein NET.3.3 VPN angewendet werden. In diesem Einsatzszenario ist die TLS-Verbindung für den ADC mit dem Baustein NET.3.3 VPN abzusichern. Daraus ergibt sich auch, dass eine Authentisierung der VPNBenutzer VOR bzw. BEIM Verbindungsaufbau geschehen muss. Keinesfalls dürfen nicht authentisierte Benutzer Zugang zu den dahinterliegenden (HTTP-) Servern erlangen können. Zudem ist der Client für den Fernzugriff abzusichern (SYS.3.1.A9, NET.3.3.A3 Sichere Installation von VPN-Endgeräten (B) ) .",
+      "text": "Wird der ADC als VPN-Gateway genutzt, muss dafür der Baustein NET.3.3 VPN angewendet werden. In diesem Einsatzszenario ist die TLS-Verbindung für den ADC mit dem Baustein NET.3.3 VPN abzusichern. Daraus ergibt sich auch, dass eine Authentisierung der VPNBenutzer VOR bzw. BEIM Verbindungsaufbau geschehen muss. Keinesfalls dürfen nicht authentisierte Benutzer Zugang zu den dahinterliegenden (HTTP-) Servern erlangen können. Zudem ist der Client für den Fernzugriff abzusichern (SYS.3.1.A9, NET.3.3.A3 Sichere Installation von VPN-Endgeräten (B) ) ."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 298.505,
+            "r": 533.7639999999998,
+            "b": 97.43385624344171,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1214
+          ]
+        }
+      ],
+      "orig": "Um ADCs sicher einsetzen zu können, muss bereits in der Planungsphase der Einsatzzweck definiert und die Einsatzszenarien festgelegt werden. Denn die Art der Verwendung bestimmt auch die Funktionen, die von einem ADC bereitgestellt werden. Diese Funktionen sind bei der Modellierung eines ADC nach IT-Grundschutz entscheidend. Werden beispielsweise unterschiedliche Funktionen (z. B. VPN-Gateway, Loadbalancing und Sicherheits-Proxy) auf einem einzelnen Gerät vereint, kann dies dazu führen, dass einige Anforderungen aus dem ITGrundschutz-Kompendium nicht ohne Weiteres erfüllt werden können (NET.1.1.A18 P-A-PStruktur für die Internet-Anbindung (S) ). Zudem kann es passieren, dass eine Architektur entsteht, die nicht hinreichend mit den vorliegenden IT-Grundschutz-Bausteinen aus dem ITGrundschutz-Kompendium abbildbar ist und somit eine Risikoanalyse erforderlich macht. Es ist auch zu beachten, dass mit der Integration von unterschiedlichen Funktionen bzw. (ITGrundschutz-Baustein-) Komponenten auf einem IT-System auch das Gefährdungspotenzial, dem ein solch integriertes IT-System ausgesetzt ist, steigt. Eine solche Konfiguration kann besonders risikobehaftet sein, wie das folgende Praxisbeispiel zeigt.",
+      "text": "Um ADCs sicher einsetzen zu können, muss bereits in der Planungsphase der Einsatzzweck definiert und die Einsatzszenarien festgelegt werden. Denn die Art der Verwendung bestimmt auch die Funktionen, die von einem ADC bereitgestellt werden. Diese Funktionen sind bei der Modellierung eines ADC nach IT-Grundschutz entscheidend. Werden beispielsweise unterschiedliche Funktionen (z. B. VPN-Gateway, Loadbalancing und Sicherheits-Proxy) auf einem einzelnen Gerät vereint, kann dies dazu führen, dass einige Anforderungen aus dem ITGrundschutz-Kompendium nicht ohne Weiteres erfüllt werden können (NET.1.1.A18 P-A-PStruktur für die Internet-Anbindung (S) ). Zudem kann es passieren, dass eine Architektur entsteht, die nicht hinreichend mit den vorliegenden IT-Grundschutz-Bausteinen aus dem ITGrundschutz-Kompendium abbildbar ist und somit eine Risikoanalyse erforderlich macht. Es ist auch zu beachten, dass mit der Integration von unterschiedlichen Funktionen bzw. (ITGrundschutz-Baustein-) Komponenten auf einem IT-System auch das Gefährdungspotenzial, dem ein solch integriertes IT-System ausgesetzt ist, steigt. Eine solche Konfiguration kann besonders risikobehaftet sein, wie das folgende Praxisbeispiel zeigt."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 67.15099999999995,
+            "r": 153.613,
+            "b": 56.74764218258133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "August 2020 - Version 1.0",
+      "text": "August 2020 - Version 1.0"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 491.0,
+            "t": 67.15099999999995,
+            "r": 538.7689999999999,
+            "b": 56.74764218258133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 2 von 4",
+      "text": "Seite 2 von 4"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.8,
+            "t": 784.8323,
+            "r": 154.84899999999996,
+            "b": 765.5123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Praxisbeispiel",
+      "text": "Praxisbeispiel",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.8,
+            "t": 759.405,
+            "r": 536.5239999999999,
+            "b": 673.5338562434417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            494
+          ]
+        }
+      ],
+      "orig": "Um den Jahreswechsel 2019/2020 erlangte eine Schwachstelle in den ADC-Produkten des Herstellers Citrix große Aufmerksamkeit in der Presse. Hierbei war es durch einen DirectoryTraversal-Angriff auf den HTTP-Server im Citrix ADC möglich, auf kritische Konfigurationsdateien zuzugreifen und mit diesen Informationen die Kontrolle über den ADC zu erlangen. Es handelte sich um eine Softwareschwachstelle ( siehe G 0.28 SoftwareSchwachstellen oder -Fehler ) in einer besonders kritischen Komponente.",
+      "text": "Um den Jahreswechsel 2019/2020 erlangte eine Schwachstelle in den ADC-Produkten des Herstellers Citrix große Aufmerksamkeit in der Presse. Hierbei war es durch einen DirectoryTraversal-Angriff auf den HTTP-Server im Citrix ADC möglich, auf kritische Konfigurationsdateien zuzugreifen und mit diesen Informationen die Kontrolle über den ADC zu erlangen. Es handelte sich um eine Softwareschwachstelle ( siehe G 0.28 SoftwareSchwachstellen oder -Fehler ) in einer besonders kritischen Komponente."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.8,
+            "t": 667.405,
+            "r": 538.2519999999997,
+            "b": 495.13385624344176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1047
+          ]
+        }
+      ],
+      "orig": "Da viele im Internet erreichbare Citrix ADC sowohl als VPN-Gateway als auch als SicherheitsProxy, Loadbalancer und ALG (Application Level Gateway) gleichzeitig eingesetzt wurden (vgl. Abbildung 1), war das Schadenspotenzial entsprechend hoch. Die Schwachstelle konnte nur umfangreich ausgenutzt werden, weil die 'VPN-Verbindung', das heißt, die TLS-Verbindung nicht authentisiert aufgebaut worden war. Vielmehr konnten beliebige IT-Systeme im Internet eine TLS-Verbindung zum ADC aufbauen. Eine Benutzer-Authentisierung durch den HTTPServer erfolgte erst im Anschluss innerhalb des TLS-Kanals. Eine Authentisierung bereits beim Aufbau der TLS-Verbindung hätte eine mögliche Ausnutzung der Schwachstelle deutlich begrenzt, da diese ausschließlich zuvor authentisierten Angreifern verfügbar gewesen wäre. Eine Erreichbarkeit des verwundbaren Webservers über bekannte SchwachstellenSuchmaschinen und eine damit einhergehende Ausnutzung durch Angreifer, die nicht ohnehin bereits im Besitz gültiger Zugangsdaten sind, wäre damit nicht möglich gewesen.",
+      "text": "Da viele im Internet erreichbare Citrix ADC sowohl als VPN-Gateway als auch als SicherheitsProxy, Loadbalancer und ALG (Application Level Gateway) gleichzeitig eingesetzt wurden (vgl. Abbildung 1), war das Schadenspotenzial entsprechend hoch. Die Schwachstelle konnte nur umfangreich ausgenutzt werden, weil die 'VPN-Verbindung', das heißt, die TLS-Verbindung nicht authentisiert aufgebaut worden war. Vielmehr konnten beliebige IT-Systeme im Internet eine TLS-Verbindung zum ADC aufbauen. Eine Benutzer-Authentisierung durch den HTTPServer erfolgte erst im Anschluss innerhalb des TLS-Kanals. Eine Authentisierung bereits beim Aufbau der TLS-Verbindung hätte eine mögliche Ausnutzung der Schwachstelle deutlich begrenzt, da diese ausschließlich zuvor authentisierten Angreifern verfügbar gewesen wäre. Eine Erreichbarkeit des verwundbaren Webservers über bekannte SchwachstellenSuchmaschinen und eine damit einhergehende Ausnutzung durch Angreifer, die nicht ohnehin bereits im Besitz gültiger Zugangsdaten sind, wäre damit nicht möglich gewesen."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.8,
+            "t": 482.6323,
+            "r": 183.8451,
+            "b": 463.3123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Hilfreiche Fragen:",
+      "text": "Hilfreiche Fragen:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 457.305,
+            "r": 530.4519999999997,
+            "b": 429.0338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            125
+          ]
+        }
+      ],
+      "orig": "1) Falls Web-Anwendungen oder Terminalserver von außen erreichbar gemacht werden: Wer sind die hierfür vorgesehenen Anwender?",
+      "text": "Falls Web-Anwendungen oder Terminalserver von außen erreichbar gemacht werden: Wer sind die hierfür vorgesehenen Anwender?",
+      "enumerated": true,
+      "marker": "1)"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 422.805,
+            "r": 481.43199999999985,
+            "b": 394.5338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "2) Sind INTERNE Anwendungen ausschließlich über dedizierte VPN-Gateways erreichbar?",
+      "text": "Sind INTERNE Anwendungen ausschließlich über dedizierte VPN-Gateways erreichbar?",
+      "enumerated": true,
+      "marker": "2)"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 388.40500000000003,
+            "r": 494.6319999999996,
+            "b": 360.13385624344176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "3) Haben Dritte, die nicht zur eigenen Organisation gehören oder externe/nicht ausdrücklich legitimierte Endgeräte nutzen, Zugriff auf interne Anwendungen?",
+      "text": "Haben Dritte, die nicht zur eigenen Organisation gehören oder externe/nicht ausdrücklich legitimierte Endgeräte nutzen, Zugriff auf interne Anwendungen?",
+      "enumerated": true,
+      "marker": "3)"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 353.90500000000003,
+            "r": 536.8359999999996,
+            "b": 325.63385624344176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            156
+          ]
+        }
+      ],
+      "orig": "4) Wurden SYS.3.1.A9 (Sicherer Fernzugriff) und NET.3.3.A3 (Sichere Installation von VPNEndgeräten) für alle Fernzugriffe auf interne Anwendungen umgesetzt?",
+      "text": "Wurden SYS.3.1.A9 (Sicherer Fernzugriff) und NET.3.3.A3 (Sichere Installation von VPNEndgeräten) für alle Fernzugriffe auf interne Anwendungen umgesetzt?",
+      "enumerated": true,
+      "marker": "4)"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 319.505,
+            "r": 513.1919999999998,
+            "b": 291.2338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            115
+          ]
+        }
+      ],
+      "orig": "5) Erfüllt der ADC übergeordnete Vorgaben der Institution (z. B. Sicherheitsrichtlinie, Datenschutzkriterien etc.)?",
+      "text": "Erfüllt der ADC übergeordnete Vorgaben der Institution (z. B. Sicherheitsrichtlinie, Datenschutzkriterien etc.)?",
+      "enumerated": true,
+      "marker": "5)"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 285.149,
+            "r": 527.8959999999995,
+            "b": 256.6965341028332,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "6) Wurden Einsatzzweck und Einsatzszenarien vor der Beschaffung des ADC definiert und festgelegt?",
+      "text": "Wurden Einsatzzweck und Einsatzszenarien vor der Beschaffung des ADC definiert und festgelegt?",
+      "enumerated": true,
+      "marker": "6)"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 250.60500000000002,
+            "r": 499.3719999999997,
+            "b": 222.3338562434418,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            101
+          ]
+        }
+      ],
+      "orig": "7) Wurden die IT-Systeme nach ihrem Einsatzzweck und Aufgaben betrachtet und entsprechend modelliert?",
+      "text": "Wurden die IT-Systeme nach ihrem Einsatzzweck und Aufgaben betrachtet und entsprechend modelliert?",
+      "enumerated": true,
+      "marker": "7)"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.8,
+            "t": 216.10500000000002,
+            "r": 526.1960000000004,
+            "b": 187.84318677859392,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            168
+          ]
+        }
+      ],
+      "orig": "8) Nutzt Ihre Behörde die Netze des Bundes? In diesem Fall gelten unabhängig von dieser Orientierungshilfe der Mindeststandard Bund 'Nutzerpflichten NdB' sowie die VSA.",
+      "text": "Nutzt Ihre Behörde die Netze des Bundes? In diesem Fall gelten unabhängig von dieser Orientierungshilfe der Mindeststandard Bund 'Nutzerpflichten NdB' sowie die VSA.",
+      "enumerated": true,
+      "marker": "8)"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.8,
+            "t": 67.15099999999995,
+            "r": 153.613,
+            "b": 56.74764218258133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "August 2020 - Version 1.0",
+      "text": "August 2020 - Version 1.0"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 491.0,
+            "t": 67.15099999999995,
+            "r": 538.7689999999999,
+            "b": 56.74764218258133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 3 von 4",
+      "text": "Seite 3 von 4"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 331.089,
+            "r": 475.2599999999999,
+            "b": 319.37861175236094,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Abbildung 2: Beispiel einer Grundschutz-konformen ADC-Integration für den erhöhten Schutzbedarf",
+      "text": "Abbildung 2: Beispiel einer Grundschutz-konformen ADC-Integration für den erhöhten Schutzbedarf"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 300.80499999999995,
+            "r": 536.6199999999998,
+            "b": 252.53385624344173,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "Für Fragen stehen Ihnen die Sicherheitsberatung des BSI und das IT-Grundschutz-Team gerne zur Verfügung: Kontakt:",
+      "text": "Für Fragen stehen Ihnen die Sicherheitsberatung des BSI und das IT-Grundschutz-Team gerne zur Verfügung: Kontakt:"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 246.52499999999998,
+            "r": 226.26400000000007,
+            "b": 232.125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "sicherheitsberatung@bsi.bund.de",
+      "text": "sicherheitsberatung@bsi.bund.de",
+      "hyperlink": "mailto:sicherheitsberatung@bsi.bund.de"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 232.125,
+            "r": 189.28000000000003,
+            "b": 217.72500000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "grundschutz@bsi.bund.de",
+      "text": "grundschutz@bsi.bund.de",
+      "hyperlink": "mailto:it-grundschutz@bsi.bund.de"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 67.15099999999995,
+            "r": 538.7689999999999,
+            "b": 56.74764218258133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "August 2020 - Version 1.0 Seite 4 von 4",
+      "text": "August 2020 - Version 1.0 Seite 4 von 4"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 28.5208986565951,
+            "t": 785.6323366758687,
+            "r": 156.96135412007703,
+            "b": 722.3917846291324,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 82.54997753675893,
+            "t": 341.5742626379499,
+            "r": 473.7605360608196,
+            "b": 129.41597676212973,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 57.90513340240147,
+            "t": 782.0311045738716,
+            "r": 530.9863185350314,
+            "b": 345.2221919640813,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 4
+    }
+  }
+}

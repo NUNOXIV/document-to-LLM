@@ -1,0 +1,2340 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Benutzerdefinierte-Bausteine",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 6080205282719132397,
+    "filename": "BSI---Benutzerdefinierte-Bausteine.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/groups/10"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/texts/63"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/3"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/groups/4"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/groups/5"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "form_area"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/60"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 253.24380984817407,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 284.4726481469725,
+            "t": 465.91499566687503,
+            "r": 412.58300690904076,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            26,
+            54
+          ]
+        }
+      ],
+      "orig": "Hilfsmittel von Anwendern Benutzerdefinierte Bausteine",
+      "text": "Hilfsmittel von Anwendern Benutzerdefinierte Bausteine"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 288.17094434287685,
+            "b": 397.6610699393601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "Benutzerdefinierte Bausteine",
+      "text": "Benutzerdefinierte Bausteine",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 371.6999995925,
+            "r": 194.12990761125351,
+            "b": 365.65428555869045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Aus der Praxis für die Praxis",
+      "text": "Aus der Praxis für die Praxis"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 267.45000393625,
+            "r": 549.1796270175147,
+            "b": 207.40429215244046,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            295
+          ]
+        }
+      ],
+      "orig": "Bausteine sind die elementaren Bestandteile der IT (Informationstechnik)-Grundschutz-Methodik. Sie enthalten die wichtigsten Anforderungen und Empfehlungen zur Absicherung einzelner oder komplexer Systeme und Prozesse und werden im IT (Informationstechnik)-Grundschutz-Kompendium veröffentlicht.",
+      "text": "Bausteine sind die elementaren Bestandteile der IT (Informationstechnik)-Grundschutz-Methodik. Sie enthalten die wichtigsten Anforderungen und Empfehlungen zur Absicherung einzelner oder komplexer Systeme und Prozesse und werden im IT (Informationstechnik)-Grundschutz-Kompendium veröffentlicht."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 184.20000740499995,
+            "r": 548.9876642255128,
+            "b": 70.15429787119047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            680
+          ]
+        }
+      ],
+      "orig": "Auch die Anwenderinnen und Anwender des IT (Informationstechnik)-Grundschutzes haben die Möglichkeit, ihre Expertise in den IT (Informationstechnik)-Grundschutz einzubringen, indem sie sogenannte benutzerdefinierte Bausteine erstellen. Dafür greift eine Institution ein Thema oder einen Teilaspekt heraus, für den noch kein IT (Informationstechnik)-Grundschutz-Baustein veröffentlicht wurde und an dem sie arbeiten möchte. Die Verantwortlichen für Informationssicherheit können ihre Erfahrungen und Arbeitsergebnisse wie Sicherheitsbetrachtungen zu Gefährdungen und Anforderungen in die Form eines Bausteins bringen. Dieser benutzerdefinierte Baustein kann anschließend auf der IT",
+      "text": "Auch die Anwenderinnen und Anwender des IT (Informationstechnik)-Grundschutzes haben die Möglichkeit, ihre Expertise in den IT (Informationstechnik)-Grundschutz einzubringen, indem sie sogenannte benutzerdefinierte Bausteine erstellen. Dafür greift eine Institution ein Thema oder einen Teilaspekt heraus, für den noch kein IT (Informationstechnik)-Grundschutz-Baustein veröffentlicht wurde und an dem sie arbeiten möchte. Die Verantwortlichen für Informationssicherheit können ihre Erfahrungen und Arbeitsergebnisse wie Sicherheitsbetrachtungen zu Gefährdungen und Anforderungen in die Form eines Bausteins bringen. Dieser benutzerdefinierte Baustein kann anschließend auf der IT"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 518.9037152040108,
+            "b": 781.1542682461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            219
+          ]
+        }
+      ],
+      "orig": "(Informationstechnik)-Grundschutz-Webseite veröffentlicht werden. Unternehmen, die sich mit ähnlichen Themen befassen wollen, können von dem bestehenden Know-how profitieren und die Inhalte bestenfalls weiterentwickeln.",
+      "text": "(Informationstechnik)-Grundschutz-Webseite veröffentlicht werden. Unternehmen, die sich mit ähnlichen Themen befassen wollen, können von dem bestehenden Know-how profitieren und die Inhalte bestenfalls weiterentwickeln."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 757.94998349875,
+            "r": 521.840978256625,
+            "b": 715.9042709649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            226
+          ]
+        }
+      ],
+      "orig": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) überprüft benutzerdefinierte Bausteine nicht inhaltlich, die Bausteine werden in der Regel nicht im IT (Informationstechnik)- Grundschutz-Kompendium veröffentlicht.",
+      "text": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) überprüft benutzerdefinierte Bausteine nicht inhaltlich, die Bausteine werden in der Regel nicht im IT (Informationstechnik)- Grundschutz-Kompendium veröffentlicht."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 692.6999862175,
+            "r": 549.6836025465157,
+            "b": 668.6542729336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            166
+          ]
+        }
+      ],
+      "orig": "Bei einer hohen Nachfrage zu einem Thema, ist es möglich einen Baustein weiter zu überarbeiten und in das IT (Informationstechnik)-Grundschutz-Kompendium aufzunehmen.",
+      "text": "Bei einer hohen Nachfrage zu einem Thema, ist es möglich einen Baustein weiter zu überarbeiten und in das IT (Informationstechnik)-Grundschutz-Kompendium aufzunehmen."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 645.44998818625,
+            "r": 541.4996122625151,
+            "b": 549.4042779024405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            476
+          ]
+        }
+      ],
+      "orig": "Die folgenden Bausteine wurden von IT (Informationstechnik)-Grundschutz-Anwenderinen und - Anwendern erstellt und dem BSI (Bundesamt für Sicherheit in der Informationstechnik) freundlicherweise zur Veröffentlichung zur Verfügung gestellt. Sie dürfen zur Nutzung im Rahmen von IT (Informationstechnik)-Sicherheitskonzepten nach IT (Informationstechnik)-Grundschutz ohne Zustimmung durch die Autorin oder den Autor und Angabe eines Quellennachweises kostenfrei verwendet werden.",
+      "text": "Die folgenden Bausteine wurden von IT (Informationstechnik)-Grundschutz-Anwenderinen und - Anwendern erstellt und dem BSI (Bundesamt für Sicherheit in der Informationstechnik) freundlicherweise zur Veröffentlichung zur Verfügung gestellt. Sie dürfen zur Nutzung im Rahmen von IT (Informationstechnik)-Sicherheitskonzepten nach IT (Informationstechnik)-Grundschutz ohne Zustimmung durch die Autorin oder den Autor und Angabe eines Quellennachweises kostenfrei verwendet werden."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 526.1999931549999,
+            "r": 315.4702226054069,
+            "b": 520.1542791211905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "(Autor: GB infraSignal) Baustein NET.bd.3 Modem",
+      "text": "(Autor: GB infraSignal) Baustein NET.bd.3 Modem",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/BS_NET_bd.3_Modem.pdf?__blob=publicationFile&v=3",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 508.1999939049999,
+            "r": 293.8978509542557,
+            "b": 502.1542798711905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "Kreuztabelle zum Baustein NET.bd.3 Modem",
+      "text": "Kreuztabelle zum Baustein NET.bd.3 Modem",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/BS_NET_bd.3_Modem_KRT.xlsx?__blob=publicationFile&v=3",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 490.19999465499995,
+            "r": 324.5831068257034,
+            "b": 484.15428062119054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "(Autor: Cisco Systems) Baustein NET.bd.1 Cisco ACI",
+      "text": "(Autor: Cisco Systems) Baustein NET.bd.1 Cisco ACI",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/Cisco_NET-bd.html?nn=943082",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 472.199995405,
+            "r": 518.2927154294691,
+            "b": 448.1542821211906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            125
+          ]
+        }
+      ],
+      "orig": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein Leistungsbeziehung in der IT-Konsolidierung Bund (ITKB)",
+      "text": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein Leistungsbeziehung in der IT-Konsolidierung Bund (ITKB)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 436.19999690500003,
+            "r": 503.5655591431009,
+            "b": 430.1542828711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein OT-Netze für ICS",
+      "text": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein OT-Netze für ICS",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 418.19999765500006,
+            "r": 498.2763113384861,
+            "b": 412.1542836211904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "(Autor: Baustein Ortsveränderliche Einhausung für IT (Informationstechnik) -Systeme",
+      "text": "(Autor: Baustein Ortsveränderliche Einhausung für IT (Informationstechnik) -Systeme",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/5G-Campusnetze/INF-bd-1.pdf?__blob=publicationFile&v=4",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 399.4499984362501,
+            "r": 316.2178611992553,
+            "b": 393.40428440244045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik)",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik)"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 381.4499991862501,
+            "r": 477.989526783769,
+            "b": 375.4042851524405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "Kreuzreferenztabelle zum Baustein Ortsveränderliche Einhausung für IT-Systeme",
+      "text": "Kreuzreferenztabelle zum Baustein Ortsveränderliche Einhausung für IT-Systeme",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/5G-Campusnetze/INF-bd-1_KRT.html?nn=943082"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 363.4499999362499,
+            "r": 550.5460221855816,
+            "b": 339.40428665244053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            153
+          ]
+        }
+      ],
+      "orig": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein Verwaltung von SIM-Karte Kreuzreferenztabelle zum Baustein Verwaltung von SIM-Karte",
+      "text": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein Verwaltung von SIM-Karte Kreuzreferenztabelle zum Baustein Verwaltung von SIM-Karte",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 327.45000143625,
+            "r": 540.0347722485501,
+            "b": 303.4042881524406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein Betrieb privater Mobilfunknetze (5G-Campus)",
+      "text": "(Autor: Bundesamt für Sicherheit in der Informationstechnik) Baustein Betrieb privater Mobilfunknetze (5G-Campus)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 291.45000293625003,
+            "r": 478.2055873747662,
+            "b": 285.4042889024406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "Kreuzreferenztabelle zum Baustein Betrieb privater Mobilfunknetze (5G-Campus)",
+      "text": "Kreuzreferenztabelle zum Baustein Betrieb privater Mobilfunknetze (5G-Campus)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/5G-Campusnetze/NET_bd_2_3_KRT.html?nn=943082"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 273.45000368625006,
+            "r": 504.04076399830063,
+            "b": 267.4042896524404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein Videotelekonferenz",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein Videotelekonferenz",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 255.45000443625008,
+            "r": 542.9950594752048,
+            "b": 249.40429040244044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "(Autor: BausteinVMware TanzuKubernetesGrid Service( TGKS (Tanzu Kubernetes Grid Service) )",
+      "text": "(Autor: BausteinVMware TanzuKubernetesGrid Service( TGKS (Tanzu Kubernetes Grid Service) )",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/VMware_Tanzu.html?nn=943082",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 236.70000521750012,
+            "r": 441.7438915940038,
+            "b": 230.65429118369048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "SVA System Vertrieb Alexander GmbH (Gesellschaft mit beschränkter Haftung))",
+      "text": "SVA System Vertrieb Alexander GmbH (Gesellschaft mit beschränkter Haftung))"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 218.70000596749992,
+            "r": 200.41793524925237,
+            "b": 212.6542919336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Kreuzreferenztabelle zum",
+      "text": "Kreuzreferenztabelle zum",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/VMware_Tanzu_KRT.html?nn=943082"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 200.70000671749995,
+            "r": 114.30603056224851,
+            "b": 194.65429268369053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 215.70702601220685,
+            "t": 218.70000596749992,
+            "r": 257.4189983242079,
+            "b": 212.6542919336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            9,
+            15
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 215.70702601220685,
+            "t": 200.70000671749995,
+            "r": 245.51500302020776,
+            "b": 194.65429268369053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            16,
+            21
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 276.50389847900374,
+            "t": 218.70000596749992,
+            "r": 355.6320771319962,
+            "b": 212.6542919336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            36
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 333.99608358349593,
+            "t": 200.70000671749995,
+            "r": 369.8400521649972,
+            "b": 194.65429268369053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            37,
+            44
+          ]
+        }
+      ],
+      "orig": "Baustein VMware Tanzu KubernetesGrid Service",
+      "text": "Baustein VMware Tanzu KubernetesGrid Service",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/VMware_Tanzu_KRT.html?nn=943082"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 383.4726440219725,
+            "t": 218.70000596749992,
+            "r": 551.0017270415938,
+            "b": 212.6542919336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "( TGKS (Tanzu Kubernetes Grid )",
+      "text": "( TGKS (Tanzu Kubernetes Grid )",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/VMware_Tanzu_KRT.html?nn=943082"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 389.1327962861328,
+            "t": 200.70000671749995,
+            "r": 428.14474891063463,
+            "b": 194.65429268369053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Service)",
+      "text": "Service)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/VMware_Tanzu_KRT.html?nn=943082"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 181.95000749874998,
+            "r": 501.3853583589424,
+            "b": 157.1542942461906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            118
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Workflow",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Workflow",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 145.20000903000005,
+            "r": 550.647406656357,
+            "b": 139.15429499619063,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            92
+          ]
+        }
+      ],
+      "orig": "(Autor: Kreuzreferenztabelle zum Baustein SINA (Sichere Inter-Netzwerk Architektur) Workflow",
+      "text": "(Autor: Kreuzreferenztabelle zum Baustein SINA (Sichere Inter-Netzwerk Architektur) Workflow",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/SINA_Workflow_KRT.xlsx?__blob=publicationFile&v=2"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 126.45000981125008,
+            "r": 305.2204597824803,
+            "b": 120.40429577744044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "secunet Security Networks AG (Aktiengesellschaft))",
+      "text": "secunet Security Networks AG (Aktiengesellschaft))"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 108.45001056125011,
+            "r": 370.3263185447361,
+            "b": 102.40429652744069,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "(Autor: Benedikt Zumbrink) BausteinPrecision Time Protocol",
+      "text": "(Autor: Benedikt Zumbrink) BausteinPrecision Time Protocol",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/BS_Precision_Time_Protocol.html?nn=943082",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 90.45001131125014,
+            "r": 550.885580246433,
+            "b": 66.40429802744075,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            111
+          ]
+        }
+      ],
+      "orig": "/ (Autor: Bundesamt für Soziale Sicherung) BausteinSecrets Managementmit Hashicorp Vault zur englischen Version",
+      "text": "/ (Autor: Bundesamt für Soziale Sicherung) BausteinSecrets Managementmit Hashicorp Vault zur englischen Version",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 54.45001281124996,
+            "r": 426.1637681431757,
+            "b": 48.40429877744077,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "(Autor: Bundesamt für Soziale Sicherung) Baustein Service-Proxy Traefik",
+      "text": "(Autor: Bundesamt für Soziale Sicherung) Baustein Service-Proxy Traefik",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 36.45001356124999,
+            "r": 545.7770406592891,
+            "b": 30.4042995274408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "/ (Autor: Bundesamt für Soziale Sicherung) Baustein Hashicorp Consul zur englischen Version",
+      "text": "/ (Autor: Bundesamt für Soziale Sicherung) Baustein Hashicorp Consul zur englischen Version",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 823.19998078,
+            "r": 518.4919304211685,
+            "b": 798.4042675274407,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            105
+          ]
+        }
+      ],
+      "orig": "(Autor: Bundesamt für Soziale Sicherung) Baustein IAM ( Identity- und Access- Management) Dienst Keycloak",
+      "text": "(Autor: Bundesamt für Soziale Sicherung) Baustein IAM ( Identity- und Access- Management) Dienst Keycloak",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 786.4499823112499,
+            "r": 543.1755997676823,
+            "b": 761.6542690586905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "/ (Autor: Gerhard Weck) BausteinClientsunterQubes OS (Operating System) zur englischen Version",
+      "text": "/ (Autor: Gerhard Weck) BausteinClientsunterQubes OS (Operating System) zur englischen Version",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 749.6999838424999,
+            "r": 537.9138849869205,
+            "b": 724.9042705899406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "(Autor: Gerhard Weck) Kreuzreferenztabelle zum BausteinClientsunterQubes OS (Operating System)",
+      "text": "(Autor: Gerhard Weck) Kreuzreferenztabelle zum BausteinClientsunterQubes OS (Operating System)"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 712.94998537375,
+            "r": 353.0311114403697,
+            "b": 706.9042713399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "(Autor: HZD) Baustein IPv6 (Internet Protocol Version 6)",
+      "text": "(Autor: HZD) Baustein IPv6 (Internet Protocol Version 6)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/BS_IPv6.html?nn=943082",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 694.199986155,
+            "r": 537.8766306884728,
+            "b": 669.4042729024407,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            113
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Box",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Box",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 657.4499876862499,
+            "r": 481.0406955566369,
+            "b": 633.4042744024405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            100
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Kreuzreferenztabellezum Baustein SINA Box",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Kreuzreferenztabellezum Baustein SINA Box"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 621.4499891862499,
+            "r": 532.9908220420481,
+            "b": 596.6542759336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Umsetzungshinweise SINA (Sichere Inter-Netzwerk Architektur) Box",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Umsetzungshinweise SINA (Sichere Inter-Netzwerk Architektur) Box",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 584.6999907175,
+            "r": 517.650982681208,
+            "b": 559.9042774649406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            120
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Management",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Management",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 547.9499922487498,
+            "r": 532.4772215384481,
+            "b": 523.1542789961907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            129
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Umsetzungshinweise SINA (Sichere Inter-Netzwerk Architektur) Mangement",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Umsetzungshinweise SINA (Sichere Inter-Netzwerk Architektur) Mangement",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 511.1999937799999,
+            "r": 547.3510677687045,
+            "b": 486.4042805274405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            118
+          ]
+        }
+      ],
+      "orig": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Endgerät",
+      "text": "(Autor: secunet Security Networks AG (Aktiengesellschaft)) Baustein SINA (Sichere Inter-Netzwerk Architektur) Endgerät",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 474.44999531124995,
+            "r": 397.4470184397069,
+            "b": 468.40428127744053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "(Autor: HiSolutions AG (Aktiengesellschaft)) BausteinLoadbalancer",
+      "text": "(Autor: HiSolutions AG (Aktiengesellschaft)) BausteinLoadbalancer",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 456.44999606125,
+            "r": 434.97045437623035,
+            "b": 450.40428202744056,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "(Autor: HiSolutions AG (Aktiengesellschaft)) BausteinWindows Server2016",
+      "text": "(Autor: HiSolutions AG (Aktiengesellschaft)) BausteinWindows Server2016",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 438.44999681125,
+            "r": 460.10716832886726,
+            "b": 432.4042827774406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "(Autor: HiSolutions AG (Aktiengesellschaft)) Baustein Container unteropenshift",
+      "text": "(Autor: HiSolutions AG (Aktiengesellschaft)) Baustein Container unteropenshift",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 420.44999756125003,
+            "r": 527.7243530114844,
+            "b": 414.4042835274406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "(Autor: Msg Systems AG (Aktiengesellschaft)) Baustein NTP (Network TIme Protocol) -Server",
+      "text": "(Autor: Msg Systems AG (Aktiengesellschaft)) Baustein NTP (Network TIme Protocol) -Server",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/NTP-Server.html?nn=943082",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 401.69999834249984,
+            "r": 328.21414152441025,
+            "b": 395.6542843086904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "(Autor: esri Deutschland) Baustein ArcGISEnterprise",
+      "text": "(Autor: esri Deutschland) Baustein ArcGISEnterprise",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/ArcGIS_Enterprise.html?nn=943082",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 347.8575005859375,
+            "r": 469.1083089288198,
+            "b": 338.41107240811016,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            55
+          ]
+        }
+      ],
+      "orig": "Beispiele und Vorlagen für benutzerdefinierte Bausteine",
+      "text": "Beispiele und Vorlagen für benutzerdefinierte Bausteine",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 312.45000206124996,
+            "r": 542.2695975554325,
+            "b": 288.4042887774408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            111
+          ]
+        }
+      ],
+      "orig": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) hat als Beispiel den folgenden Baustein erstellt:",
+      "text": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) hat als Beispiel den folgenden Baustein erstellt:"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 265.20000402999995,
+            "r": 152.4179790242506,
+            "b": 259.1542899961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Baustein Bitcoin",
+      "text": "Baustein Bitcoin",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/BS_Bitcoin.pdf?__blob=publicationFile&v=1",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 235.95000524875013,
+            "r": 536.8260326822477,
+            "b": 211.9042919649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            188
+          ]
+        }
+      ],
+      "orig": "Darüber hinaus stellt das BSI (Bundesamt für Sicherheit in der Informationstechnik) WORD-Vorlagen zur Erstellung eigener benutzerdefinierter Bausteine und Umsetzungshinweise zur Verfügung.",
+      "text": "Darüber hinaus stellt das BSI (Bundesamt für Sicherheit in der Informationstechnik) WORD-Vorlagen zur Erstellung eigener benutzerdefinierter Bausteine und Umsetzungshinweise zur Verfügung."
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 188.70000721750012,
+            "r": 255.7378332692565,
+            "b": 182.6542931836907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Vorlage benutzerdefinierter Baustein",
+      "text": "Vorlage benutzerdefinierter Baustein",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/Vorlage_benutzerdefinierter_Baustein_WORD.docx?__blob=publicationFile&v=7",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 170.70000796749991,
+            "r": 312.53378380275853,
+            "b": 164.6542939336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "Vorlage benutzerdefinierter Umsetzungshinweis",
+      "text": "Vorlage benutzerdefinierter Umsetzungshinweis",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/Vorlage_benutzerdefinierter_UH_WORD.docx?__blob=publicationFile&v=6",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 116.85751021093756,
+            "r": 345.9771553342847,
+            "b": 107.41108203311023,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "Hinweise zur Erstellung eines Bausteins",
+      "text": "Hinweise zur Erstellung eines Bausteins",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 81.45001168625004,
+            "r": 539.952072976996,
+            "b": 39.40429915244067,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            286
+          ]
+        },
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.1999807800003,
+            "r": 527.0757183135107,
+            "b": 799.1542674961906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            287,
+            470
+          ]
+        }
+      ],
+      "orig": "Expertinnen und Experten für Informationssicherheit, die in ihrer Institution ein Thema identifiziert haben, zu dem sie einen benutzerdefinierten Baustein erstellen wollen, sollten sich zunächst an das IT (Informationstechnik)-Grundschutz-Referat im BSI (Bundesamt für Sicherheit in der Informationstechnik) wenden. Die Kolleginnen und Kollegen können dann prüfen, ob zu der angedachten Thematik schon ein Baustein in Bearbeitung ist, um redundante Inhalte zu vermeiden.",
+      "text": "Expertinnen und Experten für Informationssicherheit, die in ihrer Institution ein Thema identifiziert haben, zu dem sie einen benutzerdefinierten Baustein erstellen wollen, sollten sich zunächst an das IT (Informationstechnik)-Grundschutz-Referat im BSI (Bundesamt für Sicherheit in der Informationstechnik) wenden. Die Kolleginnen und Kollegen können dann prüfen, ob zu der angedachten Thematik schon ein Baustein in Bearbeitung ist, um redundante Inhalte zu vermeiden."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 775.9499827487502,
+            "r": 400.17464780105564,
+            "b": 769.9042687149408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "Bitte senden Sie Ihren Themenvorschlag an: it-grundschutz@bsi.bund.de",
+      "text": "Bitte senden Sie Ihren Themenvorschlag an: it-grundschutz@bsi.bund.de"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 746.6999839675,
+            "r": 527.1357247610107,
+            "b": 686.6542721836909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            353
+          ]
+        }
+      ],
+      "orig": "Die Bausteine, die im Rahmen der IT (Informationstechnik)-Grundschutz-Methodik veröffentlicht werden, sollten inhaltlich und vom Aufbau her gewissen Vorgaben genügen. Ziel ist es, dass sich die Anwenderinnen und Anwender in den Dokumenten gut zurechtfinden und damit die Belange ihrer Institution bearbeiten können. Dazu finden Sie hier einige Hinweise:",
+      "text": "Die Bausteine, die im Rahmen der IT (Informationstechnik)-Grundschutz-Methodik veröffentlicht werden, sollten inhaltlich und vom Aufbau her gewissen Vorgaben genügen. Ziel ist es, dass sich die Anwenderinnen und Anwender in den Dokumenten gut zurechtfinden und damit die Belange ihrer Institution bearbeiten können. Dazu finden Sie hier einige Hinweise:"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 663.44998743625,
+            "r": 412.43358276526664,
+            "b": 657.4042734024406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Autorenrichtlinie zur Erstellung eines benutzerdefinierten Bausteins",
+      "text": "Autorenrichtlinie zur Erstellung eines benutzerdefinierten Bausteins",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Benutzerdefinierte_BS/Autorenrichtlinie.html?nn=943082",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 590.6999904674999,
+            "r": 158.39995432500166,
+            "b": 530.6542786836908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 499.94999424875004,
+            "r": 313.9438494440058,
+            "b": 493.9042802149406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 439.89749675093753,
+            "r": 509.74872171046906,
+            "b": 434.98535409846727,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.20860945305319,
+            "t": 553.0258375043544,
+            "r": 170.55491287642894,
+            "b": 491.1972413261352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    }
+  }
+}

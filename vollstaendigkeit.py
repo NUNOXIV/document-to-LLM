@@ -57,6 +57,44 @@ def archivinhalt(pfad: Path) -> list[str]:
         return []
 
 
+def seitenprobe(eingang: Path, eintraege: list[dict]) -> int:
+    """Je PDF: Seiten der Quelle, Seiten im Register, Marken im Extrakt — gleich?"""
+    import re
+
+    import pypdfium2
+
+    quellen = {p.name: p for p in eingang.rglob("*.pdf")}
+    fehler = 0
+    geprueft = 0
+    for d in eintraege:
+        name = str(d.get("source_file", ""))
+        if not name.lower().endswith(".pdf") or name not in quellen:
+            continue
+        md = Path(d.get("markdown", ""))
+        if not md.exists():
+            continue
+        geprueft += 1
+        try:
+            doc = pypdfium2.PdfDocument(quellen[name])
+            echt = len(doc)
+            doc.close()
+        except Exception as fehl:
+            print(f"  [Seiten nicht lesbar] {name}: {fehl}")
+            fehler += 1
+            continue
+        register_seiten = d.get("pages") or 0
+        marken = {int(m) for m in re.findall(
+            r"<!-- page: (\d+) -->", md.read_text(encoding="utf-8", errors="replace"))}
+        ohne_marke = sorted(set(range(1, echt + 1)) - marken)
+        if register_seiten != echt or ohne_marke:
+            fehler += 1
+            print(f"  [Seiten] {md.name}: Quelle {echt}, Register {register_seiten}, "
+                  f"ohne Marke {len(ohne_marke)} {ohne_marke[:5]}")
+    print(f"Seitenprobe: {geprueft} PDF-Extrakte gegen ihre Quelle gehalten, "
+          f"{fehler} mit Abweichung.\n")
+    return fehler
+
+
 @click.command()
 @click.option("--input", "eingang", type=click.Path(exists=True, path_type=Path),
               default=Path("input"), show_default=True)
@@ -65,9 +103,13 @@ def archivinhalt(pfad: Path) -> list[str]:
 @click.option("--auspacken", is_flag=True,
               help="Archive neben sich entpacken, damit ihr Inhalt eingelesen werden kann. "
                    "Schreibt nach input/ — ohne diesen Schalter wird nur gezaehlt.")
+@click.option("--seiten", is_flag=True,
+              help="Zusaetzlich je PDF pruefen: Seitenzahl der Quelle == Seitenzahl im "
+                   "Register == Seitenmarken im Extrakt. Liest jedes PDF, dauert entsprechend.")
 @click.option("--strict", is_flag=True, help="Exit 1, sobald eine Quelle ohne Extrakt bleibt.")
-def main(eingang: Path, korpus: Path, auspacken: bool, strict: bool) -> None:
+def main(eingang: Path, korpus: Path, auspacken: bool, seiten: bool, strict: bool) -> None:
     """Vergleicht die Quellen mit dem Bestand und benennt jede Luecke."""
+    eintraege = json.loads(korpus.read_text(encoding="utf-8"))["documents"] if korpus.exists() else []
     erfasst = register(korpus)
     ohne_extrakt: list[tuple[str, Path]] = []
     unbekannt: list[Path] = []
@@ -79,6 +121,11 @@ def main(eingang: Path, korpus: Path, auspacken: bool, strict: bool) -> None:
             continue
         endung = p.suffix.lower()
         if endung in ARCHIVE:
+            # Liegt das Archiv bereits ausgepackt daneben, zaehlen seine
+            # Mitglieder als normale Dateien -- sonst stuenden sie doppelt in
+            # der Liste, einmal als Datei und einmal als "fehlt im Archiv".
+            if p.with_suffix("").is_dir():
+                continue
             fehlend = [n for n in archivinhalt(p) if n not in erfasst]
             archive.append((p, fehlend))
             continue
@@ -121,7 +168,14 @@ def main(eingang: Path, korpus: Path, auspacken: bool, strict: bool) -> None:
             print(f"  {p}")
         print()
 
-    offen = len(ohne_extrakt) + aus_archiven
+    # Seitenprobe: von der QUELLE aus. Das Register kann nur wiederholen, was
+    # extract.py gezaehlt hat; erst der Vergleich mit dem PDF selbst belegt,
+    # dass keine Seite auf dem Weg verloren ging.
+    seitenfehler = 0
+    if seiten:
+        seitenfehler = seitenprobe(eingang, eintraege)
+
+    offen = len(ohne_extrakt) + aus_archiven + seitenfehler
     if offen:
         print(f"BEFUND: {offen} Dokument(e) sind nicht im Bestand. "
               f"Vollstaendig waeren {len(erfasst) + offen}.")

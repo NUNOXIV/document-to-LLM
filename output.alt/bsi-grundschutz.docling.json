@@ -1,0 +1,1787 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Grundschutz",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 7065895676392424705,
+    "filename": "BSI---Grundschutz.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 321.9872277838649,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "Grundschutz in der Informationssicherheit",
+      "text": "Grundschutz in der Informationssicherheit",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/isms_node.html"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 178.3897860670919,
+            "b": 397.6610699393601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Grundschutz++",
+      "text": "Grundschutz++",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 371.6999995925,
+            "r": 231.19796246675116,
+            "b": 365.65428555869045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Neuentwicklung des Grundschutzes",
+      "text": "Neuentwicklung des Grundschutzes"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 267.45000393625,
+            "r": 538.2330330736228,
+            "b": 189.4042929024405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            434
+          ]
+        }
+      ],
+      "orig": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI (Bundesamt für Sicherheit in der Informationstechnik)) orientiert sich bei der Entwicklung des Grundschutz++ an den Bedürfnissen der Anwenderinnen und Anwender. Durch die flexible Methodik haben sie Gestaltungsspielraum bei der Umsetzung des Grundschutz++. Die Methodik beschreibt Mindestanforderungen, welche zur vollständigen Umsetzung des Grundschutz++ zu erfüllen sind.",
+      "text": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI (Bundesamt für Sicherheit in der Informationstechnik)) orientiert sich bei der Entwicklung des Grundschutz++ an den Bedürfnissen der Anwenderinnen und Anwender. Durch die flexible Methodik haben sie Gestaltungsspielraum bei der Umsetzung des Grundschutz++. Die Methodik beschreibt Mindestanforderungen, welche zur vollständigen Umsetzung des Grundschutz++ zu erfüllen sind."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 166.20000815499998,
+            "r": 538.775689551012,
+            "b": 34.15429937119052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            730
+          ]
+        }
+      ],
+      "orig": "Darüber hinaus können die Anwenderinnen und Anwender den Grundschutz++ über die Mindestanforderungen hinaus, entsprechend ihrer Bedürfnisse, in Abhängigkeit der Institutionsgröße und der Komplexität des Informationsverbundes, umsetzen. In der Methodik-Grundschutz ++ werden verschiedene Wege aufgezeigt, wie diese umgesetzt werden kann. Der AnwenderkatalogGrundschutz++ ergänzt die Methodik. Er steht in der Stand der Technik Bibliothek zur Verfügung und beinhaltet technische sowie organisatorische Anforderungen. Die normativen Aspekte der Methodik wurden in Anforderungen überführt, welche ebenso Teil des Anwenderkatalogs-Grundschutz++ sind. Durch das maschinenlesbare Format der Anforderungen werden diese automatisierbar und",
+      "text": "Darüber hinaus können die Anwenderinnen und Anwender den Grundschutz++ über die Mindestanforderungen hinaus, entsprechend ihrer Bedürfnisse, in Abhängigkeit der Institutionsgröße und der Komplexität des Informationsverbundes, umsetzen. In der Methodik-Grundschutz ++ werden verschiedene Wege aufgezeigt, wie diese umgesetzt werden kann. Der AnwenderkatalogGrundschutz++ ergänzt die Methodik. Er steht in der Stand der Technik Bibliothek zur Verfügung und beinhaltet technische sowie organisatorische Anforderungen. Die normativen Aspekte der Methodik wurden in Anforderungen überführt, welche ebenso Teil des Anwenderkatalogs-Grundschutz++ sind. Durch das maschinenlesbare Format der Anforderungen werden diese automatisierbar und"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 353.21483278271467,
+            "t": 465.91499566687503,
+            "r": 420.16277839321674,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Grundschutz++",
+      "text": "Grundschutz++"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 537.0837030465112,
+            "b": 781.1542682461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            221
+          ]
+        }
+      ],
+      "orig": "Anwenderinnen und Anwender hierdurch zukünftig durch digitale Werkzeuge bei der Umsetzung des Grundschutz++ unterstützt. Sie helfen außerdem dabei, ein dem eigenen Schutzbedarf angemessenes Sicherheitsniveau zu erreichen.",
+      "text": "Anwenderinnen und Anwender hierdurch zukünftig durch digitale Werkzeuge bei der Umsetzung des Grundschutz++ unterstützt. Sie helfen außerdem dabei, ein dem eigenen Schutzbedarf angemessenes Sicherheitsniveau zu erreichen."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 757.94998349875,
+            "r": 548.7716496095136,
+            "b": 715.9042709649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            239
+          ]
+        }
+      ],
+      "orig": "Der Grundschutz++ ist vollständig prozessorientiert aufgebaut. Jede Anforderung an die Cybersicherheit wird als Regel in einem standardisierten Format erfasst. Die Regeln können durch Computerprogramme interpretiert und ausgewertet werden.",
+      "text": "Der Grundschutz++ ist vollständig prozessorientiert aufgebaut. Jede Anforderung an die Cybersicherheit wird als Regel in einem standardisierten Format erfasst. Die Regeln können durch Computerprogramme interpretiert und ausgewertet werden."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 668.1074872421875,
+            "r": 241.48348731318765,
+            "b": 658.6610590643602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Methodik-Grundschutz++",
+      "text": "Methodik-Grundschutz++",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 632.6999887175,
+            "r": 543.9477240605104,
+            "b": 518.6542791836905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            571
+          ]
+        }
+      ],
+      "orig": "Der bildet einen zukunftsgerichteten Ordnungsrahmen für den systematischen Aufbau und die Weiterentwicklung eines Informationssicherheitsmanagementsystems. Sie beschreibt eine entlang des PDCA-Zyklus strukturierte Methodik, die strategische Verankerung, Anforderungsanalyse, Umsetzung, Überwachung und kontinuierliche Verbesserung zu einem konsistenten Sicherheitsprozess verbindet. Damit schafft das Dokument eine Grundlage, um Informationssicherheit institutionell wirksam, skalierbar und nachhaltig am Stand der Technik auszurichten. Leitfaden - Methodik Grundschutz++",
+      "text": "Der bildet einen zukunftsgerichteten Ordnungsrahmen für den systematischen Aufbau und die Weiterentwicklung eines Informationssicherheitsmanagementsystems. Sie beschreibt eine entlang des PDCA-Zyklus strukturierte Methodik, die strategische Verankerung, Anforderungsanalyse, Umsetzung, Überwachung und kontinuierliche Verbesserung zu einem konsistenten Sicherheitsprozess verbindet. Damit schafft das Dokument eine Grundlage, um Informationssicherheit institutionell wirksam, skalierbar und nachhaltig am Stand der Technik auszurichten. Leitfaden - Methodik Grundschutz++"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 470.85749546093757,
+            "r": 303.0396982233454,
+            "b": 461.41106728311024,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Anwenderkatalog-Grundschutz++",
+      "text": "Anwenderkatalog-Grundschutz++",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 435.44999693625005,
+            "r": 539.5556436935137,
+            "b": 249.40429040244044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            945
+          ]
+        }
+      ],
+      "orig": "Der Anwenderkatalog-Grundschutz++ ist mit seinen Sicherheitsanforderungen Teil der Stand der Technik-Bibliothek. Diese ist die technische Plattform, auf der alle Anforderungen und Maßnahmen zentral bereitgestellt werden und löst das IT (Informationstechnik)-Grundschutz-Kompendium ab. Durch den Wechsel auf ein digitales Regelwerk im maschinenlesbaren Format können Sicherheitsprozesse und Dokumentationen automatisiert sowie Anforderungen an die Cybersicherheit nicht nur von Personen, sondern auch von Tools modelliert werden, um ihre Einhaltung effizienter zu überwachen. Um die Anwendbarkeit weiter zu erleichtern, werden die Absicherungsstufen Basis, Standard und erhöhter Schutzbedarf durch flexible Leistungszahlen in Verbindung mit dynamischen Schwellwerten ersetzt. Als Regelwerk wird es gegenüber dem IT (Informationstechnik)-GrundschutzKompendium geschärft, so dass es nur noch lösungsunabhängige Anforderungen an Prozesse beschreibt.",
+      "text": "Der Anwenderkatalog-Grundschutz++ ist mit seinen Sicherheitsanforderungen Teil der Stand der Technik-Bibliothek. Diese ist die technische Plattform, auf der alle Anforderungen und Maßnahmen zentral bereitgestellt werden und löst das IT (Informationstechnik)-Grundschutz-Kompendium ab. Durch den Wechsel auf ein digitales Regelwerk im maschinenlesbaren Format können Sicherheitsprozesse und Dokumentationen automatisiert sowie Anforderungen an die Cybersicherheit nicht nur von Personen, sondern auch von Tools modelliert werden, um ihre Einhaltung effizienter zu überwachen. Um die Anwendbarkeit weiter zu erleichtern, werden die Absicherungsstufen Basis, Standard und erhöhter Schutzbedarf durch flexible Leistungszahlen in Verbindung mit dynamischen Schwellwerten ersetzt. Als Regelwerk wird es gegenüber dem IT (Informationstechnik)-GrundschutzKompendium geschärft, so dass es nur noch lösungsunabhängige Anforderungen an Prozesse beschreibt."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 226.20000565500004,
+            "r": 543.7676478680137,
+            "b": 166.15429387119048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            345
+          ]
+        }
+      ],
+      "orig": "Die mit dem (Weg in die Basis-Absicherung) -Weg in die Basis-Absicherung erprobten Checklisten haben sich in der Praxis bewährt und werden fester Bestandteil des Grundschutz++. Checklisten können zukünftig automatisiert und angepasst auf den jeweiligen Anwendungsfall aus den Anforderungen des Anwenderkatalogs-Grundschutz++ erzeugt werden. WiBA",
+      "text": "Die mit dem (Weg in die Basis-Absicherung) -Weg in die Basis-Absicherung erprobten Checklisten haben sich in der Praxis bewährt und werden fester Bestandteil des Grundschutz++. Checklisten können zukünftig automatisiert und angepasst auf den jeweiligen Anwendungsfall aus den Anforderungen des Anwenderkatalogs-Grundschutz++ erzeugt werden. WiBA"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 142.95000912375008,
+            "r": 533.925722953094,
+            "b": 46.90429883994079,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            477
+          ]
+        }
+      ],
+      "orig": "Mit diesen Checklisten ermöglicht das BSI (Bundesamt für Sicherheit in der Informationstechnik) kleinen Institutionen schnell grundlegende Sicherheitsanforderungen umzusetzen, ohne ein Managementsystem für Informationssicherheit (ISMS (Information Security Management System)) aufzubauen und zu betreiben. Größere Institutionen können mit den Checklisten einen soliden Grundstein legen, um schrittweise ein vollwertiges ISMS (Information Security Management System) aufzubauen.",
+      "text": "Mit diesen Checklisten ermöglicht das BSI (Bundesamt für Sicherheit in der Informationstechnik) kleinen Institutionen schnell grundlegende Sicherheitsanforderungen umzusetzen, ohne ein Managementsystem für Informationssicherheit (ISMS (Information Security Management System)) aufzubauen und zu betreiben. Größere Institutionen können mit den Checklisten einen soliden Grundstein legen, um schrittweise ein vollwertiges ISMS (Information Security Management System) aufzubauen."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 527.6276857405121,
+            "b": 745.1542697461905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            379
+          ]
+        }
+      ],
+      "orig": "Mithilfe der vom BSI (Bundesamt für Sicherheit in der Informationstechnik) vorgenommenen Priorisierung und Gewichtung der Sicherheitsanforderungen kann die Institution qualifizierte Entscheidungen treffen, welche Anforderungen aus dem Regelwerk als nächstes umgesetzt werden sollen, um die Informationssicherheit mit den zur Verfügung stehenden Ressourcen bestmöglich zu erhöhen.",
+      "text": "Mithilfe der vom BSI (Bundesamt für Sicherheit in der Informationstechnik) vorgenommenen Priorisierung und Gewichtung der Sicherheitsanforderungen kann die Institution qualifizierte Entscheidungen treffen, welche Anforderungen aus dem Regelwerk als nächstes umgesetzt werden sollen, um die Informationssicherheit mit den zur Verfügung stehenden Ressourcen bestmöglich zu erhöhen."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 697.3574860234376,
+            "r": 325.0896931795956,
+            "b": 687.91105784561,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Mindeststandards im Grundschutz++",
+      "text": "Mindeststandards im Grundschutz++",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 661.94998749875,
+            "r": 500.480693021637,
+            "b": 619.9042749649407,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            260
+          ]
+        }
+      ],
+      "orig": "sind Regelungsdokumente, die für ausgewählte Anwendungsbereiche ein Mindestniveau an Informationssicherheit definieren. Das Ziel der Mindeststandards ist die Gewährleistung eines einheitlichen Mindestsicherheitsniveaus in der Bundesverwaltung. Mindeststandards",
+      "text": "sind Regelungsdokumente, die für ausgewählte Anwendungsbereiche ein Mindestniveau an Informationssicherheit definieren. Das Ziel der Mindeststandards ist die Gewährleistung eines einheitlichen Mindestsicherheitsniveaus in der Bundesverwaltung. Mindeststandards"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 596.6999902174998,
+            "r": 542.6037609415092,
+            "b": 518.6542791836905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            398
+          ]
+        }
+      ],
+      "orig": "Sie werden in der Stand der Technik-Bibliothek eng miteinander verzahnt und definieren für Einrichtungen des Bundes verbindliche Sicherheitsanforderungen und legen Vorgaben für die Umsetzung von Anforderungen des Grundschutz++ fest. Mindeststandards können dem Stand der Technik entsprechen oder in begründeten Fällen davon abweichen. Außerdem werden sie auch Teil der Stand der Technik Bibliothek.",
+      "text": "Sie werden in der Stand der Technik-Bibliothek eng miteinander verzahnt und definieren für Einrichtungen des Bundes verbindliche Sicherheitsanforderungen und legen Vorgaben für die Umsetzung von Anforderungen des Grundschutz++ fest. Mindeststandards können dem Stand der Technik entsprechen oder in begründeten Fällen davon abweichen. Außerdem werden sie auch Teil der Stand der Technik Bibliothek."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 470.85749546093757,
+            "r": 335.6834656131884,
+            "b": 461.41106728311,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "Meilensteinplan (Stand 26. März 2026)",
+      "text": "Meilensteinplan (Stand 26. März 2026)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 435.44999693625005,
+            "r": 542.4261373989099,
+            "b": 411.40428365244065,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            189
+          ]
+        }
+      ],
+      "orig": "Im Rahmen der Weiterentwicklung der Methodik-GS (Geprüfte Sicherheit)++ wird der Meilensteinplan stetig angepasst, um die Community auf dem Laufenden über die aktuellen Planungen zu halten.",
+      "text": "Im Rahmen der Weiterentwicklung der Methodik-GS (Geprüfte Sicherheit)++ wird der Meilensteinplan stetig angepasst, um die Community auf dem Laufenden über die aktuellen Planungen zu halten."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 373.1999995299998,
+            "r": 123.76204524324788,
+            "b": 367.1542854961908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "01. April 2026",
+      "text": "01. April 2026",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 343.95000074874997,
+            "r": 188.04598323975037,
+            "b": 337.90428671494055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "Start der Pilotierungsphase",
+      "text": "Start der Pilotierungsphase"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 187.9500072487499,
+            "r": 153.9660120347492,
+            "b": 181.90429321494048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "30. September 2026",
+      "text": "30. September 2026",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 158.70000846750008,
+            "r": 189.38998873375016,
+            "b": 152.65429443369067,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 373.1999995299998,
+            "r": 533.9001148041609,
+            "b": 241.15429074619078,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            27,
+            357
+          ]
+        }
+      ],
+      "orig": "Ende der Pilotierungsphase Die Methodik-GS (Geprüfte Sicherheit)++ liegt in einer anwendbaren Pilotierungsfassung vor und wird den Pilotierungspartnern zur Erprobung der Anwendbarkeit zur Verfügung gestellt. Die Pilotierungspartner aus der öffentlichen Verwaltung und aus der freien Wirtschaft erproben die Methodik-GS (Geprüfte Sicherheit)++ in der Praxis.",
+      "text": "Ende der Pilotierungsphase Die Methodik-GS (Geprüfte Sicherheit)++ liegt in einer anwendbaren Pilotierungsfassung vor und wird den Pilotierungspartnern zur Erprobung der Anwendbarkeit zur Verfügung gestellt. Die Pilotierungspartner aus der öffentlichen Verwaltung und aus der freien Wirtschaft erproben die Methodik-GS (Geprüfte Sicherheit)++ in der Praxis."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 187.9500072487499,
+            "r": 537.80373556651,
+            "b": 127.90429546494079,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            139
+          ]
+        }
+      ],
+      "orig": "Die in der Erprobung gesammelten Erkenntnisse und Erfahrungen fließen in die Weiterentwicklung der Methodik-GS (Geprüfte Sicherheit)++ ein.",
+      "text": "Die in der Erprobung gesammelten Erkenntnisse und Erfahrungen fließen in die Weiterentwicklung der Methodik-GS (Geprüfte Sicherheit)++ ein."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 808.199981405,
+            "r": 141.23402561524867,
+            "b": 802.1542673711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "27. Oktober 2026",
+      "text": "27. Oktober 2026",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 778.9499826237502,
+            "r": 272.3786881258875,
+            "b": 754.9042693399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "Vorstellung der Methodik-GS (Geprüfte Sicherheit)++ auf der it-sa 2026 in Nürnberg.",
+      "text": "Vorstellung der Methodik-GS (Geprüfte Sicherheit)++ auf der it-sa 2026 in Nürnberg."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 694.94998612375,
+            "r": 141.23402561524867,
+            "b": 688.9042720899406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "31. Oktober 2026",
+      "text": "31. Oktober 2026",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 665.6999873425002,
+            "r": 190.50597856225053,
+            "b": 641.6542740586906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "Veröffentlichung des neuen Schulungskonzeptes",
+      "text": "Veröffentlichung des neuen Schulungskonzeptes"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 509.69999384250013,
+            "r": 151.36202346824874,
+            "b": 503.6542798086907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "01. November 2026",
+      "text": "01. November 2026",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 480.44999506124987,
+            "r": 253.9946612918887,
+            "b": 420.40428327744075,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            141
+          ]
+        }
+      ],
+      "orig": "Start der Ausbildung zum GS (Geprüfte Sicherheit)++-Berater und GS (Geprüfte Sicherheit)++-Auditteamleiter für bereits zertifizierte Personen",
+      "text": "Start der Ausbildung zum GS (Geprüfte Sicherheit)++-Berater und GS (Geprüfte Sicherheit)++-Auditteamleiter für bereits zertifizierte Personen"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 360.4500000612502,
+            "r": 132.15001489374913,
+            "b": 354.4042860274408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "01. Januar 2027",
+      "text": "01. Januar 2027",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 331.2000012799999,
+            "r": 284.6015554416014,
+            "b": 325.15428724619096,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "Der GS (Geprüfte Sicherheit)++ ist zertifizierbar",
+      "text": "Der GS (Geprüfte Sicherheit)++ ist zertifizierbar"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 193.20000703000005,
+            "r": 138.2220323407484,
+            "b": 187.15429299619063,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "26. Februar 2027",
+      "text": "26. Februar 2027",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 163.95000824875024,
+            "r": 276.4500769062463,
+            "b": 139.90429496494062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Leistungsmessung bei der Umsetzung des GS (Geprüfte Sicherheit)++",
+      "text": "Leistungsmessung bei der Umsetzung des GS (Geprüfte Sicherheit)++"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 808.199981405,
+            "r": 534.0081194496607,
+            "b": 748.1542696211909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "Die Methodik-GS (Geprüfte Sicherheit)++ wird auf der it-sa 2026 in Nürnberg veröffentlicht und der Community zur Anwendung bereitgestellt.",
+      "text": "Die Methodik-GS (Geprüfte Sicherheit)++ wird auf der it-sa 2026 in Nürnberg veröffentlicht und der Community zur Anwendung bereitgestellt."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 694.94998612375,
+            "r": 526.4038130665067,
+            "b": 562.9042773399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            299
+          ]
+        }
+      ],
+      "orig": "Für den IT (Informationstechnik)- Grundschutz-Praktiker und den IT (Informationstechnik)-Grundschutz-Berater des Grundschutz gibt es Schulungskonzepte. Für die Ausbildung zum GS (Geprüfte Sicherheit)++-Praktiker und GS (Geprüfte Sicherheit)++-Berater wird ebenso ein Schulungskonzept veröffentlicht.",
+      "text": "Für den IT (Informationstechnik)- Grundschutz-Praktiker und den IT (Informationstechnik)-Grundschutz-Berater des Grundschutz gibt es Schulungskonzepte. Für die Ausbildung zum GS (Geprüfte Sicherheit)++-Praktiker und GS (Geprüfte Sicherheit)++-Berater wird ebenso ein Schulungskonzept veröffentlicht."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 509.69999384250013,
+            "r": 523.3193343950267,
+            "b": 413.6542835586906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            236
+          ]
+        }
+      ],
+      "orig": "Für bereits zertifizierte IT (Informationstechnik)-Grundschutz-Berater und Auditteamleiter gibt es eine gesonderte Fortbildung für die Zertifizierung zum GS (Geprüfte Sicherheit)++-Berater und GS (Geprüfte Sicherheit)++-Auditteamleiter.",
+      "text": "Für bereits zertifizierte IT (Informationstechnik)-Grundschutz-Berater und Auditteamleiter gibt es eine gesonderte Fortbildung für die Zertifizierung zum GS (Geprüfte Sicherheit)++-Berater und GS (Geprüfte Sicherheit)++-Auditteamleiter."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 360.4500000612502,
+            "r": 539.6757608385091,
+            "b": 246.40429052744093,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            302
+          ]
+        }
+      ],
+      "orig": "Für eine Zertifizierung nach ISO (International Organization for Standardization) 27001 auf Basis von GS (Geprüfte Sicherheit)++ können Zertifizierungsanträge gestellt werden. Dies gilt ebenso für die Zertifizierung zum GS (Geprüfte Sicherheit)++-Berater und GS (Geprüfte Sicherheit)++-Auditteamleiter.",
+      "text": "Für eine Zertifizierung nach ISO (International Organization for Standardization) 27001 auf Basis von GS (Geprüfte Sicherheit)++ können Zertifizierungsanträge gestellt werden. Dies gilt ebenso für die Zertifizierung zum GS (Geprüfte Sicherheit)++-Berater und GS (Geprüfte Sicherheit)++-Auditteamleiter."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 193.20000703000005,
+            "r": 533.8078257330062,
+            "b": 115.15429599619029,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            182
+          ]
+        }
+      ],
+      "orig": "Das Konzept zur Leistungsmessung des ISMS (Information Security Management System) auf Basis des GS (Geprüfte Sicherheit)++ ist in der Methodik integriert und kann angewendet werden.",
+      "text": "Das Konzept zur Leistungsmessung des ISMS (Information Security Management System) auf Basis des GS (Geprüfte Sicherheit)++ ist in der Methodik integriert und kann angewendet werden."
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 808.199981405,
+            "r": 124.69804602924785,
+            "b": 802.1542673711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "31. März 2027",
+      "text": "31. März 2027",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 778.9499826237502,
+            "r": 238.9053105206116,
+            "b": 754.9042693399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "Leistungskennzahlen im GS (Geprüfte Sicherheit)++",
+      "text": "Leistungskennzahlen im GS (Geprüfte Sicherheit)++"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 701.6999858425002,
+            "r": 146.4333807486089,
+            "b": 695.6542718086907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "2027 ff. (folgende)",
+      "text": "2027 ff. (folgende)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 672.4499870612503,
+            "r": 243.48734532969348,
+            "b": 648.4042737774407,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "Internationalisierung des GS (Geprüfte Sicherheit)++",
+      "text": "Internationalisierung des GS (Geprüfte Sicherheit)++"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 230.60155289160156,
+            "t": 541.3574925234379,
+            "r": 364.8889830212916,
+            "b": 531.9110643456102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Ähnliche Themen",
+      "text": "Ähnliche Themen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 122.0039011665039,
+            "t": 436.94999687375,
+            "r": 208.9798457175061,
+            "b": 430.9042828399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Stand der Technik",
+      "text": "Stand der Technik"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 174.6210902241209,
+            "t": 365.69999984250035,
+            "r": 432.86087328912953,
+            "b": 359.6542858086905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Zurück zu Grundschutz in der Informationssicherheit",
+      "text": "Zurück zu Grundschutz in der Informationssicherheit",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Grundschutz-in-der-Informationssicherheit/isms_node.html"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 268.9500038737501,
+            "r": 158.39995432500166,
+            "b": 226.90429133994076,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 214.95000612375043,
+            "r": 121.33199186950014,
+            "b": 208.90429208994055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Bar­ rie­ re­ frei­ heit",
+      "text": "Bar­ rie­ re­ frei­ heit",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Barrierefreiheit/barrierefreiheit_node.html"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 178.20000765500026,
+            "r": 313.9438494440058,
+            "b": 172.1542936211904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 808.199981405,
+            "r": 529.536840735964,
+            "b": 766.1542688711907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Jede Anforderung aus den ISMS (Information Security Management System)-Praktiken hat Leistungskennzahlen zur Leistungsmessung.",
+      "text": "Jede Anforderung aus den ISMS (Information Security Management System)-Praktiken hat Leistungskennzahlen zur Leistungsmessung."
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 308.999987125,
+            "t": 701.6999858425002,
+            "r": 523.3558297685062,
+            "b": 677.6542725586905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "Integration anderer Managementsysteme in den GS (Geprüfte Sicherheit)++.",
+      "text": "Integration anderer Managementsysteme in den GS (Geprüfte Sicherheit)++."
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 118.14751015718775,
+            "r": 509.74872171046906,
+            "b": 113.23536750471794,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.242245189901915,
+            "t": 553.1186631544281,
+            "r": 170.60833030201633,
+            "b": 491.05693483729925,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/46"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 43.67680151613841,
+            "t": 511.7588246550521,
+            "r": 286.6039114075856,
+            "b": 398.185177085335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 5
+    }
+  }
+}

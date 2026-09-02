@@ -1,0 +1,1384 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---ISMS-ITKB",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 1754495767420539602,
+    "filename": "BSI---ISMS-ITKB.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/pictures/7"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/pictures/8"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/pictures/9"
+      },
+      {
+        "$ref": "#/pictures/10"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/4"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/5"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 318.8500746645797,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            31
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund ISMS ITKB",
+      "text": "Mindeststandards Bund ISMS ITKB"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 488.4632646473631,
+            "b": 345.1610721268601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            118
+          ]
+        }
+      ],
+      "orig": "Regelungsdokument für das Informationssicherheitsmanagement-system in der IT (Informationstechnik)-Konsolidierung Bund",
+      "text": "Regelungsdokument für das Informationssicherheitsmanagement-system in der IT (Informationstechnik)-Konsolidierung Bund",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 232.95000537374995,
+            "r": 546.681527496602,
+            "b": 100.90429658994049,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            747
+          ]
+        }
+      ],
+      "orig": "Gemäß Beschluss des Bundeskabinetts aus dem Jahr 2015 wird die IT (Informationstechnik) der Bundesverwaltung im Rahmen des ressortübergreifenden Großprojekts 'IT-Konsolidierung Bund (ITKB (IT-Konsolidierung Bund))' standardisiert und gebündelt. Die IT (Informationstechnik)-Konsolidierung führt dazu, dass IT (Informationstechnik)-Lösungen zunehmend zentral durch Dienstleister für die Kundeneinrichtungen erbracht werden. Wesentliche Aufgaben und damit verbunden auch Teile der Verantwortung werden mit der IT (Informationstechnik)-Konsolidierung an die Dienstleister übertragen. Risiken, die bisher einzelne Einrichtungen betrafen, können sich in einer konsolidierten IT (Informationstechnik)-Landschaft zu sogenannten Verbundrisiken entwickeln.",
+      "text": "Gemäß Beschluss des Bundeskabinetts aus dem Jahr 2015 wird die IT (Informationstechnik) der Bundesverwaltung im Rahmen des ressortübergreifenden Großprojekts 'IT-Konsolidierung Bund (ITKB (IT-Konsolidierung Bund))' standardisiert und gebündelt. Die IT (Informationstechnik)-Konsolidierung führt dazu, dass IT (Informationstechnik)-Lösungen zunehmend zentral durch Dienstleister für die Kundeneinrichtungen erbracht werden. Wesentliche Aufgaben und damit verbunden auch Teile der Verantwortung werden mit der IT (Informationstechnik)-Konsolidierung an die Dienstleister übertragen. Risiken, die bisher einzelne Einrichtungen betrafen, können sich in einer konsolidierten IT (Informationstechnik)-Landschaft zu sogenannten Verbundrisiken entwickeln."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 77.70001184249998,
+            "r": 534.8876777880124,
+            "b": 35.6542993086905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            274
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 542.9234521781887,
+            "b": 709.1542712461905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            275,
+            900
+          ]
+        }
+      ],
+      "orig": "Um in der konsolidierten IT (Informationstechnik)-Landschaft der Bundesverwaltung ein übergreifendes und angemessenes Informationssicherheitsniveau zu gewährleisten, müssen auch die Informationssicherheitsmanagementsysteme (ISMS (Information Security Management System)) der beteiligten Institutionen der ITKB (IT-Konsolidierung Bund) kooperieren. Zu den beteiligten Institutionen der ITKB (IT-Konsolidierung Bund) gehören die Projektleitung der IT (Informationstechnik)-Betriebskonsolidierung Bund, die Projektleitung der IT (Informationstechnik)- Dienstekonsolidierung, die Dienstleister und die Kundeneinrichtungen. Jedes ISMS (Information Security Management System) muss sowohl den Aufgaben im jeweils eigenen Bereich gerecht werden, als auch in angemessener Form mit den ISMS (Information Security Management System) der anderen Institutionen der ITKB (IT-Konsolidierung Bund) zusammenarbeiten.",
+      "text": "Um in der konsolidierten IT (Informationstechnik)-Landschaft der Bundesverwaltung ein übergreifendes und angemessenes Informationssicherheitsniveau zu gewährleisten, müssen auch die Informationssicherheitsmanagementsysteme (ISMS (Information Security Management System)) der beteiligten Institutionen der ITKB (IT-Konsolidierung Bund) kooperieren. Zu den beteiligten Institutionen der ITKB (IT-Konsolidierung Bund) gehören die Projektleitung der IT (Informationstechnik)-Betriebskonsolidierung Bund, die Projektleitung der IT (Informationstechnik)- Dienstekonsolidierung, die Dienstleister und die Kundeneinrichtungen. Jedes ISMS (Information Security Management System) muss sowohl den Aufgaben im jeweils eigenen Bereich gerecht werden, als auch in angemessener Form mit den ISMS (Information Security Management System) der anderen Institutionen der ITKB (IT-Konsolidierung Bund) zusammenarbeiten."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 685.94998649875,
+            "r": 550.7516015270155,
+            "b": 607.9042754649406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            444
+          ]
+        }
+      ],
+      "orig": "Das vorliegende Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT (Informationstechnik)-Konsolidierung Bund legt nach § 8 Abs. (Absatz) 1 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) für die ITKB (IT-Konsolidierung Bund) die diesbezüglichen Rechte und Pflichten der Institutionen der ITKB (IT-Konsolidierung Bund) fest.",
+      "text": "Das vorliegende Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT (Informationstechnik)-Konsolidierung Bund legt nach § 8 Abs. (Absatz) 1 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) für die ITKB (IT-Konsolidierung Bund) die diesbezüglichen Rechte und Pflichten der Institutionen der ITKB (IT-Konsolidierung Bund) fest."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 584.6999907175,
+            "r": 536.351662127013,
+            "b": 524.6542789336904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            308
+          ]
+        }
+      ],
+      "orig": "Aktualisierung Juli 2025: Die Titelseite des Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund wurde um den Zusatz 'Mindeststandard' erweitert. Ansonsten wurden keine weiteren Änderungen vorgenommen. Die ältere Version des Mindeststandards finden Sie im . Archiv",
+      "text": "Aktualisierung Juli 2025: Die Titelseite des Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund wurde um den Zusatz 'Mindeststandard' erweitert. Ansonsten wurden keine weiteren Änderungen vorgenommen. Die ältere Version des Mindeststandards finden Sie im . Archiv"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 501.44999418625,
+            "r": 549.1368441692974,
+            "b": 387.40428465244054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            539
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 339.6075009296876,
+            "r": 256.4132112411157,
+            "b": 330.1610727518603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard",
+      "text": "Download Mindeststandard",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 304.2000024050001,
+            "r": 542.8194608575218,
+            "b": 280.15428912119046,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            165
+          ]
+        }
+      ],
+      "orig": "Mindeststandard Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund, Vorgabe nach § 8 Absatz 1 Satz 1 BSIG - Version 1.0a",
+      "text": "Mindeststandard Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund, Vorgabe nach § 8 Absatz 1 Satz 1 BSIG - Version 1.0a",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_ISMS_ITKB_V1_0a.pdf?__blob=publicationFile&v=7"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 232.35750539843752,
+            "r": 543.5131959036161,
+            "b": 222.9110772206102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Download Referenztabelle IT (Informationstechnik)-Grundschutz",
+      "text": "Download Referenztabelle IT (Informationstechnik)-Grundschutz",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 196.95000687375,
+            "r": 537.03550024852,
+            "b": 172.9042935899406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            143
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Referenztabelle zum Regelungsdokument für das ISMS ITKB nach § 8 Absatz 1 Satz 1 BSIG (IT-Grundschutz-Kompendium - Edition 2023)",
+      "text": "IT-Grundschutz-Referenztabelle zum Regelungsdokument für das ISMS ITKB nach § 8 Absatz 1 Satz 1 BSIG (IT-Grundschutz-Kompendium - Edition 2023)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Referenztabelle_Mindeststandard_ISMS_ITKB_V1_0-Grundschutz2023.xlsx?__blob=publicationFile&v=6"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 125.10750986718745,
+            "r": 497.3928899002955,
+            "b": 89.41108278311026,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "Download Formular zur Meldung der SPOC (Single Point of Contact)",
+      "text": "Download Formular zur Meldung der SPOC (Single Point of Contact)"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 63.45001243625006,
+            "r": 500.35155195201776,
+            "b": 39.40429915244067,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            147
+          ]
+        }
+      ],
+      "orig": "Formular zur Meldung der SPOC gemäß dem Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund (ISMS ITKB)",
+      "text": "Formular zur Meldung der SPOC gemäß dem Regelungsdokument für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund (ISMS ITKB)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Formular_SPOC-Meldung_Mindeststandard_ISMS_ITKB.pdf?__blob=publicationFile&v=10"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 109.80468292480468,
+            "t": 694.199986155,
+            "r": 221.1765933843082,
+            "b": 688.1542721211906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Externe Cloud-Dienste",
+      "text": "Externe Cloud-Dienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Externe_Cloud-Dienste/Externe_Cloud-Dienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 104.77733938427734,
+            "t": 566.6999914675,
+            "r": 226.2052427497811,
+            "b": 560.6542774336906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "HV-Benchmark kompakt",
+      "text": "HV-Benchmark kompakt",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/HV-Benchmark-kompakt/HV-Benchmark-kompakt_node.html"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 90.84374621484375,
+            "t": 439.19999678,
+            "r": 240.1476085188492,
+            "b": 433.1542827461906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Protokollierung und Detektion",
+      "text": "Protokollierung und Detektion",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/PDCA/PDCA_node.html"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 109.30077669580078,
+            "t": 311.70000209249974,
+            "r": 221.69267608780476,
+            "b": 305.6542880586908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Videokonferenzdienste",
+      "text": "Videokonferenzdienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Videokonferenzdienste/Videokonferenzdienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 81.89062158789062,
+            "t": 184.20000740499972,
+            "r": 249.0984784208963,
+            "b": 178.15429337119076,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Nutzerpflichten Netze des Bundes",
+      "text": "Nutzerpflichten Netze des Bundes",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/NdB/NdB_node.html"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 230.60155289160156,
+            "t": 798.6074818046875,
+            "r": 364.8889830212916,
+            "b": 789.1610536268602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Ähnliche Themen",
+      "text": "Ähnliche Themen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 361.6171724326172,
+            "t": 694.199986155,
+            "r": 498.3810736591212,
+            "b": 688.1542721211906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Mobile Device Management",
+      "text": "Mobile Device Management",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Mobile_Device_Management/Mobile_Device_Management_node.html"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 357.1874851171875,
+            "t": 566.6999914675,
+            "r": 502.80735027469274,
+            "b": 560.6542774336906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Transport Layer Security (TLS)",
+      "text": "Transport Layer Security (TLS)",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 398.9648308764647,
+            "t": 439.19999678,
+            "r": 461.02879446546626,
+            "b": 433.1542827461906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Webbrowser",
+      "text": "Webbrowser",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Webbrowser/Webbrowser_node.html"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 371.01560954101564,
+            "t": 311.70000209249974,
+            "r": 488.97552505101896,
+            "b": 305.6542880586908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Schnittstellenkontrollen",
+      "text": "Schnittstellenkontrollen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Schnittstellenkontrollen/Schnittstellenkontrollen_node.html"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 373.93358191943344,
+            "t": 184.20000740499972,
+            "r": 486.06147404743774,
+            "b": 178.15429337119076,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Weitere_Informationen/Weitere_Informationen_node.html"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 112.95001037375005,
+            "r": 387.1355325693521,
+            "b": 106.90429633994063,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        },
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 691.9499862487501,
+            "r": 158.39995432500166,
+            "b": 631.904274464941,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            32,
+            118
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Zurück zu Mindeststandards Bund Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 808.199981405,
+            "r": 355.6233505073599,
+            "b": 802.1542673711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-ISMS-ITKB",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-ISMS-ITKB",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST-ISMS-ITKB"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 601.1999900300002,
+            "r": 313.9438494440058,
+            "b": 595.1542759961908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 541.1474925321872,
+            "r": 509.74872171046906,
+            "b": 536.2353498797174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.19504530242561,
+            "t": 553.093519059865,
+            "r": 170.62290146495147,
+            "b": 491.1152178720267,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.95402122521256,
+            "t": 757.0220813796836,
+            "r": 190.4208854936739,
+            "b": 701.8606142827815,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.7274892292983,
+            "t": 629.1848129895226,
+            "r": 189.9349562819896,
+            "b": 574.0427608564139,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 140.56205830806957,
+            "t": 502.00492993333614,
+            "r": 189.90769066087432,
+            "b": 446.2533013378022,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 140.2446968535659,
+            "t": 373.8246079059164,
+            "r": 190.67492723489917,
+            "b": 318.63487658863926,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.568777986522,
+            "t": 247.64571308516474,
+            "r": 190.56253855827063,
+            "b": 191.78102760813078,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.1920672197984,
+            "t": 756.2774927250325,
+            "r": 454.22690795055433,
+            "b": 701.6388030893607,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.8890723142521,
+            "t": 628.9559529055144,
+            "r": 454.755833536219,
+            "b": 573.6190340395422,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 405.75464516588636,
+            "t": 501.82159774870667,
+            "r": 456.7332090064482,
+            "b": 445.43331091413995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.36707375264245,
+            "t": 374.2738449934855,
+            "r": 455.5094754440918,
+            "b": 318.74540075187633,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/24"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.9058863682359,
+            "t": 247.28649429730558,
+            "r": 455.636725181138,
+            "b": 191.36560078363925,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/24"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    }
+  }
+}

@@ -1,0 +1,1986 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Beschreibung-TISAX-und-VDA-ISA-f-r-VDA-Webseite-DE",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 12581851934485755581,
+    "filename": "Beschreibung-TISAX-und-VDA-ISA-f-r-VDA-Webseite-DE.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/pictures/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 191.09,
+            "t": 771.58768,
+            "r": 408.57687999999996,
+            "b": 753.6439062983426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "VDA-ISA und TISAX 1 -Modell",
+      "text": "VDA-ISA und TISAX 1 -Modell",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 736.516,
+            "r": 527.6920000000002,
+            "b": 656.752861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            494
+          ]
+        }
+      ],
+      "orig": "Im  VDA  (Verband  der  Automobilindustrie)  existiert  seit  mehr  als  10  Jahren  der Arbeitskreis \"Informationssicherheit\". Dieser hat in mehreren Evolutionsstufen einen Fragenkatalog  zur  Informationssicherheit  (ISA  -  Information  Security  Assessment) entwickelt,  der  sich  auf  wesentliche  Aspekte  der  Internationalen  Norm  ISO/IEC 27001  abstützt.  Seit  Anfang  2017  ist  der  Katalog  (VDA-ISA)  in  der  Version  3.0 freigegeben und steht Interessierten zum Download unter",
+      "text": "Im  VDA  (Verband  der  Automobilindustrie)  existiert  seit  mehr  als  10  Jahren  der Arbeitskreis \"Informationssicherheit\". Dieser hat in mehreren Evolutionsstufen einen Fragenkatalog  zur  Informationssicherheit  (ISA  -  Information  Security  Assessment) entwickelt,  der  sich  auf  wesentliche  Aspekte  der  Internationalen  Norm  ISO/IEC 27001  abstützt.  Seit  Anfang  2017  ist  der  Katalog  (VDA-ISA)  in  der  Version  3.0 freigegeben und steht Interessierten zum Download unter"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 639.9159999999999,
+            "r": 367.906,
+            "b": 601.522861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            127
+          ]
+        }
+      ],
+      "orig": "https://www.vda.de/de/themen/sicherheit-undstandards/informationssicherheit/informationssicherheitsicherheitsanforderungen.html",
+      "text": "https://www.vda.de/de/themen/sicherheit-undstandards/informationssicherheit/informationssicherheitsicherheitsanforderungen.html",
+      "hyperlink": "https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 584.686,
+            "r": 527.812,
+            "b": 504.92286187845303,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            464
+          ]
+        }
+      ],
+      "orig": "zur Verfügung. Er hat sich in den vergangenen Jahren quasi zu einem Branchenstandard für Informationssicherheit entwickelt. Aktuell besteht er aus einem Basisbaustein  sowie  zusätzliche  Module  für  Prototypenschutz,  Anbindung  Dritter (z. B. Projektbüros, Projektflächen) und Datenschutz (§11 BDSG zur Auftragsdatenverarbeitung),  die  in  Prüfungen  verwendet  werden  können.  Weitere Module werden je nach Anforderung entwickelt und dem Katalog hinzugefügt.",
+      "text": "zur Verfügung. Er hat sich in den vergangenen Jahren quasi zu einem Branchenstandard für Informationssicherheit entwickelt. Aktuell besteht er aus einem Basisbaustein  sowie  zusätzliche  Module  für  Prototypenschutz,  Anbindung  Dritter (z. B. Projektbüros, Projektflächen) und Datenschutz (§11 BDSG zur Auftragsdatenverarbeitung),  die  in  Prüfungen  verwendet  werden  können.  Weitere Module werden je nach Anforderung entwickelt und dem Katalog hinzugefügt."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 488.086,
+            "r": 527.8359999999999,
+            "b": 311.82286187845307,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            976
+          ]
+        }
+      ],
+      "orig": "Der VDA ISA Fragenkatalog wird von den Mitgliedsunternehmen sowohl für interne eigene Zwecke verwendet als auch für Prüfungen bei Lieferanten und Dienstleistern, die sensible Informationen aus den jeweiligen Häusern verarbeiten. Diese Prüfungen, insbesondere bei Dienstleistern und Lieferanten, wurden in der Vergangenheit häufig in Eigenregie des jeweiligen Unternehmens durchgeführt. Dies hatte zur Folge, dass ein Dienstleister bzw. Lieferant in mehr oder weniger kurzen Abständen mehrfach geprüft werden konnte. Die zuständigen VDA-Gremien haben inzwischen  die  inhaltlichen  und  formalen  Voraussetzungen  geschaffen,  für  das Information  Security  Assessment  (ISA)  einen  gemeinsamen  Prüf-  und  Austauschmechanismus (TISAX) im Bereich Automotive und darüber hinaus zu etablieren, um diese Mehrfachprüfungen  zu vermeiden. Das  TISAX  Modell  wurde  dabei so aufgebaut, dass es möglichst universell einsetzbar ist und damit ggf. auch weiteren Branchen offensteht.",
+      "text": "Der VDA ISA Fragenkatalog wird von den Mitgliedsunternehmen sowohl für interne eigene Zwecke verwendet als auch für Prüfungen bei Lieferanten und Dienstleistern, die sensible Informationen aus den jeweiligen Häusern verarbeiten. Diese Prüfungen, insbesondere bei Dienstleistern und Lieferanten, wurden in der Vergangenheit häufig in Eigenregie des jeweiligen Unternehmens durchgeführt. Dies hatte zur Folge, dass ein Dienstleister bzw. Lieferant in mehr oder weniger kurzen Abständen mehrfach geprüft werden konnte. Die zuständigen VDA-Gremien haben inzwischen  die  inhaltlichen  und  formalen  Voraussetzungen  geschaffen,  für  das Information  Security  Assessment  (ISA)  einen  gemeinsamen  Prüf-  und  Austauschmechanismus (TISAX) im Bereich Automotive und darüber hinaus zu etablieren, um diese Mehrfachprüfungen  zu vermeiden. Das  TISAX  Modell  wurde  dabei so aufgebaut, dass es möglichst universell einsetzbar ist und damit ggf. auch weiteren Branchen offensteht."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 294.956,
+            "r": 527.7760000000001,
+            "b": 201.392861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            574
+          ]
+        }
+      ],
+      "orig": "Seit  Mai  2016  ist  das  hierfür  entwickelte  Konzept  in  einer  Pilotimplementierung erprobt  worden.  Der  Betreiber  des  TISAX  selbst  ist  die  ENX 2 Association,  die wiederum vom VDA als neutrale Instanz mit der Durchführung betraut  wurde.  Der TISAX ermöglicht Wettbewerb unter akkreditierten Prüfdienstleistern und ermöglicht durch die Standardisierung und Qualitätssicherung  eine gemeinsame Anerkennung von  Prüfergebnissen  unter  den  TISAX  Teilnehmern.  Diese  Prüfdienstleister  prüfen auf Grundlage des gemeinsam im VDA verabschiedeten Fragenkatalogs.",
+      "text": "Seit  Mai  2016  ist  das  hierfür  entwickelte  Konzept  in  einer  Pilotimplementierung erprobt  worden.  Der  Betreiber  des  TISAX  selbst  ist  die  ENX 2 Association,  die wiederum vom VDA als neutrale Instanz mit der Durchführung betraut  wurde.  Der TISAX ermöglicht Wettbewerb unter akkreditierten Prüfdienstleistern und ermöglicht durch die Standardisierung und Qualitätssicherung  eine gemeinsame Anerkennung von  Prüfergebnissen  unter  den  TISAX  Teilnehmern.  Diese  Prüfdienstleister  prüfen auf Grundlage des gemeinsam im VDA verabschiedeten Fragenkatalogs."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 184.55599999999993,
+            "r": 527.7760000000001,
+            "b": 104.772861878453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            492
+          ]
+        }
+      ],
+      "orig": "TISAX Teilnehmer sind alle Unternehmen, die im TISAX Prüfungen anfordern bzw. Prüfergebnisse bereitstellen wollen. Hierbei gibt es zwei Rollen, die des Informationsempfängers  'Information Consumer'  (fragt Prüfungsergebnis  ab) und  die des Teilnehmers  'Information  Contributor'  (liefert  ein  Prüfergebnis).  Der  'Information Contributor'  unterzieht  sich  auf  Anforderung  eines  'Information  Consumers'  einem Assessment oder lässt sich eigeninitiativ prüfen. Nach Durchführung des",
+      "text": "TISAX Teilnehmer sind alle Unternehmen, die im TISAX Prüfungen anfordern bzw. Prüfergebnisse bereitstellen wollen. Hierbei gibt es zwei Rollen, die des Informationsempfängers  'Information Consumer'  (fragt Prüfungsergebnis  ab) und  die des Teilnehmers  'Information  Contributor'  (liefert  ein  Prüfergebnis).  Der  'Information Contributor'  unterzieht  sich  auf  Anforderung  eines  'Information  Consumers'  einem Assessment oder lässt sich eigeninitiativ prüfen. Nach Durchführung des"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 80.19744000000003,
+            "r": 74.42688,
+            "b": 74.38534541436468,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "1",
+      "text": "1"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 70.824,
+            "t": 68.67744000000005,
+            "r": 74.42688,
+            "b": 62.8653454143647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "2",
+      "text": "2"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 77.184,
+            "t": 77.69087999999999,
+            "r": 83.26956,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "T",
+      "text": "T"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 83.424,
+            "t": 77.69087999999999,
+            "r": 113.89164000000004,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "rusted",
+      "text": "rusted"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 77.184,
+            "t": 66.17088000000001,
+            "r": 83.82732,
+            "b": 57.23747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "E",
+      "text": "E"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 113.9,
+            "t": 77.69087999999999,
+            "r": 116.66888,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "I",
+      "text": "I"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 116.66,
+            "t": 77.69087999999999,
+            "r": 166.55959999999996,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "nformation",
+      "text": "nformation"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 83.784,
+            "t": 66.17088000000001,
+            "r": 123.26544000000004,
+            "b": 57.23747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "uropean",
+      "text": "uropean"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 123.26,
+            "t": 66.17088000000001,
+            "r": 130.45112,
+            "b": 57.23747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "N",
+      "text": "N"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 166.61,
+            "t": 77.69087999999999,
+            "r": 173.25332,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "S",
+      "text": "S"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 130.46,
+            "t": 66.17088000000001,
+            "r": 168.36775999999998,
+            "b": 57.23747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 173.33,
+            "t": 77.69087999999999,
+            "r": 205.46095999999994,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            9,
+            16
+          ]
+        }
+      ],
+      "orig": "etwork e ecurity",
+      "text": "etwork e ecurity"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 168.41,
+            "t": 66.17088000000001,
+            "r": 175.05331999999999,
+            "b": 57.23747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "X",
+      "text": "X"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 205.73,
+            "t": 77.69087999999999,
+            "r": 212.92112,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "A",
+      "text": "A"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 175.01,
+            "t": 66.17088000000001,
+            "r": 210.65887999999998,
+            "b": 57.23747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 212.69,
+            "t": 77.69087999999999,
+            "r": 268.94408,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            7,
+            18
+          ]
+        }
+      ],
+      "orig": "change ssessment e",
+      "text": "change ssessment e"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 268.97,
+            "t": 77.69087999999999,
+            "r": 275.61332000000004,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "X",
+      "text": "X"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 275.59,
+            "t": 77.69087999999999,
+            "r": 311.23888000000005,
+            "b": 68.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.824,
+            "t": 768.7959999999999,
+            "r": 527.7640000000002,
+            "b": 661.4328618784531,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            7,
+            564
+          ]
+        }
+      ],
+      "orig": "change Assessments durch einen akkreditierten Prüfdienstleister werden die Prüfergebnisse dem 'Information Consumer' als Anforderer zur Verfügung gestellt. Darüber hinaus kann das geprüfte Unternehmen auf Anfrage auch weiteren Teilnehmern im TISAX Prüfergebnisse in unterschiedlicher Detailtiefe verfügbar machen, wodurch zusätzliche Prüfungen durch andere mögliche 'Information Consumer' mit gleichen Sicherheitsanforderungen vermieden werden. Doppelund Mehrfachprüfungen gehören damit der Vergangenheit an, was allen Beteiligten hilft, Zeit und Kosten zu sparen.",
+      "text": "change Assessments durch einen akkreditierten Prüfdienstleister werden die Prüfergebnisse dem 'Information Consumer' als Anforderer zur Verfügung gestellt. Darüber hinaus kann das geprüfte Unternehmen auf Anfrage auch weiteren Teilnehmern im TISAX Prüfergebnisse in unterschiedlicher Detailtiefe verfügbar machen, wodurch zusätzliche Prüfungen durch andere mögliche 'Information Consumer' mit gleichen Sicherheitsanforderungen vermieden werden. Doppelund Mehrfachprüfungen gehören damit der Vergangenheit an, was allen Beteiligten hilft, Zeit und Kosten zu sparen."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.824,
+            "t": 644.596,
+            "r": 527.788,
+            "b": 509.60286187845304,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            765
+          ]
+        }
+      ],
+      "orig": "Die ENX Association agiert dabei als Governance-Organisation. Sie akkreditiert die Prüfdienstleister und überwacht die Qualität der Durchführung und der AssessmentErgebnisse. Rechtlich wird diese Kontrollfunktion durch ein Vertragsdreieck abgesichert, welches sowohl aus einem Vertrag zwischen ENX  und jedem akkreditierten  Prüfdienstleister  wie  auch  den  Allgemeinen  Geschäftsbedingungen (AGB) zwischen ENX und jedem Teilnehmer besteht. Der Teilnehmer stimmt diesen AGB durch die Registrierung zu. So kann sichergestellt werden, dass die Resultate am Ende einer gewünschten Qualität und Objektivität entsprechen sowie angemessene Rechte und Pflichten der Teilnehmer garantieren und damit auch den Anspruch der 'Information Consumer' Teilnehmer gerecht werden.",
+      "text": "Die ENX Association agiert dabei als Governance-Organisation. Sie akkreditiert die Prüfdienstleister und überwacht die Qualität der Durchführung und der AssessmentErgebnisse. Rechtlich wird diese Kontrollfunktion durch ein Vertragsdreieck abgesichert, welches sowohl aus einem Vertrag zwischen ENX  und jedem akkreditierten  Prüfdienstleister  wie  auch  den  Allgemeinen  Geschäftsbedingungen (AGB) zwischen ENX und jedem Teilnehmer besteht. Der Teilnehmer stimmt diesen AGB durch die Registrierung zu. So kann sichergestellt werden, dass die Resultate am Ende einer gewünschten Qualität und Objektivität entsprechen sowie angemessene Rechte und Pflichten der Teilnehmer garantieren und damit auch den Anspruch der 'Information Consumer' Teilnehmer gerecht werden."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.824,
+            "t": 492.76599999999996,
+            "r": 527.824,
+            "b": 412.98286187845304,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            421
+          ]
+        }
+      ],
+      "orig": "Für eine gegenseitige  Anerkennung  von  Prüfungsergebnissen ist eine Registrierung als Teilnehmer  im  TISAX  eine  notwendige  Voraussetzung. Um sich zu registrieren, müssen  Sie ein Registrierungsformular ausfüllen, welches Sie bei der  ENX Association unter der E-Mail Adresse tisax@enx.com oder telefonisch unter +49 69 986692  777 anfordern können.  Weitere  Informationen  finden Sie auch  unter www.enx.com/tisax.",
+      "text": "Für eine gegenseitige  Anerkennung  von  Prüfungsergebnissen ist eine Registrierung als Teilnehmer  im  TISAX  eine  notwendige  Voraussetzung. Um sich zu registrieren, müssen  Sie ein Registrierungsformular ausfüllen, welches Sie bei der  ENX Association unter der E-Mail Adresse tisax@enx.com oder telefonisch unter +49 69 986692  777 anfordern können.  Weitere  Informationen  finden Sie auch  unter www.enx.com/tisax."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 102.540241881008,
+            "t": 382.49351537304005,
+            "r": 438.3650984520142,
+            "b": 374.8709656746803,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "Das TISAX-Modell ermöglicht eine IT-Sicherheitstestierung durch Prüfdienstleister",
+      "text": "Das TISAX-Modell ermöglicht eine IT-Sicherheitstestierung durch Prüfdienstleister"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 102.540241881008,
+            "t": 372.29530789704006,
+            "r": 413.01848885375614,
+            "b": 364.6727581986803,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "nach VDA-Standard und trägt dazu bei, redundante Prüfungen zu vermeiden.",
+      "text": "nach VDA-Standard und trägt dazu bei, redundante Prüfungen zu vermeiden."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 253.08127832786,
+            "t": 163.8865529321664,
+            "r": 347.88895831510854,
+            "b": 157.07707520163171,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "AK Informationssicherheit",
+      "text": "AK Informationssicherheit"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 482.57966412691997,
+            "t": 164.54377074728643,
+            "r": 497.24971734927965,
+            "b": 160.2751429162049,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Seite 8",
+      "text": "Seite 8"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 156.297471977168,
+            "t": 359.5580489286264,
+            "r": 441.34885154610663,
+            "b": 352.74857119809167,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "Neukonzept: Prüfung von Lieferanten zur Informationssicherheit (schematisch)",
+      "text": "Neukonzept: Prüfung von Lieferanten zur Informationssicherheit (schematisch)"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 227.65811571206,
+            "t": 316.16017379850143,
+            "r": 246.90538159453985,
+            "b": 310.2450752325743,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "TISAX",
+      "text": "TISAX"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 248.97954874597997,
+            "t": 316.16017379850143,
+            "r": 405.39472316238755,
+            "b": 310.2450752325743,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "= Trusted Information Security Assessment Exchange",
+      "text": "= Trusted Information Security Assessment Exchange"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 293.975711279,
+            "t": 302.2250107172737,
+            "r": 331.64728109360135,
+            "b": 296.33023895054214,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Governance",
+      "text": "Governance"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 291.82088560004,
+            "t": 294.30957000270143,
+            "r": 333.90612814691633,
+            "b": 288.3944714367743,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Akkreditierung",
+      "text": "Akkreditierung"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 212.23410032581998,
+            "t": 196.75016321015994,
+            "r": 258.20844030520993,
+            "b": 189.12761351180018,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Lieferanten",
+      "text": "Lieferanten"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 260.45305038746,
+            "t": 196.75016321015994,
+            "r": 274.241099435858,
+            "b": 189.12761351180018,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "mit",
+      "text": "mit"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 274.1758876061,
+            "t": 196.75016321015994,
+            "r": 413.3322617157803,
+            "b": 189.12761351180018,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "informationssicherheitsrelevanten",
+      "text": "informationssicherheitsrelevanten"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 225.16305439957998,
+            "t": 186.55195573416006,
+            "r": 400.61406471500595,
+            "b": 178.9294060358003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "Geschäftsbeziehungen zur Automobilindustrie",
+      "text": "Geschäftsbeziehungen zur Automobilindustrie"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 203.66205255908,
+            "t": 219.11823160752,
+            "r": 257.3398943407521,
+            "b": 214.03653180861352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "liefert Prüfergebnisse",
+      "text": "liefert Prüfergebnisse"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 391.47212226212,
+            "t": 219.11823160752,
+            "r": 440.0407589470999,
+            "b": 214.03653180861352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "führt Prüfung durch",
+      "text": "führt Prüfung durch"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 282.7762883423,
+            "t": 219.11823160752,
+            "r": 353.98760643803587,
+            "b": 214.03653180861352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "beauftragt gegen Bezahlung",
+      "text": "beauftragt gegen Bezahlung"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 366.49315616786,
+            "t": 267.50494896726,
+            "r": 394.45485464931187,
+            "b": 262.42324916835355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "akkreditiert",
+      "text": "akkreditiert"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 158.815215665216,
+            "t": 213.81516372,
+            "r": 176.91008077458804,
+            "b": 208.73346392109352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "fordert",
+      "text": "fordert"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 157.681096886816,
+            "t": 207.01635873600003,
+            "r": 177.83060718305597,
+            "b": 201.93465893709356,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Assess-",
+      "text": "Assess-"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 157.454273131136,
+            "t": 200.21755375200007,
+            "r": 177.96103084257197,
+            "b": 195.1358539530935,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "ment an",
+      "text": "ment an"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 158.905945167488,
+            "t": 309.90305227026,
+            "r": 178.821070916192,
+            "b": 304.8213524713535,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Abfrage",
+      "text": "Abfrage"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 161.287594602128,
+            "t": 303.10424728626003,
+            "r": 176.46210385711998,
+            "b": 298.02254748735356,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Testat",
+      "text": "Testat"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 157.27281412659198,
+            "t": 292.2505594675248,
+            "r": 180.43197322903134,
+            "b": 287.7786636444871,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Monitoring",
+      "text": "Monitoring"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 154.097281547072,
+            "t": 286.33937624532484,
+            "r": 183.6887087130848,
+            "b": 281.86748042228714,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Assessments",
+      "text": "Assessments"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 158.837898040784,
+            "t": 186.91455866664,
+            "r": 176.734292363936,
+            "b": 179.29200896828024,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "1:n !",
+      "text": "1:n !"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 452.25899843818934,
+            "t": 267.5370544409826,
+            "r": 459.88817174774556,
+            "b": 177.46421971413235,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Assessment-Standard",
+      "text": "Assessment-Standard"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 452.25899847462847,
+            "t": 320.12675527069257,
+            "r": 459.88817174774556,
+            "b": 267.4785091453524,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": ": VDA-ISA 3.0",
+      "text": ": VDA-ISA 3.0"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 462.05506253734893,
+            "t": 300.0199316385707,
+            "r": 467.9549568581475,
+            "b": 197.76998393862186,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "(Adaptierung ISO/IEC 27002:2013)",
+      "text": "(Adaptierung ISO/IEC 27002:2013)"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 132.617071726817,
+            "t": 257.8119304784526,
+            "r": 140.24624504552554,
+            "b": 173.61156355653236,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Automobil-Hersteller",
+      "text": "Automobil-Hersteller"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 132.61707181728568,
+            "t": 276.80231478862254,
+            "r": 140.24624504552554,
+            "b": 260.0942515099524,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "und",
+      "text": "und"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 132.6170717286883,
+            "t": 315.38175595894256,
+            "r": 140.24624504552554,
+            "b": 276.5435824573524,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Zulieferer",
+      "text": "Zulieferer"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 132.61707186519084,
+            "t": 320.18057914348253,
+            "r": 140.24624504552554,
+            "b": 315.4384126366524,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "/",
+      "text": "/"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 142.82414068485207,
+            "t": 223.89155927911258,
+            "r": 150.45331405112557,
+            "b": 172.70505622533233,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Dienstleister",
+      "text": "Dienstleister"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 142.82414083094923,
+            "t": 240.79225533517263,
+            "r": 150.45331405112557,
+            "b": 226.0983380330124,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "der",
+      "text": "der"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 142.82414057757578,
+            "t": 318.6999505025225,
+            "r": 150.45331405112557,
+            "b": 240.7176573055524,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Automobilindustrie",
+      "text": "Automobilindustrie"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 276.018830621,
+            "t": 252.00828168267356,
+            "r": 392.1744442176238,
+            "b": 246.11350991594202,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "TISAX-akkreditierte Prüfdienstleister",
+      "text": "TISAX-akkreditierte Prüfdienstleister"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 288.05939165168,
+            "t": 244.0763425346737,
+            "r": 380.6234444596196,
+            "b": 238.18157076794205,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "(Assessment &Testaterstellung)",
+      "text": "(Assessment &Testaterstellung)"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 71.07991177552499,
+            "t": 398.15775384825935,
+            "r": 526.6978216675625,
+            "b": 141.32995448894007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 2
+    }
+  }
+}

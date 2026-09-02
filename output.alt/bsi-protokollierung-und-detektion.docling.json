@@ -1,0 +1,955 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Protokollierung-und-Detektion",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 14118865428296594711,
+    "filename": "BSI---Protokollierung-und-Detektion.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 404.9184516783972,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            51
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund Protokollierung und Detektion",
+      "text": "Mindeststandards Bund Protokollierung und Detektion"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 516.8341887652414,
+            "b": 345.1610721268601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Protokollierung und Detektion von Cyberangriffen",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Protokollierung und Detektion von Cyberangriffen"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 232.95000537374995,
+            "r": 547.9647036431363,
+            "b": 172.9042935899405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            359
+          ]
+        }
+      ],
+      "orig": "Immer häufiger werden Cyberangriffe auf Unternehmen und Regierungen bekannt, die folgenschwere Konsequenzen für die Betroffenen auslösen. Um Cyberangriffe auf die Bundesverwaltung erkennen und behandeln zu können, reguliert dieser Mindeststandard die Protokollierung und Detektion von sicherheitsrelevanten Ereignissen in der Kommunikationstechnik des Bundes.",
+      "text": "Immer häufiger werden Cyberangriffe auf Unternehmen und Regierungen bekannt, die folgenschwere Konsequenzen für die Betroffenen auslösen. Um Cyberangriffe auf die Bundesverwaltung erkennen und behandeln zu können, reguliert dieser Mindeststandard die Protokollierung und Detektion von sicherheitsrelevanten Ereignissen in der Kommunikationstechnik des Bundes."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 149.70000884249998,
+            "r": 547.9316951695117,
+            "b": 35.6542993086905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            651
+          ]
+        }
+      ],
+      "orig": "Anhand dieses Mindeststandards etabliert das BSI (Bundesamt für Sicherheit in der Informationstechnik) die bereits durch den Umsetzungsplan 2017 geforderte einheitliche Herangehensweise zur Erkennung von Cyberangriffen und bildet eine Grundlage für die Einforderung und Umsetzung von organisatorischen und technischen Maßnahmen. Für eine gemeinsame Basis und Anwendung legt der Mindeststandard daher auch zunächst besonders relevante Begriffe fest. Weiterhin werden die Bausteine OPS.1.1.5 Protokollierung und DER.1 Detektion von sicherheitsrelevanten Ereignissen aus dem modernisierten IT (Informationstechnik)-Grundschutz entsprechend konkretisiert.",
+      "text": "Anhand dieses Mindeststandards etabliert das BSI (Bundesamt für Sicherheit in der Informationstechnik) die bereits durch den Umsetzungsplan 2017 geforderte einheitliche Herangehensweise zur Erkennung von Cyberangriffen und bildet eine Grundlage für die Einforderung und Umsetzung von organisatorischen und technischen Maßnahmen. Für eine gemeinsame Basis und Anwendung legt der Mindeststandard daher auch zunächst besonders relevante Begriffe fest. Weiterhin werden die Bausteine OPS.1.1.5 Protokollierung und DER.1 Detektion von sicherheitsrelevanten Ereignissen aus dem modernisierten IT (Informationstechnik)-Grundschutz entsprechend konkretisiert."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 823.19998078,
+            "r": 541.7877054755113,
+            "b": 745.1542697461905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            420
+          ]
+        }
+      ],
+      "orig": "Aktualisierung November 2024: Der Mindeststandard wurde auf die Version 2.1 aktualisiert. Die Angabe einer Speicherfrist für Protokoll- und Protokollierungsdaten wurde in der entsprechenden Sicherheitsanforderung konkretisiert. Ebenso wurde die Forderung nach Löschung nach Ablauf der Speicherfrist für sicherheitsrelevante Ereignisse und für Ereignisse, die nachweislich einem Cyberangriff zugeordnet wurden, angepasst.",
+      "text": "Aktualisierung November 2024: Der Mindeststandard wurde auf die Version 2.1 aktualisiert. Die Angabe einer Speicherfrist für Protokoll- und Protokollierungsdaten wurde in der entsprechenden Sicherheitsanforderung konkretisiert. Ebenso wurde die Forderung nach Löschung nach Ablauf der Speicherfrist für sicherheitsrelevante Ereignisse und für Ereignisse, die nachweislich einem Cyberangriff zugeordnet wurden, angepasst."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 733.19998453,
+            "r": 302.4719122470031,
+            "b": 727.1542704961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "Die vorgenommenen Anpassungen werden in der",
+      "text": "Die vorgenommenen Anpassungen werden in der"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 69.9960908334961,
+            "t": 715.19998528,
+            "r": 478.99153544201863,
+            "b": 691.1542719961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht zum Mindeststandard zur Protokollierung und Detektion von Cyberangriffen",
+      "text": "Änderungsübersicht zum Mindeststandard zur Protokollierung und Detektion von Cyberangriffen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/PDCA/Aenderungsuebersicht_MST_PDCA/Aenderungsuebersicht_PDCA_node.html",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 679.19998678,
+            "r": 529.3792247925314,
+            "b": 637.1542742461905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            266
+          ]
+        }
+      ],
+      "orig": "aufgelistet. Ebenso wurde die Referenztabelle neu erstellt. Sie nimmt Bezug auf das IT (Informationstechnik)-Grundschutz-Kompendium (Edition 2023). Alle Dokumente stehen Ihnen zum Download zur Verfügung. Die ältere Version des Mindeststandards finden Sie im . Archiv",
+      "text": "aufgelistet. Ebenso wurde die Referenztabelle neu erstellt. Sie nimmt Bezug auf das IT (Informationstechnik)-Grundschutz-Kompendium (Edition 2023). Alle Dokumente stehen Ihnen zum Download zur Verfügung. Die ältere Version des Mindeststandards finden Sie im . Archiv"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 613.94998949875,
+            "r": 549.1368441692974,
+            "b": 499.90427996494054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            539
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 452.1074962421876,
+            "r": 344.238152681743,
+            "b": 442.6610680643603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard Version 2.1",
+      "text": "Download Mindeststandard Version 2.1",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 416.6999977175001,
+            "r": 516.2155023160199,
+            "b": 392.65428443369046,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            116
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Protokollierung und Detektion von Cyberangriffen Version 2.1",
+      "text": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Protokollierung und Detektion von Cyberangriffen Version 2.1",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/MST_BSI_PD_Version_2_1.pdf?__blob=publicationFile&v=6"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 344.85750071093753,
+            "r": 246.85540341435774,
+            "b": 335.4110725331102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Referenztabelle",
+      "text": "Download Referenztabelle",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 309.45000218625,
+            "r": 536.0034608415215,
+            "b": 267.4042896524404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            194
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Protokollierung und Detektion von Cyberangriffen Version 2.1 (IT-Grundschutz-Kompendium - Edition 2023)",
+      "text": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Protokollierung und Detektion von Cyberangriffen Version 2.1 (IT-Grundschutz-Kompendium - Edition 2023)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Referenztabelle_MST_PD_V2_1-Grundschutz2023.xlsx?__blob=publicationFile&v=4"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 176.75390263525372,
+            "t": 159.60750842968764,
+            "r": 468.5600032266656,
+            "b": 150.16108025186008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Weitere empfehlenswerte Dokumente",
+      "text": "Weitere empfehlenswerte Dokumente",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 199.25390169775372,
+            "t": 124.20000990500012,
+            "r": 312.23375974025936,
+            "b": 100.15429662119072,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Umsetzungsplan Bund BSI-Gesetz",
+      "text": "Umsetzungsplan Bund BSI-Gesetz"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 798.6074818046875,
+            "r": 385.34051271914456,
+            "b": 789.1610536268602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 116.24999515625,
+            "t": 694.199986155,
+            "r": 214.73392565275267,
+            "b": 688.1542721211906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht",
+      "text": "Änderungsübersicht"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 325.16014645166,
+            "t": 694.199986155,
+            "r": 534.8359882401661,
+            "b": 672.4042727774406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "FAQ zum Mindeststandard Protokollierung und Detektion",
+      "text": "FAQ zum Mindeststandard Protokollierung und Detektion"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 622.9499891237499,
+            "r": 387.1355325693521,
+            "b": 616.9042750899405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund",
+      "text": "Zurück zu Mindeststandards Bund"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 520.94999337375,
+            "r": 97.09206240449723,
+            "b": 514.9042793399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Kurz-URL:",
+      "text": "Kurz-URL:"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 115.85155767285156,
+            "t": 520.94999337375,
+            "r": 313.22738834885837,
+            "b": 514.9042793399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "https:/ /www.bsi.bund.de/dok/MST-PD",
+      "text": "https:/ /www.bsi.bund.de/dok/MST-PD",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST-PD"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 404.6999982174998,
+            "r": 107.76000345999967,
+            "b": 380.65428493369063,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 368.69999971749985,
+            "r": 158.39995432500166,
+            "b": 362.65428568369043,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Nut­ zungs­ be­ din­ gun­ gen",
+      "text": "Nut­ zungs­ be­ din­ gun­ gen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Nutzungsbedingungen/Nutzungsbedingungen_node.html"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 350.7000004675001,
+            "r": 121.33199186950014,
+            "b": 344.6542864336907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Bar­ rie­ re­ frei­ heit",
+      "text": "Bar­ rie­ re­ frei­ heit",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Barrierefreiheit/barrierefreiheit_node.html"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 313.95000199874994,
+            "r": 313.9438494440058,
+            "b": 307.9042879649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 253.89750450093743,
+            "r": 509.74872171046906,
+            "b": 248.98536184846716,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            54,
+            57
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik TOP",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.232331458889234,
+            "t": 553.0894300930308,
+            "r": 170.55935288523955,
+            "b": 491.16785569134856,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 43.03816880555815,
+            "t": 768.6933887712282,
+            "r": 551.9251364588121,
+            "b": 595.6000076094776,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    }
+  }
+}

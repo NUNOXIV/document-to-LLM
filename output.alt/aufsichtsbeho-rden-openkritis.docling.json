@@ -1,0 +1,4987 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Aufsichtsbeho-rden-OpenKRITIS",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 9499005067642379526,
+    "filename": "Aufsichtsbeho-rden-OpenKRITIS.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/texts/92"
+      },
+      {
+        "$ref": "#/texts/93"
+      },
+      {
+        "$ref": "#/texts/94"
+      },
+      {
+        "$ref": "#/texts/95"
+      },
+      {
+        "$ref": "#/texts/96"
+      },
+      {
+        "$ref": "#/texts/97"
+      },
+      {
+        "$ref": "#/texts/98"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/116"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/117"
+      },
+      {
+        "$ref": "#/texts/118"
+      },
+      {
+        "$ref": "#/texts/119"
+      },
+      {
+        "$ref": "#/texts/120"
+      },
+      {
+        "$ref": "#/texts/121"
+      },
+      {
+        "$ref": "#/texts/122"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/128"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/144"
+      },
+      {
+        "$ref": "#/texts/145"
+      },
+      {
+        "$ref": "#/texts/146"
+      },
+      {
+        "$ref": "#/texts/147"
+      },
+      {
+        "$ref": "#/texts/148"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        },
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        },
+        {
+          "$ref": "#/texts/103"
+        },
+        {
+          "$ref": "#/texts/104"
+        },
+        {
+          "$ref": "#/texts/105"
+        },
+        {
+          "$ref": "#/texts/106"
+        },
+        {
+          "$ref": "#/texts/107"
+        },
+        {
+          "$ref": "#/texts/108"
+        },
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        },
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        },
+        {
+          "$ref": "#/texts/113"
+        },
+        {
+          "$ref": "#/texts/114"
+        },
+        {
+          "$ref": "#/texts/115"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/123"
+        },
+        {
+          "$ref": "#/texts/124"
+        },
+        {
+          "$ref": "#/texts/125"
+        },
+        {
+          "$ref": "#/texts/126"
+        },
+        {
+          "$ref": "#/texts/127"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/129"
+        },
+        {
+          "$ref": "#/texts/130"
+        },
+        {
+          "$ref": "#/texts/131"
+        },
+        {
+          "$ref": "#/texts/132"
+        },
+        {
+          "$ref": "#/texts/133"
+        },
+        {
+          "$ref": "#/texts/134"
+        },
+        {
+          "$ref": "#/texts/135"
+        },
+        {
+          "$ref": "#/texts/136"
+        },
+        {
+          "$ref": "#/texts/137"
+        },
+        {
+          "$ref": "#/texts/138"
+        },
+        {
+          "$ref": "#/texts/139"
+        },
+        {
+          "$ref": "#/texts/140"
+        },
+        {
+          "$ref": "#/texts/141"
+        },
+        {
+          "$ref": "#/texts/142"
+        },
+        {
+          "$ref": "#/texts/143"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:17",
+      "text": "10.08.26, 17:17"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 405.3632681098631,
+            "t": 577.7496212324044,
+            "r": 516.8285081403553,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden - OpenKRITIS",
+      "text": "Aufsichtsbehörden - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 138.3960246421712,
+            "r": 115.15931112836819,
+            "b": 133.79973003723484,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 126.67292925863353,
+            "r": 81.01274292136625,
+            "b": 122.07663465369717,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NIS2",
+      "text": "NIS2",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 114.9498338750958,
+            "r": 89.1028999178277,
+            "b": 110.3535392701595,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Europa",
+      "text": "Europa",
+      "hyperlink": "https://www.openkritis.de/eu/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 103.22673849155814,
+            "r": 97.77819411878673,
+            "b": 98.63044388662183,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Betreiber",
+      "text": "Betreiber",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 91.50364310802047,
+            "r": 93.73820370446569,
+            "b": 86.90734850308417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Security",
+      "text": "Security",
+      "hyperlink": "https://www.openkritis.de/massnahmen/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 79.78054772448274,
+            "r": 87.95806639730475,
+            "b": 75.1842531195465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "School",
+      "text": "School",
+      "hyperlink": "https://www.openkritis.de/school/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 51.80081620363205,
+            "r": 200.8691816082451,
+            "b": 42.41148517885415,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden",
+      "text": "Aufsichtsbehörden",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 241.2973074591204,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "text": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "1/7",
+      "text": "1/7"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:17",
+      "text": "10.08.26, 17:17"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 405.3632681098631,
+            "t": 577.7496212324044,
+            "r": 516.8285081403553,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden - OpenKRITIS",
+      "text": "Aufsichtsbehörden - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 564.9864618755688,
+            "r": 162.31118832858488,
+            "b": 560.3901672706324,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Kritische Infrastrukturen",
+      "text": "Kritische Infrastrukturen",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 553.2633664920312,
+            "r": 131.94511486983797,
+            "b": 548.6670718870948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "NIS2-Umsetzung",
+      "text": "NIS2-Umsetzung",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/nis2-umsetzung-gesetz-cybersicherheit.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 541.5402711084935,
+            "r": 144.08035041663274,
+            "b": 536.9439765035571,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "KRITIS-Dachgesetz",
+      "text": "KRITIS-Dachgesetz",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/kritis-dachgesetz-sicherheitsgesetz-3-0.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 529.8171757249559,
+            "r": 96.05331152977851,
+            "b": 525.2208811200195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Sektoren",
+      "text": "Sektoren",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/kritis-sektoren.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 518.0940803414181,
+            "r": 94.31316463693861,
+            "b": 513.4977857364818,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Anlagen",
+      "text": "Anlagen",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/kritis-anlagen.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 506.3709849578804,
+            "r": 118.04429164593631,
+            "b": 501.77469035294416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Einrichtungen",
+      "text": "Einrichtungen",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/einrichtungen-unternehmensgroesse-nis2.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 494.6478895743428,
+            "r": 118.04429169803896,
+            "b": 490.05159496940644,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Verordnungen",
+      "text": "Verordnungen",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/kritis-verordnung-2-0.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 482.9247941908051,
+            "r": 118.03920371833456,
+            "b": 478.3284995858688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Gesetzgebung",
+      "text": "Gesetzgebung",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/gesetzgebung-kritis-bsig.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 471.20169880726746,
+            "r": 99.52342925184425,
+            "b": 466.6054042023311,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Behörden",
+      "text": "Behörden",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 241.2973074591204,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "text": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "2/7",
+      "text": "2/7"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:17",
+      "text": "10.08.26, 17:17"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 405.3632681098631,
+            "t": 577.7496212324044,
+            "r": 516.8285081403553,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden - OpenKRITIS",
+      "text": "Aufsichtsbehörden - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 75.87286903930294,
+            "r": 806.7557928847251,
+            "b": 47.83038366729102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            395
+          ]
+        }
+      ],
+      "orig": "Im Kontext der KRITIS-Regulierung spielen eine Vielzahl von Bundesbehörden seit dem IT-Sicherheitsgesetz von 2015 eine Rolle. Die wichtigsten Behörden für KRITIS-Betreiber sind das Bundesamt für Sicherheit in der Informationstechnik und das Innenministerium, neben sektorspezifischen Aufsichtsbehörden und bestehender Regulierung. Staatliche KRITISAufgaben und Befugnisse wachsen in den 2020ern.",
+      "text": "Im Kontext der KRITIS-Regulierung spielen eine Vielzahl von Bundesbehörden seit dem IT-Sicherheitsgesetz von 2015 eine Rolle. Die wichtigsten Behörden für KRITIS-Betreiber sind das Bundesamt für Sicherheit in der Informationstechnik und das Innenministerium, neben sektorspezifischen Aufsichtsbehörden und bestehender Regulierung. Staatliche KRITISAufgaben und Befugnisse wachsen in den 2020ern."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 241.2973074591204,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "text": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "3/7",
+      "text": "3/7"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:17",
+      "text": "10.08.26, 17:17"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 405.3632681098631,
+            "t": 577.7496212324044,
+            "r": 516.8285081403553,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden - OpenKRITIS",
+      "text": "Aufsichtsbehörden - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.9863616515731,
+            "r": 787.7006751672856,
+            "b": 548.6669716630988,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            310
+          ]
+        }
+      ],
+      "orig": "Eine zunehmende Rolle soll ab 2023-2024 das Bundesamt für Bevölkerungs­ schutz und Katastrophenhilfe spielen, mit zusätzlicher KRITIS-Regulierung zu Resilienz und physischer Sicherheit. Die Auswirkungen auf Betreibern von überschneidenden Vorgaben und verschiedenen Meldewegen je nach Thrma bleiben abzuwarten.",
+      "text": "Eine zunehmende Rolle soll ab 2023-2024 das Bundesamt für Bevölkerungs­ schutz und Katastrophenhilfe spielen, mit zusätzlicher KRITIS-Regulierung zu Resilienz und physischer Sicherheit. Die Auswirkungen auf Betreibern von überschneidenden Vorgaben und verschiedenen Meldewegen je nach Thrma bleiben abzuwarten."
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 531.1196416546866,
+            "r": 796.4268538545267,
+            "b": 514.8002516662123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            250
+          ]
+        }
+      ],
+      "orig": "Neben den nationalen Behörden reguliert ENISA (European Union Agency for Cybersecurity) auf EU-Ebene Themen rund um Cyber Security mit einer zunehmende starken Rolle der Europäischen Kommission und verschiedenere Netzwerke und Regelkreisen in der EU.",
+      "text": "Neben den nationalen Behörden reguliert ENISA (European Union Agency for Cybersecurity) auf EU-Ebene Themen rund um Cyber Security mit einer zunehmende starken Rolle der Europäischen Kommission und verschiedenere Netzwerke und Regelkreisen in der EU."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 493.10608023091186,
+            "r": 310.17788662295146,
+            "b": 486.0640819623284,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "Zentrale Behörden für NIS2 und KRITIS",
+      "text": "Zentrale Behörden für NIS2 und KRITIS",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 462.7726468081189,
+            "r": 164.32327532583435,
+            "b": 457.28282261798563,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Bundesinnen­ ministerium",
+      "text": "Bundesinnen­ ministerium",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 436.68359550952187,
+            "r": 803.2093551805291,
+            "b": 408.64111013750994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            377
+          ]
+        }
+      ],
+      "orig": "Das Innenministerium (BMI) ist auf Bundesebene das federführende Ressort für den Schutz Kritischer Infrastrukturen und verantwortlich für die Gesetzgebung und Regulierung zu KRITIS. Das erste und zweite IT-Sicherheitsgesetz stammen aus der Feder des BMI - für die Regulierung und operativen Aufgaben untersteht ihm das Bundesamt für Sicherheit in der Informationstechnik (BSI).",
+      "text": "Das Innenministerium (BMI) ist auf Bundesebene das federführende Ressort für den Schutz Kritischer Infrastrukturen und verantwortlich für die Gesetzgebung und Regulierung zu KRITIS. Das erste und zweite IT-Sicherheitsgesetz stammen aus der Feder des BMI - für die Regulierung und operativen Aufgaben untersteht ihm das Bundesamt für Sicherheit in der Informationstechnik (BSI)."
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 391.0937801290977,
+            "r": 791.5880273367329,
+            "b": 374.7743901406234,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            269
+          ]
+        }
+      ],
+      "orig": "Nicht alle regulierten KRITIS-Sektoren und Betreiber fallen in die direkte Zuständigkeit des BMI - einige Betreiber unterliegen zusätzlich zum IT-Sicherheitsgesetz noch bisheriger Regulierung durch BNetzA (Wirtschaftsministerium), BaFin (Finanzministerium) und weitere.",
+      "text": "Nicht alle regulierten KRITIS-Sektoren und Betreiber fallen in die direkte Zuständigkeit des BMI - einige Betreiber unterliegen zusätzlich zum IT-Sicherheitsgesetz noch bisheriger Regulierung durch BNetzA (Wirtschaftsministerium), BaFin (Finanzministerium) und weitere."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 357.22706013221114,
+            "r": 43.3807926884669,
+            "b": 352.63076552727443,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 333.16731451234136,
+            "r": 310.43621028248697,
+            "b": 327.6774903222081,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 307.0782632137443,
+            "r": 778.4148029254592,
+            "b": 302.48196860880785,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            177
+          ]
+        }
+      ],
+      "orig": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI) ist die zentrale Stelle für die Sicherheit Kritischer Infrastrukturen in Deutschland und wichtigste KRITIS-Behörde.",
+      "text": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI) ist die zentrale Stelle für die Sicherheit Kritischer Infrastrukturen in Deutschland und wichtigste KRITIS-Behörde."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 284.9346386003954,
+            "r": 783.5487438328951,
+            "b": 268.61524861192106,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            295
+          ]
+        }
+      ],
+      "orig": "Im BSI ist der Fachbereich WG 1 für die Cyber Security in Kritischen Infrastrukturen zuständig mit insgesamt fünf Referaten WG 11 bis WG 15. Die KRITIS-Referate, Anfang der 2010er noch ein einzelnes Referat, sind in den 2020ern aufgeteilt in drei Sektor-, ein Grundsatz- und ein Prüfungsreferat.",
+      "text": "Im BSI ist der Fachbereich WG 1 für die Cyber Security in Kritischen Infrastrukturen zuständig mit insgesamt fünf Referaten WG 11 bis WG 15. Die KRITIS-Referate, Anfang der 2010er noch ein einzelnes Referat, sind in den 2020ern aufgeteilt in drei Sektor-, ein Grundsatz- und ein Prüfungsreferat."
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 251.06791860350882,
+            "r": 640.9126638437418,
+            "b": 246.4716239985721,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            139
+          ]
+        }
+      ],
+      "orig": "Die KRITIS-Verantwortlichkeiten des BSI sind in §8a und §3 BSIG definiert und mit dem IT-Sicherheitsgesetz 1.0 von 2015 deutlich gewachsen:",
+      "text": "Die KRITIS-Verantwortlichkeiten des BSI sind in §8a und §3 BSIG definiert und mit dem IT-Sicherheitsgesetz 1.0 von 2015 deutlich gewachsen:"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 228.92429399015987,
+            "r": 312.182618464128,
+            "b": 224.3279993852234,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Zentrale Meldestelle für Betreiber Kritischen Infrastrukturen",
+      "text": "Zentrale Meldestelle für Betreiber Kritischen Infrastrukturen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 217.20119860662226,
+            "r": 334.0870981839703,
+            "b": 212.60490400168555,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "Zentrales Lagebild für die IT-Sicherheit Kritischer Infrastrukturen",
+      "text": "Zentrales Lagebild für die IT-Sicherheit Kritischer Infrastrukturen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 205.47810322308442,
+            "r": 370.116286536884,
+            "b": 200.88180861814794,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            66
+          ]
+        }
+      ],
+      "orig": "Warnungen an KRITIS-Betreiber und Behörden zur Abwehr von Gefahren",
+      "text": "Warnungen an KRITIS-Betreiber und Behörden zur Abwehr von Gefahren",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 193.7550078395468,
+            "r": 320.6238574706721,
+            "b": 189.15871323461033,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "Registrierungen von KRITIS-Betreibern und KRITIS-Anlagen",
+      "text": "Registrierungen von KRITIS-Betreibern und KRITIS-Anlagen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 182.0319124560092,
+            "r": 303.80752512153884,
+            "b": 177.4356178510725,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Abnahme der Unterlagen der KRITIS-Nachweisprüfungen",
+      "text": "Abnahme der Unterlagen der KRITIS-Nachweisprüfungen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 170.30881707247158,
+            "r": 387.1615828964148,
+            "b": 165.71252246753488,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "Berichtswesen zu Kritischen Infrastrukturen an das BMI und innerhalb der EU",
+      "text": "Berichtswesen zu Kritischen Infrastrukturen an das BMI und innerhalb der EU",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 158.58572168893375,
+            "r": 422.0052287069572,
+            "b": 153.98942708399727,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "Verwaltungsbehörde für Bußgelder bei Verstößen gegen KRITIS BSIG-Anforderungen",
+      "text": "Verwaltungsbehörde für Bußgelder bei Verstößen gegen KRITIS BSIG-Anforderungen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 136.44209707558502,
+            "r": 798.4672048621518,
+            "b": 120.12270708711048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            241
+          ]
+        }
+      ],
+      "orig": "Die Aufgaben und Rechte vom BSI haben durch das IT-Sicherheitsgesetz 2.0 in 2021 deutlich zugenommen - mit einem Wachstum von knapp 800 Planstellen, und werden ab 2023-24 durch EU NIS 2 und IT-Sicherheitsgesetz 3.0 nochmal stark expandieren.",
+      "text": "Die Aufgaben und Rechte vom BSI haben durch das IT-Sicherheitsgesetz 2.0 in 2021 deutlich zugenommen - mit einem Wachstum von knapp 800 Planstellen, und werden ab 2023-24 durch EU NIS 2 und IT-Sicherheitsgesetz 3.0 nochmal stark expandieren."
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 102.57537707869824,
+            "r": 412.47512557182046,
+            "b": 97.97908247376154,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "Anfang 2026 besteht das BSI laut aktuellem Organisationsplan aus folgenden Abteilungen:",
+      "text": "Anfang 2026 besteht das BSI laut aktuellem Organisationsplan aus folgenden Abteilungen:"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 80.57930882652818,
+            "r": 318.2324276833281,
+            "b": 75.83545786041259,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "T Technologiestrategie und Informationstechnik (21 Referate)",
+      "text": "T Technologiestrategie und Informationstechnik (21 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 68.85621344299034,
+            "r": 321.860278168854,
+            "b": 64.1123624768752,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "V Verschlusssachensicherheit und Kryptographie (16 Referate)",
+      "text": "V Verschlusssachensicherheit und Kryptographie (16 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 57.1331180594525,
+            "r": 414.15930148359934,
+            "b": 52.38926709333737,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "K Kooperation mit Staat und Gesellschaft, Digitaler Verbraucherschutz (12 Referate)",
+      "text": "K Kooperation mit Staat und Gesellschaft, Digitaler Verbraucherschutz (12 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 45.410022675915116,
+            "r": 314.1975285832809,
+            "b": 40.66617170979998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "C Operative Cybersicherheit - Lage und CERT (11 Referate)",
+      "text": "C Operative Cybersicherheit - Lage und CERT (11 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 241.2973074591204,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "text": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "4/7",
+      "text": "4/7"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:17",
+      "text": "10.08.26, 17:17"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 405.3632681098631,
+            "t": 577.7496212324044,
+            "r": 516.8285081403553,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden - OpenKRITIS",
+      "text": "Aufsichtsbehörden - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 484.2273780085311,
+            "r": 43.3807926884669,
+            "b": 479.6310834035944,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 459.51634931179797,
+            "r": 339.2399280296305,
+            "b": 454.0265251216647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe",
+      "text": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 434.0785810900643,
+            "r": 770.9199630006028,
+            "b": 406.03609571805237,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            370
+          ]
+        }
+      ],
+      "orig": "Das Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK) in Bonn ist ebenfalls in den Schutz Kritischer Infrastrukturen eingebunden. Im BBK beschäftigen sich die Referate aus der Referatsgruppe N.II, Infrastrukturschutz , mit KRITIS, unter anderem: KRITIS-Strategien, Zusammenarbeit von Bund, Ländern und EU, KRITIS-Sektoren, Schutzkonzepte und Risikomanagement.",
+      "text": "Das Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK) in Bonn ist ebenfalls in den Schutz Kritischer Infrastrukturen eingebunden. Im BBK beschäftigen sich die Referate aus der Referatsgruppe N.II, Infrastrukturschutz , mit KRITIS, unter anderem: KRITIS-Strategien, Zusammenarbeit von Bund, Ländern und EU, KRITIS-Sektoren, Schutzkonzepte und Risikomanagement."
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 388.63632207081855,
+            "r": 274.8966621313503,
+            "b": 383.8924711047034,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "N.II.1 Grundlagen Schutz kritischer Infrastrukturen",
+      "text": "N.II.1 Grundlagen Schutz kritischer Infrastrukturen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 376.91322668728117,
+            "r": 281.5621375013787,
+            "b": 372.1693757211656,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "N.II.2 Infrastrukturschutz 1: Staat, Medien, Finanzen",
+      "text": "N.II.2 Infrastrukturschutz 1: Staat, Medien, Finanzen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 365.1901313037433,
+            "r": 323.61060130766725,
+            "b": 360.4462803376282,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "N.II.3 Infrastrukturschutz 2: Kommunikation, Verkehr, Energie",
+      "text": "N.II.3 Infrastrukturschutz 2: Kommunikation, Verkehr, Energie",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 353.4670359202055,
+            "r": 311.7857435164988,
+            "b": 348.72318495409036,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "N.II.4 Infrastrukturschutz 3: Wasser, Entsorgung, Ernährung",
+      "text": "N.II.4 Infrastrukturschutz 3: Wasser, Entsorgung, Ernährung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 331.1758549456781,
+            "r": 668.1953188031049,
+            "b": 326.5795603407414,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            146
+          ]
+        }
+      ],
+      "orig": "Das BBK ist darüberhinaus in vielen Forschungsprojekten, methodischen Entwicklungen und Publikationen zum Schutz Kritischer Infrastrukturen tätig.",
+      "text": "Das BBK ist darüberhinaus in vielen Forschungsprojekten, methodischen Entwicklungen und Publikationen zum Schutz Kritischer Infrastrukturen tätig."
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 309.03223033232916,
+            "r": 797.8464440624805,
+            "b": 292.7128403438551,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            304
+          ]
+        }
+      ],
+      "orig": "Das BBK soll im KRITIS-Dachgesetz und für EU CER die Competent authority , die nationale Behörde für den 'physischen Schutz kritischer Infrastrukturen', werden und Meldungen über Sicherheits­ vorfälle annehmen und generell Resilienz und Vorsorge­ maßnahmen bei KRITIS-Betreiber regulieren und überwachen.",
+      "text": "Das BBK soll im KRITIS-Dachgesetz und für EU CER die Competent authority , die nationale Behörde für den 'physischen Schutz kritischer Infrastrukturen', werden und Meldungen über Sicherheits­ vorfälle annehmen und generell Resilienz und Vorsorge­ maßnahmen bei KRITIS-Betreiber regulieren und überwachen."
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 275.1655103354424,
+            "r": 373.99345276926584,
+            "b": 270.56921573050613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "Anfang 2026 besteht das BBK laut Organisationsplan aus folgenden Abteilungen:",
+      "text": "Anfang 2026 besteht das BBK laut Organisationsplan aus folgenden Abteilungen:"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 253.16944208327232,
+            "r": 482.20311683627716,
+            "b": 248.42559111715718,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            98
+          ]
+        }
+      ],
+      "orig": "G Grundsatz: Bevölkerungsschutz und Zivile Verteidigung, Kooperation, Digitalisierung (6 Referate)",
+      "text": "G Grundsatz: Bevölkerungsschutz und Zivile Verteidigung, Kooperation, Digitalisierung (6 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 241.44634669973448,
+            "r": 393.8474110840316,
+            "b": 236.70249573361934,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "N Zivile Notfallplanung: Vorsorgeplanung und Infrastrukturschutz (10 Referate)",
+      "text": "N Zivile Notfallplanung: Vorsorgeplanung und Infrastrukturschutz (10 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 229.7232513161971,
+            "r": 441.3910766459188,
+            "b": 224.9794003500815,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "K Bevölkerungsresilienz und Kommunikation: Medien, Grundlagen, Verhalten (5 Referate)",
+      "text": "K Bevölkerungsresilienz und Kommunikation: Medien, Grundlagen, Verhalten (5 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 218.00015593265925,
+            "r": 411.157295088211,
+            "b": 213.25630496654412,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            80
+          ]
+        }
+      ],
+      "orig": "A Zivilschutzausstattung: Grundlagen, CBRN, Versorgung, Ausstattung (9 Referate)",
+      "text": "A Zivilschutzausstattung: Grundlagen, CBRN, Versorgung, Ausstattung (9 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 206.27706054912142,
+            "r": 441.9762124436449,
+            "b": 201.53320958300628,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "L Lagemanagent Warnung: Bundeswarnsysteme, GMLZ, Lagezentrum, Krisen (7 Referate)",
+      "text": "L Lagemanagent Warnung: Bundeswarnsysteme, GMLZ, Lagezentrum, Krisen (7 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 194.55396516558403,
+            "r": 396.2388387742439,
+            "b": 189.81011419946844,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "B Bundesakademie für Bevölkerungsschutz und Zivile Verteidigung (6 Referate)",
+      "text": "B Bundesakademie für Bevölkerungsschutz und Zivile Verteidigung (6 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 182.8308697820462,
+            "r": 327.07054247114377,
+            "b": 178.08701881593106,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "Z Zentrale Aufgaben: Verwaltung und zentralen Dienste I und II",
+      "text": "Z Zentrale Aufgaben: Verwaltung und zentralen Dienste I und II",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 160.53968880751881,
+            "r": 43.3807926884669,
+            "b": 155.9433942025821,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 134.24922276728148,
+            "r": 213.7447431331454,
+            "b": 127.207224498698,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Weitere Aufsichtsbehörden",
+      "text": "Weitere Aufsichtsbehörden",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 103.91578934448853,
+            "r": 133.8357442050467,
+            "b": 98.42596515435525,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Bundesnetzagentur",
+      "text": "Bundesnetzagentur",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 77.82673804589149,
+            "r": 784.7444618918026,
+            "b": 61.5073480574174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            239
+          ]
+        }
+      ],
+      "orig": "Die Bundesnetzagentur (BNetzA) ist im Ressort des Wirtschaftsministerium verantwortlich für die Regulierung von Infrastrukturen und deren Betreibern - darunter auch KRITISBetreiber aus den Sektoren Telekommunikation, Energie und Transport.",
+      "text": "Die Bundesnetzagentur (BNetzA) ist im Ressort des Wirtschaftsministerium verantwortlich für die Regulierung von Infrastrukturen und deren Betreibern - darunter auch KRITISBetreiber aus den Sektoren Telekommunikation, Energie und Transport."
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 565.1340359007468,
+            "r": 312.808460496211,
+            "b": 560.3901849346316,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "S Standardisierung, Zertifizierung und Prüfung (18 Referate)",
+      "text": "S Standardisierung, Zertifizierung und Prüfung (18 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 553.4109405172094,
+            "r": 313.0730445588025,
+            "b": 548.6670895510943,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "D Digitalisierung und elektronische Identitäten (15 Referate)",
+      "text": "D Digitalisierung und elektronische Identitäten (15 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 541.6878451336715,
+            "r": 286.25341245143704,
+            "b": 536.9439941675564,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "I Sichere Infrastrukturen der Verwaltung (16 Referate)",
+      "text": "I Sichere Infrastrukturen der Verwaltung (16 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 529.9647497501342,
+            "r": 397.2462941073594,
+            "b": 525.2208987840186,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "W Wirtschaft und Gesellschaft inklusive der fünf KRITIS-Referate (14 Referate)",
+      "text": "W Wirtschaft und Gesellschaft inklusive der fünf KRITIS-Referate (14 Referate)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 518.2416543665963,
+            "r": 215.0956467873995,
+            "b": 513.4978034004812,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Z Zentrale Aufgaben und Verwaltung",
+      "text": "Z Zentrale Aufgaben und Verwaltung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 506.5185589830585,
+            "r": 385.3044084063675,
+            "b": 501.77470801694335,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "Leitung durch den Präsidenten, seinen Stab und Abteilung Z , der Verwaltung",
+      "text": "Leitung durch den Präsidenten, seinen Stab und Abteilung Z , der Verwaltung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 241.2973074591204,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "text": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "5/7",
+      "text": "5/7"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:17",
+      "text": "10.08.26, 17:17"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 405.3632681098631,
+            "t": 577.7496212324044,
+            "r": 516.8285081403553,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden - OpenKRITIS",
+      "text": "Aufsichtsbehörden - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.9862614275771,
+            "r": 777.1173297011885,
+            "b": 548.666871439103,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            254
+          ]
+        }
+      ],
+      "orig": "Die BNetzA ist zuständig für Sicherheitsanforderungen aus u.a. TKG und EnWG für Sicherheit in Infrastrukturen, Anlagen und Diensten. Für bestimmte KRITIS-Sektoren gibt es doppelte Pflichten und teilweise abweichende Berichtswege neben dem BSI zur BNetzA:",
+      "text": "Die BNetzA ist zuständig für Sicherheitsanforderungen aus u.a. TKG und EnWG für Sicherheit in Infrastrukturen, Anlagen und Diensten. Für bestimmte KRITIS-Sektoren gibt es doppelte Pflichten und teilweise abweichende Berichtswege neben dem BSI zur BNetzA:"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 531.1195414306903,
+            "r": 801.632025474848,
+            "b": 514.8001514422167,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            236
+          ]
+        }
+      ],
+      "orig": "Betreiber in den Sektoren Energie und Telekommunikation müssen sich, je nach Anlagen und Dienst, bei der BNetzA registrieren, Vorfälle melden und den Sicherheitskatalog (Energie) bzw. ein Sicherheitskonzept (Telekommunikation) umsetzen.",
+      "text": "Betreiber in den Sektoren Energie und Telekommunikation müssen sich, je nach Anlagen und Dienst, bei der BNetzA registrieren, Vorfälle melden und den Sicherheitskatalog (Energie) bzw. ein Sicherheitskonzept (Telekommunikation) umsetzen."
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 494.6854173504198,
+            "r": 282.59637300330957,
+            "b": 489.19559316028653,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesanstalt für Finanz­ dienstleistungs­ aufsicht",
+      "text": "Bundesanstalt für Finanz­ dienstleistungs­ aufsicht",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 469.24764912868613,
+            "r": 788.8455116576592,
+            "b": 441.20516375667466,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            354
+          ]
+        }
+      ],
+      "orig": "Die Bundesanstalt für Finanzdienstleistungsaufsicht (BAFin) teilt sich mit dem BSI die Aufsicht von KRITIS-Betreibern aus dem Finanz- und Versicherungssektor - Banken, Versicherungen und ihren Dienstleistern. Betreiber im Sektor unterliegen neben dem BSIG teilweise dem KWG, dem ZAG, SSM-Verordnung und der Regulierung der Europäischen Zentralbank (EZB).",
+      "text": "Die Bundesanstalt für Finanzdienstleistungsaufsicht (BAFin) teilt sich mit dem BSI die Aufsicht von KRITIS-Betreibern aus dem Finanz- und Versicherungssektor - Banken, Versicherungen und ihren Dienstleistern. Betreiber im Sektor unterliegen neben dem BSIG teilweise dem KWG, dem ZAG, SSM-Verordnung und der Regulierung der Europäischen Zentralbank (EZB)."
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 423.65783374826196,
+            "r": 802.7107181899881,
+            "b": 395.6153483762505,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            349
+          ]
+        }
+      ],
+      "orig": "Für die Belange dieser Betreiber gibt es in den Bankaufsichtlichen Anforderungen an die IT (BAIT) seit 2018 ein KRITIS-Modul für Kritische Infrastrukturen. Dies soll Doppelbelastungen vermeiden und konkretisiert zusätzliche Anforderungen für KRITIS-Betreiber und die Möglichkeit, die BSIG-Nachweise im Rahmen der Jahresabschlussprüfung zu erbringen.",
+      "text": "Für die Belange dieser Betreiber gibt es in den Bankaufsichtlichen Anforderungen an die IT (BAIT) seit 2018 ein KRITIS-Modul für Kritische Infrastrukturen. Dies soll Doppelbelastungen vermeiden und konkretisiert zusätzliche Anforderungen für KRITIS-Betreiber und die Möglichkeit, die BSIG-Nachweise im Rahmen der Jahresabschlussprüfung zu erbringen."
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 378.0680183678378,
+            "r": 43.3807926884669,
+            "b": 373.47172376290155,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 353.35698967110466,
+            "r": 255.2503964788193,
+            "b": 347.8671654809714,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "European Union Agency for Cybersecurity",
+      "text": "European Union Agency for Cybersecurity",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 327.2679383725076,
+            "r": 799.0472508826323,
+            "b": 310.948548384034,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            343
+          ]
+        }
+      ],
+      "orig": "Die ENISA ist die übergreifende, koordinierende Behörde (Agentur) für Cyber Security in der EU. Gegründet 2004 als European Network and Information Security Agency haben sich Portfolio, Benennung und Aufgaben in Anbetracht der politischen Lage und Regulierung Kritischer Infrastrukturen deutlich verändert und seit den 2010er Jahren erweitert.",
+      "text": "Die ENISA ist die übergreifende, koordinierende Behörde (Agentur) für Cyber Security in der EU. Gegründet 2004 als European Network and Information Security Agency haben sich Portfolio, Benennung und Aufgaben in Anbetracht der politischen Lage und Regulierung Kritischer Infrastrukturen deutlich verändert und seit den 2010er Jahren erweitert."
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 293.4012183756213,
+            "r": 763.1910577734178,
+            "b": 288.80492377068504,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            166
+          ]
+        }
+      ],
+      "orig": "Reguliert duch den EU Cybersecurity Act (EU 2019/881) koordiniert, entwickelt und forscht die ENISA EU-relevante Themen in operativen Units und thematischen Sektoren:",
+      "text": "Reguliert duch den EU Cybersecurity Act (EU 2019/881) koordiniert, entwickelt und forscht die ENISA EU-relevante Themen in operativen Units und thematischen Sektoren:"
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 271.4051501234512,
+            "r": 775.8096724937018,
+            "b": 266.6612991573361,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            163
+          ]
+        }
+      ],
+      "orig": "Leitung umfasst die operative Leitung der ENISA durch den Executive Director und die strategische Aufsicht durch Management Board und operativ das Executive Board.",
+      "text": "Leitung umfasst die operative Leitung der ENISA durch den Executive Director und die strategische Aufsicht durch Management Board und operativ das Executive Board.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 259.6820547399134,
+            "r": 711.1036856974392,
+            "b": 254.93820377379825,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            158
+          ]
+        }
+      ],
+      "orig": "Units sind die funktionalen Bereiche, die für Aktivitäten, Regulierung und Initiativen zuständig sind und die operative übergreifende Arbeit (Dienste) leiten.",
+      "text": "Units sind die funktionalen Bereiche, die für Aktivitäten, Regulierung und Initiativen zuständig sind und die operative übergreifende Arbeit (Dienste) leiten.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 247.958959356376,
+            "r": 639.299719934389,
+            "b": 243.2151083902604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            121
+          ]
+        }
+      ],
+      "orig": "Policy Development and Implementation (PDI): Entwicklung von Cybersecurity Policy für die EU und Begleitung der Umsetzung",
+      "text": "Policy Development and Implementation (PDI): Entwicklung von Cybersecurity Policy für die EU und Begleitung der Umsetzung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 236.23586397283816,
+            "r": 459.90176128306086,
+            "b": 231.49201300672303,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "Capacity Building (CBU): Aufbau und Unterstützung von Strukturen in Mitgliedsstaaten",
+      "text": "Capacity Building (CBU): Aufbau und Unterstützung von Strukturen in Mitgliedsstaaten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 224.51276858930032,
+            "r": 713.9530442350156,
+            "b": 219.7689176231852,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            137
+          ]
+        }
+      ],
+      "orig": "Operational Coordination (OCU): Kooperation und Koordinierung zwischen EU-Behörden und innerhalb der EU mit Mitgliedsstaaten und Akteuren",
+      "text": "Operational Coordination (OCU): Kooperation und Koordinierung zwischen EU-Behörden und innerhalb der EU mit Mitgliedsstaaten und Akteuren",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 212.78967320576294,
+            "r": 691.1428712119446,
+            "b": 208.04582223964735,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            134
+          ]
+        }
+      ],
+      "orig": "Market Certification and Standardisation (MCS): Analyse und Vorgaben zum Cybersecurity-Markt, Produkten und Zertifizierungen in der EU",
+      "text": "Market Certification and Standardisation (MCS): Analyse und Vorgaben zum Cybersecurity-Markt, Produkten und Zertifizierungen in der EU",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 201.0665778222251,
+            "r": 751.7020269888226,
+            "b": 196.32272685610997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            165
+          ]
+        }
+      ],
+      "orig": "Sektoren sind die fachlichen Teams in einer Matrix-Struktur, in denen die Fachthemen verantwortet werden, die für die Aktivitäten der Units (s.o.) bearbeitet werden.",
+      "text": "Sektoren sind die fachlichen Teams in einer Matrix-Struktur, in denen die Fachthemen verantwortet werden, die für die Aktivitäten der Units (s.o.) bearbeitet werden.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 189.34348243868726,
+            "r": 713.6426687198029,
+            "b": 184.59963147257213,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "Network and Information Systems (NIS): Kritische Infrastrukturen und Betreiber, NIS 2, Digitale Dienste, Datenschutz, TK, Cloud und vieles mehr.",
+      "text": "Network and Information Systems (NIS): Kritische Infrastrukturen und Betreiber, NIS 2, Digitale Dienste, Datenschutz, TK, Cloud und vieles mehr.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 177.62038705514988,
+            "r": 597.7498968049039,
+            "b": 172.87653608903474,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "Exercises and Training : Übungen, Awareness für Cyber Security, EU Security-Challenges, Rahmenwerke zur Ausbildung",
+      "text": "Exercises and Training : Übungen, Awareness für Cyber Security, EU Security-Challenges, Rahmenwerke zur Ausbildung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 165.89729167161204,
+            "r": 687.2657025567895,
+            "b": 161.1534407054969,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            137
+          ]
+        }
+      ],
+      "orig": "Operations and Situational Awareness (OSA): Threat Intelligence, Schwachstellen, Vorfälle und Krisen und operative Koordination in der EU",
+      "text": "Operations and Situational Awareness (OSA): Threat Intelligence, Schwachstellen, Vorfälle und Krisen und operative Koordination in der EU",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 154.17419628807465,
+            "r": 426.8389688081258,
+            "b": 149.43034532195907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "Cybersecurity Certification (CCS): EU Cybersecurity Certification und weiteres",
+      "text": "Cybersecurity Certification (CCS): EU Cybersecurity Certification und weiteres",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 142.45110090453682,
+            "r": 441.2994899111323,
+            "b": 137.70724993842168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "Netzwerke ist die Einbettung und Koordinierung der ENISA von EU-Netzen und Gruppen:",
+      "text": "Netzwerke ist die Einbettung und Koordinierung der ENISA von EU-Netzen und Gruppen:",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 130.72800552099898,
+            "r": 607.4733480013282,
+            "b": 125.98415455488384,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            121
+          ]
+        }
+      ],
+      "orig": "National Liasions : Informations­ austausch zwischen ENISA und Mitgliedsstaaten durch NLOs, die National Liaison Officers",
+      "text": "National Liasions : Informations­ austausch zwischen ENISA und Mitgliedsstaaten durch NLOs, die National Liaison Officers",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 119.0049101374616,
+            "r": 698.6478903265739,
+            "b": 114.261059171346,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            135
+          ]
+        }
+      ],
+      "orig": "Ad hoc Working Groups : Arbeitsgruppen mit externen Stakeholdern und Experten, die einzelne Themen im Arbeitsprogramm der ENISA beraten",
+      "text": "Ad hoc Working Groups : Arbeitsgruppen mit externen Stakeholdern und Experten, die einzelne Themen im Arbeitsprogramm der ENISA beraten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 107.28181475392375,
+            "r": 785.7824430971928,
+            "b": 102.53796378780862,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            159
+          ]
+        }
+      ],
+      "orig": "Behörden : Zusammenarbeit von Regulierungs­ behörden in bestimmten Themenfeldern wie KRITIS (Cooperation Group), Resilienz (Critical Entities Resilience Group)",
+      "text": "Behörden : Zusammenarbeit von Regulierungs­ behörden in bestimmten Themenfeldern wie KRITIS (Cooperation Group), Resilienz (Critical Entities Resilience Group)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 85.06290960771196,
+            "t": 95.55871937038592,
+            "r": 659.764252082733,
+            "b": 90.81486840427078,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "EU : Kooperation innerhalb der EU wie der Joint Cyber Unit (JCU), Cyber Crisis Liaison Organisation Network (CyCLONe) und CSIRTs",
+      "text": "EU : Kooperation innerhalb der EU wie der Joint Cyber Unit (JCU), Cyber Crisis Liaison Organisation Network (CyCLONe) und CSIRTs",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 83.83562398684853,
+            "r": 771.0827786116564,
+            "b": 67.36867763719556,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            306
+          ]
+        }
+      ],
+      "orig": "Stab und Support : Unterstützungsfunktionen wie IT, Compliance, Kommunikation etc. sind in den beiden Units Executive Director Office (EDO) und Corporate Support Services (CSS) zusammengefasst. Zusätzlich wird der Director durch die Advisory Group zur Strategie und Planung und dem Arbeitsprogramm beraten.",
+      "text": "Stab und Support : Unterstützungsfunktionen wie IT, Compliance, Kommunikation etc. sind in den beiden Units Executive Director Office (EDO) und Corporate Support Services (CSS) zusammengefasst. Zusätzlich wird der Director durch die Advisory Group zur Strategie und Planung und dem Arbeitsprogramm beraten.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 49.82134762878286,
+            "r": 43.3807926884669,
+            "b": 45.22505302384661,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 241.2973074591204,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "text": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html"
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "6/7",
+      "text": "6/7"
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:17",
+      "text": "10.08.26, 17:17"
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 405.3632681098631,
+            "t": 577.7496212324044,
+            "r": 516.8285081403553,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Aufsichtsbehörden - OpenKRITIS",
+      "text": "Aufsichtsbehörden - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 563.4445741961417,
+            "r": 185.92528823535025,
+            "b": 556.4025759275582,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 533.1111407733483,
+            "r": 81.68441295265885,
+            "b": 527.621316583215,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Literatur",
+      "text": "Literatur",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 507.02208947475174,
+            "r": 805.5092001608843,
+            "b": 502.42579486981504,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            176
+          ]
+        }
+      ],
+      "orig": "1. Stellungnahme BSI - Cybersicherheit - Zuständigkeiten und Instrumente in der Bundes­ republik Deutschland, Bundestag, öffentliche Anhörung Ausschuss für Digitales 25.01.2023",
+      "text": "Stellungnahme BSI - Cybersicherheit - Zuständigkeiten und Instrumente in der Bundes­ republik Deutschland, Bundestag, öffentliche Anhörung Ausschuss für Digitales 25.01.2023",
+      "hyperlink": "https://www.bundestag.de/resource/blob/931064/6b36eb5d822dd6aa70a9a4b13b546040/Stellungnahme-BSI-data.pdf",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 495.2989940912139,
+            "r": 444.0572653350561,
+            "b": 490.70269948627765,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            93
+          ]
+        }
+      ],
+      "orig": "2. Das BSI - Auftrag, Webseite des Bundesamts für Sicherheit in der Informationstechnik, o.D.",
+      "text": "Das BSI - Auftrag, Webseite des Bundesamts für Sicherheit in der Informationstechnik, o.D.",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 483.57589870767606,
+            "r": 455.62771950386934,
+            "b": 478.9796041027398,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "3. Das BSI - Kurzprofil, Webseite des Bundesamts für Sicherheit in der Informationstechnik, o.D.",
+      "text": "Das BSI - Kurzprofil, Webseite des Bundesamts für Sicherheit in der Informationstechnik, o.D.",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 471.8528033241387,
+            "r": 498.47502230532734,
+            "b": 467.25650871920243,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            107
+          ]
+        }
+      ],
+      "orig": "4. Die Lage der IT-Sicherheit in Deutschland, Bundesamt für Sicherheit in der Informationstechnik, jährlich",
+      "text": "Die Lage der IT-Sicherheit in Deutschland, Bundesamt für Sicherheit in der Informationstechnik, jährlich",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 460.12970794060084,
+            "r": 458.07511571329275,
+            "b": 455.5334133356646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "5. BSI-Magazin Mit Sicherheit, Bundesamt für Sicherheit in der Informationstechnik, halbjährlich",
+      "text": "BSI-Magazin Mit Sicherheit, Bundesamt für Sicherheit in der Informationstechnik, halbjährlich",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 436.06996232073107,
+            "r": 73.58056747768259,
+            "b": 430.5801381305978,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Quellen",
+      "text": "Quellen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 409.980911022134,
+            "r": 642.7189563744854,
+            "b": 405.3846164171978,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            139
+          ]
+        }
+      ],
+      "orig": "1. Abteilung WG - Cyber-Sicherheit für Wirtschaft und Gesellschaft, Webseite des Bundesamts für Sicherheit in der Informationstechnik, o.D.",
+      "text": "Abteilung WG - Cyber-Sicherheit für Wirtschaft und Gesellschaft, Webseite des Bundesamts für Sicherheit in der Informationstechnik, o.D.",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 398.25781563859664,
+            "r": 545.6065441219005,
+            "b": 393.6615210336604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            115
+          ]
+        }
+      ],
+      "orig": "2. Aufgaben - Kritische Infrastrukturen, Webseite des Bundesamts für Bevölkerungsschutz und Katastrophenhilfe, o.D.",
+      "text": "Aufgaben - Kritische Infrastrukturen, Webseite des Bundesamts für Bevölkerungsschutz und Katastrophenhilfe, o.D.",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 386.5347202550588,
+            "r": 426.35559466254205,
+            "b": 381.93842565012255,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "3. Organisationsplan, Bundesamt für Sicherheit in der Informationstechnik, 1. Januar 2026",
+      "text": "Organisationsplan, Bundesamt für Sicherheit in der Informationstechnik, 1. Januar 2026",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 374.81162487152096,
+            "r": 451.2468200429722,
+            "b": 370.2153302665847,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "4. Organigramm,Bundesamts für Bevölkerungsschutz und Katastrophenhilfe, 1. November 2025",
+      "text": "Organigramm,Bundesamts für Bevölkerungsschutz und Katastrophenhilfe, 1. November 2025",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 363.0885294879836,
+            "r": 773.4894746566812,
+            "b": 358.49223488304733,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            167
+          ]
+        }
+      ],
+      "orig": "5. Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und die Sicherheit in der Informationstechnik von Einrichtungen, BSI-Gesetz vom 2. Dezember 2025",
+      "text": "Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und die Sicherheit in der Informationstechnik von Einrichtungen, BSI-Gesetz vom 2. Dezember 2025",
+      "hyperlink": "https://www.gesetze-im-internet.de/bsig_2025/",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 351.36543410444574,
+            "r": 501.6194954149053,
+            "b": 346.7691394995095,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            103
+          ]
+        }
+      ],
+      "orig": "6. Telekommunikation - Katalog von Sicherheitsanforderungen, Bundesnetzagentur, Version 2.0, 29.04.2020",
+      "text": "Telekommunikation - Katalog von Sicherheitsanforderungen, Bundesnetzagentur, Version 2.0, 29.04.2020",
+      "hyperlink": "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/OeffentlicheSicherheit/KatalogSicherheitsanforderungen/Sicherheitsanforderungen-node.html",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 339.6423387209079,
+            "r": 564.8601015665944,
+            "b": 335.04604411597165,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            116
+          ]
+        }
+      ],
+      "orig": "7. IT-Sicherheit im Energiesektor für Strom/Gas und Energieanlagen, Bundesnetzagentur, August 2015 und Dezember 2018",
+      "text": "IT-Sicherheit im Energiesektor für Strom/Gas und Energieanlagen, Bundesnetzagentur, August 2015 und Dezember 2018",
+      "enumerated": true,
+      "marker": "7."
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 327.9192433373705,
+            "r": 790.0971933772064,
+            "b": 311.59985334889643,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "8. Aufsicht über Kritische Infrastrukturen im Finanzwesen - ein Überblick über den Status quo, BaFinPerspektiven 1 | 2020, Bundesanstalt für Finanzdienstleistungsaufsicht, Mai 2020",
+      "text": "Aufsicht über Kritische Infrastrukturen im Finanzwesen - ein Überblick über den Status quo, BaFinPerspektiven 1 | 2020, Bundesanstalt für Finanzdienstleistungsaufsicht, Mai 2020",
+      "enumerated": true,
+      "marker": "8."
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 304.4730525702953,
+            "r": 494.37906234276807,
+            "b": 299.8767579653586,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "9. Organigramm des Bundesamts für Bevölkerungsschutz und Katastrophenhilfe, BBK, 9. November 2022",
+      "text": "Organigramm des Bundesamts für Bevölkerungsschutz und Katastrophenhilfe, BBK, 9. November 2022",
+      "hyperlink": "https://www.bbk.bund.de/SharedDocs/Downloads/DE/Mediathek/Publikationen/BBK-Allgemein/organigramm-pdf_download.pdf",
+      "enumerated": true,
+      "marker": "9."
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 43.3807926884669,
+            "t": 292.74995718675746,
+            "r": 454.37857864150294,
+            "b": 288.1536625818212,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "10. About ENISA - The European Union Agency for Cybersecurity, ENISA-Webseite, 2022-04-20",
+      "text": "About ENISA - The European Union Agency for Cybersecurity, ENISA-Webseite, 2022-04-20",
+      "hyperlink": "https://www.enisa.europa.eu/about-enisa",
+      "enumerated": true,
+      "marker": "10."
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 43.75731571727843,
+            "t": 281.0268618032196,
+            "r": 445.7210928449459,
+            "b": 276.43056719828337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "11. ENISA Single Programming Document 2022-2024, ENISA ISBN 978-92-9204-547-0, 2022",
+      "text": "ENISA Single Programming Document 2022-2024, ENISA ISBN 978-92-9204-547-0, 2022",
+      "hyperlink": "https://www.enisa.europa.eu/publications/corporate-documents/enisa-single-programming-document-2022-2024",
+      "enumerated": true,
+      "marker": "11."
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 258.88323718987067,
+            "r": 115.15931112836819,
+            "b": 254.28694258493442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 247.16014180633329,
+            "r": 162.31118832858488,
+            "b": 242.56384720139704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Kritische Infrastrukturen",
+      "text": "Kritische Infrastrukturen",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 235.43704642279545,
+            "r": 99.52342925184425,
+            "b": 230.8407518178592,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Behörden",
+      "text": "Behörden",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 223.7139510392576,
+            "r": 69.43211576299505,
+            "b": 219.11765643432136,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 201.57541466612656,
+            "r": 499.7419679639876,
+            "b": 184.62757916603277,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X",
+      "text": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X"
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 167.70360642902233,
+            "r": 805.5041114908197,
+            "b": 151.38421644054824,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar.",
+      "text": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar."
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 133.84197467235344,
+            "r": 354.0377355507722,
+            "b": 128.6172345557975,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt",
+      "text": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt"
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 241.2973074591204,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html",
+      "text": "https://www.openkritis.de/it-sicherheitsgesetz/behoerden-kritis.html"
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "7/7",
+      "text": "7/7"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 31.109086628111026,
+            "t": 562.5251120291299,
+            "r": 778.0335349757353,
+            "b": 152.5700239919434,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 32.026771700134276,
+            "t": 568.1687904447506,
+            "r": 814.2197319013452,
+            "b": 90.8693728954504,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.01641578133291,
+            "t": 48.560025433048054,
+            "r": 43.366563816988894,
+            "b": 40.60060015409579,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 7
+    }
+  }
+}
