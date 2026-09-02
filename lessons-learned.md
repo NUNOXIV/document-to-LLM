@@ -301,6 +301,49 @@ die den Schaden anrichtet, lief in keinem Test.
 
 ---
 
+## 18 134 von 602 Dokumenten waren nie eingelesen
+
+**Ursache:** Jede Prüfung im System sieht sich an, was **da** ist — Deckung,
+Zellversatz, Kennungen, Fundstellen, Bindestriche. Keine einzige fragte, was
+**fehlt**. Ein Dokument, das nie eingespeist wurde, hat keinen Extrakt, der
+auffallen könnte, und keinen Registereintrag, der widerspräche; es fällt durch
+jedes Netz.
+
+**Ausmaß:** 4 PDFs lagen unkonvertiert in `input/`, 130 weitere steckten in
+zwei ZIP-Archiven, die niemand ausgepackt hat. Bestand 468 statt 602.
+
+**Gefunden durch:** eine Übersicht außerhalb dieses Systems (Notion). Nicht
+durch das Werkzeug — das hätte den Fehler nie gefunden, weil es die falsche
+Richtung prüft.
+
+**Fix:** `vollstaendigkeit.py` läuft über `input/`, schaut in Archive hinein
+und verlangt für jede Datei einen Registereintrag. `--strict` bricht ab.
+
+**Test:** `test_vollstaendigkeit_findet_die_nie_eingelesene_quelle`, beide
+Richtungen, inklusive Archiv.
+
+**Lehre:** Eine Prüfung, die vom Ergebnis ausgeht, kann Vollständigkeit nicht
+messen. Sie muss von der Quelle ausgehen. Das ist dieselbe Blindheit wie bei
+den Bindestrichen, nur eine Ebene höher: dort teilten sich zwei Prüfungen
+einen Schritt, hier teilen sich **alle** Prüfungen dieselbe Ausgangsmenge.
+
+---
+
+## 19 Ein Warntext, der etwas anderes sagte als der Code tut
+
+**Ursache:** Als ich die U+FFFE-Deutung aus dem Code entfernte (Nr. 16), blieb
+der Warntext stehen: „Sie wurden als Bindestrich gelesen." Der Code liest sie
+seitdem gar nicht mehr — die Warnung behauptete eine Verarbeitung, die es nicht
+gibt.
+
+**Fix:** Text auf das berichtigt, was tatsächlich passiert: an der Stelle fehlt
+ein Zeichen, welches, wird nicht geraten.
+
+**Lehre:** Wer eine Regel zurückzieht, muss auch den Satz zurückziehen, der sie
+erklärt. Eine falsche Warnung ist schlimmer als keine — sie wird geglaubt.
+
+---
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -317,3 +360,6 @@ die den Schaden anrichtet, lief in keinem Test.
    Die Zwei-Quellen-Regel meint auch zwei Lesewege.
 6. **Wer über einen ganzen Bestand schreibt, braucht eine Zusage vorab.**
    Nr. 17: eine Zeile Prüfung vor dem Schreiben hätte 187 Dateien gerettet.
+7. **Prüfungen, die vom Ergebnis ausgehen, messen keine Vollständigkeit.**
+   Nr. 18: 134 fehlende Dokumente, und kein Wächter konnte sie sehen, weil
+   alle dieselbe Ausgangsmenge teilten — den Bestand statt der Quelle.

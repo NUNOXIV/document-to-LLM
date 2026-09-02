@@ -28,6 +28,7 @@ ruff check .                          # Linter, Konfiguration in pyproject.toml
 python pruefe.py    --export export/ --strict     # Plausibilität (Konsistenz)
 python inhalt.py    --export export/ --output output/ --strict  # Wortlaut je Kennung
 python fundstellen.py --bestand output/ --strict   # gegen den Primärtext
+python vollstaendigkeit.py --strict               # hat JEDE Quelle einen Extrakt?
 python bindestriche.py                            # verlorene Bindestriche (zählt nur)
 python rechtsakte.py import input/ --alle         # amtliches XML als Ground Truth
 ```
@@ -71,6 +72,13 @@ Drei Wächter, die verschiedene Dinge messen — keiner ersetzt einen anderen:
 | `inhalt.py` | Steht unter jeder Kennung ihr eigener Wortlaut? | Ob die Quelle richtig gelesen wurde |
 | `fundstellen.py` | Stimmt der Wortlaut mit dem Primärtext überein? | Alles, wofür keine Ground Truth vorliegt |
 | `bindestriche.py` | Fehlt ein Bindestrich, den die Quelle hat? | Alles außer Bindestrichen |
+| `vollstaendigkeit.py` | Hat **jede** Quelldatei einen Extrakt? | Ob der Extrakt etwas taugt |
+
+Alle vier sehen sich an, was **da** ist. `vollstaendigkeit.py` fragt als
+einziger, was **fehlt** — und läuft deshalb über `input/`, nicht über den
+Bestand. Ein Dokument, das nie eingespeist wurde, hat keinen Extrakt, der
+auffallen könnte: so fehlten 134 von 602 Dokumenten, und gemerkt hat es
+niemand im System, sondern eine Übersicht außerhalb davon.
 
 Ein Wächter, der nur auf gesunden Daten läuft, belegt nichts: er könnte kaputt
 sein und schwiege genauso. `tests/pruefungen.sh` führt deshalb für jeden die

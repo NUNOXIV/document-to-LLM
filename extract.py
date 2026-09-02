@@ -744,9 +744,11 @@ def convert_file(
             if unlesbar:
                 res.warnings.append(
                     f"Der Textlayer der Quelle enthaelt {unlesbar} unlesbare Zeichen innerhalb "
-                    f"von Woertern (die Schrift bildet den Codepunkt nicht ab). Sie wurden als "
-                    f"Bindestrich gelesen; das ist die Form, die das amtliche XML an solchen "
-                    f"Stellen fuehrt. Kein Textverlust dieses Werkzeugs, sondern der Quelle."
+                    f"von Woertern (die Schrift bildet den Codepunkt nicht ab). An diesen "
+                    f"Stellen fehlt im Extrakt ein Zeichen — meist ein Bindestrich, manchmal "
+                    f"eine Silbentrennung. Es wird NICHT geraten, welches: dasselbe Zeichen "
+                    f"hat in verschiedenen Dokumenten verschiedene Bedeutung. Kein Textverlust "
+                    f"dieses Werkzeugs, sondern der Quelle."
                 )
         except Exception as exc:
             res.warnings.append(f"Bindestrich-Pruefung nicht durchfuehrbar: {exc}")

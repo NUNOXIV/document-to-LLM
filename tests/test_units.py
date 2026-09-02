@@ -1121,6 +1121,54 @@ def test_alle_ground_truths_sind_lesbar() -> None:
             assert f.get("text") or f.get("titel"), f"{datei.name}: {f['id']} ohne Inhalt"
 
 
+def test_vollstaendigkeit_findet_die_nie_eingelesene_quelle(tmp_path: Path) -> None:
+    """Der Waechter muss melden, was FEHLT — nicht pruefen, was da ist.
+
+    Alle anderen Pruefungen sehen sich Extrakte an: Deckung, Zellversatz,
+    Kennungen, Fundstellen. Ein Dokument, das nie eingespeist wurde, hat keinen
+    Extrakt, der auffallen koennte, und keinen Eintrag, der widerspraeche — es
+    faellt durch jedes Netz. So fehlten 134 von 602 Dokumenten, und aufgefallen
+    ist es erst ausserhalb dieses Systems.
+
+    Beide Richtungen: bei vollstaendigem Bestand schweigen, bei einer fehlenden
+    Quelle anschlagen — auch wenn sie in einem Archiv steckt.
+    """
+    import json
+    import zipfile
+    from subprocess import run
+
+    wurzel = Path(__file__).resolve().parents[1]
+    eingang = tmp_path / "input"
+    eingang.mkdir()
+    (eingang / "vorhanden.pdf").write_bytes(b"%PDF-1.4 nur ein Platzhalter")
+    korpus = tmp_path / "_KORPUS.json"
+
+    def lauf() -> tuple[int, str]:
+        e = run([sys.executable, str(wurzel / "vollstaendigkeit.py"),
+                 "--input", str(eingang), "--korpus", str(korpus), "--strict"],
+                capture_output=True, text=True, cwd=wurzel)
+        return e.returncode, e.stdout
+
+    korpus.write_text(json.dumps(
+        {"documents": [{"slug": "vorhanden", "source_file": "vorhanden.pdf"}]}), encoding="utf-8")
+    code, aus = lauf()
+    assert code == 0, f"schlug bei vollstaendigem Bestand an:\n{aus}"
+
+    # Eine zweite Quelle, die niemand konvertiert hat.
+    (eingang / "vergessen.pdf").write_bytes(b"%PDF-1.4 auch ein Platzhalter")
+    code, aus = lauf()
+    assert code == 1, f"die fehlende Quelle blieb unbemerkt:\n{aus}"
+    assert "vergessen.pdf" in aus
+
+    # Und eine, die in einem Archiv steckt: 130 Dokumente lagen so daneben.
+    (eingang / "vergessen.pdf").unlink()
+    with zipfile.ZipFile(eingang / "paket.zip", "w") as z:
+        z.writestr("Checkliste_APP.1.1.xlsx", "x")
+    code, aus = lauf()
+    assert code == 1, f"das nicht ausgepackte Archiv blieb unbemerkt:\n{aus}"
+    assert "Checkliste_APP.1.1.xlsx" in aus
+
+
 # Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
 # Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
 # definierte existierte noch nicht und lief im Skriptpfad nie mit.
