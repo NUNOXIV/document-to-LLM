@@ -86,6 +86,10 @@ def sections_from_headings(body: str) -> dict[str, Section]:
         # IND und ISMS -- 49 Anforderungen, die dadurch ihre Abschnittsgrenze
         # verloren und den Rest des Dokuments mitschleppten.
         r"(?:[A-Z]{2,6}(?:\.[0-9]+)+(?:\.A[0-9]+)?"
+        # Anhangskennungen mit einem Buchstaben: "A.1 General", "B.10.2". Ohne
+        # diesen Zweig war "## A.1" keine Ueberschrift, und Klausel 10.2 der
+        # ISO 42001 lief bis in die Anhang-A-Tabelle hinein.
+        r"|[A-Z](?:\.[0-9]+)+"
         # Wortgrenze nach der Kennung: "## OPS.2.3A22 ..." (Druckfehler im
         # Kompendium) ist keine Ueberschrift der Gruppe OPS.2.3 -- sonst trug
         # der Baustein den Text der Anforderung A22.
@@ -396,7 +400,10 @@ def id_variants(ident: str) -> list[str]:
     """
     v = [ident]
     m = re.match(r"^Art\.?\s*([0-9]+)(?:\.([0-9]+))?$", ident, flags=re.I)
-    if m:
+    # Nur ein ganzer Artikel darf auf "Artikel N" ausweichen. Fuer Art.20.1
+    # fuehrte das zum ganzen Artikel 20 statt zu Absatz 1 -- die Absatzsuche
+    # kam nie an die Reihe, weil der Artikel schon "gefunden" war.
+    if m and not m.group(2):
         num = m.group(1)
         v += [f"Artikel {num}", f"Art. {num}", f"Art.{num}", f"Article {num}", num]
     m = re.match(r"^Annex([IVX]+)\.(.+)$", ident, flags=re.I)

@@ -118,7 +118,7 @@ def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
         "| A.10.2 | Allocating responsibilities | The organization shall ensure that responsibilities are allocated. |",
         "| A.10.3 | Suppliers | The organization shall establish a supplier process. |",
         "", "## 10.2\tNonconformity", "", "When a nonconformity occurs, the organization shall react.", "",
-        "## Annex A", "", "## Bibliography", "", "[1] ISO 31000",
+        "## A.1\t General", "", "This annex lists the controls.", "", "## Bibliography", "", "[1] ISO 31000",
     ])
     wanted = {"5.1": "Leadership and commitment", "A.5.1": "Policies for information security",
               "10.1": "Continual improvement", "10.2": "Nonconformity",
@@ -132,8 +132,9 @@ def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
     check("A.10.2 traegt den Control-Text", "responsibilities are allocated" in out["A.10.2"].text)
     check("A.10 faellt nicht auf Kapitel 10 zurueck",
           "continually" not in out["A.10"].text and "Allocating" in out["A.10"].text, out["A.10"].text[:60])
-    check("10.2 endet an der Strukturgrenze 'Annex A'",
-          "react" in out["10.2"].text and "ISO 31000" not in out["10.2"].text, out["10.2"].text[:80])
+    check("10.2 endet an der Anhangsueberschrift 'A.1 General'",
+          "react" in out["10.2"].text and "controls" not in out["10.2"].text and "ISO 31000" not in out["10.2"].text,
+          out["10.2"].text[:80])
     check("A.10 ist aus den Controls zusammengesetzt, nicht der wiederholte Titel",
           "responsibilities are allocated" in out["A.10"].text and "supplier process" in out["A.10"].text,
           out["A.10"].text[:80])
@@ -245,10 +246,15 @@ def test_artikelgrenze_auch_ohne_ueberschrift() -> None:
         "## KAPITEL IV", "",
         "## Artikel 61", "", "## Aenderung der Verordnung (EU) Nr. 909/2014", "",
         "Artikel 45 der Verordnung (EU) Nr. 909/2014 wird wie folgt geändert:", "",
-        "1. Absatz 1 erhält folgende Fassung.",
+        "1. Absatz 1 erhält folgende Fassung.", "",
+        "Artikel 20", "", "## Governance", "",
+        "(1) Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane die Massnahmen billigen.", "",
+        "(2) Die Mitgliedstaaten stellen sicher, dass die Mitglieder an Schulungen teilnehmen.", "",
+        "## Artikel 21",
     ])
     wanted = {"Art.21": "Widerspruchsrecht", "Art.22": "Automatisierte Entscheidungen",
-              "Art.23": "Beschränkungen", "Art.45": "Vereinbarungen", "Art.61": "Aenderung"}
+              "Art.23": "Beschränkungen", "Art.45": "Vereinbarungen", "Art.61": "Aenderung",
+              "Art.20.1": "Billigung", "Art.20.2": "Schulung"}
     out = publish.aufgeloeste_abschnitte(body, {}, wanted, "gdpr")
     check("Art.21 endet am blossen 'Artikel 22'",
           "Widerspruch" in out["Art.21"].text and "Automatisierte" not in out["Art.21"].text,
@@ -259,6 +265,10 @@ def test_artikelgrenze_auch_ohne_ueberschrift() -> None:
     check("Art.23 gefunden", "Art.23" in out and "beschraenkt" in out["Art.23"].text)
     check("Art.45 ankert nicht an 'Artikel 45 der Verordnung ... wird geaendert'",
           "Art.45" not in out, out["Art.45"].text[:80] if "Art.45" in out else "")
+    check("Art.20.1 ist nur Absatz 1, nicht der ganze Artikel",
+          "Art.20.1" in out and "billigen" in out["Art.20.1"].text and "Schulungen" not in out["Art.20.1"].text,
+          out["Art.20.1"].text[:100] if "Art.20.1" in out else "fehlt")
+    check("Art.20.2 ist Absatz 2", "Art.20.2" in out and out["Art.20.2"].text.startswith("(2)"))
 
 
 def test_ueberhang_im_export() -> None:
