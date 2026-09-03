@@ -114,6 +114,7 @@ def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
         "| 10.1 | Continual improvement | 23 |", "",
         "| ID | Control | Text |", "|---|---|---|",
         "| A.5.1 | Policies for information security | Control: policies shall be defined. |",
+        "| A.10 | Third-party and customer relationships | Third-party and customer relationships |",
         "| A.10.2 | Allocating responsibilities | The organization shall ensure that responsibilities are allocated. |",
         "| A.10.3 | Suppliers | The organization shall establish a supplier process. |",
     ])
@@ -128,6 +129,9 @@ def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
     check("A.10.2 traegt den Control-Text", "responsibilities are allocated" in out["A.10.2"].text)
     check("A.10 faellt nicht auf Kapitel 10 zurueck",
           "continually" not in out["A.10"].text and "Allocating" in out["A.10"].text, out["A.10"].text[:60])
+    check("A.10 ist aus den Controls zusammengesetzt, nicht der wiederholte Titel",
+          "responsibilities are allocated" in out["A.10"].text and "supplier process" in out["A.10"].text,
+          out["A.10"].text[:80])
 
 
 def test_vault_register_kennt_entfallene() -> None:

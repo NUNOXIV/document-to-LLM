@@ -601,8 +601,10 @@ def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, st
         if sec is None or not sec.text.strip():
             sec = inline_section(body, ident, wanted[ident])
         # Gruppen-IDs ohne eigenen Text (PO ueber PO.1.x, CIS-Kategorie 13 ueber
-        # 13.1 ...) aus ihren Unterpunkten zusammensetzen.
-        if sec is None or not sec.text.strip():
+        # 13.1 ...) aus ihren Unterpunkten zusammensetzen. Eine Tabellenzeile,
+        # die nur den Titel wiederholt ("A.10 | Third-party relationships"),
+        # ist kein Text.
+        if sec is None or not sec.text.strip() or norm_key(sec.text) == norm_key(sec.title or ""):
             kids = sorted(k for k in wanted
                           if k != ident and re.match(rf"^{re.escape(ident)}[.\-]", k))
             parts = []
