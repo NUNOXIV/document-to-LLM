@@ -117,9 +117,12 @@ def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
         "| A.10 | Third-party and customer relationships | Third-party and customer relationships |",
         "| A.10.2 | Allocating responsibilities | The organization shall ensure that responsibilities are allocated. |",
         "| A.10.3 | Suppliers | The organization shall establish a supplier process. |",
+        "", "## 10.2\tNonconformity", "", "When a nonconformity occurs, the organization shall react.", "",
+        "## Annex A", "", "## Bibliography", "", "[1] ISO 31000",
     ])
     wanted = {"5.1": "Leadership and commitment", "A.5.1": "Policies for information security",
-              "10.1": "Continual improvement", "A.10": "Third-party and customer relationships",
+              "10.1": "Continual improvement", "10.2": "Nonconformity",
+              "A.10": "Third-party and customer relationships",
               "A.10.2": "Allocating responsibilities", "A.10.3": "Suppliers"}
     out = publish.aufgeloeste_abschnitte(body, {}, wanted, "test")
     check("5.1 traegt den Kapiteltext", out["5.1"].text.startswith("Top management"), out["5.1"].text[:40])
@@ -129,6 +132,8 @@ def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
     check("A.10.2 traegt den Control-Text", "responsibilities are allocated" in out["A.10.2"].text)
     check("A.10 faellt nicht auf Kapitel 10 zurueck",
           "continually" not in out["A.10"].text and "Allocating" in out["A.10"].text, out["A.10"].text[:60])
+    check("10.2 endet an der Strukturgrenze 'Annex A'",
+          "react" in out["10.2"].text and "ISO 31000" not in out["10.2"].text, out["10.2"].text[:80])
     check("A.10 ist aus den Controls zusammengesetzt, nicht der wiederholte Titel",
           "responsibilities are allocated" in out["A.10"].text and "supplier process" in out["A.10"].text,
           out["A.10"].text[:80])
@@ -167,6 +172,9 @@ def test_kreuzreferenz_grundschutz_druckfehler() -> None:
               "OPS.2.3.A23": "Einsatz von Verschlüsselungen"}
     out = publish.aufgeloeste_abschnitte(body, {}, wanted, "bsi-grundschutz")
     check("A22 ueber den Anker gefunden", "OPS.2.3.A22" in out, str(sorted(out)))
+    check("'OPS.2.3A22' ist keine Ueberschrift der Gruppe OPS.2.3",
+          "ops.2.3" not in publish.sections_from_headings(body)
+          or "Gemeinsame" not in publish.sections_from_headings(body)["ops.2.3"].text)
     check("A22 traegt nur den eigenen Text",
           out["OPS.2.3.A22"].text.startswith("Gemeinsame") and "Sensible" not in out["OPS.2.3.A22"].text,
           out["OPS.2.3.A22"].text[:60])
@@ -218,6 +226,63 @@ def test_xberg_engine_am_fixture() -> None:
               str(res.text_coverage))
         check("JSON-Zwilling der Engine", res.json_output is not None and res.json_output.endswith(".xberg.json"),
               str(res.json_output))
+
+
+def test_artikelgrenze_auch_ohne_ueberschrift() -> None:
+    """Amtsblattsatz: Docling erkennt "Artikel 22" mal als Ueberschrift, mal als
+    blosse Zeile. Ein Artikel endet trotzdem am naechsten Artikel -- sonst
+    traegt Art.21 den Text von Art.22 und Art.23 mit (DSGVO: 9 Zeilen,
+    DORA: 2, KI-VO: 1 -- vom Aufnahmetor des Auftraggebers gefunden, nicht
+    von der Wortdeckung, denn doppelter Text hat volle Deckung)."""
+    print("Artikelgrenze ohne Ueberschrift")
+    body = "\n".join([
+        "## Artikel 21", "", "## Widerspruchsrecht", "",
+        "- (1) Die betroffene Person hat das Recht, Widerspruch einzulegen.", "",
+        "Artikel 22", "", "Automatisierte Entscheidungen im Einzelfall", "",
+        "(1) Die betroffene Person hat das Recht, nicht einer Entscheidung unterworfen zu werden.", "",
+        "Artikel 23", "", "Beschränkungen", "",
+        "(1) Durch Rechtsvorschriften koennen Pflichten beschraenkt werden.", "",
+        "## KAPITEL IV", "",
+        "## Artikel 61", "", "## Aenderung der Verordnung (EU) Nr. 909/2014", "",
+        "Artikel 45 der Verordnung (EU) Nr. 909/2014 wird wie folgt geändert:", "",
+        "1. Absatz 1 erhält folgende Fassung.",
+    ])
+    wanted = {"Art.21": "Widerspruchsrecht", "Art.22": "Automatisierte Entscheidungen",
+              "Art.23": "Beschränkungen", "Art.45": "Vereinbarungen", "Art.61": "Aenderung"}
+    out = publish.aufgeloeste_abschnitte(body, {}, wanted, "gdpr")
+    check("Art.21 endet am blossen 'Artikel 22'",
+          "Widerspruch" in out["Art.21"].text and "Automatisierte" not in out["Art.21"].text,
+          out["Art.21"].text[:120])
+    check("Art.22 hat eigenen Text und endet an 'Artikel 23'",
+          "Art.22" in out and "unterworfen" in out["Art.22"].text and "beschraenkt" not in out["Art.22"].text,
+          out.get("Art.22").text[:120] if "Art.22" in out else "fehlt")
+    check("Art.23 gefunden", "Art.23" in out and "beschraenkt" in out["Art.23"].text)
+    check("Art.45 ankert nicht an 'Artikel 45 der Verordnung ... wird geaendert'",
+          "Art.45" not in out, out["Art.45"].text[:80] if "Art.45" in out else "")
+
+
+def test_ueberhang_im_export() -> None:
+    """Eine Zeile, die den vollen Text einer anderen Anforderung enthaelt, ist
+    ein Ueberhang -- ausser die andere ist ihr Unterpunkt (9.2 aus 9.2.1)."""
+    print("Ueberhang im Export")
+    import inhalt
+    b_text = "Die betroffene Person hat das Recht, nicht einer Entscheidung unterworfen zu werden, " * 3
+    reqs = [
+        {"id": "Art.21", "text": "Widerspruch. " * 10 + b_text},
+        {"id": "Art.22", "text": b_text},
+        {"id": "9.2", "text": "### 9.2.1 Allgemein\n\n" + "Die Organisation muss interne Audits durchfuehren. " * 5},
+        {"id": "9.2.1", "text": "Die Organisation muss interne Audits durchfuehren. " * 5},
+    ]
+    gleich = "Sitzungen MUESSEN nach Inaktivitaet gesperrt werden. " * 6
+    reqs += [{"id": "SYS.1.1.A31", "text": gleich}, {"id": "SYS.2.1.A33", "text": gleich},
+             {"id": "SYS.1.1", "text": "### SYS.1.1.A31 Sperre\n\n" + gleich + "\n\nweiterer Text " * 20}]
+    treffer = inhalt.ueberhaenge(reqs)
+    check("Art.21 enthaelt Art.22", ("Art.21", "Art.22") in treffer, str(treffer))
+    check("woertlich gleiche Anforderungen sind kein Ueberhang",
+          not any(t[0] in ("SYS.1.1.A31", "SYS.2.1.A33") for t in treffer), str(treffer))
+    check("Oberklausel mit dem Text ihres Unterpunkts trifft keine fremde Dublette",
+          ("SYS.1.1", "SYS.2.1.A33") not in treffer, str(treffer))
+    check("Oberklausel aus Unterpunkt ist kein Ueberhang", ("9.2", "9.2.1") not in treffer, str(treffer))
 
 
 def test_quality_gates() -> None:

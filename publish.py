@@ -77,7 +77,7 @@ def sections_from_headings(body: str) -> dict[str, Section]:
     # der findet kein Ende -- jede Anforderung schleppte den Rest des Dokuments
     # mit. Im Export waren das im Median 54019 Zeichen je Anforderung statt der
     # ueblichen paar hundert.
-    heads = list(re.finditer(
+    kopfzeilen = list(re.finditer(
         r"^(#{1,6})\s+((?:Artikel|Article|Art\.?|Anhang|Annex)?\s*"
         # Der Buchstabenzweig steht VOR dem roemischen, und das ist keine
         # Kosmetik: "INF" beginnt mit "I", und "I" liegt in [0-9IVX]. Stuende
@@ -86,17 +86,42 @@ def sections_from_headings(body: str) -> dict[str, Section]:
         # IND und ISMS -- 49 Anforderungen, die dadurch ihre Abschnittsgrenze
         # verloren und den Rest des Dokuments mitschleppten.
         r"(?:[A-Z]{2,6}(?:\.[0-9]+)+(?:\.A[0-9]+)?"
-        r"|[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*))\s*[—–-]?\s*(.*)$", body, flags=re.M))
-    for i, m in enumerate(heads):
-        start = m.end()
-        end = heads[i + 1].start() if i + 1 < len(heads) else len(body)
-        text = body[start:end]
+        # Wortgrenze nach der Kennung: "## OPS.2.3A22 ..." (Druckfehler im
+        # Kompendium) ist keine Ueberschrift der Gruppe OPS.2.3 -- sonst trug
+        # der Baustein den Text der Anforderung A22.
+        r"|[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*)(?![A-Za-z0-9]))\s*[—–-]?\s*(.*)$", body, flags=re.M))
+    # Strukturgrenzen: Ueberschriften ohne Kennung, die trotzdem einen
+    # Abschnitt beenden -- Anhang, Kapitel, Abschnitt, Literatur und alles in
+    # Versalien (KAPITEL IV, ALLGEMEINE BESTIMMUNGEN). Ohne sie lief ISO 42001
+    # Klausel 10.2 bis ans Dokumentende und enthielt den ganzen Anhang A.
+    # "## Control" oder "## Implementation guidance" sind KEINE Grenzen: sie
+    # gliedern den Text einer Anforderung, sie beenden ihn nicht.
+    grenzen = list(re.finditer(
+        r"^#{1,6}\s+(?:(?:Annex|Anhang|Appendix|KAPITEL|Kapitel|CHAPTER|Chapter|TITEL|"
+        r"ABSCHNITT|Abschnitt|Section|Bibliography|Literatur(?:verzeichnis)?|References)\b.*"
+        r"|[A-ZÄÖÜ][A-ZÄÖÜ0-9 ,\-/()]{3,})\s*$", body, flags=re.M))
+    # Amtsblattsatz: "Artikel 22" steht mal als Ueberschrift, mal als blosse
+    # Zeile -- das Layoutmodell entscheidet das je Seite anders. Eine Zeile,
+    # die nur aus der Artikelnummer besteht, ist eine Artikelgrenze, egal wie
+    # sie ausgezeichnet ist. Ohne diese Regel trug Art.21 der DSGVO den Text
+    # von Art.22 und Art.23 mit: volle Wortdeckung, falscher Inhalt.
+    nackte = list(re.finditer(
+        r"^((?:Artikel|Article|Art\.)\s+[0-9]+[a-z]?)\s*$", body, flags=re.M))
+    heads = sorted(
+        [(m.start(), m.end(), m.group(2), m.group(3)) for m in kopfzeilen]
+        + [(m.start(), m.end(), m.group(1), "") for m in nackte]
+        + [(m.start(), m.end(), None, "") for m in grenzen])
+    for i, (h_start, h_end, roh_ident, titel) in enumerate(heads):
+        if roh_ident is None:       # reine Strukturgrenze, kein Abschnitt
+            continue
+        end = heads[i + 1][0] if i + 1 < len(heads) else len(body)
+        text = body[h_end:end]
         text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", text).strip()
-        ident = norm_key(m.group(2))
+        ident = norm_key(roh_ident)
         if ident in out:            # Wiederholte Kopfzeile o. ae.: laengeren Text behalten
             if len(text) <= len(out[ident].text):
                 continue
-        out[ident] = Section(ident, m.group(3), text, page_at(body, m.start()))
+        out[ident] = Section(ident, titel, text, page_at(body, h_start))
 
     # Oberklauseln ohne eigenen Text (z. B. 9.2, wenn alles in 9.2.1 und 9.2.2
     # steht) aus ihren Unterklauseln zusammensetzen, statt sie leer zu lassen.
@@ -350,6 +375,11 @@ def inline_section(body: str, ident: str, title: str) -> Section | None:
     anchor = re.search(rf"(?<![\d.]){re.escape(ident)}\s+{re.escape(title)}\b", body)
     if not anchor:
         return None
+    # Steht der Treffer in einer Tabellenzeile, ist es eine Uebersicht
+    # (Reifegradtabelle, Inhaltsverzeichnis), nicht der Abschnitt: TISAX-Gruppe
+    # "1" trug so die Zeilen der Gruppen 2 bis 8 als Text.
+    if body[body.rfind("\n", 0, anchor.start()) + 1:].lstrip().startswith("|"):
+        return None
     rest = body[anchor.end():]
     nxt = re.search(r"(?m)^#{1,6}\s+[0-9]+(?:\.[0-9]+)*\s|(?<![\d.])[0-9]+\.[0-9]+\s+[A-Z]", rest)
     text = rest[: nxt.start()] if nxt else rest[:4000]
@@ -415,8 +445,13 @@ def sections_by_anchor(body: str, wanted: dict[str, str]) -> dict[str, Section]:
                 continue                      # zu unspezifisch fuer einen Anker
             # Anker: Zeilenanfang, Listenpunkt oder Zellgrenze einer Tabelle —
             # in Norm-Tabellen steht die ID oft mitten in der Zeile hinter "|".
+            # Nach der ID: Trennzeichen, Zeilenende oder ein Grossbuchstabe.
+            # "Artikel 45 der Verordnung (EU) Nr. 909/2014 wird wie folgt
+            # geaendert" ist ein Verweis in einem Aenderungsartikel, kein
+            # Anker -- DORA Art.45 trug so den Text von Art.61.
             pat = re.compile(
-                rf"(?:^|\|)[-*>\s]*(?:o\s+)?({re.escape(variant)})\s*(?:[:.)\]–—-]|\s)\s*",
+                rf"(?:^|\|)[-*>\s]*(?:o\s+)?({re.escape(variant)})"
+                rf"(?:\s*[:.)\]|–—-]|\s+(?=[A-ZÄÖÜ0-9(§])|\s*$)\s*",
                 flags=re.M)
             for m in pat.finditer(body):
                 hits.append((m.start(), m.end(), ident, variant))

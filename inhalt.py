@@ -109,6 +109,35 @@ def extrakte_zu(d: dict, fw: str, vault: Path | None,
     return [idx[n] for n in sorted(namen) if n in idx]
 
 
+def ueberhaenge(reqs: list[dict]) -> list[tuple[str, str]]:
+    """Zeilen, die den vollen Text einer anderen Anforderung enthalten.
+
+    Doppelter Text hat volle Wortdeckung und faellt keiner Deckungspruefung
+    auf. Das Aufnahmetor des Auftraggebers fand so 12 Zeilen (DSGVO Art.21
+    mit Art.22 und Art.23, DORA Art.30 mit Art.31 ...), die hier niemand sah.
+    Eine Oberklausel, die aus ihren Unterpunkten zusammengesetzt ist (9.2 aus
+    9.2.1), enthaelt deren Text zu Recht und zaehlt nicht.
+    """
+    norm = {str(r.get("id", "")): normtext(str(r.get("text", ""))) for r in reqs}
+    treffer: list[tuple[str, str]] = []
+    for a, ta in norm.items():
+        if len(ta) < 200:
+            continue
+        # Woertlich gleiche Texte zweier Anforderungen (das Kompendium fuehrt
+        # SYS.1.1.A31 und SYS.2.1.A33 identisch) sind kein Ueberhang; sie
+        # gehoeren auch nicht in eine Oberklausel hineingerechnet, die aus
+        # ihrem Unterpunkt besteht.
+        kinder = {t for k, t in norm.items() if k.startswith(a + ".") or k.startswith(a + "-")}
+        for bb, tb in norm.items():
+            if bb == a or len(tb) < 200 or len(tb) >= len(ta):
+                continue
+            if bb.startswith(a + ".") or bb.startswith(a + "-") or tb in kinder:
+                continue
+            if tb[:60] in ta and tb in ta:
+                treffer.append((a, bb))
+    return sorted(treffer)
+
+
 def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
                     vault: Path | None, idx: dict[str, Path]) -> None:
     d = json.loads(pfad.read_text(encoding="utf-8"))
@@ -137,6 +166,9 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
     # Leckage: eine fremde Anforderungsueberschrift im eigenen Text.
     fremde = re.compile(r"^#{1,6}\s+([A-Z]{2,6}(?:\.\d+)+\.A\d+|\d+(?:\.\d+)+)\s",
                         re.M)
+
+    for a, bb in ueberhaenge(reqs):
+        b.melde("Ueberhang", fw, a, f"enthaelt den vollen Text von {bb}")
 
     vorher: tuple[str, str] | None = None
     for r in reqs:
