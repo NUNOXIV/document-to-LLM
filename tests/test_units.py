@@ -173,6 +173,53 @@ def test_kreuzreferenz_grundschutz_druckfehler() -> None:
     check("A23 unberuehrt", out["OPS.2.3.A23"].text.startswith("Sensible"))
 
 
+def test_xberg_seitenmarken_normalisiert() -> None:
+    """xberg klebt die Seitenmarke an das erste Wort der Seite; jeder Waechter
+    sucht sie am Zeilenanfang."""
+    print("xberg: Seitenmarken")
+    roh = "<!-- page: 1 -->MUSTER-NORM\n\n# 4 Kontext\n\nText.\n\n<!-- page: 2 -->Anhang"
+    md = extract.normalisiere_xberg_markdown(roh)
+    zeilen = md.splitlines()
+    check("Marke 1 allein auf der Zeile", "<!-- page: 1 -->" in zeilen, str(zeilen[:3]))
+    check("Marke 2 allein auf der Zeile", "<!-- page: 2 -->" in zeilen, str(zeilen[-3:]))
+    check("Text der Seite bleibt", "MUSTER-NORM" in zeilen and "Anhang" in zeilen)
+    check("keine Dreifach-Leerzeilen", "\n\n\n" not in md)
+
+
+def test_xberg_engine_am_fixture() -> None:
+    """Zweite Engine am Test-PDF: gleicher Ausgabevertrag, gleiche Waechter.
+
+    Laeuft nur, wenn xberg installiert ist. Geprueft wird der native Pfad
+    (Textlayer, keine Modelle): Kopfzeile nennt die Engine, jede Seite hat ihre
+    Marke, die Wortdeckung gegen den Textlayer ist vollstaendig.
+    """
+    print("xberg: Engine am Fixture")
+    try:
+        import xberg  # noqa: F401
+    except ImportError:
+        print("  (xberg nicht installiert — uebersprungen)")
+        return
+    if not FIXTURE_PDF.exists():
+        print("  (Fixture fehlt — uebersprungen)")
+        return
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "out"
+        res = extract.convert_file(
+            extract._Runner(120), FIXTURE_PDF, out, ocr_mode="off", page_markers=True,
+            write_json=True, force=True, claimed={}, do_verify=True,
+            min_coverage=99.0, repair=True, engine="xberg",
+        )
+        check("Konverter xberg", res.converter == "xberg", res.converter)
+        md = Path(res.output).read_text(encoding="utf-8")
+        check("Kopfzeile nennt xberg", "converter: \"xberg " in md and "engine: xberg" in md)
+        check("zwei Seitenmarken", md.count("<!-- page: 1 -->") == 1 and md.count("<!-- page: 2 -->") == 1)
+        check("Ueberschriften erkannt", res.headings >= 5, str(res.headings))
+        check("Wortdeckung vollstaendig", res.text_coverage is not None and res.text_coverage >= 99.0,
+              str(res.text_coverage))
+        check("JSON-Zwilling der Engine", res.json_output is not None and res.json_output.endswith(".xberg.json"),
+              str(res.json_output))
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:

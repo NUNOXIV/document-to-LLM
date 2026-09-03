@@ -108,6 +108,97 @@ def slugify(name: str) -> str:
     return re.sub(r"-{2,}", "-", name).strip("-") or "dokument"
 
 
+# Zweite Engine: xberg (Rust-Kern, pip install xberg). Gleicher Ausgabevertrag
+# wie Docling -- Kopfzeile, Seitenmarken, Deckungspruefung, Bindestrich-Rueckgabe --
+# damit jeder Waechter unveraendert darueber laeuft. Welche Engine laeuft, steht
+# im Extrakt (converter, engine); ein Extrakt ohne diese Angabe ist keiner.
+ENGINES = ("docling", "xberg")
+STANDARD_ENGINE = os.environ.get("ACSOS_ENGINE", "docling")
+# OCR-Backend fuer xberg: paddle-ocr braucht keine Systembinaerdatei (Tesseract
+# muesste installiert sein), laedt seine Modelle aber von huggingface.co.
+XBERG_OCR_BACKEND = os.environ.get("ACSOS_XBERG_OCR", "paddle-ocr")
+XBERG_SEITENMARKE = "\n\n<!-- page: {page_num} -->\n\n"
+
+
+def xberg_version() -> str:
+    try:
+        from importlib.metadata import version
+
+        return version("xberg")
+    except Exception:
+        return "nicht installiert"
+
+
+def normalisiere_xberg_markdown(md: str) -> str:
+    """Seitenmarken auf eine eigene Zeile stellen.
+
+    xberg setzt die Marke direkt vor den ersten Text der Seite
+    ("<!-- page: 1 -->MUSTER-NORM ..."). Jeder Waechter dieses Repos sucht die
+    Marke am Zeilenanfang; so klebt sie nicht an einem Wort, das dann in der
+    Deckungspruefung fehlt.
+    """
+    md = md.replace("\r\n", "\n")
+    md = re.sub(r"[ \t]*(<!--\s*page:\s*\d+\s*-->)[ \t]*", r"\n\n\1\n\n", md)
+    md = re.sub(r"\n{3,}", "\n\n", md)
+    return md.strip() + "\n"
+
+
+def _xberg_worker(src_str: str, ocr: bool, page_markers: bool, want_json: bool,
+                  layout: bool) -> dict:
+    """Konvertierung mit xberg; gleiche Rueckgabe wie _worker (Docling)."""
+    import asyncio
+
+    import xberg
+    from xberg import (ExtractInput, ExtractionConfig, LayoutDetectionConfig,
+                       OcrConfig, PageConfig, PdfConfig)
+
+    kw: dict = {
+        "output_format": "markdown",
+        "pages": PageConfig(extract_pages=True, insert_page_markers=page_markers,
+                            marker_format=XBERG_SEITENMARKE),
+        "pdf_options": PdfConfig(extract_tables=True),
+    }
+    if ocr:
+        kw["ocr"] = OcrConfig(backend=XBERG_OCR_BACKEND, language=["deu", "eng"])
+        kw["force_ocr"] = True
+    if layout:
+        kw["layout"] = LayoutDetectionConfig(strategy="always")
+        kw["use_layout_for_markdown"] = True
+    out = asyncio.run(xberg.extract(ExtractInput(kind="uri", uri=src_str),
+                                    ExtractionConfig(**kw)))
+    errors = [str(getattr(e, "message", e)) for e in (out.errors or [])]
+    if not out.results:
+        raise ExtractionError("xberg lieferte kein Ergebnis: " + "; ".join(errors))
+    doc = out.results[0]
+    md = normalisiere_xberg_markdown(doc.content or "")
+    pages = len(doc.pages or []) or len(re.findall(r"<!-- page: \d+ -->", md))
+    warnungen = [f"xberg: {w.message}" for w in (doc.processing_warnings or [])]
+    tables = list(doc.tables or [])
+    js = None
+    if want_json:
+        js = {
+            "format": "acsos-xberg/1",
+            "hinweis": ("Ausgabe von xberg: Markdown mit Seitenmarken und die "
+                        "erkannten Tabellen als Markdown je Seite. Kein "
+                        "DoclingDocument."),
+            "converter": "xberg " + xberg_version(),
+            "content": md,
+            "tables": [{"page": getattr(t, "page_number", None),
+                        "markdown": getattr(t, "markdown", "")} for t in tables],
+            "warnings": warnungen,
+        }
+    return {
+        "markdown": md,
+        "pages": pages,
+        "tables": len(tables),
+        "status": "failure" if errors else "success",
+        "failed_pages": [],
+        "errors": errors,
+        "warnings": warnungen,
+        "json": js,
+    }
+
+
 def docling_version() -> str:
     try:
         from importlib.metadata import version
@@ -228,14 +319,14 @@ class _Runner:
             self._pool.shutdown(wait=False, cancel_futures=True)
         self._pool = None
 
-    def run(self, *args) -> dict:
+    def run(self, worker, *args) -> dict:
         """Fuehrt eine Konvertierung aus. Stirbt der Worker, wird das als
         ExtractionError sichtbar — der Batch laeuft weiter."""
         from concurrent.futures import TimeoutError as FutureTimeout
         from concurrent.futures.process import BrokenProcessPool
 
         try:
-            return self._get().submit(_worker, *args).result(timeout=self.timeout)
+            return self._get().submit(worker, *args).result(timeout=self.timeout)
         except FutureTimeout as exc:
             # Ein einzelnes pathologisches Dokument darf den Batch nicht
             # blockieren: Worker verwerfen, Dokument als Fehler markieren.
@@ -262,7 +353,7 @@ class _Runner:
                            "Modell-Cache (offline)", err=True)
                 os.environ["HF_HUB_OFFLINE"] = "1"
                 self.reset()
-                return self._get().submit(_worker, *args).result(timeout=self.timeout)
+                return self._get().submit(worker, *args).result(timeout=self.timeout)
             raise
 
 
@@ -412,6 +503,8 @@ def appendix(lines: list[tuple[int, str]]) -> str:
 def converter_label(res: Result) -> str:
     if res.converter == "passthrough":
         return "ACSOS Passthrough (woertlich, kein Parser)"
+    if res.converter == "xberg":
+        return "xberg " + xberg_version()
     return "IBM Docling " + docling_version()
 
 
@@ -469,6 +562,7 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         f"pages: {res.pages}",
         f"tables: {res.tables}",
         f"converter: {esc(converter_label(res))}",
+        f"engine: {res.converter}",
         f"ocr: {str(res.ocr_used).lower()} # mode={ocr_mode}",
         f"table_mode: {res.table_mode}",
         f"docling_status: {res.docling_status}",
@@ -571,6 +665,8 @@ def convert_file(
     min_coverage: float,
     repair: bool,
     mdir_ref: tuple[Path | None, ...] = (None,),
+    engine: str = "docling",
+    xberg_layout: bool = False,
 ) -> Result:
     started = time.perf_counter()
     res = Result(
@@ -645,8 +741,16 @@ def convert_file(
 
     convert_src = [src]          # kann auf eine reparierte Kopie zeigen
 
+    if engine == "xberg":
+        res.converter = "xberg"
+        res.table_mode = "not-applicable"
+        table_mode = "not-applicable"
+
     def run(mode: str, use_ocr: bool) -> dict:
-        return runner.run(str(convert_src[0]), use_ocr, str(mdir) if mdir else None,
+        if engine == "xberg":
+            return runner.run(_xberg_worker, str(convert_src[0]), use_ocr,
+                              page_markers, write_json, xberg_layout)
+        return runner.run(_worker, str(convert_src[0]), use_ocr, str(mdir) if mdir else None,
                           mode, page_markers, write_json)
 
     for attempt in ("first", "ocr-retry"):
@@ -654,6 +758,8 @@ def convert_file(
             try:
                 out = run(table_mode, ocr)
             except ExtractionError:
+                if engine != "docling":
+                    raise
                 # Absturz mit ACCURATE: derselbe Lauf mit FAST hat gute Chancen.
                 click.echo("    Konvertierung abgestuerzt — wiederhole mit "
                            "TableFormer FAST", err=True)
@@ -704,11 +810,12 @@ def convert_file(
                     failed, status = out["failed_pages"], out["status"]
 
             res.table_mode = table_mode
-            res.docling_status = status
+            res.docling_status = status if engine == "docling" else "not-applicable"
             res.failed_pages = failed
             if status in ("failure", "skipped"):
                 raise ExtractionError(
-                    f"Docling meldet Status {status}: {'; '.join(out['errors'])}")
+                    f"{'Docling' if engine == 'docling' else 'xberg'} meldet Status "
+                    f"{status}: {'; '.join(out['errors'])}")
         except ExtractionError:
             raise
         except Exception as exc:
@@ -720,7 +827,9 @@ def convert_file(
                     f"HF-Zugriff einmalig vorab holen: 'docling-tools models download' und den "
                     f"Cache ueber HF_HOME bereitstellen."
                 ) from exc
-            raise ExtractionError(f"Docling-Konvertierung fehlgeschlagen: {exc}") from exc
+            raise ExtractionError(
+                f"{'Docling' if engine == 'docling' else 'xberg'}-Konvertierung "
+                f"fehlgeschlagen: {exc}") from exc
 
         res.pages = out["pages"]
         md_body = out["markdown"]
@@ -744,6 +853,9 @@ def convert_file(
     res.ocr_used = ocr
     res.characters = len(md_body)
     res.tables = out["tables"]
+    # Hinweise der Engine (xberg: z. B. Layoutmodell nicht ladbar) gehoeren in
+    # den Extrakt -- ein Lauf ohne Layouthinweise sieht sonst aus wie einer mit.
+    res.warnings = res.warnings + list(out.get("warnings") or [])
     res.headings = len(re.findall(r"^#{1,6}\s+\S", md_body, flags=re.M))
     # Bereits gesammelte Hinweise (z. B. Stylesheet-Reparatur) bleiben erhalten.
     res.warnings = res.warnings + check_quality(md_body, res.pages, is_pdf, ocr, src.suffix)
@@ -752,7 +864,7 @@ def convert_file(
             f"Docling konnte {len(res.failed_pages)} Seite(n) nicht verarbeiten: "
             f"{', '.join(str(p) for p in res.failed_pages)}. Inhalt dieser Seiten fehlt."
         ))
-    if res.table_mode != "accurate":
+    if engine == "docling" and res.table_mode != "accurate":
         res.warnings.append(
             "Tabellenmodell auf FAST zurueckgefallen (ACCURATE brach ab). "
             "Tabellenstruktur ist etwas grober; Zellinhalte stammen weiterhin aus dem Textlayer."
@@ -863,7 +975,7 @@ def convert_file(
     res.output = str(target)
 
     if write_json and res_json is not None:
-        jtarget = out_dir / f"{stem}.docling.json"
+        jtarget = out_dir / f"{stem}.{engine}.json"
         jtarget.write_text(json.dumps(res_json, ensure_ascii=False, indent=2), encoding="utf-8")
         res.json_output = str(jtarget)
 
@@ -871,10 +983,12 @@ def convert_file(
     return res
 
 
-def write_manifest(out_dir: Path, results: list[Result]) -> Path:
+def write_manifest(out_dir: Path, results: list[Result], engine: str = "docling") -> Path:
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "converter": f"IBM Docling {docling_version()}",
+        "converter": (f"xberg {xberg_version()}" if engine == "xberg"
+                      else f"IBM Docling {docling_version()}"),
+        "engine": engine,
         "tool": "ACSOS document-to-LLM/extract.py",
         "documents": [asdict(r) for r in results],
     }
@@ -919,7 +1033,41 @@ def run_doctor(models_dir: Path | None) -> int:
     ok_table = "| A.8.24" in md or "A.8.24" in md
     click.secho(f"PDF-Modelle:    ok ({len(md)} Zeichen, Tabelle erkannt: {ok_table})", fg="green")
     click.secho("Bereit fuer PDF-Extraktion.", fg="green")
+    doctor_xberg(fixture)
     return 0
+
+
+def doctor_xberg(fixture: Path) -> None:
+    """Zweite Engine: installiert? Laeuft der native Pfad? Laden die Modelle?
+
+    Der native Pfad (Textlayer) braucht keine Modelle. Layoutmodell und OCR
+    kommen von huggingface.co; ob der Host erreichbar ist, sagt nur ein
+    Versuch -- und der wird hier gemacht, statt es zu vermuten.
+    """
+    click.echo(f"xberg:          {xberg_version()}")
+    try:
+        import xberg  # noqa: F401
+    except ImportError:
+        click.echo("                (optional: pip install xberg, dann --engine xberg)")
+        return
+    try:
+        out = _xberg_worker(str(fixture), False, True, False, False)
+        marken = len(re.findall(r"<!-- page: \d+ -->", out["markdown"]))
+        tab = "| A.8.24" in out["markdown"]
+        click.secho(f"xberg nativ:    ok ({len(out['markdown'])} Zeichen, {marken} Seitenmarken, "
+                    f"Tabelle als Tabelle erkannt: {tab})", fg="green" if tab else "yellow")
+    except Exception as exc:
+        click.secho(f"xberg nativ:    FEHLER — {exc}", fg="red")
+        return
+    try:
+        out = _xberg_worker(str(fixture), False, True, False, True)
+        layout = [w for w in out["warnings"] if "layout" in w.lower()]
+        if layout:
+            click.secho(f"xberg Layout:   nicht verfuegbar — {layout[0][:160]}", fg="yellow")
+        else:
+            click.secho("xberg Layout:   ok (Layoutmodell geladen)", fg="green")
+    except Exception as exc:
+        click.secho(f"xberg Layout:   FEHLER — {exc}", fg="red")
 
 
 # --------------------------------------------------------------------------
@@ -948,22 +1096,39 @@ def run_doctor(models_dir: Path | None) -> int:
               help="Ordner mit vorab geladenen Docling-Modellen (fuer Umgebungen ohne "
                    "Zugriff auf huggingface.co). Einmalig erzeugen mit: "
                    "docling-tools models download -o <ordner>")
+@click.option("--engine", type=click.Choice(list(ENGINES)), default=STANDARD_ENGINE,
+              show_default=True, envvar="ACSOS_ENGINE", show_envvar=True,
+              help="Konvertierungs-Engine. docling = IBM Docling (Layout- und "
+                   "Tabellenmodell, OCR via RapidOCR); xberg = Rust-Kern, sehr schnell, "
+                   "Layout/OCR nur mit erreichbarem huggingface.co. Steht im Extrakt.")
+@click.option("--xberg-layout", is_flag=True,
+              help="Nur --engine xberg: Layoutmodell (RT-DETR) fuer Ueberschriften und "
+                   "Tabellen einschalten. Laedt Modelle von huggingface.co.")
 @click.option("--doctor", is_flag=True,
-              help="Nur pruefen, ob Docling und die PDF-Modelle einsatzbereit sind.")
+              help="Nur pruefen, ob Docling (und ggf. xberg) einsatzbereit sind.")
 @click.option("--force", is_flag=True, help="Bereits konvertierte, unveraenderte Dokumente neu erzeugen.")
 @click.option("--strict", is_flag=True, help="Exit-Code 1 auch bei Warnungen (fuer CI/Automation).")
 @click.option("--timeout", default=1800.0, show_default=True, type=float,
               help="Zeitgrenze je Dokument in Sekunden; 0 = keine Grenze. "
                    "Verhindert, dass ein einzelnes Dokument den Batch blockiert.")
 def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
-         do_verify, min_coverage, repair, models_dir, doctor, force, strict, timeout):
-    """Konvertiert Dokumente mit IBM Docling nach strukturiertem Markdown."""
-    try:
-        import docling  # noqa: F401
-    except ImportError:
-        raise click.ClickException(
-            "Docling ist nicht installiert. Ausfuehren: pip install -r requirements.txt"
-        )
+         do_verify, min_coverage, repair, models_dir, engine, xberg_layout, doctor,
+         force, strict, timeout):
+    """Konvertiert Dokumente mit IBM Docling oder xberg nach strukturiertem Markdown."""
+    if engine == "docling" or doctor:
+        try:
+            import docling  # noqa: F401
+        except ImportError:
+            raise click.ClickException(
+                "Docling ist nicht installiert. Ausfuehren: pip install -r requirements.txt"
+            )
+    if engine == "xberg":
+        try:
+            import xberg  # noqa: F401
+        except ImportError:
+            raise click.ClickException(
+                "xberg ist nicht installiert. Ausfuehren: pip install xberg"
+            )
 
     mdir = Path(models_dir).expanduser() if models_dir else None
 
@@ -984,7 +1149,8 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
     # geladen, ein Absturz kostet nur das laufende Dokument.
     runner = _Runner(timeout or None)
 
-    click.echo(f"Docling {docling_version()} — {len(files)} Datei(en) -> {out_dir}/")
+    kopf = f"xberg {xberg_version()}" if engine == "xberg" else f"Docling {docling_version()}"
+    click.echo(f"{kopf} — {len(files)} Datei(en) -> {out_dir}/")
     claimed: dict[str, Path] = {}
     results: list[Result] = []
     for i, src in enumerate(files, 1):
@@ -995,7 +1161,7 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
                 ocr_mode=ocr_mode, write_json=write_json,
                 page_markers=not no_page_markers, force=force, claimed=claimed,
                 do_verify=do_verify, min_coverage=min_coverage, repair=repair,
-                mdir_ref=(mdir,),
+                mdir_ref=(mdir,), engine=engine, xberg_layout=xberg_layout,
             )
         except ExtractionError as exc:
             res = Result(
@@ -1027,7 +1193,7 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
         results.append(res)
 
     runner.reset()
-    manifest = write_manifest(out_dir, results)
+    manifest = write_manifest(out_dir, results, engine)
     errors = [r for r in results if r.status == "error"]
     warns = [r for r in results if r.status == "warn"]
     click.echo(

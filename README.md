@@ -89,6 +89,42 @@ python index.py show iso-27001 --heading "A.8"
 python index.py list
 ```
 
+## Zwei Engines: Docling und xberg
+
+`extract.py` kennt zwei Konvertierungs-Engines mit demselben Ausgabevertrag
+(Kopfzeile, `<!-- page: N -->`-Marken, Wortdeckung gegen den Textlayer,
+Bindestrich-Rückgabe). Welche gelaufen ist, steht in jedem Extrakt
+(`converter`, `engine`) und im Manifest.
+
+```bash
+python extract.py norm.pdf --engine docling      # Standard
+python extract.py norm.pdf --engine xberg        # Rust-Kern, nativer Textlayer-Pfad
+python extract.py norm.pdf --engine xberg --xberg-layout   # mit Layoutmodell (huggingface.co)
+ACSOS_ENGINE=xberg python extract.py input/ -r   # Standard per Umgebungsvariable umstellen
+python extract.py --doctor                       # prüft beide Engines
+```
+
+Gemessen am Test-PDF (`tests/fixtures/Muster-Norm-Zweispaltig.pdf`, zwei
+Seiten, eine Control-Tabelle) und an NIST CSWP 29 (32 Seiten), Stand xberg
+1.0.14 / Docling 2.123.0, Befehle: `extract.py … --engine <e>` und
+`fundstellen.py --ground-truth fixtures/ground-truth/muster-norm-99001.json --bestand <ordner>`:
+
+| | Docling | xberg nativ |
+|---|---|---|
+| Test-PDF: Dauer | 14,0 s | 2,7 s (davon 0,02 s Konvertierung) |
+| Test-PDF: Resolver gegen Ground Truth | 13 verifiziert, 0 abweichend | 13 verifiziert, 0 abweichend |
+| Test-PDF: Control-Tabelle | als Tabelle (6 Zeilen) | als Fließtext (0 Zeilen) |
+| NIST CSWP 29: Überschriften / Tabellenzeilen | 41 / 50 | 14 / 4 |
+
+Der Wortlaut ist bei beiden vollständig und belegt. Was xberg im nativen
+Pfad nicht liefert, ist die Struktur: Tabellen werden zu Prosa, Überschriften
+fehlen zum Teil. Für `publish.py`, das Anhang-A-Controls über Tabellenzeilen
+auflöst, ist das ein Verlust. Sein Layoutmodell (`--xberg-layout`) und seine
+OCR-Backends holt xberg von huggingface.co; wo der Host gesperrt ist, meldet
+der Extrakt das als Warnung und fällt auf den nativen Pfad zurück, statt
+still weniger zu liefern. Deshalb bleibt Docling hier Standard, xberg ist
+eine Zeile entfernt.
+
 ## Was den Output belastbar macht
 
 - **Provenienz je Datei:** YAML-Front-Matter mit SHA-256 der Quelle, Seitenzahl,

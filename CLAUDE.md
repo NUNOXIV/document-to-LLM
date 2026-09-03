@@ -6,7 +6,8 @@ Vorgeschichte steht in `lessons-learned.md`, nicht hier.
 
 ## Was dieses Repo ist
 
-Ein Skill, keine Bibliothek. Es wandelt GRC-Normen mit IBM Docling in
+Ein Skill, keine Bibliothek. Es wandelt GRC-Normen mit IBM Docling (Standard)
+oder xberg (`--engine xberg`) in
 strukturerhaltendes Markdown und stellt sie als Index bereit. Fachliche
 Beschreibung: `SKILL.md`. Aufbau: `README.md`.
 
@@ -15,7 +16,7 @@ Beschreibung: `SKILL.md`. Aufbau: `README.md`.
 ```bash
 # Umgebung
 pip install -r requirements.txt -r requirements-dev.txt
-python extract.py --doctor            # Textlayer und Modelle einsatzbereit?
+python extract.py --doctor            # Textlayer, Docling-Modelle, xberg einsatzbereit?
 
 # Testlauf (das ist die Definition of Done, nicht "sieht gut aus")
 python -m pytest                      # alle Tests, inkl. Eigenschaftstests
@@ -40,7 +41,7 @@ auf `pytest`.
 ## Die eine Regel
 
 **Ein Agent parst niemals ein PDF selbst.** Kein PyPDF, kein `pdftotext`, kein
-Regex über Rohtext. Inhalt kommt aus `output/` oder nirgendwoher. Begründung in
+Regex über Rohtext. Konvertiert wird mit Docling oder xberg, sonst nichts. Inhalt kommt aus `output/` oder nirgendwoher. Begründung in
 `SKILL.md`.
 
 ## Vier Verifikationsregeln
