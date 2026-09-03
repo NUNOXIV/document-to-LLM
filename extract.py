@@ -500,16 +500,60 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
 # --------------------------------------------------------------------------
 # Konvertierung einer Datei
 # --------------------------------------------------------------------------
-def target_name(src: Path, claimed: dict[str, Path]) -> str:
-    """Stabiler Zielname; bei gleichem Stem in mehreren Formaten wird das
-    Quellformat angehaengt (ISO.pdf und ISO.docx duerfen sich nicht ueberschreiben)."""
+def _ziel_inhaber(target: Path) -> str | None:
+    """Quellname und Hash aus der Kopfzeile eines vorhandenen Extrakts."""
+    if not target.exists():
+        return None
+    try:
+        with target.open(encoding="utf-8", errors="replace") as fh:
+            return "".join(next(fh, "") for _ in range(40))
+    except OSError:
+        return None
+
+
+def target_name(src: Path, claimed: dict[str, Path], out_dir: Path | None = None) -> str:
+    """Stabiler Zielname. Zwei Quellen duerfen sich nie ueberschreiben — weder
+    im selben Lauf (claimed) noch ueber Laeufe hinweg (Kopfzeile auf Platte):
+    125 von 602 Extrakten fehlten, weil Checkliste-APP-1-1.xlsx und
+    checklisten-2023/Checkliste_APP.1.1.xlsx denselben Slug ergaben.
+    Eigen ist ein Ziel, wenn Quellname oder Hash in seiner Kopfzeile stehen —
+    so bleibt die Hash-Idempotenz erhalten, und ein byte-identisches Duplikat
+    bekommt kein zweites Extrakt. Ausweichnamen: Format (nur wenn es sich
+    unterscheidet), dann Ordnername, zuletzt ein Hash-Praefix."""
     base = slugify(src.stem)
-    owner = claimed.get(base)
-    if owner is None or owner == src.resolve():
-        claimed[base] = src.resolve()
-        return base
-    name = f"{base}-{src.suffix.lstrip('.').lower()}"
-    claimed.setdefault(name, src.resolve())
+    quelle = src.resolve()
+    fmt = src.suffix.lstrip(".").lower()
+    ordner = slugify(src.parent.name)
+    eigener_hash: str | None = None
+
+    def inhaber(name: str) -> tuple[bool, str]:
+        """(frei oder eigen?, Endung des Inhabers)"""
+        nonlocal eigener_hash
+        owner = claimed.get(name)
+        if owner is not None:
+            return owner == quelle, owner.suffix.lstrip(".").lower()
+        kopf = _ziel_inhaber(out_dir / f"{name}.md") if out_dir is not None else None
+        if kopf is None:
+            return True, ""
+        m = re.search(r'^source_file:\s*"?(.*?)"?\s*$', kopf, re.M)
+        inhaber_name = m.group(1) if m else ""
+        if inhaber_name == src.name:
+            return True, ""
+        if eigener_hash is None:
+            eigener_hash = sha256_of(src)
+        return eigener_hash in kopf, Path(inhaber_name).suffix.lstrip(".").lower()
+
+    frei, fremde_endung = inhaber(base)
+    kandidaten = [base]
+    if not frei and fremde_endung != fmt:
+        kandidaten.append(f"{base}-{fmt}")
+    kandidaten += [f"{base}-{ordner}", f"{base}-{ordner}-{fmt}"]
+    for name in kandidaten:
+        if inhaber(name)[0]:
+            claimed[name] = quelle
+            return name
+    name = f"{base}-{eigener_hash or sha256_of(src)[:8]}"
+    claimed[name] = quelle
     return name
 
 
@@ -534,7 +578,7 @@ def convert_file(
         source_sha256=sha256_of(src),
         source_bytes=src.stat().st_size,
     )
-    stem = target_name(src, claimed)
+    stem = target_name(src, claimed, out_dir)
     target = out_dir / f"{stem}.md"
 
     if target.exists() and not force:

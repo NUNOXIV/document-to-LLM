@@ -25,6 +25,7 @@ Nutzung
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 import zipfile
@@ -41,10 +42,26 @@ VERARBEITBAR = {".pdf", ".xlsx", ".xlsm", ".docx", ".pptx",
 ARCHIVE = {".zip"}
 
 
+def sha256_of(p: Path) -> str:
+    h = hashlib.sha256()
+    with p.open("rb") as fh:
+        for block in iter(lambda: fh.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
 def register(korpus: Path) -> set[str]:
+    """Quellnamen *und* Quell-Hashes im Bestand. Ein byte-identisches Duplikat
+    (ZIP-Inhalt neben dem Original) hat kein eigenes Extrakt und braucht keins —
+    der Hash belegt, dass derselbe Inhalt im Bestand ist."""
     if not korpus.exists():
         raise SystemExit(f"Bestandsregister fehlt: {korpus} — erst 'python index.py build'")
-    return {d.get("source_file", "") for d in json.loads(korpus.read_text(encoding="utf-8"))["documents"]}
+    treffer: set[str] = set()
+    for d in json.loads(korpus.read_text(encoding="utf-8"))["documents"]:
+        treffer.add(d.get("source_file", ""))
+        treffer.add(d.get("source_sha256", ""))
+    treffer.discard("")
+    return treffer
 
 
 def archivinhalt(pfad: Path) -> list[str]:
@@ -113,6 +130,7 @@ def main(eingang: Path, korpus: Path, auspacken: bool, seiten: bool, strict: boo
     erfasst = register(korpus)
     ohne_extrakt: list[tuple[str, Path]] = []
     unbekannt: list[Path] = []
+    duplikate: list[Path] = []
     archive: list[tuple[Path, list[str]]] = []
     geprueft = 0
 
@@ -133,11 +151,22 @@ def main(eingang: Path, korpus: Path, auspacken: bool, seiten: bool, strict: boo
             unbekannt.append(p)
             continue
         geprueft += 1
-        if p.name not in erfasst:
-            ohne_extrakt.append((p.name, p))
+        if p.name in erfasst:
+            continue
+        if sha256_of(p) in erfasst:
+            duplikate.append(p)
+            continue
+        ohne_extrakt.append((p.name, p))
 
     aus_archiven = sum(len(f) for _, f in archive)
-    print(f"{geprueft} Quelldatei(en) geprueft, {len(erfasst)} im Bestand.\n")
+    print(f"{geprueft} Quelldatei(en) geprueft, {len(eintraege)} Extrakte im Bestand, "
+          f"{len(duplikate)} byte-identische Duplikate ohne eigenes Extrakt.\n")
+    for p in duplikate[:10]:
+        print(f"  [Duplikat] {p}")
+    if len(duplikate) > 10:
+        print(f"  ... und {len(duplikate)-10} weitere Duplikate")
+    if duplikate:
+        print()
 
     if ohne_extrakt:
         nach_typ = Counter(Path(n).suffix.lower() for n, _ in ohne_extrakt)

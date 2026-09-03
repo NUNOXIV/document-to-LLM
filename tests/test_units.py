@@ -60,6 +60,40 @@ def test_page_markers() -> None:
     check("ohne Marker", "<!-- page:" not in extract.to_markdown(doc, False))
 
 
+def test_zielname_kollision_gleiches_format() -> None:
+    """Zwei Quellen mit gleichem Slug und gleichem Format duerfen sich nie
+    ueberschreiben — so verschwanden 125 von 602 Extrakten, unbemerkt."""
+    print("Zielnamen: Kollision im selben Format")
+    with tempfile.TemporaryDirectory() as tmp:
+        wurzel = Path(tmp)
+        a = wurzel / "Checkliste-APP-1-1.xlsx"
+        b = wurzel / "checklisten-2023" / "Checkliste_APP.1.1.xlsx"
+        b.parent.mkdir()
+        a.write_bytes(b"A")
+        b.write_bytes(b"B")
+        claimed: dict[str, Path] = {}
+        na = extract.target_name(a, claimed)
+        nb = extract.target_name(b, claimed)
+        check("gleicher Prozess: verschiedene Ziele", na != nb, f"{na} / {nb}")
+        check("Ausweichname nennt den Ordner, nicht das gleiche Format",
+              nb == "checkliste-app-1-1-checklisten-2023", nb)
+        check("gleicher Prozess: stabil", extract.target_name(b, claimed) == nb)
+        # Zweiter Prozess: das Ziel von a liegt schon auf Platte, claimed ist leer.
+        out = wurzel / "out"
+        out.mkdir()
+        (out / f"{na}.md").write_text(
+            f'---\nsource_file: "{a.name}"\nsource_sha256: {extract.sha256_of(a)}\n---\n', encoding="utf-8")
+        nb2 = extract.target_name(b, {}, out)
+        check("anderer Prozess: fremdes Ziel nicht ueberschrieben", nb2 != na, nb2)
+        check("anderer Prozess: gleicher Name wie im ersten", nb2 == nb, f"{nb2} / {nb}")
+        check("eigenes Ziel wird wiedererkannt", extract.target_name(a, {}, out) == na)
+        # Byte-identisches Duplikat (ZIP-Inhalt neben dem Original): kein zweites Ziel.
+        c = wurzel / "kopie" / "Checkliste_APP-1-1.xlsx"
+        c.parent.mkdir()
+        c.write_bytes(b"A")
+        check("Duplikat teilt das Ziel des Originals", extract.target_name(c, {}, out) == na)
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
@@ -1167,6 +1201,24 @@ def test_vollstaendigkeit_findet_die_nie_eingelesene_quelle(tmp_path: Path) -> N
     code, aus = lauf()
     assert code == 1, f"das nicht ausgepackte Archiv blieb unbemerkt:\n{aus}"
     assert "Checkliste_APP.1.1.xlsx" in aus
+
+    # Ein byte-identisches Duplikat unter anderem Namen (ZIP-Inhalt neben dem
+    # Original) ist keine Luecke: der Hash belegt, dass der Inhalt im Bestand ist.
+    # Ein gleichnamiges Duplikat mit ANDEREM Inhalt bleibt aber eine Luecke.
+    (eingang / "paket.zip").unlink()
+    import hashlib
+    inhalt = (eingang / "vorhanden.pdf").read_bytes()
+    korpus.write_text(json.dumps({"documents": [{
+        "slug": "vorhanden", "source_file": "vorhanden.pdf",
+        "source_sha256": hashlib.sha256(inhalt).hexdigest()}]}), encoding="utf-8")
+    (eingang / "kopie").mkdir()
+    (eingang / "kopie" / "vorhanden-2023.pdf").write_bytes(inhalt)
+    code, aus = lauf()
+    assert code == 0, f"das byte-identische Duplikat wurde als Luecke gemeldet:\n{aus}"
+    assert "Duplikat" in aus
+    (eingang / "kopie" / "vorhanden-2023.pdf").write_bytes(inhalt + b" geaendert")
+    code, aus = lauf()
+    assert code == 1, f"die abweichende Fassung blieb unbemerkt:\n{aus}"
 
 
 def test_seitenmarken_muessen_lueckenlos_sein(tmp_path: Path) -> None:
