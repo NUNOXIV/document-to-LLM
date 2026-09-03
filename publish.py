@@ -638,16 +638,33 @@ def vault_ids(vault: Path, framework: str) -> dict[str, str]:
         meta, body = split_front_matter(note.read_text(encoding="utf-8"))
         if meta.get("type") != "requirement" or not meta.get("id"):
             continue
-        # Ein als withdrawn gefuehrter Eintrag hat keinen Wortlaut, den ein
-        # Dokument liefern koennte; ihn zu verlangen erzeugt nur Fehlmeldungen.
-        if meta.get("kind") == "withdrawn" or meta.get("status") == "withdrawn":
-            continue
         title = ""
         h = re.search(r"^#\s+\S+\s+—\s+(.*\S)\s*$", body, flags=re.M)
         if h:
             title = h.group(1)
         ids[meta["id"]] = title
     return ids
+
+
+def vault_withdrawn(vault: Path, framework: str) -> set[str]:
+    """IDs, die das Register selbst als withdrawn fuehrt.
+
+    Sie bleiben Sollwert fuer den Export, wo das Dokument sie noch nennt (das
+    Kompendium fuehrt 'ORP.1.A5 ENTFALLEN' als eigene Ueberschrift, und die
+    Nummerierung bleibt so stabil). Fehlt eine solche ID aber im Dokument
+    ganz (APP.2.2.A2 in der Edition 2023), ist das kein Verlust auf dem Weg
+    in den Export — die Inhaltspruefung meldet sie deshalb getrennt.
+    """
+    folder = vault / "GRC" / "Frameworks" / framework
+    if not folder.is_dir():
+        return set()
+    out: set[str] = set()
+    for note in folder.glob("*.md"):
+        meta, _ = split_front_matter(note.read_text(encoding="utf-8"))
+        if meta.get("type") == "requirement" and meta.get("id") and (
+                meta.get("kind") == "withdrawn" or meta.get("status") == "withdrawn"):
+            out.add(meta["id"])
+    return out
 
 
 def yaml_wert(v: object) -> str:

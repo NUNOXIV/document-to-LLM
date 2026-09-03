@@ -218,7 +218,13 @@ def pruefe_kennungen(pfad: Path, vault: Path, b: Bericht) -> None:
         b.entfallen += len(entfallen)
         print(f"  {fw}: {len(entfallen)} ID(s) des Registers als entfallen belegt: "
               + ", ".join(entfallen[:8]) + (" ..." if len(entfallen) > 8 else ""))
-    fehlend = sorted(register - export - set(entfallen))
+    zurueckgezogen = sorted((register - export - set(entfallen))
+                            & publish.vault_withdrawn(vault, fw))
+    if zurueckgezogen:
+        b.entfallen += len(zurueckgezogen)
+        print(f"  {fw}: {len(zurueckgezogen)} ID(s) im Register als withdrawn gefuehrt und im "
+              "Dokument nicht mehr vorhanden: " + ", ".join(zurueckgezogen[:8]))
+    fehlend = sorted(register - export - set(entfallen) - set(zurueckgezogen))
     fremd = sorted(export - register)
     if fehlend:
         b.melde("Kennung", fw, "—",

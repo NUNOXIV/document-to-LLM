@@ -130,9 +130,10 @@ def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
           "continually" not in out["A.10"].text and "Allocating" in out["A.10"].text, out["A.10"].text[:60])
 
 
-def test_vault_register_ohne_entfallene() -> None:
-    """Ein als withdrawn gefuehrter Registereintrag ist kein Sollwert fuer den Export."""
-    print("Vault-Register ohne entfallene Eintraege")
+def test_vault_register_kennt_entfallene() -> None:
+    """Withdrawn-Eintraege bleiben Sollwert (das Kompendium nennt sie noch), sind
+    aber getrennt abfragbar, damit ihr Fehlen im Dokument kein Befund wird."""
+    print("Vault-Register mit entfallenen Eintraegen")
     with tempfile.TemporaryDirectory() as tmp:
         ordner = Path(tmp) / "GRC" / "Frameworks" / "fw"
         ordner.mkdir(parents=True)
@@ -143,7 +144,8 @@ def test_vault_register_ohne_entfallene() -> None:
             encoding="utf-8")
         ids = publish.vault_ids(Path(tmp), "fw")
         check("aktive ID im Register", "X.1" in ids and ids["X.1"] == "Eins", str(ids))
-        check("entfallene ID nicht im Register", "X.2" not in ids, str(ids))
+        check("entfallene ID bleibt Sollwert", "X.2" in ids, str(ids))
+        check("entfallene ID getrennt abfragbar", publish.vault_withdrawn(Path(tmp), "fw") == {"X.2"})
 
 
 def test_kreuzreferenz_grundschutz_druckfehler() -> None:
