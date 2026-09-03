@@ -271,6 +271,21 @@ def test_artikelgrenze_auch_ohne_ueberschrift() -> None:
     check("Art.20.2 ist Absatz 2", "Art.20.2" in out and out["Art.20.2"].text.startswith("(2)"))
 
 
+def test_anker_endet_am_nackten_absatz() -> None:
+    """Kreuzreferenz-Anker: der Abschnitt endet am naechsten Absatz "(2)", auch
+    wenn der ohne Listenstrich am Zeilenanfang steht (NIS2 Art.20.1/20.2)."""
+    print("Anker endet am nackten Absatz")
+    body = "\n".join([
+        "Artikel 20", "", "## Governance", "",
+        "(1) Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane die Massnahmen billigen.", "",
+        "(2) Die Mitgliedstaaten stellen sicher, dass die Mitglieder an Schulungen teilnehmen.", "",
+        "## Artikel 21",
+    ])
+    sec = publish.section_at_anchor(body, "Art.20.1", "Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane", "Billigung")
+    check("Absatz 1 ohne Absatz 2", sec is not None and "billigen" in sec.text and "Schulungen" not in sec.text,
+          sec.text[:100] if sec else "None")
+
+
 def test_ueberhang_im_export() -> None:
     """Eine Zeile, die den vollen Text einer anderen Anforderung enthaelt, ist
     ein Ueberhang -- ausser die andere ist ihr Unterpunkt (9.2 aus 9.2.1)."""

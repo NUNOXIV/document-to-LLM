@@ -514,7 +514,10 @@ def section_at_anchor(body: str, ident: str, anchor: str, title: str) -> Section
         return None
     line_start = body.rfind("\n", 0, m.start()) + 1
     rest = body[line_start:]
-    nxt = re.search(r"(?m)^(?:-\s*(?:\([0-9]+\)|[a-z]\))|#{1,6}\s)", rest[1:])
+    # Ende: naechster Listenpunkt, naechste Ueberschrift -- oder der naechste
+    # Absatz "(2)" am Zeilenanfang, auch ohne Listenstrich. Im NIS2-Extrakt
+    # stehen die Absaetze nackt; Art.20.1 trug so Absatz 2 mit.
+    nxt = re.search(r"(?m)^(?:-\s*(?:\([0-9]+\)|[a-z]\))|\s*\([0-9]+\)\s|#{1,6}\s)", rest[1:])
     text = rest[: nxt.start() + 1] if nxt else rest[:3000]
     text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", text).strip()
     return Section(ident, title, text, page_at(body, line_start)) if text else None
