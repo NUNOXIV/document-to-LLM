@@ -1,0 +1,10 @@
+{
+  "framework": "bsi-grundschutz",
+  "source": "IT_Grundschutz_Kompendium_Edition2023.pdf",
+  "hinweis": "Zwei Anforderungen tragen im Kompendium selbst eine fehlerhafte Kennung; der Textlayer des PDF (zweiter Leser, verify.quelltext) bestaetigt beide Schreibweisen woertlich. OPS.2.3.A22 steht als 'OPS.2.3A22' (Punkt fehlt) zwischen OPS.2.3.A21 und OPS.2.3.A23. SYS.1.2.3.A5 steht als 'SYS.1.2.2.A5' zwischen SYS.1.2.3.A4 und SYS.1.2.3.A6 im Baustein SYS.1.2.3 Windows Server; der echte Baustein SYS.1.2.2 (Windows Server 2012) fuehrt unter A5 'Schutz vor Schadsoftware'. Das Extrakt gibt die Quelle unveraendert wieder — die Kennung wird hier nicht 'korrigiert', sondern die Anforderung ueber ihren Wortlaut gefunden. APP.2.2.A2 kommt in der Edition 2023 nicht mehr vor (A1 folgt direkt A3, kein ENTFALLEN-Platzhalter) und ist im ACSOS-Register bereits als withdrawn gefuehrt.",
+  "belegfuehrung": "Je Anforderung zwei unabhaengige Merkmale: die Position im Dokument (zwischen den Nachbarn A21/A23 bzw. A4/A6 desselben Bausteins) und der Titel, der im ACSOS-Register zu genau dieser Nummer gehoert. Der Anker ist der erste Satz des Anforderungstextes und kommt im Extrakt genau einmal vor (grep -c). Fehlt der Anker, meldet publish.py die ID als fehlend statt etwas Falsches abzulegen.",
+  "anchors": {
+    "OPS.2.3.A22": "Gemeinsame Notfall- und Krisenübungen mit den Anbietenden von Outsourcing SOLLTEN durchgeführt und dokumentiert werden",
+    "SYS.1.2.3.A5": "In Windows Server SOLLTEN alle Konten von Benutzenden Mitglied der Sicherheitsgruppe 'Protected Users' sein."
+  }
+}

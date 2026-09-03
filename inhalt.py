@@ -62,6 +62,7 @@ class Bericht:
     geprueft: int = 0
     ohne_ueberschrift: int = 0
     frameworks: int = 0
+    entfallen: int = 0
 
     def melde(self, *a: str) -> None:
         self.befunde.append(Befund(*a))
@@ -128,9 +129,10 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
         # Ohne ihn galten alle 796 C5-Anforderungen als "ohne Ueberschrift"
         # und blieben ungeprueft -- die Pruefung lief, sah aber nichts.
         q_meta, body = publish.split_front_matter(roh)
-        abschnitte.update(publish.sections_from_headings(body))
-        abschnitte.update(publish.sections_from_tables(body))
-        abschnitte.update(publish.sections_from_yaml(body, q_meta))
+        for k, sec in publish.abschnitte_zusammen(body, q_meta).items():
+            prev = abschnitte.get(k)
+            if prev is None or not prev.text.strip():
+                abschnitte[k] = sec
 
     # Leckage: eine fremde Anforderungsueberschrift im eigenen Text.
     fremde = re.compile(r"^#{1,6}\s+([A-Z]{2,6}(?:\.\d+)+\.A\d+|\d+(?:\.\d+)+)\s",
@@ -185,6 +187,15 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
                     f"Export '{titel[:45]}' vs Quelle '{sec.title[:45]}'")
 
 
+def entfallen_belegt(vault: Path, fw: str, ident: str) -> bool:
+    """Liegt fuer diese ID eine Entfallen-Notiz aus publish.py --mark-withdrawn vor?"""
+    notiz = vault / "Normen (lizenziert)" / fw / f"{fw} {ident} (Normtext).md"
+    if not notiz.is_file():
+        return False
+    return re.search(r"^status:\s*entfallen\s*$",
+                     notiz.read_text(encoding="utf-8", errors="replace")[:600], re.M) is not None
+
+
 def pruefe_kennungen(pfad: Path, vault: Path, b: Bericht) -> None:
     """Keine ID darf auf dem Weg in den Export verlorengehen oder sich aendern.
 
@@ -199,7 +210,15 @@ def pruefe_kennungen(pfad: Path, vault: Path, b: Bericht) -> None:
     except Exception:
         return
     export = {r.get("id", "") for r in d.get("requirements", [])}
-    fehlend = sorted(register - export)
+    # Eine ID, fuer die im Vault eine Entfallen-Notiz liegt, ist kein Verlust
+    # auf dem Weg in den Export: die Quelle wurde gelesen, und sie kennt die
+    # ID nicht. Das steht in der Notiz, mit Quelldatei und Hash.
+    entfallen = sorted(i for i in register - export if entfallen_belegt(vault, fw, i))
+    if entfallen:
+        b.entfallen += len(entfallen)
+        print(f"  {fw}: {len(entfallen)} ID(s) des Registers als entfallen belegt: "
+              + ", ".join(entfallen[:8]) + (" ..." if len(entfallen) > 8 else ""))
+    fehlend = sorted(register - export - set(entfallen))
     fremd = sorted(export - register)
     if fehlend:
         b.melde("Kennung", fw, "—",

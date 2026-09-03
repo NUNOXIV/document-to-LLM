@@ -94,6 +94,79 @@ def test_zielname_kollision_gleiches_format() -> None:
         check("Duplikat teilt das Ziel des Originals", extract.target_name(c, {}, out) == na)
 
 
+def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
+    """Anhang-A-Tabelle und Inhaltsverzeichnis duerfen die Kapitel nicht ueberschreiben.
+
+    ISO 27001 und ISO 42001 fuehren Klausel 5.1 (Leadership) UND Control A.5.1
+    (Policies). Die Tabellenzeile A.5.1 wurde auch unter "5.1" abgelegt und
+    verdraengte die Ueberschrift: 32 Anforderungen trugen den Text einer
+    anderen Nummer, und die Inhaltspruefung sah es nicht, weil sie dieselbe
+    Zusammenfuehrung benutzte.
+    """
+    print("Tabellenzeilen gegen Ueberschriften")
+    body = "\n".join([
+        "## 5.1\tLeadership and commitment", "",
+        "Top management shall demonstrate leadership.", "",
+        "## 10\tImprovement", "",
+        "## 10.1\tContinual improvement", "",
+        "The organization shall continually improve the AI management system.", "",
+        "| Clause | Title | Page |", "|---|---|---|",
+        "| 10.1 | Continual improvement | 23 |", "",
+        "| ID | Control | Text |", "|---|---|---|",
+        "| A.5.1 | Policies for information security | Control: policies shall be defined. |",
+        "| A.10.2 | Allocating responsibilities | The organization shall ensure that responsibilities are allocated. |",
+        "| A.10.3 | Suppliers | The organization shall establish a supplier process. |",
+    ])
+    wanted = {"5.1": "Leadership and commitment", "A.5.1": "Policies for information security",
+              "10.1": "Continual improvement", "A.10": "Third-party and customer relationships",
+              "A.10.2": "Allocating responsibilities", "A.10.3": "Suppliers"}
+    out = publish.aufgeloeste_abschnitte(body, {}, wanted, "test")
+    check("5.1 traegt den Kapiteltext", out["5.1"].text.startswith("Top management"), out["5.1"].text[:40])
+    check("A.5.1 traegt den Control-Text", out["A.5.1"].text.startswith("Control:"), out["A.5.1"].text[:40])
+    check("10.1 traegt den Kapiteltext, nicht die Inhaltsverzeichniszeile",
+          out["10.1"].text.startswith("The organization shall continually"), out["10.1"].text[:40])
+    check("A.10.2 traegt den Control-Text", "responsibilities are allocated" in out["A.10.2"].text)
+    check("A.10 faellt nicht auf Kapitel 10 zurueck",
+          "continually" not in out["A.10"].text and "Allocating" in out["A.10"].text, out["A.10"].text[:60])
+
+
+def test_vault_register_ohne_entfallene() -> None:
+    """Ein als withdrawn gefuehrter Registereintrag ist kein Sollwert fuer den Export."""
+    print("Vault-Register ohne entfallene Eintraege")
+    with tempfile.TemporaryDirectory() as tmp:
+        ordner = Path(tmp) / "GRC" / "Frameworks" / "fw"
+        ordner.mkdir(parents=True)
+        (ordner / "fw X.1.md").write_text(
+            "---\ntype: requirement\nid: X.1\nkind: requirement\n---\n# X.1 — Eins\n", encoding="utf-8")
+        (ordner / "fw X.2.md").write_text(
+            "---\ntype: requirement\nid: X.2\nkind: withdrawn\nstatus: withdrawn\n---\n# X.2 — ENTFALLEN\n",
+            encoding="utf-8")
+        ids = publish.vault_ids(Path(tmp), "fw")
+        check("aktive ID im Register", "X.1" in ids and ids["X.1"] == "Eins", str(ids))
+        check("entfallene ID nicht im Register", "X.2" not in ids, str(ids))
+
+
+def test_kreuzreferenz_grundschutz_druckfehler() -> None:
+    """Druckfehler in der Quelle: die Anforderung wird ueber ihren Wortlaut gefunden,
+    die Kennung im Extrakt bleibt, wie sie im Kompendium steht."""
+    print("Kreuzreferenz Grundschutz")
+    body = "\n".join([
+        "## OPS.2.3.A21 Abschluss von ESCROW-Verträgen (H)", "", "Wird Software bezogen, SOLLTE ein ESCROW-Vertrag abgeschlossen werden.", "",
+        "## OPS.2.3A22 Durchführung von gemeinsamen Notfall- und Krisenübungen (H) [Notfallbeauftragte]", "",
+        "Gemeinsame Notfall- und Krisenübungen mit den Anbietenden von Outsourcing SOLLTEN durchgeführt und dokumentiert werden (siehe DER.4). Das Resultat SOLLTE genutzt werden.", "",
+        "## OPS.2.3.A23 Einsatz von Verschlüsselungen (H)", "", "Sensible Daten SOLLTEN verschlüsselt werden.",
+    ])
+    wanted = {"OPS.2.3.A21": "Abschluss von ESCROW-Verträgen",
+              "OPS.2.3.A22": "Durchführung von gemeinsamen Notfall- und Krisenübungen",
+              "OPS.2.3.A23": "Einsatz von Verschlüsselungen"}
+    out = publish.aufgeloeste_abschnitte(body, {}, wanted, "bsi-grundschutz")
+    check("A22 ueber den Anker gefunden", "OPS.2.3.A22" in out, str(sorted(out)))
+    check("A22 traegt nur den eigenen Text",
+          out["OPS.2.3.A22"].text.startswith("Gemeinsame") and "Sensible" not in out["OPS.2.3.A22"].text,
+          out["OPS.2.3.A22"].text[:60])
+    check("A23 unberuehrt", out["OPS.2.3.A23"].text.startswith("Sensible"))
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:

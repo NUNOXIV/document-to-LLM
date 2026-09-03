@@ -324,10 +324,13 @@ def main(gt_pfad: Path, bestand: Path, als_json: bool, strict: bool) -> None:
     kandidaten = bestand_dateien(bestand)
     berichte: list[Bericht] = []
     ohne_bestand: list[str] = []
+    hinweise: dict[str, str] = {}
 
     for datei in gt_dateien(gt_pfad):
         gt = json.loads(datei.read_text(encoding="utf-8"))
         ziele = passend(gt, kandidaten)
+        if gt.get("hinweis"):
+            hinweise[str(gt.get("kurzname", datei.name))] = str(gt["hinweis"])
         if not ziele:
             ohne_bestand.append(gt.get("kurzname", datei.name))
             continue
@@ -344,6 +347,8 @@ def main(gt_pfad: Path, bestand: Path, als_json: bool, strict: bool) -> None:
     else:
         for b in berichte:
             print(f"\n{b.ground_truth} gegen {b.bestand}")
+            if hinweise.get(b.ground_truth):
+                print(f"  Hinweis: {hinweise[b.ground_truth]}")
             print(f"  {b.zahl('verifiziert')} verifiziert, {b.zahl('abweichend')} abweichend, "
                   f"{b.zahl('unverifiziert')} unverifiziert — Quote {b.quote} %")
             for x in b.befunde:

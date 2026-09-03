@@ -369,6 +369,49 @@ endet mit dem Prozess.
 
 ---
 
+## 21 Zwei ISO-Exporte, 32 Anforderungen mit dem Text einer anderen Nummer
+
+**Ursache:** ISO 27001 und ISO 42001 führen Klausel 5.1 (Leadership) *und*
+Control A.5.1 (Policies). Die Tabellenzeile A.5.1 wurde beim Lesen auch
+unter „5.1" abgelegt, und Tabellenzeilen überschrieben Überschriften. Dazu
+verdrängte die Inhaltsverzeichnis-Tabelle („| 10.1 | Continual improvement
+| 23 |") das Kapitel 10.1 durch eine Zeile ohne Text, und „A.10" fiel über
+die Variante „10" auf das Kapitel Improvement zurück. 18 von 74 Anforderungen
+in ISO 42001 und 14 von 118 in ISO 27001 trugen so den Wortlaut einer anderen
+Nummer — genau der Fehler, den ein Compliance-Bestand nicht haben darf.
+Die Inhaltsprüfung (`inhalt.py`) sah nur eine Titelabweichung, weil sie
+dieselbe Zusammenführung benutzte wie der Schreiber: derselbe Vorverarbeitungsschritt
+auf beiden Seiten, also eine Prüfung, nicht zwei (Nr. 14, Muster 5).
+Gefunden hat es ein Zweitleser, der nur Überschriften kennt.
+
+**Fix:** Kennungen bleiben, wie sie in der Zelle stehen; Überschriften mit
+Text haben Vorrang, Tabellen und Katalog füllen nur, was fehlt; führt das
+Dokument einen Anhang A, fällt „A.10" nie auf „10" zurück. Regressionstest
+mit Klausel und gleichnamigem Control im selben Dokument.
+
+**Lehre:** Eine Nummer ist erst dann eindeutig, wenn ihr Präfix mitläuft.
+Und wer den Schreiber prüfen will, darf nicht mit den Augen des Schreibers lesen.
+
+---
+
+## 22 Ein check(), das unter pytest nie fehlschlug
+
+**Ursache:** `check()` sammelt Fehlschläge in einer Liste; der eigene Runner
+wertet sie am Ende aus. pytest tat das nicht. Jeder check()-basierte Test war
+unter pytest grün, egal was er fand — und pytest war laut CLAUDE.md die
+Definition of Done. Aufgefallen ist es, weil ein neuer Test *vor* dem Fix
+grün war, obwohl der Fehler nachweislich drin war.
+
+**Fix:** `tests/conftest.py` leert die Liste vor jedem Test und lässt den Test
+scheitern, wenn danach etwas darin steht. Alle 42 Tests bleiben grün — das
+ist jetzt eine Aussage.
+
+**Lehre:** Ein Test, der rot sein kann, ist ein Test. Vor jedem Fix gehört der
+Nachweis, dass der Test ohne Fix rot ist — nicht als Ritual, sondern weil
+genau dieser Nachweis hier gefehlt hat.
+
+---
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -390,3 +433,5 @@ endet mit dem Prozess.
    alle dieselbe Ausgangsmenge teilten — den Bestand statt der Quelle.
 8. **Namen sind Hinweise, Hashes sind Belege.** Nr. 20: derselbe Slug für zwei
    Dateien, und der Schutz davor lebte nur im Prozessspeicher.
+9. **Ein Wächter, der nicht rot werden kann, ist keiner.** Nr. 22: check()
+   unter pytest. Die Gegenprobe (Nr. 4) gilt auch für die Testinfrastruktur.

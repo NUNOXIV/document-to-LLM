@@ -10,6 +10,11 @@
       "slug": "owasp-testing-guide-v4",
       "gilt_stattdessen": "wstg-v4-2",
       "grund": "OWASP Testing Guide v4.0. Das Projekt wurde in Web Security Testing Guide umbenannt; die geltende Fassung ist WSTG v4.2, die im Bestand liegt und von versioncheck.py als aktuell belegt wird."
+    },
+    {
+      "slug": "bsig-gesetz-u-ber-das-bundesamt-fu-r-sicherheit-in-der-informationstechnik-und",
+      "gilt_stattdessen": "bjnr12d0b0025",
+      "grund": "BSIG-PDF mit Ausfertigung 02.12.2025, Fassung vor der Aenderung durch Art. 4 G v. 11.3.2026 (BGBl. I Nr. 66). Das amtliche XML BJNR12D0B0025.xml von gesetze-im-internet.de ist der geltende Gesetzestext und liegt als bjnr12d0b0025 im Bestand; fixtures/ground-truth/bsig.json wird daraus erzeugt. Der Fundstellen-Resolver haelt das PDF dagegen: 57 von 68 Paragrafen woertlich gleich, 11 abweichend (§ 33 Registrierungspflicht, Anlage 1). Entscheidung des Auftraggebers vom 2026-09-03: das XML ist Gesetz, das PDF nur Historie."
     }
   ]
 }

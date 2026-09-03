@@ -251,7 +251,11 @@ def zeilen_kennung(zellen: list[str]) -> tuple[int, str] | None:
     for i, z in enumerate(zellen[:4]):
         m = KENNUNG_IN_ZELLE.match(z)
         if m:
-            return i, m.group(2)
+            # Die Kennung bleibt, wie sie in der Zelle steht. Frueher fiel das
+            # "A." weg, und die Zeile A.5.1 (Policies) landete auch unter "5.1"
+            # -- der Nummer der Klausel Leadership. 32 Anforderungen in zwei
+            # ISO-Exporten trugen so den Text einer anderen Nummer.
+            return i, m.group(0)
     return None
 
 
@@ -323,7 +327,12 @@ def sections_from_tables(body: str) -> dict[str, Section]:
 
     out: dict[str, Section] = {}
     for raw, title, text, start in repariere_zellversatz(zeilen):
-        for ident in {norm_key(raw), norm_key(f"A.{raw}")}:
+        # Ohne Praefix in der Zelle (Anhang-Tabellen, die "5.1" statt "A.5.1"
+        # schreiben) auch unter der A.-Form ablegen; nie umgekehrt.
+        schluessel = {norm_key(raw)}
+        if not raw.upper().startswith("A."):
+            schluessel.add(norm_key(f"A.{raw}"))
+        for ident in schluessel:
             prev = out.get(ident)
             if prev and len(prev.text) >= len(text):
                 continue
@@ -521,6 +530,23 @@ def export_json(framework: str, slug: str, meta: dict[str, str],
     }, ensure_ascii=False, indent=2) + "\n"
 
 
+def abschnitte_zusammen(body: str, meta: dict[str, str]) -> dict[str, Section]:
+    """Ueberschriften, Tabellenzeilen und YAML-Katalog zu einer Abschnittsliste.
+
+    Eine Ueberschrift mit Text hat Vorrang. Tabellen und Katalog fuellen nur,
+    was fehlt oder leer ist. Vorher galt update() in umgekehrter Richtung, und
+    die Inhaltsverzeichnis-Tabelle ("| 10.1 | Continual improvement | 23 |")
+    verdraengte das Kapitel 10.1 durch eine Zeile ohne Text.
+    """
+    found = sections_from_headings(body)
+    for extra in (sections_from_tables(body), sections_from_yaml(body, meta)):
+        for k, sec in extra.items():
+            prev = found.get(k)
+            if prev is None or not prev.text.strip():
+                found[k] = sec
+    return found
+
+
 def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, str],
                            framework: str) -> dict[str, Section]:
     """Je Anforderungs-ID den Abschnitt aus dem Extrakt — oder nichts.
@@ -533,10 +559,12 @@ def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, st
     Herausgeloest aus main(), damit der JSON-Export dieselbe Aufloesung nutzt
     wie die Vault-Notizen und beide nicht auseinanderlaufen koennen.
     """
-    found = sections_from_headings(body)
-    found.update(sections_from_tables(body))
-    found.update(sections_from_yaml(body, meta))
+    found = abschnitte_zusammen(body, meta)
     anchored = sections_by_anchor(body, wanted)
+    # Fuehrt das Dokument einen Anhang A mit eigener Nummerierung, sind "A.10"
+    # und "10" zwei verschiedene Dinge: A.10 darf dann nicht auf Kapitel 10
+    # zurueckfallen (ISO 42001: A.10 Third-party relationships vs 10 Improvement).
+    hat_anhang_a = any(k.startswith("a.") for k in found)
     crosswalk = load_crosswalk(framework)
     out: dict[str, Section] = {}
 
@@ -549,6 +577,8 @@ def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, st
                 continue
 
         for variant in id_variants(ident):
+            if hat_anhang_a and ident.startswith("A.") and variant == ident[2:]:
+                continue
             sec = found.get(norm_key(variant))
             if sec and sec.text.strip():
                 break
@@ -607,6 +637,10 @@ def vault_ids(vault: Path, framework: str) -> dict[str, str]:
     for note in sorted(folder.glob("*.md")):
         meta, body = split_front_matter(note.read_text(encoding="utf-8"))
         if meta.get("type") != "requirement" or not meta.get("id"):
+            continue
+        # Ein als withdrawn gefuehrter Eintrag hat keinen Wortlaut, den ein
+        # Dokument liefern koennte; ihn zu verlangen erzeugt nur Fehlmeldungen.
+        if meta.get("kind") == "withdrawn" or meta.get("status") == "withdrawn":
             continue
         title = ""
         h = re.search(r"^#\s+\S+\s+—\s+(.*\S)\s*$", body, flags=re.M)
@@ -694,8 +728,8 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
         "",
         "> [!warning] In der aktuellen Fassung nicht enthalten",
         f"> Diese Anforderung kommt in {src} nicht vor. Der Katalog enthaelt den",
-        "> Kriterienbereich vollstaendig, die ID stammt also aus einer frueheren",
-        "> Fassung. Nicht als geltende Anforderung zitieren.",
+        "> Kriterienbereich vollstaendig. Woher die ID stammt, sagt die Quelle",
+        "> nicht. Nicht als geltende Anforderung zitieren.",
         "",
         "---",
         "",
