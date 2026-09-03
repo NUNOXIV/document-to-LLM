@@ -344,6 +344,31 @@ erklärt. Eine falsche Warnung ist schlimmer als keine — sie wird geglaubt.
 
 ---
 
+## 20 Zwei Quellen, ein Zielname: 125 Extrakte überschrieben oder nie geschrieben
+
+**Ursache:** `Checkliste-APP-1-1.xlsx` und `checklisten-2023/Checkliste_APP.1.1.xlsx`
+ergeben denselben Slug. Der Kollisionsschutz kannte nur den eigenen Prozess
+(`claimed`) und nur den Fall „gleicher Stem, anderes Format". Über die
+Prozessgrenzen der Häppchen-Extraktion hinweg überschrieb die zweite Quelle
+die erste, oder ihr Extrakt fehlte ganz. Die Vollständigkeitsprüfung
+(Nr. 18) fand die Lücke — genau dafür war sie gebaut —, aber erst nach dem
+Lauf. 110 der 111 XLSX und alle 19 DOCX aus den ZIPs waren dabei
+byte-identische Kopien der Originale daneben; nur eine Datei und der vierte
+Scan waren echte Lücken.
+
+**Fix:** `target_name` liest jetzt auch die Kopfzeile des Ziels auf Platte.
+Eigen ist ein Ziel, wenn Quellname oder Hash dort stehen — so bleibt die
+Idempotenz erhalten und ein Duplikat bekommt kein zweites Extrakt. Fremde
+Ziele werden nie überschrieben: Ausweichname aus Ordnername, zuletzt
+Hash-Präfix. `vollstaendigkeit.py` erkennt Duplikate am Hash und meldet sie
+getrennt statt als Lücke. Regressionstest in beide Richtungen.
+
+**Lehre:** Ein Name ist kein Schlüssel. Wer nach Dateinamen adressiert, muss
+den Inhalt dazuhalten — und jeder Schutz, der nur im Prozessspeicher lebt,
+endet mit dem Prozess.
+
+---
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -363,3 +388,5 @@ erklärt. Eine falsche Warnung ist schlimmer als keine — sie wird geglaubt.
 7. **Prüfungen, die vom Ergebnis ausgehen, messen keine Vollständigkeit.**
    Nr. 18: 134 fehlende Dokumente, und kein Wächter konnte sie sehen, weil
    alle dieselbe Ausgangsmenge teilten — den Bestand statt der Quelle.
+8. **Namen sind Hinweise, Hashes sind Belege.** Nr. 20: derselbe Slug für zwei
+   Dateien, und der Schutz davor lebte nur im Prozessspeicher.
