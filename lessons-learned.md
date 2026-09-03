@@ -412,6 +412,32 @@ genau dieser Nachweis hier gefehlt hat.
 
 ---
 
+## 23 Zwölf Zeilen mit dem Text einer anderen Nummer, und volle Wortdeckung
+
+**Ursache:** Das Aufnahmetor des Auftraggebers wies vier Frameworks ab: DSGVO
+Art.21 enthielt Art.22 und Art.23, Art.6 den Art.7, DORA Art.30 den Art.31,
+KI-VO Art.49 den Art.50. Vier Mechanismen, alle im Amtsblattsatz: „Artikel
+22" steht mal als Überschrift, mal als nackte Zeile, und die nackte Zeile
+beendete keinen Abschnitt; „Artikel 45 der Verordnung … wird wie folgt
+geändert" galt als Anker für Art.45; „## A.1 General" war keine Überschrift,
+also lief ISO 42001 Klausel 10.2 bis in den Anhang; „Art.20.1" fiel über die
+Variante „Artikel 20" auf den ganzen Artikel zurück, und der Kreuzreferenz-
+Anker endete nicht am nackten Absatz „(2)". Kein Wächter sah es: doppelter
+Text hat volle Wortdeckung, und `inhalt.py` las mit den Augen des Schreibers.
+
+**Fix:** Nackte Artikelzeilen und Strukturüberschriften sind Grenzen,
+Anker akzeptieren keinen Kleinbuchstaben nach der ID, Anhangskennungen mit
+einem Buchstaben sind Überschriften, Absatz-IDs fallen nie auf den Artikel
+zurück. Neu in `inhalt.py`: die Gegenfrage „enthält diese Zeile den vollen
+Text einer anderen?" — sie fand 27 Fälle, darunter 15, die das Tor nicht
+kannte. Nach drei Läufen 0.
+
+**Lehre:** Die Frage „ist alles da?" beantwortet die Wortdeckung. Die Frage
+„ist auch nichts zu viel da?" beantwortet nur ein Vergleich der Zeilen
+untereinander. Beide gehören in die Definition of Done.
+
+---
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -435,3 +461,5 @@ genau dieser Nachweis hier gefehlt hat.
    Dateien, und der Schutz davor lebte nur im Prozessspeicher.
 9. **Ein Wächter, der nicht rot werden kann, ist keiner.** Nr. 22: check()
    unter pytest. Die Gegenprobe (Nr. 4) gilt auch für die Testinfrastruktur.
+10. **Vollständig heißt auch: nichts zu viel.** Nr. 23: zwölf Zeilen mit fremdem
+    Text bei 100 % Wortdeckung. Die Gegenfrage gehört neben die Deckung.
