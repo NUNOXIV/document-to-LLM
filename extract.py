@@ -80,6 +80,8 @@ class Result:
     failed_pages: list[int] = field(default_factory=list)
     text_coverage: float | None = None   # Wortdeckung Quelle -> Extrakt (nur PDF)
     repaired_lines: int = 0              # als Nachtrag ergaenzte Quellzeilen
+    restored_hyphens: int = 0            # belegte Bindestriche zurueckgesetzt
+    scan_probe: str = ""                 # textlayer | scan | "" (keine Probe)
     duration_s: float = 0.0
     status: str = "ok"          # ok | warn | error | skipped
     warnings: list[str] = field(default_factory=list)
@@ -105,6 +107,124 @@ def slugify(name: str) -> str:
     name = name.lower()
     name = re.sub(r"[^a-z0-9]+", "-", name)
     return re.sub(r"-{2,}", "-", name).strip("-") or "dokument"
+
+
+# Zweite Engine: xberg (Rust-Kern, pip install xberg). Gleicher Ausgabevertrag
+# wie Docling -- Kopfzeile, Seitenmarken, Deckungspruefung, Bindestrich-Rueckgabe --
+# damit jeder Waechter unveraendert darueber laeuft. Welche Engine laeuft, steht
+# im Extrakt (converter, engine); ein Extrakt ohne diese Angabe ist keiner.
+ENGINES = ("docling", "xberg")
+STANDARD_ENGINE = os.environ.get("ACSOS_ENGINE", "docling")
+# OCR-Backend fuer xberg: paddle-ocr braucht keine Systembinaerdatei (Tesseract
+# muesste installiert sein), laedt seine Modelle aber von huggingface.co.
+XBERG_OCR_BACKEND = os.environ.get("ACSOS_XBERG_OCR", "paddle-ocr")
+XBERG_SEITENMARKE = "\n\n<!-- page: {page_num} -->\n\n"
+
+
+def xberg_version() -> str:
+    try:
+        from importlib.metadata import version
+
+        return version("xberg")
+    except Exception:
+        return "nicht installiert"
+
+
+def normalisiere_xberg_markdown(md: str) -> str:
+    """Seitenmarken auf eine eigene Zeile stellen.
+
+    xberg setzt die Marke direkt vor den ersten Text der Seite
+    ("<!-- page: 1 -->MUSTER-NORM ..."). Jeder Waechter dieses Repos sucht die
+    Marke am Zeilenanfang; so klebt sie nicht an einem Wort, das dann in der
+    Deckungspruefung fehlt.
+    """
+    md = md.replace("\r\n", "\n")
+    md = re.sub(r"[ \t]*(<!--\s*page:\s*\d+\s*-->)[ \t]*", r"\n\n\1\n\n", md)
+    md = re.sub(r"\n{3,}", "\n\n", md)
+    return md.strip() + "\n"
+
+
+def _xberg_worker(src_str: str, ocr: bool, page_markers: bool, want_json: bool,
+                  layout: bool) -> dict:
+    """Konvertierung mit xberg; gleiche Rueckgabe wie _worker (Docling)."""
+    import asyncio
+
+    import xberg
+    from xberg import (ExtractInput, ExtractionConfig, LayoutDetectionConfig,
+                       OcrConfig, PageConfig, PdfConfig)
+
+    kw: dict = {
+        "output_format": "markdown",
+        "pages": PageConfig(extract_pages=True, insert_page_markers=page_markers,
+                            marker_format=XBERG_SEITENMARKE),
+        "pdf_options": PdfConfig(extract_tables=True),
+    }
+    if ocr:
+        kw["ocr"] = OcrConfig(backend=XBERG_OCR_BACKEND, language=["deu", "eng"])
+        kw["force_ocr"] = True
+    if layout:
+        kw["layout"] = LayoutDetectionConfig(strategy="always")
+        kw["use_layout_for_markdown"] = True
+    out = asyncio.run(xberg.extract(ExtractInput(kind="uri", uri=src_str),
+                                    ExtractionConfig(**kw)))
+    errors = [str(getattr(e, "message", e)) for e in (out.errors or [])]
+    if not out.results:
+        raise ExtractionError("xberg lieferte kein Ergebnis: " + "; ".join(errors))
+    doc = out.results[0]
+    md = normalisiere_xberg_markdown(doc.content or "")
+    pages = len(doc.pages or []) or len(re.findall(r"<!-- page: \d+ -->", md))
+    warnungen = [f"xberg: {w.message}" for w in (doc.processing_warnings or [])]
+    tables = list(doc.tables or [])
+    js = None
+    if want_json:
+        js = {
+            "format": "acsos-xberg/1",
+            "hinweis": ("Ausgabe von xberg: Markdown mit Seitenmarken und die "
+                        "erkannten Tabellen als Markdown je Seite. Kein "
+                        "DoclingDocument."),
+            "converter": "xberg " + xberg_version(),
+            "content": md,
+            "tables": [{"page": getattr(t, "page_number", None),
+                        "markdown": getattr(t, "markdown", "")} for t in tables],
+            "warnings": warnungen,
+        }
+    return {
+        "markdown": md,
+        "pages": pages,
+        "tables": len(tables),
+        "status": "failure" if errors else "success",
+        "failed_pages": [],
+        "errors": errors,
+        "warnings": warnungen,
+        "json": js,
+    }
+
+
+def scan_vorabprobe(src: Path) -> tuple[float, int] | None:
+    """Zeichen je Seite im Textlayer, gelesen mit pypdfium2 -- ohne Modelle.
+
+    Vorher lief Docling erst komplett durch, stellte 'textarm' fest und lief
+    mit OCR ein zweites Mal: bei einem 300-Seiten-Scan ein verlorener Lauf
+    von Minuten. Die Probe kostet Sekunden und entscheidet vorab. Sie ersetzt
+    die Pruefung nach dem Lauf nicht -- ein Textlayer kann auch leer bleiben,
+    wo Docling weniger findet als pypdfium.
+    """
+    try:
+        import pypdfium2
+
+        from verify import quelltext
+
+        doc = pypdfium2.PdfDocument(src)
+        try:
+            seiten = len(doc)
+        finally:
+            doc.close()
+        if not seiten:
+            return None
+        text = quelltext(src)
+        return len(text.strip()) / seiten, seiten
+    except Exception:
+        return None
 
 
 def docling_version() -> str:
@@ -211,9 +331,14 @@ class _Runner:
     """Haelt einen Worker-Prozess, damit die Modelle nicht je Dokument neu
     geladen werden, und ersetzt ihn, wenn er abgestuerzt ist."""
 
-    def __init__(self, timeout: float | None = None) -> None:
+    def __init__(self, timeout: float | None = None, max_docs: int = 40) -> None:
         self._pool = None
         self.timeout = timeout
+        # Der Speicher des Docling-Workers waechst ueber einen langen Lauf
+        # (7,5 GB nach 96 Dokumenten); nach max_docs Dokumenten wird der
+        # Prozess ersetzt, die Modelle laden dann einmal neu.
+        self.max_docs = max_docs
+        self.docs = 0
 
     def _get(self):
         if self._pool is None:
@@ -227,14 +352,19 @@ class _Runner:
             self._pool.shutdown(wait=False, cancel_futures=True)
         self._pool = None
 
-    def run(self, *args) -> dict:
+    def run(self, worker, *args) -> dict:
         """Fuehrt eine Konvertierung aus. Stirbt der Worker, wird das als
         ExtractionError sichtbar — der Batch laeuft weiter."""
         from concurrent.futures import TimeoutError as FutureTimeout
         from concurrent.futures.process import BrokenProcessPool
 
+        if self.max_docs and self.docs >= self.max_docs:
+            self.reset()
+            self.docs = 0
         try:
-            return self._get().submit(_worker, *args).result(timeout=self.timeout)
+            ergebnis = self._get().submit(worker, *args).result(timeout=self.timeout)
+            self.docs += 1
+            return ergebnis
         except FutureTimeout as exc:
             # Ein einzelnes pathologisches Dokument darf den Batch nicht
             # blockieren: Worker verwerfen, Dokument als Fehler markieren.
@@ -261,7 +391,7 @@ class _Runner:
                            "Modell-Cache (offline)", err=True)
                 os.environ["HF_HUB_OFFLINE"] = "1"
                 self.reset()
-                return self._get().submit(_worker, *args).result(timeout=self.timeout)
+                return self._get().submit(worker, *args).result(timeout=self.timeout)
             raise
 
 
@@ -411,6 +541,8 @@ def appendix(lines: list[tuple[int, str]]) -> str:
 def converter_label(res: Result) -> str:
     if res.converter == "passthrough":
         return "ACSOS Passthrough (woertlich, kein Parser)"
+    if res.converter == "xberg":
+        return "xberg " + xberg_version()
     return "IBM Docling " + docling_version()
 
 
@@ -468,6 +600,8 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         f"pages: {res.pages}",
         f"tables: {res.tables}",
         f"converter: {esc(converter_label(res))}",
+        f"engine: {res.converter}",
+        *([f"scan_probe: {res.scan_probe}"] if res.scan_probe else []),
         f"ocr: {str(res.ocr_used).lower()} # mode={ocr_mode}",
         f"table_mode: {res.table_mode}",
         f"docling_status: {res.docling_status}",
@@ -477,6 +611,8 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         lines.append(f"text_coverage_percent: {res.text_coverage}")
     if res.repaired_lines:
         lines.append(f"appended_source_lines: {res.repaired_lines}")
+    if res.restored_hyphens:
+        lines.append(f"restored_hyphens: {res.restored_hyphens}")
     lines += [
         "extraction_status: " + res.status,
     ]
@@ -497,16 +633,60 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
 # --------------------------------------------------------------------------
 # Konvertierung einer Datei
 # --------------------------------------------------------------------------
-def target_name(src: Path, claimed: dict[str, Path]) -> str:
-    """Stabiler Zielname; bei gleichem Stem in mehreren Formaten wird das
-    Quellformat angehaengt (ISO.pdf und ISO.docx duerfen sich nicht ueberschreiben)."""
+def _ziel_inhaber(target: Path) -> str | None:
+    """Quellname und Hash aus der Kopfzeile eines vorhandenen Extrakts."""
+    if not target.exists():
+        return None
+    try:
+        with target.open(encoding="utf-8", errors="replace") as fh:
+            return "".join(next(fh, "") for _ in range(40))
+    except OSError:
+        return None
+
+
+def target_name(src: Path, claimed: dict[str, Path], out_dir: Path | None = None) -> str:
+    """Stabiler Zielname. Zwei Quellen duerfen sich nie ueberschreiben — weder
+    im selben Lauf (claimed) noch ueber Laeufe hinweg (Kopfzeile auf Platte):
+    125 von 602 Extrakten fehlten, weil Checkliste-APP-1-1.xlsx und
+    checklisten-2023/Checkliste_APP.1.1.xlsx denselben Slug ergaben.
+    Eigen ist ein Ziel, wenn Quellname oder Hash in seiner Kopfzeile stehen —
+    so bleibt die Hash-Idempotenz erhalten, und ein byte-identisches Duplikat
+    bekommt kein zweites Extrakt. Ausweichnamen: Format (nur wenn es sich
+    unterscheidet), dann Ordnername, zuletzt ein Hash-Praefix."""
     base = slugify(src.stem)
-    owner = claimed.get(base)
-    if owner is None or owner == src.resolve():
-        claimed[base] = src.resolve()
-        return base
-    name = f"{base}-{src.suffix.lstrip('.').lower()}"
-    claimed.setdefault(name, src.resolve())
+    quelle = src.resolve()
+    fmt = src.suffix.lstrip(".").lower()
+    ordner = slugify(src.parent.name)
+    eigener_hash: str | None = None
+
+    def inhaber(name: str) -> tuple[bool, str]:
+        """(frei oder eigen?, Endung des Inhabers)"""
+        nonlocal eigener_hash
+        owner = claimed.get(name)
+        if owner is not None:
+            return owner == quelle, owner.suffix.lstrip(".").lower()
+        kopf = _ziel_inhaber(out_dir / f"{name}.md") if out_dir is not None else None
+        if kopf is None:
+            return True, ""
+        m = re.search(r'^source_file:\s*"?(.*?)"?\s*$', kopf, re.M)
+        inhaber_name = m.group(1) if m else ""
+        if inhaber_name == src.name:
+            return True, ""
+        if eigener_hash is None:
+            eigener_hash = sha256_of(src)
+        return eigener_hash in kopf, Path(inhaber_name).suffix.lstrip(".").lower()
+
+    frei, fremde_endung = inhaber(base)
+    kandidaten = [base]
+    if not frei and fremde_endung != fmt:
+        kandidaten.append(f"{base}-{fmt}")
+    kandidaten += [f"{base}-{ordner}", f"{base}-{ordner}-{fmt}"]
+    for name in kandidaten:
+        if inhaber(name)[0]:
+            claimed[name] = quelle
+            return name
+    name = f"{base}-{eigener_hash or sha256_of(src)[:8]}"
+    claimed[name] = quelle
     return name
 
 
@@ -524,6 +704,9 @@ def convert_file(
     min_coverage: float,
     repair: bool,
     mdir_ref: tuple[Path | None, ...] = (None,),
+    engine: str = "docling",
+    xberg_layout: bool = False,
+    sperre=None,
 ) -> Result:
     started = time.perf_counter()
     res = Result(
@@ -531,7 +714,11 @@ def convert_file(
         source_sha256=sha256_of(src),
         source_bytes=src.stat().st_size,
     )
-    stem = target_name(src, claimed)
+    if sperre is not None:
+        with sperre:
+            stem = target_name(src, claimed, out_dir)
+    else:
+        stem = target_name(src, claimed, out_dir)
     target = out_dir / f"{stem}.md"
 
     if target.exists() and not force:
@@ -592,14 +779,33 @@ def convert_file(
 
     is_pdf = src.suffix.lower() == ".pdf"
     ocr = ocr_mode == "on"
+    if is_pdf and ocr_mode == "auto":
+        probe = scan_vorabprobe(src)
+        if probe is not None:
+            je_seite, seiten = probe
+            if je_seite < LOW_TEXT_CHARS_PER_PAGE:
+                click.echo(f"    Vorabprobe: {je_seite:.0f} Zeichen/Seite im Textlayer "
+                           f"({seiten} S.) — gescannt, OCR sofort", err=True)
+                ocr = True
+                res.scan_probe = "scan"
+            else:
+                res.scan_probe = "textlayer"
     table_mode = "accurate"
     mdir = mdir_ref[0]
     res_json = None
 
     convert_src = [src]          # kann auf eine reparierte Kopie zeigen
 
+    if engine == "xberg":
+        res.converter = "xberg"
+        res.table_mode = "not-applicable"
+        table_mode = "not-applicable"
+
     def run(mode: str, use_ocr: bool) -> dict:
-        return runner.run(str(convert_src[0]), use_ocr, str(mdir) if mdir else None,
+        if engine == "xberg":
+            return runner.run(_xberg_worker, str(convert_src[0]), use_ocr,
+                              page_markers, write_json, xberg_layout)
+        return runner.run(_worker, str(convert_src[0]), use_ocr, str(mdir) if mdir else None,
                           mode, page_markers, write_json)
 
     for attempt in ("first", "ocr-retry"):
@@ -607,6 +813,8 @@ def convert_file(
             try:
                 out = run(table_mode, ocr)
             except ExtractionError:
+                if engine != "docling":
+                    raise
                 # Absturz mit ACCURATE: derselbe Lauf mit FAST hat gute Chancen.
                 click.echo("    Konvertierung abgestuerzt — wiederhole mit "
                            "TableFormer FAST", err=True)
@@ -657,11 +865,12 @@ def convert_file(
                     failed, status = out["failed_pages"], out["status"]
 
             res.table_mode = table_mode
-            res.docling_status = status
+            res.docling_status = status if engine == "docling" else "not-applicable"
             res.failed_pages = failed
             if status in ("failure", "skipped"):
                 raise ExtractionError(
-                    f"Docling meldet Status {status}: {'; '.join(out['errors'])}")
+                    f"{'Docling' if engine == 'docling' else 'xberg'} meldet Status "
+                    f"{status}: {'; '.join(out['errors'])}")
         except ExtractionError:
             raise
         except Exception as exc:
@@ -673,7 +882,9 @@ def convert_file(
                     f"HF-Zugriff einmalig vorab holen: 'docling-tools models download' und den "
                     f"Cache ueber HF_HOME bereitstellen."
                 ) from exc
-            raise ExtractionError(f"Docling-Konvertierung fehlgeschlagen: {exc}") from exc
+            raise ExtractionError(
+                f"{'Docling' if engine == 'docling' else 'xberg'}-Konvertierung "
+                f"fehlgeschlagen: {exc}") from exc
 
         res.pages = out["pages"]
         md_body = out["markdown"]
@@ -697,6 +908,9 @@ def convert_file(
     res.ocr_used = ocr
     res.characters = len(md_body)
     res.tables = out["tables"]
+    # Hinweise der Engine (xberg: z. B. Layoutmodell nicht ladbar) gehoeren in
+    # den Extrakt -- ein Lauf ohne Layouthinweise sieht sonst aus wie einer mit.
+    res.warnings = res.warnings + list(out.get("warnings") or [])
     res.headings = len(re.findall(r"^#{1,6}\s+\S", md_body, flags=re.M))
     # Bereits gesammelte Hinweise (z. B. Stylesheet-Reparatur) bleiben erhalten.
     res.warnings = res.warnings + check_quality(md_body, res.pages, is_pdf, ocr, src.suffix)
@@ -705,12 +919,51 @@ def convert_file(
             f"Docling konnte {len(res.failed_pages)} Seite(n) nicht verarbeiten: "
             f"{', '.join(str(p) for p in res.failed_pages)}. Inhalt dieser Seiten fehlt."
         ))
-    if res.table_mode != "accurate":
+    if engine == "docling" and res.table_mode != "accurate":
         res.warnings.append(
             "Tabellenmodell auf FAST zurueckgefallen (ACCURATE brach ab). "
             "Tabellenstruktur ist etwas grober; Zellinhalte stammen weiterhin aus dem Textlayer."
         )
     res.status = "warn" if res.warnings else "ok"
+
+    # Verlorene Bindestriche zuruecksetzen, bevor geprueft wird.
+    #
+    # Docling loest die Trennung am Zeilenende auf, indem es den Trennstrich
+    # entfernt — richtig bei "Informations-/sicherheit", falsch bei
+    # "IKT-/Systeme": daraus wird "IKTSysteme", ein Wort, das es nicht gibt.
+    # Die Deckungspruefung sah das nie, weil sie denselben Strich auch auf der
+    # Quellseite entfernt: beide Seiten hiessen gleich, die Deckung blieb
+    # 100 %. Aufgefallen ist es erst beim Abgleich gegen das amtliche
+    # Gesetzes-XML. Angefasst wird nur, was die Quelle belegt.
+    if is_pdf:
+        try:
+            from verify import (quelle_kompakt, quelltext, repariere_bindestriche,
+                                unlesbar_im_wort, zusammenhaengende_quelle)
+
+            roh_quelle = quelltext(src)
+            md_body, ersetzt = repariere_bindestriche(
+                md_body, quelle_kompakt(src, roh_quelle),
+                zusammenhaengende_quelle(src, roh_quelle))
+            res.restored_hyphens = len(ersetzt)
+            if ersetzt:
+                beispiele = ", ".join(f"{a} -> {b}" for a, b in sorted(ersetzt.items())[:5])
+                res.warnings.append(
+                    f"{len(ersetzt)} Wort(e) hatten einen Bindestrich der Quelle verloren und "
+                    f"wurden zurueckgesetzt (belegt durch den Textlayer): {beispiele}"
+                )
+            unlesbar = unlesbar_im_wort(roh_quelle)
+            if unlesbar:
+                res.warnings.append(
+                    f"Der Textlayer der Quelle enthaelt {unlesbar} unlesbare Zeichen innerhalb "
+                    f"von Woertern (die Schrift bildet den Codepunkt nicht ab). An diesen "
+                    f"Stellen fehlt im Extrakt ein Zeichen — meist ein Bindestrich, manchmal "
+                    f"eine Silbentrennung. Es wird NICHT geraten, welches: dasselbe Zeichen "
+                    f"hat in verschiedenen Dokumenten verschiedene Bedeutung. Kein Textverlust "
+                    f"dieses Werkzeugs, sondern der Quelle."
+                )
+        except Exception as exc:
+            res.warnings.append(f"Bindestrich-Pruefung nicht durchfuehrbar: {exc}")
+        res.status = "warn" if res.warnings else "ok"
 
     # Abweichungspruefung: enthaelt der Extrakt den Text der Quelle vollstaendig?
     # Fuer PDFs gegen den Textlayer, fuer Office-Formate gegen den Standardleser
@@ -777,7 +1030,7 @@ def convert_file(
     res.output = str(target)
 
     if write_json and res_json is not None:
-        jtarget = out_dir / f"{stem}.docling.json"
+        jtarget = out_dir / f"{stem}.{engine}.json"
         jtarget.write_text(json.dumps(res_json, ensure_ascii=False, indent=2), encoding="utf-8")
         res.json_output = str(jtarget)
 
@@ -785,10 +1038,12 @@ def convert_file(
     return res
 
 
-def write_manifest(out_dir: Path, results: list[Result]) -> Path:
+def write_manifest(out_dir: Path, results: list[Result], engine: str = "docling") -> Path:
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "converter": f"IBM Docling {docling_version()}",
+        "converter": (f"xberg {xberg_version()}" if engine == "xberg"
+                      else f"IBM Docling {docling_version()}"),
+        "engine": engine,
         "tool": "ACSOS document-to-LLM/extract.py",
         "documents": [asdict(r) for r in results],
     }
@@ -833,7 +1088,41 @@ def run_doctor(models_dir: Path | None) -> int:
     ok_table = "| A.8.24" in md or "A.8.24" in md
     click.secho(f"PDF-Modelle:    ok ({len(md)} Zeichen, Tabelle erkannt: {ok_table})", fg="green")
     click.secho("Bereit fuer PDF-Extraktion.", fg="green")
+    doctor_xberg(fixture)
     return 0
+
+
+def doctor_xberg(fixture: Path) -> None:
+    """Zweite Engine: installiert? Laeuft der native Pfad? Laden die Modelle?
+
+    Der native Pfad (Textlayer) braucht keine Modelle. Layoutmodell und OCR
+    kommen von huggingface.co; ob der Host erreichbar ist, sagt nur ein
+    Versuch -- und der wird hier gemacht, statt es zu vermuten.
+    """
+    click.echo(f"xberg:          {xberg_version()}")
+    try:
+        import xberg  # noqa: F401
+    except ImportError:
+        click.echo("                (optional: pip install xberg, dann --engine xberg)")
+        return
+    try:
+        out = _xberg_worker(str(fixture), False, True, False, False)
+        marken = len(re.findall(r"<!-- page: \d+ -->", out["markdown"]))
+        tab = "| A.8.24" in out["markdown"]
+        click.secho(f"xberg nativ:    ok ({len(out['markdown'])} Zeichen, {marken} Seitenmarken, "
+                    f"Tabelle als Tabelle erkannt: {tab})", fg="green" if tab else "yellow")
+    except Exception as exc:
+        click.secho(f"xberg nativ:    FEHLER — {exc}", fg="red")
+        return
+    try:
+        out = _xberg_worker(str(fixture), False, True, False, True)
+        layout = [w for w in out["warnings"] if "layout" in w.lower()]
+        if layout:
+            click.secho(f"xberg Layout:   nicht verfuegbar — {layout[0][:160]}", fg="yellow")
+        else:
+            click.secho("xberg Layout:   ok (Layoutmodell geladen)", fg="green")
+    except Exception as exc:
+        click.secho(f"xberg Layout:   FEHLER — {exc}", fg="red")
 
 
 # --------------------------------------------------------------------------
@@ -862,22 +1151,46 @@ def run_doctor(models_dir: Path | None) -> int:
               help="Ordner mit vorab geladenen Docling-Modellen (fuer Umgebungen ohne "
                    "Zugriff auf huggingface.co). Einmalig erzeugen mit: "
                    "docling-tools models download -o <ordner>")
+@click.option("--engine", type=click.Choice(list(ENGINES)), default=STANDARD_ENGINE,
+              show_default=True, envvar="ACSOS_ENGINE", show_envvar=True,
+              help="Konvertierungs-Engine. docling = IBM Docling (Layout- und "
+                   "Tabellenmodell, OCR via RapidOCR); xberg = Rust-Kern, sehr schnell, "
+                   "Layout/OCR nur mit erreichbarem huggingface.co. Steht im Extrakt.")
+@click.option("--xberg-layout", is_flag=True,
+              help="Nur --engine xberg: Layoutmodell (RT-DETR) fuer Ueberschriften und "
+                   "Tabellen einschalten. Laedt Modelle von huggingface.co.")
 @click.option("--doctor", is_flag=True,
-              help="Nur pruefen, ob Docling und die PDF-Modelle einsatzbereit sind.")
+              help="Nur pruefen, ob Docling (und ggf. xberg) einsatzbereit sind.")
 @click.option("--force", is_flag=True, help="Bereits konvertierte, unveraenderte Dokumente neu erzeugen.")
 @click.option("--strict", is_flag=True, help="Exit-Code 1 auch bei Warnungen (fuer CI/Automation).")
 @click.option("--timeout", default=1800.0, show_default=True, type=float,
               help="Zeitgrenze je Dokument in Sekunden; 0 = keine Grenze. "
                    "Verhindert, dass ein einzelnes Dokument den Batch blockiert.")
+@click.option("--workers", default=2, show_default=True, type=click.IntRange(1, 8),
+              envvar="ACSOS_WORKERS", show_envvar=True,
+              help="Parallele Konvertierungsprozesse. Jeder Docling-Worker braucht bis "
+                   "zu 8 GB; zwei sind auf 16 GB das Maximum.")
+@click.option("--reset-every", default=40, show_default=True, type=click.IntRange(0, 10000),
+              help="Worker-Prozess nach so vielen Dokumenten ersetzen (Speicherwachstum); "
+                   "0 = nie.")
 def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
-         do_verify, min_coverage, repair, models_dir, doctor, force, strict, timeout):
-    """Konvertiert Dokumente mit IBM Docling nach strukturiertem Markdown."""
-    try:
-        import docling  # noqa: F401
-    except ImportError:
-        raise click.ClickException(
-            "Docling ist nicht installiert. Ausfuehren: pip install -r requirements.txt"
-        )
+         do_verify, min_coverage, repair, models_dir, engine, xberg_layout, doctor,
+         force, strict, timeout, workers, reset_every):
+    """Konvertiert Dokumente mit IBM Docling oder xberg nach strukturiertem Markdown."""
+    if engine == "docling" or doctor:
+        try:
+            import docling  # noqa: F401
+        except ImportError:
+            raise click.ClickException(
+                "Docling ist nicht installiert. Ausfuehren: pip install -r requirements.txt"
+            )
+    if engine == "xberg":
+        try:
+            import xberg  # noqa: F401
+        except ImportError:
+            raise click.ClickException(
+                "xberg ist nicht installiert. Ausfuehren: pip install xberg"
+            )
 
     mdir = Path(models_dir).expanduser() if models_dir else None
 
@@ -894,54 +1207,79 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
     out_dir = Path(output_dir).expanduser()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Ein Worker-Prozess fuer den ganzen Batch: die Modelle werden einmal
-    # geladen, ein Absturz kostet nur das laufende Dokument.
-    runner = _Runner(timeout or None)
+    # Je Worker ein eigener Prozess mit einmal geladenen Modellen; die
+    # Dokumente werden ueber Threads verteilt, die Konvertierung selbst laeuft
+    # in den Worker-Prozessen parallel. Zwei Worker halbieren die PDF-Zeit,
+    # die 55 % des Gesamtlaufs ausmachte (184 PDFs, 3,6 h mit einem Worker).
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
 
-    click.echo(f"Docling {docling_version()} — {len(files)} Datei(en) -> {out_dir}/")
+    workers = max(1, min(workers, len(files)))
+    runners = [_Runner(timeout or None, reset_every) for _ in range(workers)]
+    kopf = f"xberg {xberg_version()}" if engine == "xberg" else f"Docling {docling_version()}"
+    click.echo(f"{kopf} — {len(files)} Datei(en) -> {out_dir}/ ({workers} Worker)")
     claimed: dict[str, Path] = {}
-    results: list[Result] = []
-    for i, src in enumerate(files, 1):
-        click.echo(f"[{i}/{len(files)}] {src.name}")
+    sperre = threading.Lock()
+    results: list[Result | None] = [None] * len(files)
+
+    def verarbeite(i: int, src: Path) -> tuple[int, Result, list[tuple[str, str]]]:
+        runner = runners[i % workers]
+        zeilen: list[tuple[str, str]] = []
         try:
             res = convert_file(
                 runner, src, out_dir,
                 ocr_mode=ocr_mode, write_json=write_json,
                 page_markers=not no_page_markers, force=force, claimed=claimed,
                 do_verify=do_verify, min_coverage=min_coverage, repair=repair,
-                mdir_ref=(mdir,),
+                mdir_ref=(mdir,), engine=engine, xberg_layout=xberg_layout,
+                sperre=sperre,
             )
         except ExtractionError as exc:
             res = Result(
                 source=str(src), source_sha256=sha256_of(src),
                 source_bytes=src.stat().st_size, status="error", error=str(exc),
             )
-            click.secho(f"    FEHLER: {exc}", fg="red", err=True)
+            zeilen.append(("red", f"    FEHLER: {exc}"))
         except Exception as exc:  # unerwartet: Batch nicht abbrechen
             res = Result(
                 source=str(src), source_sha256=sha256_of(src),
                 source_bytes=src.stat().st_size, status="error",
                 error=f"{type(exc).__name__}: {exc}",
             )
-            click.secho(f"    FEHLER: {res.error}", fg="red", err=True)
+            zeilen.append(("red", f"    FEHLER: {res.error}"))
         else:
             if res.status == "skipped":
-                click.echo("    unveraendert — uebersprungen (--force erzwingt neu)")
+                zeilen.append(("", "    unveraendert — uebersprungen (--force erzwingt neu)"))
             else:
-                click.secho(
+                zeilen.append(("green",
                     f"    -> {Path(res.output).name} "
                     f"({res.pages} S., {res.characters} Z., {res.tables} Tab., "
                     f"{res.headings} Ueberschriften"
                     + (f", Deckung {res.text_coverage} %" if res.text_coverage is not None else "")
-                    + f", {res.duration_s}s)",
-                    fg="green",
-                )
+                    + f", {res.duration_s}s)"))
             for w in res.warnings:
-                click.secho(f"    WARNUNG: {w}", fg="yellow", err=True)
-        results.append(res)
+                zeilen.append(("yellow", f"    WARNUNG: {w}"))
+        return i, res, zeilen
 
-    runner.reset()
-    manifest = write_manifest(out_dir, results)
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        offen = [pool.submit(verarbeite, i, src) for i, src in enumerate(files)]
+        from concurrent.futures import as_completed
+
+        for fut in as_completed(offen):
+            i, res, zeilen = fut.result()
+            results[i] = res
+            with sperre:
+                click.echo(f"[{i + 1}/{len(files)}] {files[i].name}")
+                for farbe, zeile in zeilen:
+                    if farbe:
+                        click.secho(zeile, fg=farbe, err=(farbe != "green"))
+                    else:
+                        click.echo(zeile)
+
+    for r in runners:
+        r.reset()
+    results = [r for r in results if r is not None]
+    manifest = write_manifest(out_dir, results, engine)
     errors = [r for r in results if r.status == "error"]
     warns = [r for r in results if r.status == "warn"]
     click.echo(

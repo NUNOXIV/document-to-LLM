@@ -77,7 +77,7 @@ def sections_from_headings(body: str) -> dict[str, Section]:
     # der findet kein Ende -- jede Anforderung schleppte den Rest des Dokuments
     # mit. Im Export waren das im Median 54019 Zeichen je Anforderung statt der
     # ueblichen paar hundert.
-    heads = list(re.finditer(
+    kopfzeilen = list(re.finditer(
         r"^(#{1,6})\s+((?:Artikel|Article|Art\.?|Anhang|Annex)?\s*"
         # Der Buchstabenzweig steht VOR dem roemischen, und das ist keine
         # Kosmetik: "INF" beginnt mit "I", und "I" liegt in [0-9IVX]. Stuende
@@ -86,17 +86,46 @@ def sections_from_headings(body: str) -> dict[str, Section]:
         # IND und ISMS -- 49 Anforderungen, die dadurch ihre Abschnittsgrenze
         # verloren und den Rest des Dokuments mitschleppten.
         r"(?:[A-Z]{2,6}(?:\.[0-9]+)+(?:\.A[0-9]+)?"
-        r"|[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*))\s*[—–-]?\s*(.*)$", body, flags=re.M))
-    for i, m in enumerate(heads):
-        start = m.end()
-        end = heads[i + 1].start() if i + 1 < len(heads) else len(body)
-        text = body[start:end]
+        # Anhangskennungen mit einem Buchstaben: "A.1 General", "B.10.2". Ohne
+        # diesen Zweig war "## A.1" keine Ueberschrift, und Klausel 10.2 der
+        # ISO 42001 lief bis in die Anhang-A-Tabelle hinein.
+        r"|[A-Z](?:\.[0-9]+)+"
+        # Wortgrenze nach der Kennung: "## OPS.2.3A22 ..." (Druckfehler im
+        # Kompendium) ist keine Ueberschrift der Gruppe OPS.2.3 -- sonst trug
+        # der Baustein den Text der Anforderung A22.
+        r"|[0-9IVX]+(?:[.\-][0-9A-Za-z]+)*)(?![A-Za-z0-9]))\s*[—–-]?\s*(.*)$", body, flags=re.M))
+    # Strukturgrenzen: Ueberschriften ohne Kennung, die trotzdem einen
+    # Abschnitt beenden -- Anhang, Kapitel, Abschnitt, Literatur und alles in
+    # Versalien (KAPITEL IV, ALLGEMEINE BESTIMMUNGEN). Ohne sie lief ISO 42001
+    # Klausel 10.2 bis ans Dokumentende und enthielt den ganzen Anhang A.
+    # "## Control" oder "## Implementation guidance" sind KEINE Grenzen: sie
+    # gliedern den Text einer Anforderung, sie beenden ihn nicht.
+    grenzen = list(re.finditer(
+        r"^#{1,6}\s+(?:(?:Annex|Anhang|Appendix|KAPITEL|Kapitel|CHAPTER|Chapter|TITEL|"
+        r"ABSCHNITT|Abschnitt|Section|Bibliography|Literatur(?:verzeichnis)?|References)\b.*"
+        r"|[A-ZÄÖÜ][A-ZÄÖÜ0-9 ,\-/()]{3,})\s*$", body, flags=re.M))
+    # Amtsblattsatz: "Artikel 22" steht mal als Ueberschrift, mal als blosse
+    # Zeile -- das Layoutmodell entscheidet das je Seite anders. Eine Zeile,
+    # die nur aus der Artikelnummer besteht, ist eine Artikelgrenze, egal wie
+    # sie ausgezeichnet ist. Ohne diese Regel trug Art.21 der DSGVO den Text
+    # von Art.22 und Art.23 mit: volle Wortdeckung, falscher Inhalt.
+    nackte = list(re.finditer(
+        r"^((?:Artikel|Article|Art\.)\s+[0-9]+[a-z]?)\s*$", body, flags=re.M))
+    heads = sorted(
+        [(m.start(), m.end(), m.group(2), m.group(3)) for m in kopfzeilen]
+        + [(m.start(), m.end(), m.group(1), "") for m in nackte]
+        + [(m.start(), m.end(), None, "") for m in grenzen])
+    for i, (h_start, h_end, roh_ident, titel) in enumerate(heads):
+        if roh_ident is None:       # reine Strukturgrenze, kein Abschnitt
+            continue
+        end = heads[i + 1][0] if i + 1 < len(heads) else len(body)
+        text = body[h_end:end]
         text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", text).strip()
-        ident = norm_key(m.group(2))
+        ident = norm_key(roh_ident)
         if ident in out:            # Wiederholte Kopfzeile o. ae.: laengeren Text behalten
             if len(text) <= len(out[ident].text):
                 continue
-        out[ident] = Section(ident, m.group(3), text, page_at(body, m.start()))
+        out[ident] = Section(ident, titel, text, page_at(body, h_start))
 
     # Oberklauseln ohne eigenen Text (z. B. 9.2, wenn alles in 9.2.1 und 9.2.2
     # steht) aus ihren Unterklauseln zusammensetzen, statt sie leer zu lassen.
@@ -251,7 +280,11 @@ def zeilen_kennung(zellen: list[str]) -> tuple[int, str] | None:
     for i, z in enumerate(zellen[:4]):
         m = KENNUNG_IN_ZELLE.match(z)
         if m:
-            return i, m.group(2)
+            # Die Kennung bleibt, wie sie in der Zelle steht. Frueher fiel das
+            # "A." weg, und die Zeile A.5.1 (Policies) landete auch unter "5.1"
+            # -- der Nummer der Klausel Leadership. 32 Anforderungen in zwei
+            # ISO-Exporten trugen so den Text einer anderen Nummer.
+            return i, m.group(0)
     return None
 
 
@@ -323,7 +356,12 @@ def sections_from_tables(body: str) -> dict[str, Section]:
 
     out: dict[str, Section] = {}
     for raw, title, text, start in repariere_zellversatz(zeilen):
-        for ident in {norm_key(raw), norm_key(f"A.{raw}")}:
+        # Ohne Praefix in der Zelle (Anhang-Tabellen, die "5.1" statt "A.5.1"
+        # schreiben) auch unter der A.-Form ablegen; nie umgekehrt.
+        schluessel = {norm_key(raw)}
+        if not raw.upper().startswith("A."):
+            schluessel.add(norm_key(f"A.{raw}"))
+        for ident in schluessel:
             prev = out.get(ident)
             if prev and len(prev.text) >= len(text):
                 continue
@@ -341,6 +379,11 @@ def inline_section(body: str, ident: str, title: str) -> Section | None:
     anchor = re.search(rf"(?<![\d.]){re.escape(ident)}\s+{re.escape(title)}\b", body)
     if not anchor:
         return None
+    # Steht der Treffer in einer Tabellenzeile, ist es eine Uebersicht
+    # (Reifegradtabelle, Inhaltsverzeichnis), nicht der Abschnitt: TISAX-Gruppe
+    # "1" trug so die Zeilen der Gruppen 2 bis 8 als Text.
+    if body[body.rfind("\n", 0, anchor.start()) + 1:].lstrip().startswith("|"):
+        return None
     rest = body[anchor.end():]
     nxt = re.search(r"(?m)^#{1,6}\s+[0-9]+(?:\.[0-9]+)*\s|(?<![\d.])[0-9]+\.[0-9]+\s+[A-Z]", rest)
     text = rest[: nxt.start()] if nxt else rest[:4000]
@@ -357,7 +400,10 @@ def id_variants(ident: str) -> list[str]:
     """
     v = [ident]
     m = re.match(r"^Art\.?\s*([0-9]+)(?:\.([0-9]+))?$", ident, flags=re.I)
-    if m:
+    # Nur ein ganzer Artikel darf auf "Artikel N" ausweichen. Fuer Art.20.1
+    # fuehrte das zum ganzen Artikel 20 statt zu Absatz 1 -- die Absatzsuche
+    # kam nie an die Reihe, weil der Artikel schon "gefunden" war.
+    if m and not m.group(2):
         num = m.group(1)
         v += [f"Artikel {num}", f"Art. {num}", f"Art.{num}", f"Article {num}", num]
     m = re.match(r"^Annex([IVX]+)\.(.+)$", ident, flags=re.I)
@@ -406,8 +452,13 @@ def sections_by_anchor(body: str, wanted: dict[str, str]) -> dict[str, Section]:
                 continue                      # zu unspezifisch fuer einen Anker
             # Anker: Zeilenanfang, Listenpunkt oder Zellgrenze einer Tabelle —
             # in Norm-Tabellen steht die ID oft mitten in der Zeile hinter "|".
+            # Nach der ID: Trennzeichen, Zeilenende oder ein Grossbuchstabe.
+            # "Artikel 45 der Verordnung (EU) Nr. 909/2014 wird wie folgt
+            # geaendert" ist ein Verweis in einem Aenderungsartikel, kein
+            # Anker -- DORA Art.45 trug so den Text von Art.61.
             pat = re.compile(
-                rf"(?:^|\|)[-*>\s]*(?:o\s+)?({re.escape(variant)})\s*(?:[:.)\]–—-]|\s)\s*",
+                rf"(?:^|\|)[-*>\s]*(?:o\s+)?({re.escape(variant)})"
+                rf"(?:\s*[:.)\]|–—-]|\s+(?=[A-ZÄÖÜ0-9(§])|\s*$)\s*",
                 flags=re.M)
             for m in pat.finditer(body):
                 hits.append((m.start(), m.end(), ident, variant))
@@ -463,7 +514,10 @@ def section_at_anchor(body: str, ident: str, anchor: str, title: str) -> Section
         return None
     line_start = body.rfind("\n", 0, m.start()) + 1
     rest = body[line_start:]
-    nxt = re.search(r"(?m)^(?:-\s*(?:\([0-9]+\)|[a-z]\))|#{1,6}\s)", rest[1:])
+    # Ende: naechster Listenpunkt, naechste Ueberschrift -- oder der naechste
+    # Absatz "(2)" am Zeilenanfang, auch ohne Listenstrich. Im NIS2-Extrakt
+    # stehen die Absaetze nackt; Art.20.1 trug so Absatz 2 mit.
+    nxt = re.search(r"(?m)^(?:-\s*(?:\([0-9]+\)|[a-z]\))|\s*\([0-9]+\)\s|#{1,6}\s)", rest[1:])
     text = rest[: nxt.start() + 1] if nxt else rest[:3000]
     text = re.sub(r"<!--\s*page:\s*\d+\s*-->", "", text).strip()
     return Section(ident, title, text, page_at(body, line_start)) if text else None
@@ -521,6 +575,23 @@ def export_json(framework: str, slug: str, meta: dict[str, str],
     }, ensure_ascii=False, indent=2) + "\n"
 
 
+def abschnitte_zusammen(body: str, meta: dict[str, str]) -> dict[str, Section]:
+    """Ueberschriften, Tabellenzeilen und YAML-Katalog zu einer Abschnittsliste.
+
+    Eine Ueberschrift mit Text hat Vorrang. Tabellen und Katalog fuellen nur,
+    was fehlt oder leer ist. Vorher galt update() in umgekehrter Richtung, und
+    die Inhaltsverzeichnis-Tabelle ("| 10.1 | Continual improvement | 23 |")
+    verdraengte das Kapitel 10.1 durch eine Zeile ohne Text.
+    """
+    found = sections_from_headings(body)
+    for extra in (sections_from_tables(body), sections_from_yaml(body, meta)):
+        for k, sec in extra.items():
+            prev = found.get(k)
+            if prev is None or not prev.text.strip():
+                found[k] = sec
+    return found
+
+
 def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, str],
                            framework: str) -> dict[str, Section]:
     """Je Anforderungs-ID den Abschnitt aus dem Extrakt — oder nichts.
@@ -533,10 +604,12 @@ def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, st
     Herausgeloest aus main(), damit der JSON-Export dieselbe Aufloesung nutzt
     wie die Vault-Notizen und beide nicht auseinanderlaufen koennen.
     """
-    found = sections_from_headings(body)
-    found.update(sections_from_tables(body))
-    found.update(sections_from_yaml(body, meta))
+    found = abschnitte_zusammen(body, meta)
     anchored = sections_by_anchor(body, wanted)
+    # Fuehrt das Dokument einen Anhang A mit eigener Nummerierung, sind "A.10"
+    # und "10" zwei verschiedene Dinge: A.10 darf dann nicht auf Kapitel 10
+    # zurueckfallen (ISO 42001: A.10 Third-party relationships vs 10 Improvement).
+    hat_anhang_a = any(k.startswith("a.") for k in found)
     crosswalk = load_crosswalk(framework)
     out: dict[str, Section] = {}
 
@@ -549,6 +622,8 @@ def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, st
                 continue
 
         for variant in id_variants(ident):
+            if hat_anhang_a and ident.startswith("A.") and variant == ident[2:]:
+                continue
             sec = found.get(norm_key(variant))
             if sec and sec.text.strip():
                 break
@@ -571,8 +646,10 @@ def aufgeloeste_abschnitte(body: str, meta: dict[str, str], wanted: dict[str, st
         if sec is None or not sec.text.strip():
             sec = inline_section(body, ident, wanted[ident])
         # Gruppen-IDs ohne eigenen Text (PO ueber PO.1.x, CIS-Kategorie 13 ueber
-        # 13.1 ...) aus ihren Unterpunkten zusammensetzen.
-        if sec is None or not sec.text.strip():
+        # 13.1 ...) aus ihren Unterpunkten zusammensetzen. Eine Tabellenzeile,
+        # die nur den Titel wiederholt ("A.10 | Third-party relationships"),
+        # ist kein Text.
+        if sec is None or not sec.text.strip() or norm_key(sec.text) == norm_key(sec.title or ""):
             kids = sorted(k for k in wanted
                           if k != ident and re.match(rf"^{re.escape(ident)}[.\-]", k))
             parts = []
@@ -616,17 +693,48 @@ def vault_ids(vault: Path, framework: str) -> dict[str, str]:
     return ids
 
 
+def vault_withdrawn(vault: Path, framework: str) -> set[str]:
+    """IDs, die das Register selbst als withdrawn fuehrt.
+
+    Sie bleiben Sollwert fuer den Export, wo das Dokument sie noch nennt (das
+    Kompendium fuehrt 'ORP.1.A5 ENTFALLEN' als eigene Ueberschrift, und die
+    Nummerierung bleibt so stabil). Fehlt eine solche ID aber im Dokument
+    ganz (APP.2.2.A2 in der Edition 2023), ist das kein Verlust auf dem Weg
+    in den Export — die Inhaltspruefung meldet sie deshalb getrennt.
+    """
+    folder = vault / "GRC" / "Frameworks" / framework
+    if not folder.is_dir():
+        return set()
+    out: set[str] = set()
+    for note in folder.glob("*.md"):
+        meta, _ = split_front_matter(note.read_text(encoding="utf-8"))
+        if meta.get("type") == "requirement" and meta.get("id") and (
+                meta.get("kind") == "withdrawn" or meta.get("status") == "withdrawn"):
+            out.add(meta["id"])
+    return out
+
+
+def yaml_wert(v: object) -> str:
+    """Ein Wert als YAML-String, mit escapten Anfuehrungszeichen.
+
+    Vorher stand diese Zeile dreimal als Lambda im Modul — und eine der drei
+    Fassungen schrieb `.replace('"', '\\"')` ohne doppelten Backslash, ersetzte
+    also ein Anfuehrungszeichen durch sich selbst. Ein Dateiname mit " haette
+    dort das Front-Matter zerbrochen. Eine Fassung, eine Wahrheit.
+    """
+    return '"' + str(v).replace('"', '\\"') + '"'
+
+
 def note_text(framework: str, ident: str, sec: Section, meta: dict[str, str]) -> str:
-    esc = lambda v: '"' + str(v).replace('"', '\\"') + '"'
     return "\n".join([z for z in [
         "---",
         "type: normtext",
         f"framework: {framework}",
         f"id: {ident}",
-        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_file: {yaml_wert(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"source_page: {sec.page}",
-        (f"source_locator: {esc(sec.locator)}" if sec.locator else None),
+        (f"source_locator: {yaml_wert(sec.locator)}" if sec.locator else None),
         f"text_coverage_percent: {meta.get('text_coverage_percent', '')}",
         f'tags: ["grc/normtext", "grc/framework/{framework}"]',
         "generated-by: document-to-LLM",
@@ -667,7 +775,6 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
     der das hervorgeht. Eine leere Platzhalternotiz stehen zu lassen waere
     schlechter: sie sieht aus wie eine Luecke in der Extraktion.
     """
-    esc = lambda v: '"' + str(v).replace('"', '\\"') + '"'
     src = meta.get("source_file", "der Quelle")
     return "\n".join([
         "---",
@@ -675,7 +782,7 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
         f"framework: {framework}",
         f"id: {ident}",
         "status: entfallen",
-        f"source_file: {esc(src)}",
+        f"source_file: {yaml_wert(src)}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f'tags: ["grc/normtext", "grc/framework/{framework}", "grc/entfallen"]',
         "generated-by: document-to-LLM",
@@ -685,8 +792,8 @@ def withdrawn_note(framework: str, ident: str, meta: dict[str, str]) -> str:
         "",
         "> [!warning] In der aktuellen Fassung nicht enthalten",
         f"> Diese Anforderung kommt in {src} nicht vor. Der Katalog enthaelt den",
-        f"> Kriterienbereich vollstaendig, die ID stammt also aus einer frueheren",
-        "> Fassung. Nicht als geltende Anforderung zitieren.",
+        "> Kriterienbereich vollstaendig. Woher die ID stammt, sagt die Quelle",
+        "> nicht. Nicht als geltende Anforderung zitieren.",
         "",
         "---",
         "",
@@ -733,10 +840,9 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
     # waere hier falsch, weil ablage auch ohne Unterordner gesetzt ist.
     volltext_pfad = f"{full_dir.relative_to(vault)}/"
 
-    esc = lambda v: '"' + str(v).replace('"', '\"') + '"'
     head = "\n".join([
         "---", "type: dokument-volltext", f"slug: {slug}",
-        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_file: {yaml_wert(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
         (f"text_coverage_percent: {deckung}" if deckung
@@ -749,14 +855,14 @@ def document_notes(md_path: Path, vault: Path, meta: dict[str, str], body: str,
 
     meta_note = "\n".join([
         "---", "type: document", f"slug: {slug}",
-        f"work: {esc(titel)}", f"autor: {esc(autor)}", f"art: {esc(art)}",
+        f"work: {yaml_wert(titel)}", f"autor: {yaml_wert(autor)}", f"art: {yaml_wert(art)}",
         *(["status: historisch", f"superseded_by: {superseded_by}"] if superseded_by else []),
-        f"source_file: {esc(meta.get('source_file', ''))}",
+        f"source_file: {yaml_wert(meta.get('source_file', ''))}",
         f"source_sha256: {meta.get('source_sha256', '')}",
         f"pages: {meta.get('pages', '')}",
         (f"text_coverage_percent: {deckung}" if deckung
          else "text_coverage_percent: null\ndeckung_pruefbar: false"),
-        f"converter: {esc(meta.get('converter', ''))}",
+        f"converter: {yaml_wert(meta.get('converter', ''))}",
         "licensed: true",
         ('tags: ["grc/handbuch", "grc/dokument", "grc/historisch"]' if superseded_by
          else 'tags: ["grc/handbuch", "grc/dokument"]'),

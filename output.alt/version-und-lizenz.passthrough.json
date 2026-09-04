@@ -1,0 +1,12 @@
+{
+  "format": "acsos-passthrough/1",
+  "hinweis": "Woertlich uebernommener Inhalt. Kein DoclingDocument: fuer dieses Format bringt Docling keinen Reader mit. Es gibt keine abgeleiteten Ueberschriften, Tabellen oder Seitenmarken; zitiert wird ueber den Schluesselpfad in der Quelle.",
+  "source_file": "Version-und-Lizenz.yml",
+  "source_sha256": "189c4a1909ae490d4e4b7710bd55b4ee6eec048e0a4201d80ea950dee6f7099f",
+  "source_bytes": 756,
+  "converter": "ACSOS Passthrough (woertlich, kein Parser)",
+  "lines": 30,
+  "characters": 762,
+  "text_coverage_percent": 100.0,
+  "text": "version: '1.1.0'\ndocument_history:\n  -\n    version: '1.0.0'\n    date: '07.04.2026'\n    description: 'Englische Erstveröffentlichung'\n  -\n    version: '1.1.0'\n    date: '11.08.2026'\n    description: 'Korrekturen und redaktionelle Anpassung'\nsource: 'Bundesamt für Sicherheit in der Informationstechnik\n\n\nPostfach 20 03 63\n\n\n53133 Bonn\n\n\nTel.: +49 22899 9582-0\n\n \nE-Mail: cloudsecurity@bsi.bund.de\n\n\nInternet: https://www.bsi.bund.de\n\n\n© Bundesamt für Sicherheit in der Informationstechnik 2026'\nlicense: 'Dieses Werk ist unter der Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) lizensiert. Um eine Kopie der Lizenz einzusehen, besuchen Sie https://creativecommons.org/licenses/by-nd/4.0/deed.de'"
+}

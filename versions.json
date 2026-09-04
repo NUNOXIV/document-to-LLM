@@ -128,6 +128,30 @@
       "quelle": "https://owasp.org/www-project-web-security-testing-guide/",
       "muster": "\\[Version ([0-9]+\\.[0-9]+)\\]",
       "anmerkung": "Projekt wurde in Web Security Testing Guide umbenannt; v4.0 ist der alte Testing Guide."
+    },
+    "bsig-gesetz-u-ber-das-bundesamt-fu-r-sicherheit-in-der-informationstechnik-und": {
+      "titel": "BSIG — Gesetz ueber das Bundesamt fuer Sicherheit in der Informationstechnik",
+      "dokument_version": "Ausfertigung 02.12.2025 (Fassung vor der Aenderung vom 11.03.2026)",
+      "quelle": "https://www.gesetze-im-internet.de/bsig_2025/",
+      "anmerkung": "VERALTET. Der Fundstellen-Resolver hat den Extrakt gegen das amtliche XML (BJNR12D0B0025.xml, Stand: geaendert durch Art. 4 G v. 11.3.2026 I Nr. 66) gehalten: 57 von 68 Paragrafen stimmen woertlich ueberein, 8 Woerter kommen im PDF gar nicht vor. Betroffen sind § 33 (Registrierungspflicht, jetzt ueber § 8 KRITIS-Dachgesetz) und Anlage 1. Die neuere Fassung liegt bereits als XML im Bestand; das PDF wird als Historiendokument gefuehrt (mappings/historie.json, Nachfolger bjnr12d0b0025). Kein Muster hinterlegt: gesetze-im-internet.de ist aus dieser Umgebung nicht erreichbar, der Stand wird deshalb manuell geprueft."
+    },
+    "bjnr12d0b0025": {
+      "titel": "BSIG 2025 — amtliches XML (gesetze-im-internet.de)",
+      "dokument_version": "Stand 11.03.2026 (Art. 4 G v. 11.3.2026 I Nr. 66)",
+      "quelle": "https://www.gesetze-im-internet.de/bsig_2025/xml.zip",
+      "anmerkung": "Primaertext, aus dem fixtures/ground-truth/bsig.json erzeugt wird."
+    },
+    "bjnr095800016": {
+      "titel": "BSI-KritisV — Verordnung zur Bestimmung kritischer Anlagen",
+      "dokument_version": "Ausfertigung 22.04.2016",
+      "quelle": "https://www.gesetze-im-internet.de/bsi-kritisv/xml.zip",
+      "anmerkung": "Primaertext, aus dem fixtures/ground-truth/bsi-kritisv.json erzeugt wird."
+    },
+    "bjnr0420b0026": {
+      "titel": "KRITIS-Dachgesetz — Dachgesetz zur Staerkung der physischen Resilienz",
+      "dokument_version": "Ausfertigung 11.03.2026",
+      "quelle": "https://www.gesetze-im-internet.de/kritisdachg/xml.zip",
+      "anmerkung": "Primaertext, aus dem fixtures/ground-truth/kritisdachg.json erzeugt wird."
     }
   }
 }

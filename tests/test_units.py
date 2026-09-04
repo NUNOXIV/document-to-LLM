@@ -60,6 +60,320 @@ def test_page_markers() -> None:
     check("ohne Marker", "<!-- page:" not in extract.to_markdown(doc, False))
 
 
+def test_zielname_kollision_gleiches_format() -> None:
+    """Zwei Quellen mit gleichem Slug und gleichem Format duerfen sich nie
+    ueberschreiben — so verschwanden 125 von 602 Extrakten, unbemerkt."""
+    print("Zielnamen: Kollision im selben Format")
+    with tempfile.TemporaryDirectory() as tmp:
+        wurzel = Path(tmp)
+        a = wurzel / "Checkliste-APP-1-1.xlsx"
+        b = wurzel / "checklisten-2023" / "Checkliste_APP.1.1.xlsx"
+        b.parent.mkdir()
+        a.write_bytes(b"A")
+        b.write_bytes(b"B")
+        claimed: dict[str, Path] = {}
+        na = extract.target_name(a, claimed)
+        nb = extract.target_name(b, claimed)
+        check("gleicher Prozess: verschiedene Ziele", na != nb, f"{na} / {nb}")
+        check("Ausweichname nennt den Ordner, nicht das gleiche Format",
+              nb == "checkliste-app-1-1-checklisten-2023", nb)
+        check("gleicher Prozess: stabil", extract.target_name(b, claimed) == nb)
+        # Zweiter Prozess: das Ziel von a liegt schon auf Platte, claimed ist leer.
+        out = wurzel / "out"
+        out.mkdir()
+        (out / f"{na}.md").write_text(
+            f'---\nsource_file: "{a.name}"\nsource_sha256: {extract.sha256_of(a)}\n---\n', encoding="utf-8")
+        nb2 = extract.target_name(b, {}, out)
+        check("anderer Prozess: fremdes Ziel nicht ueberschrieben", nb2 != na, nb2)
+        check("anderer Prozess: gleicher Name wie im ersten", nb2 == nb, f"{nb2} / {nb}")
+        check("eigenes Ziel wird wiedererkannt", extract.target_name(a, {}, out) == na)
+        # Byte-identisches Duplikat (ZIP-Inhalt neben dem Original): kein zweites Ziel.
+        c = wurzel / "kopie" / "Checkliste_APP-1-1.xlsx"
+        c.parent.mkdir()
+        c.write_bytes(b"A")
+        check("Duplikat teilt das Ziel des Originals", extract.target_name(c, {}, out) == na)
+
+
+def test_tabellenzeilen_ueberschreiben_keine_ueberschrift() -> None:
+    """Anhang-A-Tabelle und Inhaltsverzeichnis duerfen die Kapitel nicht ueberschreiben.
+
+    ISO 27001 und ISO 42001 fuehren Klausel 5.1 (Leadership) UND Control A.5.1
+    (Policies). Die Tabellenzeile A.5.1 wurde auch unter "5.1" abgelegt und
+    verdraengte die Ueberschrift: 32 Anforderungen trugen den Text einer
+    anderen Nummer, und die Inhaltspruefung sah es nicht, weil sie dieselbe
+    Zusammenfuehrung benutzte.
+    """
+    print("Tabellenzeilen gegen Ueberschriften")
+    body = "\n".join([
+        "## 5.1\tLeadership and commitment", "",
+        "Top management shall demonstrate leadership.", "",
+        "## 10\tImprovement", "",
+        "## 10.1\tContinual improvement", "",
+        "The organization shall continually improve the AI management system.", "",
+        "| Clause | Title | Page |", "|---|---|---|",
+        "| 10.1 | Continual improvement | 23 |", "",
+        "| ID | Control | Text |", "|---|---|---|",
+        "| A.5.1 | Policies for information security | Control: policies shall be defined. |",
+        "| A.10 | Third-party and customer relationships | Third-party and customer relationships |",
+        "| A.10.2 | Allocating responsibilities | The organization shall ensure that responsibilities are allocated. |",
+        "| A.10.3 | Suppliers | The organization shall establish a supplier process. |",
+        "", "## 10.2\tNonconformity", "", "When a nonconformity occurs, the organization shall react.", "",
+        "## A.1\t General", "", "This annex lists the controls.", "", "## Bibliography", "", "[1] ISO 31000",
+    ])
+    wanted = {"5.1": "Leadership and commitment", "A.5.1": "Policies for information security",
+              "10.1": "Continual improvement", "10.2": "Nonconformity",
+              "A.10": "Third-party and customer relationships",
+              "A.10.2": "Allocating responsibilities", "A.10.3": "Suppliers"}
+    out = publish.aufgeloeste_abschnitte(body, {}, wanted, "test")
+    check("5.1 traegt den Kapiteltext", out["5.1"].text.startswith("Top management"), out["5.1"].text[:40])
+    check("A.5.1 traegt den Control-Text", out["A.5.1"].text.startswith("Control:"), out["A.5.1"].text[:40])
+    check("10.1 traegt den Kapiteltext, nicht die Inhaltsverzeichniszeile",
+          out["10.1"].text.startswith("The organization shall continually"), out["10.1"].text[:40])
+    check("A.10.2 traegt den Control-Text", "responsibilities are allocated" in out["A.10.2"].text)
+    check("A.10 faellt nicht auf Kapitel 10 zurueck",
+          "continually" not in out["A.10"].text and "Allocating" in out["A.10"].text, out["A.10"].text[:60])
+    check("10.2 endet an der Anhangsueberschrift 'A.1 General'",
+          "react" in out["10.2"].text and "controls" not in out["10.2"].text and "ISO 31000" not in out["10.2"].text,
+          out["10.2"].text[:80])
+    check("A.10 ist aus den Controls zusammengesetzt, nicht der wiederholte Titel",
+          "responsibilities are allocated" in out["A.10"].text and "supplier process" in out["A.10"].text,
+          out["A.10"].text[:80])
+
+
+def test_vault_register_kennt_entfallene() -> None:
+    """Withdrawn-Eintraege bleiben Sollwert (das Kompendium nennt sie noch), sind
+    aber getrennt abfragbar, damit ihr Fehlen im Dokument kein Befund wird."""
+    print("Vault-Register mit entfallenen Eintraegen")
+    with tempfile.TemporaryDirectory() as tmp:
+        ordner = Path(tmp) / "GRC" / "Frameworks" / "fw"
+        ordner.mkdir(parents=True)
+        (ordner / "fw X.1.md").write_text(
+            "---\ntype: requirement\nid: X.1\nkind: requirement\n---\n# X.1 — Eins\n", encoding="utf-8")
+        (ordner / "fw X.2.md").write_text(
+            "---\ntype: requirement\nid: X.2\nkind: withdrawn\nstatus: withdrawn\n---\n# X.2 — ENTFALLEN\n",
+            encoding="utf-8")
+        ids = publish.vault_ids(Path(tmp), "fw")
+        check("aktive ID im Register", "X.1" in ids and ids["X.1"] == "Eins", str(ids))
+        check("entfallene ID bleibt Sollwert", "X.2" in ids, str(ids))
+        check("entfallene ID getrennt abfragbar", publish.vault_withdrawn(Path(tmp), "fw") == {"X.2"})
+
+
+def test_kreuzreferenz_grundschutz_druckfehler() -> None:
+    """Druckfehler in der Quelle: die Anforderung wird ueber ihren Wortlaut gefunden,
+    die Kennung im Extrakt bleibt, wie sie im Kompendium steht."""
+    print("Kreuzreferenz Grundschutz")
+    body = "\n".join([
+        "## OPS.2.3.A21 Abschluss von ESCROW-Verträgen (H)", "", "Wird Software bezogen, SOLLTE ein ESCROW-Vertrag abgeschlossen werden.", "",
+        "## OPS.2.3A22 Durchführung von gemeinsamen Notfall- und Krisenübungen (H) [Notfallbeauftragte]", "",
+        "Gemeinsame Notfall- und Krisenübungen mit den Anbietenden von Outsourcing SOLLTEN durchgeführt und dokumentiert werden (siehe DER.4). Das Resultat SOLLTE genutzt werden.", "",
+        "## OPS.2.3.A23 Einsatz von Verschlüsselungen (H)", "", "Sensible Daten SOLLTEN verschlüsselt werden.",
+    ])
+    wanted = {"OPS.2.3.A21": "Abschluss von ESCROW-Verträgen",
+              "OPS.2.3.A22": "Durchführung von gemeinsamen Notfall- und Krisenübungen",
+              "OPS.2.3.A23": "Einsatz von Verschlüsselungen"}
+    out = publish.aufgeloeste_abschnitte(body, {}, wanted, "bsi-grundschutz")
+    check("A22 ueber den Anker gefunden", "OPS.2.3.A22" in out, str(sorted(out)))
+    check("'OPS.2.3A22' ist keine Ueberschrift der Gruppe OPS.2.3",
+          "ops.2.3" not in publish.sections_from_headings(body)
+          or "Gemeinsame" not in publish.sections_from_headings(body)["ops.2.3"].text)
+    check("A22 traegt nur den eigenen Text",
+          out["OPS.2.3.A22"].text.startswith("Gemeinsame") and "Sensible" not in out["OPS.2.3.A22"].text,
+          out["OPS.2.3.A22"].text[:60])
+    check("A23 unberuehrt", out["OPS.2.3.A23"].text.startswith("Sensible"))
+
+
+def test_xberg_seitenmarken_normalisiert() -> None:
+    """xberg klebt die Seitenmarke an das erste Wort der Seite; jeder Waechter
+    sucht sie am Zeilenanfang."""
+    print("xberg: Seitenmarken")
+    roh = "<!-- page: 1 -->MUSTER-NORM\n\n# 4 Kontext\n\nText.\n\n<!-- page: 2 -->Anhang"
+    md = extract.normalisiere_xberg_markdown(roh)
+    zeilen = md.splitlines()
+    check("Marke 1 allein auf der Zeile", "<!-- page: 1 -->" in zeilen, str(zeilen[:3]))
+    check("Marke 2 allein auf der Zeile", "<!-- page: 2 -->" in zeilen, str(zeilen[-3:]))
+    check("Text der Seite bleibt", "MUSTER-NORM" in zeilen and "Anhang" in zeilen)
+    check("keine Dreifach-Leerzeilen", "\n\n\n" not in md)
+
+
+def test_xberg_engine_am_fixture() -> None:
+    """Zweite Engine am Test-PDF: gleicher Ausgabevertrag, gleiche Waechter.
+
+    Laeuft nur, wenn xberg installiert ist. Geprueft wird der native Pfad
+    (Textlayer, keine Modelle): Kopfzeile nennt die Engine, jede Seite hat ihre
+    Marke, die Wortdeckung gegen den Textlayer ist vollstaendig.
+    """
+    print("xberg: Engine am Fixture")
+    try:
+        import xberg  # noqa: F401
+    except ImportError:
+        print("  (xberg nicht installiert — uebersprungen)")
+        return
+    if not FIXTURE_PDF.exists():
+        print("  (Fixture fehlt — uebersprungen)")
+        return
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "out"
+        res = extract.convert_file(
+            extract._Runner(120), FIXTURE_PDF, out, ocr_mode="off", page_markers=True,
+            write_json=True, force=True, claimed={}, do_verify=True,
+            min_coverage=99.0, repair=True, engine="xberg",
+        )
+        check("Konverter xberg", res.converter == "xberg", res.converter)
+        md = Path(res.output).read_text(encoding="utf-8")
+        check("Kopfzeile nennt xberg", "converter: \"xberg " in md and "engine: xberg" in md)
+        check("zwei Seitenmarken", md.count("<!-- page: 1 -->") == 1 and md.count("<!-- page: 2 -->") == 1)
+        check("Ueberschriften erkannt", res.headings >= 5, str(res.headings))
+        check("Wortdeckung vollstaendig", res.text_coverage is not None and res.text_coverage >= 99.0,
+              str(res.text_coverage))
+        check("JSON-Zwilling der Engine", res.json_output is not None and res.json_output.endswith(".xberg.json"),
+              str(res.json_output))
+
+
+def test_artikelgrenze_auch_ohne_ueberschrift() -> None:
+    """Amtsblattsatz: Docling erkennt "Artikel 22" mal als Ueberschrift, mal als
+    blosse Zeile. Ein Artikel endet trotzdem am naechsten Artikel -- sonst
+    traegt Art.21 den Text von Art.22 und Art.23 mit (DSGVO: 9 Zeilen,
+    DORA: 2, KI-VO: 1 -- vom Aufnahmetor des Auftraggebers gefunden, nicht
+    von der Wortdeckung, denn doppelter Text hat volle Deckung)."""
+    print("Artikelgrenze ohne Ueberschrift")
+    body = "\n".join([
+        "## Artikel 21", "", "## Widerspruchsrecht", "",
+        "- (1) Die betroffene Person hat das Recht, Widerspruch einzulegen.", "",
+        "Artikel 22", "", "Automatisierte Entscheidungen im Einzelfall", "",
+        "(1) Die betroffene Person hat das Recht, nicht einer Entscheidung unterworfen zu werden.", "",
+        "Artikel 23", "", "Beschränkungen", "",
+        "(1) Durch Rechtsvorschriften koennen Pflichten beschraenkt werden.", "",
+        "## KAPITEL IV", "",
+        "## Artikel 61", "", "## Aenderung der Verordnung (EU) Nr. 909/2014", "",
+        "Artikel 45 der Verordnung (EU) Nr. 909/2014 wird wie folgt geändert:", "",
+        "1. Absatz 1 erhält folgende Fassung.", "",
+        "Artikel 20", "", "## Governance", "",
+        "(1) Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane die Massnahmen billigen.", "",
+        "(2) Die Mitgliedstaaten stellen sicher, dass die Mitglieder an Schulungen teilnehmen.", "",
+        "## Artikel 21",
+    ])
+    wanted = {"Art.21": "Widerspruchsrecht", "Art.22": "Automatisierte Entscheidungen",
+              "Art.23": "Beschränkungen", "Art.45": "Vereinbarungen", "Art.61": "Aenderung",
+              "Art.20.1": "Billigung", "Art.20.2": "Schulung"}
+    out = publish.aufgeloeste_abschnitte(body, {}, wanted, "gdpr")
+    check("Art.21 endet am blossen 'Artikel 22'",
+          "Widerspruch" in out["Art.21"].text and "Automatisierte" not in out["Art.21"].text,
+          out["Art.21"].text[:120])
+    check("Art.22 hat eigenen Text und endet an 'Artikel 23'",
+          "Art.22" in out and "unterworfen" in out["Art.22"].text and "beschraenkt" not in out["Art.22"].text,
+          out.get("Art.22").text[:120] if "Art.22" in out else "fehlt")
+    check("Art.23 gefunden", "Art.23" in out and "beschraenkt" in out["Art.23"].text)
+    check("Art.45 ankert nicht an 'Artikel 45 der Verordnung ... wird geaendert'",
+          "Art.45" not in out, out["Art.45"].text[:80] if "Art.45" in out else "")
+    check("Art.20.1 ist nur Absatz 1, nicht der ganze Artikel",
+          "Art.20.1" in out and "billigen" in out["Art.20.1"].text and "Schulungen" not in out["Art.20.1"].text,
+          out["Art.20.1"].text[:100] if "Art.20.1" in out else "fehlt")
+    check("Art.20.2 ist Absatz 2", "Art.20.2" in out and out["Art.20.2"].text.startswith("(2)"))
+
+
+def test_anker_endet_am_nackten_absatz() -> None:
+    """Kreuzreferenz-Anker: der Abschnitt endet am naechsten Absatz "(2)", auch
+    wenn der ohne Listenstrich am Zeilenanfang steht (NIS2 Art.20.1/20.2)."""
+    print("Anker endet am nackten Absatz")
+    body = "\n".join([
+        "Artikel 20", "", "## Governance", "",
+        "(1) Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane die Massnahmen billigen.", "",
+        "(2) Die Mitgliedstaaten stellen sicher, dass die Mitglieder an Schulungen teilnehmen.", "",
+        "## Artikel 21",
+    ])
+    sec = publish.section_at_anchor(body, "Art.20.1", "Die Mitgliedstaaten stellen sicher, dass die Leitungsorgane", "Billigung")
+    check("Absatz 1 ohne Absatz 2", sec is not None and "billigen" in sec.text and "Schulungen" not in sec.text,
+          sec.text[:100] if sec else "None")
+
+
+def test_ueberhang_im_export() -> None:
+    """Eine Zeile, die den vollen Text einer anderen Anforderung enthaelt, ist
+    ein Ueberhang -- ausser die andere ist ihr Unterpunkt (9.2 aus 9.2.1)."""
+    print("Ueberhang im Export")
+    import inhalt
+    b_text = "Die betroffene Person hat das Recht, nicht einer Entscheidung unterworfen zu werden, " * 3
+    reqs = [
+        {"id": "Art.21", "text": "Widerspruch. " * 10 + b_text},
+        {"id": "Art.22", "text": b_text},
+        {"id": "9.2", "text": "### 9.2.1 Allgemein\n\n" + "Die Organisation muss interne Audits durchfuehren. " * 5},
+        {"id": "9.2.1", "text": "Die Organisation muss interne Audits durchfuehren. " * 5},
+    ]
+    gleich = "Sitzungen MUESSEN nach Inaktivitaet gesperrt werden. " * 6
+    reqs += [{"id": "SYS.1.1.A31", "text": gleich}, {"id": "SYS.2.1.A33", "text": gleich},
+             {"id": "SYS.1.1", "text": "### SYS.1.1.A31 Sperre\n\n" + gleich + "\n\nweiterer Text " * 20}]
+    treffer = inhalt.ueberhaenge(reqs)
+    check("Art.21 enthaelt Art.22", ("Art.21", "Art.22") in treffer, str(treffer))
+    check("woertlich gleiche Anforderungen sind kein Ueberhang",
+          not any(t[0] in ("SYS.1.1.A31", "SYS.2.1.A33") for t in treffer), str(treffer))
+    check("Oberklausel mit dem Text ihres Unterpunkts trifft keine fremde Dublette",
+          ("SYS.1.1", "SYS.2.1.A33") not in treffer, str(treffer))
+    check("Oberklausel aus Unterpunkt ist kein Ueberhang", ("9.2", "9.2.1") not in treffer, str(treffer))
+
+
+class _StubRunner:
+    """Zaehlt Aufrufe statt zu konvertieren: welcher OCR-Modus ging an den Worker?"""
+
+    def __init__(self, markdown: str = "# Titel\n\nText " * 50) -> None:
+        self.calls: list[tuple] = []
+        self.markdown = markdown
+
+    def run(self, worker, *args) -> dict:
+        self.calls.append(args)
+        return {"markdown": self.markdown, "pages": 1, "tables": 0, "status": "success",
+                "failed_pages": [], "errors": [], "json": None, "warnings": []}
+
+    def reset(self) -> None:
+        pass
+
+
+def test_scan_vorabprobe_entscheidet_vor_dem_lauf() -> None:
+    """Ein Scan geht sofort mit OCR an den Worker, ein Textlayer-PDF ohne;
+    der doppelte Lauf (erst ohne, dann 'textarm', dann mit OCR) entfaellt."""
+    print("Scan-Vorabprobe")
+    if not FIXTURE_PDF.exists():
+        print("  (Fixture fehlt — uebersprungen)")
+        return
+    original = extract.scan_vorabprobe
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            for probe, erwartet in (((12.0, 3), True), ((800.0, 2), False)):
+                extract.scan_vorabprobe = lambda p, _v=probe: _v
+                stub = _StubRunner()
+                res = extract.convert_file(
+                    stub, FIXTURE_PDF, Path(tmp) / str(erwartet), ocr_mode="auto", page_markers=True,
+                    write_json=False, force=True, claimed={}, do_verify=False,
+                    min_coverage=99.0, repair=False,
+                )
+                check(f"Probe {probe[0]:.0f} Z./Seite: genau ein Lauf", len(stub.calls) == 1, str(len(stub.calls)))
+                check(f"Probe {probe[0]:.0f} Z./Seite: OCR={erwartet}", stub.calls[0][1] is erwartet, str(stub.calls[0][:2]))
+                check("Probe steht in der Kopfzeile",
+                      f"scan_probe: {'scan' if erwartet else 'textlayer'}" in Path(res.output).read_text(encoding="utf-8"))
+    finally:
+        extract.scan_vorabprobe = original
+
+
+def test_zwei_worker_verarbeiten_alle_dateien() -> None:
+    """Mit --workers 2 kommt jede Datei genau einmal an, in stabiler Reihenfolge im Manifest."""
+    print("Zwei Worker")
+    import json
+
+    from click.testing import CliRunner
+
+    with tempfile.TemporaryDirectory() as tmp:
+        wurzel = Path(tmp)
+        for i in range(5):
+            (wurzel / f"katalog-{i}.yml").write_text(f"id: K{i}\ntext: Anforderung {i}\n", encoding="utf-8")
+        out = wurzel / "out"
+        r = CliRunner().invoke(extract.main, [str(wurzel), "-o", str(out), "--workers", "2", "--no-verify"])
+        check("Lauf ohne Fehler", r.exit_code == 0, r.output[-400:])
+        m = json.loads((out / "manifest.json").read_text(encoding="utf-8"))
+        namen = [Path(d["source"]).name for d in m["documents"]]
+        check("alle fuenf im Manifest", sorted(namen) == [f"katalog-{i}.yml" for i in range(5)], str(namen))
+        check("Reihenfolge wie eingegeben", namen == sorted(namen), str(namen))
+        check("fuenf Extrakte", len(list(out.glob("katalog-*.md"))) == 5)
+        check("2 Worker im Kopf", "(2 Worker)" in r.output, r.output[:120])
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
@@ -566,22 +880,35 @@ def test_export_json() -> None:
 
 
 def main() -> int:
-    for fn in (test_page_markers, test_quality_gates, test_target_names,
-               test_pipeline_options, test_verify, test_repair, test_office_verify,
-               test_broken_ooxml_styles, test_text_passthrough,
-               test_yaml_catalogue, test_gs_struktur,
-               test_versioncheck_historie, test_fts5_query, test_korpus_json, test_export_json):
+    """Laeuft ohne pytest — findet die Tests aber selbst.
+
+    Vorher stand hier eine handgepflegte Liste. Jeder danach geschriebene Test
+    fehlte darin und lief im CI-Skriptpfad nie mit: fuenf Waechtertests waren
+    vorhanden und wurden nicht ausgefuehrt. Eine Liste, die man vergessen kann,
+    ist keine Pruefung. Tests mit Fixtures (tmp_path) braucht pytest; sie werden
+    hier ausdruecklich als nicht ausgefuehrt benannt statt stillschweigend
+    uebergangen.
+    """
+    import inspect
+
+    hier = sys.modules[__name__]
+    alle = [(n, f) for n, f in vars(hier).items()
+            if n.startswith("test_") and inspect.isfunction(f)]
+    alle.sort(key=lambda nf: nf[1].__code__.co_firstlineno)
+    ohne_fixture = [(n, f) for n, f in alle if not inspect.signature(f).parameters]
+    mit_fixture = [n for n, f in alle if inspect.signature(f).parameters]
+    for _, fn in ohne_fixture:
         fn()
     print()
+    print(f"{len(ohne_fixture)} Test(s) ohne Fixture ausgefuehrt.")
+    if mit_fixture:
+        print(f"{len(mit_fixture)} Test(s) brauchen pytest und liefen hier NICHT: "
+              + ", ".join(mit_fixture))
     if failures:
         print(f"{len(failures)} Test(s) fehlgeschlagen: {', '.join(failures)}")
         return 1
     print("Alle Unit-Tests bestanden.")
     return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
 
 
 def test_document_note_ohne_pruefbare_deckung(tmp_path: Path) -> None:
@@ -841,3 +1168,372 @@ def test_kennung_nicht_nur_in_erster_spalte() -> None:
     s = publish.sections_from_tables(body)
     assert "8.1.1" in s, list(s)
     assert "erforderlichen Massnahmen" in s["8.1.1"].text
+
+
+def test_resolver_normalisiert_nur_was_er_darf() -> None:
+    """Der Vergleich muss Satzform ueberstehen und Woertlaut nicht.
+
+    Ein Resolver, der grosszuegig normalisiert, findet fast jeden Text wieder
+    und belegt damit nichts. Einer, der gar nicht normalisiert, meldet
+    Umbrueche als Abweichung. Beide Fehler sind hier festgenagelt.
+    """
+    import fundstellen as F
+
+    # Darf angeglichen werden: Umbruch, Trennung am Zeilenende, Typografie.
+    assert F.normalisiere("Informations-\nsicherheit") == "Informationssicherheit"
+    assert F.normalisiere("a  b\n c") == "a b c"
+    assert F.normalisiere("„Zweck“") == '"Zweck"'
+    assert F.normalisiere("ﬁnden") == "finden"
+
+    # Darf NICHT angeglichen werden: Gross-/Kleinschreibung und Verneinung
+    # sind bei Normtext bedeutungstragend. MUSS und muss sind nicht dasselbe.
+    assert F.normalisiere("MUSS") != F.normalisiere("muss")
+    assert F.normalisiere("ist zulaessig") != F.normalisiere("ist nicht zulaessig")
+
+
+def test_resolver_trennt_abweichend_von_unverifiziert() -> None:
+    """Zwei Befunde, die nie zusammenfallen duerfen.
+
+    'Unverifiziert' heisst: nicht geprueft. 'Abweichend' heisst: geprueft und
+    falsch. Wer beides in ein Feld schreibt, verliert genau die Unterscheidung,
+    an der der Zellversatz haengt — Kennung richtig, Wortlaut der Nachbarzeile.
+    """
+    import fundstellen as F
+
+    gt = {"id": "1.1", "art": "abschnitt", "titel": "Erste Anforderung",
+          "text": "Die Institution MUSS das eine tun."}
+
+    treffer = F.pruefe_fundstelle(gt, F.normalisiere("## 1.1 Erste Anforderung\n\n"
+                                                    "Die Institution MUSS das eine tun."), {}, "q")
+    assert treffer.status == "verifiziert", treffer
+
+    fehlt = F.pruefe_fundstelle(gt, F.normalisiere("## 2.1 Etwas ganz anderes"), {}, "q")
+    assert fehlt.status == "unverifiziert", fehlt
+
+    versatz = F.pruefe_fundstelle(
+        gt, "", {"1.1": F.normalisiere("Erste Anforderung Die Institution SOLLTE das andere tun.")},
+        "q")
+    assert versatz.status == "abweichend", versatz
+
+    # Teiltreffer ist kein Treffer: fehlt der halbe Satz, ist er nicht belegt.
+    halb = F.pruefe_fundstelle(gt, F.normalisiere("1.1 Erste Anforderung Die Institution MUSS"),
+                               {}, "q")
+    assert halb.status == "abweichend", halb
+
+
+def test_resolver_ohne_bestand_ist_nicht_gruen() -> None:
+    """Ein Lauf ohne zugeordnete Bestandsdatei darf nicht wie Erfolg aussehen.
+
+    Das ist derselbe Fehler wie die Wortdeckung, die als 100.0 startete: ein
+    ungeprueftes Ergebnis, das die Form eines geprueften hat.
+    """
+    import fundstellen as F
+
+    b = F.Bericht("muster", "leer")
+    assert b.quote == 0.0
+    assert F.passend({"kurzname": "iso27001"},
+                     [Path("bsi-grundschutz.md"), Path("nis2.md")]) == []
+
+    # Kein Raten ueber den Wortstamm: aus "bsi-kritisv" wurde einmal "bsi",
+    # und die Verordnung wurde gegen "bsi-benutzerdefinierte-bausteine.md"
+    # geprueft — 22 Fundstellen "unverifiziert" gegen ein fremdes Dokument.
+    kandidaten = [Path("bsi-benutzerdefinierte-bausteine.md"), Path("bsi-recplast.md")]
+    assert F.passend({"kurzname": "bsi-kritisv"}, kandidaten) == []
+
+    # Die Zuordnung steht in der Ground Truth, nicht in einer Regel.
+    assert F.passend({"kurzname": "bsig", "bestand_muster": ["bsi-recplast"]},
+                     kandidaten) == [Path("bsi-recplast.md")]
+
+
+def test_ground_truth_deckt_das_fixture() -> None:
+    """Die Ground Truth und der Fixture-Generator duerfen nicht auseinanderlaufen.
+
+    Das PDF wird aus der Ground Truth gebaut. Wuerde der Generator eigene
+    Literale enthalten, pruefte der Resolver das Ergebnis gegen eine zweite,
+    moeglicherweise veraltete Fassung desselben Texts — eine Selbstbestaetigung.
+    """
+    import json
+    import re
+
+    gt_pfad = Path(__file__).resolve().parents[1] / "fixtures" / "ground-truth" \
+        / "muster-norm-99001.json"
+    gt = json.loads(gt_pfad.read_text(encoding="utf-8"))
+    assert len(gt["fundstellen"]) >= 10
+    assert any(f["art"] == "control" for f in gt["fundstellen"])
+
+    # Kommentare zaehlen nicht: dort darf ein Wort aus dem Primaertext stehen,
+    # etwa in der Begruendung einer Spaltenbreite. Verboten ist der Woertlaut
+    # als Literal, aus dem das PDF gesetzt wuerde.
+    quelltext = "\n".join(
+        z for z in (Path(__file__).parent / "make_fixture.py").read_text(
+            encoding="utf-8").splitlines() if not z.lstrip().startswith("#"))
+    for f in gt["fundstellen"]:
+        for feld in ("titel", "text"):
+            wert = f.get(feld, "")
+            if len(wert) > 30:
+                assert wert[:30] not in quelltext, \
+                    f"Woertlaut steht doppelt: {feld} von {f['id']} auch im Generator"
+
+    # Kein Wort darf so lang sein, dass der Satz es in einer Tabellenzelle
+    # umbricht: genau daran zerbrach der erste Resolver-Lauf.
+    for f in gt["fundstellen"]:
+        if f["art"] == "control":
+            laengstes = max(re.findall(r"\S+", f["titel"]), key=len)
+            assert len(laengstes) <= 40, laengstes
+
+
+def test_bindestrich_nur_mit_doppeltem_beleg() -> None:
+    """Ein verlorener Bindestrich wird nur mit zwei Belegen zurueckgesetzt.
+
+    Beleg 1: die Form ohne Bindestrich kommt in der Quelle nicht vor.
+    Beleg 2: die Form mit Bindestrich steht dort ZUSAMMENHAENGEND.
+
+    Ohne Beleg 2 kehrt die Reparatur die Silbentrennung um. Genau das ist
+    passiert: in einem Dokument stand "Ab-\nnahme", der Extrakt hatte richtig
+    "Abnahme" daraus gemacht, und die erste Fassung haette wieder "Ab-nahme"
+    geschrieben — 93 Fehlalarme in einer Datei.
+    """
+    import re
+
+    import verify
+
+    quelle_roh = ("Die Verwaltung von IKT-Systemen ist geregelt.\n"
+                  "Die Ab-\nnahme erfolgt spaeter. OpenLDAP bleibt OpenLDAP.")
+    kompakt = re.sub(r"\s+", "", quelle_roh)
+
+    treffer = verify.verlorene_bindestriche(
+        "IKTSystemen und Abnahme und OpenLDAP", kompakt, quelle_roh)
+
+    assert treffer == {"IKTSystemen": "IKT-Systemen"}, treffer
+    assert "Abnahme" not in treffer, "Silbentrennung wurde umgekehrt"
+    assert "OpenLDAP" not in treffer, "Binnenmajuskel der Quelle angetastet"
+
+
+def test_unlesbares_zeichen_ist_kein_bindestrichbeleg() -> None:
+    """Ein unlesbares Zeichen taugt nicht als Beleg fuer einen Bindestrich.
+
+    Im BSIG-Druck standen 24 solche Zeichen, alle 24 waren laut amtlichem XML
+    Bindestriche — und daraus wurde kurzzeitig eine Regel. Sie hielt genau ein
+    Dokument weit: in einer anderen Datei desselben Bestandes stehen 1639
+    davon, und dort sind es Trennstriche am Zeilenende. Dasselbe Zeichen, zwei
+    Bedeutungen. Gemeldet statt geraten.
+    """
+    import verify
+
+    roh = "Die Ab\ufffenahme des IKT\ufffeSystems."
+    assert verify.unlesbar_im_wort(roh) == 2
+    # Die Belegquellen lassen das Zeichen stehen, machen also keinen
+    # Bindestrich daraus.
+    assert "-" not in verify.zusammenhaengende_quelle("", roh)
+    assert "-" not in verify.quelle_kompakt("", roh)
+
+
+def test_front_matter_ueberlebt_die_reparatur() -> None:
+    """Der Kopf muss nach dem Vermerk noch an erster Stelle stehen.
+
+    Diese Zeile hat gefehlt, und ein einziger vertauschter Variablenname
+    ("roh" hielt ploetzlich den PDF-Text statt des Markdowns) hat den Kopf von
+    187 Extrakten aus dem falschen Text geschnitten. Der Schaden faellt beim
+    Schreiben nicht auf — nur beim naechsten Lesen.
+    """
+    import bindestriche
+    import publish
+
+    roh = ('---\nsource_file: "X.pdf"\npages: 3\nextraction_status: ok\n---\n'
+           "\n<!-- ACSOS -->\n\nText mit IKT-Systemen.\n")
+    meta, koerper = publish.split_front_matter(roh)
+    kopf = roh[:len(roh) - len(koerper)]
+    ergebnis = bindestriche.vermerke(kopf, 2, "a -> b") + koerper
+
+    assert ergebnis.startswith("---\n"), ergebnis[:60]
+    neu_meta, neu_koerper = publish.split_front_matter(ergebnis)
+    assert neu_meta["source_file"] == "X.pdf"
+    assert neu_meta["pages"] == "3"
+    assert neu_meta["restored_hyphens"] == "2"
+    assert neu_koerper == koerper, "Rumpf veraendert"
+
+
+def test_resolver_erlaubt_einschuebe_aber_keine_luecke() -> None:
+    """Eingeschobenes Fremdmaterial ist erlaubt, fehlender Woertlaut nicht.
+
+    Ein Gesetzesdruck schiebt mitten in den Absatz Seitenkopf, Fusszeile und
+    Verweise ein. Wer am Stueck vergleicht, meldet jeden laengeren Paragrafen
+    als Abweichung — und nach dem dritten Fehlalarm liest niemand mehr hin.
+    """
+    import fundstellen as F
+
+    soll = "Die Institution MUSS die Anlage schuetzen und den Vorfall melden."
+    mit_einschub = ("Die Institution MUSS die Anlage schuetzen "
+                    "Seite 4 von 12 Nichtamtliches Inhaltsverzeichnis "
+                    "und den Vorfall melden.")
+    ok, einschuebe, fehlt = F.enthalten_mit_einschueben(soll, mit_einschub)
+    assert ok and einschuebe >= 1 and not fehlt
+
+    ohne_wort = "Die Institution MUSS die Anlage schuetzen und den melden."
+    ok2, _, fehlt2 = F.enthalten_mit_einschueben(soll, ohne_wort)
+    assert not ok2 and "Vorfall" in fehlt2
+
+
+def test_resolver_nimmt_nicht_das_inhaltsverzeichnis() -> None:
+    """Der erste Ankertreffer ist im Gesetzesdruck regelmaessig der falsche.
+
+    Vorn steht ein Inhaltsverzeichnis mit denselben Ueberschriften. Wer dort
+    stehenbleibt, meldet Woerter als fehlend, die zwanzig Seiten weiter unten
+    stehen — so entstanden 13 Fehlalarme.
+    """
+    import fundstellen as F
+
+    soll = "Die Institution MUSS die kritische Anlage besonders schuetzen."
+    bestand = ("Inhaltsuebersicht Die Institution MUSS die kritische Anlage ... 12 "
+               + "Fuelltext " * 60
+               + "Die Institution MUSS die kritische Anlage besonders schuetzen.")
+    ok, _, fehlt = F.enthalten_mit_einschueben(soll, bestand)
+    assert ok, fehlt
+
+
+def test_rechtsakt_klebt_die_aufzaehlungsmarke_nicht_an() -> None:
+    """Aus <DT>1.</DT><DD>Konzepte</DD> muss "1. Konzepte" werden.
+
+    Ohne Leerzeichen an der Elementgrenze entstand "1.Konzepte" — und der
+    Resolver meldete jeden Absatz mit Aufzaehlung als Abweichung, obwohl der
+    Extrakt richtig war. Ein Pruefmassstab, der selbst falsch zusammensetzt,
+    erzeugt genau die Fehlalarme, die ihn unbrauchbar machen.
+    """
+    import xml.etree.ElementTree as ET
+
+    import rechtsakte
+
+    el = ET.fromstring("<Content><P>Folgendes umfassen: <DL><DT>1.</DT>"
+                       "<DD>Konzepte zur Risikoanalyse,</DD><DT>2.</DT>"
+                       "<DD>Bewaeltigung von Vorfaellen.</DD></DL></P></Content>")
+    text = rechtsakte.blocktext(el)
+    assert "1. Konzepte" in text, text
+    assert "2. Bewaeltigung" in text, text
+    assert "1.Konzepte" not in text
+
+
+def test_alle_ground_truths_sind_lesbar() -> None:
+    """Jede Ground-Truth-Datei muss gueltig und vollstaendig deklariert sein.
+
+    Ein Primaertext, der sich nicht laden laesst oder seine Zuordnung nicht
+    nennt, faellt sonst erst im Bericht auf — als "unverifiziert", also als
+    Aussage ueber die Daten statt ueber das Werkzeug.
+    """
+    import json
+
+    ordner = Path(__file__).resolve().parents[1] / "fixtures" / "ground-truth"
+    dateien = sorted(ordner.glob("*.json"))
+    assert dateien, "kein Primaertext vorhanden"
+    for datei in dateien:
+        gt = json.loads(datei.read_text(encoding="utf-8"))
+        for feld in ("quelle", "kurzname", "herkunft", "fundstellen"):
+            assert feld in gt, f"{datei.name}: {feld} fehlt"
+        assert isinstance(gt.get("bestand_muster", []), list), datei.name
+        assert gt["fundstellen"], f"{datei.name}: keine Fundstellen"
+        for f in gt["fundstellen"]:
+            assert f.get("id"), f"{datei.name}: Fundstelle ohne Kennung"
+            assert f.get("text") or f.get("titel"), f"{datei.name}: {f['id']} ohne Inhalt"
+
+
+def test_vollstaendigkeit_findet_die_nie_eingelesene_quelle(tmp_path: Path) -> None:
+    """Der Waechter muss melden, was FEHLT — nicht pruefen, was da ist.
+
+    Alle anderen Pruefungen sehen sich Extrakte an: Deckung, Zellversatz,
+    Kennungen, Fundstellen. Ein Dokument, das nie eingespeist wurde, hat keinen
+    Extrakt, der auffallen koennte, und keinen Eintrag, der widerspraeche — es
+    faellt durch jedes Netz. So fehlten 134 von 602 Dokumenten, und aufgefallen
+    ist es erst ausserhalb dieses Systems.
+
+    Beide Richtungen: bei vollstaendigem Bestand schweigen, bei einer fehlenden
+    Quelle anschlagen — auch wenn sie in einem Archiv steckt.
+    """
+    import json
+    import zipfile
+    from subprocess import run
+
+    wurzel = Path(__file__).resolve().parents[1]
+    eingang = tmp_path / "input"
+    eingang.mkdir()
+    (eingang / "vorhanden.pdf").write_bytes(b"%PDF-1.4 nur ein Platzhalter")
+    korpus = tmp_path / "_KORPUS.json"
+
+    def lauf() -> tuple[int, str]:
+        e = run([sys.executable, str(wurzel / "vollstaendigkeit.py"),
+                 "--input", str(eingang), "--korpus", str(korpus), "--strict"],
+                capture_output=True, text=True, cwd=wurzel)
+        return e.returncode, e.stdout
+
+    korpus.write_text(json.dumps(
+        {"documents": [{"slug": "vorhanden", "source_file": "vorhanden.pdf"}]}), encoding="utf-8")
+    code, aus = lauf()
+    assert code == 0, f"schlug bei vollstaendigem Bestand an:\n{aus}"
+
+    # Eine zweite Quelle, die niemand konvertiert hat.
+    (eingang / "vergessen.pdf").write_bytes(b"%PDF-1.4 auch ein Platzhalter")
+    code, aus = lauf()
+    assert code == 1, f"die fehlende Quelle blieb unbemerkt:\n{aus}"
+    assert "vergessen.pdf" in aus
+
+    # Und eine, die in einem Archiv steckt: 130 Dokumente lagen so daneben.
+    (eingang / "vergessen.pdf").unlink()
+    with zipfile.ZipFile(eingang / "paket.zip", "w") as z:
+        z.writestr("Checkliste_APP.1.1.xlsx", "x")
+    code, aus = lauf()
+    assert code == 1, f"das nicht ausgepackte Archiv blieb unbemerkt:\n{aus}"
+    assert "Checkliste_APP.1.1.xlsx" in aus
+
+    # Ein byte-identisches Duplikat unter anderem Namen (ZIP-Inhalt neben dem
+    # Original) ist keine Luecke: der Hash belegt, dass der Inhalt im Bestand ist.
+    # Ein gleichnamiges Duplikat mit ANDEREM Inhalt bleibt aber eine Luecke.
+    (eingang / "paket.zip").unlink()
+    import hashlib
+    inhalt = (eingang / "vorhanden.pdf").read_bytes()
+    korpus.write_text(json.dumps({"documents": [{
+        "slug": "vorhanden", "source_file": "vorhanden.pdf",
+        "source_sha256": hashlib.sha256(inhalt).hexdigest()}]}), encoding="utf-8")
+    (eingang / "kopie").mkdir()
+    (eingang / "kopie" / "vorhanden-2023.pdf").write_bytes(inhalt)
+    code, aus = lauf()
+    assert code == 0, f"das byte-identische Duplikat wurde als Luecke gemeldet:\n{aus}"
+    assert "Duplikat" in aus
+    (eingang / "kopie" / "vorhanden-2023.pdf").write_bytes(inhalt + b" geaendert")
+    code, aus = lauf()
+    assert code == 1, f"die abweichende Fassung blieb unbemerkt:\n{aus}"
+
+
+def test_seitenmarken_muessen_lueckenlos_sein(tmp_path: Path) -> None:
+    """Jede Seite eines PDF-Extrakts braucht ihre Marke.
+
+    Laenge und Deckung sehen eine fehlende Seitenmarke nicht: die Woerter sind
+    da, nur nicht dort, wo ein Zitat mit Seitenzahl sie sucht. Beide
+    Richtungen: lueckenlos schweigt, eine Luecke schlaegt an.
+    """
+    import json
+
+    import pruefe
+
+    md = tmp_path / "doc.md"
+    md.write_text("---\npages: 3\n---\n<!-- page: 1 -->\nA\n<!-- page: 2 -->\nB\n"
+                  "<!-- page: 3 -->\nC\n", encoding="utf-8")
+    reg = tmp_path / "_KORPUS.json"
+    eintrag = {"slug": "doc", "source_file": "doc.pdf", "markdown": str(md),
+               "pages": 3, "words": 300, "text_coverage_percent": 100.0, "woertlich": True}
+    reg.write_text(json.dumps({"documents": [eintrag]}), encoding="utf-8")
+
+    b = pruefe.Bericht()
+    pruefe.pruefe_korpus(reg, b)
+    assert not [f for f in b.befunde if "Marke" in f.aussage], b.befunde
+
+    md.write_text("---\npages: 3\n---\n<!-- page: 1 -->\nA\n<!-- page: 3 -->\nC\n",
+                  encoding="utf-8")
+    b = pruefe.Bericht()
+    pruefe.pruefe_korpus(reg, b)
+    treffer = [f for f in b.befunde if "Marke" in f.aussage]
+    assert treffer and "[2]" in treffer[0].zahl, b.befunde
+
+
+# Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
+# Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
+# definierte existierte noch nicht und lief im Skriptpfad nie mit.
+if __name__ == "__main__":
+    raise SystemExit(main())

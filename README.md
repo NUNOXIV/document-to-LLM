@@ -89,6 +89,71 @@ python index.py show iso-27001 --heading "A.8"
 python index.py list
 ```
 
+## Zwei Engines: Docling und xberg
+
+`extract.py` kennt zwei Konvertierungs-Engines mit demselben Ausgabevertrag
+(Kopfzeile, `<!-- page: N -->`-Marken, Wortdeckung gegen den Textlayer,
+Bindestrich-Rückgabe). Welche gelaufen ist, steht in jedem Extrakt
+(`converter`, `engine`) und im Manifest.
+
+```bash
+python extract.py norm.pdf --engine docling      # Standard
+python extract.py norm.pdf --engine xberg        # Rust-Kern, nativer Textlayer-Pfad
+python extract.py norm.pdf --engine xberg --xberg-layout   # mit Layoutmodell (huggingface.co)
+ACSOS_ENGINE=xberg python extract.py input/ -r   # Standard per Umgebungsvariable umstellen
+python extract.py --doctor                       # prüft beide Engines
+```
+
+Gemessen am Test-PDF (`tests/fixtures/Muster-Norm-Zweispaltig.pdf`, zwei
+Seiten, eine Control-Tabelle) und an NIST CSWP 29 (32 Seiten), Stand xberg
+1.0.14 / Docling 2.123.0, Befehle: `extract.py … --engine <e>` und
+`fundstellen.py --ground-truth fixtures/ground-truth/muster-norm-99001.json --bestand <ordner>`:
+
+| | Docling | xberg nativ |
+|---|---|---|
+| Test-PDF: Dauer | 14,0 s | 2,7 s (davon 0,02 s Konvertierung) |
+| Test-PDF: Resolver gegen Ground Truth | 13 verifiziert, 0 abweichend | 13 verifiziert, 0 abweichend |
+| Test-PDF: Control-Tabelle | als Tabelle (6 Zeilen) | als Fließtext (0 Zeilen) |
+| NIST CSWP 29: Überschriften / Tabellenzeilen | 41 / 50 | 14 / 4 |
+
+Der Wortlaut ist bei beiden vollständig und belegt. Was xberg im nativen
+Pfad nicht liefert, ist die Struktur: Tabellen werden zu Prosa, Überschriften
+fehlen zum Teil. Für `publish.py`, das Anhang-A-Controls über Tabellenzeilen
+auflöst, ist das ein Verlust. Sein Layoutmodell (`--xberg-layout`) und seine
+OCR-Backends holt xberg von huggingface.co; wo der Host gesperrt ist, meldet
+der Extrakt das als Warnung und fällt auf den nativen Pfad zurück, statt
+still weniger zu liefern. Deshalb bleibt Docling hier Standard, xberg ist
+eine Zeile entfernt.
+
+## Scan-Erkennung und zwei Worker
+
+Vor jedem PDF liest `extract.py` den Textlayer mit pypdfium2 (Sekunden, keine
+Modelle). Unter 120 Zeichen je Seite gilt die Datei als Scan und geht sofort
+mit OCR an Docling, statt erst ohne OCR durchzulaufen, „textarm" zu melden und
+ein zweites Mal zu laufen. Der Befund steht als `scan_probe: scan|textlayer`
+in der Kopfzeile; die Prüfung nach dem Lauf bleibt bestehen.
+
+`--workers 2` (Standard) hält zwei Docling-Prozesse mit je einmal geladenen
+Modellen und verteilt die Dateien darauf. Jeder Worker braucht bis zu 8 GB,
+zwei sind auf 16 GB das Maximum; `--reset-every 40` ersetzt einen Worker nach
+40 Dokumenten, weil sein Speicher über lange Läufe wächst.
+
+Gemessen auf 4 Kernen, 15 GB, dieselben drei PDFs (Test-PDF, NIST CSWP 29
+mit 32 Seiten, CISM Strategic Blueprint als 14-seitiger Scan mit OCR),
+Befehl: `extract.py <drei PDFs> --workers N --timeout 0 -o <ordner>`:
+
+| | Wandzeit | Scan (OCR) | NIST |
+|---|---|---|---|
+| 1 Worker | 193 s | 112 s | 60 s |
+| 2 Worker | 173 s | 144 s | 115 s |
+| 2 Worker, je 2 Threads (`OMP_NUM_THREADS=2`) | 205 s | 184 s | 118 s |
+
+Docling nutzt schon in einem Prozess alle Kerne. Zwei Worker bringen auf
+vier Kernen 10 %, weil sich die Dokumente gegenseitig bremsen; der Gewinn
+wächst mit der Kernzahl und ist dort neu zu messen. Die Scan-Vorabprobe
+sparte am Blueprint den verlorenen ersten Lauf: 143 s statt 184 s mit
+derselben OCR.
+
 ## Was den Output belastbar macht
 
 - **Provenienz je Datei:** YAML-Front-Matter mit SHA-256 der Quelle, Seitenzahl,
@@ -222,15 +287,81 @@ python index.py build --output output            # Retrieval-Index
 python tracker.py --output output --vault ~/obsidian-vault --to output/_TRACKER.md
 ```
 
+## Drei Prüfebenen — Konsistenz ist nicht Wahrheit
+
+Die Abweichungsprüfung oben misst, ob der Extrakt zur Quelle passt. Sie misst
+nicht, ob der *Wortlaut* stimmt, den ein Export unter einer Kennung führt.
+Dafür gibt es drei Wächter, die verschiedene Dinge messen:
+
+```bash
+python pruefe.py      --export export/ --strict                   # Plausibilität
+python inhalt.py      --export export/ --output output/ --strict  # Wortlaut je Kennung
+python fundstellen.py --bestand output/ --strict                  # gegen den Primärtext
+python bindestriche.py                                            # verlorene Bindestriche
+```
+
+| Wächter | Frage | Blind für |
+|---|---|---|
+| `pruefe.py` | Ist der Bestand in sich plausibel? Längenverteilung, doppelte Kennungen, leere Texte | Ob der Inhalt stimmt |
+| `inhalt.py` | Steht unter jeder Kennung ihr eigener Wortlaut? | Ob die Quelle richtig gelesen wurde |
+| `fundstellen.py` | Stimmt der Wortlaut mit einem Primärtext überein, den niemand aus dem Ergebnis abgeleitet hat? | Alles, wofür keine Ground Truth vorliegt |
+
+Der Befund des Resolvers ist dreiwertig und nie zweiwertig: `verifiziert`,
+`abweichend` (Kennung da, Wortlaut nicht — der gefährliche Fall) und
+`unverifiziert` (nicht geprüft). „Unverifiziert" ist ausdrücklich erlaubt.
+Ein ungeprüftes Ergebnis, das wie ein geprüftes aussieht, nicht.
+
+### Primärtexte importieren
+
+```bash
+python rechtsakte.py import input/ --alle   # amtliches XML -> fixtures/ground-truth/
+python rechtsakte.py liste                  # welche Primärtexte liegen vor, mit Stand
+```
+
+`rechtsakte.py` liest das XML von gesetze-im-internet.de über den XML-Parser der
+Standardbibliothek — keine Ausnahme von der Parser-Regel: die gilt PDFs, wo ein
+Parser aus Koordinaten und Schriftgrößen raten muss. Hier ist jeder Paragraf ein
+Element mit Bezeichnung, Titel und Text, nach veröffentlichter DTD. Amtliche
+Werke sind nach § 5 UrhG gemeinfrei; dieser Primärtext darf deshalb — anders als
+ISO- oder TISAX-Wortlaut — im Repository liegen.
+
+Was der erste Lauf gegen den BSIG-Extrakt fand: **Docling verliert Bindestriche.**
+Beim Zeilenumbruch entfernt es den Trennstrich — richtig bei „Informations-/
+sicherheit", falsch bei „IKT-/Systemen", woraus „IKTSystemen" wird. Die
+Wortdeckung sah das nie, weil sie denselben Strich auch auf der Quellseite
+entfernt: beide Seiten hießen gleich, die Deckung blieb 100,0 %. Betroffen waren
+**187 von 269 PDF-Extrakten mit 1058 Wörtern.**
+
+`bindestriche.py` setzt sie zurück — nur mit doppeltem Beleg: die Form ohne
+Bindestrich kommt in der Quelle nirgends vor, **und** die Form mit Bindestrich
+steht dort zusammenhängend, also ohne Umbruch dazwischen. Der zweite Beleg ist
+der entscheidende: ohne ihn kehrt die Reparatur die echte Silbentrennung um und
+macht aus dem richtigen „Abnahme" wieder „Ab-nahme". Ohne Schalter wird nur
+gezählt und angezeigt; `--reparieren` ändert.
+
+`fixtures/ground-truth/` hält den Primärtext. `tests/make_fixture.py` **erzeugt
+das Test-PDF daraus**, `fundstellen.py` prüft **dagegen** — eine Datei, zwei
+Richtungen. Stünde der Wortlaut zweimal, wäre die Prüfung eine
+Selbstbestätigung.
+
+`tests/pruefungen.sh` belegt für jeden Wächter beide Richtungen: bei gesunden
+Daten muss er schweigen, bei absichtlich beschädigten anschlagen. Ein Wächter,
+der nur die erste Probe besteht, könnte kaputt sein und schwiege genauso.
+
 ## Regeln für Agenten
 
 Siehe [`SKILL.md`](SKILL.md). Kurzfassung: Kontext kommt aus `output/`, niemals
 aus dem PDF; Zitate mit Slug, Gliederung und Seitenzahl belegen; bei
 `extraction_status: warn` die Warnungen lesen.
 
+Wer am Repo selbst arbeitet: [`CLAUDE.md`](CLAUDE.md) (Befehle, vier
+Verifikationsregeln, Codestil) und [`lessons-learned.md`](lessons-learned.md)
+(jeder gefundene Defekt mit Ursache, Fix und Regressionstest).
+
 ## Ordner
 
 ```
+fixtures/ground-truth/   Primärtexte als Prüfmaßstab (erfunden oder amtlich, deshalb im Repo)
 input/     Quelldokumente
 output/    *.md (verbindliche Textquelle für Agenten)
            *.docling.json / *.passthrough.json (Struktur für verarbeitende Systeme)

@@ -1,0 +1,1118 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Externe-Cloud-Dienste",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 5801976641788835497,
+    "filename": "BSI---Externe-Cloud-Dienste.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 370.2055099747698,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            43
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund Externe Cloud-Dienste",
+      "text": "Mindeststandards Bund Externe Cloud-Dienste"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 522.867124538869,
+            "b": 371.41107103311015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            112
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung externer Cloud-Dienste",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung externer Cloud-Dienste",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 259.20000428000003,
+            "r": 537.5980966000783,
+            "b": 109.15429624619048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            770
+          ]
+        }
+      ],
+      "orig": "Der Bedarf an sicheren Cloud-Diensten nimmt auch in der Bundesverwaltung stetig zu. Dabei können sich in der Praxis die Anwendungsbereiche stark unterscheiden, sodass auch in Abhängigkeit vom Schutzbedarf der zu verarbeitenden Daten die Informationssicherheit eine zunehmend zentrale Rolle einnimmt. Die Einforderung und Umsetzung von Sicherheitsanforderungen ist daher ein wichtiger Bestandteil bei der Inanspruchnahme von Cloud-Diensten. Vor diesem Hintergrund hat das BSI (Bundesamt für Sicherheit in der Informationstechnik) zielgerichtete Sicherheitsanforderungen als Mindeststandard nach erarbeitet. § 44 Abs. (Absatz) 1 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Der Bedarf an sicheren Cloud-Diensten nimmt auch in der Bundesverwaltung stetig zu. Dabei können sich in der Praxis die Anwendungsbereiche stark unterscheiden, sodass auch in Abhängigkeit vom Schutzbedarf der zu verarbeitenden Daten die Informationssicherheit eine zunehmend zentrale Rolle einnimmt. Die Einforderung und Umsetzung von Sicherheitsanforderungen ist daher ein wichtiger Bestandteil bei der Inanspruchnahme von Cloud-Diensten. Vor diesem Hintergrund hat das BSI (Bundesamt für Sicherheit in der Informationstechnik) zielgerichtete Sicherheitsanforderungen als Mindeststandard nach erarbeitet. § 44 Abs. (Absatz) 1 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 85.95001149874997,
+            "r": 530.7380403859141,
+            "b": 79.90429746494044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Dieser Mindeststandard greift die Themenkomplexe Informationssicherheit, Transparenz der Cloud-",
+      "text": "Dieser Mindeststandard greift die Themenkomplexe Informationssicherheit, Transparenz der Cloud-"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 67.95001224875,
+            "r": 452.49576544600876,
+            "b": 61.90429821494047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            79
+          ]
+        }
+      ],
+      "orig": "Diensterbringung und Nachweis über diese Aspekte durch geeignete Prüfungen auf.",
+      "text": "Diensterbringung und Nachweis über diese Aspekte durch geeignete Prüfungen auf."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 49.950012998750026,
+            "r": 546.4259770072503,
+            "b": 25.90429971494052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            192
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 529.722960653209,
+            "b": 781.1542682461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            193,
+            443
+          ]
+        }
+      ],
+      "orig": "Rahmenbedingungen für die Cloud-Diensterbringung werden konkretisiert. Zudem wird vorgegeben, wie die Prüfnachweise des Cloud-Anbieters für das Informationssicherheitsmanagement der jeweiligen Einrichtung (Einrichtungen der Bundesverwaltung im Sinne des ) genutzt werden sollen. § 29 Abs. (Absatz) 1 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Rahmenbedingungen für die Cloud-Diensterbringung werden konkretisiert. Zudem wird vorgegeben, wie die Prüfnachweise des Cloud-Anbieters für das Informationssicherheitsmanagement der jeweiligen Einrichtung (Einrichtungen der Bundesverwaltung im Sinne des ) genutzt werden sollen. § 29 Abs. (Absatz) 1 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 757.94998349875,
+            "r": 546.8125224911443,
+            "b": 571.9042769649404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1077
+          ]
+        }
+      ],
+      "orig": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) hat mit der sogenannten Nutzung und Mitnutzung externer Cloud-Dienste zwei wesentliche Anwendungsbereiche identifiziert, die für die Bundesverwaltung von besonderer Bedeutung sind und im Mindeststandard thematisiert werden. Bei der klassischen Cloud-Nutzung hat die Bundesbehörde einen Bedarf an einer IT (Informationstechnik)- Leistung, die nicht durch eigene IT (Informationstechnik)-Ressourcen, sondern über einen externen Cloud-Dienst erbracht werden soll. Hierbei handelt es sich letztendlich um eine sogenannte Make-orBuy-Entscheidung der Einrichtung. Sofern sich die Einrichtung für die \"Buy\"-Option entscheidet, schließt diese mit einem Wirtschaftsunternehmen (Cloud-Anbieter) einen Vertrag über die Erbringung der IT (Informationstechnik)-Leistung ab. Die Einrichtung nimmt somit die Rolle des Auftraggebers ein. Nach Einschätzung des BSI (Bundesamt für Sicherheit in der Informationstechnik) handelt es sich hierbei um den Regelfall bei der Inanspruchnahme von externen Cloud-Diensten durch Einrichtungen.",
+      "text": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) hat mit der sogenannten Nutzung und Mitnutzung externer Cloud-Dienste zwei wesentliche Anwendungsbereiche identifiziert, die für die Bundesverwaltung von besonderer Bedeutung sind und im Mindeststandard thematisiert werden. Bei der klassischen Cloud-Nutzung hat die Bundesbehörde einen Bedarf an einer IT (Informationstechnik)- Leistung, die nicht durch eigene IT (Informationstechnik)-Ressourcen, sondern über einen externen Cloud-Dienst erbracht werden soll. Hierbei handelt es sich letztendlich um eine sogenannte Make-orBuy-Entscheidung der Einrichtung. Sofern sich die Einrichtung für die \"Buy\"-Option entscheidet, schließt diese mit einem Wirtschaftsunternehmen (Cloud-Anbieter) einen Vertrag über die Erbringung der IT (Informationstechnik)-Leistung ab. Die Einrichtung nimmt somit die Rolle des Auftraggebers ein. Nach Einschätzung des BSI (Bundesamt für Sicherheit in der Informationstechnik) handelt es sich hierbei um den Regelfall bei der Inanspruchnahme von externen Cloud-Diensten durch Einrichtungen."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 548.6999922175,
+            "r": 550.5728055094654,
+            "b": 398.6542841836906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            851
+          ]
+        }
+      ],
+      "orig": "Hinzu kommen jedoch auch Bereiche, die hier als Mitnutzung bezeichnet werden. Dabei nehmen IT (Informationstechnik)-Anwender einer Einrichtung externe Cloud-Dienste in Anspruch, ohne dass zwischen der Einrichtung und dem eigentlichen Cloud-Anbieter ein Vertragsverhältnis besteht. Somit ist die Einrichtung in diesen Fällen nicht Auftraggeber des Cloud-Dienstes. Insbesondere wenn IT (Informationstechnik)-Anwender im Rahmen von (internationalen) Projekten oder Arbeitsgruppen institutionsübergreifend zusammenarbeiten wollen, wird diese Form der Mitnutzung immer häufiger gewählt. Da einige Sicherheitsanforderungen aus dem Mindeststandard zur Nutzung externer CloudDienste - insbesondere zur Beschaffungsphase - regelmäßig zu weit greifen, regelt ein Kapitel zur Mitnutzung diesen Anwendungsbereich und hilft somit bei der Bewertung solcher Dienste.",
+      "text": "Hinzu kommen jedoch auch Bereiche, die hier als Mitnutzung bezeichnet werden. Dabei nehmen IT (Informationstechnik)-Anwender einer Einrichtung externe Cloud-Dienste in Anspruch, ohne dass zwischen der Einrichtung und dem eigentlichen Cloud-Anbieter ein Vertragsverhältnis besteht. Somit ist die Einrichtung in diesen Fällen nicht Auftraggeber des Cloud-Dienstes. Insbesondere wenn IT (Informationstechnik)-Anwender im Rahmen von (internationalen) Projekten oder Arbeitsgruppen institutionsübergreifend zusammenarbeiten wollen, wird diese Form der Mitnutzung immer häufiger gewählt. Da einige Sicherheitsanforderungen aus dem Mindeststandard zur Nutzung externer CloudDienste - insbesondere zur Beschaffungsphase - regelmäßig zu weit greifen, regelt ein Kapitel zur Mitnutzung diesen Anwendungsbereich und hilft somit bei der Bewertung solcher Dienste."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 375.44999943625,
+            "r": 528.4630566307051,
+            "b": 351.4042861524406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            133
+          ]
+        }
+      ],
+      "orig": "Aktualisierung Dezember 2022: Der Mindeststandard wurde auf die Version 2.1 aktualisiert. Die vorgenommenen Anpassungen werden in der",
+      "text": "Aktualisierung Dezember 2022: Der Mindeststandard wurde auf die Version 2.1 aktualisiert. Die vorgenommenen Anpassungen werden in der"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 69.9960908334961,
+            "t": 339.45000093625004,
+            "r": 487.64000078166566,
+            "b": 315.4042876524404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            135
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht zum Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung externer Cloud-Dienste",
+      "text": "Änderungsübersicht zum Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung externer Cloud-Dienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Externe_Cloud-Dienste/Aenderungsuebersicht_MST_Cloud-Dienste/Aenderungsuebersicht_MST_Cloud-Dienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 303.4500024362501,
+            "r": 545.9997031250113,
+            "b": 207.40429215244058,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            468
+          ]
+        }
+      ],
+      "orig": "aufgelistet. Ebenso wurden die Umsetzungshinweise und die Referenztabelle aktualisiert: Die Umsetzungshinweise erläutern die neue Version des Mindeststandards im Hinblick auf die Umsetzungsaspekte. Die Referenztabelle basiert auf dem aktuellen IT (Informationstechnik)- Grundschutz-Kompendium (Edition 2022) und berücksichtigt nun nur noch die im Mindeststandard explizit erwähnten IT (Informationstechnik)-Grundschutz-Bausteine bzw. (beziehungsweise) - Anforderungen.",
+      "text": "aufgelistet. Ebenso wurden die Umsetzungshinweise und die Referenztabelle aktualisiert: Die Umsetzungshinweise erläutern die neue Version des Mindeststandards im Hinblick auf die Umsetzungsaspekte. Die Referenztabelle basiert auf dem aktuellen IT (Informationstechnik)- Grundschutz-Kompendium (Edition 2022) und berücksichtigt nun nur noch die im Mindeststandard explizit erwähnten IT (Informationstechnik)-Grundschutz-Bausteine bzw. (beziehungsweise) - Anforderungen."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 184.20000740499995,
+            "r": 549.1368441692974,
+            "b": 70.15429787119069,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            539
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 798.6074818046875,
+            "r": 256.4132112411157,
+            "b": 789.1610536268602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard",
+      "text": "Download Mindeststandard",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 763.19998328,
+            "r": 536.5554683935213,
+            "b": 739.1542699961906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            110
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Nutzung externer Cloud-Dienste in der Bundesverwaltung",
+      "text": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Nutzung externer Cloud-Dienste in der Bundesverwaltung",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_Nutzung_externer_Cloud-Dienste_Version_2_1.pdf?__blob=publicationFile&v=4"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 691.3574862734374,
+            "r": 246.85071133955327,
+            "b": 681.9110580956101,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Referenztabelle",
+      "text": "Download Referenztabelle",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 655.9499877487499,
+            "r": 534.539477477521,
+            "b": 613.9042752149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            200
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Referenztabelle zum Mindeststandards des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Nutzung externer Cloud-Dienste Version 2.1 in der Bundesverwaltung (IT-GrundschutzKompendium - Edition 2022)",
+      "text": "IT-Grundschutz-Referenztabelle zum Mindeststandards des BSI nach § 8 Abs. 1 Satz 1 BSIG zur Nutzung externer Cloud-Dienste Version 2.1 in der Bundesverwaltung (IT-GrundschutzKompendium - Edition 2022)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Referenztabelle_Mindeststandard_externe_Cloud-Dienste_V2_1-Grundschutz2022.xlsx?__blob=publicationFile&v=3"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 566.1074914921874,
+            "r": 289.18818452549186,
+            "b": 556.66106331436,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "Download Umsetzungshinweise",
+      "text": "Download Umsetzungshinweise",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 530.6999929674998,
+            "r": 545.8074416080226,
+            "b": 506.6542796836907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "Umsetzungshinweise zum Mindeststandard des BSI zur Nutzung externer Cloud-Dienste nach § 8 Abs. 1 BSIG Version 2.1",
+      "text": "Umsetzungshinweise zum Mindeststandard des BSI zur Nutzung externer Cloud-Dienste nach § 8 Abs. 1 BSIG Version 2.1",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Umsetzungshinweise_Mindeststandards_Externe_Cloud-Dienste_Version_2_1.pdf?__blob=publicationFile&v=3"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 176.75390263525372,
+            "t": 398.8574984609377,
+            "r": 468.5600032266656,
+            "b": 389.4110702831099,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Weitere empfehlenswerte Dokumente",
+      "text": "Weitere empfehlenswerte Dokumente",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 199.25390169775372,
+            "t": 363.44999993625015,
+            "r": 296.88577942975877,
+            "b": 357.40428590244073,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Kriterienkatalog C5",
+      "text": "Kriterienkatalog C5",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Empfehlungen-nach-Angriffszielen/Cloud-Computing/Kriterienkatalog-C5/kriterienkatalog-c5_node.html"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 176.75390263525372,
+            "t": 345.45000068624995,
+            "r": 503.59745266677214,
+            "b": 321.4042874024408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "IT-Rat: Kriterien für die Nutzung von Cloud-Diensten der ITWirtschaft",
+      "text": "IT-Rat: Kriterien für die Nutzung von Cloud-Diensten der ITWirtschaft",
+      "hyperlink": "https://www.cio.bund.de/Webs/CIO/DE/cio-bund/steuerung-it-bund/it-rat/it-rat-node.html"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 176.75390263525372,
+            "t": 309.45000218625,
+            "r": 507.713571895267,
+            "b": 285.4042889024404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            121
+          ]
+        }
+      ],
+      "orig": "Entscheidung 2016/35 des IT-Planungsrates vom 13.10.2016 - Kriterien für die Nutzung von Cloud-Diensten der IT-Wirtschaft",
+      "text": "Entscheidung 2016/35 des IT-Planungsrates vom 13.10.2016 - Kriterien für die Nutzung von Cloud-Diensten der IT-Wirtschaft",
+      "hyperlink": "https://www.it-planungsrat.de/beschluss/beschluss-2016-35"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 177.6075076796874,
+            "r": 385.34051271914456,
+            "b": 168.16107950186006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 116.24999515625,
+            "t": 73.20001202999993,
+            "r": 214.73392565275267,
+            "b": 67.15429799619051,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 320.4140491494141,
+            "t": 73.20001202999993,
+            "r": 539.5818799674207,
+            "b": 51.4042986524405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            19,
+            73
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht FAQ zum Mindeststandard Nutzung externer Cloud-Dienste",
+      "text": "Änderungsübersicht FAQ zum Mindeststandard Nutzung externer Cloud-Dienste"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 810.4499813112502,
+            "r": 387.1355325693521,
+            "b": 804.4042672774408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund",
+      "text": "Zurück zu Mindeststandards Bund",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Mindeststandards_node.html"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 708.4499855612503,
+            "r": 328.2153609493595,
+            "b": 702.4042715274409,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Cloud",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Cloud",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST-Cloud",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 592.1999904049999,
+            "r": 158.39995432500166,
+            "b": 532.1542786211908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 501.44999418625,
+            "r": 313.9438494440058,
+            "b": 495.4042801524406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 441.3974966884375,
+            "r": 509.74872171046906,
+            "b": 436.48535403596725,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.25224283860689,
+            "t": 553.1052061814885,
+            "r": 170.57590755726534,
+            "b": 491.176064139695,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.1028974744155,
+            "t": 135.33699045709966,
+            "r": 190.26882663523236,
+            "b": 80.29974098512776,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.03915392667164,
+            "t": 137.08053812110734,
+            "r": 455.6535697506463,
+            "b": 81.1415799181433,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    }
+  }
+}

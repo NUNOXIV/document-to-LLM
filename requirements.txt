@@ -6,6 +6,7 @@
 
 docling>=2.26.0        # Konvertierungs-Engine (PDF, DOCX, XLSX, PPTX, HTML, MD)
 docling-core>=2.23.0   # DoclingDocument, Serializer, HierarchicalChunker
+xberg>=1.0.14          # zweite Engine (extract.py --engine xberg), Rust-Kern
 click>=8.1.7           # CLI
 PyYAML>=6.0            # publish.py: maschinenlesbare Kataloge (BSI C5 als YAML)
 onnxruntime>=1.17      # OCR fuer gescannte PDFs, siehe Hinweis unten

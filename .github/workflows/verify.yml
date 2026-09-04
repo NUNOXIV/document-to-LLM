@@ -39,11 +39,27 @@ jobs:
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
 
-      - name: Fixture-Generator pruefen
-        run: python tests/make_fixture.py "$RUNNER_TEMP/fixture.pdf"
+      - name: Linter
+        # Schmaler Regelsatz (pyproject.toml). Rot heisst hier: echter Befund.
+        run: ruff check .
 
       - name: Unit-Tests (modellfrei)
-        run: python tests/test_units.py
+        # pytest, nicht der Skriptpfad: der laesst die Tests mit Fixtures aus.
+        # Frueher lief hier "python tests/test_units.py" und fuenf geschriebene
+        # Waechtertests liefen nie mit -- geschrieben, gruen gemeldet, nie
+        # ausgefuehrt.
+        run: python -m pytest
+
+      - name: Fundstellen-Resolver gegen den Primaertext
+        # Die Ebene, die Konsistenzpruefungen nicht erreichen: stimmt der
+        # Woertlaut mit fixtures/ground-truth/ ueberein. --strict, weil auch
+        # "unverifiziert" hier ein Befund ist: das Fixture MUSS aufloesbar sein.
+        run: |
+          python tests/make_fixture.py "$RUNNER_TEMP/Muster-Norm-99001.pdf"
+          python extract.py "$RUNNER_TEMP/Muster-Norm-99001.pdf" \
+            -o "$RUNNER_TEMP/gt-out" --json
+          python fundstellen.py --ground-truth fixtures/ground-truth/muster-norm-99001.json \
+            --bestand "$RUNNER_TEMP/gt-out" --strict
 
       - name: Office-Pfad (DOCX)
         run: ./tests/smoke.sh

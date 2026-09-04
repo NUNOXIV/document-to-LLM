@@ -1,0 +1,32 @@
+# Werkzeugkonfiguration. Kein Paketbau — dieses Repo ist ein Skill, keine
+# Bibliothek. Hier steht nur, wonach Linter und Testlauf sich richten, damit
+# lokal, im pre-commit-Hook und in CI dieselben Regeln gelten. Drei Orte mit
+# je eigener Meinung waeren drei Gelegenheiten, rot zu werden.
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [".venv", "input", "output", "export", "__pycache__"]
+
+[tool.ruff.lint]
+# Bewusst schmal: E, F, W — Syntaxnahes und tote Namen. Breitere Regelsaetze
+# (Importsortierung, Modernisierungen) haetten hier achtzehn Befunde in sechs
+# Dateien erzeugt, die mit dem Zweck dieses Repos nichts zu tun haben. Ein
+# Linter, dessen Rot meistens Geschmack ist, wird weggeklickt; dann faellt das
+# eine Rot, das ein echter Fehler war, nicht mehr auf.
+select = ["E", "F", "W"]
+ignore = [
+    # Zeilenlaenge steht in line-length und wird beim Schreiben eingehalten;
+    # die deutschen Kommentare in diesem Repo sind bewusst ausfuehrlich.
+    "E501",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Testmodule setzen sys.path, bevor sie Projektmodule importieren.
+"tests/*" = ["E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+# Kein -x: ein Lauf soll alle Befunde zeigen, nicht nur den ersten.
+addopts = "-q"

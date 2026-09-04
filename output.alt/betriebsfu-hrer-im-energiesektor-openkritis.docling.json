@@ -1,0 +1,5231 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Betriebsfu-hrer-im-Energiesektor-OpenKRITIS",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 2176684146827477811,
+    "filename": "Betriebsfu-hrer-im-Energiesektor-OpenKRITIS.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/texts/80"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/texts/92"
+      },
+      {
+        "$ref": "#/texts/93"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/98"
+      },
+      {
+        "$ref": "#/texts/99"
+      },
+      {
+        "$ref": "#/texts/100"
+      },
+      {
+        "$ref": "#/texts/101"
+      },
+      {
+        "$ref": "#/texts/102"
+      },
+      {
+        "$ref": "#/texts/103"
+      },
+      {
+        "$ref": "#/texts/104"
+      },
+      {
+        "$ref": "#/texts/105"
+      },
+      {
+        "$ref": "#/texts/106"
+      },
+      {
+        "$ref": "#/texts/107"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/113"
+      },
+      {
+        "$ref": "#/texts/114"
+      },
+      {
+        "$ref": "#/texts/115"
+      },
+      {
+        "$ref": "#/texts/116"
+      },
+      {
+        "$ref": "#/texts/117"
+      },
+      {
+        "$ref": "#/texts/118"
+      },
+      {
+        "$ref": "#/texts/119"
+      },
+      {
+        "$ref": "#/texts/120"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/123"
+      },
+      {
+        "$ref": "#/texts/124"
+      },
+      {
+        "$ref": "#/texts/125"
+      },
+      {
+        "$ref": "#/texts/126"
+      },
+      {
+        "$ref": "#/texts/127"
+      },
+      {
+        "$ref": "#/texts/128"
+      },
+      {
+        "$ref": "#/texts/129"
+      },
+      {
+        "$ref": "#/texts/130"
+      },
+      {
+        "$ref": "#/texts/131"
+      },
+      {
+        "$ref": "#/texts/132"
+      },
+      {
+        "$ref": "#/groups/10"
+      },
+      {
+        "$ref": "#/texts/136"
+      },
+      {
+        "$ref": "#/groups/11"
+      },
+      {
+        "$ref": "#/texts/146"
+      },
+      {
+        "$ref": "#/texts/147"
+      },
+      {
+        "$ref": "#/texts/148"
+      },
+      {
+        "$ref": "#/texts/149"
+      },
+      {
+        "$ref": "#/texts/150"
+      },
+      {
+        "$ref": "#/texts/151"
+      },
+      {
+        "$ref": "#/texts/152"
+      },
+      {
+        "$ref": "#/texts/153"
+      },
+      {
+        "$ref": "#/texts/154"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/94"
+        },
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/108"
+        },
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        },
+        {
+          "$ref": "#/texts/111"
+        },
+        {
+          "$ref": "#/texts/112"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/121"
+        },
+        {
+          "$ref": "#/texts/122"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/133"
+        },
+        {
+          "$ref": "#/texts/134"
+        },
+        {
+          "$ref": "#/texts/135"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/137"
+        },
+        {
+          "$ref": "#/texts/138"
+        },
+        {
+          "$ref": "#/texts/139"
+        },
+        {
+          "$ref": "#/texts/140"
+        },
+        {
+          "$ref": "#/texts/141"
+        },
+        {
+          "$ref": "#/texts/142"
+        },
+        {
+          "$ref": "#/texts/143"
+        },
+        {
+          "$ref": "#/texts/144"
+        },
+        {
+          "$ref": "#/texts/145"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 139.37553604109786,
+            "r": 109.73016219732239,
+            "b": 135.0647255257732,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 128.3805831072209,
+            "r": 77.70449849619595,
+            "b": 124.06977259189631,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NIS2",
+      "text": "NIS2",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 117.385630173344,
+            "r": 85.29216135260157,
+            "b": 113.07481965801935,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Europa",
+      "text": "Europa",
+      "hyperlink": "https://www.openkritis.de/eu/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 106.39067723946704,
+            "r": 93.42861749378636,
+            "b": 102.07986672414239,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Betreiber",
+      "text": "Betreiber",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 95.39572430559008,
+            "r": 89.63955811948914,
+            "b": 91.08491379026549,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Security",
+      "text": "Security",
+      "hyperlink": "https://www.openkritis.de/massnahmen/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 84.40077137171318,
+            "r": 84.21843549236925,
+            "b": 80.08996085638853,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "School",
+      "text": "School",
+      "hyperlink": "https://www.openkritis.de/school/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 58.15891108571134,
+            "r": 245.85474521753946,
+            "b": 49.35276822663411,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im EnWG",
+      "text": "Betriebsführer im EnWG",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "1/8",
+      "text": "1/8"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 565.1245439175551,
+            "r": 153.40933087179366,
+            "b": 560.8137334022305,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Regulierte Unternehmen",
+      "text": "Regulierte Unternehmen",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 554.1295909836782,
+            "r": 109.73016219732239,
+            "b": 549.8187804683536,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Identifikation",
+      "text": "Identifikation",
+      "hyperlink": "https://www.openkritis.de/betreiber/identifikation-kritische-infrastruktur.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 543.1346380498012,
+            "r": 110.26941127655746,
+            "b": 538.8238275344767,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Registrierung",
+      "text": "Registrierung",
+      "hyperlink": "https://www.openkritis.de/betreiber/registrierung-kritis-anlagen.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 532.1396851159243,
+            "r": 107.0148288787233,
+            "b": 527.8288746005996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Meldepflicht",
+      "text": "Meldepflicht",
+      "hyperlink": "https://www.openkritis.de/betreiber/meldepflichten-bsig.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 521.1447321820474,
+            "r": 121.1164287313022,
+            "b": 516.8339216667227,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Geltungsbereich",
+      "text": "Geltungsbereich",
+      "hyperlink": "https://www.openkritis.de/betreiber/geltungsbereich-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 510.1497792481704,
+            "r": 113.51444946884754,
+            "b": 505.83896873284584,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Betriebsführer",
+      "text": "Betriebsführer",
+      "hyperlink": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 499.1548263142935,
+            "r": 112.44072360861523,
+            "b": 494.8440157989688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Komponenten",
+      "text": "Komponenten",
+      "hyperlink": "https://www.openkritis.de/betreiber/kritische-komponenten.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 488.15987338041657,
+            "r": 97.78555836848511,
+            "b": 483.8490628650919,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Prüfungen",
+      "text": "Prüfungen",
+      "hyperlink": "https://www.openkritis.de/pruefung/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 477.16492044653955,
+            "r": 99.93778238718761,
+            "b": 472.8541099312149,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Reifegrade",
+      "text": "Reifegrade",
+      "hyperlink": "https://www.openkritis.de/betreiber/reifegrade-kritis-nis2-run.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 466.16996751266265,
+            "r": 97.78078636344597,
+            "b": 461.859156997338,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Bußgelder",
+      "text": "Bußgelder",
+      "hyperlink": "https://www.openkritis.de/betreiber/bussgelder-kritis-bsig.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "2/8",
+      "text": "2/8"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "3/8",
+      "text": "3/8"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 565.1246820135495,
+            "r": 803.4954733522526,
+            "b": 549.8189185643478,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            362
+          ]
+        }
+      ],
+      "orig": "Viele Betreiber von Energienetzen und Energieanlagen haben die operative Betriebsführung an externe Betriebsführer ausgelagert. Die Betreiber bleiben für den Betrieb der regulierten Anlagen und die 'Systeme, Anwendungen und Komponenten im Geltungsbereich des IT-Sicherheitskatalogs' gesamtverantwortlich - die operative Betriebsführung erfolgt aber durch Dritte.",
+      "text": "Viele Betreiber von Energienetzen und Energieanlagen haben die operative Betriebsführung an externe Betriebsführer ausgelagert. Die Betreiber bleiben für den Betrieb der regulierten Anlagen und die 'Systeme, Anwendungen und Komponenten im Geltungsbereich des IT-Sicherheitskatalogs' gesamtverantwortlich - die operative Betriebsführung erfolgt aber durch Dritte."
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 533.3614846490161,
+            "r": 105.38276552816771,
+            "b": 529.0506741336912,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Regulierung",
+      "text": "Regulierung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 522.3665317151392,
+            "r": 91.82041465709099,
+            "b": 518.0557211998143,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Pflichten",
+      "text": "Pflichten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 511.3715787812623,
+            "r": 115.43761177262843,
+            "b": 507.06076826593744,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Ausblick NIS2",
+      "text": "Ausblick NIS2",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 490.6033343506058,
+            "r": 804.9986849435842,
+            "b": 475.297570901404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            294
+          ]
+        }
+      ],
+      "orig": "Für die Konstellation Betriebsführung durch Dritte gibt es Regeln durch die Bundesnetzagentur (BNetzA), die sowohl Betreiber als auch Betriebsführer zum ordnungsgemäßen Betrieb, dem Aufbau eines ISMS und einer Zertifizierung nach IT-Sicherheitskatalog (ISO 27001, 27002 und 27019) verpflichten.",
+      "text": "Für die Konstellation Betriebsführung durch Dritte gibt es Regeln durch die Bundesnetzagentur (BNetzA), die sowohl Betreiber als auch Betriebsführer zum ordnungsgemäßen Betrieb, dem Aufbau eines ISMS und einer Zertifizierung nach IT-Sicherheitskatalog (ISO 27001, 27002 und 27019) verpflichten."
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 336.6739932763287,
+            "r": 226.0075160599239,
+            "b": 332.3631827610038,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "NIS2 im Energiesektor: BSI, BNetzA und EnWG",
+      "text": "NIS2 im Energiesektor: BSI, BNetzA und EnWG",
+      "hyperlink": "https://www.openkritis.de/school/26/#w26.3"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 195.21306108002582,
+            "t": 304.9107959117953,
+            "r": 291.8483896737283,
+            "b": 300.5999853964704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "22. Januar 2026 in Köln",
+      "text": "22. Januar 2026 in Köln"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 315.9057488456722,
+            "r": 231.4286420343961,
+            "b": 300.0153459615922,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "Strategien für NIS2 und KRITIS im Energiesektor. Winter School ∙ Modul W26.3 ∙ Deutsch ∙",
+      "text": "Strategien für NIS2 und KRITIS im Energiesektor. Winter School ∙ Modul W26.3 ∙ Deutsch ∙"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 280.25327780202906,
+            "r": 272.4473533225274,
+            "b": 273.64867065772114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "Regulierte Betreiber & Betriebsführer",
+      "text": "Regulierte Betreiber & Betriebsführer",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 251.80390825455947,
+            "r": 94.86356099797547,
+            "b": 246.65506687683455,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Hintergrund",
+      "text": "Hintergrund",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 227.4736860274288,
+            "r": 752.0807006981677,
+            "b": 223.024484140783,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "Die Bundesnetzagentur (BNetzA) hat für EnWG-regulierte Betreiber Mitte der 2010er-Jahre zwei Kataloge mit Sicherheits­ anforderungen erstellt, die 1a und 1b IT-Sicherheitskataloge.",
+      "text": "Die Bundesnetzagentur (BNetzA) hat für EnWG-regulierte Betreiber Mitte der 2010er-Jahre zwei Kataloge mit Sicherheits­ anforderungen erstellt, die 1a und 1b IT-Sicherheitskataloge."
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 206.56705022545157,
+            "r": 798.4036221514198,
+            "b": 191.2612867762498,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            244
+          ]
+        }
+      ],
+      "orig": "Betreiber haben in vielen Fällen die tatsächliche Betriebsführung an konzerninterne oder externe Dritte ausgelagert, und als Nachweis des angemessenen Schutzes nach §11 Abs. 1a/1b EnWG eine Kopie des Zertifikats des Betriebsführers eingereicht.",
+      "text": "Betreiber haben in vielen Fällen die tatsächliche Betriebsführung an konzerninterne oder externe Dritte ausgelagert, und als Nachweis des angemessenen Schutzes nach §11 Abs. 1a/1b EnWG eine Kopie des Zertifikats des Betriebsführers eingereicht."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 174.80385286091814,
+            "r": 761.7824133165884,
+            "b": 159.49808941171636,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            279
+          ]
+        }
+      ],
+      "orig": "Zusätzlich hat der Betriebsführer üblicherweise eine Erklärung abgegeben, 'dass im Zertifizierungsprozess auch alle im Geltungsbereich des IT-Sicherheitskatalogs befindlichen Systeme, Anwendungen und Komponenten des betriebsgeführten Netzbetreibers berücksichtigt worden sind.'",
+      "text": "Zusätzlich hat der Betriebsführer üblicherweise eine Erklärung abgegeben, 'dass im Zertifizierungsprozess auch alle im Geltungsbereich des IT-Sicherheitskatalogs befindlichen Systeme, Anwendungen und Komponenten des betriebsgeführten Netzbetreibers berücksichtigt worden sind.'"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 143.04065549638472,
+            "r": 791.3456644130375,
+            "b": 116.73993911330581,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            393
+          ]
+        }
+      ],
+      "orig": "Da die Zertifizierungsverfahren nach IT-Sicherheitskatalog von einer akkreditierten Stelle, der DAkkS, durchgeführt werden müssen, die wiederum eigenen Zertifizierungsnormen unterliegt, war dieses Vorgehen jedoch rechtlich nicht haltbar. Insbesondere der Verweis des gesetzlich zur Zertifizierung verpflichteten Betreibers auf die Zertifizierungsurkunde des Betriebsführers ist nicht zulässig.",
+      "text": "Da die Zertifizierungsverfahren nach IT-Sicherheitskatalog von einer akkreditierten Stelle, der DAkkS, durchgeführt werden müssen, die wiederum eigenen Zertifizierungsnormen unterliegt, war dieses Vorgehen jedoch rechtlich nicht haltbar. Insbesondere der Verweis des gesetzlich zur Zertifizierung verpflichteten Betreibers auf die Zertifizierungsurkunde des Betriebsführers ist nicht zulässig."
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 100.28250519797439,
+            "r": 750.4868173461083,
+            "b": 95.97169468264974,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            182
+          ]
+        }
+      ],
+      "orig": "Da das Zertifikat des Betriebsführers nur für diesen gilt, kann es nicht durch den betriebsgeführten Betreiber als Nachweis zur Umsetzung des IT-Sicherheitskatalogs vorgelegt werden.",
+      "text": "Da das Zertifikat des Betriebsführers nur für diesen gilt, kann es nicht durch den betriebsgeführten Betreiber als Nachweis zur Umsetzung des IT-Sicherheitskatalogs vorgelegt werden."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 79.51426076731786,
+            "r": 42.40993608891925,
+            "b": 75.20345025199322,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 56.948909037518206,
+            "r": 100.5611326432772,
+            "b": 51.80006765979306,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Zertifizierung",
+      "text": "Zertifizierung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "4/8",
+      "text": "4/8"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 565.1245830615535,
+            "r": 808.58731111481,
+            "b": 549.818819612352,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            231
+          ]
+        }
+      ],
+      "orig": "Die BNetzA hat 2022 klargestellt, dass grundsätzlich jeder Betreiber von Energieversorgungsnetzen oder Energieanlagen ein eigenes Zertifikat nach IT-Sicherheitskatalog vorlegen muss, das u. a. ein funktionsfähiges ISMS bescheinigt.",
+      "text": "Die BNetzA hat 2022 klargestellt, dass grundsätzlich jeder Betreiber von Energieversorgungsnetzen oder Energieanlagen ein eigenes Zertifikat nach IT-Sicherheitskatalog vorlegen muss, das u. a. ein funktionsfähiges ISMS bescheinigt."
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 533.3613856970201,
+            "r": 806.2298927363502,
+            "b": 529.0505751816954,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            195
+          ]
+        }
+      ],
+      "orig": "Je nach Unternehmensstruktur und Verbindung zum Betriebsführer sind verschiedene Zertifizierungskonstellationen möglich, die mit einer akkreditierten Zertifizierungsstelle geplant werden sollten:",
+      "text": "Je nach Unternehmensstruktur und Verbindung zum Betriebsführer sind verschiedene Zertifizierungskonstellationen möglich, die mit einer akkreditierten Zertifizierungsstelle geplant werden sollten:"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 292.16334613552675,
+            "t": 512.5931412663635,
+            "r": 549.4662425095623,
+            "b": 508.2823307510389,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "Stand März 2022, Quelle: eigene Zusammenstellung und BNetzA",
+      "text": "Stand März 2022, Quelle: eigene Zusammenstellung und BNetzA"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 184.8671127304533,
+            "t": 501.59818833248664,
+            "r": 656.767249458968,
+            "b": 497.287377817162,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "* - Durchgriffsrechte im gesamten ISMS müssen rechtlich sichergestellt sein, z. B. über Beherrschungsrechte nach AktG",
+      "text": "- Durchgriffsrechte im gesamten ISMS müssen rechtlich sichergestellt sein, z. B. über Beherrschungsrechte nach AktG",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 220.68661088950287,
+            "t": 490.60323539860974,
+            "r": 620.9382114434892,
+            "b": 486.2924248832851,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "† - für alle Systeme, Anwendungen oder Komponenten im Geltungsbereich des IT-Sicherheitskatalogs",
+      "text": "† - für alle Systeme, Anwendungen oder Komponenten im Geltungsbereich des IT-Sicherheitskatalogs",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 368.25949479888243,
+            "t": 477.91418168040764,
+            "r": 407.7010252412559,
+            "b": 473.511110250869,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Betreiber",
+      "text": "Betreiber",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 454.5642230042354,
+            "r": 476.43379731300314,
+            "b": 450.2534124889107,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Betreiber muss Anforderungen aus IT-Sikat erfüllen",
+      "text": "Betreiber muss Anforderungen aus IT-Sikat erfüllen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 443.56927007035847,
+            "r": 461.85021405425186,
+            "b": 439.2584595550338,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "Vertragliche Grundlage mit Betriebsführer nötig",
+      "text": "Vertragliche Grundlage mit Betriebsführer nötig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 432.57431713648157,
+            "r": 466.6795973547651,
+            "b": 428.26350662115647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "text": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 399.58945833485086,
+            "r": 485.74896606407003,
+            "b": 395.27864781952576,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Oberste Leitung* aller vom ISMS umfassten Bereiche",
+      "text": "Oberste Leitung* aller vom ISMS umfassten Bereiche",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 388.59450540097396,
+            "r": 525.309799026878,
+            "b": 384.28369488564886,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "ISMS muss die Anforderungen des jeweiligen IT-Sikat erfüllen†",
+      "text": "ISMS muss die Anforderungen des jeweiligen IT-Sikat erfüllen†",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 377.5995524670966,
+            "r": 466.6795973547651,
+            "b": 373.28874195177195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "text": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 344.6146936654659,
+            "r": 441.49714368869206,
+            "b": 340.30388315014125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "Keine gesonderte Zertifizierung notwendig",
+      "text": "Keine gesonderte Zertifizierung notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 637.3972328752808,
+            "t": 477.91418168040764,
+            "r": 699.1054521723825,
+            "b": 473.511110250869,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Betriebsführer",
+      "text": "Betriebsführer",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 553.7706898139702,
+            "t": 449.0667465372967,
+            "r": 776.7859398356541,
+            "b": 444.75593602197205,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            55
+          ]
+        }
+      ],
+      "orig": "Betriebsführer muss Anforderungen aus IT-Sikat erfüllen",
+      "text": "Betriebsführer muss Anforderungen aus IT-Sikat erfüllen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 553.7706898139702,
+            "t": 438.0717936034198,
+            "r": 746.9459075847228,
+            "b": 433.76098308809514,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "text": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 553.7706898139702,
+            "t": 399.58945833485086,
+            "r": 721.76345391865,
+            "b": 395.27864781952576,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "Keine gesonderte Zertifizierung notwendig",
+      "text": "Keine gesonderte Zertifizierung notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 553.7706898139702,
+            "t": 388.59450540097396,
+            "r": 791.2502203540719,
+            "b": 373.28874195177195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Der Betriebsführer wird als Standort im Geltungsbereich des Zertifikats des Betreibers gelistet",
+      "text": "Der Betriebsführer wird als Standort im Geltungsbereich des Zertifikats des Betreibers gelistet",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 553.7706898139702,
+            "t": 344.6146936654659,
+            "r": 766.0152762940279,
+            "b": 340.30388315014125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Oberste Leitung* aller vom ISMS umfassten Bereiche",
+      "text": "Oberste Leitung* aller vom ISMS umfassten Bereiche",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 333.619740731589,
+            "r": 490.89807814905276,
+            "b": 318.31397728238744,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Der Betreiber wird als Standort im Geltungsbereich des Zertifikats des Betriebsführers gelistet",
+      "text": "Der Betreiber wird als Standort im Geltungsbereich des Zertifikats des Betriebsführers gelistet",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 553.7706898139702,
+            "t": 333.619740731589,
+            "r": 805.5761092568358,
+            "b": 329.30893021626434,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "ISMS muss die Anforderungen des jeweiligen IT-Sikat erfüllen†",
+      "text": "ISMS muss die Anforderungen des jeweiligen IT-Sikat erfüllen†",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 553.7706898139702,
+            "t": 322.6247877977121,
+            "r": 746.9459075847228,
+            "b": 318.31397728238744,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "text": "Zertifizierung des ISMS nach IT-Sikat notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 289.6399289960814,
+            "r": 573.3936299702669,
+            "b": 285.3291184807563,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "Keine gesonderte Zertifizierung von Betreiber und Betriebsführer notwendig",
+      "text": "Keine gesonderte Zertifizierung von Betreiber und Betriebsführer notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 278.6449760622045,
+            "r": 596.4715781043024,
+            "b": 274.3341655468794,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "Oberste Leitung* aller vom ISMS umfassten Bereiche liegt bei der Konzernmutter",
+      "text": "Oberste Leitung* aller vom ISMS umfassten Bereiche liegt bei der Konzernmutter",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 267.6500231283276,
+            "r": 525.309799026878,
+            "b": 263.3392126130025,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "ISMS muss die Anforderungen des jeweiligen IT-Sikat erfüllen†",
+      "text": "ISMS muss die Anforderungen des jeweiligen IT-Sikat erfüllen†",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 256.6550701944502,
+            "r": 714.7913973042174,
+            "b": 252.34425967912557,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            111
+          ]
+        }
+      ],
+      "orig": "Betreiber und Betriebsführer werden als Standorte im Geltungsbereich des Zertifikats der Konzernmutter gelistet",
+      "text": "Betreiber und Betriebsführer werden als Standorte im Geltungsbereich des Zertifikats der Konzernmutter gelistet",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.5043795840124,
+            "t": 245.66011726057332,
+            "r": 543.2052333129468,
+            "b": 241.34930674524867,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Zertifizierung des ISMS der Konzernmutter nach IT-Sikat notwendig",
+      "text": "Zertifizierung des ISMS der Konzernmutter nach IT-Sikat notwendig",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 213.28608917749125,
+            "r": 782.0782181556848,
+            "b": 197.9803257282897,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            348
+          ]
+        }
+      ],
+      "orig": "Die Zertifizierung kann den gesamten ISMS-Anwendungsbereich oder auch nur einen Teil davon umfassen. So ist es möglich, dass z. B. ein konzernübergreifendes ISMS nach ISO/IEC 27001 zertifiziert ist und zusätzlich für alle Systeme, Anwendungen oder Komponenten im Geltungsbereich des IT-Sicherheitskatalogs eine IT-Sikat-Zertifizierung erlangt wird.",
+      "text": "Die Zertifizierung kann den gesamten ISMS-Anwendungsbereich oder auch nur einen Teil davon umfassen. So ist es möglich, dass z. B. ein konzernübergreifendes ISMS nach ISO/IEC 27001 zertifiziert ist und zusätzlich für alle Systeme, Anwendungen oder Komponenten im Geltungsbereich des IT-Sicherheitskatalogs eine IT-Sikat-Zertifizierung erlangt wird."
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 181.52289181295782,
+            "r": 776.4184839884568,
+            "b": 155.22217542987937,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            467
+          ]
+        }
+      ],
+      "orig": "Ein natives Zertifikat nach ISO/IEC 27001 ist jedoch nicht ausreichend, um die Zertifizierungspflicht des IT-Sikat zu erfüllen. Auch muss eine Zertifizierungsstelle gesondert für Zertifizierungsverfahren nach IT-Sikat akkreditiert sein, da es sich um eine eigenständige zertifizierbare Norm handelt. Die Anforderungen an das Zertifizierungsverfahren und ein Muster des Zertifikats sind im Konformitätsbewertungsprogramm zum jeweiligen IT-Sicherheitskatalog enthalten.",
+      "text": "Ein natives Zertifikat nach ISO/IEC 27001 ist jedoch nicht ausreichend, um die Zertifizierungspflicht des IT-Sikat zu erfüllen. Auch muss eine Zertifizierungsstelle gesondert für Zertifizierungsverfahren nach IT-Sikat akkreditiert sein, da es sich um eine eigenständige zertifizierbare Norm handelt. Die Anforderungen an das Zertifizierungsverfahren und ein Muster des Zertifikats sind im Konformitätsbewertungsprogramm zum jeweiligen IT-Sicherheitskatalog enthalten."
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 138.90313288586867,
+            "r": 752.9205925208072,
+            "b": 123.45897806534595,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            347
+          ]
+        }
+      ],
+      "orig": "Auch wenn die Anforderungen des IT-Sicherheitskatalogs ein ISMS auf Basis von ISO/IEC 27001 umfassen, handelt es sich bei dem Zertifizierungsverfahren nicht um eine ISO 27001 Zertifizierung. Daher erhalten zertifizierte Unternehmen kein Zertifikat mit Verweis auf die Norm ISO/IEC 27001, sondern ein Zertifikat nach IT-Sicherheitskatalog (BNetzA).",
+      "text": "Auch wenn die Anforderungen des IT-Sicherheitskatalogs ein ISMS auf Basis von ISO/IEC 27001 umfassen, handelt es sich bei dem Zertifizierungsverfahren nicht um eine ISO 27001 Zertifizierung. Daher erhalten zertifizierte Unternehmen kein Zertifikat mit Verweis auf die Norm ISO/IEC 27001, sondern ein Zertifikat nach IT-Sicherheitskatalog (BNetzA)."
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 107.00154415001407,
+            "r": 42.40993608891925,
+            "b": 102.69073363468942,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 83.82536170166532,
+            "r": 112.43061101607634,
+            "b": 78.67652032394062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Geltungsbereich",
+      "text": "Geltungsbereich",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 58.2734780374376,
+            "r": 72.07817503451315,
+            "b": 53.870406607898985,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Betreiber",
+      "text": "Betreiber",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 112.57911488220336,
+            "t": 477.91418168040764,
+            "r": 168.50830245158755,
+            "b": 473.511110250869,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Konstellation",
+      "text": "Konstellation",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.46913674778591,
+            "t": 443.56927007035847,
+            "r": 157.93329583217863,
+            "b": 439.2584595550338,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Konzernfremder Betriebsführer",
+      "text": "Konzernfremder Betriebsführer"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.46913674778591,
+            "t": 394.0919818679122,
+            "r": 233.20386553612565,
+            "b": 378.78621841871063,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Konzerneigener Betriebsführer und übergreifendes ISMS des Betreibers",
+      "text": "Konzerneigener Betriebsführer und übergreifendes ISMS des Betreibers"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.46913674778591,
+            "t": 339.11721719852767,
+            "r": 233.20386553612565,
+            "b": 323.81145374932566,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "Konzerneigener Betriebsführer und übergreifendes ISMS des Betriebsführers",
+      "text": "Konzerneigener Betriebsführer und übergreifendes ISMS des Betriebsführers"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 34.46913674778591,
+            "t": 273.1474995952658,
+            "r": 233.20386553612565,
+            "b": 257.84173614606425,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        },
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 565.1247001095489,
+            "r": 804.0013109196462,
+            "b": 538.8239837264705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            72,
+            466
+          ]
+        }
+      ],
+      "orig": "Konzerneigener Betriebsführer und übergreifendes ISMS der Konzernmutter Betriebsgeführte Betreiber von Energienetzen oder -anlagen, die den Betrieb an einen Betriebsführer ausgelagert haben, müssen trotzdem ein ISMS implementieren (und zertifizieren lassen). Dieses muss neben den erforderlichen ISMS-Strukturen, vor allem Risikomanagement, mindestens die Schnittstellen zu Bereichen umfassen, die für den letztlichen Betrieb durch den Betriebsführer notwendig sind:",
+      "text": "Konzerneigener Betriebsführer und übergreifendes ISMS der Konzernmutter Betriebsgeführte Betreiber von Energienetzen oder -anlagen, die den Betrieb an einen Betriebsführer ausgelagert haben, müssen trotzdem ein ISMS implementieren (und zertifizieren lassen). Dieses muss neben den erforderlichen ISMS-Strukturen, vor allem Risikomanagement, mindestens die Schnittstellen zu Bereichen umfassen, die für den letztlichen Betrieb durch den Betriebsführer notwendig sind:"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "5/8",
+      "text": "5/8"
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 522.3665498111386,
+            "r": 212.1302058194945,
+            "b": 518.055739295814,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Beauftragung und Vertragsmanagement",
+      "text": "Beauftragung und Vertragsmanagement",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 511.3715968772617,
+            "r": 347.4769312745218,
+            "b": 507.06078636193706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Dienstleistersteuerung zur Aufsicht und Überwachung des Betriebsführers",
+      "text": "Dienstleistersteuerung zur Aufsicht und Überwachung des Betriebsführers",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 500.3766439433848,
+            "r": 462.8523556363818,
+            "b": 496.06583342806016,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        }
+      ],
+      "orig": "Einkauf von Systemen, Anwendungen und Komponenten, falls dies nicht der Betriebsführer übernimmt",
+      "text": "Einkauf von Systemen, Anwendungen und Komponenten, falls dies nicht der Betriebsführer übernimmt",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 489.3816910095079,
+            "r": 291.3520870150357,
+            "b": 485.07088049418326,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "Weitere Annex A Kontrollen, wo notwendig und anwendbar",
+      "text": "Weitere Annex A Kontrollen, wo notwendig und anwendbar",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 465.6976843574289,
+            "r": 94.3448638892414,
+            "b": 461.2946129278903,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Betriebsführer",
+      "text": "Betriebsführer",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 441.1260642441589,
+            "r": 798.9094653384557,
+            "b": 436.8152537288347,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            183
+          ]
+        }
+      ],
+      "orig": "Betriebsführer, die den Betrieb von Systemen, Anwendungen und Komponenten im Geltungsbereich des IT-Sicherheitskatalogs für einen Betreiber übernehmen, müssen ein ISMS implementieren.",
+      "text": "Betriebsführer, die den Betrieb von Systemen, Anwendungen und Komponenten im Geltungsbereich des IT-Sicherheitskatalogs für einen Betreiber übernehmen, müssen ein ISMS implementieren."
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 420.3578198135024,
+            "r": 777.0722717682191,
+            "b": 405.0520563643013,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            364
+          ]
+        }
+      ],
+      "orig": "Das ISMS muss mindestens alle zentralen und dezentralen Anwendungen, Systeme und Komponenten, die für einen sicheren Netz- oder Anlagenbetrieb notwendig sind, umfassen. Das sind zumindest alle TK- und EDV-Systeme des Betreibers, die direkt Teil der Netz- oder Anlagensteuerung sind, d. h. unmittelbar Einfluss nehmen auf die Netzfahrweise oder den Anlagenbetrieb.",
+      "text": "Das ISMS muss mindestens alle zentralen und dezentralen Anwendungen, Systeme und Komponenten, die für einen sicheren Netz- oder Anlagenbetrieb notwendig sind, umfassen. Das sind zumindest alle TK- und EDV-Systeme des Betreibers, die direkt Teil der Netz- oder Anlagensteuerung sind, d. h. unmittelbar Einfluss nehmen auf die Netzfahrweise oder den Anlagenbetrieb."
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 388.5946224489694,
+            "r": 808.1005601015795,
+            "b": 373.28885899976785,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            240
+          ]
+        }
+      ],
+      "orig": "Daneben sind auch TK- und EDV-Systeme im Netz oder der Anlage betroffen, die selbst zwar nicht direkt Teil der Steuerung sind, deren Ausfall jedoch die Sicherheit des Netz- oder Anlagenbetriebs gefährden könnte, wie z. B. Messeinrichtungen.",
+      "text": "Daneben sind auch TK- und EDV-Systeme im Netz oder der Anlage betroffen, die selbst zwar nicht direkt Teil der Steuerung sind, deren Ausfall jedoch die Sicherheit des Netz- oder Anlagenbetriebs gefährden könnte, wie z. B. Messeinrichtungen."
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 353.9156628630135,
+            "r": 73.90112281358262,
+            "b": 349.5125914334749,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Standorte",
+      "text": "Standorte",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 329.95487346829213,
+            "r": 799.9163810268823,
+            "b": 314.61888663637956,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            288
+          ]
+        }
+      ],
+      "orig": "Der Geltungsbereich der zertifizierten ISMSe umfasst mindestens den Unternehmensstandort, von dem aus das jeweilige ISMS betrieben wird - beim Betreiber und Betriebsführer. Diese Standorte werden im Zertifizierungsverfahren als Zentrale bezeichnet, typischerweise wo CISO oder ISB sitzen.",
+      "text": "Der Geltungsbereich der zertifizierten ISMSe umfasst mindestens den Unternehmensstandort, von dem aus das jeweilige ISMS betrieben wird - beim Betreiber und Betriebsführer. Diese Standorte werden im Zertifizierungsverfahren als Zentrale bezeichnet, typischerweise wo CISO oder ISB sitzen."
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 298.1916761037587,
+            "r": 780.5988656610863,
+            "b": 282.88591265455716,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            366
+          ]
+        }
+      ],
+      "orig": "Neben der Zentrale müssen die ISMSe alle Betriebsstätten umfassen, die für den Netz- oder Anlagenbetrieb erforderlich sind. Sofern eine Betriebsstätte an regulären Arbeitstagen mit Personal besetzt ist, gilt sie als auditrelevanter Standort und wird im Zertifikatsanhang aufgeführt. Dies umfasst die regulierten Anlagen sowohl beim Betreiber als auch Betriebsführer.",
+      "text": "Neben der Zentrale müssen die ISMSe alle Betriebsstätten umfassen, die für den Netz- oder Anlagenbetrieb erforderlich sind. Sofern eine Betriebsstätte an regulären Arbeitstagen mit Personal besetzt ist, gilt sie als auditrelevanter Standort und wird im Zertifikatsanhang aufgeführt. Dies umfasst die regulierten Anlagen sowohl beim Betreiber als auch Betriebsführer."
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 266.4284787392253,
+            "r": 698.0794478041021,
+            "b": 262.1176682239011,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            169
+          ]
+        }
+      ],
+      "orig": "Nicht dauerhaft besetzte Betriebsstätten werden im Rahmen des Zertifizierungsverfahrens stichprobenhaft geprüft, jedoch nicht als Standort auf dem Zertifikat aufgeführt.",
+      "text": "Nicht dauerhaft besetzte Betriebsstätten werden im Rahmen des Zertifizierungsverfahrens stichprobenhaft geprüft, jedoch nicht als Standort auf dem Zertifikat aufgeführt."
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 242.74447208714673,
+            "r": 106.11767115090535,
+            "b": 238.34140065760812,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Verantwortungen",
+      "text": "Verantwortungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 218.17285197387673,
+            "r": 785.0226112101143,
+            "b": 202.86708852467518,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            233
+          ]
+        }
+      ],
+      "orig": "Die Aufteilung der Verantwortungen zwischen Betreibern und Betriebsführern ist neben den formellen Normanforderungen die zentrale Frage der Zusammenarbeit aus Sicherheitssicht. Geklärt werden muss operativ und vertraglich mindestens:",
+      "text": "Die Aufteilung der Verantwortungen zwischen Betreibern und Betriebsführern ist neben den formellen Normanforderungen die zentrale Frage der Zusammenarbeit aus Sicherheitssicht. Geklärt werden muss operativ und vertraglich mindestens:"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 186.4096546093433,
+            "r": 442.4658837766039,
+            "b": 182.09884409401866,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "1. Assets: Verantwortung für Assets, vor allem in betriebsgeführten Anlagen (Asset-Owner, Inventar)",
+      "text": "Assets: Verantwortung für Assets, vor allem in betriebsgeführten Anlagen (Asset-Owner, Inventar)",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 175.4147016754664,
+            "r": 396.0809252560809,
+            "b": 171.10389116014176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "2. Risiken: Zuordnung der Risiken von betrieblichen bis zu Gesamtrisiken für die Anlage",
+      "text": "Risiken: Zuordnung der Risiken von betrieblichen bis zu Gesamtrisiken für die Anlage",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 164.4197487415895,
+            "r": 438.7197681474107,
+            "b": 160.10893822626485,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "3. Mitwirkung: Gemeinsame Arbeit im ISMS, Maßnahmen und Audits von Betreiber/Betriebsführer",
+      "text": "Mitwirkung: Gemeinsame Arbeit im ISMS, Maßnahmen und Audits von Betreiber/Betriebsführer",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 153.4247958077126,
+            "r": 399.9415617251112,
+            "b": 149.11398529238795,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "4. Maßnahmen: Betriebliche und kommerzielle Verantwortung für Sicherheitsmaßnahmen",
+      "text": "Maßnahmen: Betriebliche und kommerzielle Verantwortung für Sicherheitsmaßnahmen",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 142.42984287383524,
+            "r": 385.31026027289397,
+            "b": 138.11903235851105,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "5. Freigabe: Prozesse zur formellen Übergabe und Übernahme von Risiken und Assets",
+      "text": "Freigabe: Prozesse zur formellen Übergabe und Übernahme von Risiken und Assets",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 121.66159844317917,
+            "r": 42.40993608891925,
+            "b": 117.35078792785453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 99.09624671337906,
+            "r": 82.15142930532755,
+            "b": 93.94740533565437,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Sicherheit",
+      "text": "Sicherheit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 72.9335323306027,
+            "r": 112.99428880070062,
+            "b": 68.53046090106409,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Risikomanagement",
+      "text": "Risikomanagement",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 48.97274293588134,
+            "r": 577.769656397366,
+            "b": 44.661932420556695,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            132
+          ]
+        }
+      ],
+      "orig": "Abhängig von Aufgaben und Organisationsstruktur unterscheidet sich der Fokus des Risikomanagements von Betreiber und Betriebsführer.",
+      "text": "Abhängig von Aufgaben und Organisationsstruktur unterscheidet sich der Fokus des Risikomanagements von Betreiber und Betriebsführer."
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "6/8",
+      "text": "6/8"
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 565.1248171575439,
+            "r": 794.8436269353675,
+            "b": 538.8241007744655,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            382
+          ]
+        }
+      ],
+      "orig": "Betriebsgeführte Betreiber, die den operativen Betrieb an den Betriebsführer ausgelagert haben, adressieren in ihrem Risikomanagement vor allem dienstleisterbezogene Risiken. Zusätzlich müssen organisatorische und weitere Risiken adressiert werden, z. B. durch die Abhängigkeit vom Betriebsführer oder die letztliche Verantwortung für die Erbringung der Versorgungsdienstleistung.",
+      "text": "Betriebsgeführte Betreiber, die den operativen Betrieb an den Betriebsführer ausgelagert haben, adressieren in ihrem Risikomanagement vor allem dienstleisterbezogene Risiken. Zusätzlich müssen organisatorische und weitere Risiken adressiert werden, z. B. durch die Abhängigkeit vom Betriebsführer oder die letztliche Verantwortung für die Erbringung der Versorgungsdienstleistung.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 532.1399583559132,
+            "r": 786.8837366420897,
+            "b": 516.8341949067117,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            236
+          ]
+        }
+      ],
+      "orig": "Betriebsführer adressieren in ihrem Risikomanagement vor allem Risiken im Zusammenhang mit dem operativen Betrieb des Energieversorgungsnetzes oder der Energieanlage. Dies sind primär technische, personelle und organisatorische Risiken.",
+      "text": "Betriebsführer adressieren in ihrem Risikomanagement vor allem Risiken im Zusammenhang mit dem operativen Betrieb des Energieversorgungsnetzes oder der Energieanlage. Dies sind primär technische, personelle und organisatorische Risiken.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 497.4609987699573,
+            "r": 130.91835264924813,
+            "b": 493.0579273404187,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Sicherheitsmaßnahmen",
+      "text": "Sicherheitsmaßnahmen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 472.8893786566873,
+            "r": 788.0481297673358,
+            "b": 446.58866227360886,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            437
+          ]
+        }
+      ],
+      "orig": "Sowohl Betreiber als auch Betriebsführer müssen geeignete, angemessene und wirksame Maßnahmen zur Behandlung von Risiken ergreifen. Der Fokus mag je nach Rolle unterschiedlich sein - Betreiber werden typischerweise organisatorische Maßnahmen wie Dienstleistersteuerung ergreifen, während Betriebsführer technische, organisatorische, personelle oder physische Sicherheitsmaßnahmen zur Absicherung des Netz- oder Anlagenbetriebs ergreifen.",
+      "text": "Sowohl Betreiber als auch Betriebsführer müssen geeignete, angemessene und wirksame Maßnahmen zur Behandlung von Risiken ergreifen. Der Fokus mag je nach Rolle unterschiedlich sein - Betreiber werden typischerweise organisatorische Maßnahmen wie Dienstleistersteuerung ergreifen, während Betriebsführer technische, organisatorische, personelle oder physische Sicherheitsmaßnahmen zur Absicherung des Netz- oder Anlagenbetriebs ergreifen."
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 430.131228358277,
+            "r": 803.3857105782979,
+            "b": 414.82546490907544,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            255
+          ]
+        }
+      ],
+      "orig": "Beide Parteien müssen die Maßnahmen nach den Vorgaben des IT-Sicherheitskatalogs gestalten. Das bedeutet, dass bei der Implementierung des ISMS und der Auswahl von Sicherheitsmaßnahmen die Vorgaben der ISO/IEC 27002 und 27019 berücksichtigt werden müssen.",
+      "text": "Beide Parteien müssen die Maßnahmen nach den Vorgaben des IT-Sicherheitskatalogs gestalten. Das bedeutet, dass bei der Implementierung des ISMS und der Auswahl von Sicherheitsmaßnahmen die Vorgaben der ISO/IEC 27002 und 27019 berücksichtigt werden müssen."
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 398.36803099374356,
+            "r": 42.40993608891925,
+            "b": 394.0572204784189,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 375.8026792639439,
+            "r": 75.82884327377349,
+            "b": 370.65383788621875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Ausblick",
+      "text": "Ausblick",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 351.3340656654923,
+            "r": 750.2338905727461,
+            "b": 336.02830221629074,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            338
+          ]
+        }
+      ],
+      "orig": "Mit NIS2 und KRITIS-Dachgesetz wird sich die Regulierung Kritischer Infrastrukturen, auch im Energiesektor, ab 2025 und 2026 deutlich erweitern. Dies umfasst mehr Betreiber und Einrichtungen, die unter EnWG und Regulierung der IT-Sicherheitskataloge fallen werden. Dazu wird es diverse neue IT-Sicherheitskataloge der BNetzA geben müssen.",
+      "text": "Mit NIS2 und KRITIS-Dachgesetz wird sich die Regulierung Kritischer Infrastrukturen, auch im Energiesektor, ab 2025 und 2026 deutlich erweitern. Dies umfasst mehr Betreiber und Einrichtungen, die unter EnWG und Regulierung der IT-Sicherheitskataloge fallen werden. Dazu wird es diverse neue IT-Sicherheitskataloge der BNetzA geben müssen."
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 319.57086830095886,
+            "r": 589.54723631155,
+            "b": 315.2600577856342,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            140
+          ]
+        }
+      ],
+      "orig": "Es ist zu erwarten, dass auch zukünftig sowohl Betreiber als auch Betriebsführer die Anforderungen umsetzen und zertifizieren lassen müssen.",
+      "text": "Es ist zu erwarten, dass auch zukünftig sowohl Betreiber als auch Betriebsführer die Anforderungen umsetzen und zertifizieren lassen müssen."
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 298.80262387030234,
+            "r": 42.40993608891925,
+            "b": 294.4918133549777,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 274.14510576053635,
+            "r": 176.10073772839715,
+            "b": 267.54049861622843,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 245.69573621306654,
+            "r": 78.3344498989226,
+            "b": 240.54689483534185,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Literatur",
+      "text": "Literatur",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 221.22712261461493,
+            "r": 207.539431004936,
+            "b": 216.91631209929028,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "1. KRITIS-Sektor Energie, OpenKRITIS",
+      "text": "KRITIS-Sektor Energie, OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/sektor_energie.html",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 210.23216968073802,
+            "r": 217.04548406235045,
+            "b": 205.92135916541338,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "2. Energie, EnWG und NIS2, OpenKRITIS",
+      "text": "Energie, EnWG und NIS2, OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/enwg-nis2.html",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 199.23721674686112,
+            "r": 299.374011846745,
+            "b": 194.92640623153648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "3. IT-Sicherheitskataloge unter KRITIS und NIS2, OpenKRITIS",
+      "text": "IT-Sicherheitskataloge unter KRITIS und NIS2, OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/energie-katalog-kritis.html",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 176.67186501706146,
+            "r": 70.73394877991802,
+            "b": 171.52302363933632,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Quellen",
+      "text": "Quellen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 152.20325141860985,
+            "r": 627.7050673699583,
+            "b": 147.8924409032852,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "1. Übersichtsseite zum IT-Sicherheitskatalog für Strom- und Gasnetze gemäß §11 Abs. 1a EnWG, Bundesnetzagentur (BNetzA), Stand August 2015",
+      "text": "Übersichtsseite zum IT-Sicherheitskatalog für Strom- und Gasnetze gemäß §11 Abs. 1a EnWG, Bundesnetzagentur (BNetzA), Stand August 2015",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 141.20829848473295,
+            "r": 618.8003042462009,
+            "b": 136.8974879694083,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            135
+          ]
+        }
+      ],
+      "orig": "2. Übersichtsseite zum IT-Sicherheitskatalog für Energieanlagen gemäß §11 Abs. 1b EnWG, Bundesnetzagentur (BNetzA), Stand Dezember 2018",
+      "text": "Übersichtsseite zum IT-Sicherheitskatalog für Energieanlagen gemäß §11 Abs. 1b EnWG, Bundesnetzagentur (BNetzA), Stand Dezember 2018",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 130.21334555085605,
+            "r": 639.1629187195717,
+            "b": 125.9025350355314,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            148
+          ]
+        }
+      ],
+      "orig": "3. Mitteilung zur Zertifizierung nach IT-Sicherheitskatalog im Fall einer Betriebsführung durch Dritte, Bundesnetzagentur (BNetzA), Stand 29.03.2022",
+      "text": "Mitteilung zur Zertifizierung nach IT-Sicherheitskatalog im Fall einer Betriebsführung durch Dritte, Bundesnetzagentur (BNetzA), Stand 29.03.2022",
+      "hyperlink": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/IT_Sicherheit/_DL/BetriebsfuehrungdurchDritte.pdf?__blob=publicationFile&v=1",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 119.21839261697914,
+            "r": 761.0045586100864,
+            "b": 114.9075821016545,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            175
+          ]
+        }
+      ],
+      "orig": "4. Konformitätsbewertungsprogramm zur Akkreditierung von Zertifizierungsstellen für den IT-Sicherheitskatalog (für Netzbetreiber), Bundesnetzagentur (BNetzA), Stand 12.01.2023",
+      "text": "Konformitätsbewertungsprogramm zur Akkreditierung von Zertifizierungsstellen für den IT-Sicherheitskatalog (für Netzbetreiber), Bundesnetzagentur (BNetzA), Stand 12.01.2023",
+      "hyperlink": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/IT_Sicherheit/_DL/KonformitaetsbewertungsprogrammNetze.pdf?__blob=publicationFile&v=1",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 47.296581837309006,
+            "t": 108.22343968310224,
+            "r": 775.1300189765255,
+            "b": 103.9126291677776,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            178
+          ]
+        }
+      ],
+      "orig": "5. Konformitätsbewertungsprogramm zur Akkreditierung von Zertifizierungsstellen für den IT-Sicherheitskatalog (für Anlagenbetreiber), Bundesnetzagentur (BNetzA), Stand 12.01.2023",
+      "text": "Konformitätsbewertungsprogramm zur Akkreditierung von Zertifizierungsstellen für den IT-Sicherheitskatalog (für Anlagenbetreiber), Bundesnetzagentur (BNetzA), Stand 12.01.2023",
+      "hyperlink": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/IT_Sicherheit/_DL/KonformitaetsbewertungsprogrammAnlagen.pdf?__blob=publicationFile&v=1",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 87.45519525244572,
+            "r": 109.73016219732239,
+            "b": 83.14438473712107,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 76.46024231856882,
+            "r": 153.40933087179366,
+            "b": 72.14943180324417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Regulierte Unternehmen",
+      "text": "Regulierte Unternehmen",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 65.46528938469191,
+            "r": 113.51444946884754,
+            "b": 61.15447886936727,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Betriebsführer",
+      "text": "Betriebsführer",
+      "hyperlink": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 57.06987333408851,
+            "t": 54.47033645081456,
+            "r": 66.843164830868,
+            "b": 50.159525935490365,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "7/8",
+      "text": "7/8"
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:18",
+      "text": "10.08.26, 17:18"
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 384.1171714951172,
+            "t": 577.7496212324044,
+            "r": 538.0596857557232,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Betriebsführer im Energiesektor - OpenKRITIS",
+      "text": "Betriebsführer im Energiesektor - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 565.1294904060524,
+            "r": 470.42570145147454,
+            "b": 549.2343153214679,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X",
+      "text": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X"
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 533.3615208410142,
+            "r": 777.0054599716037,
+            "b": 518.0557573918127,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar.",
+      "text": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar."
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 32.63664459213975,
+            "t": 501.60309567698596,
+            "r": 319.65073149993947,
+            "b": 496.7028735262779,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ über OpenKRITIS",
+      "text": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ über OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 227.79794897159363,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html",
+      "text": "https://www.openkritis.de/betreiber/betriebsfuehrer-bnetza.html"
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "8/8",
+      "text": "8/8"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 53.724199068987794,
+            "t": 542.7646430233046,
+            "r": 421.89373914275325,
+            "b": 173.763299861601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 526.5875849382762,
+            "t": 542.7817164592465,
+            "r": 777.1456188791394,
+            "b": 173.79503600705135,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 31.744119960547376,
+            "t": 568.5875301932095,
+            "r": 814.4866132739766,
+            "b": 45.493703472053085,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/36"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 31.87340874350568,
+            "t": 461.1164131682488,
+            "r": 228.23239708441147,
+            "b": 350.8214371892018,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/36"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 7
+    },
+    "8": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 8
+    }
+  }
+}

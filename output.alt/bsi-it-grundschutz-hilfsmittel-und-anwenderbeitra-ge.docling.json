@@ -1,0 +1,686 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---IT-Grundschutz-Hilfsmittel-und-Anwenderbeitra-ge",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 2866392798719795857,
+    "filename": "BSI---IT-Grundschutz-Hilfsmittel-und-Anwenderbeitra-ge.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 447.914996416875,
+            "r": 125.47201502199914,
+            "b": 442.6249966372917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Anwenderbeiträge",
+      "text": "Anwenderbeiträge"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 389.10749886718753,
+            "r": 364.28664792138903,
+            "b": 379.66107068936014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "IT (Informationstechnik)-Grundschutz",
+      "text": "IT (Informationstechnik)-Grundschutz",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 353.7000003425,
+            "r": 227.20189003325416,
+            "b": 347.6542863086905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Hilfsmittel und Anwenderbeiträge",
+      "text": "Hilfsmittel und Anwenderbeiträge"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 249.45000468624994,
+            "r": 545.8197118325111,
+            "b": 99.40429665244051,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            866
+          ]
+        }
+      ],
+      "orig": "IT (Informationstechnik)-Grundschutz-Anwender und das BSI (Bundesamt für Sicherheit in der Informationstechnik) stellen regelmäßig neue Hilfsmittel zur Verfügung, um die einzelnen Angebote des IT (Informationstechnik)-Grundschutzes noch besser nutzen zu können. Diese unterstützen unter anderem bei der Planung und Umsetzung eines ISMS (Information Security Management System) nach den BSI (Bundesamt für Sicherheit in der Informationstechnik)-Standards 200-1, 200-2 und 200-3 oder eines Business Continuity Management Systems (BCMS (Business Continuity Management Systems)) nach dem BSI-Standard 200-4. Sie liefern Anleitungen oder Beispiele, wie die Anforderungen der BSI (Bundesamt für Sicherheit in der Informationstechnik)-Standards in die Praxis umgesetzt und der IT (Informationstechnik)-Grundschutz erfolgreich in einer Institution implementiert werden kann.",
+      "text": "IT (Informationstechnik)-Grundschutz-Anwender und das BSI (Bundesamt für Sicherheit in der Informationstechnik) stellen regelmäßig neue Hilfsmittel zur Verfügung, um die einzelnen Angebote des IT (Informationstechnik)-Grundschutzes noch besser nutzen zu können. Diese unterstützen unter anderem bei der Planung und Umsetzung eines ISMS (Information Security Management System) nach den BSI (Bundesamt für Sicherheit in der Informationstechnik)-Standards 200-1, 200-2 und 200-3 oder eines Business Continuity Management Systems (BCMS (Business Continuity Management Systems)) nach dem BSI-Standard 200-4. Sie liefern Anleitungen oder Beispiele, wie die Anforderungen der BSI (Bundesamt für Sicherheit in der Informationstechnik)-Standards in die Praxis umgesetzt und der IT (Informationstechnik)-Grundschutz erfolgreich in einer Institution implementiert werden kann."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 76.200011905,
+            "r": 527.447236798031,
+            "b": 34.15429937119052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            262
+          ]
+        }
+      ],
+      "orig": "Die einzelnen Dokumente können unabhängig von einer bestimmten Edition des IT (Informationstechnik)-Grundschutz-Kompendiums verwendet werden. Sollte dennoch auf einzelne Inhalte des IT (Informationstechnik)-Grundschutz-Kompendiums verwiesen werden, ist immer die",
+      "text": "Die einzelnen Dokumente können unabhängig von einer bestimmten Edition des IT (Informationstechnik)-Grundschutz-Kompendiums verwendet werden. Sollte dennoch auf einzelne Inhalte des IT (Informationstechnik)-Grundschutz-Kompendiums verwiesen werden, ist immer die"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 204.92289188654578,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 236.14452516064435,
+            "t": 465.91499566687503,
+            "r": 476.9542857019038,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            15,
+            67
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz IT (Informationstechnik)-Grundschutz-Hilfsmittel und",
+      "text": "IT-Grundschutz IT (Informationstechnik)-Grundschutz-Hilfsmittel und"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 546.8661351889101,
+            "b": 727.1542704961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            515
+          ]
+        }
+      ],
+      "orig": "aktuelle Edition zu betrachten. Bereitgestellte Hilfsmittel enthalten keine Vorgaben oder verpflichtenden Anforderungen an die Umsetzung eines ISMS (Information Security Management System) nach IT (Informationstechnik)-Grundschutz. Grundlage für eine ISO (International Organization for Standardization) 27001 Zertifizierung auf der Basis von IT (Informationstechnik)- Grundschutz ist weiterhin ausschließlich die deutsche PDF (Portable Document Format)-Version des IT (Informationstechnik)-Grundschutz-Kompendiums.",
+      "text": "aktuelle Edition zu betrachten. Bereitgestellte Hilfsmittel enthalten keine Vorgaben oder verpflichtenden Anforderungen an die Umsetzung eines ISMS (Information Security Management System) nach IT (Informationstechnik)-Grundschutz. Grundlage für eine ISO (International Organization for Standardization) 27001 Zertifizierung auf der Basis von IT (Informationstechnik)- Grundschutz ist weiterhin ausschließlich die deutsche PDF (Portable Document Format)-Version des IT (Informationstechnik)-Grundschutz-Kompendiums."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 703.94998574875,
+            "r": 504.94769441051193,
+            "b": 679.9042724649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            167
+          ]
+        }
+      ],
+      "orig": "Zudem sind benutzerdefinierte Bausteine von Anwendern, sowie Arbeiten von Studierenden zu unterschiedlichen IT (Informationstechnik)-Grundschutz-Themen veröffentlicht.",
+      "text": "Zudem sind benutzerdefinierte Bausteine von Anwendern, sowie Arbeiten von Studierenden zu unterschiedlichen IT (Informationstechnik)-Grundschutz-Themen veröffentlicht."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 632.1074887421876,
+            "r": 385.34051271914456,
+            "b": 622.6610605643601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 117.63280759863281,
+            "t": 527.6999930925001,
+            "r": 213.3447004856371,
+            "b": 521.6542790586905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Hilfsmittel vom BSI",
+      "text": "Hilfsmittel vom BSI"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 364.3007698208006,
+            "t": 527.6999930925001,
+            "r": 495.70064884580535,
+            "b": 521.6542790586905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Hilfsmittel von Anwendern",
+      "text": "Hilfsmittel von Anwendern"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 100.2539020727539,
+            "t": 400.1999984050001,
+            "r": 230.74179006075832,
+            "b": 394.15428437119044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Arbeiten von Studierenden",
+      "text": "Arbeiten von Studierenden"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 239.44921252294904,
+            "t": 328.95000137374996,
+            "r": 368.0291100404531,
+            "b": 322.90428733994054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Zurück zu IT-Grundschutz",
+      "text": "Zurück zu IT-Grundschutz"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 232.20000540499996,
+            "r": 158.39995432500166,
+            "b": 190.1542928711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 178.20000765500004,
+            "r": 121.33199186950014,
+            "b": 172.15429362119062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Bar­ rie­ re­ frei­ heit",
+      "text": "Bar­ rie­ re­ frei­ heit",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Barrierefreiheit/barrierefreiheit_node.html"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 141.4500091862501,
+            "r": 313.9438494440058,
+            "b": 135.40429515244045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 81.39751168843736,
+            "r": 509.74872171046906,
+            "b": 76.48536903596732,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.24923705944645,
+            "t": 552.9690191741646,
+            "r": 170.59429316075943,
+            "b": 491.15934209622344,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 42.92848456728588,
+            "t": 603.3074659746705,
+            "r": 552.6690439143784,
+            "b": 301.3134027850763,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    }
+  }
+}

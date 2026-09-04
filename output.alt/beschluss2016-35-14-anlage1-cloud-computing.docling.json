@@ -1,0 +1,1780 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Beschluss2016-35_14_Anlage1_Cloud-Computing",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 16332463352985659015,
+    "filename": "Beschluss2016-35_14_Anlage1_Cloud-Computing.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/43"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/39"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 92.664,
+            "t": 360.40999999999997,
+            "r": 512.6908800000001,
+            "b": 274.37,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "Vorgehensweisen und Kriterien zur Inanspruchnahme und Beschaffung von Cloud-Diensten der IT-Wirtschaft",
+      "text": "Vorgehensweisen und Kriterien zur Inanspruchnahme und Beschaffung von Cloud-Diensten der IT-Wirtschaft",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 92.664,
+            "t": 270.71000000000004,
+            "r": 289.01696000000004,
+            "b": 254.75,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Beschluss des IT-Planungsrats",
+      "text": "Beschluss des IT-Planungsrats"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 92.664,
+            "t": 231.71000000000004,
+            "r": 246.53696,
+            "b": 137.51,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "vom 13. Oktober 2016 Stand: 30. August 2016",
+      "text": "vom 13. Oktober 2016 Stand: 30. August 2016"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 92.664,
+            "t": 107.00999999999999,
+            "r": 218.57695999999999,
+            "b": 91.05000000000007,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "<<<ENTWURF>>>>",
+      "text": "<<<ENTWURF>>>>"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.944,
+            "t": 676.6,
+            "r": 214.71800000000002,
+            "b": 658.6,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "I Vorbemerkungen",
+      "text": "I Vorbemerkungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 65.184,
+            "t": 632.74,
+            "r": 527.212,
+            "b": 570.19,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            330
+          ]
+        }
+      ],
+      "orig": "i. Im  Zuge  der  technischen  Verfügbarkeit  von  Cloud-Technologien,  der  zunehmenden Standardisierung  von  Prozessen  in  der  öffentlichen  Verwaltung  und  den  gestiegenen Anforderungen  an  die  Kosteneffizienz  von  IT-Dienstleistungen  fordert  die  öffentliche Verwaltung die Bereitstellung von Cloud-Dienstleistungen.",
+      "text": "Im  Zuge  der  technischen  Verfügbarkeit  von  Cloud-Technologien,  der  zunehmenden Standardisierung  von  Prozessen  in  der  öffentlichen  Verwaltung  und  den  gestiegenen Anforderungen  an  die  Kosteneffizienz  von  IT-Dienstleistungen  fordert  die  öffentliche Verwaltung die Bereitstellung von Cloud-Dienstleistungen.",
+      "enumerated": true,
+      "marker": "i."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.4,
+            "t": 565.39,
+            "r": 527.176,
+            "b": 485.95,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            365
+          ]
+        }
+      ],
+      "orig": "ii. Die Nutzung von Cloud Diensten ist strategischer Natur. Der Einsatz von Cloud-Diensten durch  die  öffentliche  Verwaltung  erfordert  die  Prüfung  der  Schutzbedürftigkeit  der Daten und Anwendungen sowie die sorgfältige Abwägung von Risiken unter anderem für die IT¬-Sicherheit, der wirtschaftlichen und praktischen Folgen sowie die entsprechenden Mehrwerte.",
+      "text": "Die Nutzung von Cloud Diensten ist strategischer Natur. Der Einsatz von Cloud-Diensten durch  die  öffentliche  Verwaltung  erfordert  die  Prüfung  der  Schutzbedürftigkeit  der Daten und Anwendungen sowie die sorgfältige Abwägung von Risiken unter anderem für die IT¬-Sicherheit, der wirtschaftlichen und praktischen Folgen sowie die entsprechenden Mehrwerte.",
+      "enumerated": true,
+      "marker": "ii."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.64,
+            "t": 481.15,
+            "r": 526.934,
+            "b": 334.37,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            791
+          ]
+        }
+      ],
+      "orig": "iii. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) definiert Cloud Computing wie  folgt:  'Cloud  Computing  bezeichnet  das  dynamisch  an  den  Bedarf  angepasste Anbieten,  Nutzen und  Abrechnen  von  IT-Dienstleistungen über  ein Netz.  Angebot  und Nutzung dieser Dienstleistungen erfolgen dabei ausschließlich über definierte technische Schnittstellen  und  Protokolle.  Die  Spannbreite  der  im  Rahmen  von  Cloud  Computing angebotenen Dienstleistungen umfasst das komplette Spektrum der Informationstechnik und  beinhaltet unter anderem  Infrastruktur  (z. B. Rechenleistung,  Speicherplatz), Plattformen  und  Software.'  Auf  dieser  Basis  sind  die  Empfehlungen  des  BSI  und  des Arbeitskreises der Datenschützer in die nachfolgenden Kriterien eingeflossen.",
+      "text": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI) definiert Cloud Computing wie  folgt:  'Cloud  Computing  bezeichnet  das  dynamisch  an  den  Bedarf  angepasste Anbieten,  Nutzen und  Abrechnen  von  IT-Dienstleistungen über  ein Netz.  Angebot  und Nutzung dieser Dienstleistungen erfolgen dabei ausschließlich über definierte technische Schnittstellen  und  Protokolle.  Die  Spannbreite  der  im  Rahmen  von  Cloud  Computing angebotenen Dienstleistungen umfasst das komplette Spektrum der Informationstechnik und  beinhaltet unter anderem  Infrastruktur  (z. B. Rechenleistung,  Speicherplatz), Plattformen  und  Software.'  Auf  dieser  Basis  sind  die  Empfehlungen  des  BSI  und  des Arbeitskreises der Datenschützer in die nachfolgenden Kriterien eingeflossen.",
+      "enumerated": true,
+      "marker": "iii."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.76,
+            "t": 329.57000000000005,
+            "r": 526.8000000000002,
+            "b": 266.9,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            288
+          ]
+        }
+      ],
+      "orig": "iv. Vor  diesem  Hintergrund  legt  der  IT-PLR  folgende  Kriterien  zur  Nutzung  von  CloudDiensten fest, die auch dazu dienen sollen, Angebote unterschiedlicher CloudDienstleister miteinander  hinsichtlich Wirtschaftlichkeit,  Leistung  und  Schutzbedarf besser vergleichen zu können:",
+      "text": "Vor  diesem  Hintergrund  legt  der  IT-PLR  folgende  Kriterien  zur  Nutzung  von  CloudDiensten fest, die auch dazu dienen sollen, Angebote unterschiedlicher CloudDienstleister miteinander  hinsichtlich Wirtschaftlichkeit,  Leistung  und  Schutzbedarf besser vergleichen zu können:",
+      "enumerated": true,
+      "marker": "iv."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.944,
+            "t": 230.96000000000004,
+            "r": 324.058,
+            "b": 212.96000000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "II Vorgehensweisen und Kriterien",
+      "text": "II Vorgehensweisen und Kriterien",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.944,
+            "t": 187.10000000000002,
+            "r": 527.11,
+            "b": 74.03999999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            545
+          ]
+        }
+      ],
+      "orig": "1. Vor  Inanspruchnahme  und  Beschaffung  von  Cloud-Diensten  der  IT-Wirtschaft  ist  zu prüfen, ob vergleichbare und  anforderungsgerechte  Leistungen  bereits durch  die Einrichtungen  der  öffentlichen  Verwaltung  selbst  oder  im  Auftrag  dieser  durch  Dritte bereitgestellt  werden.  Dies  schließt  bundes-  und  landeseigene  sowie  kommunale Inhouse-Gesellschaften  mit  ein.  Die  Nutzung  dieser  Cloud-Dienste  ist  der  Beschaffung neuer Cloud-Dienste vorzuziehen soweit dies wirtschaftlich sinnvoll und rechtlich zulässig ist.",
+      "text": "Vor  Inanspruchnahme  und  Beschaffung  von  Cloud-Diensten  der  IT-Wirtschaft  ist  zu prüfen, ob vergleichbare und  anforderungsgerechte  Leistungen  bereits durch  die Einrichtungen  der  öffentlichen  Verwaltung  selbst  oder  im  Auftrag  dieser  durch  Dritte bereitgestellt  werden.  Dies  schließt  bundes-  und  landeseigene  sowie  kommunale Inhouse-Gesellschaften  mit  ein.  Die  Nutzung  dieser  Cloud-Dienste  ist  der  Beschaffung neuer Cloud-Dienste vorzuziehen soweit dies wirtschaftlich sinnvoll und rechtlich zulässig ist.",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 519.46,
+            "t": 60.14999999999998,
+            "r": 526.75096,
+            "b": 50.18999999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "2",
+      "text": "2"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.944,
+            "t": 697.78,
+            "r": 527.152,
+            "b": 652.06,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            190
+          ]
+        }
+      ],
+      "orig": "2. Die Einrichtungen der öffentlichen Verwaltung werden ihre Planungen, Bedarfsbeschreibungen  und  Vergaben  sowie  die  Nutzung  von  Cloud-Diensten  nach folgenden Grundsätzen ausrichten:",
+      "text": "Die Einrichtungen der öffentlichen Verwaltung werden ihre Planungen, Bedarfsbeschreibungen  und  Vergaben  sowie  die  Nutzung  von  Cloud-Diensten  nach folgenden Grundsätzen ausrichten:",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 106.94,
+            "t": 647.26,
+            "r": 527.1100000000001,
+            "b": 500.47,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            678
+          ]
+        }
+      ],
+      "orig": "a. Von  den  Einrichtungen  der  öffentlichen  Verwaltung  gehaltene  schützenswerte Informationen (z. B. Informationen aus Verfahren mit hohem oder sehr hohem Schutzbedarf, Betriebs- und Geschäftsgeheimnisse sowie sensible Daten über ITInfrastrukturen) dürfen ausschließlich in Deutschland gespeichert und verarbeitet werden.  Cloud-Anbieter  sollen  ein  dafür  geeignetes  Betriebsmodell  vorweisen. Sie müssen eine Vertraulichkeitsvereinbarung abschließen, nach der diese Daten nicht in den Bereich fremdstaatlicher Offenbarungspflichten und Zugriffsmöglichkeiten  gelangen  dürfen,  die  sich  außerhalb  der  Bundesrepublik Deutschland gegen Cloud-Anbieter richten können.",
+      "text": "Von  den  Einrichtungen  der  öffentlichen  Verwaltung  gehaltene  schützenswerte Informationen (z. B. Informationen aus Verfahren mit hohem oder sehr hohem Schutzbedarf, Betriebs- und Geschäftsgeheimnisse sowie sensible Daten über ITInfrastrukturen) dürfen ausschließlich in Deutschland gespeichert und verarbeitet werden.  Cloud-Anbieter  sollen  ein  dafür  geeignetes  Betriebsmodell  vorweisen. Sie müssen eine Vertraulichkeitsvereinbarung abschließen, nach der diese Daten nicht in den Bereich fremdstaatlicher Offenbarungspflichten und Zugriffsmöglichkeiten  gelangen  dürfen,  die  sich  außerhalb  der  Bundesrepublik Deutschland gegen Cloud-Anbieter richten können.",
+      "enumerated": true,
+      "marker": "a."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 106.94,
+            "t": 495.55,
+            "r": 527.1640000000001,
+            "b": 281.44999999999993,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1004
+          ]
+        }
+      ],
+      "orig": "b. Werden von einem Cloud-Anbieter Daten in Deutschland gespeichert und/oder verarbeitet,  die  Privat-  oder  Dienstgeheimnisse  gemäß  §§  203  und  353b  StGB enthalten,  ist  darüber  hinaus  durch  geeignete  technische  und  organisatorische Regelungen in einem Sicherheitskonzept sicherzustellen, dass diese Daten nicht unbefugt Dritten offenbart werden. Unbefugt ist eine Offenbarung insbesondere, wenn durch sie  gegen  gesetzliche  Anforderungen  des  Datenschutzrechts  sowie der  §§  203  und  353b  StGB  verstoßen  wird.  Die  IT-Unterstützung  für  die Verarbeitung  von  Verschlusssachen  (im  Allgemeinen  nur  bis  VS-NfD  zulässig) unterliegt  zudem  den  Regelungen  der  Verschlusssachenanweisung  (VSA  des Bundes  oder  der  Länder).  Bei  der  Verarbeitung  personenbezogener  Daten  sind die gesetzlichen Vorgaben zum Datenschutz sowie die entsprechenden Nachweispflichten  des  Cloud-Anbieters  zur  Einhaltung  des  technischen  und organisatorischen Datenschutzes zu beachten.",
+      "text": "Werden von einem Cloud-Anbieter Daten in Deutschland gespeichert und/oder verarbeitet,  die  Privat-  oder  Dienstgeheimnisse  gemäß  §§  203  und  353b  StGB enthalten,  ist  darüber  hinaus  durch  geeignete  technische  und  organisatorische Regelungen in einem Sicherheitskonzept sicherzustellen, dass diese Daten nicht unbefugt Dritten offenbart werden. Unbefugt ist eine Offenbarung insbesondere, wenn durch sie  gegen  gesetzliche  Anforderungen  des  Datenschutzrechts  sowie der  §§  203  und  353b  StGB  verstoßen  wird.  Die  IT-Unterstützung  für  die Verarbeitung  von  Verschlusssachen  (im  Allgemeinen  nur  bis  VS-NfD  zulässig) unterliegt  zudem  den  Regelungen  der  Verschlusssachenanweisung  (VSA  des Bundes  oder  der  Länder).  Bei  der  Verarbeitung  personenbezogener  Daten  sind die gesetzlichen Vorgaben zum Datenschutz sowie die entsprechenden Nachweispflichten  des  Cloud-Anbieters  zur  Einhaltung  des  technischen  und organisatorischen Datenschutzes zu beachten.",
+      "enumerated": true,
+      "marker": "b."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 106.94,
+            "t": 276.5,
+            "r": 527.1760000000002,
+            "b": 163.46000000000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            529
+          ]
+        }
+      ],
+      "orig": "c. Zur Vermeidung von 'Lock-in-Effekten', wirtschaftlich ausnutzbaren Abhängigkeiten  und  um  den  Austausch  von  Anbietern  in  wettbewerblicher Vergabe  zu  ermöglichen,  sind  in  möglichst  hohem  Maße  Cloud-Lösungen  auf Basis  offener  Standards  der  Vorzug  zu  geben.  Die  Planungen  zur  Nutzung  von Cloud-Diensten haben zu berücksichtigen, dass stets mehrere Anbieter am Markt zur Verfügung stehen, die die Aufgaben des ursprünglich beauftragten Anbieters übernehmen können. Das gilt besonders für folgende Fälle:",
+      "text": "Zur Vermeidung von 'Lock-in-Effekten', wirtschaftlich ausnutzbaren Abhängigkeiten  und  um  den  Austausch  von  Anbietern  in  wettbewerblicher Vergabe  zu  ermöglichen,  sind  in  möglichst  hohem  Maße  Cloud-Lösungen  auf Basis  offener  Standards  der  Vorzug  zu  geben.  Die  Planungen  zur  Nutzung  von Cloud-Diensten haben zu berücksichtigen, dass stets mehrere Anbieter am Markt zur Verfügung stehen, die die Aufgaben des ursprünglich beauftragten Anbieters übernehmen können. Das gilt besonders für folgende Fälle:",
+      "enumerated": true,
+      "marker": "c."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 127.58,
+            "t": 158.06000000000006,
+            "r": 502.012,
+            "b": 146.06000000000006,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": " Schlechtleistung, Unzuverlässigkeit oder Insolvenz eines Cloud-Anbieters;",
+      "text": " Schlechtleistung, Unzuverlässigkeit oder Insolvenz eines Cloud-Anbieters;",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 127.58,
+            "t": 140.53999999999996,
+            "r": 526.772,
+            "b": 111.62,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            146
+          ]
+        }
+      ],
+      "orig": " Austausch  von  Subunternehmern,  zu  Gunsten  solcher,  die  nicht  die  bei Vergabe geforderte Zuverlässigkeit und Vertrauenswürdigkeit haben;",
+      "text": " Austausch  von  Subunternehmern,  zu  Gunsten  solcher,  die  nicht  die  bei Vergabe geforderte Zuverlässigkeit und Vertrauenswürdigkeit haben;",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 127.58,
+            "t": 106.20000000000005,
+            "r": 526.9580000000001,
+            "b": 77.27999999999997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            159
+          ]
+        }
+      ],
+      "orig": " Eingliederung  des  Cloud-Anbieters  in  ein  anderes  Unternehmen  oder  einen anderen  Konzern  oder  sonstige  Fälle  des  Wechsels  des  wirtschaftlichen",
+      "text": " Eingliederung  des  Cloud-Anbieters  in  ein  anderes  Unternehmen  oder  einen anderen  Konzern  oder  sonstige  Fälle  des  Wechsels  des  wirtschaftlichen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 519.46,
+            "t": 60.14999999999998,
+            "r": 526.75096,
+            "b": 50.18999999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "3",
+      "text": "3"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 141.86,
+            "t": 697.78,
+            "r": 526.8199999999999,
+            "b": 652.06,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            196
+          ]
+        }
+      ],
+      "orig": "Eigentums  an  ihm,  wenn  infolge  dessen  die  geforderte  Zuverlässigkeit  und Vertrauenswürdigkeit nicht mehr  besteht oder nicht mehr  in der bei Vertragsschluss geforderten Weise belegt ist;",
+      "text": "Eigentums  an  ihm,  wenn  infolge  dessen  die  geforderte  Zuverlässigkeit  und Vertrauenswürdigkeit nicht mehr  besteht oder nicht mehr  in der bei Vertragsschluss geforderten Weise belegt ist;",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 127.58,
+            "t": 646.66,
+            "r": 526.8679999999998,
+            "b": 617.74,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            108
+          ]
+        }
+      ],
+      "orig": " Kündigung  des  Vertragsverhältnisses  aus  wichtigem  Grund  oder  regulärem Ende einer Vertragslaufzeit.",
+      "text": " Kündigung  des  Vertragsverhältnisses  aus  wichtigem  Grund  oder  regulärem Ende einer Vertragslaufzeit.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 106.94,
+            "t": 612.94,
+            "r": 527.188,
+            "b": 533.47,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            367
+          ]
+        }
+      ],
+      "orig": "d. Bei  den  Planungen  zur  Inanspruchnahme  von  Cloud-Diensten  der  IT-Wirtschaft sind  in  Wirtschaftlichkeitsbetrachtungen  auch  angemessene  Bewertungen  mit Kostenschätzungen und Annahmen zu Risiken hinsichtlich der Wirtschaftlichkeit, Zuverlässigkeit und Sicherheit zu treffen. Hierzu zählen neben den Kosten für die Nutzung des Cloud-Dienstes insbesondere:",
+      "text": "Bei  den  Planungen  zur  Inanspruchnahme  von  Cloud-Diensten  der  IT-Wirtschaft sind  in  Wirtschaftlichkeitsbetrachtungen  auch  angemessene  Bewertungen  mit Kostenschätzungen und Annahmen zu Risiken hinsichtlich der Wirtschaftlichkeit, Zuverlässigkeit und Sicherheit zu treffen. Hierzu zählen neben den Kosten für die Nutzung des Cloud-Dienstes insbesondere:",
+      "enumerated": true,
+      "marker": "d."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 127.58,
+            "t": 528.07,
+            "r": 453.652,
+            "b": 516.07,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": " weitere Kosten auf Seiten des Cloud-Anwenders, hier vor allem",
+      "text": " weitere Kosten auf Seiten des Cloud-Anwenders, hier vor allem",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 160.94,
+            "t": 511.15,
+            "r": 411.382,
+            "b": 499.15,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "o Schulung der Mitarbeiter und Administratoren,",
+      "text": "o Schulung der Mitarbeiter und Administratoren,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 160.94,
+            "t": 494.35,
+            "r": 410.42199999999997,
+            "b": 482.35,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "o Vorhalten von IT-Know-how zum Cloud-Dienst,",
+      "text": "o Vorhalten von IT-Know-how zum Cloud-Dienst,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 160.94,
+            "t": 477.43,
+            "r": 423.382,
+            "b": 465.43,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "o Verwalten und Überwachung des Cloud-Dienstes,",
+      "text": "o Verwalten und Überwachung des Cloud-Dienstes,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 127.58,
+            "t": 460.03,
+            "r": 325.822,
+            "b": 448.03,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": " Migrationskosten zum Cloud-Dienst,",
+      "text": " Migrationskosten zum Cloud-Dienst,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 127.58,
+            "t": 442.51,
+            "r": 526.8979999999997,
+            "b": 379.97,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            295
+          ]
+        }
+      ],
+      "orig": " Aufwände  für Migrationsszenarien, die ein gegebenenfalls notwendiger Anbieterwechsel  gemäß  Ziffer  2  c.  erzeugen  könnte  oder  die  Kosten  einer gegebenenfalls  notwendigen  Wiederaufnahme  des  Eigenbetriebs  durch  die Wiederbereitstellung von Personal und Sachmitteln ('Insourcing').",
+      "text": " Aufwände  für Migrationsszenarien, die ein gegebenenfalls notwendiger Anbieterwechsel  gemäß  Ziffer  2  c.  erzeugen  könnte  oder  die  Kosten  einer gegebenenfalls  notwendigen  Wiederaufnahme  des  Eigenbetriebs  durch  die Wiederbereitstellung von Personal und Sachmitteln ('Insourcing').",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 106.94,
+            "t": 375.05,
+            "r": 527.176,
+            "b": 177.74,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            866
+          ]
+        }
+      ],
+      "orig": "e. Zur Absicherung der Verfügbarkeit als Teil der IT-Sicherheit erfolgt eine Beauftragung  von  Cloud-Diensten  nur  unter  vertraglicher  Vereinbarung  von deutschem Recht und Gerichtsstand sowie ohne obligatorisch vorab zu betreibende Schlichtungsverfahren. Es ist zu gewährleisten, dass bei gegebenenfalls notwendigem Rechtsschutz beziehungsweise Eilrechtsschutz keine  Zeitverluste  eintreten,  zum  Beispiel  durch  eine  Einarbeitung  in  fremde Rechtsordnungen oder ein Auftreten vor entfernt gelegenen Gerichten, so dass die  jeweilige  Behörde  handlungsfähig  bleibt  und  ihre  Forderungen  effektiv durchsetzen  kann.  In  Bezug  auf  die  Nutzung  der  Cloud-Dienste  werden  zur Absicherung der Verfügbarkeit außerdem keine kurzfristigen einseitigen Kündigungsrechte oder Zurückbehaltungsrechte an den Leistungen zu Lasten des Auftraggebers akzeptiert.",
+      "text": "Zur Absicherung der Verfügbarkeit als Teil der IT-Sicherheit erfolgt eine Beauftragung  von  Cloud-Diensten  nur  unter  vertraglicher  Vereinbarung  von deutschem Recht und Gerichtsstand sowie ohne obligatorisch vorab zu betreibende Schlichtungsverfahren. Es ist zu gewährleisten, dass bei gegebenenfalls notwendigem Rechtsschutz beziehungsweise Eilrechtsschutz keine  Zeitverluste  eintreten,  zum  Beispiel  durch  eine  Einarbeitung  in  fremde Rechtsordnungen oder ein Auftreten vor entfernt gelegenen Gerichten, so dass die  jeweilige  Behörde  handlungsfähig  bleibt  und  ihre  Forderungen  effektiv durchsetzen  kann.  In  Bezug  auf  die  Nutzung  der  Cloud-Dienste  werden  zur Absicherung der Verfügbarkeit außerdem keine kurzfristigen einseitigen Kündigungsrechte oder Zurückbehaltungsrechte an den Leistungen zu Lasten des Auftraggebers akzeptiert.",
+      "enumerated": true,
+      "marker": "e."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 106.94,
+            "t": 172.93999999999994,
+            "r": 527.074,
+            "b": 110.41999999999996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            253
+          ]
+        }
+      ],
+      "orig": "f. Soweit  im  Zusammenhang  mit  der  Nutzung  von  Cloud-Diensten  Software  zu erwerben  ist  (zum  Beispiel  auch  zum  Fremdbetrieb)  sind  kurzfristig  einseitig ausübbare  Kündigungsoder Widerrufsmöglichkeiten seitens des Anbieters auszuschließen",
+      "text": "Soweit  im  Zusammenhang  mit  der  Nutzung  von  Cloud-Diensten  Software  zu erwerben  ist  (zum  Beispiel  auch  zum  Fremdbetrieb)  sind  kurzfristig  einseitig ausübbare  Kündigungsoder Widerrufsmöglichkeiten seitens des Anbieters auszuschließen",
+      "enumerated": true,
+      "marker": "f."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 106.94,
+            "t": 105.48000000000002,
+            "r": 526.922,
+            "b": 76.67999999999995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "g. Vor jeder Beschaffung ist der Schutzbedarf der gespeicherten bzw. verarbeiteten Daten festzustellen. Auf Basis dieser Schutzbedarfsfeststellung ist eine",
+      "text": "Vor jeder Beschaffung ist der Schutzbedarf der gespeicherten bzw. verarbeiteten Daten festzustellen. Auf Basis dieser Schutzbedarfsfeststellung ist eine",
+      "enumerated": true,
+      "marker": "g."
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 519.46,
+            "t": 60.14999999999998,
+            "r": 526.75096,
+            "b": 50.18999999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "4",
+      "text": "4"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 124.94,
+            "t": 697.78,
+            "r": 527.05,
+            "b": 618.34,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            364
+          ]
+        }
+      ],
+      "orig": "Risikoanalyse zur Nutzung des beabsichtigen Cloud-Dienstes anzufertigen, in der die  unter  Ziffer  2  c.  und  2  d.  genannten  Gesichtspunkte  berücksichtigt werden. Eine Beauftragung kann nur erfolgen, wenn die Umsetzung der Sicherheitsanforderungen  sowie  angemessene  Kontrollmöglichkeiten  dargelegt und vertraglich zugesichert werden (vgl. auch Ziffer 5).",
+      "text": "Risikoanalyse zur Nutzung des beabsichtigen Cloud-Dienstes anzufertigen, in der die  unter  Ziffer  2  c.  und  2  d.  genannten  Gesichtspunkte  berücksichtigt werden. Eine Beauftragung kann nur erfolgen, wenn die Umsetzung der Sicherheitsanforderungen  sowie  angemessene  Kontrollmöglichkeiten  dargelegt und vertraglich zugesichert werden (vgl. auch Ziffer 5).",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 106.94,
+            "t": 613.54,
+            "r": 527.0740000000001,
+            "b": 483.55,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            579
+          ]
+        }
+      ],
+      "orig": "h. Der  Cloud-Anbieter  hat  für  die  Bereitstellung  der  relevanten  Dienste  (inklusive der  dazu  notwendigen  infrastrukturellen,  organisatorischen,  personellen  und technischen  Komponenten) eine ausreichende Informationssicherheit durch ein gültiges Zertifikat  'ISO  27001 auf der Basis von IT-Grundschutz' oder durch ein gleichwertiges BSI-Verfahren bzw. vom BSI anerkanntes Verfahren nachzuweisen. Der  Cloud-Anbieter  muss  einen  Ansprechpartner  für  Informationssicherheit, Datenschutz und Geheimschutz benennen, der vom Auftraggeber direkt erreicht werden kann.",
+      "text": "Der  Cloud-Anbieter  hat  für  die  Bereitstellung  der  relevanten  Dienste  (inklusive der  dazu  notwendigen  infrastrukturellen,  organisatorischen,  personellen  und technischen  Komponenten) eine ausreichende Informationssicherheit durch ein gültiges Zertifikat  'ISO  27001 auf der Basis von IT-Grundschutz' oder durch ein gleichwertiges BSI-Verfahren bzw. vom BSI anerkanntes Verfahren nachzuweisen. Der  Cloud-Anbieter  muss  einen  Ansprechpartner  für  Informationssicherheit, Datenschutz und Geheimschutz benennen, der vom Auftraggeber direkt erreicht werden kann.",
+      "enumerated": true,
+      "marker": "h."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 124.94,
+            "t": 478.75,
+            "r": 527.1759999999999,
+            "b": 264.5,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            939
+          ]
+        }
+      ],
+      "orig": "Die Verpflichtung  zur  Erfüllung  von  Sicherheitsvorgaben  muss  vom  CloudAnbieter  auch  an  etwaige  Subunternehmer  weitergegeben  und  von  diesen vertraglich übernommen und erfüllt werden. Der Cloud-Anbieter muss (gegebenenfalls  unter  einer  Vertraulichkeitsvereinbarung)  dem  Auftraggeber Einblick  in  die  zum  Erlangen  des  Zertifikats  erstellten  Audit-Reports  gewähren. Der Cloud-Anbieter hat die an der Cloud-Dienstleistung beteiligten Subunternehmer dem Auftraggeber zu offenbaren. Für einen hohen Schutzbedarf richten sich die Maßnahmen der Informationssicherheit nach einer eingehenden Risikoanalyse, wie sie gemäß BSIStandard 100-2 i.V.m. 100-3 gefordert wird sowie nach den gemäß  der Einschätzung des Bedarfsträgers zusätzlich erforderlichen Maßnahmen. Insbesondere kann die Beschaffungsstelle auf Grundlage der Risikoanalyse gemäß Ziffer 3h), auch auf Veranlassung des Bedarfsträgers, im Einzelfall den Nachweis",
+      "text": "Die Verpflichtung  zur  Erfüllung  von  Sicherheitsvorgaben  muss  vom  CloudAnbieter  auch  an  etwaige  Subunternehmer  weitergegeben  und  von  diesen vertraglich übernommen und erfüllt werden. Der Cloud-Anbieter muss (gegebenenfalls  unter  einer  Vertraulichkeitsvereinbarung)  dem  Auftraggeber Einblick  in  die  zum  Erlangen  des  Zertifikats  erstellten  Audit-Reports  gewähren. Der Cloud-Anbieter hat die an der Cloud-Dienstleistung beteiligten Subunternehmer dem Auftraggeber zu offenbaren. Für einen hohen Schutzbedarf richten sich die Maßnahmen der Informationssicherheit nach einer eingehenden Risikoanalyse, wie sie gemäß BSIStandard 100-2 i.V.m. 100-3 gefordert wird sowie nach den gemäß  der Einschätzung des Bedarfsträgers zusätzlich erforderlichen Maßnahmen. Insbesondere kann die Beschaffungsstelle auf Grundlage der Risikoanalyse gemäß Ziffer 3h), auch auf Veranlassung des Bedarfsträgers, im Einzelfall den Nachweis"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 124.94,
+            "t": 259.69999999999993,
+            "r": 309.962,
+            "b": 247.69999999999993,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "strengerer Anforderungen verlangen.",
+      "text": "strengerer Anforderungen verlangen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 106.94,
+            "t": 242.77999999999997,
+            "r": 527.188,
+            "b": 213.98000000000002,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            120
+          ]
+        }
+      ],
+      "orig": "i. Cloud-Anbieter müssen ein Notfall-Management basierend auf dem BSI-Standard 100-4 oder der Norm ISO 22301 nachweisen.",
+      "text": "Cloud-Anbieter müssen ein Notfall-Management basierend auf dem BSI-Standard 100-4 oder der Norm ISO 22301 nachweisen.",
+      "enumerated": true,
+      "marker": "i."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 88.944,
+            "t": 209.17999999999995,
+            "r": 526.7760000000003,
+            "b": 180.26,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Abweichungen von diesen Grundsätzen müssen sich auf besonders begründete Ausnahmen beschränken.",
+      "text": "Abweichungen von diesen Grundsätzen müssen sich auf besonders begründete Ausnahmen beschränken."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 70.944,
+            "t": 175.46000000000004,
+            "r": 527.122,
+            "b": 96.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            438
+          ]
+        }
+      ],
+      "orig": "3. Die  Grundsätze  in  Ziffer  2  dieses  Beschlusses  gelten  für  die  IT-Unterstützung  und Aufgabenerfüllung  im  Inland.  Aufgrund  der  besonderen  Anforderungen  sind  für  die Informationstechnik  des  Auswärtigen  Amts,  des  Bundesministeriums  für  Verteidigung sowie  des  Bundesnachrichtendienstes  und  anderer,  im  Auftrag  der  Bundesregierung oder der Landesregierungen im Ausland tätigen Behörden Abweichungen möglich.",
+      "text": "Die  Grundsätze  in  Ziffer  2  dieses  Beschlusses  gelten  für  die  IT-Unterstützung  und Aufgabenerfüllung  im  Inland.  Aufgrund  der  besonderen  Anforderungen  sind  für  die Informationstechnik  des  Auswärtigen  Amts,  des  Bundesministeriums  für  Verteidigung sowie  des  Bundesnachrichtendienstes  und  anderer,  im  Auftrag  der  Bundesregierung oder der Landesregierungen im Ausland tätigen Behörden Abweichungen möglich.",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 519.46,
+            "t": 60.14999999999998,
+            "r": 526.75096,
+            "b": 50.18999999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "5",
+      "text": "5"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 70.944,
+            "t": 697.78,
+            "r": 526.9079999999999,
+            "b": 618.34,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            332
+          ]
+        }
+      ],
+      "orig": "4. Weitergehende gesetzliche Regelungen, zum Beispiel zum Umgang mit personenbezogenen Daten, oder spezielle Regelungen zum Geheimschutz (zum Beispiel VSA) bleiben von diesem Beschluss unberührt. Zudem bleibt es den Mitgliedern des ITPlanungsrats unbenommen, weitergehende Anforderungen an die Nutzung von CloudDiensten festzulegen.",
+      "text": "Weitergehende gesetzliche Regelungen, zum Beispiel zum Umgang mit personenbezogenen Daten, oder spezielle Regelungen zum Geheimschutz (zum Beispiel VSA) bleiben von diesem Beschluss unberührt. Zudem bleibt es den Mitgliedern des ITPlanungsrats unbenommen, weitergehende Anforderungen an die Nutzung von CloudDiensten festzulegen.",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 70.944,
+            "t": 613.54,
+            "r": 527.1759999999999,
+            "b": 534.07,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            361
+          ]
+        }
+      ],
+      "orig": "5. Bei der Inanspruchnahme von Cloud-Dienstleistungen und Cloud Service Providern sind die  'Handlungsempfehlungen für die Ausschreibung, die Vergabe und den Betrieb von öffentlichen Aufträgen in der Cloud' und/oder der 'Anforderungskatalog Cloud Computing  -  Kriterien  zur  Beurteilung  der  Informationssicherheit  von  Cloud-Diensten' des BSI zu verwenden.",
+      "text": "Bei der Inanspruchnahme von Cloud-Dienstleistungen und Cloud Service Providern sind die  'Handlungsempfehlungen für die Ausschreibung, die Vergabe und den Betrieb von öffentlichen Aufträgen in der Cloud' und/oder der 'Anforderungskatalog Cloud Computing  -  Kriterien  zur  Beurteilung  der  Informationssicherheit  von  Cloud-Diensten' des BSI zu verwenden.",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 519.46,
+            "t": 60.14999999999998,
+            "r": 526.75096,
+            "b": 50.18999999999994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "6",
+      "text": "6"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 339.4141559800526,
+            "t": 792.0320096890773,
+            "r": 568.7210489649422,
+            "b": 738.0494530032196,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 324.2774540700209,
+            "t": 791.7851993399504,
+            "r": 555.1037906805461,
+            "b": 737.3381253305466,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 324.40325641811296,
+            "t": 792.4462197506285,
+            "r": 555.4658039313196,
+            "b": 736.5041591646099,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 325.00032222671,
+            "t": 791.3825314555768,
+            "r": 554.5012684580145,
+            "b": 737.5673515961346,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 324.34951531327016,
+            "t": 792.1511008509547,
+            "r": 555.338934686648,
+            "b": 737.0419040881086,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 324.24151489667446,
+            "t": 792.4626671623901,
+            "r": 555.6279722113898,
+            "b": 736.6068105433956,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 6
+    }
+  }
+}

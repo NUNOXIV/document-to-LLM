@@ -1,0 +1,1076 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Schnittstellenkontrollen",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 1726021227319312313,
+    "filename": "BSI---Schnittstellenkontrollen.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/pictures/7"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/pictures/8"
+      },
+      {
+        "$ref": "#/pictures/9"
+      },
+      {
+        "$ref": "#/texts/19"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 378.0069612747094,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            46
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund Schnittstellenkontrollen",
+      "text": "Mindeststandards Bund Schnittstellenkontrollen"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 516.8341887652414,
+            "b": 371.41107103311015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            106
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Schnittstellenkontrollen",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Schnittstellenkontrollen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 259.20000428000003,
+            "r": 533.6849691381253,
+            "b": 217.15429174619044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            216
+          ]
+        }
+      ],
+      "orig": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) hat mit Wirkung zum 30.04.2024 den Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Schnittstellenkontrollen aufgehoben .",
+      "text": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) hat mit Wirkung zum 30.04.2024 den Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Schnittstellenkontrollen aufgehoben ."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 193.95000699874993,
+            "r": 109.27200887199942,
+            "b": 187.9042929649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Begründung:",
+      "text": "Begründung:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 164.7000082175,
+            "r": 543.8990939125366,
+            "b": 32.65429943369054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            756
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 528.947233285531,
+            "b": 709.1542712461905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            757,
+            1350
+          ]
+        }
+      ],
+      "orig": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) erstellt Mindeststandards auf der Grundlage des § 8 Abs. (Absatz) 1 BSI (Bundesamt für Sicherheit in der Informationstechnik)-Gesetz zu Themen, die für die Informationssicherheit der Bundesverwaltung eine herausgehobene Bedeutung haben. Diese konkreten, für die Bundesverwaltung geltenden Anforderungen basieren auf speziellen technischen, rechtlichen oder organisatorischen Rahmenbedingungen in der Bundesverwaltung oder adressieren eine besondere Bedrohungslage. Da sich Rahmenbedingungen geändert haben, ist es aus Sicht des BSI (Bundesamt für Sicherheit in der Informationstechnik) nicht mehr erforderlich, bei normalem Schutzbedarf spezifische Regelungen für die Bundesverwaltung zum Thema Schnittstellenkontrolle in Form eines Mindeststandards festzulegen. Die Gefährdung der IT (Informationstechnik) durch physische Angriffe über Schnittstellen hat sich in den letzten Jahren reduziert. Die meisten Angriffe finden über das Internet statt, insbesondere in Form schadhafter EMails. Untersuchungen haben gezeigt, dass mit der Umsetzung der Standard-Absicherung des IT (Informationstechnik)-Grundschutzes und einer entsprechend sicheren Konfiguration von aktuellen Windows-/Linux-Betriebssystemen die in der Praxis relevanten Angriffsszenarien mit Bordmitteln abgewehrt werden können.",
+      "text": "Das BSI (Bundesamt für Sicherheit in der Informationstechnik) erstellt Mindeststandards auf der Grundlage des § 8 Abs. (Absatz) 1 BSI (Bundesamt für Sicherheit in der Informationstechnik)-Gesetz zu Themen, die für die Informationssicherheit der Bundesverwaltung eine herausgehobene Bedeutung haben. Diese konkreten, für die Bundesverwaltung geltenden Anforderungen basieren auf speziellen technischen, rechtlichen oder organisatorischen Rahmenbedingungen in der Bundesverwaltung oder adressieren eine besondere Bedrohungslage. Da sich Rahmenbedingungen geändert haben, ist es aus Sicht des BSI (Bundesamt für Sicherheit in der Informationstechnik) nicht mehr erforderlich, bei normalem Schutzbedarf spezifische Regelungen für die Bundesverwaltung zum Thema Schnittstellenkontrolle in Form eines Mindeststandards festzulegen. Die Gefährdung der IT (Informationstechnik) durch physische Angriffe über Schnittstellen hat sich in den letzten Jahren reduziert. Die meisten Angriffe finden über das Internet statt, insbesondere in Form schadhafter EMails. Untersuchungen haben gezeigt, dass mit der Umsetzung der Standard-Absicherung des IT (Informationstechnik)-Grundschutzes und einer entsprechend sicheren Konfiguration von aktuellen Windows-/Linux-Betriebssystemen die in der Praxis relevanten Angriffsszenarien mit Bordmitteln abgewehrt werden können."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 685.94998649875,
+            "r": 536.9051981039491,
+            "b": 661.9042732149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            184
+          ]
+        }
+      ],
+      "orig": "Der aufgehobene Mindeststandard in der Version 1.3 sowie die dazu gehörige Referenztabelle zum IT (Informationstechnik)-Grundschutz 2021 stehen Ihnen weiterhin im zur Verfügung. Archiv",
+      "text": "Der aufgehobene Mindeststandard in der Version 1.3 sowie die dazu gehörige Referenztabelle zum IT (Informationstechnik)-Grundschutz 2021 stehen Ihnen weiterhin im zur Verfügung. Archiv"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 230.60155289160156,
+            "t": 614.1074894921876,
+            "r": 364.8889830212916,
+            "b": 604.6610613143603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Ähnliche Themen",
+      "text": "Ähnliche Themen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 361.6171724326172,
+            "t": 509.6999938424999,
+            "r": 498.3810736591212,
+            "b": 503.6542798086905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Mobile Device Management",
+      "text": "Mobile Device Management",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Mobile_Device_Management/Mobile_Device_Management_node.html"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 357.1874851171875,
+            "t": 382.1999991550001,
+            "r": 502.80735027469274,
+            "b": 376.15428512119047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Transport Layer Security (TLS)",
+      "text": "Transport Layer Security (TLS)"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/pictures/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 398.9648308764647,
+            "t": 254.7000044675001,
+            "r": 461.02879446546626,
+            "b": 248.65429043369045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Webbrowser",
+      "text": "Webbrowser"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 346.39452056689436,
+            "t": 127.20000978000007,
+            "r": 513.6023773999001,
+            "b": 121.15429574619043,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Nutzerpflichten Netze des Bundes",
+      "text": "Nutzerpflichten Netze des Bundes",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/NdB/NdB_node.html"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 109.80468292480468,
+            "t": 509.6999938424999,
+            "r": 221.1765933843082,
+            "b": 503.6542798086905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Externe Cloud-Dienste",
+      "text": "Externe Cloud-Dienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Externe_Cloud-Dienste/Externe_Cloud-Dienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/pictures/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 104.77733938427734,
+            "t": 382.1999991550001,
+            "r": 226.2052427497811,
+            "b": 376.15428512119047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "HV-Benchmark kompakt",
+      "text": "HV-Benchmark kompakt"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 90.84374621484375,
+            "t": 254.7000044675001,
+            "r": 240.1476085188492,
+            "b": 248.65429043369045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 580.94999087375,
+            "r": 421.2632359473645,
+            "b": 574.9042768399406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            30,
+            97
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 464.69999571749986,
+            "r": 158.39995432500166,
+            "b": 422.6542831836905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            98,
+            159
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 410.69999796749994,
+            "r": 121.33199186950014,
+            "b": 404.65428393369075,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            160,
+            184
+          ]
+        }
+      ],
+      "orig": "Protokollierung und Detektion Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Schnittstellenkontrollen Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Protokollierung und Detektion Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Schnittstellenkontrollen Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/pictures/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 109.30077669580078,
+            "t": 127.20000978000007,
+            "r": 221.69267608780476,
+            "b": 121.15429574619043,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Videokonferenzdienste",
+      "text": "Videokonferenzdienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Videokonferenzdienste/Videokonferenzdienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 138.5039004790039,
+            "t": 754.1999836549999,
+            "r": 192.4798744550049,
+            "b": 748.1542696211907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "ISMS ITKB",
+      "text": "ISMS ITKB"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 373.93358191943344,
+            "t": 754.1999836549999,
+            "r": 486.06147404743774,
+            "b": 748.1542696211907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 682.94998662375,
+            "r": 387.1355325693521,
+            "b": 676.9042725899405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund",
+      "text": "Zurück zu Mindeststandards Bund"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 373.94999949875,
+            "r": 313.9438494440058,
+            "b": 367.9042854649406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 313.8975020009375,
+            "r": 509.74872171046906,
+            "b": 308.9853593484672,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            54,
+            57
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik TOP",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.25825058248722,
+            "t": 553.0406981524759,
+            "r": 170.5298901463623,
+            "b": 491.1771931827761,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 404.145317436308,
+            "t": 571.7782360971701,
+            "r": 454.04045809603343,
+            "b": 516.1723150884545,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/9"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 356.41171343699733,
+            "t": 445.5534472009053,
+            "r": 502.73551472486787,
+            "b": 370.87469296708497,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 398.0587214407456,
+            "t": 319.4672559715159,
+            "r": 460.9886904405733,
+            "b": 245.93725730070503,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 404.04138155995804,
+            "t": 189.666238373184,
+            "r": 455.15848588162055,
+            "b": 133.89608736818434,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 139.77002787041158,
+            "t": 572.8240656517315,
+            "r": 190.16238848587574,
+            "b": 516.7276517109699,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 104.76803470229206,
+            "t": 445.684568771703,
+            "r": 226.40524968334242,
+            "b": 371.4155656322909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 140.71953367210477,
+            "t": 318.1586034964794,
+            "r": 189.7096754225787,
+            "b": 261.5508245840099,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 140.04004448869773,
+            "t": 190.43825972323816,
+            "r": 190.67350826301126,
+            "b": 134.24297822618496,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 43.00909132517736,
+            "t": 829.2219280777327,
+            "r": 551.7507707519818,
+            "b": 655.1708685442786,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    }
+  }
+}
