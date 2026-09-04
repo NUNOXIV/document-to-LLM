@@ -136,8 +136,23 @@ in der Kopfzeile; die Prüfung nach dem Lauf bleibt bestehen.
 `--workers 2` (Standard) hält zwei Docling-Prozesse mit je einmal geladenen
 Modellen und verteilt die Dateien darauf. Jeder Worker braucht bis zu 8 GB,
 zwei sind auf 16 GB das Maximum; `--reset-every 40` ersetzt einen Worker nach
-40 Dokumenten, weil sein Speicher über lange Läufe wächst. Messwerte und
-Befehl stehen weiter unten bei den Engines.
+40 Dokumenten, weil sein Speicher über lange Läufe wächst.
+
+Gemessen auf 4 Kernen, 15 GB, dieselben drei PDFs (Test-PDF, NIST CSWP 29
+mit 32 Seiten, CISM Strategic Blueprint als 14-seitiger Scan mit OCR),
+Befehl: `extract.py <drei PDFs> --workers N --timeout 0 -o <ordner>`:
+
+| | Wandzeit | Scan (OCR) | NIST |
+|---|---|---|---|
+| 1 Worker | 193 s | 112 s | 60 s |
+| 2 Worker | 173 s | 144 s | 115 s |
+| 2 Worker, je 2 Threads (`OMP_NUM_THREADS=2`) | 205 s | 184 s | 118 s |
+
+Docling nutzt schon in einem Prozess alle Kerne. Zwei Worker bringen auf
+vier Kernen 10 %, weil sich die Dokumente gegenseitig bremsen; der Gewinn
+wächst mit der Kernzahl und ist dort neu zu messen. Die Scan-Vorabprobe
+sparte am Blueprint den verlorenen ersten Lauf: 143 s statt 184 s mit
+derselben OCR.
 
 ## Was den Output belastbar macht
 
