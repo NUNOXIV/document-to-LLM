@@ -125,6 +125,20 @@ der Extrakt das als Warnung und fällt auf den nativen Pfad zurück, statt
 still weniger zu liefern. Deshalb bleibt Docling hier Standard, xberg ist
 eine Zeile entfernt.
 
+## Scan-Erkennung und zwei Worker
+
+Vor jedem PDF liest `extract.py` den Textlayer mit pypdfium2 (Sekunden, keine
+Modelle). Unter 120 Zeichen je Seite gilt die Datei als Scan und geht sofort
+mit OCR an Docling, statt erst ohne OCR durchzulaufen, „textarm" zu melden und
+ein zweites Mal zu laufen. Der Befund steht als `scan_probe: scan|textlayer`
+in der Kopfzeile; die Prüfung nach dem Lauf bleibt bestehen.
+
+`--workers 2` (Standard) hält zwei Docling-Prozesse mit je einmal geladenen
+Modellen und verteilt die Dateien darauf. Jeder Worker braucht bis zu 8 GB,
+zwei sind auf 16 GB das Maximum; `--reset-every 40` ersetzt einen Worker nach
+40 Dokumenten, weil sein Speicher über lange Läufe wächst. Messwerte und
+Befehl stehen weiter unten bei den Engines.
+
 ## Was den Output belastbar macht
 
 - **Provenienz je Datei:** YAML-Front-Matter mit SHA-256 der Quelle, Seitenzahl,

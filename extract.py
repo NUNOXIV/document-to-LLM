@@ -81,6 +81,7 @@ class Result:
     text_coverage: float | None = None   # Wortdeckung Quelle -> Extrakt (nur PDF)
     repaired_lines: int = 0              # als Nachtrag ergaenzte Quellzeilen
     restored_hyphens: int = 0            # belegte Bindestriche zurueckgesetzt
+    scan_probe: str = ""                 # textlayer | scan | "" (keine Probe)
     duration_s: float = 0.0
     status: str = "ok"          # ok | warn | error | skipped
     warnings: list[str] = field(default_factory=list)
@@ -199,6 +200,33 @@ def _xberg_worker(src_str: str, ocr: bool, page_markers: bool, want_json: bool,
     }
 
 
+def scan_vorabprobe(src: Path) -> tuple[float, int] | None:
+    """Zeichen je Seite im Textlayer, gelesen mit pypdfium2 -- ohne Modelle.
+
+    Vorher lief Docling erst komplett durch, stellte 'textarm' fest und lief
+    mit OCR ein zweites Mal: bei einem 300-Seiten-Scan ein verlorener Lauf
+    von Minuten. Die Probe kostet Sekunden und entscheidet vorab. Sie ersetzt
+    die Pruefung nach dem Lauf nicht -- ein Textlayer kann auch leer bleiben,
+    wo Docling weniger findet als pypdfium.
+    """
+    try:
+        import pypdfium2
+
+        from verify import quelltext
+
+        doc = pypdfium2.PdfDocument(src)
+        try:
+            seiten = len(doc)
+        finally:
+            doc.close()
+        if not seiten:
+            return None
+        text = quelltext(src)
+        return len(text.strip()) / seiten, seiten
+    except Exception:
+        return None
+
+
 def docling_version() -> str:
     try:
         from importlib.metadata import version
@@ -303,9 +331,14 @@ class _Runner:
     """Haelt einen Worker-Prozess, damit die Modelle nicht je Dokument neu
     geladen werden, und ersetzt ihn, wenn er abgestuerzt ist."""
 
-    def __init__(self, timeout: float | None = None) -> None:
+    def __init__(self, timeout: float | None = None, max_docs: int = 40) -> None:
         self._pool = None
         self.timeout = timeout
+        # Der Speicher des Docling-Workers waechst ueber einen langen Lauf
+        # (7,5 GB nach 96 Dokumenten); nach max_docs Dokumenten wird der
+        # Prozess ersetzt, die Modelle laden dann einmal neu.
+        self.max_docs = max_docs
+        self.docs = 0
 
     def _get(self):
         if self._pool is None:
@@ -325,8 +358,13 @@ class _Runner:
         from concurrent.futures import TimeoutError as FutureTimeout
         from concurrent.futures.process import BrokenProcessPool
 
+        if self.max_docs and self.docs >= self.max_docs:
+            self.reset()
+            self.docs = 0
         try:
-            return self._get().submit(worker, *args).result(timeout=self.timeout)
+            ergebnis = self._get().submit(worker, *args).result(timeout=self.timeout)
+            self.docs += 1
+            return ergebnis
         except FutureTimeout as exc:
             # Ein einzelnes pathologisches Dokument darf den Batch nicht
             # blockieren: Worker verwerfen, Dokument als Fehler markieren.
@@ -563,6 +601,7 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         f"tables: {res.tables}",
         f"converter: {esc(converter_label(res))}",
         f"engine: {res.converter}",
+        *([f"scan_probe: {res.scan_probe}"] if res.scan_probe else []),
         f"ocr: {str(res.ocr_used).lower()} # mode={ocr_mode}",
         f"table_mode: {res.table_mode}",
         f"docling_status: {res.docling_status}",
@@ -667,6 +706,7 @@ def convert_file(
     mdir_ref: tuple[Path | None, ...] = (None,),
     engine: str = "docling",
     xberg_layout: bool = False,
+    sperre=None,
 ) -> Result:
     started = time.perf_counter()
     res = Result(
@@ -674,7 +714,11 @@ def convert_file(
         source_sha256=sha256_of(src),
         source_bytes=src.stat().st_size,
     )
-    stem = target_name(src, claimed, out_dir)
+    if sperre is not None:
+        with sperre:
+            stem = target_name(src, claimed, out_dir)
+    else:
+        stem = target_name(src, claimed, out_dir)
     target = out_dir / f"{stem}.md"
 
     if target.exists() and not force:
@@ -735,6 +779,17 @@ def convert_file(
 
     is_pdf = src.suffix.lower() == ".pdf"
     ocr = ocr_mode == "on"
+    if is_pdf and ocr_mode == "auto":
+        probe = scan_vorabprobe(src)
+        if probe is not None:
+            je_seite, seiten = probe
+            if je_seite < LOW_TEXT_CHARS_PER_PAGE:
+                click.echo(f"    Vorabprobe: {je_seite:.0f} Zeichen/Seite im Textlayer "
+                           f"({seiten} S.) — gescannt, OCR sofort", err=True)
+                ocr = True
+                res.scan_probe = "scan"
+            else:
+                res.scan_probe = "textlayer"
     table_mode = "accurate"
     mdir = mdir_ref[0]
     res_json = None
@@ -1111,9 +1166,16 @@ def doctor_xberg(fixture: Path) -> None:
 @click.option("--timeout", default=1800.0, show_default=True, type=float,
               help="Zeitgrenze je Dokument in Sekunden; 0 = keine Grenze. "
                    "Verhindert, dass ein einzelnes Dokument den Batch blockiert.")
+@click.option("--workers", default=2, show_default=True, type=click.IntRange(1, 8),
+              envvar="ACSOS_WORKERS", show_envvar=True,
+              help="Parallele Konvertierungsprozesse. Jeder Docling-Worker braucht bis "
+                   "zu 8 GB; zwei sind auf 16 GB das Maximum.")
+@click.option("--reset-every", default=40, show_default=True, type=click.IntRange(0, 10000),
+              help="Worker-Prozess nach so vielen Dokumenten ersetzen (Speicherwachstum); "
+                   "0 = nie.")
 def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
          do_verify, min_coverage, repair, models_dir, engine, xberg_layout, doctor,
-         force, strict, timeout):
+         force, strict, timeout, workers, reset_every):
     """Konvertiert Dokumente mit IBM Docling oder xberg nach strukturiertem Markdown."""
     if engine == "docling" or doctor:
         try:
@@ -1145,16 +1207,24 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
     out_dir = Path(output_dir).expanduser()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Ein Worker-Prozess fuer den ganzen Batch: die Modelle werden einmal
-    # geladen, ein Absturz kostet nur das laufende Dokument.
-    runner = _Runner(timeout or None)
+    # Je Worker ein eigener Prozess mit einmal geladenen Modellen; die
+    # Dokumente werden ueber Threads verteilt, die Konvertierung selbst laeuft
+    # in den Worker-Prozessen parallel. Zwei Worker halbieren die PDF-Zeit,
+    # die 55 % des Gesamtlaufs ausmachte (184 PDFs, 3,6 h mit einem Worker).
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
 
+    workers = max(1, min(workers, len(files)))
+    runners = [_Runner(timeout or None, reset_every) for _ in range(workers)]
     kopf = f"xberg {xberg_version()}" if engine == "xberg" else f"Docling {docling_version()}"
-    click.echo(f"{kopf} — {len(files)} Datei(en) -> {out_dir}/")
+    click.echo(f"{kopf} — {len(files)} Datei(en) -> {out_dir}/ ({workers} Worker)")
     claimed: dict[str, Path] = {}
-    results: list[Result] = []
-    for i, src in enumerate(files, 1):
-        click.echo(f"[{i}/{len(files)}] {src.name}")
+    sperre = threading.Lock()
+    results: list[Result | None] = [None] * len(files)
+
+    def verarbeite(i: int, src: Path) -> tuple[int, Result, list[tuple[str, str]]]:
+        runner = runners[i % workers]
+        zeilen: list[tuple[str, str]] = []
         try:
             res = convert_file(
                 runner, src, out_dir,
@@ -1162,37 +1232,53 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
                 page_markers=not no_page_markers, force=force, claimed=claimed,
                 do_verify=do_verify, min_coverage=min_coverage, repair=repair,
                 mdir_ref=(mdir,), engine=engine, xberg_layout=xberg_layout,
+                sperre=sperre,
             )
         except ExtractionError as exc:
             res = Result(
                 source=str(src), source_sha256=sha256_of(src),
                 source_bytes=src.stat().st_size, status="error", error=str(exc),
             )
-            click.secho(f"    FEHLER: {exc}", fg="red", err=True)
+            zeilen.append(("red", f"    FEHLER: {exc}"))
         except Exception as exc:  # unerwartet: Batch nicht abbrechen
             res = Result(
                 source=str(src), source_sha256=sha256_of(src),
                 source_bytes=src.stat().st_size, status="error",
                 error=f"{type(exc).__name__}: {exc}",
             )
-            click.secho(f"    FEHLER: {res.error}", fg="red", err=True)
+            zeilen.append(("red", f"    FEHLER: {res.error}"))
         else:
             if res.status == "skipped":
-                click.echo("    unveraendert — uebersprungen (--force erzwingt neu)")
+                zeilen.append(("", "    unveraendert — uebersprungen (--force erzwingt neu)"))
             else:
-                click.secho(
+                zeilen.append(("green",
                     f"    -> {Path(res.output).name} "
                     f"({res.pages} S., {res.characters} Z., {res.tables} Tab., "
                     f"{res.headings} Ueberschriften"
                     + (f", Deckung {res.text_coverage} %" if res.text_coverage is not None else "")
-                    + f", {res.duration_s}s)",
-                    fg="green",
-                )
+                    + f", {res.duration_s}s)"))
             for w in res.warnings:
-                click.secho(f"    WARNUNG: {w}", fg="yellow", err=True)
-        results.append(res)
+                zeilen.append(("yellow", f"    WARNUNG: {w}"))
+        return i, res, zeilen
 
-    runner.reset()
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        offen = [pool.submit(verarbeite, i, src) for i, src in enumerate(files)]
+        from concurrent.futures import as_completed
+
+        for fut in as_completed(offen):
+            i, res, zeilen = fut.result()
+            results[i] = res
+            with sperre:
+                click.echo(f"[{i + 1}/{len(files)}] {files[i].name}")
+                for farbe, zeile in zeilen:
+                    if farbe:
+                        click.secho(zeile, fg=farbe, err=(farbe != "green"))
+                    else:
+                        click.echo(zeile)
+
+    for r in runners:
+        r.reset()
+    results = [r for r in results if r is not None]
     manifest = write_manifest(out_dir, results, engine)
     errors = [r for r in results if r.status == "error"]
     warns = [r for r in results if r.status == "warn"]

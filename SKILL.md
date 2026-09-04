@@ -48,6 +48,11 @@ python extract.py input/ --recursive --json
 Ergebnis: `output/<slug>.md` mit YAML-Front-Matter (Quell-Hash, Seitenzahl,
 Docling-Version, Wortdeckung, Warnungen) und `<!-- page: N -->` Markern im Text.
 
+**Scan-Vorabprobe und zwei Worker.** Vor jedem PDF wird der Textlayer
+gelesen; ein Scan geht sofort mit OCR an Docling (`scan_probe` in der
+Kopfzeile). `--workers 2` ist Standard, `--reset-every 40` ersetzt einen
+Worker nach 40 Dokumenten gegen Speicherwachstum.
+
 **Zwei Engines.** Standard ist IBM Docling; `--engine xberg` (oder
 `ACSOS_ENGINE=xberg`) nutzt den Rust-Kern von xberg mit demselben
 Ausgabevertrag. Der Wortlaut ist bei beiden belegt, die Tabellenstruktur

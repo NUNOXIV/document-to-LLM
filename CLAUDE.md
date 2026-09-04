@@ -17,6 +17,7 @@ Beschreibung: `SKILL.md`. Aufbau: `README.md`.
 # Umgebung
 pip install -r requirements.txt -r requirements-dev.txt
 python extract.py --doctor            # Textlayer, Docling-Modelle, xberg einsatzbereit?
+python extract.py input/ -r --json    # Standard: 2 Worker, Scan-Vorabprobe, Docling
 
 # Testlauf (das ist die Definition of Done, nicht "sieht gut aus")
 python -m pytest                      # alle Tests, inkl. Eigenschaftstests

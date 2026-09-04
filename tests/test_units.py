@@ -310,6 +310,70 @@ def test_ueberhang_im_export() -> None:
     check("Oberklausel aus Unterpunkt ist kein Ueberhang", ("9.2", "9.2.1") not in treffer, str(treffer))
 
 
+class _StubRunner:
+    """Zaehlt Aufrufe statt zu konvertieren: welcher OCR-Modus ging an den Worker?"""
+
+    def __init__(self, markdown: str = "# Titel\n\nText " * 50) -> None:
+        self.calls: list[tuple] = []
+        self.markdown = markdown
+
+    def run(self, worker, *args) -> dict:
+        self.calls.append(args)
+        return {"markdown": self.markdown, "pages": 1, "tables": 0, "status": "success",
+                "failed_pages": [], "errors": [], "json": None, "warnings": []}
+
+    def reset(self) -> None:
+        pass
+
+
+def test_scan_vorabprobe_entscheidet_vor_dem_lauf() -> None:
+    """Ein Scan geht sofort mit OCR an den Worker, ein Textlayer-PDF ohne;
+    der doppelte Lauf (erst ohne, dann 'textarm', dann mit OCR) entfaellt."""
+    print("Scan-Vorabprobe")
+    if not FIXTURE_PDF.exists():
+        print("  (Fixture fehlt — uebersprungen)")
+        return
+    original = extract.scan_vorabprobe
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            for probe, erwartet in (((12.0, 3), True), ((800.0, 2), False)):
+                extract.scan_vorabprobe = lambda p, _v=probe: _v
+                stub = _StubRunner()
+                res = extract.convert_file(
+                    stub, FIXTURE_PDF, Path(tmp) / str(erwartet), ocr_mode="auto", page_markers=True,
+                    write_json=False, force=True, claimed={}, do_verify=False,
+                    min_coverage=99.0, repair=False,
+                )
+                check(f"Probe {probe[0]:.0f} Z./Seite: genau ein Lauf", len(stub.calls) == 1, str(len(stub.calls)))
+                check(f"Probe {probe[0]:.0f} Z./Seite: OCR={erwartet}", stub.calls[0][1] is erwartet, str(stub.calls[0][:2]))
+                check("Probe steht in der Kopfzeile",
+                      f"scan_probe: {'scan' if erwartet else 'textlayer'}" in Path(res.output).read_text(encoding="utf-8"))
+    finally:
+        extract.scan_vorabprobe = original
+
+
+def test_zwei_worker_verarbeiten_alle_dateien() -> None:
+    """Mit --workers 2 kommt jede Datei genau einmal an, in stabiler Reihenfolge im Manifest."""
+    print("Zwei Worker")
+    import json
+
+    from click.testing import CliRunner
+
+    with tempfile.TemporaryDirectory() as tmp:
+        wurzel = Path(tmp)
+        for i in range(5):
+            (wurzel / f"katalog-{i}.yml").write_text(f"id: K{i}\ntext: Anforderung {i}\n", encoding="utf-8")
+        out = wurzel / "out"
+        r = CliRunner().invoke(extract.main, [str(wurzel), "-o", str(out), "--workers", "2", "--no-verify"])
+        check("Lauf ohne Fehler", r.exit_code == 0, r.output[-400:])
+        m = json.loads((out / "manifest.json").read_text(encoding="utf-8"))
+        namen = [Path(d["source"]).name for d in m["documents"]]
+        check("alle fuenf im Manifest", sorted(namen) == [f"katalog-{i}.yml" for i in range(5)], str(namen))
+        check("Reihenfolge wie eingegeben", namen == sorted(namen), str(namen))
+        check("fuenf Extrakte", len(list(out.glob("katalog-*.md"))) == 5)
+        check("2 Worker im Kopf", "(2 Worker)" in r.output, r.output[:120])
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
