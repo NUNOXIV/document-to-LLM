@@ -1413,23 +1413,28 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
                 zeilen.append(("yellow", f"    WARNUNG: {w}"))
         return i, res, zeilen
 
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        offen = [pool.submit(verarbeite, i, src) for i, src in enumerate(files)]
-        from concurrent.futures import as_completed
+    # Die Worker muessen auch dann sterben, wenn der Lauf mit einer Ausnahme
+    # endet. Ueberlebt einer, haelt er die geerbte Ausgabe-Pipe offen: ein
+    # nachgeschaltetes "| tail" wartet dann ewig auf ein Dateiende, das nie
+    # kommt, und der ganze Ablauf steht still, ohne dass etwas laeuft.
+    try:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            offen = [pool.submit(verarbeite, i, src) for i, src in enumerate(files)]
+            from concurrent.futures import as_completed
 
-        for fut in as_completed(offen):
-            i, res, zeilen = fut.result()
-            results[i] = res
-            with sperre:
-                click.echo(f"[{i + 1}/{len(files)}] {files[i].name}")
-                for farbe, zeile in zeilen:
-                    if farbe:
-                        click.secho(zeile, fg=farbe, err=(farbe != "green"))
-                    else:
-                        click.echo(zeile)
-
-    for r in runners:
-        r.reset()
+            for fut in as_completed(offen):
+                i, res, zeilen = fut.result()
+                results[i] = res
+                with sperre:
+                    click.echo(f"[{i + 1}/{len(files)}] {files[i].name}")
+                    for farbe, zeile in zeilen:
+                        if farbe:
+                            click.secho(zeile, fg=farbe, err=(farbe != "green"))
+                        else:
+                            click.echo(zeile)
+    finally:
+        for r in runners:
+            r.reset()
     results = [r for r in results if r is not None]
     manifest = write_manifest(out_dir, results, engine)
     errors = [r for r in results if r.status == "error"]
