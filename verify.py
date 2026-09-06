@@ -431,13 +431,31 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
         from docx import Document as DocxDocument
 
         doc = DocxDocument(str(path))
+
+        def absatz_woerter(para) -> list[str]:
+            """Runweise lesen, nicht ueber den zusammengesetzten Absatztext.
+
+            Word speichert einen Absatz als Folge von Runs. Wo eine
+            Aenderungsmarkierung Text herausgenommen hat, stossen zwei Runs
+            ohne Leerzeichen aneinander: aus "…each environment" und "new "
+            wurde das Wort "environmentnew", das im Extrakt zu Recht fehlt.
+            Ein Wort, das die Formatierung ueber zwei Runs teilt ("Ver"+"trag"),
+            faengt die Zusammenfuehrung in compare() ab — der umgekehrte Fall
+            ist also abgedeckt, dieser war es nicht.
+            """
+            laeufe = [r.text for r in para.runs if r.text]
+            if not laeufe:
+                return tokenize_lines(para.text)
+            return [t for lauf in laeufe for t in tokenize_lines(lauf)]
+
         words = []
         for para in doc.paragraphs:
-            words.extend(tokenize_lines(para.text))
+            words.extend(absatz_woerter(para))
         for table in doc.tables:
             for row in table.rows:
                 for cell in row.cells:
-                    words.extend(tokenize_lines(cell.text))
+                    for para in cell.paragraphs:
+                        words.extend(absatz_woerter(para))
         pages[1] = words
 
     elif suffix == ".pptx":

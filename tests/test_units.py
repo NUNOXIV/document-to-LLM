@@ -542,6 +542,40 @@ def test_verlorene_trennung_ueber_zweitleser() -> None:
     check("nichts ohne Beleg", len(t2) == 2, str(t2))
 
 
+def test_docx_runs_kleben_nicht(tmp_path: Path) -> None:
+    """Word speichert einen Absatz als Folge von Runs. Wo eine geloeschte
+    Stelle herausgenommen wurde, stossen zwei Runs ohne Leerzeichen aneinander:
+    aus "…each environment" + "new " wird "environmentnew". Der Zweitleser
+    meldete das als fehlendes Wort, obwohl im Extrakt beide Woerter stehen.
+    Runweise gelesen entsteht der Klebefund nicht; ein Wort, das die
+    Formatierung ueber zwei Runs teilt, faengt die Zusammenfuehrung in
+    compare() ab.
+    """
+    import verify as V2
+    from docx import Document as D
+
+    d = D()
+    para = d.add_paragraph()
+    for stueck in ("all software deployed in each environment", "new ", "vulnerabilities"):
+        para.add_run(stueck)
+    zwei = d.add_paragraph()
+    zwei.add_run("Ver")
+    zwei.add_run("trag ist ein Wort")
+    q = tmp_path / "delta.docx"
+    d.save(str(q))
+
+    seiten, _ = V2.office_pages(q)
+    toks = [t for ts in seiten.values() for t in ts]
+    check("kein Klebewort", "environmentnew" not in toks, str([t for t in toks if "environ" in t]))
+    check("beide Woerter einzeln", "environment" in toks and "new" in toks, str(toks[:12]))
+
+    md = tmp_path / "e.md"
+    md.write_text("all software deployed in each environment new vulnerabilities\n\n"
+                  "Vertrag ist ein Wort\n", encoding="utf-8")
+    r = V2.verify(q, md)
+    check("Deckung vollstaendig", r.coverage == 100.0, f"{r.coverage} fehlend={r.missing_sample}")
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
