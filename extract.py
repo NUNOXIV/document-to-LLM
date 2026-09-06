@@ -1360,8 +1360,14 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
         f"\nFertig: {len(results) - len(errors)} ok, {len(warns)} mit Warnung, "
         f"{len(errors)} Fehler. Manifest: {manifest}"
     )
-    if errors or (strict and warns):
-        sys.exit(1)
+    # Bewusst os._exit statt sys.exit: ProcessPoolExecutor meldet ueber einen
+    # atexit-Handler alle Verwaltungsthreads an und wartet auf sie. Haengt ein
+    # Worker-Prozess, haengt das Programmende — die Arbeit war fertig, das
+    # Manifest geschrieben, und der Prozess stand trotzdem noch nach 40 Minuten.
+    # Alles Geschriebene liegt auf Platte; nur die Puffer muessen noch raus.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(1 if (errors or (strict and warns)) else 0)
 
 
 if __name__ == "__main__":
