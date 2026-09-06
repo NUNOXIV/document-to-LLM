@@ -623,10 +623,14 @@ def test_pdf_pruefung_laeuft_nie_zu_zweit(tmp_path: Path) -> None:
         def lauf(i: int):
             ziel = tmp_path / f"kopie{i}.pdf"
             ziel.write_bytes(FIXTURE_PDF.read_bytes())
-            return extract.convert_file(
-                runner[i], ziel, out, ocr_mode="off", write_json=False,
-                page_markers=True, force=True, claimed={}, do_verify=True,
-                min_coverage=99.0, repair=True, sperre=sperre)
+            try:
+                return extract.convert_file(
+                    runner[i], ziel, out, ocr_mode="off", write_json=False,
+                    page_markers=True, force=True, claimed={}, do_verify=True,
+                    min_coverage=99.0, repair=True, sperre=sperre)
+            except extract.ExtractionError as fehler:
+                return extract.Result(source=str(ziel), source_sha256="", source_bytes=0,
+                                      status="error", error=str(fehler))
 
         with ThreadPoolExecutor(max_workers=4) as pool:
             ergebnisse = list(pool.map(lauf, range(4)))
@@ -635,7 +639,22 @@ def test_pdf_pruefung_laeuft_nie_zu_zweit(tmp_path: Path) -> None:
         for r in runner:
             r.reset()
 
+    r = extract._Runner(60)
+    try:
+        r.start()
+        # Deterministisch statt zufaellig: ProcessPoolExecutor spaltet den
+        # Prozess erst beim ersten Auftrag ab. Ist er nach start() noch nicht
+        # da, faellt der Fork in den Worker-Thread — und dort bricht er ab.
+        check("Worker-Prozess existiert nach start()",
+              len(getattr(r._get(), "_processes", {})) >= 1,
+              str(getattr(r._get(), "_processes", {})))
+    finally:
+        r.reset()
+
     check("nie zwei Threads zugleich im PDF-Leser", drin["max"] == 1, f"max {drin['max']}")
+    check("kein Fork aus dem Thread heraus",
+          not any("os.fork" in (r.error or "") for r in ergebnisse),
+          str([r.error for r in ergebnisse if r.error]))
     for i, r in enumerate(ergebnisse):
         check(f"Deckung vorhanden ({i})", r.text_coverage is not None,
               str([w for w in r.warnings if "nicht durchfuehrbar" in w]))

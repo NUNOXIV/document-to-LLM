@@ -334,6 +334,11 @@ def _worker(src_str: str, ocr: bool, models: str | None, table_mode: str,
     }
 
 
+def _aufwaermen() -> bool:
+    """Leerer Auftrag: zwingt ProcessPoolExecutor, den Prozess jetzt abzuspalten."""
+    return True
+
+
 class _Runner:
     """Haelt einen Worker-Prozess, damit die Modelle nicht je Dokument neu
     geladen werden, und ersetzt ihn, wenn er abgestuerzt ist."""
@@ -355,14 +360,19 @@ class _Runner:
         return self._pool
 
     def start(self) -> None:
-        """Worker-Prozess jetzt erzeugen, im aufrufenden Thread.
+        """Worker-Prozess jetzt wirklich abspalten, im aufrufenden Thread.
 
         Zwei Threads, die gleichzeitig einen Prozess abspalten, brechen ab:
         "os.fork is unsafe while filelock is changing descriptor ownership".
         Deshalb wird vor dem ersten Dokument gestartet, solange nur ein Thread
-        laeuft, statt beim ersten Zugriff aus dem Worker-Thread heraus.
+        laeuft.
+
+        Den Pool nur anzulegen genuegt dafuer nicht: ProcessPoolExecutor
+        spaltet den Prozess erst beim ersten Auftrag ab. Genau daran ist die
+        erste Fassung dieser Methode gescheitert — lokal zufaellig gruen, im
+        CI rot. Also wird ein leerer Auftrag geschickt und abgewartet.
         """
-        self._get()
+        self._get().submit(_aufwaermen).result(timeout=120)
 
     def reset(self) -> None:
         """Worker-Prozess verwerfen — und wirklich beenden.
