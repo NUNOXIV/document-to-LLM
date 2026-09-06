@@ -437,6 +437,21 @@ def count_tables(doc, markdown: str) -> int:
 # --------------------------------------------------------------------------
 # Qualitaetspruefung des Outputs
 # --------------------------------------------------------------------------
+def textmenge(md: str) -> int:
+    """Zeichen echten Textes: ohne Front-Matter, Kommentare und Bildmarken.
+
+    Die OCR-Entscheidung und die Textarmut-Warnung muessen dasselbe messen.
+    Ein Zertifikat mit sieben "<!-- image -->"-Marken und 76 Zeichen Text kam
+    roh auf 231 Zeichen und galt der OCR-Entscheidung als ausreichend gefuellt,
+    der Plausibilitaetspruefung aber als textarm (72 Zeichen/Seite) — es lief
+    nie durch OCR und blieb als Befund stehen.
+    """
+    body = re.sub(r"^---\n.*?\n---\n", "", md, flags=re.S)
+    body = re.sub(r"<!--.*?-->", " ", body, flags=re.S)
+    body = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", body)
+    return len(body.strip())
+
+
 def check_quality(md: str, pages: int, is_pdf: bool, ocr: bool,
                   suffix: str = ".pdf") -> list[str]:
     warnings: list[str] = []
@@ -447,7 +462,7 @@ def check_quality(md: str, pages: int, is_pdf: bool, ocr: bool,
         raise ExtractionError("Leerer Markdown-Output — Konvertierung unbrauchbar.")
 
     if is_pdf and pages:
-        per_page = len(text) / pages
+        per_page = textmenge(md) / pages
         if per_page < LOW_TEXT_CHARS_PER_PAGE and not ocr:
             warnings.append(
                 f"Nur {per_page:.0f} Zeichen/Seite — vermutlich gescanntes PDF. "
@@ -889,7 +904,6 @@ def convert_file(
         res.pages = out["pages"]
         md_body = out["markdown"]
         res_json = out["json"]
-        plain = md_body.strip()
 
         # Automatischer OCR-Fallback bei Textarmut (nur einmal).
         needs_ocr = (
@@ -897,7 +911,7 @@ def convert_file(
             and ocr_mode == "auto"
             and attempt == "first"
             and res.pages
-            and len(plain) / res.pages < LOW_TEXT_CHARS_PER_PAGE
+            and textmenge(md_body) / res.pages < LOW_TEXT_CHARS_PER_PAGE
         )
         if needs_ocr:
             click.echo("    textarm — wiederhole mit OCR", err=True)
@@ -968,7 +982,11 @@ def convert_file(
     # Abweichungspruefung: enthaelt der Extrakt den Text der Quelle vollstaendig?
     # Fuer PDFs gegen den Textlayer, fuer Office-Formate gegen den Standardleser
     # des Formats — in beiden Faellen eine von Docling unabhaengige Quelle.
-    verifiable = src.suffix.lower() in {".pdf", ".xlsx", ".xlsm", ".docx", ".pptx"}
+    # Textformate zaehlen mit: acht Markdown-Quellen liefen durch Docling und
+    # blieben mit "nicht gegengeprueft (Format)" ungeprueft im Bestand.
+    from verify import TEXT_QUELLEN
+
+    verifiable = src.suffix.lower() in ({".pdf", ".xlsx", ".xlsm", ".docx", ".pptx"} | TEXT_QUELLEN)
     if verifiable and do_verify:
         try:
             from verify import verify as verify_extract
@@ -994,7 +1012,7 @@ def convert_file(
                     tmp2 = out_dir / f".{stem}.tmp2.md"
                     tmp2.write_text(md_body, encoding="utf-8")
                     try:
-                        extra = unassigned_lines(src, tmp2)
+                        extra = sammle_nachtrag(src, tmp2, unassigned_lines)
                     finally:
                         tmp2.unlink(missing_ok=True)
                     if extra:
@@ -1036,6 +1054,41 @@ def convert_file(
 
     res.duration_s = round(time.perf_counter() - started, 2)
     return res
+
+
+def sammle_nachtrag(src: Path, md_path: Path, leser, max_runden: int = 4
+                    ) -> list[tuple[int, str]]:
+    """Nicht zugeordnete Quellzeilen, bis nichts mehr dazukommt.
+
+    Ein Durchlauf reicht nicht: der Nachtrag veraendert den Extrakt, und der
+    naechste Vergleich findet Zeilen, die vorher von der Budgetrechnung
+    verdeckt waren. 14 Extrakte blieben deshalb zwischen 99,6 und 99,998 %
+    stehen, obwohl ein zweiter Durchlauf noch 16 Zeilen fand.
+
+    `leser` bekommt (Quelle, Extraktdatei) und liefert die fehlenden Zeilen;
+    zwischen den Runden wird der bisherige Nachtrag an die Arbeitskopie
+    angehaengt, damit die naechste Runde ihn als vorhanden sieht.
+    """
+    gesammelt: list[tuple[int, str]] = []
+    gesehen: set[tuple[int, str]] = set()
+    arbeitskopie = md_path
+    tmp: Path | None = None
+    try:
+        for _ in range(max_runden):
+            neue = [z for z in leser(src, arbeitskopie) if z not in gesehen]
+            if not neue:
+                break
+            gesammelt.extend(neue)
+            gesehen.update(neue)
+            tmp = md_path.parent / f".{md_path.stem}.nachtrag.md"
+            tmp.write_text(
+                md_path.read_text(encoding="utf-8").rstrip() + "\n\n" + appendix(gesammelt),
+                encoding="utf-8")
+            arbeitskopie = tmp
+    finally:
+        if tmp is not None:
+            tmp.unlink(missing_ok=True)
+    return gesammelt
 
 
 def write_manifest(out_dir: Path, results: list[Result], engine: str = "docling") -> Path:

@@ -39,12 +39,43 @@ def normalize(text: str) -> str:
     return text.casefold()
 
 
+# Formate, die als Text gelesen werden (Zweitleser ohne Docling und ohne
+# Office-Bibliothek): die Datei selbst ist die Vergleichsgrundlage.
+TEXT_QUELLEN = {".md", ".markdown", ".txt", ".yml", ".yaml", ".json", ".xml", ".mm", ".csv"}
+
+
 def tokenize(text: str) -> list[str]:
     """Woerter und Zahlen; Satzzeichen und Layout-Artefakte fallen weg."""
     text = normalize(text)
     # Am Zeilenende getrennte Woerter zusammenfuehren (Silbentrennung im PDF).
     text = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", text)
     return re.findall(r"[0-9a-zA-ZÀ-ɏ]+(?:[.,][0-9]+)*", text)
+
+
+def tokenize_lines(text: str) -> list[str]:
+    """Wie tokenize(), aber zeilenweise.
+
+    Die Silbentrennungsregel in tokenize() fuehrt "Soft-\nware" zusammen — das
+    ist im PDF richtig, wo ein Zeilenumbruch mitten im Wort steht. In einer
+    Office-Zelle trennt derselbe Umbruch aber zwei Absaetze: aus "Software-"
+    am Absatzende und "This" am Anfang des naechsten wurde das Wort
+    "softwarethis", das es nirgends gibt. Es fehlte dann im Extrakt und drueckte
+    die Deckung.
+    """
+    return [t for line in text.splitlines() for t in tokenize(line)]
+
+
+def text_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
+    """Quelltext aus Textformaten (.md, .txt, .yml, .json, .xml, .mm).
+
+    Auch diese Quellen brauchen einen zweiten Leser: acht Markdown-Dateien
+    liefen durch Docling und trugen im Register den Befund "nicht
+    gegengeprueft (Format)" — ein ungepruefter Extrakt neben gepruefeten.
+    Gelesen wird die Datei roh, ohne Markdown-Deutung; verglichen wird auf
+    Wortebene, also stoert die Auszeichnung nicht.
+    """
+    roh = path.read_text(encoding="utf-8", errors="replace")
+    return {1: tokenize_lines(roh)}, {}
 
 
 def markdown_tokens(md_path: Path) -> list[str]:
@@ -313,7 +344,7 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
                 for row in ws.iter_rows(values_only=True):
                     for cell in row:
                         if cell is not None:
-                            words.extend(tokenize(str(cell)))
+                            words.extend(tokenize_lines(str(cell)))
                 pages[i] = words
         finally:
             wb.close()
@@ -324,11 +355,11 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
         doc = DocxDocument(str(path))
         words = []
         for para in doc.paragraphs:
-            words.extend(tokenize(para.text))
+            words.extend(tokenize_lines(para.text))
         for table in doc.tables:
             for row in table.rows:
                 for cell in row.cells:
-                    words.extend(tokenize(cell.text))
+                    words.extend(tokenize_lines(cell.text))
         pages[1] = words
 
     elif suffix == ".pptx":
@@ -339,11 +370,11 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
             words = []
             for shape in slide.shapes:
                 if shape.has_text_frame:
-                    words.extend(tokenize(shape.text_frame.text))
+                    words.extend(tokenize_lines(shape.text_frame.text))
                 if getattr(shape, "has_table", False):
                     for row in shape.table.rows:
                         for cell in row.cells:
-                            words.extend(tokenize(cell.text))
+                            words.extend(tokenize_lines(cell.text))
             pages[i] = words
 
     return pages, {p: [] for p in pages}
@@ -351,8 +382,11 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
 
 def source_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
     """Quelltext je Seite (PDF) bzw. je Blatt/Folie (Office)."""
-    if path.suffix.lower() == ".pdf":
+    suffix = path.suffix.lower()
+    if suffix == ".pdf":
         return pdf_pages(path)
+    if suffix in TEXT_QUELLEN:
+        return text_pages(path)
     return office_pages(path)
 
 

@@ -63,6 +63,7 @@ class Bericht:
     ohne_ueberschrift: int = 0
     frameworks: int = 0
     entfallen: int = 0
+    wortlaut_belegt: int = 0
 
     def melde(self, *a: str) -> None:
         self.befunde.append(Befund(*a))
@@ -107,6 +108,35 @@ def extrakte_zu(d: dict, fw: str, vault: Path | None,
         if m:
             namen.add(m.group(1))
     return [idx[n] for n in sorted(namen) if n in idx]
+
+
+# So viele Woerter am Stueck muessen aus dem Wortlaut in der Quelle stehen.
+# Kuerzere Texte (Titelzeilen, "Diese Anforderung ist entfallen.") sagen zu
+# wenig, um daraus einen Befund zu machen.
+PROBE_WOERTER = 8
+
+
+def wortlaut_in_quelle(text: str, quelle: str) -> bool:
+    """Steht der Wortlaut ueberhaupt in der Quelle?
+
+    Die Zuordnungspruefung braucht die Ueberschrift der Anforderung im Extrakt;
+    fehlt sie, galt die Anforderung als "dort nicht pruefbar" — 422 von 3855
+    blieben so ganz ungeprueft. Diese Probe kommt ohne Ueberschrift aus: sie
+    nimmt den laengsten zusammenhaengenden Ausschnitt des Wortlauts und sucht
+    ihn im Quellextrakt. Sie belegt nicht, dass der Text unter der richtigen
+    Kennung steht -- das kann nur die Zuordnungspruefung. Sie belegt, dass er
+    aus der Quelle stammt und nicht erfunden ist.
+    """
+    worte = normtext(text).split()
+    if len(worte) < PROBE_WOERTER:
+        return True
+    q = normtext(quelle)
+    # Mehrere Ausschnitte, damit ein einzelner Bindestrich oder ein
+    # Tabellentrenner in der Mitte nicht den ganzen Befund erzeugt.
+    for start in (0, max(0, (len(worte) - PROBE_WOERTER) // 2), len(worte) - PROBE_WOERTER):
+        if " ".join(worte[start:start + PROBE_WOERTER]) in q:
+            return True
+    return False
 
 
 def ueberhaenge(reqs: list[dict]) -> list[tuple[str, str]]:
@@ -163,6 +193,12 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
             if prev is None or not prev.text.strip():
                 abschnitte[k] = sec
 
+    # Volltext aller Quellextrakte: Grundlage der Wortlautprobe fuer
+    # Anforderungen, die keine eigene Ueberschrift im Extrakt haben.
+    quelltext_gesamt = normtext(" ".join(
+        publish.split_front_matter(q.read_text(encoding="utf-8", errors="replace"))[1]
+        for q in quellen))
+
     # Leckage: eine fremde Anforderungsueberschrift im eigenen Text.
     fremde = re.compile(r"^#{1,6}\s+([A-Z]{2,6}(?:\.\d+)+\.A\d+|\d+(?:\.\d+)+)\s",
                         re.M)
@@ -202,7 +238,15 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
 
         sec = abschnitte.get(publish.norm_key(ident))
         if sec is None:
+            # Ohne Ueberschrift ist die Zuordnung nicht pruefbar, der Wortlaut
+            # aber schon: er muss in der Quelle ueberhaupt vorkommen.
             b.ohne_ueberschrift += 1
+            if not wortlaut_in_quelle(text, quelltext_gesamt):
+                b.melde("Wortlaut", fw, ident,
+                        "steht so nicht im Quellextrakt — weder unter dieser noch "
+                        "unter einer anderen Ueberschrift")
+            else:
+                b.wortlaut_belegt += 1
             continue
         b.geprueft += 1
 
@@ -290,9 +334,10 @@ def main(export_dir: Path, out_dir: Path, vault: Path | None,
         if vault:
             pruefe_kennungen(pfad, vault, b)
 
-    click.echo(f"Geprueft: {b.geprueft} Anforderungen gegen die Quelle "
-               f"({b.frameworks} Frameworks); {b.ohne_ueberschrift} ohne "
-               f"Ueberschrift im Extrakt, dort nicht pruefbar.")
+    click.echo(f"Geprueft: {b.geprueft} Anforderungen Wort fuer Wort unter ihrer "
+               f"Kennung ({b.frameworks} Frameworks); {b.ohne_ueberschrift} ohne "
+               f"eigene Ueberschrift im Extrakt, davon {b.wortlaut_belegt} mit "
+               f"Wortlaut in der Quelle belegt.")
     if not b.befunde:
         click.secho("Keine Abweichung: jeder Wortlaut steht unter seiner Kennung.",
                     fg="green")

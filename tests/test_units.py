@@ -374,6 +374,124 @@ def test_zwei_worker_verarbeiten_alle_dateien() -> None:
         check("2 Worker im Kopf", "(2 Worker)" in r.output, r.output[:120])
 
 
+def test_textformate_haben_einen_zweitleser(tmp_path: Path) -> None:
+    """Markdown- und Textquellen brauchen einen Wortvergleich wie jedes andere
+    Format. Acht Extrakte trugen den Befund 'nicht gegengeprueft (Format)' —
+    ein ungepruefter Extrakt, der im Register neben gepruefeten stand."""
+    import verify as V2
+
+    quelle = tmp_path / "notiz.md"
+    quelle.write_text("# Titel\n\nEin Satz mit Inhalt.\n\n- Punkt eins\n- Punkt zwei\n",
+                      encoding="utf-8")
+    voll = tmp_path / "voll.md"
+    voll.write_text("---\nx: 1\n---\n# Titel\n\nEin Satz mit Inhalt.\n\n- Punkt eins\n- Punkt zwei\n",
+                    encoding="utf-8")
+    r = V2.verify(quelle, voll)
+    check("Textformat wird geprueft", r.note is None, str(r.note))
+    check("vollstaendig = 100 %", r.coverage == 100.0, str(r.coverage))
+
+    luecke = tmp_path / "luecke.md"
+    luecke.write_text("# Titel\n\nEin Satz mit Inhalt.\n", encoding="utf-8")
+    r2 = V2.verify(quelle, luecke)
+    check("fehlender Text drueckt die Deckung", r2.coverage is not None and r2.coverage < 100.0,
+          str(r2.coverage))
+    check("fehlende Woerter benannt", "punkt" in r2.missing_sample, str(r2.missing_sample))
+
+
+def test_office_zellen_zeilenweise_tokenisiert(tmp_path: Path) -> None:
+    """Die Silbentrennungsregel gilt fuer PDF-Zeilenumbrueche, nicht fuer
+    Absatzgrenzen in einer Tabellenzelle. Zeilenweise tokenisiert klebt
+    'Software-' am Absatzende nicht an das erste Wort des naechsten Absatzes."""
+    import verify as V2
+
+    check("Absatzgrenze klebt nicht",
+          "softwarethis" not in V2.tokenize_lines("Ende der Software-\nThis beginnt neu"),
+          str(V2.tokenize_lines("Ende der Software-\nThis beginnt neu")))
+    check("Silbentrennung in einer Zeile bleibt zusammengefuehrt",
+          "software" in V2.tokenize("Soft-\nware") or "softwareware" not in V2.tokenize("Soft-\nware"))
+
+
+def test_nachtrag_laeuft_bis_erschoepft(tmp_path: Path) -> None:
+    """Ein Durchlauf des Nachtrags reicht nicht: nach dem Anhaengen findet der
+    Vergleich neue Luecken. 14 Extrakte blieben so unter 100 % Deckung,
+    obwohl ein zweiter Durchlauf noch Zeilen fand."""
+    aufrufe = {"n": 0}
+
+    def falscher_nachtrag(_src, _md):
+        aufrufe["n"] += 1
+        return [(1, f"Zeile aus Durchlauf {aufrufe['n']}")] if aufrufe["n"] <= 2 else []
+
+    md = tmp_path / "y.md"
+    md.write_text("# Extrakt\n\nText.\n", encoding="utf-8")
+    zeilen = extract.sammle_nachtrag(tmp_path / "x.pdf", md, falscher_nachtrag, max_runden=4)
+    check("mehrere Durchlaeufe", aufrufe["n"] == 3, str(aufrufe["n"]))
+    check("alle Zeilen gesammelt", len(zeilen) == 2, str(zeilen))
+
+
+def test_ocr_schwelle_misst_wie_die_warnung() -> None:
+    """Die OCR-Entscheidung und die Textarmut-Warnung muessen dasselbe messen.
+    Ein Zertifikat mit vier Bildmarken und 76 Zeichen Text galt der Warnung als
+    textarm (72 Zeichen/Seite), der OCR-Entscheidung aber als ausreichend
+    (231 Zeichen inklusive der Marken) — und lief nie durch OCR."""
+    md = ("<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n"
+          "## Ninjo Oberwandling\n\nCertified Information Security Manager (CISM)\n\n2026-07-29")
+    check("Rohlaenge taeuscht Fuelle vor", len(md.strip()) > extract.LOW_TEXT_CHARS_PER_PAGE)
+    check("gemessener Textanteil ist textarm",
+          extract.textmenge(md) < extract.LOW_TEXT_CHARS_PER_PAGE, str(extract.textmenge(md)))
+    check("Warnung schlaegt an",
+          any("gescanntes PDF" in w for w in extract.check_quality(md, 1, True, False)))
+
+
+def test_ocr_und_woertlich_schliessen_sich_nicht_aus(tmp_path: Path) -> None:
+    """Ein PDF mit duennem, aber vorhandenem Textlayer laeuft durch OCR *und*
+    hat eine gueltige Deckungszahl gegen diesen Textlayer. Die alte Regel hielt
+    das fuer einen Widerspruch und meldete ein gesundes Dokument als Befund.
+    Ein Befund ist dagegen, wenn der ganze Text aus dem Nachtrag stammt: dann
+    hat der Extrakt ueberhaupt keine Struktur."""
+    import json as J
+
+    import pruefe
+
+    md = tmp_path / "a.md"
+    md.write_text("---\nx: 1\n---\n\n## Titel\n\n" + ("Ein Satz mit Inhalt. " * 200), encoding="utf-8")
+    gesund = {"slug": "a", "markdown": str(md), "pages": 1, "words": 800,
+              "ocr": True, "woertlich": True, "text_coverage_percent": 100.0,
+              "angehaengte_quellzeilen": 0}
+    b = pruefe.Bericht()
+    reg = tmp_path / "_KORPUS.json"
+    reg.write_text(J.dumps({"documents": [gesund]}), encoding="utf-8")
+    pruefe.pruefe_korpus(reg, b)
+    check("OCR mit Textlayer ist kein Widerspruch",
+          not any("OCR" in f.aussage for f in b.befunde), str([f.aussage for f in b.befunde]))
+
+    ohne = tmp_path / "b.md"
+    ohne.write_text("---\nx: 1\n---\n\n## Nachtrag: nicht zugeordneter Quelltext\n\n"
+                    + ("Zeile aus der Quelle. " * 200), encoding="utf-8")
+    strukturlos = dict(gesund, slug="b", markdown=str(ohne), angehaengte_quellzeilen=155)
+    b2 = pruefe.Bericht()
+    reg.write_text(J.dumps({"documents": [strukturlos]}), encoding="utf-8")
+    pruefe.pruefe_korpus(reg, b2)
+    check("Text nur aus dem Nachtrag faellt auf",
+          any("Nachtrag" in f.aussage for f in b2.befunde), str([f.aussage for f in b2.befunde]))
+
+
+def test_wortlaut_muss_in_der_quelle_stehen() -> None:
+    """Auch eine Anforderung ohne eigene Ueberschrift im Extrakt ist pruefbar:
+    ihr Wortlaut muss im Quellextrakt ueberhaupt vorkommen. 422 Anforderungen
+    galten als 'dort nicht pruefbar' und blieben damit ganz ungeprueft."""
+    import inhalt
+
+    quelle = ("Die Organisation MUSS ein Inventar aller Assets fuehren und dieses "
+              "regelmaessig auf Aktualitaet pruefen. Weitere Absaetze folgen hier.")
+    echt = {"id": "AM-01", "text": "Die Organisation MUSS ein Inventar aller Assets fuehren"
+                                   " und dieses regelmaessig auf Aktualitaet pruefen."}
+    erfunden = {"id": "AM-02", "text": "Die Organisation MUSS jaehrlich eine Zertifizierung"
+                                       " durch eine akkreditierte Stelle nachweisen lassen."}
+    check("Wortlaut aus der Quelle wird gefunden", inhalt.wortlaut_in_quelle(echt["text"], quelle))
+    check("erfundener Wortlaut faellt auf", not inhalt.wortlaut_in_quelle(erfunden["text"], quelle))
+    check("kurzer Wortlaut wird nicht bewertet", inhalt.wortlaut_in_quelle("Zu kurz.", quelle))
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
