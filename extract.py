@@ -725,7 +725,20 @@ def target_name(src: Path, claimed: dict[str, Path], out_dir: Path | None = None
         nonlocal eigener_hash
         owner = claimed.get(name)
         if owner is not None:
-            return owner == quelle, owner.suffix.lstrip(".").lower()
+            if owner == quelle:
+                return True, ""
+            # Byte-identisches Duplikat im selben Lauf: derselbe Inhalt braucht
+            # kein zweites Extrakt. Ohne diese Pruefung entstanden 13
+            # ueberfluessige Extrakte, als die ausgepackten ZIP-Dateien neben
+            # ihren Originalen mitliefen — dieselbe Datei, zwei Namen.
+            if eigener_hash is None:
+                eigener_hash = sha256_of(src)
+            try:
+                if sha256_of(owner) == eigener_hash:
+                    return True, ""
+            except OSError:
+                pass
+            return False, owner.suffix.lstrip(".").lower()
         kopf = _ziel_inhaber(out_dir / f"{name}.md") if out_dir is not None else None
         if kopf is None:
             return True, ""

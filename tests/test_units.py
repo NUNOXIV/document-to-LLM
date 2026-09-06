@@ -87,6 +87,17 @@ def test_zielname_kollision_gleiches_format() -> None:
         check("anderer Prozess: fremdes Ziel nicht ueberschrieben", nb2 != na, nb2)
         check("anderer Prozess: gleicher Name wie im ersten", nb2 == nb, f"{nb2} / {nb}")
         check("eigenes Ziel wird wiedererkannt", extract.target_name(a, {}, out) == na)
+        # Byte-identisches Duplikat im SELBEN Lauf: claimed haelt schon einen
+        # anderen Pfad, der Inhalt ist aber derselbe. Ohne diese Pruefung
+        # entstanden 13 ueberfluessige Extrakte, als die ausgepackten
+        # ZIP-Dateien neben ihren Originalen mitliefen.
+        gleich = wurzel / "zip" / "Checkliste_APP-1-1.xlsx"
+        gleich.parent.mkdir()
+        gleich.write_bytes(b"A")
+        zusammen: dict[str, Path] = {}
+        n1 = extract.target_name(a, zusammen)
+        n2 = extract.target_name(gleich, zusammen)
+        check("Duplikat im selben Lauf teilt das Ziel", n1 == n2, f"{n1} / {n2}")
         # Byte-identisches Duplikat (ZIP-Inhalt neben dem Original): kein zweites Ziel.
         c = wurzel / "kopie" / "Checkliste_APP-1-1.xlsx"
         c.parent.mkdir()
