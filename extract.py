@@ -731,9 +731,11 @@ def target_name(src: Path, claimed: dict[str, Path], out_dir: Path | None = None
             # kein zweites Extrakt. Ohne diese Pruefung entstanden 13
             # ueberfluessige Extrakte, als die ausgepackten ZIP-Dateien neben
             # ihren Originalen mitliefen — dieselbe Datei, zwei Namen.
-            if eigener_hash is None:
-                eigener_hash = sha256_of(src)
+            # Nicht lesbare Pfade sind kein Duplikat: dann bleibt es bei der
+            # Kollision und es wird ausgewichen.
             try:
+                if eigener_hash is None:
+                    eigener_hash = sha256_of(src)
                 if sha256_of(owner) == eigener_hash:
                     return True, ""
             except OSError:
@@ -746,8 +748,11 @@ def target_name(src: Path, claimed: dict[str, Path], out_dir: Path | None = None
         inhaber_name = m.group(1) if m else ""
         if inhaber_name == src.name:
             return True, ""
-        if eigener_hash is None:
-            eigener_hash = sha256_of(src)
+        try:
+            if eigener_hash is None:
+                eigener_hash = sha256_of(src)
+        except OSError:
+            return False, Path(inhaber_name).suffix.lstrip(".").lower()
         return eigener_hash in kopf, Path(inhaber_name).suffix.lstrip(".").lower()
 
     frei, fremde_endung = inhaber(base)
@@ -759,7 +764,11 @@ def target_name(src: Path, claimed: dict[str, Path], out_dir: Path | None = None
         if inhaber(name)[0]:
             claimed[name] = quelle
             return name
-    name = f"{base}-{eigener_hash or sha256_of(src)[:8]}"
+    try:
+        kurz = (eigener_hash or sha256_of(src))[:8]
+    except OSError:
+        kurz = "kollision"
+    name = f"{base}-{kurz}"
     claimed[name] = quelle
     return name
 
