@@ -613,13 +613,18 @@ def test_pdf_pruefung_laeuft_nie_zu_zweit(tmp_path: Path) -> None:
     out = tmp_path / "out"
     out.mkdir()
     sperre = threading.Lock()
+    # Worker vorab starten: zwei Threads, die gleichzeitig einen Prozess
+    # abspalten, brechen mit "os.fork is unsafe" ab. main() macht es genauso.
+    runner = [extract._Runner(300) for _ in range(4)]
+    for r in runner:
+        r.start()
     V2.verify = beobachtet
     try:
         def lauf(i: int):
             ziel = tmp_path / f"kopie{i}.pdf"
             ziel.write_bytes(FIXTURE_PDF.read_bytes())
             return extract.convert_file(
-                extract._Runner(300), ziel, out, ocr_mode="off", write_json=False,
+                runner[i], ziel, out, ocr_mode="off", write_json=False,
                 page_markers=True, force=True, claimed={}, do_verify=True,
                 min_coverage=99.0, repair=True, sperre=sperre)
 
@@ -627,6 +632,8 @@ def test_pdf_pruefung_laeuft_nie_zu_zweit(tmp_path: Path) -> None:
             ergebnisse = list(pool.map(lauf, range(4)))
     finally:
         V2.verify = echt
+        for r in runner:
+            r.reset()
 
     check("nie zwei Threads zugleich im PDF-Leser", drin["max"] == 1, f"max {drin['max']}")
     for i, r in enumerate(ergebnisse):

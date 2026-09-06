@@ -354,10 +354,38 @@ class _Runner:
             self._pool = ProcessPoolExecutor(max_workers=1)
         return self._pool
 
+    def start(self) -> None:
+        """Worker-Prozess jetzt erzeugen, im aufrufenden Thread.
+
+        Zwei Threads, die gleichzeitig einen Prozess abspalten, brechen ab:
+        "os.fork is unsafe while filelock is changing descriptor ownership".
+        Deshalb wird vor dem ersten Dokument gestartet, solange nur ein Thread
+        laeuft, statt beim ersten Zugriff aus dem Worker-Thread heraus.
+        """
+        self._get()
+
     def reset(self) -> None:
-        if self._pool is not None:
-            self._pool.shutdown(wait=False, cancel_futures=True)
-        self._pool = None
+        """Worker-Prozess verwerfen — und wirklich beenden.
+
+        shutdown(wait=False) gibt den Pool nur frei; ProcessPoolExecutor meldet
+        seine Verwaltungsthreads aber ueber einen atexit-Handler an und wartet
+        beim Programmende auf sie. Haengt ein Worker, haengt das Programmende:
+        die Arbeit war fertig, das Manifest geschrieben, und der Prozess stand
+        nach 40 Minuten immer noch. Deshalb werden die Prozesse hier
+        ausdruecklich beendet, statt auf ihr Wohlwollen zu hoffen.
+        """
+        pool, self._pool = self._pool, None
+        if pool is None:
+            return
+        prozesse = list(getattr(pool, "_processes", {}).values())
+        pool.shutdown(wait=False, cancel_futures=True)
+        for prozess in prozesse:
+            if prozess.is_alive():
+                prozess.terminate()
+        for prozess in prozesse:
+            prozess.join(timeout=5)
+            if prozess.is_alive():
+                prozess.kill()
 
     def run(self, worker, *args) -> dict:
         """Fuehrt eine Konvertierung aus. Stirbt der Worker, wird das als
@@ -1306,6 +1334,8 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
 
     workers = max(1, min(workers, len(files)))
     runners = [_Runner(timeout or None, reset_every) for _ in range(workers)]
+    for r in runners:
+        r.start()
     kopf = f"xberg {xberg_version()}" if engine == "xberg" else f"Docling {docling_version()}"
     click.echo(f"{kopf} — {len(files)} Datei(en) -> {out_dir}/ ({workers} Worker)")
     claimed: dict[str, Path] = {}
@@ -1376,14 +1406,8 @@ def main(inputs, output_dir, ocr_mode, recursive, write_json, no_page_markers,
         f"\nFertig: {len(results) - len(errors)} ok, {len(warns)} mit Warnung, "
         f"{len(errors)} Fehler. Manifest: {manifest}"
     )
-    # Bewusst os._exit statt sys.exit: ProcessPoolExecutor meldet ueber einen
-    # atexit-Handler alle Verwaltungsthreads an und wartet auf sie. Haengt ein
-    # Worker-Prozess, haengt das Programmende — die Arbeit war fertig, das
-    # Manifest geschrieben, und der Prozess stand trotzdem noch nach 40 Minuten.
-    # Alles Geschriebene liegt auf Platte; nur die Puffer muessen noch raus.
-    sys.stdout.flush()
-    sys.stderr.flush()
-    os._exit(1 if (errors or (strict and warns)) else 0)
+    if errors or (strict and warns):
+        sys.exit(1)
 
 
 if __name__ == "__main__":
