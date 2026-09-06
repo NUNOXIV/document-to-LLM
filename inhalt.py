@@ -64,6 +64,7 @@ class Bericht:
     frameworks: int = 0
     entfallen: int = 0
     wortlaut_belegt: int = 0
+    ohne_quelle: int = 0
 
     def melde(self, *a: str) -> None:
         self.befunde.append(Befund(*a))
@@ -263,6 +264,22 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
                     f"Export '{titel[:45]}' vs Quelle '{sec.title[:45]}'")
 
 
+def register_ohne_quelle(fw: str) -> set[str]:
+    """Kennungen des Registers, zu denen es im Bestand keinen Primaertext gibt.
+
+    Nachgewiesen und begruendet in mappings/vault-ausnahmen.json. Sie fehlen im
+    Export zu Recht: ohne Quelle wird kein Wortlaut abgelegt. Als offener Befund
+    gefuehrt zu werden waere falsch — es gibt nichts zu beheben, ausser die
+    Quelle zu beschaffen. Sichtbar bleiben sie trotzdem.
+    """
+    p = Path(__file__).parent / "mappings" / "vault-ausnahmen.json"
+    if not p.exists():
+        return set()
+    d = json.loads(p.read_text(encoding="utf-8")).get("register_ohne_quelle", {})
+    return {k for e in d.get("eintraege", []) if e.get("framework") == fw
+            for k in e.get("kennungen", [])}
+
+
 def entfallen_belegt(vault: Path, fw: str, ident: str) -> bool:
     """Liegt fuer diese ID eine Entfallen-Notiz aus publish.py --mark-withdrawn vor?"""
     notiz = vault / "Normen (lizenziert)" / fw / f"{fw} {ident} (Normtext).md"
@@ -300,7 +317,13 @@ def pruefe_kennungen(pfad: Path, vault: Path, b: Bericht) -> None:
         b.entfallen += len(zurueckgezogen)
         print(f"  {fw}: {len(zurueckgezogen)} ID(s) im Register als withdrawn gefuehrt und im "
               "Dokument nicht mehr vorhanden: " + ", ".join(zurueckgezogen[:8]))
-    fehlend = sorted(register - export - set(entfallen) - set(zurueckgezogen))
+    ohne_quelle = sorted((register - export) & register_ohne_quelle(fw))
+    if ohne_quelle:
+        b.ohne_quelle += len(ohne_quelle)
+        print(f"  {fw}: {len(ohne_quelle)} Kennung(en) des Registers ohne Primaerquelle im "
+              f"Bestand, dokumentiert in mappings/vault-ausnahmen.json: "
+              + ", ".join(ohne_quelle[:6]) + (" ..." if len(ohne_quelle) > 6 else ""))
+    fehlend = sorted(register - export - set(entfallen) - set(zurueckgezogen) - set(ohne_quelle))
     fremd = sorted(export - register)
     if fehlend:
         b.melde("Kennung", fw, "—",

@@ -76,5 +76,33 @@
       }
     ],
     "lehre": "Ein Abgleich ist nur so gut wie die Menge, gegen die er prueft. Wer die falsche Vergleichsmenge waehlt, bekommt ein Ergebnis, das plausibel aussieht und in die falsche Richtung zeigt — hier ein erfundener Mangel am Vault statt eines echten Fehlers im eigenen Code."
+  },
+  "register_ohne_quelle": {
+    "hinweis": "Kennungen, die das ACSOS-Register fuehrt, zu denen es aber im Bestand keinen Primaertext gibt. Sie sind kein Extraktionsfehler und keine Luecke der Wandlung: das Quelldokument kennt sie nicht. Sie bleiben sichtbar, damit niemand sie fuer belegten Normtext haelt, und werden nicht in den Export geschrieben.",
+    "eintraege": [
+      {
+        "framework": "owasp-asi-2026",
+        "kennungen": [
+          "AGD",
+          "AGD-01",
+          "AGD-02",
+          "AGD-03",
+          "AGD-04",
+          "AGD-05",
+          "AGD-06",
+          "AGD-07",
+          "AGD-08",
+          "AGD-09",
+          "AGD-10",
+          "AGD-11",
+          "AGD-12",
+          "AGD-13",
+          "AGD-14"
+        ],
+        "befund": "Das Quelldokument (OWASP Top 10 for Agentic Applications 2026) definiert ASI01 bis ASI10, kein AGD-Schema. Gesucht wurde in allen 479 Extrakten des Bestands nach den Kennungen und nach dem Wortlaut der Registernotizen (u. a. 'identity attestation', 'role-based agent access'): kein Treffer. Zwei Websuchen nach einer OWASP-Veroeffentlichung mit AGD-Nummerierung blieben ebenfalls ohne Fund.",
+        "folge": "Die 15 Kennungen sind eigene Eintraege des Registers, keine Normtexte. Ohne Primaerquelle wird kein Wortlaut abgelegt. Aufloesbar nur dadurch, dass die Quelle, aus der die Domaenen stammen, in input/ gelegt wird.",
+        "entschieden_am": "2026-09-04"
+      }
+    ]
   }
 }

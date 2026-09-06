@@ -45,15 +45,17 @@ def quelle_zu(meta: dict[str, str], eingang: Path) -> Path | None:
     return treffer[0] if treffer else None
 
 
-def vermerke(kopf: str, anzahl: int, beispiele: str) -> str:
+def vermerke(kopf: str, anzahl: int, beispiele: str,
+             feld: str = "restored_hyphens", hinweis: str = "") -> str:
     """Traegt den Befund ins Front-Matter ein — sichtbar, nicht stillschweigend."""
     zeilen = kopf.rstrip("\n").splitlines()
-    hinweis = (f"{anzahl} Wort(e) hatten einen Bindestrich der Quelle verloren und wurden "
-               f"zurueckgesetzt (belegt durch den Textlayer): {beispiele}")
+    hinweis = hinweis or (
+        f"{anzahl} Wort(e) hatten einen Bindestrich der Quelle verloren und wurden "
+        f"zurueckgesetzt (belegt durch den Textlayer): {beispiele}")
     ende = len(zeilen) - 1 if zeilen and zeilen[-1] == "---" else len(zeilen)
     neu = zeilen[:ende]
-    neu = [z for z in neu if not z.startswith("restored_hyphens:")]
-    neu.append(f"restored_hyphens: {anzahl}")
+    neu = [z for z in neu if not z.startswith(f"{feld}:")]
+    neu.append(f"{feld}: {anzahl}")
     if "warnings:" in neu:
         stelle = neu.index("warnings:") + 1
         neu.insert(stelle, f'  - "{hinweis}"')
@@ -95,15 +97,39 @@ def main(output: Path, eingang: Path, reparieren: bool, strict: bool) -> None:
         neu, treffer = verify.repariere_bindestriche(
             koerper, verify.quelle_kompakt(quelle, quelltext),
             verify.zusammenhaengende_quelle(quelle, quelltext))
-        if not treffer:
+
+        # Zweiter Durchgang mit dem zweiten Leser: wo pypdfium nur ein
+        # unlesbares Zeichen liefert, liest das Docling-Backend die Trennung.
+        # Nur dort, wo die Quelle selbst sagt, welche Form gemeint ist.
+        trenn: dict[str, str] = {}
+        if verify.unlesbar_im_wort(quelltext):
+            try:
+                neu, trenn = verify.repariere_trennungen(neu, verify.zweitleser_zeilen(quelle))
+            except Exception as fehler:
+                print(f"  [Zweitleser nicht verfuegbar] {md.name}: {fehler}")
+
+        if not treffer and not trenn:
             continue
         betroffen += 1
-        worte += len(treffer)
+        worte += len(treffer) + len(trenn)
         beispiele = ", ".join(f"{a} -> {b}" for a, b in sorted(treffer.items())[:3])
-        print(f"  {md.name}: {len(treffer)} ({beispiele})")
+        b2 = ", ".join(f"{a} -> {b}" for a, b in sorted(trenn.items())[:3])
+        print(f"  {md.name}: {len(treffer)} Bindestrich(e)"
+              + (f" ({beispiele})" if treffer else "")
+              + (f", {len(trenn)} Trennung(en) ueber den Zweitleser ({b2})" if trenn else ""))
         if reparieren:
             kopf = roh[:len(roh) - len(koerper)]
-            ergebnis = vermerke(kopf, len(treffer), beispiele) + neu
+            ergebnis = kopf
+            if treffer:
+                ergebnis = vermerke(ergebnis, len(treffer), beispiele)
+            if trenn:
+                ergebnis = vermerke(
+                    ergebnis, len(trenn), b2, feld="restored_splits",
+                    hinweis=(f"{len(trenn)} Wort(e) hatten eine Trennung der Quelle verloren, "
+                             f"weil der Textlayer dort ein unlesbares Zeichen fuehrt. Ein "
+                             f"zweiter Leser (Docling-Backend) belegt die Trennstelle, die "
+                             f"Quelle selbst die Form: {b2}"))
+            ergebnis = ergebnis + neu
             if not ergebnis.startswith("---\n"):
                 # Lieber nichts schreiben als eine Datei ohne Kopf. Genau das
                 # ist passiert, und es faellt erst Stunden spaeter auf.

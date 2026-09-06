@@ -492,6 +492,56 @@ def test_wortlaut_muss_in_der_quelle_stehen() -> None:
     check("kurzer Wortlaut wird nicht bewertet", inhalt.wortlaut_in_quelle("Zu kurz.", quelle))
 
 
+def test_register_ohne_quelle_ist_dokumentiert() -> None:
+    """Kennungen, die das Register fuehrt und kein Quelldokument kennt, sind
+    kein Extraktionsfehler. Sie bleiben sichtbar, zaehlen aber nicht als
+    Befund — sonst steht derselbe bekannte Punkt in jedem Lauf als offen."""
+    import inhalt
+
+    ids = inhalt.register_ohne_quelle("owasp-asi-2026")
+    check("AGD-Kennungen dokumentiert", {"AGD", "AGD-01", "AGD-14"} <= ids, str(sorted(ids))[:120])
+    check("nur fuer dieses Framework", inhalt.register_ohne_quelle("gdpr") == set())
+    check("Begruendung hinterlegt", any(
+        e.get("framework") == "owasp-asi-2026" and e.get("befund")
+        for e in __import__("json").loads(
+            Path("mappings/vault-ausnahmen.json").read_text(encoding="utf-8")
+        )["register_ohne_quelle"]["eintraege"]))
+
+
+def test_verlorene_trennung_ueber_zweitleser() -> None:
+    """Wo der erste Leser ein unlesbares Zeichen liefert, entscheidet ein
+    zweiter Leser — und das Dokument selbst sagt, was dort stand.
+
+    pypdfium liest "TISAX\ufffeAssessment", der Docling-Leser liest
+    "TISAX-\nAssessment": an der Stelle steht eine Trennung am Zeilenende.
+    Ob Leerzeichen oder Bindestrich, entscheidet nicht die Vermutung, sondern
+    wie dasselbe Wortpaar sonst im Dokument steht. Steht es nirgends sonst,
+    war es eine Silbentrennung und der Extrakt hat recht — dann wird nichts
+    angefasst (Nr. 15: die erste Fassung kehrte 93-mal die Silbentrennung um).
+    """
+    import verify as V2
+
+    zeit = ("Preisliste fuer TISAX Teilnehmer\n"
+            "Einmalentgelt fuer einen TISAX Assessment Scope\n"
+            "Bearbeitung Ihrer TISAX-\nAssessment Scope Angaben\n"
+            "Die Ab-\nnahme erfolgt spaeter\n"
+            "Das IKT-\nSystem und das IKT-System sind gemeint\n")
+    body = ("Bearbeitung Ihrer TISAXAssessment Scope Angaben. "
+            "Die Abnahme erfolgt spaeter. Das IKTSystem ist gemeint.")
+    treffer = V2.verlorene_trennungen(body, zeit)
+    check("Leerzeichen belegt, weil das Paar sonst mit Leerzeichen steht",
+          treffer.get("TISAXAssessment") == "TISAX Assessment", str(treffer))
+    check("Bindestrich belegt, weil das Paar sonst zusammenhaengend steht",
+          treffer.get("IKTSystem") == "IKT-System", str(treffer))
+    check("Silbentrennung bleibt unangetastet", "Abnahme" not in treffer, str(treffer))
+
+    neu_body, t2 = V2.repariere_trennungen(body, zeit)
+    check("Ersetzung im Text", "TISAX Assessment Scope" in neu_body and "IKT-System" in neu_body,
+          neu_body[:90])
+    check("Abnahme unveraendert", "Abnahme erfolgt" in neu_body)
+    check("nichts ohne Beleg", len(t2) == 2, str(t2))
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:

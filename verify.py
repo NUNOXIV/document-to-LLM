@@ -243,6 +243,84 @@ def verlorene_bindestriche(body: str, kompakt: str, zusammenhaengend: str = "") 
     return treffer
 
 
+def zweitleser_zeilen(pdf_path: Path) -> str:
+    """Textzeilen der Quelle ueber das Docling-PDF-Backend, mit Umbruechen.
+
+    Ein zweiter, unabhaengiger Leser neben pypdfium. Er wird gebraucht, wo der
+    erste ein unlesbares Zeichen liefert: pypdfium liest "TISAX\ufffeAssessment",
+    dieser Leser liest "TISAX-\nAssessment". Erst damit ist belegt, dass dort
+    eine Trennung am Zeilenende stand — vorher war es eine Vermutung, und
+    Vermutungen werden hier nicht gedruckt (Nr. 16).
+    """
+    from docling.backend.docling_parse_backend import DoclingParseDocumentBackend
+    from docling.datamodel.base_models import InputFormat
+    from docling.datamodel.document import InputDocument
+    from docling_core.types.doc.page import TextCellUnit
+
+    in_doc = InputDocument(path_or_stream=Path(pdf_path), format=InputFormat.PDF,
+                           backend=DoclingParseDocumentBackend, filename=Path(pdf_path).name)
+    backend = in_doc._backend
+    zeilen: list[str] = []
+    try:
+        for i in range(backend.page_count()):
+            for cell in backend.load_page(i).get_segmented_page().iterate_cells(TextCellUnit.LINE):
+                if cell.text:
+                    zeilen.append(cell.text.rstrip())
+    finally:
+        backend.unload()
+    return "\n".join(zeilen)
+
+
+# Beide Teile einer Trennung muessen so lang sein, sonst ist der Fund Rauschen.
+MIN_TEIL = 2
+
+
+def verlorene_trennungen(body: str, zweitleser: str) -> dict[str, str]:
+    """Woerter im Extrakt, die eine Trennung der Quelle verloren haben.
+
+    Rueckgabe: {"TISAXAssessment": "TISAX Assessment", "IKTSystem": "IKT-System"}
+
+    Zwei Belege, beide aus dem Dokument, keiner geraten:
+
+    1. Der zweite Leser hat an dieser Stelle "A-\nB" — am Zeilenende getrennt.
+       Der erste Leser liefert dort nur ein unlesbares Zeichen, deshalb greift
+       die aeltere Bindestrich-Regel hier nicht.
+    2. Dasselbe Wortpaar steht anderswo im Dokument ungetrennt, und zwar
+       entweder als "A B" oder als "A-B". Welche Form dort steht, entscheidet,
+       was eingesetzt wird.
+
+    Findet sich das Paar nirgends sonst, war es eine Silbentrennung ("Ab-\nnahme"):
+    dann ist die zusammengezogene Form des Extrakts richtig und es wird nichts
+    geaendert. Genau diese Unterscheidung fehlte der ersten Fassung der
+    Bindestrich-Reparatur, die 93-mal die Silbentrennung umkehrte.
+    """
+    treffer: dict[str, str] = {}
+    for m in re.finditer(r"(\w{%d,})-\n(\w{%d,})" % (MIN_TEIL, MIN_TEIL), zweitleser):
+        a, b = m.group(1), m.group(2)
+        geklebt = a + b
+        if len(geklebt) < MIN_WORTLAENGE or geklebt in treffer:
+            continue
+        if not re.search(rf"\b{re.escape(geklebt)}\b", body):
+            continue
+        mit_leer = f"{a} {b}"
+        mit_strich = f"{a}-{b}"
+        # Der Beleg darf nicht die Fundstelle selbst sein: gesucht wird das
+        # Paar ungetrennt, also ohne den Umbruch dazwischen.
+        if mit_leer in zweitleser:
+            treffer[geklebt] = mit_leer
+        elif mit_strich in zweitleser:
+            treffer[geklebt] = mit_strich
+    return treffer
+
+
+def repariere_trennungen(body: str, zweitleser: str) -> tuple[str, dict[str, str]]:
+    """Setzt belegte Trennungen zurueck. Ohne Beleg bleibt alles, wie es ist."""
+    treffer = verlorene_trennungen(body, zweitleser)
+    for falsch, richtig in treffer.items():
+        body = re.sub(rf"\b{re.escape(falsch)}\b", richtig, body)
+    return body, treffer
+
+
 def zusammenhaengende_quelle(pdf_path: Path | str, text: str | None = None) -> str:
     """Quelltext unveraendert, mit erhaltenen Umbruechen.
 
