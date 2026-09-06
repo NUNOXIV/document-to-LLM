@@ -20,7 +20,9 @@ import hashlib
 import json
 import os
 import re
+import contextlib
 import sys
+import threading
 import time
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
@@ -56,6 +58,10 @@ OOXML_SUFFIXES = {".xlsx", ".xlsm", ".docx", ".pptx"}
 
 # Ab wie wenig Zeichen pro Seite ein PDF als "vermutlich gescannt" gilt.
 LOW_TEXT_CHARS_PER_PAGE = 120
+
+# Serialisiert das Lesen der Quelle: das Docling-PDF-Backend ist nicht
+# threadsicher, die Konvertierung in den Worker-Prozessen bleibt parallel.
+_PDF_SPERRE = threading.Lock()
 
 
 class ExtractionError(RuntimeError):
@@ -736,6 +742,14 @@ def convert_file(
             stem = target_name(src, claimed, out_dir)
     else:
         stem = target_name(src, claimed, out_dir)
+
+    # Das Docling-PDF-Backend ist nicht threadsicher: liefen zwei Worker
+    # gleichzeitig durch die Deckungspruefung, brach sie mit "Failed to load
+    # page" ab und 12 Extrakte hatten am Ende gar keine Deckungszahl. Die
+    # Konvertierung bleibt parallel — sie laeuft in eigenen Prozessen —, das
+    # Lesen der Quelle wird serialisiert.
+    leser_sperre = (_PDF_SPERRE if src.suffix.lower() == ".pdf"
+                    else contextlib.nullcontext())
     target = out_dir / f"{stem}.md"
 
     if target.exists() and not force:
@@ -952,53 +966,54 @@ def convert_file(
     # 100 %. Aufgefallen ist es erst beim Abgleich gegen das amtliche
     # Gesetzes-XML. Angefasst wird nur, was die Quelle belegt.
     if is_pdf:
-        try:
-            from verify import (quelle_kompakt, quelltext, repariere_bindestriche,
-                                unlesbar_im_wort, zusammenhaengende_quelle)
+      with leser_sperre:
+          try:
+              from verify import (quelle_kompakt, quelltext, repariere_bindestriche,
+                                  unlesbar_im_wort, zusammenhaengende_quelle)
 
-            roh_quelle = quelltext(src)
-            md_body, ersetzt = repariere_bindestriche(
-                md_body, quelle_kompakt(src, roh_quelle),
-                zusammenhaengende_quelle(src, roh_quelle))
-            res.restored_hyphens = len(ersetzt)
-            if ersetzt:
-                beispiele = ", ".join(f"{a} -> {b}" for a, b in sorted(ersetzt.items())[:5])
-                res.warnings.append(
-                    f"{len(ersetzt)} Wort(e) hatten einen Bindestrich der Quelle verloren und "
-                    f"wurden zurueckgesetzt (belegt durch den Textlayer): {beispiele}"
-                )
-            unlesbar = unlesbar_im_wort(roh_quelle)
-            if unlesbar:
-                # Der erste Leser kann das Zeichen nicht abbilden — der zweite
-                # schon. Erst damit ist die Trennstelle belegt statt geraten.
-                from verify import repariere_trennungen, zweitleser_zeilen
+              roh_quelle = quelltext(src)
+              md_body, ersetzt = repariere_bindestriche(
+                  md_body, quelle_kompakt(src, roh_quelle),
+                  zusammenhaengende_quelle(src, roh_quelle))
+              res.restored_hyphens = len(ersetzt)
+              if ersetzt:
+                  beispiele = ", ".join(f"{a} -> {b}" for a, b in sorted(ersetzt.items())[:5])
+                  res.warnings.append(
+                      f"{len(ersetzt)} Wort(e) hatten einen Bindestrich der Quelle verloren und "
+                      f"wurden zurueckgesetzt (belegt durch den Textlayer): {beispiele}"
+                  )
+              unlesbar = unlesbar_im_wort(roh_quelle)
+              if unlesbar:
+                  # Der erste Leser kann das Zeichen nicht abbilden — der zweite
+                  # schon. Erst damit ist die Trennstelle belegt statt geraten.
+                  from verify import repariere_trennungen, zweitleser_zeilen
 
-                trenn: dict[str, str] = {}
-                try:
-                    md_body, trenn = repariere_trennungen(md_body, zweitleser_zeilen(src))
-                except Exception as fehl:
-                    res.warnings.append(f"Zweitleser nicht verfuegbar: {fehl}")
-                res.restored_splits = len(trenn)
-                if trenn:
-                    proben = ", ".join(f"{a} -> {b}" for a, b in sorted(trenn.items())[:5])
-                    res.warnings.append(
-                        f"{len(trenn)} Wort(e) hatten eine Trennung der Quelle verloren, weil "
-                        f"der Textlayer dort ein unlesbares Zeichen fuehrt. Ein zweiter Leser "
-                        f"belegt die Trennstelle, die Quelle selbst die Form: {proben}"
-                    )
-                offen = unlesbar - len(trenn)
-                if offen > 0:
-                    res.warnings.append(
-                        f"An {offen} weiteren Stellen fuehrt der Textlayer ein unlesbares "
-                        f"Zeichen innerhalb eines Wortes, und das Dokument schreibt dasselbe "
-                        f"Wortpaar nirgends ungetrennt. Damit ist nicht belegbar, ob dort ein "
-                        f"Bindestrich, ein Leerzeichen oder eine Silbentrennung stand — es "
-                        f"wird NICHT geraten. Kein Textverlust dieses Werkzeugs, sondern der "
-                        f"Quelle."
-                    )
-        except Exception as exc:
-            res.warnings.append(f"Bindestrich-Pruefung nicht durchfuehrbar: {exc}")
-        res.status = "warn" if res.warnings else "ok"
+                  trenn: dict[str, str] = {}
+                  try:
+                      md_body, trenn = repariere_trennungen(md_body, zweitleser_zeilen(src))
+                  except Exception as fehl:
+                      res.warnings.append(f"Zweitleser nicht verfuegbar: {fehl}")
+                  res.restored_splits = len(trenn)
+                  if trenn:
+                      proben = ", ".join(f"{a} -> {b}" for a, b in sorted(trenn.items())[:5])
+                      res.warnings.append(
+                          f"{len(trenn)} Wort(e) hatten eine Trennung der Quelle verloren, weil "
+                          f"der Textlayer dort ein unlesbares Zeichen fuehrt. Ein zweiter Leser "
+                          f"belegt die Trennstelle, die Quelle selbst die Form: {proben}"
+                      )
+                  offen = unlesbar - len(trenn)
+                  if offen > 0:
+                      res.warnings.append(
+                          f"An {offen} weiteren Stellen fuehrt der Textlayer ein unlesbares "
+                          f"Zeichen innerhalb eines Wortes, und das Dokument schreibt dasselbe "
+                          f"Wortpaar nirgends ungetrennt. Damit ist nicht belegbar, ob dort ein "
+                          f"Bindestrich, ein Leerzeichen oder eine Silbentrennung stand — es "
+                          f"wird NICHT geraten. Kein Textverlust dieses Werkzeugs, sondern der "
+                          f"Quelle."
+                      )
+          except Exception as exc:
+              res.warnings.append(f"Bindestrich-Pruefung nicht durchfuehrbar: {exc}")
+          res.status = "warn" if res.warnings else "ok"
 
     # Abweichungspruefung: enthaelt der Extrakt den Text der Quelle vollstaendig?
     # Fuer PDFs gegen den Textlayer, fuer Office-Formate gegen den Standardleser
@@ -1009,60 +1024,61 @@ def convert_file(
 
     verifiable = src.suffix.lower() in ({".pdf", ".xlsx", ".xlsm", ".docx", ".pptx"} | TEXT_QUELLEN)
     if verifiable and do_verify:
-        try:
-            from verify import verify as verify_extract
+      with leser_sperre:
+          try:
+              from verify import verify as verify_extract
 
-            tmp = out_dir / f".{stem}.tmp.md"
-            out_dir.mkdir(parents=True, exist_ok=True)
-            tmp.write_text(md_body, encoding="utf-8")
-            try:
-                vres = verify_extract(src, tmp)
-            finally:
-                tmp.unlink(missing_ok=True)
-            if vres.note:
-                res.warnings.append(vres.note)
-            else:
-                res.text_coverage = vres.coverage
+              tmp = out_dir / f".{stem}.tmp.md"
+              out_dir.mkdir(parents=True, exist_ok=True)
+              tmp.write_text(md_body, encoding="utf-8")
+              try:
+                  vres = verify_extract(src, tmp)
+              finally:
+                  tmp.unlink(missing_ok=True)
+              if vres.note:
+                  res.warnings.append(vres.note)
+              else:
+                  res.text_coverage = vres.coverage
 
-                # Fehlt Quelltext (typisch: ein Zellrest, den das Tabellenmodell
-                # verschluckt), wird er woertlich als markierter Nachtrag
-                # angehaengt. Lieber unstrukturiert vorhanden als still verloren.
-                if repair and vres.coverage < 100.0:
-                    from verify import unassigned_lines
+                  # Fehlt Quelltext (typisch: ein Zellrest, den das Tabellenmodell
+                  # verschluckt), wird er woertlich als markierter Nachtrag
+                  # angehaengt. Lieber unstrukturiert vorhanden als still verloren.
+                  if repair and vres.coverage < 100.0:
+                      from verify import unassigned_lines
 
-                    tmp2 = out_dir / f".{stem}.tmp2.md"
-                    tmp2.write_text(md_body, encoding="utf-8")
-                    try:
-                        extra = sammle_nachtrag(src, tmp2, unassigned_lines)
-                    finally:
-                        tmp2.unlink(missing_ok=True)
-                    if extra:
-                        md_body = md_body.rstrip() + "\n\n" + appendix(extra)
-                        res.repaired_lines = len(extra)
-                        tmp3 = out_dir / f".{stem}.tmp3.md"
-                        tmp3.write_text(md_body, encoding="utf-8")
-                        try:
-                            vres = verify_extract(src, tmp3)
-                        finally:
-                            tmp3.unlink(missing_ok=True)
-                        res.text_coverage = vres.coverage
-                        res.warnings.append(
-                            f"{len(extra)} Quellzeile(n) wurden vom Layout-/Tabellenmodell "
-                            f"keinem Element zugeordnet und stehen woertlich im Abschnitt "
-                            f"'Nachtrag: nicht zugeordneter Quelltext' — dort ohne "
-                            f"Tabellenstruktur."
-                        )
+                      tmp2 = out_dir / f".{stem}.tmp2.md"
+                      tmp2.write_text(md_body, encoding="utf-8")
+                      try:
+                          extra = sammle_nachtrag(src, tmp2, unassigned_lines)
+                      finally:
+                          tmp2.unlink(missing_ok=True)
+                      if extra:
+                          md_body = md_body.rstrip() + "\n\n" + appendix(extra)
+                          res.repaired_lines = len(extra)
+                          tmp3 = out_dir / f".{stem}.tmp3.md"
+                          tmp3.write_text(md_body, encoding="utf-8")
+                          try:
+                              vres = verify_extract(src, tmp3)
+                          finally:
+                              tmp3.unlink(missing_ok=True)
+                          res.text_coverage = vres.coverage
+                          res.warnings.append(
+                              f"{len(extra)} Quellzeile(n) wurden vom Layout-/Tabellenmodell "
+                              f"keinem Element zugeordnet und stehen woertlich im Abschnitt "
+                              f"'Nachtrag: nicht zugeordneter Quelltext' — dort ohne "
+                              f"Tabellenstruktur."
+                          )
 
-                if vres.coverage < min_coverage:
-                    worst = ", ".join(f"S.{p}: {c} %" for p, c in vres.worst_pages[:3])
-                    res.warnings.append(
-                        f"Wortdeckung nur {vres.coverage} % (gefordert {min_coverage} %). "
-                        f"Schwaechste Seiten: {worst}. Fehlend u. a.: "
-                        f"{', '.join(vres.missing_sample[:8])}"
-                    )
-        except Exception as exc:
-            res.warnings.append(f"Abweichungspruefung nicht durchfuehrbar: {exc}")
-        res.status = "warn" if res.warnings else "ok"
+                  if vres.coverage < min_coverage:
+                      worst = ", ".join(f"S.{p}: {c} %" for p, c in vres.worst_pages[:3])
+                      res.warnings.append(
+                          f"Wortdeckung nur {vres.coverage} % (gefordert {min_coverage} %). "
+                          f"Schwaechste Seiten: {worst}. Fehlend u. a.: "
+                          f"{', '.join(vres.missing_sample[:8])}"
+                      )
+          except Exception as exc:
+              res.warnings.append(f"Abweichungspruefung nicht durchfuehrbar: {exc}")
+          res.status = "warn" if res.warnings else "ok"
 
     out_dir.mkdir(parents=True, exist_ok=True)
     target.write_text(front_matter(src, res, ocr_mode) + md_body.rstrip() + "\n", encoding="utf-8")

@@ -576,6 +576,64 @@ def test_docx_runs_kleben_nicht(tmp_path: Path) -> None:
     check("Deckung vollstaendig", r.coverage == 100.0, f"{r.coverage} fehlend={r.missing_sample}")
 
 
+def test_pdf_pruefung_laeuft_nie_zu_zweit(tmp_path: Path) -> None:
+    """Das Docling-PDF-Backend ist nicht threadsicher.
+
+    Mit --workers 2 lief die Deckungspruefung in zwei Threads gleichzeitig:
+    12 Extrakte trugen danach "Abweichungspruefung nicht durchfuehrbar:
+    Failed to load page" und gar keine Deckungszahl — schlimmer als eine
+    schlechte Zahl, denn ein Extrakt ohne Zahl sieht aus wie ein Format ohne
+    Leser. Geprueft wird deshalb die Eigenschaft selbst: nie zwei Threads
+    zugleich im PDF-Leser. Ein Zufallstest, der die Kollision manchmal trifft,
+    waere kein Test (Nr. 22).
+    """
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
+
+    import verify as V2
+
+    if not FIXTURE_PDF.exists():
+        print("  (Fixture fehlt — uebersprungen)")
+        return
+
+    drin = {"jetzt": 0, "max": 0}
+    zaehler = threading.Lock()
+    echt = V2.verify
+
+    def beobachtet(quelle, md):
+        with zaehler:
+            drin["jetzt"] += 1
+            drin["max"] = max(drin["max"], drin["jetzt"])
+        try:
+            return echt(quelle, md)
+        finally:
+            with zaehler:
+                drin["jetzt"] -= 1
+
+    out = tmp_path / "out"
+    out.mkdir()
+    sperre = threading.Lock()
+    V2.verify = beobachtet
+    try:
+        def lauf(i: int):
+            ziel = tmp_path / f"kopie{i}.pdf"
+            ziel.write_bytes(FIXTURE_PDF.read_bytes())
+            return extract.convert_file(
+                extract._Runner(300), ziel, out, ocr_mode="off", write_json=False,
+                page_markers=True, force=True, claimed={}, do_verify=True,
+                min_coverage=99.0, repair=True, sperre=sperre)
+
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            ergebnisse = list(pool.map(lauf, range(4)))
+    finally:
+        V2.verify = echt
+
+    check("nie zwei Threads zugleich im PDF-Leser", drin["max"] == 1, f"max {drin['max']}")
+    for i, r in enumerate(ergebnisse):
+        check(f"Deckung vorhanden ({i})", r.text_coverage is not None,
+              str([w for w in r.warnings if "nicht durchfuehrbar" in w]))
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
