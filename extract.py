@@ -82,6 +82,7 @@ class Result:
     repaired_lines: int = 0              # als Nachtrag ergaenzte Quellzeilen
     restored_hyphens: int = 0            # belegte Bindestriche zurueckgesetzt
     scan_probe: str = ""                 # textlayer | scan | "" (keine Probe)
+    restored_splits: int = 0             # belegte Trennungen ueber den Zweitleser
     duration_s: float = 0.0
     status: str = "ok"          # ok | warn | error | skipped
     warnings: list[str] = field(default_factory=list)
@@ -617,6 +618,7 @@ def front_matter(src: Path, res: Result, ocr_mode: str) -> str:
         f"converter: {esc(converter_label(res))}",
         f"engine: {res.converter}",
         *([f"scan_probe: {res.scan_probe}"] if res.scan_probe else []),
+        *([f"restored_splits: {res.restored_splits}"] if res.restored_splits else []),
         f"ocr: {str(res.ocr_used).lower()} # mode={ocr_mode}",
         f"table_mode: {res.table_mode}",
         f"docling_status: {res.docling_status}",
@@ -967,14 +969,33 @@ def convert_file(
                 )
             unlesbar = unlesbar_im_wort(roh_quelle)
             if unlesbar:
-                res.warnings.append(
-                    f"Der Textlayer der Quelle enthaelt {unlesbar} unlesbare Zeichen innerhalb "
-                    f"von Woertern (die Schrift bildet den Codepunkt nicht ab). An diesen "
-                    f"Stellen fehlt im Extrakt ein Zeichen — meist ein Bindestrich, manchmal "
-                    f"eine Silbentrennung. Es wird NICHT geraten, welches: dasselbe Zeichen "
-                    f"hat in verschiedenen Dokumenten verschiedene Bedeutung. Kein Textverlust "
-                    f"dieses Werkzeugs, sondern der Quelle."
-                )
+                # Der erste Leser kann das Zeichen nicht abbilden — der zweite
+                # schon. Erst damit ist die Trennstelle belegt statt geraten.
+                from verify import repariere_trennungen, zweitleser_zeilen
+
+                trenn: dict[str, str] = {}
+                try:
+                    md_body, trenn = repariere_trennungen(md_body, zweitleser_zeilen(src))
+                except Exception as fehl:
+                    res.warnings.append(f"Zweitleser nicht verfuegbar: {fehl}")
+                res.restored_splits = len(trenn)
+                if trenn:
+                    proben = ", ".join(f"{a} -> {b}" for a, b in sorted(trenn.items())[:5])
+                    res.warnings.append(
+                        f"{len(trenn)} Wort(e) hatten eine Trennung der Quelle verloren, weil "
+                        f"der Textlayer dort ein unlesbares Zeichen fuehrt. Ein zweiter Leser "
+                        f"belegt die Trennstelle, die Quelle selbst die Form: {proben}"
+                    )
+                offen = unlesbar - len(trenn)
+                if offen > 0:
+                    res.warnings.append(
+                        f"An {offen} weiteren Stellen fuehrt der Textlayer ein unlesbares "
+                        f"Zeichen innerhalb eines Wortes, und das Dokument schreibt dasselbe "
+                        f"Wortpaar nirgends ungetrennt. Damit ist nicht belegbar, ob dort ein "
+                        f"Bindestrich, ein Leerzeichen oder eine Silbentrennung stand — es "
+                        f"wird NICHT geraten. Kein Textverlust dieses Werkzeugs, sondern der "
+                        f"Quelle."
+                    )
         except Exception as exc:
             res.warnings.append(f"Bindestrich-Pruefung nicht durchfuehrbar: {exc}")
         res.status = "warn" if res.warnings else "ok"
