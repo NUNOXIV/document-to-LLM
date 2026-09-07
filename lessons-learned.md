@@ -438,6 +438,34 @@ untereinander. Beide gehören in die Definition of Done.
 
 ---
 
+## 24 Die Reparatur zerstörte 4880 Wörter, die sie nicht anfassen sollte
+
+**Ursache:** Ein zweiter Leser (Docling-Backend) löst die Stellen auf, an
+denen der erste (pypdfium) nur ein unlesbares Zeichen liefert: er liest dort
+`TISAX-\nAssessment`. Zwei Belege schienen zu genügen — die Trennstelle
+steht im zweiten Leser, und die Form ohne Trennung steht im Extrakt. Die
+Regel trennte damit auch `werden` zu `wer den`: der zweite Leser hat
+`wer-\nden` am Zeilenende, und das Paar „wer den" steht anderswo im
+Dokument, weil beide Wörter für sich gebräuchlich sind. Im
+Grundschutz-Kompendium wurden so 4880 Vorkommen ersetzt, weil die Ersetzung
+global über das ganze Dokument lief. Nr. 15 in neuer Gestalt.
+
+**Fix:** Ein dritter Beleg, und der entscheidende: die zusammengeschriebene
+Form darf im Dokument nirgends als eigenes Wort stehen. „werden" steht
+überall, also war die Trennstelle eine Silbentrennung. „TISAXAssessment"
+steht nirgends, also war sie eine echte Trennung. Die 69 betroffenen
+Extrakte wurden aus der Quelle neu erzeugt; danach 278 belegte Trennungen
+in 66 Dokumenten, keine davon ein gebräuchliches Wort.
+
+**Lehre:** Wer über den ganzen Bestand ersetzt, muss die Regel gegen ihr
+gefährlichstes Beispiel halten, nicht gegen ihr schönstes. Das schönste war
+„TISAXAssessment", das gefährlichste „werden" — und nur das zweite entscheidet,
+ob die Regel taugt. Ein Probelauf, der nur zählt, hätte es nicht gezeigt: 486
+gefundene Wörter sahen nach Erfolg aus. Sichtbar wurde es erst, als ein
+Wächter eine Fundstelle nicht mehr fand.
+
+---
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -463,3 +491,5 @@ untereinander. Beide gehören in die Definition of Done.
    unter pytest. Die Gegenprobe (Nr. 4) gilt auch für die Testinfrastruktur.
 10. **Vollständig heißt auch: nichts zu viel.** Nr. 23: zwölf Zeilen mit fremdem
     Text bei 100 % Wortdeckung. Die Gegenfrage gehört neben die Deckung.
+11. **Eine Regel prüft man am gefährlichsten Beispiel, nicht am schönsten.**
+    Nr. 24: 486 Treffer sahen nach Erfolg aus, 4880 Ersetzungen waren falsch.
