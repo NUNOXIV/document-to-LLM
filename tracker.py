@@ -69,6 +69,18 @@ class Doc:
         return "unvollstaendig"
 
 
+def extrakte(out: Path) -> list[Path]:
+    """Die echten Extrakte eines Ausgabeordners.
+
+    Nicht jede .md-Datei dort ist ein Dokument: "_TRACKER.md" ist ein Bericht,
+    und Dateien mit fuehrendem Punkt sind Arbeitsreste. Ein abgebrochener Lauf
+    liess ".fluchs-ma-profil.tmp.md" liegen, und der Tracker fuehrte sie als
+    Dokument ohne Deckung — ein erfundener Eintrag im Bestandsregister.
+    """
+    return sorted(p for p in out.glob("*.md")
+                  if not p.name.startswith("_") and not p.name.startswith("."))
+
+
 def read_doc(md: Path) -> Doc:
     text = md.read_text(encoding="utf-8")
     doc = Doc(slug=md.stem)
@@ -465,7 +477,7 @@ def main(out_dir: str, src_dir: str, targets: tuple[str, ...], vault: str | None
     """Schreibt das Aufnahmeprotokoll aller Extrakte."""
     out = Path(out_dir)
     docs = []
-    for md in sorted(out.glob("*.md")):
+    for md in extrakte(out):
         if md.name.startswith("_"):
             continue
         doc = read_doc(md)

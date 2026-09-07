@@ -76,7 +76,8 @@ def main(output: Path, eingang: Path, reparieren: bool, strict: bool) -> None:
     """Prueft alle PDF-Extrakte auf verlorene Bindestriche."""
     betroffen = worte = ohne_quelle = 0
     geprueft = 0
-    for md in sorted(output.glob("*.md")):
+    for md in sorted(p for p in output.glob("*.md")
+                     if not p.name.startswith("_") and not p.name.startswith(".")):
         roh = md.read_text(encoding="utf-8")
         meta, koerper = publish.split_front_matter(roh)
         quelle = quelle_zu(meta, eingang)

@@ -685,6 +685,29 @@ def test_leerer_pfad_ist_keine_eingabe(tmp_path: Path) -> None:
     check("echter Pfad bleibt", len(treffer) == 1, str(treffer))
 
 
+def test_arbeitsdateien_kommen_nicht_ins_register(tmp_path: Path) -> None:
+    """Dateien, die mit einem Punkt beginnen, sind Arbeitsreste, keine Extrakte.
+
+    Ein abgebrochener Lauf liess ".fluchs-ma-profil.tmp.md" liegen, und der
+    Tracker fuehrte sie als Dokument ohne Deckung — ein erfundener Eintrag im
+    Bestandsregister.
+    """
+    import index as IDX2
+    import tracker as TR2
+
+    out = tmp_path / "output"
+    out.mkdir()
+    (out / "echt.md").write_text("---\nsource_file: \"a.pdf\"\n---\n\n# Titel\n\nText.\n",
+                                 encoding="utf-8")
+    (out / ".rest.tmp.md").write_text("---\nsource_file: \"b.pdf\"\n---\n\n# Rest\n", encoding="utf-8")
+    (out / "_TRACKER.md").write_text("# Tracker\n", encoding="utf-8")
+
+    namen = {p.name for p in IDX2.extrakte(out)}
+    check("Index nimmt nur echte Extrakte", namen == {"echt.md"}, str(namen))
+    namen2 = {p.name for p in TR2.extrakte(out)}
+    check("Tracker nimmt nur echte Extrakte", namen2 == {"echt.md"}, str(namen2))
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
