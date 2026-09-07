@@ -466,6 +466,30 @@ Wächter eine Fundstelle nicht mehr fand.
 
 ---
 
+## 25 987 Arbeitsdateien lagen im öffentlichen Repo, davon 472 Normextrakte
+
+**Ursache:** `.gitignore` kannte `input/`, `output/` und `export/`. Die
+Arbeitsstände der Reparaturläufe hießen `output.alt/`, `output.duplikate/`
+und `output.fremd/` — ein Zeichen daneben, und die Regel greift nicht mehr.
+Ein `git add -A` nahm sie am 02.09.2026 mit (`eb9a5e5`), 987 Dateien, darunter
+472 Markdown-Extrakte und 470 Docling-JSON lizenzierter Normen: CISM-Manuals,
+IT-Grundschutz-Kompendium, TISAX-Unterlagen. Beim Merge von PR 5 landeten sie
+auf `main` eines **öffentlichen** Repositories.
+
+**Fix:** Die drei Verzeichnisse entfernt, `.gitignore` auf `input.*/`,
+`output.*/`, `export.*/` erweitert, und ein Test, der `git ls-files` liest und
+rot wird, sobald ein verfolgter Pfad in einem solchen Verzeichnis liegt
+(`test_kein_lizenztext_im_repo`). Gegenprobe: gegen den Stand vor dem Fix
+meldet er 986 Treffer, danach null. Aus der **Historie** ist damit nichts
+entfernt — das braucht einen Rewrite und eine Entscheidung des Eigentuemers.
+
+**Lehre:** Eine Datenregel, die auf einen Pfadnamen zeigt, schützt nur diesen
+Pfadnamen. Was sie eigentlich meint — „kein lizenzierter Normtext im Repo" —
+gehört in einen Wächter, der den Bestand des Repositories liest, nicht in eine
+Zeile, die auf ein Verzeichnis zeigt. Und: `git add -A` in einem Repo, dessen
+Arbeitsverzeichnis danebenliegt, ist ein Schreibvorgang über alles, ohne die
+Zusage vorab aus Nr. 17.
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -493,3 +517,6 @@ Wächter eine Fundstelle nicht mehr fand.
     Text bei 100 % Wortdeckung. Die Gegenfrage gehört neben die Deckung.
 11. **Eine Regel prüft man am gefährlichsten Beispiel, nicht am schönsten.**
     Nr. 24: 486 Treffer sahen nach Erfolg aus, 4880 Ersetzungen waren falsch.
+12. **Eine Regel auf einem Pfadnamen schützt nur diesen Pfadnamen.** Nr. 25:
+    `output/` war ignoriert, `output.alt/` nicht — 987 Dateien im öffentlichen
+    Repo. Datenregeln brauchen einen Wächter, keine Zeile in einer Ignore-Liste.
