@@ -1153,7 +1153,7 @@ def convert_file(
     return res
 
 
-def sammle_nachtrag(src: Path, md_path: Path, leser, max_runden: int = 4
+def sammle_nachtrag(src: Path, md_path: Path, leser, max_runden: int = 5
                     ) -> list[tuple[int, str]]:
     """Nicht zugeordnete Quellzeilen, bis nichts mehr dazukommt.
 
@@ -1167,16 +1167,19 @@ def sammle_nachtrag(src: Path, md_path: Path, leser, max_runden: int = 4
     angehaengt, damit die naechste Runde ihn als vorhanden sieht.
     """
     gesammelt: list[tuple[int, str]] = []
-    gesehen: set[tuple[int, str]] = set()
     arbeitskopie = md_path
     tmp: Path | None = None
     try:
         for _ in range(max_runden):
-            neue = [z for z in leser(src, arbeitskopie) if z not in gesehen]
+            # Nicht nach Text aussortieren: kurze Zeilen wie "8" oder "14"
+            # kommen mehrfach vor, und jede fehlt einzeln. Wer sie als "schon
+            # gesehen" verwirft, haelt die Schleife fuer erschoepft, obwohl
+            # der naechste Durchlauf noch Zeilen findet — genau daran blieben
+            # die Extrakte bei 99,6 Prozent stehen.
+            neue = leser(src, arbeitskopie)
             if not neue:
                 break
             gesammelt.extend(neue)
-            gesehen.update(neue)
             tmp = md_path.parent / f".{md_path.stem}.nachtrag.md"
             tmp.write_text(
                 md_path.read_text(encoding="utf-8").rstrip() + "\n\n" + appendix(gesammelt),
