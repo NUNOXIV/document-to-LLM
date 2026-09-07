@@ -246,6 +246,12 @@ def docling_version() -> str:
 def collect_inputs(paths: tuple[str, ...], recursive: bool) -> list[Path]:
     files: list[Path] = []
     for raw in paths:
+        # Ein leeres Argument ist keine Eingabe, sondern ein Fehler in der
+        # Liste, die es erzeugt hat. Path("") waere "." — und damit laege das
+        # Arbeitsverzeichnis im Bestand: acht Repo-Dateien sind so
+        # hineingeraten.
+        if not str(raw).strip():
+            continue
         p = Path(raw).expanduser()
         if p.is_dir():
             it = p.rglob("*") if recursive else p.glob("*")

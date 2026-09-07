@@ -671,6 +671,20 @@ def test_pdf_pruefung_laeuft_nie_zu_zweit(tmp_path: Path) -> None:
               str([w for w in r.warnings if "nicht durchfuehrbar" in w]))
 
 
+def test_leerer_pfad_ist_keine_eingabe(tmp_path: Path) -> None:
+    """Ein leeres Argument darf nicht das Arbeitsverzeichnis einlesen.
+
+    Eine Liste mit einer Leerzeile ergab ueber xargs ein leeres Argument;
+    Path("") ist "." — und der Lauf zog acht Repo-Dateien (CLAUDE.md,
+    README.md, versions.json ...) als Dokumente in den Bestand.
+    """
+    (tmp_path / "echt.md").write_text("# Titel\n\nText.\n", encoding="utf-8")
+    check("leeres Argument wird verworfen", extract.collect_inputs(("",), False) == [])
+    check("nur Leerzeichen ebenso", extract.collect_inputs(("   ",), False) == [])
+    treffer = extract.collect_inputs((str(tmp_path / "echt.md"),), False)
+    check("echter Pfad bleibt", len(treffer) == 1, str(treffer))
+
+
 def test_quality_gates() -> None:
     print("Qualitaetsgates")
     try:
