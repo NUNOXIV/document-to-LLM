@@ -1,0 +1,3285 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "SYS.1.2.3-Windows-Server.pdf.clean",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 14307670658056993282,
+    "filename": "SYS.1.2.3-Windows-Server.pdf.clean.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/75"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        },
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/83"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 632.5476000000001,
+            "r": 419.5923240000002,
+            "b": 604.6872696774194,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3 Windows Server",
+      "text": "SYS.1.2.3 Windows Server",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 561.66,
+            "r": 196.518,
+            "b": 546.0081290322581,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "1. Beschreibung",
+      "text": "1. Beschreibung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 528.6923999999999,
+            "r": 162.29520000000002,
+            "b": 514.8144077419354,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "1.1. Einleitung",
+      "text": "1.1. Einleitung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.628960000000006,
+            "t": 498.7776,
+            "r": 529.5196319999984,
+            "b": 436.52736941176465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            473
+          ]
+        }
+      ],
+      "orig": "Mit Windows Server bietet Microsoft ein Betriebssystem für Server an. Bei den Hauptversionen 2016, 2019 und 2022 von Windows Server handelt es sich um sogenannte Langzeit-Versionen (Long-Term Servicing Channel, LTSC), die jeweils auf der Codebasis des Client-Betriebssystems Windows 10 basieren. Wie bei Windows 10 liefert Microsoft auch mit Windows Server zunehmend cloudbasierte Funktionen und Anwendungen sowie Schnittstellen zur Microsoft Azure Cloud-Plattform mit aus.",
+      "text": "Mit Windows Server bietet Microsoft ein Betriebssystem für Server an. Bei den Hauptversionen 2016, 2019 und 2022 von Windows Server handelt es sich um sogenannte Langzeit-Versionen (Long-Term Servicing Channel, LTSC), die jeweils auf der Codebasis des Client-Betriebssystems Windows 10 basieren. Wie bei Windows 10 liefert Microsoft auch mit Windows Server zunehmend cloudbasierte Funktionen und Anwendungen sowie Schnittstellen zur Microsoft Azure Cloud-Plattform mit aus."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 419.49240000000003,
+            "r": 169.25376,
+            "b": 405.6144077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "1.2. Zielsetzung",
+      "text": "1.2. Zielsetzung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 389.57759999999996,
+            "r": 535.147823999999,
+            "b": 353.73504941176463,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            205
+          ]
+        }
+      ],
+      "orig": "Das Ziel dieses Bausteins ist der Schutz von Informationen, die durch Server-Systeme auf Basis von Windows Server 2016, 2019 und 2022 im Regelbetrieb verarbeitet, gespeichert und darüber übertragen werden.",
+      "text": "Das Ziel dieses Bausteins ist der Schutz von Informationen, die durch Server-Systeme auf Basis von Windows Server 2016, 2019 und 2022 im Regelbetrieb verarbeitet, gespeichert und darüber übertragen werden."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 336.6924,
+            "r": 304.84992,
+            "b": 322.8144077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "1.3. Abgrenzung und Modellierung",
+      "text": "1.3. Abgrenzung und Modellierung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.628960000000006,
+            "t": 306.7776,
+            "r": 538.7159519999994,
+            "b": 75.30624941176484,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1319
+          ]
+        }
+      ],
+      "orig": "Der Baustein SYS.1.2.3 Windows Server ist auf alle Server-Systeme anzuwenden, auf denen das Betriebssystem Microsoft Windows Server in den Versionen 2016, 2019 oder 2022 eingesetzt wird. Für Windows Server 2012 ist stattdessen der Baustein SYS.1.2.2 Windows Server 2012 zu modellieren. Dieser Baustein konkretisiert und ergänzt die plattformunabhängigen Sicherheitsaspekte für Server, die im Bausteinen SYS.1.1 Allgemeiner Server behandelt werden, um Besonderheiten von Windows Server in den genannten Versionen. Dementsprechend sind die beiden Bausteine immer gemeinsam anzuwenden. In diesem Baustein geht es um die grundlegende Absicherung auf Betriebssystemebene mit bordeigenen Mitteln, unabhängig vom Einsatzzweck des Servers. Sicherheitsanforderungen möglicher Serverrollen und -funktionen wie beispielsweise Fileserver (APP.3.3 Fileserver ) oder Webserver (APP.3.2 Webserver ) sind Gegenstand eigener Bausteine, genauso wie das Thema Virtualisierung (SYS.1.5 Virtualisierung ). Darüber hinaus sind im Funktionsumfang einiger Betriebssystemvarianten auch weitere Anwendungen vorinstalliert, wie etwa der Microsoft Internet Explorer als Browser. Für diese Anwendungen sind die entsprechenden Bausteine zu modellieren. Im Rahmen dieses Bausteins wird von einer Aufnahme als 'Member Server' in eine Active-Directory-",
+      "text": "Der Baustein SYS.1.2.3 Windows Server ist auf alle Server-Systeme anzuwenden, auf denen das Betriebssystem Microsoft Windows Server in den Versionen 2016, 2019 oder 2022 eingesetzt wird. Für Windows Server 2012 ist stattdessen der Baustein SYS.1.2.2 Windows Server 2012 zu modellieren. Dieser Baustein konkretisiert und ergänzt die plattformunabhängigen Sicherheitsaspekte für Server, die im Bausteinen SYS.1.1 Allgemeiner Server behandelt werden, um Besonderheiten von Windows Server in den genannten Versionen. Dementsprechend sind die beiden Bausteine immer gemeinsam anzuwenden. In diesem Baustein geht es um die grundlegende Absicherung auf Betriebssystemebene mit bordeigenen Mitteln, unabhängig vom Einsatzzweck des Servers. Sicherheitsanforderungen möglicher Serverrollen und -funktionen wie beispielsweise Fileserver (APP.3.3 Fileserver ) oder Webserver (APP.3.2 Webserver ) sind Gegenstand eigener Bausteine, genauso wie das Thema Virtualisierung (SYS.1.5 Virtualisierung ). Darüber hinaus sind im Funktionsumfang einiger Betriebssystemvarianten auch weitere Anwendungen vorinstalliert, wie etwa der Microsoft Internet Explorer als Browser. Für diese Anwendungen sind die entsprechenden Bausteine zu modellieren. Im Rahmen dieses Bausteins wird von einer Aufnahme als 'Member Server' in eine Active-Directory-"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.62896000000006,
+            "t": 71.53728000000012,
+            "r": 528.08664,
+            "b": 62.102409411764825,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            96
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.628960000000035,
+            "t": 782.3376000000001,
+            "r": 527.7719999999999,
+            "b": 706.8835294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            97,
+            620
+          ]
+        }
+      ],
+      "orig": "Domäne ausgegangen, wie sie in Institutionen üblich ist. Besonderheiten von Stand-alone-Systemen werden nur punktuell dort erwähnt, wo die Unterschiede besonders relevant erscheinen. Anforderungen zum Thema Active Directory sind Bestandteil des Bausteins APP.2.2 Active Directory Domain Services . Für die Nutzung der teils mitgelieferten Funktionen und Anwendungen von CloudDiensten sowie Schnittstellen zwischen der Microsoft Azure Cloud-Plattform und Windows Server muss der Baustein OPS.2.2 Cloud-Nutzung angewendet werden, in dem auch Gefährdungen und generelle Anforderungen bei der Cloud-Nutzung behandelt werden.",
+      "text": "Domäne ausgegangen, wie sie in Institutionen üblich ist. Besonderheiten von Stand-alone-Systemen werden nur punktuell dort erwähnt, wo die Unterschiede besonders relevant erscheinen. Anforderungen zum Thema Active Directory sind Bestandteil des Bausteins APP.2.2 Active Directory Domain Services . Für die Nutzung der teils mitgelieferten Funktionen und Anwendungen von CloudDiensten sowie Schnittstellen zwischen der Microsoft Azure Cloud-Plattform und Windows Server muss der Baustein OPS.2.2 Cloud-Nutzung angewendet werden, in dem auch Gefährdungen und generelle Anforderungen bei der Cloud-Nutzung behandelt werden."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 273.36,
+            "t": 43.889999999999986,
+            "r": 321.42,
+            "b": 36.064064516129065,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 1 von 6",
+      "text": "Seite 1 von 6"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 440.04,
+            "t": 803.97,
+            "r": 540.1469999999999,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3 Windows Server",
+      "text": "SYS.1.2.3 Windows Server"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.64,
+            "t": 689.2199999999999,
+            "r": 222.78539999999998,
+            "b": 673.5681290322581,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "2. Gefährdungslage",
+      "text": "2. Gefährdungslage",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.62896000000012,
+            "t": 657.5376,
+            "r": 536.8623360000005,
+            "b": 608.4912094117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            298
+          ]
+        }
+      ],
+      "orig": "Da IT-Grundschutz-Bausteine nicht auf individuelle Informationsverbünde eingehen können, werden zur Darstellung der Gefährdungslage typische Szenarien zugrunde gelegt. Die folgenden spezifischen Bedrohungen und Schwachstellen sind für den Baustein SYS.1.2.3 Windows Server von besonderer Bedeutung.",
+      "text": "Da IT-Grundschutz-Bausteine nicht auf individuelle Informationsverbünde eingehen können, werden zur Darstellung der Gefährdungslage typische Szenarien zugrunde gelegt. Die folgenden spezifischen Bedrohungen und Schwachstellen sind für den Baustein SYS.1.2.3 Windows Server von besonderer Bedeutung."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.64,
+            "t": 591.4524,
+            "r": 286.36823999999996,
+            "b": 577.5744077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "2.1. Unbedachte Cloud-Nutzung",
+      "text": "2.1. Unbedachte Cloud-Nutzung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 561.5376,
+            "r": 533.7424319999984,
+            "b": 446.47200941176453,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            788
+          ]
+        }
+      ],
+      "orig": "Windows Server bietet an verschiedenen Stellen die Möglichkeit, Cloud-Dienste zu nutzen, ohne dass dafür Drittsoftware installiert werden muss. Hierzu gehören beispielsweise Microsoft Azure Online Backup oder die Online-Speicherung von BitLocker-Wiederherstellungsschlüsseln. Während CloudDienste mögliche Vorteile, beispielsweise hinsichtlich der Verfügbarkeit, bieten können, bestehen bei unbedachtem Einsatz beispielsweise Risiken für die Vertraulichkeit sowie eine Abhängigkeit von Dienstleistenden. So können Daten über Cloud-Dienste in die Hände unberechtigter Dritter gelangen. Dabei kann es sich sowohl um Kriminelle als auch um staatliche Akteure handeln. Wird ein CloudDienst durch den Anbieter beendet, kann dies erhebliche Auswirkungen auf die eigenen Geschäftsprozesse haben.",
+      "text": "Windows Server bietet an verschiedenen Stellen die Möglichkeit, Cloud-Dienste zu nutzen, ohne dass dafür Drittsoftware installiert werden muss. Hierzu gehören beispielsweise Microsoft Azure Online Backup oder die Online-Speicherung von BitLocker-Wiederherstellungsschlüsseln. Während CloudDienste mögliche Vorteile, beispielsweise hinsichtlich der Verfügbarkeit, bieten können, bestehen bei unbedachtem Einsatz beispielsweise Risiken für die Vertraulichkeit sowie eine Abhängigkeit von Dienstleistenden. So können Daten über Cloud-Dienste in die Hände unberechtigter Dritter gelangen. Dabei kann es sich sowohl um Kriminelle als auch um staatliche Akteure handeln. Wird ein CloudDienst durch den Anbieter beendet, kann dies erhebliche Auswirkungen auf die eigenen Geschäftsprozesse haben."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.64,
+            "t": 429.4524,
+            "r": 358.01268,
+            "b": 415.5744077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "2.2. Kompromittierung von Fernzugängen",
+      "text": "2.2. Kompromittierung von Fernzugängen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.62896000000006,
+            "t": 399.5376,
+            "r": 532.1692319999989,
+            "b": 310.8796894117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            581
+          ]
+        }
+      ],
+      "orig": "Da Windows Server über eine Vielzahl von Möglichkeiten verfügt, aus der Ferne verwaltet zu werden, können diese grundsätzlich auch missbraucht werden. Fernzugänge wie z. B. RDP- oder WinRMSitzungen können durch unsichere oder unsicher verwendete Protokolle, schwache Authentisierungsverfahren (z. B. schwache Passwörter) oder fehlerhafte Konfiguration für Dritte erreichbar sein. Hierdurch können der Server und die dort gespeicherten Informationen weitgehend kompromittiert werden. Oft können auf diese Weise auch weitere mit dem Server verbundene ITSysteme kompromittiert werden.",
+      "text": "Da Windows Server über eine Vielzahl von Möglichkeiten verfügt, aus der Ferne verwaltet zu werden, können diese grundsätzlich auch missbraucht werden. Fernzugänge wie z. B. RDP- oder WinRMSitzungen können durch unsichere oder unsicher verwendete Protokolle, schwache Authentisierungsverfahren (z. B. schwache Passwörter) oder fehlerhafte Konfiguration für Dritte erreichbar sein. Hierdurch können der Server und die dort gespeicherten Informationen weitgehend kompromittiert werden. Oft können auf diese Weise auch weitere mit dem Server verbundene ITSysteme kompromittiert werden."
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.64,
+            "t": 293.8524,
+            "r": 314.33016000000003,
+            "b": 279.97440774193547,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "2.3. Telemetrie von Windows Server",
+      "text": "2.3. Telemetrie von Windows Server",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.61792000000003,
+            "t": 263.9376,
+            "r": 523.8693599999984,
+            "b": 175.27968941176482,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            566
+          ]
+        }
+      ],
+      "orig": "Windows Server sendet standardmäßig sogenannte Diagnosedaten an den Hersteller Microsoft. Zusätzlich kann Microsoft über den in Windows Server integrierten Telemetriedienst gezielt Informationen von einem Server abfragen. Abhängig vom Telemetrie-Level schließt dies beispielsweise den Zugriff auf Absturzabbilder des Speichers (sog. 'Crash Dumps') sowie den Zugriff auf Betriebssystemereignisse auf dem Server mit ein. Es besteht die Gefahr, dass die Diagnose- und Telemetriedaten schützenswerte Informationen enthalten, die auf diesem Weg an Dritte gelangen können.",
+      "text": "Windows Server sendet standardmäßig sogenannte Diagnosedaten an den Hersteller Microsoft. Zusätzlich kann Microsoft über den in Windows Server integrierten Telemetriedienst gezielt Informationen von einem Server abfragen. Abhängig vom Telemetrie-Level schließt dies beispielsweise den Zugriff auf Absturzabbilder des Speichers (sog. 'Crash Dumps') sowie den Zugriff auf Betriebssystemereignisse auf dem Server mit ein. Es besteht die Gefahr, dass die Diagnose- und Telemetriedaten schützenswerte Informationen enthalten, die auf diesem Weg an Dritte gelangen können."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.64,
+            "t": 158.25239999999997,
+            "r": 508.113288,
+            "b": 125.17452774193555,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "2.4. Eingeschränkte Forensik bei der Nutzung des Virtual Secure Mode (VSM)",
+      "text": "2.4. Eingeschränkte Forensik bei der Nutzung des Virtual Secure Mode (VSM)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 109.13760000000002,
+            "r": 522.4683839999999,
+            "b": 73.2950494117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            285
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 782.3376000000001,
+            "r": 524.6134559999989,
+            "b": 759.6988894117648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            286,
+            387
+          ]
+        }
+      ],
+      "orig": "Durch die Nutzung des Virtual Secure Mode (VSM) werden forensische Untersuchungen, z. B. zur Sicherheitsvorfallbehandlung, eingeschränkt oder erschwert. Prozesse, die durch den Secure Kernel oder den Isolated User Mode (IUM) geschützt werden, sind nicht mehr zugänglich. Beispielsweise können Speicherabbilder dieser Prozesse aufgrund kryptografischer Maßnahmen nicht ausgewertet werden.",
+      "text": "Durch die Nutzung des Virtual Secure Mode (VSM) werden forensische Untersuchungen, z. B. zur Sicherheitsvorfallbehandlung, eingeschränkt oder erschwert. Prozesse, die durch den Secure Kernel oder den Isolated User Mode (IUM) geschützt werden, sind nicht mehr zugänglich. Beispielsweise können Speicherabbilder dieser Prozesse aufgrund kryptografischer Maßnahmen nicht ausgewertet werden."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 273.35999999999996,
+            "t": 43.89300000000003,
+            "r": 321.41999999999996,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 2 von 6",
+      "text": "Seite 2 von 6"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 440.04,
+            "t": 803.97,
+            "r": 540.1469999999999,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3 Windows Server",
+      "text": "SYS.1.2.3 Windows Server"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 742.02,
+            "r": 211.15200000000002,
+            "b": 726.3681290322581,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "3. Anforderungen",
+      "text": "3. Anforderungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 710.3376000000001,
+            "r": 536.4958079999998,
+            "b": 661.2912094117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            345
+          ]
+        }
+      ],
+      "orig": "Im Folgenden sind die spezifischen Anforderungen des Bausteins SYS.1.2.3 Windows Server aufgeführt. Der oder die Informationssicherheitsbeauftragte (ISB) ist dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Bei strategischen Entscheidungen ist der oder die ISB stets einzubeziehen.",
+      "text": "Im Folgenden sind die spezifischen Anforderungen des Bausteins SYS.1.2.3 Windows Server aufgeführt. Der oder die Informationssicherheitsbeauftragte (ISB) ist dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Bei strategischen Entscheidungen ist der oder die ISB stets einzubeziehen."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 651.52752,
+            "r": 516.2241599999979,
+            "b": 628.8888094117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            145
+          ]
+        }
+      ],
+      "orig": "Im IT-Grundschutz-Kompendium sind darüber hinaus weitere Rollen definiert. Sie sollten besetzt werden, insofern dies sinnvoll und angemessen ist.",
+      "text": "Im IT-Grundschutz-Kompendium sind darüber hinaus weitere Rollen definiert. Sie sollten besetzt werden, insofern dies sinnvoll und angemessen ist."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.62895999999999,
+            "t": 571.4976,
+            "r": 536.1359039999983,
+            "b": 509.2473694117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            417
+          ]
+        }
+      ],
+      "orig": "Genau eine Rolle sollte Grundsätzlich zuständig sein. Darüber hinaus kann es noch Weitere Zuständigkeiten geben. Falls eine dieser weiteren Rollen für die Erfüllung einer Anforderung vorrangig zuständig ist, dann wird diese Rolle hinter der Überschrift der Anforderung in eckigen Klammern aufgeführt. Die Verwendung des Singulars oder Plurals sagt nichts darüber aus, wie viele Personen diese Rollen ausfüllen sollen.",
+      "text": "Genau eine Rolle sollte Grundsätzlich zuständig sein. Darüber hinaus kann es noch Weitere Zuständigkeiten geben. Falls eine dieser weiteren Rollen für die Erfüllung einer Anforderung vorrangig zuständig ist, dann wird diese Rolle hinter der Überschrift der Anforderung in eckigen Klammern aufgeführt. Die Verwendung des Singulars oder Plurals sagt nichts darüber aus, wie viele Personen diese Rollen ausfüllen sollen."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 492.2124,
+            "r": 239.2224,
+            "b": 478.3344077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "3.1. Basis-Anforderungen",
+      "text": "3.1. Basis-Anforderungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 462.2976,
+            "r": 457.1822399999999,
+            "b": 452.8627294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            80
+          ]
+        }
+      ],
+      "orig": "Die folgenden Anforderungen MÜSSEN für diesen Baustein vorrangig erfüllt werden.",
+      "text": "Die folgenden Anforderungen MÜSSEN für diesen Baustein vorrangig erfüllt werden."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 442.2876,
+            "r": 335.1795599999999,
+            "b": 430.0791406451613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A1 Planung von Windows Server (B)",
+      "text": "SYS.1.2.3.A1 Planung von Windows Server (B)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.62895999999999,
+            "t": 420.2976,
+            "r": 540.3366239999993,
+            "b": 358.04736941176463,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            442
+          ]
+        }
+      ],
+      "orig": "Es MUSS eine begründete und dokumentierte Entscheidung für eine geeignete Edition von Windows Server getroffen werden. Der Einsatzzweck des Servers sowie die Einbindung ins Active Directory MÜSSEN dabei spezifiziert werden. Die Nutzung von mitgelieferten Cloud-Diensten im Betriebssystem MUSS grundsätzlich abgewogen und gründlich geplant werden. Wenn nicht benötigt, MUSS die Einrichtung von Microsoft-Konten auf dem Server blockiert werden.",
+      "text": "Es MUSS eine begründete und dokumentierte Entscheidung für eine geeignete Edition von Windows Server getroffen werden. Der Einsatzzweck des Servers sowie die Einbindung ins Active Directory MÜSSEN dabei spezifiziert werden. Die Nutzung von mitgelieferten Cloud-Diensten im Betriebssystem MUSS grundsätzlich abgewogen und gründlich geplant werden. Wenn nicht benötigt, MUSS die Einrichtung von Microsoft-Konten auf dem Server blockiert werden."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 347.4876,
+            "r": 403.58244,
+            "b": 335.2791406451613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A2 Sichere Installation von Windows Server (B)",
+      "text": "SYS.1.2.3.A2 Sichere Installation von Windows Server (B)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 325.49760000000003,
+            "r": 516.3444959999991,
+            "b": 302.8588894117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            171
+          ]
+        }
+      ],
+      "orig": "Wenn vom Funktionsumfang her ausreichend, MUSS die Server-Core-Variante installiert werden. Andernfalls MUSS begründet werden, warum die Server-Core-Variante nicht genügt.",
+      "text": "Wenn vom Funktionsumfang her ausreichend, MUSS die Server-Core-Variante installiert werden. Andernfalls MUSS begründet werden, warum die Server-Core-Variante nicht genügt."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 292.2876,
+            "r": 491.54304,
+            "b": 280.0791406451614,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A3 Telemetrie- und Nutzungsdaten unter Windows Server (B)",
+      "text": "SYS.1.2.3.A3 Telemetrie- und Nutzungsdaten unter Windows Server (B)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.62895999999995,
+            "t": 270.2976,
+            "r": 526.8832799999998,
+            "b": 221.25120941176476,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            358
+          ]
+        }
+      ],
+      "orig": "Um die Übertragung von Diagnose- und Nutzungsdaten an Microsoft stark zu reduzieren, MUSS das Telemetrie-Level 0 (Security) auf dem Windows Server konfiguriert werden. Wenn diese Einstellung nicht wirksam umgesetzt wird, dann MUSS durch geeignete Maßnahmen, etwa auf Netzebene, sichergestellt werden, dass die Daten nicht an den Hersteller übertragen werden.",
+      "text": "Um die Übertragung von Diagnose- und Nutzungsdaten an Microsoft stark zu reduzieren, MUSS das Telemetrie-Level 0 (Security) auf dem Windows Server konfiguriert werden. Wenn diese Einstellung nicht wirksam umgesetzt wird, dann MUSS durch geeignete Maßnahmen, etwa auf Netzebene, sichergestellt werden, dass die Daten nicht an den Hersteller übertragen werden."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 204.2124,
+            "r": 267.90252,
+            "b": 190.33440774193548,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "3.2. Standard-Anforderungen",
+      "text": "3.2. Standard-Anforderungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 174.2976,
+            "r": 529.2248639999985,
+            "b": 151.6588894117648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            162
+          ]
+        }
+      ],
+      "orig": "Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für diesen Baustein. Sie SOLLTEN grundsätzlich erfüllt werden.",
+      "text": "Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für diesen Baustein. Sie SOLLTEN grundsätzlich erfüllt werden."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 141.08759999999995,
+            "r": 528.97368,
+            "b": 128.87914064516133,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A4 Schutz vor Ausnutzung von Schwachstellen in Anwendungen (S)",
+      "text": "SYS.1.2.3.A4 Schutz vor Ausnutzung von Schwachstellen in Anwendungen (S)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 119.09759999999994,
+            "r": 535.3575840000004,
+            "b": 96.42795540983604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            184
+          ]
+        }
+      ],
+      "orig": "Maßnahmen zum Schutz vor Exploits SOLLTEN für alle Programme und Dienste aktiviert werden, die den Exploit-Schutz von Windows (vgl. Verweis in Kapitel 4.1 Wissenswertes ) unterstützen.",
+      "text": "Maßnahmen zum Schutz vor Exploits SOLLTEN für alle Programme und Dienste aktiviert werden, die den Exploit-Schutz von Windows (vgl. Verweis in Kapitel 4.1 Wissenswertes ) unterstützen."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 273.35999999999996,
+            "t": 43.89300000000003,
+            "r": 321.41999999999996,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 3 von 6",
+      "text": "Seite 3 von 6"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 440.04,
+            "t": 803.97,
+            "r": 540.1469999999999,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3 Windows Server",
+      "text": "SYS.1.2.3 Windows Server"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 781.5276,
+            "r": 537.8609999999999,
+            "b": 769.3191406451613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A5 Sichere Authentisierung und Autorisierung in Windows Server (S)",
+      "text": "SYS.1.2.3.A5 Sichere Authentisierung und Autorisierung in Windows Server (S)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 759.5376,
+            "r": 537.1107359999986,
+            "b": 723.6950494117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            284
+          ]
+        }
+      ],
+      "orig": "In Windows Server SOLLTEN alle Konten von Benutzenden Mitglied der Sicherheitsgruppe 'Protected Users' sein. Konten für Dienste und Computer SOLLTEN NICHT Mitglied von 'Protected Users' sein. Dienste-Konten in Windows Server SOLLTEN Mitglied der Gruppe 'Managed Service Account' sein.",
+      "text": "In Windows Server SOLLTEN alle Konten von Benutzenden Mitglied der Sicherheitsgruppe 'Protected Users' sein. Konten für Dienste und Computer SOLLTEN NICHT Mitglied von 'Protected Users' sein. Dienste-Konten in Windows Server SOLLTEN Mitglied der Gruppe 'Managed Service Account' sein."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 713.1276,
+            "r": 383.421,
+            "b": 700.9191406451613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A6 Sicherheit beim Fernzugriff über RDP (S)",
+      "text": "SYS.1.2.3.A6 Sicherheit beim Fernzugriff über RDP (S)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.62896000000006,
+            "t": 691.1376,
+            "r": 539.2712639999985,
+            "b": 576.0720094117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            769
+          ]
+        }
+      ],
+      "orig": "Die Auswirkungen auf die Konfiguration der lokalen Firewall SOLLTEN bei der Planung des Fernzugriffs berücksichtigt werden. Die Gruppe der Berechtigten und IT-Systeme für den RemoteDesktopzugriff (RDP) SOLLTE durch die Zuweisung entsprechender Berechtigungen festgelegt werden. Es SOLLTEN Mechanismen des Betriebssystems berücksichtigt werden, um die übertragenen Anmeldeinformationen zu schützen (z. B. Remote Credential Guard oder RestrictedAdmin ). In komplexen Infrastrukturen SOLLTE das RDP-Zielsystem nur durch ein dazwischengeschaltetes RDPGateway erreicht werden können. Für die Verwendung von RDP SOLLTE eine Prüfung und deren Umsetzung sicherstellen, dass die nachfolgend aufgeführten Komfortfunktionen im Einklang mit dem Schutzbedarf des Zielsystems stehen:",
+      "text": "Die Auswirkungen auf die Konfiguration der lokalen Firewall SOLLTEN bei der Planung des Fernzugriffs berücksichtigt werden. Die Gruppe der Berechtigten und IT-Systeme für den RemoteDesktopzugriff (RDP) SOLLTE durch die Zuweisung entsprechender Berechtigungen festgelegt werden. Es SOLLTEN Mechanismen des Betriebssystems berücksichtigt werden, um die übertragenen Anmeldeinformationen zu schützen (z. B. Remote Credential Guard oder RestrictedAdmin ). In komplexen Infrastrukturen SOLLTE das RDP-Zielsystem nur durch ein dazwischengeschaltetes RDPGateway erreicht werden können. Für die Verwendung von RDP SOLLTE eine Prüfung und deren Umsetzung sicherstellen, dass die nachfolgend aufgeführten Komfortfunktionen im Einklang mit dem Schutzbedarf des Zielsystems stehen:"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.62416000000013,
+            "t": 565.8225599999998,
+            "r": 269.3697600000001,
+            "b": 556.2772894117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "· die Verwendung der Zwischenablage,",
+      "text": "die Verwendung der Zwischenablage,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.62416000000013,
+            "t": 546.0278399999999,
+            "r": 392.6203200000001,
+            "b": 536.4825694117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "· die Einbindung von Wechselmedien und Netzlaufwerken sowie",
+      "text": "die Einbindung von Wechselmedien und Netzlaufwerken sowie",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.63520000000017,
+            "t": 526.2331199999999,
+            "r": 512.5257600000001,
+            "b": 503.4840094117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            100
+          ]
+        }
+      ],
+      "orig": "· die Nutzung der Dateiablagen, von weiteren Geräten und Ressourcen, wie z. B. SmartcardLesegeräten.",
+      "text": "die Nutzung der Dateiablagen, von weiteren Geräten und Ressourcen, wie z. B. SmartcardLesegeräten.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64000000000017,
+            "t": 493.7203199999999,
+            "r": 531.5885279999989,
+            "b": 471.0816094117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            119
+          ]
+        }
+      ],
+      "orig": "Die eingesetzten kryptografischen Protokolle und Algorithmen SOLLTEN den internen Vorgaben der Institution entsprechen.",
+      "text": "Die eingesetzten kryptografischen Protokolle und Algorithmen SOLLTEN den internen Vorgaben der Institution entsprechen."
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64000000000016,
+            "t": 461.3179199999999,
+            "r": 517.1824319999998,
+            "b": 438.6792094117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "Sofern der Einsatz von Remote-Desktopzugriffen nicht vorgesehen ist, SOLLTEN diese vollständig deaktiviert werden.",
+      "text": "Sofern der Einsatz von Remote-Desktopzugriffen nicht vorgesehen ist, SOLLTEN diese vollständig deaktiviert werden."
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 421.6524,
+            "r": 391.84788000000003,
+            "b": 407.7744077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "3.3. Anforderungen bei erhöhtem Schutzbedarf",
+      "text": "3.3. Anforderungen bei erhöhtem Schutzbedarf",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 391.7376,
+            "r": 534.9391679999987,
+            "b": 342.69120941176465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            329
+          ]
+        }
+      ],
+      "orig": "Im Folgenden sind für diesen Baustein exemplarische Vorschläge für Anforderungen aufgeführt, die über dasjenige Schutzniveau hinausgehen, das dem Stand der Technik entspricht. Die Vorschläge SOLLTEN bei erhöhtem Schutzbedarf in Betracht gezogen werden. Die konkrete Festlegung erfolgt im Rahmen einer individuellen Risikoanalyse.",
+      "text": "Im Folgenden sind für diesen Baustein exemplarische Vorschläge für Anforderungen aufgeführt, die über dasjenige Schutzniveau hinausgehen, das dem Stand der Technik entspricht. Die Vorschläge SOLLTEN bei erhöhtem Schutzbedarf in Betracht gezogen werden. Die konkrete Festlegung erfolgt im Rahmen einer individuellen Risikoanalyse."
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 332.1276,
+            "r": 392.53295999999995,
+            "b": 319.9191406451613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A7 Verwendung der Windows PowerShell (H)",
+      "text": "SYS.1.2.3.A7 Verwendung der Windows PowerShell (H)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 310.1375999999999,
+            "r": 536.6945279999989,
+            "b": 221.47968941176475,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            622
+          ]
+        }
+      ],
+      "orig": "Die PowerShell-Ausführung SOLLTE zentral protokolliert werden. Die erzeugten Protokolle SOLLTEN geeignet überwacht werden. Die Ausführung von PowerShell-Skripten SOLLTE mit dem Befehl SetExecutionPolicy AllSigned eingeschränkt werden, um zu verhindern, dass unsignierte Skripte (versehentlich) ausgeführt werden. Ältere Windows PowerShell-Versionen SOLLTEN deaktiviert werden. Der Einsatz des PowerShell Constrained Language Mode SOLLTE geprüft werden. Zur Einschränkung der Windows PowerShell SOLLTE bei Windows Server mithilfe von Just Enough Administration (JEA) eine rollenbasierte Administration implementiert werden.",
+      "text": "Die PowerShell-Ausführung SOLLTE zentral protokolliert werden. Die erzeugten Protokolle SOLLTEN geeignet überwacht werden. Die Ausführung von PowerShell-Skripten SOLLTE mit dem Befehl SetExecutionPolicy AllSigned eingeschränkt werden, um zu verhindern, dass unsignierte Skripte (versehentlich) ausgeführt werden. Ältere Windows PowerShell-Versionen SOLLTEN deaktiviert werden. Der Einsatz des PowerShell Constrained Language Mode SOLLTE geprüft werden. Zur Einschränkung der Windows PowerShell SOLLTE bei Windows Server mithilfe von Just Enough Administration (JEA) eine rollenbasierte Administration implementiert werden."
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 210.92759999999998,
+            "r": 399.25811999999996,
+            "b": 198.71914064516125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3.A8 Nutzung des Virtual Secure Mode (VSM) (H)",
+      "text": "SYS.1.2.3.A8 Nutzung des Virtual Secure Mode (VSM) (H)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 188.93759999999997,
+            "r": 509.3462399999985,
+            "b": 166.29888941176466,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            185
+          ]
+        }
+      ],
+      "orig": "Bei der Nutzung des Virtual Secure Mode (VSM) SOLLTE berücksichtigt werden, dass forensische Untersuchungen, z. B. zur Sicherheitsvorfallbehandlung, eingeschränkt oder erschwert werden.",
+      "text": "Bei der Nutzung des Virtual Secure Mode (VSM) SOLLTE berücksichtigt werden, dass forensische Untersuchungen, z. B. zur Sicherheitsvorfallbehandlung, eingeschränkt oder erschwert werden."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 148.62,
+            "r": 336.5742000000002,
+            "b": 132.96812903225805,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "4. Weiterführende Informationen",
+      "text": "4. Weiterführende Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 115.65240000000006,
+            "r": 192.04464000000002,
+            "b": 101.77440774193553,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "4.1. Wissenswertes",
+      "text": "4.1. Wissenswertes",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 85.73760000000004,
+            "r": 521.9870399999986,
+            "b": 63.09888941176473,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            109
+          ]
+        }
+      ],
+      "orig": "Der Hersteller Microsoft stellt unter anderem folgende weiterführende Informationen zu Windows Server bereit:",
+      "text": "Der Hersteller Microsoft stellt unter anderem folgende weiterführende Informationen zu Windows Server bereit:"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 273.35999999999996,
+            "t": 43.89300000000003,
+            "r": 321.41999999999996,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 4 von 6",
+      "text": "Seite 4 von 6"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 440.04,
+            "t": 803.97,
+            "r": 540.1469999999999,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3 Windows Server",
+      "text": "SYS.1.2.3 Windows Server"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 781.848,
+            "r": 338.50464,
+            "b": 759.0988894117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "· Windows Server - Dokumentation https://docs.microsoft.com/en-us/windows-server/",
+      "text": "Windows Server - Dokumentation https://docs.microsoft.com/en-us/windows-server/",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 748.848,
+            "r": 476.74464,
+            "b": 726.0988894117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            112
+          ]
+        }
+      ],
+      "orig": "· Neuerungen in Windows Server 2019: https://docs.microsoft.com/en-us/windows-server/get-started-19/whats-new-19",
+      "text": "Neuerungen in Windows Server 2019: https://docs.microsoft.com/en-us/windows-server/get-started-19/whats-new-19",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/get-started-19/whats-new-19",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 715.848,
+            "r": 79.7184,
+            "b": 706.4282985074627,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "·",
+      "text": "·"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 92.64624,
+            "t": 715.7376,
+            "r": 271.91375999999997,
+            "b": 706.3027294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Neuerungen in Windows Server 2022:",
+      "text": "Neuerungen in Windows Server 2022:"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 92.64,
+            "t": 702.5376,
+            "r": 508.64928000000003,
+            "b": 693.1027294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-",
+      "text": "https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-2022"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 92.64,
+            "t": 689.3376000000001,
+            "r": 149.98175999999998,
+            "b": 679.9027294117648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "server-2022",
+      "text": "server-2022",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-2022"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 669.6479999999999,
+            "r": 522.58464,
+            "b": 646.8988894117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            161
+          ]
+        }
+      ],
+      "orig": "· Vergleich der Standard- und Datacenter-Editionen von Windows Server 2019: https://docs.microsoft.com/en-us/windows-server/get-started-19/editions-comparison-19",
+      "text": "Vergleich der Standard- und Datacenter-Editionen von Windows Server 2019: https://docs.microsoft.com/en-us/windows-server/get-started-19/editions-comparison-19",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/get-started-19/editions-comparison-19",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 636.6479999999999,
+            "r": 493.89984,
+            "b": 600.7027294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            174
+          ]
+        }
+      ],
+      "orig": "· Vergleich der Standard- und Datacenter-Editionen von Windows Server 2022: https://docs.microsoft.com/en-us/windows-server/get-started/editions-comparisonwindows-server-2022",
+      "text": "Vergleich der Standard- und Datacenter-Editionen von Windows Server 2022: https://docs.microsoft.com/en-us/windows-server/get-started/editions-comparisonwindows-server-2022",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 590.568,
+            "r": 430.78463999999997,
+            "b": 567.8188894117648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            98
+          ]
+        }
+      ],
+      "orig": "· Fixed Lifecycle-Richtlinie https://support.microsoft.com/en-us/help/14085/fixed-lifecycle-policy",
+      "text": "Fixed Lifecycle-Richtlinie https://support.microsoft.com/en-us/help/14085/fixed-lifecycle-policy",
+      "hyperlink": "https://support.microsoft.com/en-us/help/14085/fixed-lifecycle-policy",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 557.568,
+            "r": 508.30464,
+            "b": 534.8188894117648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            158
+          ]
+        }
+      ],
+      "orig": "· Entfernte oder zur Ersetzung vorgesehene Features in Windows Server 2019: https://docs.microsoft.com/en-us/windows-server/get-started-19/removed-features-19",
+      "text": "Entfernte oder zur Ersetzung vorgesehene Features in Windows Server 2019: https://docs.microsoft.com/en-us/windows-server/get-started-19/removed-features-19",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/get-started-19/removed-features-19",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 524.568,
+            "r": 489.94464,
+            "b": 501.8188894117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "· Security and Assurance (Übersicht): https://docs.microsoft.com/en-us/windows-server/security/security-and-assurance",
+      "text": "Security and Assurance (Übersicht): https://docs.microsoft.com/en-us/windows-server/security/security-and-assurance",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/security/security-and-assurance",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 491.568,
+            "r": 532.31904,
+            "b": 455.6227294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            142
+          ]
+        }
+      ],
+      "orig": "· Microsoft Security Compliance Toolkit 1.0: https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliancetoolkit-10",
+      "text": "Microsoft Security Compliance Toolkit 1.0: https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliancetoolkit-10",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 445.368,
+            "r": 527.8699199999999,
+            "b": 409.4227294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            147
+          ]
+        }
+      ],
+      "orig": "· Anpassen des Exploit-Schutzes https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defenderatp/enable-exploit-protection",
+      "text": "Anpassen des Exploit-Schutzes https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defenderatp/enable-exploit-protection",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 399.288,
+            "r": 509.26752,
+            "b": 363.3427294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "· Schutz und Verwaltung von Anmeldeinformationen https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-andmanagement/credentials-protection-and-management",
+      "text": "Schutz und Verwaltung von Anmeldeinformationen https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-andmanagement/credentials-protection-and-management",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/credentials-protection-and-management",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 353.088,
+            "r": 79.7184,
+            "b": 343.6682985074627,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "·",
+      "text": "·"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 92.64624,
+            "t": 352.9776,
+            "r": 503.9966399999989,
+            "b": 343.5427294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "Schützen von Remote Desktop Anmeldeinformationen mit Windows Defender Remote",
+      "text": "Schützen von Remote Desktop Anmeldeinformationen mit Windows Defender Remote"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 92.64624,
+            "t": 339.77376,
+            "r": 175.66704,
+            "b": 330.3388894117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Credential Guard",
+      "text": "Credential Guard"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 92.64,
+            "t": 326.57759999999996,
+            "r": 530.0447999999999,
+            "b": 317.14272941176466,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "https://docs.microsoft.com/en-us/windows/security/identity-protection/remote-credential-",
+      "text": "https://docs.microsoft.com/en-us/windows/security/identity-protection/remote-credential-",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard"
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 92.64,
+            "t": 313.3775999999999,
+            "r": 122.14992,
+            "b": 303.9427294117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "guard",
+      "text": "guard",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard"
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 293.688,
+            "r": 529.6694399999999,
+            "b": 257.7427294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            166
+          ]
+        }
+      ],
+      "orig": "· Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-inyour-organization",
+      "text": "Konfigurieren von Windows-Diagnosedaten in Ihrer Organisation https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-inyour-organization",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 247.48799999999994,
+            "r": 527.99136,
+            "b": 211.54272941176475,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            153
+          ]
+        }
+      ],
+      "orig": "· Liste von Sicherheitsereignissen unter Windows Server: https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--eventsto-monitor",
+      "text": "Liste von Sicherheitsereignissen unter Windows Server: https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--eventsto-monitor",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 201.288,
+            "r": 518.7508799999999,
+            "b": 165.3427294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "· Windows Server Guidance to protect against Speculative Execution: https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protectagainst-speculative-execution",
+      "text": "Windows Server Guidance to protect against Speculative Execution: https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protectagainst-speculative-execution",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 74.64,
+            "t": 155.20799999999997,
+            "r": 424.9108799999992,
+            "b": 119.26272941176467,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            152
+          ]
+        }
+      ],
+      "orig": "· Übersicht zur Windows-Authentifizierung https://docs.microsoft.com/en-us/windows-server/security/windowsauthentication/windows-authentication-overview",
+      "text": "Übersicht zur Windows-Authentifizierung https://docs.microsoft.com/en-us/windows-server/security/windowsauthentication/windows-authentication-overview",
+      "hyperlink": "https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/windows-authentication-overview",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.64,
+            "t": 109.49760000000003,
+            "r": 536.6967360000002,
+            "b": 73.65504941176471,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            206
+          ]
+        }
+      ],
+      "orig": "Das Information Security Forum (ISF) macht in seinem Standard 'The Standard of Good Practice for Information Security', insbesondere in Area SY1.2 Server Configuration, Vorgaben für den Einsatz von Servern.",
+      "text": "Das Information Security Forum (ISF) macht in seinem Standard 'The Standard of Good Practice for Information Security', insbesondere in Area SY1.2 Server Configuration, Vorgaben für den Einsatz von Servern."
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 273.35999999999996,
+            "t": 43.89300000000003,
+            "r": 321.41999999999996,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 5 von 6",
+      "text": "Seite 5 von 6"
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 440.04,
+            "t": 803.97,
+            "r": 540.1469999999999,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "SYS.1.2.3 Windows Server",
+      "text": "SYS.1.2.3 Windows Server"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.62895999999995,
+            "t": 782.3376000000001,
+            "r": 527.4684000000008,
+            "b": 700.9027294117648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            472
+          ]
+        }
+      ],
+      "orig": "Das National Institute of Standards and Technology (NIST) stellt das Dokument ,,Guide to General Server Security: NIST Special Publication 800-123', Juli 2008 zur Verfügung. Das BSI stellt im Rahmen der Studie zu Systemaufbau, Protokollierung, Härtung und Sicherheitsfunktionen in Windows 10 (SiSyPHuS Win10), Empfehlungen zur sicheren Konfiguration und Deaktivierung von Telemetrie zur Verfügung, die auch auf Windows Server zutreffen: https://www.bsi.bund.de/DE/Service-",
+      "text": "Das National Institute of Standards and Technology (NIST) stellt das Dokument ,,Guide to General Server Security: NIST Special Publication 800-123', Juli 2008 zur Verfügung. Das BSI stellt im Rahmen der Studie zu Systemaufbau, Protokollierung, Härtung und Sicherheitsfunktionen in Windows 10 (SiSyPHuS Win10), Empfehlungen zur sicheren Konfiguration und Deaktivierung von Telemetrie zur Verfügung, die auch auf Windows Server zutreffen: https://www.bsi.bund.de/DE/Service-"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 697.1376,
+            "r": 430.90704,
+            "b": 687.7027294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Navi/Publikationen/Studien/SiSyPHuS_Win10/AP4/SiSyPHuS_AP4_node.html",
+      "text": "Navi/Publikationen/Studien/SiSyPHuS_Win10/AP4/SiSyPHuS_AP4_node.html",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Studien/SiSyPHuS_Win10/AP4/SiSyPHuS_AP4_node.html"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 273.35999999999996,
+            "t": 43.89300000000003,
+            "r": 321.41999999999996,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 6 von 6",
+      "text": "Seite 6 von 6"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 29.196868611568163,
+            "t": 785.8939172464765,
+            "r": 157.15332901334364,
+            "b": 723.3308198427758,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 494.407952882911,
+            "t": 785.8418592047974,
+            "r": 554.0077361886161,
+            "b": 725.9641145466059,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.64408993248178,
+            "t": 622.777630357176,
+            "r": 538.7516207654937,
+            "b": 580.1928248752041,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 62.4,
+              "t": 223.38239999999996,
+              "r": 141.90235199999998,
+              "b": 232.98221419354843,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Zuständigkeiten",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 189.72,
+              "t": 223.38239999999996,
+              "r": 221.45424,
+              "b": 232.98221419354843,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Rollen",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.4,
+              "t": 237.0623999999999,
+              "r": 176.11310400000013,
+              "b": 246.4972705882352,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Grundsätzlich zuständig",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 189.72,
+              "t": 237.0623999999999,
+              "r": 238.3271040000001,
+              "b": 246.4972705882352,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "IT-Betrieb",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.4,
+              "t": 250.74239999999998,
+              "r": 177.95236800000006,
+              "b": 260.1772705882353,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Weitere Zuständigkeiten",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 189.72432,
+              "t": 250.74239999999998,
+              "r": 216.829728,
+              "b": 260.1772705882353,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Keine",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 62.4,
+                "t": 223.38239999999996,
+                "r": 141.90235199999998,
+                "b": 232.98221419354843,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Zuständigkeiten",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 189.72,
+                "t": 223.38239999999996,
+                "r": 221.45424,
+                "b": 232.98221419354843,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Rollen",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.4,
+                "t": 237.0623999999999,
+                "r": 176.11310400000013,
+                "b": 246.4972705882352,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Grundsätzlich zuständig",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 189.72,
+                "t": 237.0623999999999,
+                "r": 238.3271040000001,
+                "b": 246.4972705882352,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "IT-Betrieb",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.4,
+                "t": 250.74239999999998,
+                "r": 177.95236800000006,
+                "b": 260.1772705882353,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Weitere Zuständigkeiten",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 189.72432,
+                "t": 250.74239999999998,
+                "r": 216.829728,
+                "b": 260.1772705882353,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Keine",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 6
+    }
+  }
+}

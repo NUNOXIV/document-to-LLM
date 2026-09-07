@@ -1,0 +1,1354 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "WiBA-Aenderungsdokument",
+  "origin": {
+    "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "binary_hash": 15771107287519874702,
+    "filename": "WiBA-Aenderungsdokument.xlsx"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/groups/0"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/tables/0"
+        },
+        {
+          "$ref": "#/tables/1"
+        }
+      ],
+      "content_layer": "body",
+      "name": "Änderungsdokument WiBA",
+      "label": "sheet"
+    }
+  ],
+  "texts": [],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 1.0,
+            "t": 0.0,
+            "r": 2.0,
+            "b": 1.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Änderungen/Ergänzungen WiBA-Checklisten: WiBA 1.0 vs. 2.0",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 1,
+        "num_cols": 1,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Änderungen/Ergänzungen WiBA-Checklisten: WiBA 1.0 vs. 2.0",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 0.0,
+            "t": 2.0,
+            "r": 2.0,
+            "b": 24.0,
+            "coord_origin": "TOPLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Checkliste:",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Änderung/Ergänzung",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Anleitungsdokument",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Ergänzung um den Abschnitt Mapping von WiBA 1.0 auf WiBA 2.0.\nReferenzierung auf das Dokument \"Empfohlene Bearbeitungsreihenfolge\"",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Arbeit außerhalb der Institution\n10 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "ausschließlich redaktionelle Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Arbeit innerhalb der Institution / Haustechnik\n7 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 5: Hilfsmittel ergänzt um: \"Dies sollte insbesondere in Bereichen mit Publikumsverkehr beachtet werden.\" \nPrüffrage 7: Prüffrage angepasst: \"Wird das Thema \"IT-\" bzw. \"Informationssicherheit\" im Bereich des Brandschutzes mit beachtet?\" ",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Backup\n7 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 1: Hilfsmittel ergänzt um: \"kryptografische Schlüssel\". ",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Bürosoftware\n20 Fragen -> neu: 19 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 1: Im IT-Grundschutz-Profil \"Basis-Absicherung Kommunalverwaltung\" wurde eine Anforderung ergänzt, die nicht im BSI IT-Grundschutz enthalten ist. Diese Anforderung wurde im Hilfsmittel ergänzt: \"Dies gilt insbesondere auch bei der (Neu-)Beschaffung von Fachanwendungen. Bei der Ausschreibung und Vergabe von diesen Anwendungen sollte für den Fall einer Interaktion oder Integration mit Bürosoftware im Anforderungskatalog enthalten sein, dass Sicherheitsaspekte berücksichtigt werden (wie z. B. Aktualisierung der akzeptierten Bürosoftware-Versionen).\" In der Mappingtabelle ist die Anforderung unter \"APP.1.1.AXX zusätzliche Anforderung lt. Profil\" aufgeführt.\nPrüffrage 16: Prüffrage in der Checkliste \"Sicherheitsmechanismen\" in Prüffrage 10 aufgegangen. \nAb Prüffrage 17 Neunummerierung durch Verschiebung Prüffrage 16. ",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Client\n13 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Aufnahme IT-Grundschutz-Baustein SYS.2.2.3 Clients unter Windows\nPrüffrage 1: Hilfsmittel ergänzt um: \"Bei einer zentralen Authentisierung sollten sichere Verfahren (möglichst Kerberos, ausnahmsweise NTLMv2) eingesetzt werden. Unsichere Verfahren (z.B. NTLMv1) sollten nicht eingesetzt werden.\nDiese Einstellungen sollten per Gruppenrichtlinie getätigt werden.\"\nPrüffrage 4: Hilfsmittel ergänzt um: \"Allerdings sollte die windowseigene Funktion „SmartScreen“ deaktiviert werden, da unter Umständen dadurch vertrauliche Informationen an Microsoft übertragen werden würden.\" und Aufnahme BSI-Studie zu Systemaufbau, Protokollierung, Härtung und Sicherheitsfunktionen in Windows 10 (SiSyPHuS Win10).\nPrüffrage 5: Hilfsmittel ergänzt um: \"Es muss festgelegt werden, von welchen Medien gebootet werden darf.\"\nPrüffrage 7: Prüffrage allgemeiner formuliert: \"Sind nicht benötigte Funktionen von Clients deaktiviert?\" Die Konkretisierung wurde im Hilfsmittel aufgenommen: \"Dabei handelt es sich insbesondere um nicht benötigte Cloud- und Onlinefunktionen des Betriebssystems.\" und \"So sollten u. a. der Produktivitäts-Assistent Cortana, die Anbindung an den Microsoft-Store, sowie die Synchronisierung von Benutzendendaten mit Microsoft Cloud-Diensten und das Sharing von WLAN-Passwörtern vollständig deaktiviert werden. Um die Übertragung von Diagnose- und Nutzungsdaten an Microsoft stark zu reduzieren, sollte das Telemetrie-Level 0 (Security) in der Enterprise-Edition von Windows konfiguriert werden. Dies betrifft auch weitere Schnittstellen, wie z. B. Webcams oder Bluetooth-Schnittstellen.\" \nPrüffrage 10: Hilfsmittel ergänzt um: \"Eine unerlaubte Ausführung von Programmen bzw. die Installation von Programmen von externen Datenträgern kann bspw. über eine zentrale Einstellung unterbunden werden.\nAlternativ können die entsprechenden Schnittstellen gesperrt bzw. deaktiviert werden. Da diese jedoch ggf. für den Arbeitsbetrieb benötigt werden, sind bei Nutzung dieser Variante die Vor- und Nachteile im Vorfeld abzuwägen.\"",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Drucker / Multifunktionsgeräte\n6 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "ausschließlich redaktionelle Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "IT-Administration\n21 Prüffragen -> neu: 22 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Aufnahme der IT-Grundschutz-Bausteine OPS.1.1.1 Allgemeiner IT-Betrieb, SYS.2.2.3 Clients unter Windows (Fernwartung), DER.1 Detektion von sicherheitsrelevanten Ereignissen\nPrüffrage 1: Prüffrage neu aufgenommen: \"Verfügt der IT-Betrieb über ausreichende Ressourcen?\" Hilfsmittel: \"Es sollte Fachpersonal für den IT-Betrieb (intern oder extern) vorhanden sein. Der IT-Betrieb sollte mit ausreichenden Ressourcen ausgestattet sein. Hierzu gehören personelle wie auch finanzielle Ressourcen als auch die Ausstattung mit Sachmitteln. Ziel ist es, dass das Fachpersonal in die Lage versetzt wird, die IT-Betriebsaufgaben zeitnah zu erledigen. Zu den Aufgaben gehören insbesondere: • Pflege der Accounts, • Installation/Pflege von Hard- und Software, • Updates und Patches, • Identifizierung und Behebung von Schwachstellen\"\nAb Prüffrage 2 bis Prüffrage 9 Neunummerierung wg. neuer Prüffrage 1.\n(Neue) Prüffrage 3: Prüffrage umformuliert aufgrund von Wegfall von Teilanforderungen: \"Werden die persönlich zugewiesenen Administrationskennungen gesperrt, wenn Administrierende von ihren Aufgaben entbunden werden?\" Das Hilfsmittel wurde entsprechend gekürzt.\n(Neue) Prüffrage 4: Prüffrage umformuliert: \"Kann für administrative Tätigkeiten nachvollzogen werden, welche Person diese durchgeführt hat?\" Das Hilfsmittel wurde ergänzt: \"Sammel-Accounts sollten nur in begründeten Ausnahmefällen eingerichtet werden.\" \n(Neue) Prüffrage 7: Hilfsmittel ergänzt um: \"Wenn eine Anwendung zur Erfüllung einer Administrationsaufgabe benutzt wird, sollte dieselbe Anwendung nicht gleichzeitig für andere Aufgaben verwendet werden.\"\n(Neue) Prüffrage 9: Prüffrage umformuliert: \"Informieren sich Administrierende regelmäßig über externe Quellen zu sicherheitsrelevanten Ereignissen?\" Das Hilfsmittel wurde ergänzt um: \"Zu sicherheitsrelevanten Ereignissen gehören insbesondere aktuelle Gefährdungen und Maßnahmen der eingesetzten Anwendungen, IT-Systeme und Dienste.\"\nAlte Prüffrage 9 (\"Werden identifizierte Schwachstellen so schnell wie möglich behoben?\"): entfallen\nPrüffrage 12: Hilfsmittel angepasst: \"Eine Bewertung bzw. Priorisierung, wie zeitnah ein Patch eingespielt wird, kann sich aus bekannten Schwachstellen beispielsweise aus Warnungen des BSI ergeben oder aus der Sicherheitsrelevanz von Patches, die Herstellende gegebenenfalls angeben.\" \n(Neue) Prüffrage 15: Prüffrage neu aufgenommen: \"Werden Hard- oder Softwareprodukte weiterhin sicher betrieben, falls diese keine Sicherheitsupdates mehr erhalten?\" Hilfsmittel: \"Insbesondere wenn die betreffenden Systeme mit dem Internet bzw. unsicheren Netzen verbunden sind, muss eine Prüfung erfolgen. Dann sollten alternative Sicherheitsmaßnahmen ergriffen werden. Alternative Maßnahmen können z. B. Deaktivieren einzelner Funktionen, Isolierung in bestimmten Netzsegmenten, Außerbetriebnahme von Teilen des IT-Systems oder der IT-Komponente usw. sein. Mittelfristig sollten nicht mehr unterstützte Hard- und Softwareprodukte migriert bzw. durch neue, aktuelle Produkte ersetzt werden.\"\nAb Prüffrage 16 Neunummerierung durch neue Prüffrage 15\n(Neue) Prüffrage 16: Hilfsmittel ergänzt um: \"...und welche Berechtigungen hierfür erforderlich sind.\"\n(Neue) Prüffrage 22: Prüffrage angepasst: \"Ist der Einsatz von Online-Fernwartungsdiensten oder externen Servern zur Fernwartung auf notwendige Fälle beschränkt?\". Das Hilfsmittel wurde ergänzt um: \"Falls dies doch notwendig ist, sollte festgelegt werden, unter welchen Umständen Online-Dienste zur Fernwartung genutzt werden dürfen, bei denen die Verbindung über einen externen Server hergestellt wird.\"",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Managementsummary",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "keine Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Mobile Endgeräte\n18 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 16: Aufzählung im Hilfsmittel ergänzt um: \"• dass die Verwendung von privaten Wechseldatenträgern untersagen ist, • Verloren gegangene und wiedergefundene Wechseldatenträger dürfen nicht ohne vorherige Überprüfung auf Manipulation und Schadsoftware verwendet werden. • ob Wechseldatenträger an fremde IT-Systeme angeschlossen werden dürfen und was dabei zu beachten ist\". Darüber hinaus wurde der Aufzählungspunkt: \"• ob und wie private Datenträger genutzt werden dürfen\" gelöscht. ",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Netze\n26 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 6: Prüffrage umformuliert: \"Ist das interne Netz in Client- und Server- und ggf. weitere Netze unterteilt?\" Hilfsmittel ergänzt um: \"Die Trennung sollte nach Möglichkeit mittels zustandsbehaftetem Paketfilter erfolgen.\" und \"Auch virtuelle Systeme sollten bei der Netzsegmentierung berücksichtigt werden.\"\nPrüffrage 20: Hilfsmittel ergänzt um: \"Über voreingestellte SSIDs können Unbefugte möglicherweise Informationen zu Produktart, -version und Werkskonfiguration erhalten und damit Informationen zu evtl. vorhandenen Schwachstellen des Produkts. Gleiches gilt für voreingestellte Kennwörter, die insbesondere im Zusammenspiel mit den anderen Informationen leicht ermittelt werden können. Daher sollten alle werksseitig vorgegebenen Einstellungen angepasst werden.\"\nPrüffrage 23: Hilfsmittel ergänzt um: \"Hierbei sind auch die Netzanschlüsse in Besprechungs- Veranstaltungs- oder Schulungsräumen zu berücksichtigen.\"",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Organisation u. Personal\n18 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 4: Hilfsmittel ergänzt um: \"Bei Administrierenden sollte besonders berücksichtigt werden, dass die weitreichenden Berechtigungen von Administrierenden auch Zugriff auf sensible Informationen ermöglichen.\"\nPrüffrage 14: Hilfsmittel ergänzt um: \"Für weitere Informationen haben auch die Kommunalen Spitzenverbände (KSV) in Zusammenarbeit mit dem BSI Positionspapiere veröffentlicht, die die Bedeutung der Leitungsebene in der Informationssicherheit unterstreichen: • „Informationssicherheit für Landrätinnen und Landräte – IT-Grundschutz in den Landkreisen“, • „Informationssicherheit für Verwaltungsspitzen von Städten und Gemeinden“.\n",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Outsourcing und Cloud\n6 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "IT-Grundschutz-Baustein OPS.2.1 Outsourcing für Kunden entfallen. Aufnahme von IT-Grundschutz-Baustein OPS.2.3 Nutzung von Outsourching.\nPrüffrage 1: Hilfsmittel ergänzt um: \"Zusätzlich sollten beim Outsourcing von IT-Dienstleistungen insbesondere folgende Punkte betrachtet werden: • Vorzeitige oder zwangsweise Vertragsbeendigung, • Abhängigkeit von Anbietenden von Outsourcing durch fehlende Möglichkeit, Anbietende zu wechseln. • Gemeinsame Nutzung von Infrastrukturen durch mehrere Institutionen. Hierzu ist ein Nachweis über eine geeignete Mandatentrennung durch Anbietende einzuholen. • Fehlende Kenntnis über den Speicherort von Informationen. • Unbefugter Zugriff auf Informationen, z. B. durch Administrierende von Anbietenden von Outsourcing.\"\nPrüffrage 2: ehemalige Prüffrage 6 umsortiert und als neue Prüffrage 2 eingefügt.\nAb Prüffrage 2 Neunummerierung wg. Umsortierung\n(Neue) Prüffrage 3: Prüffrage umformuliert: \"Sind Leistungskennzahlen mit dem Outsourcing-Dienstleister festgelegt?\" Hilfsmittel ergänzt um: \"Zu den Leistungskennzahlen gehören insbesondere Reaktionszeiten zwischen Institution und Outsourcing-Dienstleister. Hierfür müssen auch Zuständigkeiten und Kommunikationswege vorhanden geregelt sein.\" und \"Für den Fall, dass die vereinbarten Leistungskennzahlen unzureichend erfüllt werden, sollten mit den Outsourcing-Dienstleistern Konsequenzen, wie z. B. Vertragsstrafen, festgelegt werden.\"",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 14,
+            "end_row_offset_idx": 15,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Rollen / Berechtigungen / Authentisierung\n16 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 14,
+            "end_row_offset_idx": 15,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 1: Hilfsmittel aufgenommen: \"Die Zugangskennungen, die zur IT-Administration genutzt werden, sollten sich von persönlichen Zugangskennungen unterscheiden.\"\nPrüffrage 6: Hilfsmittel ergänzt um: \"Dies gilt auch für Installationsverzeichnisse von Anwendungen.\"\nPrüffrage 13: Hilfsmittel ergänzt um: \"Passwörter müssen geheim gehalten werden, dies gilt auch für geheime / private Schlüssel für die Authentifizierung entsprechend.\" ",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 15,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Serverraum und Datenträgerarchiv\n11 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 15,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 10: Hilfsmittel ergänzt um: \"Die Zahl der Personen, die eine Zutrittsberechtigung besitzen, sollte auf ein Mindestmaß reduziert werden.\"",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 17,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Serversysteme\n20 Fragen -> neu: 35 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 17,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Aufnahme IT-Grundschutz-Bausteine SYS.1.2.3 Windows Server, SYS.1.9 Terminal-Server, APP.3.6 DNS-Server\nPrüffrage 2: Hilfsmittel aufgenommen: \"Server dürfen zur Erledigung von Aufgaben und Tätigkeiten verwendet werden, die grundsätzlich auf einem Client-System aus- und durchgeführt werden können. Insbesondere dürfen vorhandene Anwendungen, wie Webbrowser, auf dem Server nicht für das Abrufen von Informationen aus dem Internet oder das Herunterladen von Software, Treibern und Updates verwendet werden.\"\nPrüffrage 4: Hilfsmittel ergänzt um: \"Alle nicht benötigten Serverrollen, Features und Funktionen, sonstige Software und Dienste müssen deaktiviert oder deinstalliert werden, vor allem Netzdienste.\"\nPrüffrage 5 ist entfallen. Aufgegangen in Checkliste \"Sicherheitsmechanismen\" -> Prüffrage 7\nAb Prüffrage 6 Neunummerierung wg. entfallener Prüffrage 5\n(Neue) Prüffrage 8: Hilfsmittel entfernt\n(Neue) Prüffrage 10: Prüffrage umformuliert: \"Sind E-Mail-Server so konfiguriert, dass sie den Zugriff von E-Mail-Clients über nicht vertrauenswürdige Datennetze nur über eine sichere Transportverschlüsselung zulassen?\"\n(Neue) Prüffrage 11: Hilfsmittel ergänzt um: \"Für den Empfang von E-Mails sollte eine sichere Transportverschlüsselung angeboten werden. Für das Versenden von E-Mails sollten E-Mail-Server ebenfalls verschlüsselte Verbindungen bevorzugen. Dies gilt insbesondere bei der Kommunikation mit Bürgerinnen und Bürgern.\"\n(Neue) Prüffrage 12: Prüffrage umformuliert: \"Lassen E-Mail-Server den Versand von E-Mails nur von authentifizierten Konten zu?\"\nAbschnitt zu Verzeichnisdienst eingefügt: um Prüffragen 20 bis 22.\nAbschnitt zu Windows-Server eingefügt: Prüffragen 23 bis 25.\nAbschnitt zu Terminalserver eingefügt: Prüffragen 26 bis 28.\nAbschnitt zu DNS-Server eingefügt: Prüffragen 29 bis 35.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 17,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Sicherheitsmechanismen\n9 Prüffragen -> neu: 10 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 17,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Aufnahme der IT-Grundschutz-Bausteine DER.1 Detektion von sicherheitsrelevanten Ereignissen und SYS.1.9 Terminalserver\nPrüffrage 2 neu aufgenommen: \"Werden Dateianhänge aus E-Mails auf Schadsoftware geprüft, bevor sie geöffnet werden?\"\nAb Prüffrage 4 Neunummerierung wg. neuer Prüffrage 3\n(Neue) Prüffrage 7: Hilfsmittel ergänzt um: \"Sicherheitsmechanismen sollten ausschließlich von den zuständigen Administrierenden geändert werden können.\"\n(Neue) Prüffrage 8: Aufzählung im Hilfsmittel ergänzt um: \"• Systemstarts und Reboots, • Aktionen mit administrativen Berechtigungen (z. B. Änderungen von Benutzenden, Gruppen und Berechtigungen), • Fehlermeldungen (z. B. Hardwaredefekte, Überschreitung von Kapazitätsgrenzen, etc.), • blockierte Datenströme (Verstöße gegen ACLs oder Firewallregeln),\nBezüglich DNS-Server sollte insbesondere folgendes protokolliert werden: • Anzahl der DNS-Anfragen, • Anzahl der Fehler bei DNS-Anfragen, • EDNS-Fehler (EDNS - Extension Mechanisms for DNS), • auslaufende Zonen sowie • fehlgeschlagene Zonentransfers.\nFalls betriebs- und sicherheitsrelevante Ereignisse nicht auf einem IT-System protokolliert werden können, müssen zusätzliche IT-Systeme zur Protokollierung (z. B. von Ereignissen auf Netzebene) integriert werden.\"",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Telefonie und Fax\n4 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "keine Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 19,
+            "end_row_offset_idx": 20,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Umgang mit Informationen\n6 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 19,
+            "end_row_offset_idx": 20,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "keine Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 20,
+            "end_row_offset_idx": 21,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Vorbereitung für Sicherheitsvorfälle\n7 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 20,
+            "end_row_offset_idx": 21,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "keine Änderungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 21,
+            "end_row_offset_idx": 22,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Webserver und Webanwendungen \n16 Prüffragen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 21,
+            "end_row_offset_idx": 22,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Prüffrage 3: Hilfsmittel aufgenommen: \"Dazu gehört bspw. • Ausgabe der Serverversion, • FileETags, • Überschreiben von Konfigurationseinstellungen, • Nicht benötigte http-Methoden\"\nPrüffrage 6: Hilfsmittel aufgenommen: \"Beispielsweise sollte die DirectoryIndex-Funktion bzw. die DirectoryBrowse-Funktion deaktiviert werden.\" ",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 22,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Checkliste:",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Änderung/Ergänzung",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Anleitungsdokument",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Ergänzung um den Abschnitt Mapping von WiBA 1.0 auf WiBA 2.0.\nReferenzierung auf das Dokument \"Empfohlene Bearbeitungsreihenfolge\"",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Arbeit außerhalb der Institution\n10 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "ausschließlich redaktionelle Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Arbeit innerhalb der Institution / Haustechnik\n7 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 5: Hilfsmittel ergänzt um: \"Dies sollte insbesondere in Bereichen mit Publikumsverkehr beachtet werden.\" \nPrüffrage 7: Prüffrage angepasst: \"Wird das Thema \"IT-\" bzw. \"Informationssicherheit\" im Bereich des Brandschutzes mit beachtet?\" ",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Backup\n7 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 1: Hilfsmittel ergänzt um: \"kryptografische Schlüssel\". ",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Bürosoftware\n20 Fragen -> neu: 19 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 1: Im IT-Grundschutz-Profil \"Basis-Absicherung Kommunalverwaltung\" wurde eine Anforderung ergänzt, die nicht im BSI IT-Grundschutz enthalten ist. Diese Anforderung wurde im Hilfsmittel ergänzt: \"Dies gilt insbesondere auch bei der (Neu-)Beschaffung von Fachanwendungen. Bei der Ausschreibung und Vergabe von diesen Anwendungen sollte für den Fall einer Interaktion oder Integration mit Bürosoftware im Anforderungskatalog enthalten sein, dass Sicherheitsaspekte berücksichtigt werden (wie z. B. Aktualisierung der akzeptierten Bürosoftware-Versionen).\" In der Mappingtabelle ist die Anforderung unter \"APP.1.1.AXX zusätzliche Anforderung lt. Profil\" aufgeführt.\nPrüffrage 16: Prüffrage in der Checkliste \"Sicherheitsmechanismen\" in Prüffrage 10 aufgegangen. \nAb Prüffrage 17 Neunummerierung durch Verschiebung Prüffrage 16. ",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Client\n13 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Aufnahme IT-Grundschutz-Baustein SYS.2.2.3 Clients unter Windows\nPrüffrage 1: Hilfsmittel ergänzt um: \"Bei einer zentralen Authentisierung sollten sichere Verfahren (möglichst Kerberos, ausnahmsweise NTLMv2) eingesetzt werden. Unsichere Verfahren (z.B. NTLMv1) sollten nicht eingesetzt werden.\nDiese Einstellungen sollten per Gruppenrichtlinie getätigt werden.\"\nPrüffrage 4: Hilfsmittel ergänzt um: \"Allerdings sollte die windowseigene Funktion „SmartScreen“ deaktiviert werden, da unter Umständen dadurch vertrauliche Informationen an Microsoft übertragen werden würden.\" und Aufnahme BSI-Studie zu Systemaufbau, Protokollierung, Härtung und Sicherheitsfunktionen in Windows 10 (SiSyPHuS Win10).\nPrüffrage 5: Hilfsmittel ergänzt um: \"Es muss festgelegt werden, von welchen Medien gebootet werden darf.\"\nPrüffrage 7: Prüffrage allgemeiner formuliert: \"Sind nicht benötigte Funktionen von Clients deaktiviert?\" Die Konkretisierung wurde im Hilfsmittel aufgenommen: \"Dabei handelt es sich insbesondere um nicht benötigte Cloud- und Onlinefunktionen des Betriebssystems.\" und \"So sollten u. a. der Produktivitäts-Assistent Cortana, die Anbindung an den Microsoft-Store, sowie die Synchronisierung von Benutzendendaten mit Microsoft Cloud-Diensten und das Sharing von WLAN-Passwörtern vollständig deaktiviert werden. Um die Übertragung von Diagnose- und Nutzungsdaten an Microsoft stark zu reduzieren, sollte das Telemetrie-Level 0 (Security) in der Enterprise-Edition von Windows konfiguriert werden. Dies betrifft auch weitere Schnittstellen, wie z. B. Webcams oder Bluetooth-Schnittstellen.\" \nPrüffrage 10: Hilfsmittel ergänzt um: \"Eine unerlaubte Ausführung von Programmen bzw. die Installation von Programmen von externen Datenträgern kann bspw. über eine zentrale Einstellung unterbunden werden.\nAlternativ können die entsprechenden Schnittstellen gesperrt bzw. deaktiviert werden. Da diese jedoch ggf. für den Arbeitsbetrieb benötigt werden, sind bei Nutzung dieser Variante die Vor- und Nachteile im Vorfeld abzuwägen.\"",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Drucker / Multifunktionsgeräte\n6 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "ausschließlich redaktionelle Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "IT-Administration\n21 Prüffragen -> neu: 22 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Aufnahme der IT-Grundschutz-Bausteine OPS.1.1.1 Allgemeiner IT-Betrieb, SYS.2.2.3 Clients unter Windows (Fernwartung), DER.1 Detektion von sicherheitsrelevanten Ereignissen\nPrüffrage 1: Prüffrage neu aufgenommen: \"Verfügt der IT-Betrieb über ausreichende Ressourcen?\" Hilfsmittel: \"Es sollte Fachpersonal für den IT-Betrieb (intern oder extern) vorhanden sein. Der IT-Betrieb sollte mit ausreichenden Ressourcen ausgestattet sein. Hierzu gehören personelle wie auch finanzielle Ressourcen als auch die Ausstattung mit Sachmitteln. Ziel ist es, dass das Fachpersonal in die Lage versetzt wird, die IT-Betriebsaufgaben zeitnah zu erledigen. Zu den Aufgaben gehören insbesondere: • Pflege der Accounts, • Installation/Pflege von Hard- und Software, • Updates und Patches, • Identifizierung und Behebung von Schwachstellen\"\nAb Prüffrage 2 bis Prüffrage 9 Neunummerierung wg. neuer Prüffrage 1.\n(Neue) Prüffrage 3: Prüffrage umformuliert aufgrund von Wegfall von Teilanforderungen: \"Werden die persönlich zugewiesenen Administrationskennungen gesperrt, wenn Administrierende von ihren Aufgaben entbunden werden?\" Das Hilfsmittel wurde entsprechend gekürzt.\n(Neue) Prüffrage 4: Prüffrage umformuliert: \"Kann für administrative Tätigkeiten nachvollzogen werden, welche Person diese durchgeführt hat?\" Das Hilfsmittel wurde ergänzt: \"Sammel-Accounts sollten nur in begründeten Ausnahmefällen eingerichtet werden.\" \n(Neue) Prüffrage 7: Hilfsmittel ergänzt um: \"Wenn eine Anwendung zur Erfüllung einer Administrationsaufgabe benutzt wird, sollte dieselbe Anwendung nicht gleichzeitig für andere Aufgaben verwendet werden.\"\n(Neue) Prüffrage 9: Prüffrage umformuliert: \"Informieren sich Administrierende regelmäßig über externe Quellen zu sicherheitsrelevanten Ereignissen?\" Das Hilfsmittel wurde ergänzt um: \"Zu sicherheitsrelevanten Ereignissen gehören insbesondere aktuelle Gefährdungen und Maßnahmen der eingesetzten Anwendungen, IT-Systeme und Dienste.\"\nAlte Prüffrage 9 (\"Werden identifizierte Schwachstellen so schnell wie möglich behoben?\"): entfallen\nPrüffrage 12: Hilfsmittel angepasst: \"Eine Bewertung bzw. Priorisierung, wie zeitnah ein Patch eingespielt wird, kann sich aus bekannten Schwachstellen beispielsweise aus Warnungen des BSI ergeben oder aus der Sicherheitsrelevanz von Patches, die Herstellende gegebenenfalls angeben.\" \n(Neue) Prüffrage 15: Prüffrage neu aufgenommen: \"Werden Hard- oder Softwareprodukte weiterhin sicher betrieben, falls diese keine Sicherheitsupdates mehr erhalten?\" Hilfsmittel: \"Insbesondere wenn die betreffenden Systeme mit dem Internet bzw. unsicheren Netzen verbunden sind, muss eine Prüfung erfolgen. Dann sollten alternative Sicherheitsmaßnahmen ergriffen werden. Alternative Maßnahmen können z. B. Deaktivieren einzelner Funktionen, Isolierung in bestimmten Netzsegmenten, Außerbetriebnahme von Teilen des IT-Systems oder der IT-Komponente usw. sein. Mittelfristig sollten nicht mehr unterstützte Hard- und Softwareprodukte migriert bzw. durch neue, aktuelle Produkte ersetzt werden.\"\nAb Prüffrage 16 Neunummerierung durch neue Prüffrage 15\n(Neue) Prüffrage 16: Hilfsmittel ergänzt um: \"...und welche Berechtigungen hierfür erforderlich sind.\"\n(Neue) Prüffrage 22: Prüffrage angepasst: \"Ist der Einsatz von Online-Fernwartungsdiensten oder externen Servern zur Fernwartung auf notwendige Fälle beschränkt?\". Das Hilfsmittel wurde ergänzt um: \"Falls dies doch notwendig ist, sollte festgelegt werden, unter welchen Umständen Online-Dienste zur Fernwartung genutzt werden dürfen, bei denen die Verbindung über einen externen Server hergestellt wird.\"",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Managementsummary",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "keine Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Mobile Endgeräte\n18 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 16: Aufzählung im Hilfsmittel ergänzt um: \"• dass die Verwendung von privaten Wechseldatenträgern untersagen ist, • Verloren gegangene und wiedergefundene Wechseldatenträger dürfen nicht ohne vorherige Überprüfung auf Manipulation und Schadsoftware verwendet werden. • ob Wechseldatenträger an fremde IT-Systeme angeschlossen werden dürfen und was dabei zu beachten ist\". Darüber hinaus wurde der Aufzählungspunkt: \"• ob und wie private Datenträger genutzt werden dürfen\" gelöscht. ",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Netze\n26 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 6: Prüffrage umformuliert: \"Ist das interne Netz in Client- und Server- und ggf. weitere Netze unterteilt?\" Hilfsmittel ergänzt um: \"Die Trennung sollte nach Möglichkeit mittels zustandsbehaftetem Paketfilter erfolgen.\" und \"Auch virtuelle Systeme sollten bei der Netzsegmentierung berücksichtigt werden.\"\nPrüffrage 20: Hilfsmittel ergänzt um: \"Über voreingestellte SSIDs können Unbefugte möglicherweise Informationen zu Produktart, -version und Werkskonfiguration erhalten und damit Informationen zu evtl. vorhandenen Schwachstellen des Produkts. Gleiches gilt für voreingestellte Kennwörter, die insbesondere im Zusammenspiel mit den anderen Informationen leicht ermittelt werden können. Daher sollten alle werksseitig vorgegebenen Einstellungen angepasst werden.\"\nPrüffrage 23: Hilfsmittel ergänzt um: \"Hierbei sind auch die Netzanschlüsse in Besprechungs- Veranstaltungs- oder Schulungsräumen zu berücksichtigen.\"",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Organisation u. Personal\n18 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 4: Hilfsmittel ergänzt um: \"Bei Administrierenden sollte besonders berücksichtigt werden, dass die weitreichenden Berechtigungen von Administrierenden auch Zugriff auf sensible Informationen ermöglichen.\"\nPrüffrage 14: Hilfsmittel ergänzt um: \"Für weitere Informationen haben auch die Kommunalen Spitzenverbände (KSV) in Zusammenarbeit mit dem BSI Positionspapiere veröffentlicht, die die Bedeutung der Leitungsebene in der Informationssicherheit unterstreichen: • „Informationssicherheit für Landrätinnen und Landräte – IT-Grundschutz in den Landkreisen“, • „Informationssicherheit für Verwaltungsspitzen von Städten und Gemeinden“.\n",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Outsourcing und Cloud\n6 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "IT-Grundschutz-Baustein OPS.2.1 Outsourcing für Kunden entfallen. Aufnahme von IT-Grundschutz-Baustein OPS.2.3 Nutzung von Outsourching.\nPrüffrage 1: Hilfsmittel ergänzt um: \"Zusätzlich sollten beim Outsourcing von IT-Dienstleistungen insbesondere folgende Punkte betrachtet werden: • Vorzeitige oder zwangsweise Vertragsbeendigung, • Abhängigkeit von Anbietenden von Outsourcing durch fehlende Möglichkeit, Anbietende zu wechseln. • Gemeinsame Nutzung von Infrastrukturen durch mehrere Institutionen. Hierzu ist ein Nachweis über eine geeignete Mandatentrennung durch Anbietende einzuholen. • Fehlende Kenntnis über den Speicherort von Informationen. • Unbefugter Zugriff auf Informationen, z. B. durch Administrierende von Anbietenden von Outsourcing.\"\nPrüffrage 2: ehemalige Prüffrage 6 umsortiert und als neue Prüffrage 2 eingefügt.\nAb Prüffrage 2 Neunummerierung wg. Umsortierung\n(Neue) Prüffrage 3: Prüffrage umformuliert: \"Sind Leistungskennzahlen mit dem Outsourcing-Dienstleister festgelegt?\" Hilfsmittel ergänzt um: \"Zu den Leistungskennzahlen gehören insbesondere Reaktionszeiten zwischen Institution und Outsourcing-Dienstleister. Hierfür müssen auch Zuständigkeiten und Kommunikationswege vorhanden geregelt sein.\" und \"Für den Fall, dass die vereinbarten Leistungskennzahlen unzureichend erfüllt werden, sollten mit den Outsourcing-Dienstleistern Konsequenzen, wie z. B. Vertragsstrafen, festgelegt werden.\"",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Rollen / Berechtigungen / Authentisierung\n16 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 1: Hilfsmittel aufgenommen: \"Die Zugangskennungen, die zur IT-Administration genutzt werden, sollten sich von persönlichen Zugangskennungen unterscheiden.\"\nPrüffrage 6: Hilfsmittel ergänzt um: \"Dies gilt auch für Installationsverzeichnisse von Anwendungen.\"\nPrüffrage 13: Hilfsmittel ergänzt um: \"Passwörter müssen geheim gehalten werden, dies gilt auch für geheime / private Schlüssel für die Authentifizierung entsprechend.\" ",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Serverraum und Datenträgerarchiv\n11 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 10: Hilfsmittel ergänzt um: \"Die Zahl der Personen, die eine Zutrittsberechtigung besitzen, sollte auf ein Mindestmaß reduziert werden.\"",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Serversysteme\n20 Fragen -> neu: 35 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Aufnahme IT-Grundschutz-Bausteine SYS.1.2.3 Windows Server, SYS.1.9 Terminal-Server, APP.3.6 DNS-Server\nPrüffrage 2: Hilfsmittel aufgenommen: \"Server dürfen zur Erledigung von Aufgaben und Tätigkeiten verwendet werden, die grundsätzlich auf einem Client-System aus- und durchgeführt werden können. Insbesondere dürfen vorhandene Anwendungen, wie Webbrowser, auf dem Server nicht für das Abrufen von Informationen aus dem Internet oder das Herunterladen von Software, Treibern und Updates verwendet werden.\"\nPrüffrage 4: Hilfsmittel ergänzt um: \"Alle nicht benötigten Serverrollen, Features und Funktionen, sonstige Software und Dienste müssen deaktiviert oder deinstalliert werden, vor allem Netzdienste.\"\nPrüffrage 5 ist entfallen. Aufgegangen in Checkliste \"Sicherheitsmechanismen\" -> Prüffrage 7\nAb Prüffrage 6 Neunummerierung wg. entfallener Prüffrage 5\n(Neue) Prüffrage 8: Hilfsmittel entfernt\n(Neue) Prüffrage 10: Prüffrage umformuliert: \"Sind E-Mail-Server so konfiguriert, dass sie den Zugriff von E-Mail-Clients über nicht vertrauenswürdige Datennetze nur über eine sichere Transportverschlüsselung zulassen?\"\n(Neue) Prüffrage 11: Hilfsmittel ergänzt um: \"Für den Empfang von E-Mails sollte eine sichere Transportverschlüsselung angeboten werden. Für das Versenden von E-Mails sollten E-Mail-Server ebenfalls verschlüsselte Verbindungen bevorzugen. Dies gilt insbesondere bei der Kommunikation mit Bürgerinnen und Bürgern.\"\n(Neue) Prüffrage 12: Prüffrage umformuliert: \"Lassen E-Mail-Server den Versand von E-Mails nur von authentifizierten Konten zu?\"\nAbschnitt zu Verzeichnisdienst eingefügt: um Prüffragen 20 bis 22.\nAbschnitt zu Windows-Server eingefügt: Prüffragen 23 bis 25.\nAbschnitt zu Terminalserver eingefügt: Prüffragen 26 bis 28.\nAbschnitt zu DNS-Server eingefügt: Prüffragen 29 bis 35.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Sicherheitsmechanismen\n9 Prüffragen -> neu: 10 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Aufnahme der IT-Grundschutz-Bausteine DER.1 Detektion von sicherheitsrelevanten Ereignissen und SYS.1.9 Terminalserver\nPrüffrage 2 neu aufgenommen: \"Werden Dateianhänge aus E-Mails auf Schadsoftware geprüft, bevor sie geöffnet werden?\"\nAb Prüffrage 4 Neunummerierung wg. neuer Prüffrage 3\n(Neue) Prüffrage 7: Hilfsmittel ergänzt um: \"Sicherheitsmechanismen sollten ausschließlich von den zuständigen Administrierenden geändert werden können.\"\n(Neue) Prüffrage 8: Aufzählung im Hilfsmittel ergänzt um: \"• Systemstarts und Reboots, • Aktionen mit administrativen Berechtigungen (z. B. Änderungen von Benutzenden, Gruppen und Berechtigungen), • Fehlermeldungen (z. B. Hardwaredefekte, Überschreitung von Kapazitätsgrenzen, etc.), • blockierte Datenströme (Verstöße gegen ACLs oder Firewallregeln),\nBezüglich DNS-Server sollte insbesondere folgendes protokolliert werden: • Anzahl der DNS-Anfragen, • Anzahl der Fehler bei DNS-Anfragen, • EDNS-Fehler (EDNS - Extension Mechanisms for DNS), • auslaufende Zonen sowie • fehlgeschlagene Zonentransfers.\nFalls betriebs- und sicherheitsrelevante Ereignisse nicht auf einem IT-System protokolliert werden können, müssen zusätzliche IT-Systeme zur Protokollierung (z. B. von Ereignissen auf Netzebene) integriert werden.\"",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Telefonie und Fax\n4 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "keine Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 19,
+              "end_row_offset_idx": 20,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Umgang mit Informationen\n6 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 19,
+              "end_row_offset_idx": 20,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "keine Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 20,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Vorbereitung für Sicherheitsvorfälle\n7 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 20,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "keine Änderungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 22,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Webserver und Webanwendungen \n16 Prüffragen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 22,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Prüffrage 3: Hilfsmittel aufgenommen: \"Dazu gehört bspw. • Ausgabe der Serverversion, • FileETags, • Überschreiben von Konfigurationseinstellungen, • Nicht benötigte http-Methoden\"\nPrüffrage 6: Hilfsmittel aufgenommen: \"Beispielsweise sollte die DirectoryIndex-Funktion bzw. die DirectoryBrowse-Funktion deaktiviert werden.\" ",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 2.0,
+        "height": 24.0
+      },
+      "page_no": 1
+    }
+  }
+}

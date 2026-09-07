@@ -1,6 +1,6 @@
 ---
 name: document-to-llm
-description: Konvertiert GRC-Normen und Regularien (PDF, DOCX, XLSX, PPTX, HTML) mit IBM Docling in strukturerhaltendes Markdown und stellt sie als durchsuchbaren Index bereit. Immer nutzen, wenn ein Agent Inhalte aus einem Norm- oder Regulatorik-Dokument braucht — ISO 27001, ISO 42001, BSI IT-Grundschutz, C5, TISAX/ISA, NIS2/BSIG, DORA, CRA, NIST — oder wenn eine neue Datei in den Dokumentenbestand aufgenommen wird.
+description: Konvertiert GRC-Normen und Regularien (PDF, DOCX, XLSX, PPTX, HTML) mit IBM Docling (oder xberg) in strukturerhaltendes Markdown und stellt sie als durchsuchbaren Index bereit. Immer nutzen, wenn ein Agent Inhalte aus einem Norm- oder Regulatorik-Dokument braucht — ISO 27001, ISO 42001, BSI IT-Grundschutz, C5, TISAX/ISA, NIS2/BSIG, DORA, CRA, NIST — oder wenn eine neue Datei in den Dokumentenbestand aufgenommen wird.
 ---
 
 # document-to-LLM
@@ -47,6 +47,17 @@ python extract.py input/ --recursive --json
 
 Ergebnis: `output/<slug>.md` mit YAML-Front-Matter (Quell-Hash, Seitenzahl,
 Docling-Version, Wortdeckung, Warnungen) und `<!-- page: N -->` Markern im Text.
+
+**Scan-Vorabprobe und zwei Worker.** Vor jedem PDF wird der Textlayer
+gelesen; ein Scan geht sofort mit OCR an Docling (`scan_probe` in der
+Kopfzeile). `--workers 2` ist Standard, `--reset-every 40` ersetzt einen
+Worker nach 40 Dokumenten gegen Speicherwachstum.
+
+**Zwei Engines.** Standard ist IBM Docling; `--engine xberg` (oder
+`ACSOS_ENGINE=xberg`) nutzt den Rust-Kern von xberg mit demselben
+Ausgabevertrag. Der Wortlaut ist bei beiden belegt, die Tabellenstruktur
+liefert im nativen xberg-Pfad nur Docling — Messwerte und Befehle stehen in
+`README.md`. Welche Engine ein Extrakt erzeugt hat, steht in seiner Kopfzeile.
 
 **Formate ohne Docling-Reader (`.yml`, `.yaml`, `.json`, `.xml`, `.mm`, `.txt`)** — etwa der
 maschinenlesbare C5:2026-Kriterienkatalog — laufen nicht durch Docling, sondern

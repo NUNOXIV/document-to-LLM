@@ -1,0 +1,4442 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Formular_SPOC-Meldung_Mindeststandard_ISMS_ITKB",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 4010659425052334008,
+    "filename": "Formular_SPOC-Meldung_Mindeststandard_ISMS_ITKB.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/groups/10"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/groups/11"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/groups/12"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/groups/13"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/groups/14"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/groups/15"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/groups/16"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/25"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/27"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/29"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/35"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/37"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/40"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/42"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.7,
+            "t": 574.63,
+            "r": 487.59000000000003,
+            "b": 437.8907555089192,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            116
+          ]
+        }
+      ],
+      "orig": "Formular zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der IT-Konsolidierung Bund",
+      "text": "Formular zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der IT-Konsolidierung Bund",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.7,
+            "t": 427.4945,
+            "r": 527.79079806,
+            "b": 397.30201206715634,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            149
+          ]
+        }
+      ],
+      "orig": "für das Kapitel 2.8 Schnittstellen im ISMS ITKB des Regelungsdokumentes für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund",
+      "text": "für das Kapitel 2.8 Schnittstellen im ISMS ITKB des Regelungsdokumentes für das Informationssicherheitsmanagementsystem in der IT-Konsolidierung Bund"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.7,
+            "t": 140.0775,
+            "r": 329.4269999999998,
+            "b": 59.99876442812172,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            213
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik Postfach 20 03 63 53133 Bonn E-Mail: meldestelle-isbitkb@bsi.bund.de Internet: https://www.bsi.bund.de © Bundesamt für Sicherheit in der Informationstechnik 2024",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik Postfach 20 03 63 53133 Bonn E-Mail: meldestelle-isbitkb@bsi.bund.de Internet: https://www.bsi.bund.de © Bundesamt für Sicherheit in der Informationstechnik 2024"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 69.6,
+            "t": 815.0775000000001,
+            "r": 453.4734999999999,
+            "b": 805.0187644281218,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "· Bitte senden Sie das Formular ausgefüllt zurück an: meldestelle-isbitkb@bsi.bund.de",
+      "text": "Bitte senden Sie das Formular ausgefüllt zurück an: meldestelle-isbitkb@bsi.bund.de",
+      "hyperlink": "mailto:meldestelle-isbitkb@bsi.bund.de",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 69.6,
+            "t": 800.9175,
+            "r": 476.94399999999996,
+            "b": 790.8587644281217,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "· Das Ausfüllen der Pflichtfelder (rot markiert) ist für die weitere Bearbeitung Voraussetzung.",
+      "text": "Das Ausfüllen der Pflichtfelder (rot markiert) ist für die weitere Bearbeitung Voraussetzung.",
+      "hyperlink": "mailto:meldestelle-isbitkb@bsi.bund.de",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.7,
+            "t": 37.32450000000006,
+            "r": 354.26368,
+            "b": 29.67986096537254,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "2024-11-07_Formular zur Meldung des SPOC für die Informationssicherheit_v003.docx",
+      "text": "2024-11-07_Formular zur Meldung des SPOC für die Informationssicherheit_v003.docx"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 57.42,
+            "t": 678.04,
+            "r": 281.592,
+            "b": 604.3843022035677,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            147
+          ]
+        }
+      ],
+      "orig": "Datenschutzrechtliche Hinweise Verfahren zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der ITKonsolidierung Bund",
+      "text": "Datenschutzrechtliche Hinweise Verfahren zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der ITKonsolidierung Bund",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 587.1055,
+            "r": 282.11998007999995,
+            "b": 473.94659233997896,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            386
+          ]
+        }
+      ],
+      "orig": "Für das Bundesamt für Sicherheit in der Informationstechnik (BSI) hat ein verantwortungsbewusster Umgang mit personenbezogenen  Daten  hohe  Priorität.  Das  BSI möchte, dass Sie wissen, wann welche Daten erhoben und wie sie verwendet werden. Das BSI hat technische und organisatorische Maßnahmen getroffen, die sicherstellen, dass die Vorschriften über den Datenschutz beachtet werden.",
+      "text": "Für das Bundesamt für Sicherheit in der Informationstechnik (BSI) hat ein verantwortungsbewusster Umgang mit personenbezogenen  Daten  hohe  Priorität.  Das  BSI möchte, dass Sie wissen, wann welche Daten erhoben und wie sie verwendet werden. Das BSI hat technische und organisatorische Maßnahmen getroffen, die sicherstellen, dass die Vorschriften über den Datenschutz beachtet werden."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 457.6255,
+            "r": 171.83587992,
+            "b": 448.026592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "1. Verantwortliche Stelle",
+      "text": "Verantwortliche Stelle",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 444.66549999999995,
+            "r": 282.1342199600001,
+            "b": 383.266592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            180
+          ]
+        }
+      ],
+      "orig": "Verantwortliche Stelle für die Verarbeitung der personenbezogenen Daten im Sinne der Datenschutzgrundverordnung sowie anderer nationaler datenschutzrechtlicher Bestimmungen ist das",
+      "text": "Verantwortliche Stelle für die Verarbeitung der personenbezogenen Daten im Sinne der Datenschutzgrundverordnung sowie anderer nationaler datenschutzrechtlicher Bestimmungen ist das"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 366.9455,
+            "r": 282.01971996000003,
+            "b": 266.68659233997903,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            189
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik (BSI) Godesberger Allee 185 -189 53175 Bonn bsi@bsi.bund.de Telefon: +49 (0)228 99 9582-0 Telefax: +49 (0)228 9910 9582-0 www.bsi.bund.de",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik (BSI) Godesberger Allee 185 -189 53175 Bonn bsi@bsi.bund.de Telefon: +49 (0)228 99 9582-0 Telefax: +49 (0)228 9910 9582-0 www.bsi.bund.de"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 250.42549999999994,
+            "r": 274.3505399999999,
+            "b": 240.82659233997902,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "2. Behördlicher Datenschutzbeauftragter im BSI",
+      "text": "Behördlicher Datenschutzbeauftragter im BSI",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 237.46550000000002,
+            "r": 282.01971996000003,
+            "b": 163.12659233997908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            160
+          ]
+        }
+      ],
+      "orig": "Behördlicher Datenschutzbeauftragter im BSI Bundesamt für Sicherheit in der Informationstechnik Godesberger Allee 185 -189 53175 Bonn Telefon: 0228 99 9582-5527",
+      "text": "Behördlicher Datenschutzbeauftragter im BSI Bundesamt für Sicherheit in der Informationstechnik Godesberger Allee 185 -189 53175 Bonn Telefon: 0228 99 9582-5527"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 159.76549999999997,
+            "r": 246.90398000000002,
+            "b": 150.16659233997905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "E-Mail: datenschutzbeauftragte@bsi.bund.de",
+      "text": "E-Mail: datenschutzbeauftragte@bsi.bund.de",
+      "hyperlink": "mailto:datenschutzbeauftragte@bsi.bund.de",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 133.82550000000003,
+            "r": 268.67919995999995,
+            "b": 124.22659233997899,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "3. Allgemeine Hinweise zur Datenverarbeitung",
+      "text": "Allgemeine Hinweise zur Datenverarbeitung",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 107.96550000000002,
+            "r": 281.86104,
+            "b": 85.40659233997906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "a) Zwecke der Verarbeitung und Rechtsgrundlage der Verarbeitung",
+      "text": "Zwecke der Verarbeitung und Rechtsgrundlage der Verarbeitung",
+      "enumerated": true,
+      "marker": "a)"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.7,
+            "t": 82.04550000000006,
+            "r": 282.05982,
+            "b": 59.48659233997898,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 315.4,
+            "t": 783.4454999999999,
+            "r": 540.8600600799994,
+            "b": 618.426592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            98,
+            690
+          ]
+        }
+      ],
+      "orig": "Personenbezogene Daten werden durch das BSI zum Zwecke der Abwehr von Gefahren für die Sicherheit der Informationstechnik des Bundes im Rahmen der Wahrnehmung  von  Aufgaben,  die  im  öffentlichen Interesse liegen verarbeitet. Sämtliche Verarbeitungstätigkeiten von personenbezogenen Daten erfolgen aufgrund des Aufbaus eines Kommunikationsnetzwerkes  zur  Verzahnung der Informationsmanagementsysteme der ITKonsolidierung  Bund  gemäß  des  Mindeststandards ISMS ITKB. Dabei werden die von Ihnen im Formular übermittelten personenbezogene Daten auf Grundlage von Art. 6 Abs. 1 lit. e, Abs. 2, 3 DSGVO in Verbindung mit § 3a Abs. 1 in Verbindung mit § 3 Abs. 1 S. 2 Nr. 1 BSIG verarbeitet.",
+      "text": "Personenbezogene Daten werden durch das BSI zum Zwecke der Abwehr von Gefahren für die Sicherheit der Informationstechnik des Bundes im Rahmen der Wahrnehmung  von  Aufgaben,  die  im  öffentlichen Interesse liegen verarbeitet. Sämtliche Verarbeitungstätigkeiten von personenbezogenen Daten erfolgen aufgrund des Aufbaus eines Kommunikationsnetzwerkes  zur  Verzahnung der Informationsmanagementsysteme der ITKonsolidierung  Bund  gemäß  des  Mindeststandards ISMS ITKB. Dabei werden die von Ihnen im Formular übermittelten personenbezogene Daten auf Grundlage von Art. 6 Abs. 1 lit. e, Abs. 2, 3 DSGVO in Verbindung mit § 3a Abs. 1 in Verbindung mit § 3 Abs. 1 S. 2 Nr. 1 BSIG verarbeitet."
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 315.4,
+            "t": 602.1055,
+            "r": 540.6010799199998,
+            "b": 579.6065923399791,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "b) Empfänger  bzw.  Kategorien  von  Empfängern personenbezogener Daten",
+      "text": "Empfänger  bzw.  Kategorien  von  Empfängern personenbezogener Daten",
+      "enumerated": true,
+      "marker": "b)"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 315.4,
+            "t": 576.2455,
+            "r": 540.8432399999998,
+            "b": 346.486592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            886
+          ]
+        }
+      ],
+      "orig": "Innerhalb unserer Behörde erhalten diejenigen Stellen Zugriff auf Ihre Daten, die diese zur Erfüllung der unter Ziffer 3 lit. a) genannten Zwecke benötigen. Des Weiteren werden zur Erfüllung der unter Ziffer 3 lit. a) genannten Zwecke sowie gemäß Mindeststandard  ISMS  ITKB  Ihre  Daten  an  einem zentralen Ablageort zugänglich gemacht. Dies erfolgt über  den  internen  Bereich  der  Sicherheitsberatung für  den  Bund.  Berechtigt  für  den  Zugang  zum internen  Bereich  sind  Mitarbeiter  der  öffentlichen Verwaltung  des  Bundes.  Darüber  hinaus  geben  wir Ihre Daten nur weiter, sofern wir dazu gesetzlich oder durch Gerichtsentscheidung verpflichtet oder ermächtigt sind oder dies im Falle von Angriffen auf die Internetinfrastruktur zur Rechtsoder Strafverfolgung erforderlich ist. Eine darüberhinausgehende Weitergabe  an  Dritte  findet nicht ohne Ihre Zustimmung statt.",
+      "text": "Innerhalb unserer Behörde erhalten diejenigen Stellen Zugriff auf Ihre Daten, die diese zur Erfüllung der unter Ziffer 3 lit. a) genannten Zwecke benötigen. Des Weiteren werden zur Erfüllung der unter Ziffer 3 lit. a) genannten Zwecke sowie gemäß Mindeststandard  ISMS  ITKB  Ihre  Daten  an  einem zentralen Ablageort zugänglich gemacht. Dies erfolgt über  den  internen  Bereich  der  Sicherheitsberatung für  den  Bund.  Berechtigt  für  den  Zugang  zum internen  Bereich  sind  Mitarbeiter  der  öffentlichen Verwaltung  des  Bundes.  Darüber  hinaus  geben  wir Ihre Daten nur weiter, sofern wir dazu gesetzlich oder durch Gerichtsentscheidung verpflichtet oder ermächtigt sind oder dies im Falle von Angriffen auf die Internetinfrastruktur zur Rechtsoder Strafverfolgung erforderlich ist. Eine darüberhinausgehende Weitergabe  an  Dritte  findet nicht ohne Ihre Zustimmung statt."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 315.4,
+            "t": 330.16549999999995,
+            "r": 540.5910799600002,
+            "b": 307.606592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "c) Dauer der Speicherung bzw. Kriterien für Festlegung der Dauer",
+      "text": "Dauer der Speicherung bzw. Kriterien für Festlegung der Dauer",
+      "enumerated": true,
+      "marker": "c)"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 315.4,
+            "t": 304.2455,
+            "r": 540.8247599999997,
+            "b": 113.36659233997898,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            717
+          ]
+        }
+      ],
+      "orig": "Wir verarbeiten Ihre Daten solange es zur Erfüllung unserer  gesetzlichen  Aufgaben  und  den  sonstigen genannten unter Ziffer 3 lit. a) genannten Zwecken erforderlich ist. Die von Ihnen im Formular angegebenen Daten werden so lange gespeichert bis Sie uns ein neues Formular mit neuen Daten zusenden.  Anderenfalls  erfolgt  die  Speicherung  im Einklang mit der Richtlinie für das Bearbeiten und Verwalten von Schriftgut (Akten und Dokumenten) in  Bundesministerien  (RegR),  die  gemäß  der  ITRichtlinie  des  BfDI  verbindlichen  Regelungsgehalt hat.  Die  Aufbewahrungsfrist  bestimmt  sich  allein nach dem Bearbeitungsinteresse und der Wirtschaftlichkeit und beträgt in der Regel maximal 30 Jahre, § 19 RegR.",
+      "text": "Wir verarbeiten Ihre Daten solange es zur Erfüllung unserer  gesetzlichen  Aufgaben  und  den  sonstigen genannten unter Ziffer 3 lit. a) genannten Zwecken erforderlich ist. Die von Ihnen im Formular angegebenen Daten werden so lange gespeichert bis Sie uns ein neues Formular mit neuen Daten zusenden.  Anderenfalls  erfolgt  die  Speicherung  im Einklang mit der Richtlinie für das Bearbeiten und Verwalten von Schriftgut (Akten und Dokumenten) in  Bundesministerien  (RegR),  die  gemäß  der  ITRichtlinie  des  BfDI  verbindlichen  Regelungsgehalt hat.  Die  Aufbewahrungsfrist  bestimmt  sich  allein nach dem Bearbeitungsinteresse und der Wirtschaftlichkeit und beträgt in der Regel maximal 30 Jahre, § 19 RegR."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.7,
+            "t": 783.4454999999999,
+            "r": 149.82200004,
+            "b": 773.846592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "4. Drittlandtransfer",
+      "text": "Drittlandtransfer",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.7,
+            "t": 770.4855,
+            "r": 282.1470599199999,
+            "b": 735.0265923399791,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            129
+          ]
+        }
+      ],
+      "orig": "Wir übertragen Ihre personenbezogenen Daten nicht in  Länder außerhalb der EU bzw. des EWR oder an internationale Organisationen.",
+      "text": "Wir übertragen Ihre personenbezogenen Daten nicht in  Länder außerhalb der EU bzw. des EWR oder an internationale Organisationen."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.7,
+            "t": 718.7055,
+            "r": 124.18084008000001,
+            "b": 709.1065923399791,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "5. Ihre Rechte",
+      "text": "Ihre Rechte",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.7,
+            "t": 705.7255,
+            "r": 282.16432000000003,
+            "b": 624.1265923399791,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            312
+          ]
+        }
+      ],
+      "orig": "Werden personenbezogene Daten von Ihnen verarbeitet,  sind  Sie  ein 'Betroffener'  im  Sinne  der DSGVO. Ihnen stehen vorbehaltlich entgegenstehender gesetzlicher Einschränkungen und Ausnahmen, wie insbesondere nach §§ 34 - 36 BDSG oder §§ 6b - f BSIG, folgende Rechte gegenüber dem BSI als Verantwortlichem zu:",
+      "text": "Werden personenbezogene Daten von Ihnen verarbeitet,  sind  Sie  ein 'Betroffener'  im  Sinne  der DSGVO. Ihnen stehen vorbehaltlich entgegenstehender gesetzlicher Einschränkungen und Ausnahmen, wie insbesondere nach §§ 34 - 36 BDSG oder §§ 6b - f BSIG, folgende Rechte gegenüber dem BSI als Verantwortlichem zu:"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 609.3054999999999,
+            "r": 227.62863995999993,
+            "b": 599.706592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "➢ Recht auf Auskunft Art. 15 DSGVO",
+      "text": "Recht auf Auskunft Art. 15 DSGVO",
+      "enumerated": false,
+      "marker": "➢"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 596.3455,
+            "r": 282.1567200399999,
+            "b": 526.7465923399791,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            272
+          ]
+        }
+      ],
+      "orig": "Sie können Auskunft darüber verlangen, ob das BSI personenbezogene Daten von Ihnen verarbeitet. Ist dies  der  Fall,  so  haben  Sie  ein  Recht  auf Auskunft über  diese  personenbezogenen  Daten  sowie  auf weitere  mit  der Verarbeitung  zusammenhängende Informationen.",
+      "text": "Sie können Auskunft darüber verlangen, ob das BSI personenbezogene Daten von Ihnen verarbeitet. Ist dies  der  Fall,  so  haben  Sie  ein  Recht  auf Auskunft über  diese  personenbezogenen  Daten  sowie  auf weitere  mit  der Verarbeitung  zusammenhängende Informationen."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 511.4455,
+            "r": 244.28643992,
+            "b": 501.846592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "➢ Recht auf Berichtigung Art. 16 DSGVO",
+      "text": "Recht auf Berichtigung Art. 16 DSGVO",
+      "enumerated": false,
+      "marker": "➢"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 498.4855,
+            "r": 282.07321992,
+            "b": 452.886592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            199
+          ]
+        }
+      ],
+      "orig": "Für den Fall, dass personenbezogene Daten über Sie nicht  (mehr)  zutreffend  oder  unvollständig  sind, können  Sie  eine  Berichtigung  und  gegebenenfalls Vervollständigung dieser Daten verlangen.",
+      "text": "Für den Fall, dass personenbezogene Daten über Sie nicht  (mehr)  zutreffend  oder  unvollständig  sind, können  Sie  eine  Berichtigung  und  gegebenenfalls Vervollständigung dieser Daten verlangen."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 437.52549999999997,
+            "r": 281.8468599599999,
+            "b": 414.94659233997896,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "➢ Recht auf Löschung oder Einschränkung Art. 17, 18 DSGVO",
+      "text": "Recht auf Löschung oder Einschränkung Art. 17, 18 DSGVO",
+      "enumerated": false,
+      "marker": "➢"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.7,
+            "t": 411.58549999999997,
+            "r": 282.07834008000003,
+            "b": 350.206592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            196
+          ]
+        }
+      ],
+      "orig": "Bei Vorliegen der gesetzlichen Voraussetzungen können Sie die Löschung Ihrer personenbezogenen Daten (Art. 17 DSGVO) oder die Einschränkung der Verarbeitung dieser Daten (Art. 18 DSGVO) verlangen.",
+      "text": "Bei Vorliegen der gesetzlichen Voraussetzungen können Sie die Löschung Ihrer personenbezogenen Daten (Art. 17 DSGVO) oder die Einschränkung der Verarbeitung dieser Daten (Art. 18 DSGVO) verlangen."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 333.8855,
+            "r": 281.89695995999995,
+            "b": 311.326592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "➢ Recht auf Datenübertragbarkeit Art. 20 DSGVO",
+      "text": "Recht auf Datenübertragbarkeit Art. 20 DSGVO",
+      "enumerated": false,
+      "marker": "➢"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 308.02549999999997,
+            "r": 282.1681600399999,
+            "b": 202.42659233997904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            423
+          ]
+        }
+      ],
+      "orig": "Sie sind berechtigt, unter den Voraussetzungen von Art. 20 DSGVO vom BSI zu verlangen, dass Ihnen die Sie betreffenden personenbezogenen Daten, die Sie dem BSI bereitgestellt haben, in einem strukturierten,  gängigen  und  maschinenlesbaren Format übergibt. Gemäß Art. 20 Abs. 3 Satz 2 DSGVO steht  dieses  Recht  aber  dann  nicht  zur Verfügung, wenn  die  Datenverarbeitung  der  Wahrnehmung öffentlicher Aufgaben dient.",
+      "text": "Sie sind berechtigt, unter den Voraussetzungen von Art. 20 DSGVO vom BSI zu verlangen, dass Ihnen die Sie betreffenden personenbezogenen Daten, die Sie dem BSI bereitgestellt haben, in einem strukturierten,  gängigen  und  maschinenlesbaren Format übergibt. Gemäß Art. 20 Abs. 3 Satz 2 DSGVO steht  dieses  Recht  aber  dann  nicht  zur Verfügung, wenn  die  Datenverarbeitung  der  Wahrnehmung öffentlicher Aufgaben dient."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 60.0,
+            "t": 188.02549999999997,
+            "r": 244.08145991999993,
+            "b": 178.42659233997904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "➢ Recht auf Widerspruch Art. 21 DSGVO",
+      "text": "Recht auf Widerspruch Art. 21 DSGVO",
+      "enumerated": false,
+      "marker": "➢"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.7,
+            "t": 175.06550000000004,
+            "r": 282.11570011999993,
+            "b": 61.826592339979015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            439
+          ]
+        },
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 315.4,
+            "t": 783.4454999999999,
+            "r": 540.8099199999996,
+            "b": 760.8865923399791,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            440,
+            540
+          ]
+        }
+      ],
+      "orig": "Aus Gründen, die sich aus Ihrer besonderen Situation ergeben, können Sie der Verarbeitung Sie betreffender  personenbezogener  Daten  durch  das BSI  zudem  jederzeit  widersprechen.  Dieses  Recht besteht, wenn Ihre personenbezogenen Daten aufgrund  von  Art.  6  Abs.  1  lit.  e),  f)  DSGVO,  zur Direktwerbung, zu wissenschaftlichen oder historischen Forschungsoder zu statistischen Zwecken verarbeitet werden. Sofern die gesetzlichen Voraussetzungen vorliegen, verarbeitet das BSI in der Folge Ihre personenbezogenen Daten nicht mehr.",
+      "text": "Aus Gründen, die sich aus Ihrer besonderen Situation ergeben, können Sie der Verarbeitung Sie betreffender  personenbezogener  Daten  durch  das BSI  zudem  jederzeit  widersprechen.  Dieses  Recht besteht, wenn Ihre personenbezogenen Daten aufgrund  von  Art.  6  Abs.  1  lit.  e),  f)  DSGVO,  zur Direktwerbung, zu wissenschaftlichen oder historischen Forschungsoder zu statistischen Zwecken verarbeitet werden. Sofern die gesetzlichen Voraussetzungen vorliegen, verarbeitet das BSI in der Folge Ihre personenbezogenen Daten nicht mehr."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 318.7,
+            "t": 745.1655,
+            "r": 540.6170701,
+            "b": 709.6465923399791,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "➢ Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung",
+      "text": "Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung",
+      "enumerated": false,
+      "marker": "➢"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 315.4,
+            "t": 706.2655,
+            "r": 540.83257992,
+            "b": 593.046592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            422
+          ]
+        }
+      ],
+      "orig": "Sollten Sie in die Verarbeitung Ihrer Daten eingewilligt (Art. 6 Abs. 1 lit. a) haben, haben Sie das Recht,  Ihre  Einwilligung  jederzeit  zu  widerrufen. Bitte senden Sie hierfür eine E-Mail an: meldestelleisbitkb@bsi.bund.de. Der Widerruf wirkt erst für die Zukunft;  das  heißt,  durch  den  Widerruf  wird  die Rechtmäßigkeit  der  aufgrund  der  Einwilligung  bis zum Widerruf erfolgten Verarbeitungen nicht berührt.",
+      "text": "Sollten Sie in die Verarbeitung Ihrer Daten eingewilligt (Art. 6 Abs. 1 lit. a) haben, haben Sie das Recht,  Ihre  Einwilligung  jederzeit  zu  widerrufen. Bitte senden Sie hierfür eine E-Mail an: meldestelleisbitkb@bsi.bund.de. Der Widerruf wirkt erst für die Zukunft;  das  heißt,  durch  den  Widerruf  wird  die Rechtmäßigkeit  der  aufgrund  der  Einwilligung  bis zum Widerruf erfolgten Verarbeitungen nicht berührt."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 318.7,
+            "t": 576.7855,
+            "r": 540.61704004,
+            "b": 554.226592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "➢ Recht auf Beschwerde bei einer Aufsichtsbehörde",
+      "text": "Recht auf Beschwerde bei einer Aufsichtsbehörde",
+      "enumerated": false,
+      "marker": "➢"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 315.4,
+            "t": 550.8655,
+            "r": 540.8443199999999,
+            "b": 424.746592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            445
+          ]
+        }
+      ],
+      "orig": "Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs  steht  einem  Betroffenen  (Ihnen)  das Recht auf Beschwerde bei einer Aufsichtsbehörde - insbesondere in dem Mitgliedsstaat Ihres Aufenthaltsortes - zu, wenn Sie der Ansicht sind, dass die  Verarbeitung  Ihrer  personenbezogenen  Daten durch uns gegen die DSGVO verstößt. Aufsichtsbehörde des Bundesamtes für die Sicherheit in der Informationstechnik ist:",
+      "text": "Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs  steht  einem  Betroffenen  (Ihnen)  das Recht auf Beschwerde bei einer Aufsichtsbehörde - insbesondere in dem Mitgliedsstaat Ihres Aufenthaltsortes - zu, wenn Sie der Ansicht sind, dass die  Verarbeitung  Ihrer  personenbezogenen  Daten durch uns gegen die DSGVO verstößt. Aufsichtsbehörde des Bundesamtes für die Sicherheit in der Informationstechnik ist:"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 350.86,
+            "t": 408.40549999999996,
+            "r": 540.7730600799999,
+            "b": 321.106592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            203
+          ]
+        }
+      ],
+      "orig": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI): Graurheindorfer Str. 153 53117 Bonn Telefon: +49 (0)228 997799-0 Fax: +49 (0)228 997799-5550 E-Mail: poststelle@bfdi.bund.de",
+      "text": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI): Graurheindorfer Str. 153 53117 Bonn Telefon: +49 (0)228 997799-0 Fax: +49 (0)228 997799-5550 E-Mail: poststelle@bfdi.bund.de"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 315.4,
+            "t": 304.78549999999996,
+            "r": 540.6056901399998,
+            "b": 282.226592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            79
+          ]
+        }
+      ],
+      "orig": "6. Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling",
+      "text": "Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 315.4,
+            "t": 278.92549999999994,
+            "r": 540.7698399999997,
+            "b": 256.366592339979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "Eine automatisierte Entscheidungsfindung bzw. Profiling findet nicht statt.",
+      "text": "Eine automatisierte Entscheidungsfindung bzw. Profiling findet nicht statt."
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 315.4,
+            "t": 240.04550000000006,
+            "r": 490.54574007999986,
+            "b": 230.44659233997902,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "7. Erforderlichkeit der Datenerhebung",
+      "text": "Erforderlichkeit der Datenerhebung",
+      "enumerated": true,
+      "marker": "7."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 315.4,
+            "t": 227.08550000000002,
+            "r": 540.8466999599999,
+            "b": 87.98659233997898,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            528
+          ]
+        }
+      ],
+      "orig": "Sämtliche von Ihnen verarbeitete personenbezogene Daten sind erforderlich, um Gefahren für die Sicherheit  der  Informationstechnik  des  Bundes  im Rahmen  der  Wahrnehmung  von  Aufgaben,  die  im öffentlichen Interesse liegen, abwehren zu können. Die Angaben  sind  grundsätzlich  freiwillig.  Im  Falle der Nichtbereitstellung der im Formular als Pflichtfelder  gekennzeichneten  Daten,  erfüllen  Sie die Anforderungen aus dem Mindeststandard ISMS ITKB nicht und gefährden die Sicherheit der Informationstechnik des Bundes.",
+      "text": "Sämtliche von Ihnen verarbeitete personenbezogene Daten sind erforderlich, um Gefahren für die Sicherheit  der  Informationstechnik  des  Bundes  im Rahmen  der  Wahrnehmung  von  Aufgaben,  die  im öffentlichen Interesse liegen, abwehren zu können. Die Angaben  sind  grundsätzlich  freiwillig.  Im  Falle der Nichtbereitstellung der im Formular als Pflichtfelder  gekennzeichneten  Daten,  erfüllen  Sie die Anforderungen aus dem Mindeststandard ISMS ITKB nicht und gefährden die Sicherheit der Informationstechnik des Bundes."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 386.2,
+            "t": 71.66549999999995,
+            "r": 482.16366000000005,
+            "b": 62.066592339979024,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Stand: November 2024",
+      "text": "Stand: November 2024"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 52.188427388748075,
+            "t": 788.2598461508128,
+            "r": 194.68961974175986,
+            "b": 718.968471905851,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 375.6391356786946,
+            "t": 786.5212532663231,
+            "r": 537.5687662255204,
+            "b": 746.317305995189,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 75.94678152250765,
+            "t": 768.8395265701547,
+            "r": 211.34236644975294,
+            "b": 699.9071117468175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 43.99408629679841,
+            "t": 757.6499465036279,
+            "r": 550.8215116728713,
+            "b": 89.81238879713487,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 85.7,
+              "t": 86.47499999999991,
+              "r": 509.64,
+              "b": 118.84462224554034,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 3,
+            "text": "Formular zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der IT-Konsolidierung Bund",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 89.0,
+              "t": 124.66949999999997,
+              "r": 156.61289905999996,
+              "b": 137.14233210912903,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Themenfeld",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 218.54,
+              "t": 124.66949999999997,
+              "r": 317.1404469800001,
+              "b": 137.14233210912903,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Themendetailfeld",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 410.04,
+              "t": 124.66949999999997,
+              "r": 475.40042604,
+              "b": 137.14233210912903,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Eingabefeld",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 224.54,
+              "t": 145.7104999999999,
+              "r": 370.63509608000004,
+              "b": 156.22906348373544,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 3,
+            "text": "1. Informationen zur Meldung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": true,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 165.8705,
+              "r": 109.30592195999999,
+              "b": 176.38906348373553,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "1.1 Meldung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 296.92,
+              "t": 165.8705,
+              "r": 329.56354,
+              "b": 176.38906348373553,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Datum",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 192.9905,
+              "r": 181.44122196000004,
+              "b": 229.9090634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "1.2 Meldende Person (Person, die für Rückfragen zur Verfügung steht)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 225.5,
+              "t": 186.03049999999996,
+              "r": 329.49156901999993,
+              "b": 196.5490634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Vorname / Nachname",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 256.66,
+              "t": 206.19049999999993,
+              "r": 329.58913804,
+              "b": 216.70906348373546,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Telefon / Mobil",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 298.12,
+              "t": 226.3505,
+              "r": 329.56398196000004,
+              "b": 236.86906348373554,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "E-Mail",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 277.78,
+              "t": 246.51049999999998,
+              "r": 353.55920902,
+              "b": 257.0290634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 3,
+            "text": "2. Sitz des SPOC",
+            "column_header": false,
+            "row_header": false,
+            "row_section": true,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 266.6105,
+              "r": 101.77362000000002,
+              "b": 277.12906348373554,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "2.1 Ressort",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 301.54,
+              "t": 266.6105,
+              "r": 329.57194,
+              "b": 277.12906348373554,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Name",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 300.2104999999999,
+              "r": 106.76952,
+              "b": 310.72906348373544,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "2.2 Behörde",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 301.54,
+              "t": 286.77049999999997,
+              "r": 329.57194,
+              "b": 297.2890634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Name",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 208.16,
+              "t": 303.69049999999993,
+              "r": 329.56505607999986,
+              "b": 327.4090634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Anschrift (Straße, Hausnr., PLZ, Ort)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 333.81049999999993,
+              "r": 168.03792000000004,
+              "b": 344.3290634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "2.3 Organisationseinheit",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 231.26,
+              "t": 333.81049999999993,
+              "r": 329.5199870599999,
+              "b": 344.3290634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Bezeichnung / Name",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 251.62,
+              "t": 353.97049999999996,
+              "r": 379.64210391999984,
+              "b": 364.48906348373555,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 3,
+            "text": "3. Erreichbarkeit des SPOC",
+            "column_header": false,
+            "row_header": false,
+            "row_section": true,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 394.29049999999995,
+              "r": 190.59086196,
+              "b": 404.80906348373554,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.1 während der Dienstzeiten",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 245.5,
+              "t": 374.1305,
+              "r": 329.5738160800001,
+              "b": 384.6490634837356,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 13,
+            "end_row_offset_idx": 14,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Uhrzeit (von / bis)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 241.52,
+              "t": 394.29049999999995,
+              "r": 329.50276195999993,
+              "b": 404.80906348373554,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 14,
+            "end_row_offset_idx": 15,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Funktionspostfach",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 256.66,
+              "t": 414.47049999999996,
+              "r": 329.58913804,
+              "b": 424.98906348373555,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 15,
+            "end_row_offset_idx": 16,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Telefon / Mobil",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 438.05049999999994,
+              "r": 179.41374392000003,
+              "b": 461.7690634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 2,
+            "col_span": 1,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.2 im Störungs-/Not- /Krisen-/ Katastrophenfall",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 241.52,
+              "t": 434.6305,
+              "r": 329.50276195999993,
+              "b": 445.1490634837356,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 16,
+            "end_row_offset_idx": 17,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Funktionspostfach",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 256.66,
+              "t": 454.73049999999995,
+              "r": 329.58913804,
+              "b": 465.24906348373554,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 17,
+            "end_row_offset_idx": 18,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Telefon / Mobil",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 494.3305,
+              "r": 188.95800000000003,
+              "b": 526.5667733473242,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 21,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.3 Ausführende Person/en (Person, die die Aufgaben des SPOC wahrnimmt)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 254.62,
+              "t": 474.8905,
+              "r": 329.53656195999986,
+              "b": 485.40906348373557,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 18,
+            "end_row_offset_idx": 19,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Personenanzahl",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 225.5,
+              "t": 515.2104999999999,
+              "r": 329.49156901999993,
+              "b": 525.7290634837356,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 20,
+            "end_row_offset_idx": 21,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Vorname / Nachname",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 340.42,
+              "t": 495.05049999999994,
+              "r": 345.91,
+              "b": 505.56906348373553,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 19,
+            "end_row_offset_idx": 20,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 340.42,
+              "t": 515.2104999999999,
+              "r": 345.91,
+              "b": 525.7290634837356,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 20,
+            "end_row_offset_idx": 21,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 565.4904999999999,
+              "r": 111.39214392000001,
+              "b": 576.0090634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 21,
+            "end_row_offset_idx": 22,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.4 Sonstiges",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 212.6,
+              "t": 565.4904999999999,
+              "r": 329.52598705999986,
+              "b": 576.0090634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 21,
+            "end_row_offset_idx": 22,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "weiterführende Angaben",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 241.34,
+              "t": 595.6105,
+              "r": 389.87070706,
+              "b": 606.1290634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 3,
+            "start_row_offset_idx": 22,
+            "end_row_offset_idx": 23,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 3,
+            "text": "4. Eskalationsinstanz des SPOC",
+            "column_header": false,
+            "row_header": false,
+            "row_section": true,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 614.3304999999999,
+              "r": 185.37600000000003,
+              "b": 668.1667733473241,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 3,
+            "col_span": 1,
+            "start_row_offset_idx": 23,
+            "end_row_offset_idx": 26,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "4.1 Erste Stufe (Person, die Vorgesetzte/r der ausführenden Person des SPOC ist und die fachliche Verantwortung inne hat)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 225.5,
+              "t": 615.7705,
+              "r": 329.49156901999993,
+              "b": 626.2890634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 23,
+            "end_row_offset_idx": 24,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Vorname / Nachname",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 256.66,
+              "t": 635.9304999999999,
+              "r": 329.58913804,
+              "b": 646.4490634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 24,
+            "end_row_offset_idx": 25,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Telefon / Mobil",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 298.12,
+              "t": 656.0305,
+              "r": 329.56398196000004,
+              "b": 666.5490634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 25,
+            "end_row_offset_idx": 26,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "E-Mail",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 50.34,
+              "t": 684.8304999999999,
+              "r": 178.023,
+              "b": 738.6867733473242,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 4,
+            "col_span": 1,
+            "start_row_offset_idx": 26,
+            "end_row_offset_idx": 30,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "4.2 Zweite Stufe (Person, die der Organisationseinheit des SPOC sowie der/dem Vorgesetzten des SPOC übergeordnet ist)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 231.32,
+              "t": 676.1904999999999,
+              "r": 329.5141290199999,
+              "b": 686.7090634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 26,
+            "end_row_offset_idx": 27,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Organisationseinheit",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 225.5,
+              "t": 696.3705,
+              "r": 329.49156901999993,
+              "b": 706.8890634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 27,
+            "end_row_offset_idx": 28,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Vorname / Nachname",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 256.66,
+              "t": 716.5305,
+              "r": 329.58913804,
+              "b": 727.0490634837355,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 28,
+            "end_row_offset_idx": 29,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Telefon / Mobil",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 298.12,
+              "t": 736.6904999999999,
+              "r": 329.56398196000004,
+              "b": 747.2090634837356,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 29,
+            "end_row_offset_idx": 30,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "E-Mail",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 30,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 85.7,
+                "t": 86.47499999999991,
+                "r": 509.64,
+                "b": 118.84462224554034,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "Formular zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der IT-Konsolidierung Bund",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 85.7,
+                "t": 86.47499999999991,
+                "r": 509.64,
+                "b": 118.84462224554034,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "Formular zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der IT-Konsolidierung Bund",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 85.7,
+                "t": 86.47499999999991,
+                "r": 509.64,
+                "b": 118.84462224554034,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "Formular zur Meldung des Single Point of Contact (SPOC) für die Informationssicherheit in der IT-Konsolidierung Bund",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 89.0,
+                "t": 124.66949999999997,
+                "r": 156.61289905999996,
+                "b": 137.14233210912903,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Themenfeld",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 218.54,
+                "t": 124.66949999999997,
+                "r": 317.1404469800001,
+                "b": 137.14233210912903,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Themendetailfeld",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 410.04,
+                "t": 124.66949999999997,
+                "r": 475.40042604,
+                "b": 137.14233210912903,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Eingabefeld",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 224.54,
+                "t": 145.7104999999999,
+                "r": 370.63509608000004,
+                "b": 156.22906348373544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "1. Informationen zur Meldung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 224.54,
+                "t": 145.7104999999999,
+                "r": 370.63509608000004,
+                "b": 156.22906348373544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "1. Informationen zur Meldung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 224.54,
+                "t": 145.7104999999999,
+                "r": 370.63509608000004,
+                "b": 156.22906348373544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "1. Informationen zur Meldung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 165.8705,
+                "r": 109.30592195999999,
+                "b": 176.38906348373553,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1.1 Meldung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 296.92,
+                "t": 165.8705,
+                "r": 329.56354,
+                "b": 176.38906348373553,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Datum",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 192.9905,
+                "r": 181.44122196000004,
+                "b": 229.9090634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1.2 Meldende Person (Person, die für Rückfragen zur Verfügung steht)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 225.5,
+                "t": 186.03049999999996,
+                "r": 329.49156901999993,
+                "b": 196.5490634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Vorname / Nachname",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 192.9905,
+                "r": 181.44122196000004,
+                "b": 229.9090634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1.2 Meldende Person (Person, die für Rückfragen zur Verfügung steht)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 256.66,
+                "t": 206.19049999999993,
+                "r": 329.58913804,
+                "b": 216.70906348373546,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Telefon / Mobil",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 192.9905,
+                "r": 181.44122196000004,
+                "b": 229.9090634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1.2 Meldende Person (Person, die für Rückfragen zur Verfügung steht)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 298.12,
+                "t": 226.3505,
+                "r": 329.56398196000004,
+                "b": 236.86906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "E-Mail",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 277.78,
+                "t": 246.51049999999998,
+                "r": 353.55920902,
+                "b": 257.0290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "2. Sitz des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 277.78,
+                "t": 246.51049999999998,
+                "r": 353.55920902,
+                "b": 257.0290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "2. Sitz des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 277.78,
+                "t": 246.51049999999998,
+                "r": 353.55920902,
+                "b": 257.0290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "2. Sitz des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 266.6105,
+                "r": 101.77362000000002,
+                "b": 277.12906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2.1 Ressort",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 301.54,
+                "t": 266.6105,
+                "r": 329.57194,
+                "b": 277.12906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Name",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 300.2104999999999,
+                "r": 106.76952,
+                "b": 310.72906348373544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2.2 Behörde",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 301.54,
+                "t": 286.77049999999997,
+                "r": 329.57194,
+                "b": 297.2890634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Name",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 300.2104999999999,
+                "r": 106.76952,
+                "b": 310.72906348373544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2.2 Behörde",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 208.16,
+                "t": 303.69049999999993,
+                "r": 329.56505607999986,
+                "b": 327.4090634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Anschrift (Straße, Hausnr., PLZ, Ort)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 333.81049999999993,
+                "r": 168.03792000000004,
+                "b": 344.3290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2.3 Organisationseinheit",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 231.26,
+                "t": 333.81049999999993,
+                "r": 329.5199870599999,
+                "b": 344.3290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Bezeichnung / Name",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 251.62,
+                "t": 353.97049999999996,
+                "r": 379.64210391999984,
+                "b": 364.48906348373555,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "3. Erreichbarkeit des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 251.62,
+                "t": 353.97049999999996,
+                "r": 379.64210391999984,
+                "b": 364.48906348373555,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "3. Erreichbarkeit des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 251.62,
+                "t": 353.97049999999996,
+                "r": 379.64210391999984,
+                "b": 364.48906348373555,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "3. Erreichbarkeit des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 394.29049999999995,
+                "r": 190.59086196,
+                "b": 404.80906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.1 während der Dienstzeiten",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 245.5,
+                "t": 374.1305,
+                "r": 329.5738160800001,
+                "b": 384.6490634837356,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Uhrzeit (von / bis)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 14,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 394.29049999999995,
+                "r": 190.59086196,
+                "b": 404.80906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.1 während der Dienstzeiten",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.52,
+                "t": 394.29049999999995,
+                "r": 329.50276195999993,
+                "b": 404.80906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Funktionspostfach",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 14,
+              "end_row_offset_idx": 15,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 394.29049999999995,
+                "r": 190.59086196,
+                "b": 404.80906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 13,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.1 während der Dienstzeiten",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 256.66,
+                "t": 414.47049999999996,
+                "r": 329.58913804,
+                "b": 424.98906348373555,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Telefon / Mobil",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 15,
+              "end_row_offset_idx": 16,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 438.05049999999994,
+                "r": 179.41374392000003,
+                "b": 461.7690634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.2 im Störungs-/Not- /Krisen-/ Katastrophenfall",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.52,
+                "t": 434.6305,
+                "r": 329.50276195999993,
+                "b": 445.1490634837356,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Funktionspostfach",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 17,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 438.05049999999994,
+                "r": 179.41374392000003,
+                "b": 461.7690634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 2,
+              "col_span": 1,
+              "start_row_offset_idx": 16,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.2 im Störungs-/Not- /Krisen-/ Katastrophenfall",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 256.66,
+                "t": 454.73049999999995,
+                "r": 329.58913804,
+                "b": 465.24906348373554,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Telefon / Mobil",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 17,
+              "end_row_offset_idx": 18,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 494.3305,
+                "r": 188.95800000000003,
+                "b": 526.5667733473242,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.3 Ausführende Person/en (Person, die die Aufgaben des SPOC wahrnimmt)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 254.62,
+                "t": 474.8905,
+                "r": 329.53656195999986,
+                "b": 485.40906348373557,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Personenanzahl",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 19,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 494.3305,
+                "r": 188.95800000000003,
+                "b": 526.5667733473242,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.3 Ausführende Person/en (Person, die die Aufgaben des SPOC wahrnimmt)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 19,
+              "end_row_offset_idx": 20,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 340.42,
+                "t": 495.05049999999994,
+                "r": 345.91,
+                "b": 505.56906348373553,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 19,
+              "end_row_offset_idx": 20,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 494.3305,
+                "r": 188.95800000000003,
+                "b": 526.5667733473242,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 18,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.3 Ausführende Person/en (Person, die die Aufgaben des SPOC wahrnimmt)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 225.5,
+                "t": 515.2104999999999,
+                "r": 329.49156901999993,
+                "b": 525.7290634837356,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 20,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Vorname / Nachname",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 340.42,
+                "t": 515.2104999999999,
+                "r": 345.91,
+                "b": 525.7290634837356,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 20,
+              "end_row_offset_idx": 21,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 565.4904999999999,
+                "r": 111.39214392000001,
+                "b": 576.0090634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 22,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.4 Sonstiges",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 212.6,
+                "t": 565.4904999999999,
+                "r": 329.52598705999986,
+                "b": 576.0090634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 22,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "weiterführende Angaben",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 21,
+              "end_row_offset_idx": 22,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 241.34,
+                "t": 595.6105,
+                "r": 389.87070706,
+                "b": 606.1290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 22,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "4. Eskalationsinstanz des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.34,
+                "t": 595.6105,
+                "r": 389.87070706,
+                "b": 606.1290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 22,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "4. Eskalationsinstanz des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 241.34,
+                "t": 595.6105,
+                "r": 389.87070706,
+                "b": 606.1290634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 3,
+              "start_row_offset_idx": 22,
+              "end_row_offset_idx": 23,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 3,
+              "text": "4. Eskalationsinstanz des SPOC",
+              "column_header": false,
+              "row_header": false,
+              "row_section": true,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 614.3304999999999,
+                "r": 185.37600000000003,
+                "b": 668.1667733473241,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 23,
+              "end_row_offset_idx": 26,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.1 Erste Stufe (Person, die Vorgesetzte/r der ausführenden Person des SPOC ist und die fachliche Verantwortung inne hat)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 225.5,
+                "t": 615.7705,
+                "r": 329.49156901999993,
+                "b": 626.2890634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 23,
+              "end_row_offset_idx": 24,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Vorname / Nachname",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 23,
+              "end_row_offset_idx": 24,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 614.3304999999999,
+                "r": 185.37600000000003,
+                "b": 668.1667733473241,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 23,
+              "end_row_offset_idx": 26,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.1 Erste Stufe (Person, die Vorgesetzte/r der ausführenden Person des SPOC ist und die fachliche Verantwortung inne hat)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 256.66,
+                "t": 635.9304999999999,
+                "r": 329.58913804,
+                "b": 646.4490634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 24,
+              "end_row_offset_idx": 25,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Telefon / Mobil",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 24,
+              "end_row_offset_idx": 25,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 614.3304999999999,
+                "r": 185.37600000000003,
+                "b": 668.1667733473241,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 3,
+              "col_span": 1,
+              "start_row_offset_idx": 23,
+              "end_row_offset_idx": 26,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.1 Erste Stufe (Person, die Vorgesetzte/r der ausführenden Person des SPOC ist und die fachliche Verantwortung inne hat)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 298.12,
+                "t": 656.0305,
+                "r": 329.56398196000004,
+                "b": 666.5490634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 25,
+              "end_row_offset_idx": 26,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "E-Mail",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 25,
+              "end_row_offset_idx": 26,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 684.8304999999999,
+                "r": 178.023,
+                "b": 738.6867733473242,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 4,
+              "col_span": 1,
+              "start_row_offset_idx": 26,
+              "end_row_offset_idx": 30,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.2 Zweite Stufe (Person, die der Organisationseinheit des SPOC sowie der/dem Vorgesetzten des SPOC übergeordnet ist)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 231.32,
+                "t": 676.1904999999999,
+                "r": 329.5141290199999,
+                "b": 686.7090634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 26,
+              "end_row_offset_idx": 27,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Organisationseinheit",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 26,
+              "end_row_offset_idx": 27,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 684.8304999999999,
+                "r": 178.023,
+                "b": 738.6867733473242,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 4,
+              "col_span": 1,
+              "start_row_offset_idx": 26,
+              "end_row_offset_idx": 30,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.2 Zweite Stufe (Person, die der Organisationseinheit des SPOC sowie der/dem Vorgesetzten des SPOC übergeordnet ist)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 225.5,
+                "t": 696.3705,
+                "r": 329.49156901999993,
+                "b": 706.8890634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 27,
+              "end_row_offset_idx": 28,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Vorname / Nachname",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 27,
+              "end_row_offset_idx": 28,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 684.8304999999999,
+                "r": 178.023,
+                "b": 738.6867733473242,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 4,
+              "col_span": 1,
+              "start_row_offset_idx": 26,
+              "end_row_offset_idx": 30,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.2 Zweite Stufe (Person, die der Organisationseinheit des SPOC sowie der/dem Vorgesetzten des SPOC übergeordnet ist)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 256.66,
+                "t": 716.5305,
+                "r": 329.58913804,
+                "b": 727.0490634837355,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 28,
+              "end_row_offset_idx": 29,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Telefon / Mobil",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 28,
+              "end_row_offset_idx": 29,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 50.34,
+                "t": 684.8304999999999,
+                "r": 178.023,
+                "b": 738.6867733473242,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 4,
+              "col_span": 1,
+              "start_row_offset_idx": 26,
+              "end_row_offset_idx": 30,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.2 Zweite Stufe (Person, die der Organisationseinheit des SPOC sowie der/dem Vorgesetzten des SPOC übergeordnet ist)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 298.12,
+                "t": 736.6904999999999,
+                "r": 329.56398196000004,
+                "b": 747.2090634837356,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 29,
+              "end_row_offset_idx": 30,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "E-Mail",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 29,
+              "end_row_offset_idx": 30,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 4
+    }
+  }
+}

@@ -1,0 +1,895 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Mindeststandard-zum-HV-Benchmark-kompakt",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 12267873270809918911,
+    "filename": "BSI---Mindeststandard-zum-HV-Benchmark-kompakt.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 378.43748548177075,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            42
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund HV-Benchmark kompakt",
+      "text": "Mindeststandards Bund HV-Benchmark kompakt"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 516.8341887652414,
+            "b": 345.1610721268601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zum HV (Hochverfügbarkeit)- Benchmark kompakt",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zum HV (Hochverfügbarkeit)- Benchmark kompakt"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 232.95000537374995,
+            "r": 316.3799157925031,
+            "b": 226.90429133994053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "In der Bundesverwaltung wird das Bewertungsschema '",
+      "text": "In der Bundesverwaltung wird das Bewertungsschema '"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 214.95000612374997,
+            "r": 550.9915705420169,
+            "b": 28.90429958994048,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1021
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 213.1919768670006,
+            "b": 817.1542667461905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            1022,
+            1055
+          ]
+        }
+      ],
+      "orig": "' (HVB (Hochverfügbarkeitsbenchmark)-kompakt) zur Ermittlung des Informationssicherheitsniveaus von IT (Informationstechnik)-Dienstleistungen und Rechenzentren herangezogen. Der HVB (Hochverfügbarkeitsbenchmark)-kompakt ist eine komprimierte Version des und verwendet ihm gegenüber eine leicht modifizierte Methodik und ist um Revisionselemente ergänzt. Mittels dieses modular aufgebauten Bewertungsschemas und unter der Nutzung von Reifegradmodellen wird die Verlässlichkeit einer zu betrachtenden IT (Informationstechnik)-Dienstleistung oder eines Rechenzentrums relativ einfach gemessen und bewertet. Während der HV (Hochverfügbarkeit)-Benchmark die gesamte Verlässlichkeit betrachtet, fokussiert der HVB (Hochverfügbarkeitsbenchmark)-kompakt auf die Informationssicherheit. Um ein einheitliches Mindestsicherheitsniveau innerhalb der Bundesverwaltung erreichen zu können, ist auf der Grundlage des HV (Hochverfügbarkeit)-Benchmark kompakt ein HVB (Hochverfügbarkeitsbenchmark)-kompakt HV (Hochverfügbarkeit)-Benchmark Mindeststandard etabliert worden.",
+      "text": "' (HVB (Hochverfügbarkeitsbenchmark)-kompakt) zur Ermittlung des Informationssicherheitsniveaus von IT (Informationstechnik)-Dienstleistungen und Rechenzentren herangezogen. Der HVB (Hochverfügbarkeitsbenchmark)-kompakt ist eine komprimierte Version des und verwendet ihm gegenüber eine leicht modifizierte Methodik und ist um Revisionselemente ergänzt. Mittels dieses modular aufgebauten Bewertungsschemas und unter der Nutzung von Reifegradmodellen wird die Verlässlichkeit einer zu betrachtenden IT (Informationstechnik)-Dienstleistung oder eines Rechenzentrums relativ einfach gemessen und bewertet. Während der HV (Hochverfügbarkeit)-Benchmark die gesamte Verlässlichkeit betrachtet, fokussiert der HVB (Hochverfügbarkeitsbenchmark)-kompakt auf die Informationssicherheit. Um ein einheitliches Mindestsicherheitsniveau innerhalb der Bundesverwaltung erreichen zu können, ist auf der Grundlage des HV (Hochverfügbarkeit)-Benchmark kompakt ein HVB (Hochverfügbarkeitsbenchmark)-kompakt HV (Hochverfügbarkeit)-Benchmark Mindeststandard etabliert worden."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 805.19998153,
+            "r": 538.9316602945132,
+            "b": 691.1542719961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            606
+          ]
+        }
+      ],
+      "orig": "Der Mindeststandard hat zum Ziel, Mindestwerte für die im HVB (Hochverfügbarkeitsbenchmark)- kompakt betrachteten 34 Aspekte der Informationssicherheit (sogenannte 'Indikatoren') festzulegen. Diese Mindestwerte müssen von den Einrichtungen des Bundes bei der Anwendung des HV (Hochverfügbarkeit)-Benchmark kompakt an ihren Rechenzentren mindestens erreicht werden. Der HV (Hochverfügbarkeit)-Benchmark kompakt ist ein fester Bestandteil des Mindeststandards und ist diesem als Anlage 1 beigefügt. Eine Hilfestellung zur Ermittlung individueller Sollwerte ist in der Anlage 2 des Mindeststandards zu finden.",
+      "text": "Der Mindeststandard hat zum Ziel, Mindestwerte für die im HVB (Hochverfügbarkeitsbenchmark)- kompakt betrachteten 34 Aspekte der Informationssicherheit (sogenannte 'Indikatoren') festzulegen. Diese Mindestwerte müssen von den Einrichtungen des Bundes bei der Anwendung des HV (Hochverfügbarkeit)-Benchmark kompakt an ihren Rechenzentren mindestens erreicht werden. Der HV (Hochverfügbarkeit)-Benchmark kompakt ist ein fester Bestandteil des Mindeststandards und ist diesem als Anlage 1 beigefügt. Eine Hilfestellung zur Ermittlung individueller Sollwerte ist in der Anlage 2 des Mindeststandards zu finden."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 643.3574882734375,
+            "r": 285.33972611084437,
+            "b": 633.9110600956102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Hinweis zu den Mindestwerten:",
+      "text": "Hinweis zu den Mindestwerten:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 607.9499897487501,
+            "r": 545.267670530513,
+            "b": 367.9042854649406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1272
+          ]
+        }
+      ],
+      "orig": "Die Einhaltung der vorgegebenen Mindestwerte ist für ein angemessenes IT (Informationstechnik)- Sicherheitsniveau von Rechenzentren der Einrichtungen des Bundes notwendig, aber in der Regel nicht hinreichend. Das bedeutet, es sind Sollwerte für die 34 Indikatoren für jedes Rechenzentrum - unter Berücksichtigung des individuellen Schutzbedarfs - individuell festzulegen. Diese Sollwerte werden in der Regel höher, aber niemals niedriger sein als die vorgegebenen Mindestwerte des Mindeststandards. Um ein hinreichendes Informationssicherheitsniveau zu erlangen, muss darüber hinaus auf der Basis anerkannter Standards eine dem Schutzbedarf genügende Festlegung und Umsetzung aller erforderlichen Sicherheitsmaßnahmen erfolgen. Dass die bloße Einhaltung dieses Mindeststandards noch kein angemessenes Sicherheitsniveau gewährleistet, hat folgenden Grund: Der HVB (Hochverfügbarkeitsbenchmark)-kompakt umfasst nur eine Stichprobe der relevanten Aspekte der Informationssicherheit, aber keinesfalls alle. Eine Vollständigkeit ist nur durch Anwendung anerkannter Standards (z. B. IT (Informationstechnik)-Grundschutz, DIN (Deutsches Institut für Normung) EN 50 600) zu erreichen. Daher kann der HVB (Hochverfügbarkeitsbenchmark)-kompakt solche Standards keinesfalls ersetzen.",
+      "text": "Die Einhaltung der vorgegebenen Mindestwerte ist für ein angemessenes IT (Informationstechnik)- Sicherheitsniveau von Rechenzentren der Einrichtungen des Bundes notwendig, aber in der Regel nicht hinreichend. Das bedeutet, es sind Sollwerte für die 34 Indikatoren für jedes Rechenzentrum - unter Berücksichtigung des individuellen Schutzbedarfs - individuell festzulegen. Diese Sollwerte werden in der Regel höher, aber niemals niedriger sein als die vorgegebenen Mindestwerte des Mindeststandards. Um ein hinreichendes Informationssicherheitsniveau zu erlangen, muss darüber hinaus auf der Basis anerkannter Standards eine dem Schutzbedarf genügende Festlegung und Umsetzung aller erforderlichen Sicherheitsmaßnahmen erfolgen. Dass die bloße Einhaltung dieses Mindeststandards noch kein angemessenes Sicherheitsniveau gewährleistet, hat folgenden Grund: Der HVB (Hochverfügbarkeitsbenchmark)-kompakt umfasst nur eine Stichprobe der relevanten Aspekte der Informationssicherheit, aber keinesfalls alle. Eine Vollständigkeit ist nur durch Anwendung anerkannter Standards (z. B. IT (Informationstechnik)-Grundschutz, DIN (Deutsches Institut für Normung) EN 50 600) zu erreichen. Daher kann der HVB (Hochverfügbarkeitsbenchmark)-kompakt solche Standards keinesfalls ersetzen."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 344.70000071749996,
+            "r": 540.9117977620073,
+            "b": 194.65429268369053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            731
+          ]
+        }
+      ],
+      "orig": "Aktualisierung November 2023: Der Mindeststandard ist auf die Version 2.0 aktualisiert worden. Dabei sind die Mindestwerte gemäß den Vorgaben des UP (Umsetzungsplan) Bund 2017 und dem Maßgabebeschluss vom 10.11.2022 (Ausschussdrucksache Nr. (Nummer) 20(8)2851) des Haushaltsausschusses des Deutschen Bundestages auf das Niveau der Standard-Absicherung nach IT (Informationstechnik)-Grundschutz angehoben worden. Zudem ist eine Hilfestellung zur Ermittlung individueller Sollwerte für ein Rechenzentrum oder für eine IT (Informationstechnik)- Dienstleistung auf der Basis des als fester Bestandteil aufgenommen (s. Anlage 2 des Mindeststandards). Die vorgenommenen Anpassungen werden in der HVB (Hochverfügbarkeitsbenchmark)-kompakt",
+      "text": "Aktualisierung November 2023: Der Mindeststandard ist auf die Version 2.0 aktualisiert worden. Dabei sind die Mindestwerte gemäß den Vorgaben des UP (Umsetzungsplan) Bund 2017 und dem Maßgabebeschluss vom 10.11.2022 (Ausschussdrucksache Nr. (Nummer) 20(8)2851) des Haushaltsausschusses des Deutschen Bundestages auf das Niveau der Standard-Absicherung nach IT (Informationstechnik)-Grundschutz angehoben worden. Zudem ist eine Hilfestellung zur Ermittlung individueller Sollwerte für ein Rechenzentrum oder für eine IT (Informationstechnik)- Dienstleistung auf der Basis des als fester Bestandteil aufgenommen (s. Anlage 2 des Mindeststandards). Die vorgenommenen Anpassungen werden in der HVB (Hochverfügbarkeitsbenchmark)-kompakt"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 182.70000746749997,
+            "r": 542.1477140855108,
+            "b": 122.6542956836904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            297
+          ]
+        }
+      ],
+      "orig": "aufgelistet. Der neue Mindeststandard steht Ihnen im Downloadbereich zur Verfügung. Die älteren Versionen des Mindeststandards finden Sie im . Änderungsübersicht zum \"Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zum HV (Hochverfügbarkeit)-Benchmark kompakt\" Archiv",
+      "text": "aufgelistet. Der neue Mindeststandard steht Ihnen im Downloadbereich zur Verfügung. Die älteren Versionen des Mindeststandards finden Sie im . Änderungsübersicht zum \"Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zum HV (Hochverfügbarkeit)-Benchmark kompakt\" Archiv",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/HV-Benchmark-kompakt/Aenderungsuebersicht_MST_HV-Benchmark-kompakt/Aenderungsuebersicht_HV-Benchmark-kompakt_node.html"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 99.45001093625001,
+            "r": 549.1368441692974,
+            "b": 39.40429915244067,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            357
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG)"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 823.19998078,
+            "r": 519.7194408200224,
+            "b": 781.1542682461907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            181
+          ]
+        }
+      ],
+      "orig": "neue Rechtsgrundlage in ersetzt. § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "neue Rechtsgrundlage in ersetzt. § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 733.3574845234375,
+            "r": 344.238152681743,
+            "b": 723.9110563456102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard Version 2.0",
+      "text": "Download Mindeststandard Version 2.0",
+      "hyperlink": "https://www.gesetze-im-internet.de/bsig_2025/__44.html",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 697.94998599875,
+            "r": 545.0754779385211,
+            "b": 691.9042719649406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            92
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zum HV-Benchmark kompakt 5.0 Version 2.0",
+      "text": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG zum HV-Benchmark kompakt 5.0 Version 2.0",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_HV-Benchmark_kompakt_V2_0.pdf?__blob=publicationFile&v=5"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 644.1074882421874,
+            "r": 385.34051271914456,
+            "b": 634.6610600643601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 116.24999515625,
+            "t": 539.6999925924999,
+            "r": 214.73392565275267,
+            "b": 533.6542785586905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht",
+      "text": "Änderungsübersicht"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 468.44999556125003,
+            "r": 387.1355325693521,
+            "b": 462.4042815274406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund",
+      "text": "Zurück zu Mindeststandards Bund"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 366.4499998112501,
+            "r": 375.18331579236127,
+            "b": 360.4042857774407,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            55
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-HV-Benchmark",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-HV-Benchmark",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST-HV-Benchmark"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 250.20000465500016,
+            "r": 101.2200366574983,
+            "b": 244.15429062119074,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um",
+      "text": "Im­ pres­ s­ um",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Impressum/impressum_node.html"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 232.20000540499996,
+            "r": 107.76000345999967,
+            "b": 226.15429137119054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Da­ ten­ schutz",
+      "text": "Da­ ten­ schutz",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Datenschutz/datenschutz_node.html"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 214.20000615499976,
+            "r": 158.39995432500166,
+            "b": 208.1542921211908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Nut­ zungs­ be­ din­ gun­ gen",
+      "text": "Nut­ zungs­ be­ din­ gun­ gen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Nutzungsbedingungen/Nutzungsbedingungen_node.html"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 196.200006905,
+            "r": 121.33199186950014,
+            "b": 190.1542928711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Bar­ rie­ re­ frei­ heit",
+      "text": "Bar­ rie­ re­ frei­ heit",
+      "hyperlink": "https://www.bsi.bund.de/DE/Service/Barrierefreiheit/barrierefreiheit_node.html"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 159.45000843624985,
+            "r": 313.9438494440058,
+            "b": 153.40429440244043,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 99.39751093843734,
+            "r": 509.74872171046906,
+            "b": 94.48536828596707,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.23967807140575,
+            "t": 553.1353546832217,
+            "r": 170.6086659727855,
+            "b": 491.0762506283896,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 42.90197420540125,
+            "t": 614.5054983411558,
+            "r": 551.5278853612419,
+            "b": 440.53024298902716,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    }
+  }
+}

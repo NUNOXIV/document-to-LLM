@@ -90,6 +90,18 @@ def chunks_from_docling_json(slug: str, json_path: Path, chunker: str) -> list[C
     return out
 
 
+def extrakte(out: Path) -> list[Path]:
+    """Die echten Extrakte eines Ausgabeordners.
+
+    Nicht jede .md-Datei dort ist ein Dokument: "_TRACKER.md" ist ein Bericht,
+    und Dateien mit fuehrendem Punkt sind Arbeitsreste. Ein abgebrochener Lauf
+    liess ".fluchs-ma-profil.tmp.md" liegen, und der Tracker fuehrte sie als
+    Dokument ohne Deckung — ein erfundener Eintrag im Bestandsregister.
+    """
+    return sorted(p for p in out.glob("*.md")
+                  if not p.name.startswith("_") and not p.name.startswith("."))
+
+
 def chunks_from_markdown(slug: str, md_path: Path) -> list[Chunk]:
     """Fallback ohne --json-Export: Schnitt an den von Docling erzeugten
     Markdown-Ueberschriften und Seitenmarkern. Es wird nichts interpretiert,
@@ -169,7 +181,7 @@ def build(out_dir: str, db_path: str | None, chunker: str) -> None:
     """Index aus dem Output-Ordner (neu) aufbauen."""
     out = Path(out_dir)
     db_file = Path(db_path) if db_path else out / "acsos.db"
-    md_files = sorted(p for p in out.glob("*.md") if not p.name.startswith("_"))
+    md_files = extrakte(out)
     if not md_files:
         raise click.ClickException(f"Keine Markdown-Dateien in {out}/ — zuerst extract.py laufen lassen.")
 

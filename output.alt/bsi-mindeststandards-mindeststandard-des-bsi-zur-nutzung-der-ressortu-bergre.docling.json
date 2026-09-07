@@ -1,0 +1,1462 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Mindeststandards---Mindeststandard-des-BSI-zur-Nutzung-der-ressortu-bergre",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 17265794848379956559,
+    "filename": "BSI---Mindeststandards---Mindeststandard-des-BSI-zur-Nutzung-der-ressortu-bergre.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/pictures/7"
+      },
+      {
+        "$ref": "#/pictures/8"
+      },
+      {
+        "$ref": "#/pictures/9"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/3"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 465.91499566687503,
+            "r": 538.8071914246992,
+            "b": 442.6249966372917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            159
+          ]
+        }
+      ],
+      "orig": "Staat und Verwaltung Mindeststandards Bund Mindeststandard des BSI zur Nutzung der ressortübergreifenden Kommunikationsnetze des Bundes ('Nutzerpflichten NdB')",
+      "text": "Staat und Verwaltung Mindeststandards Bund Mindeststandard des BSI zur Nutzung der ressortübergreifenden Kommunikationsnetze des Bundes ('Nutzerpflichten NdB')"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 389.10749886718753,
+            "r": 516.8341887652414,
+            "b": 300.9110739706101,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            189
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung der ressortübergreifenden Kommunikationsnetze des Bundes ('Nutzerpflichten NdB (Netze des Bundes)')",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung der ressortübergreifenden Kommunikationsnetze des Bundes ('Nutzerpflichten NdB (Netze des Bundes)')"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 188.7000072175,
+            "r": 543.6236929490118,
+            "b": 74.65429768369052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            664
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 543.9499105354192,
+            "b": 781.1542682461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            665,
+            901
+          ]
+        }
+      ],
+      "orig": "Die ressortübergreifenden Kommunikationsnetzinfrastrukturen bilden das verlässliche Rückgrat der Kommunikation in der Bundesverwaltung. Die Netze des Bundes (NdB (Netze des Bundes)) sind für die Arbeit der Bundesministerien und ihrer Geschäftsbereiche ein essentieller Bestandteil, da über die NdB (Netze des Bundes) bereitgestellte IT (Informationstechnik)-Verfahren und Dienste für die Durchführung der jeweiligen Fachaufgaben unabdingbar sind. Der Bedarf für sichere und verfügbare Kommunikations- und Datenaustauschmöglichkeiten führt zu der Notwendigkeit, einheitliche Sicherheitsanforderungen innerhalb der NdB (Netze des Bundes) sowie auf der Nutzerseite zu bestimmen. Dies gilt insbesondere im Angesicht von täglichen Angriffen auf Verwaltungs-und Regierungsnetze. Der als die Leitlinie für Informationssicherheit in der Bundesverwaltung gibt daher folgendes vor: UP (Umsetzungsplan) Bund 2017",
+      "text": "Die ressortübergreifenden Kommunikationsnetzinfrastrukturen bilden das verlässliche Rückgrat der Kommunikation in der Bundesverwaltung. Die Netze des Bundes (NdB (Netze des Bundes)) sind für die Arbeit der Bundesministerien und ihrer Geschäftsbereiche ein essentieller Bestandteil, da über die NdB (Netze des Bundes) bereitgestellte IT (Informationstechnik)-Verfahren und Dienste für die Durchführung der jeweiligen Fachaufgaben unabdingbar sind. Der Bedarf für sichere und verfügbare Kommunikations- und Datenaustauschmöglichkeiten führt zu der Notwendigkeit, einheitliche Sicherheitsanforderungen innerhalb der NdB (Netze des Bundes) sowie auf der Nutzerseite zu bestimmen. Dies gilt insbesondere im Angesicht von täglichen Angriffen auf Verwaltungs-und Regierungsnetze. Der als die Leitlinie für Informationssicherheit in der Bundesverwaltung gibt daher folgendes vor: UP (Umsetzungsplan) Bund 2017"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 757.94998349875,
+            "r": 542.8536638560969,
+            "b": 661.9042732149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            489
+          ]
+        }
+      ],
+      "orig": "\"Um die Informationssicherheit in ressortübergreifenden Kommunikationsnetzinfrastrukturen, in den eingesetzten IT (Informationstechnik) -Systemen und in der von Nutzern an diese Netzinfrastrukturen angeschlossenen IT (Informationstechnik) zu gewährleisten, sind die vom BSI (Bundesamt für Sicherheit in der Informationstechnik) formulierten Informationssicherheitsanforderungen an den Nutzer ('Nutzerpflichten') in der als Mindeststandard festgelegten Fassung von den Nutzern einzuhalten.\"",
+      "text": "\"Um die Informationssicherheit in ressortübergreifenden Kommunikationsnetzinfrastrukturen, in den eingesetzten IT (Informationstechnik) -Systemen und in der von Nutzern an diese Netzinfrastrukturen angeschlossenen IT (Informationstechnik) zu gewährleisten, sind die vom BSI (Bundesamt für Sicherheit in der Informationstechnik) formulierten Informationssicherheitsanforderungen an den Nutzer ('Nutzerpflichten') in der als Mindeststandard festgelegten Fassung von den Nutzern einzuhalten.\""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 638.6999884675,
+            "r": 548.9670192013733,
+            "b": 524.6542789336904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            669
+          ]
+        }
+      ],
+      "orig": "Der erstmals im September 2019 in der Version 2.0 finalisierte Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung der ressortübergreifenden Kommunikationsnetze des Bundes (kurz: 'Nutzerpflichten NdB (Netze des Bundes)') erfüllt die verbindliche Forderung aus dem UP Bund 2017 und legt fest, welche konkreten Sicherheitsanforderungen und -maßnahmen mindestens umzusetzen sind, um an den NdB (Netze des Bundes) als Nutzer teilnehmen zu können. Der Mindeststandard konsolidiert und ersetzt damit die seit 2009 geltenden NdB (Netze des Bundes)- Nutzerpflichten (V1.2) und Anforderungen aus ca. (ungefähr) 35 Nutzerinformationsbriefen.",
+      "text": "Der erstmals im September 2019 in der Version 2.0 finalisierte Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) zur Nutzung der ressortübergreifenden Kommunikationsnetze des Bundes (kurz: 'Nutzerpflichten NdB (Netze des Bundes)') erfüllt die verbindliche Forderung aus dem UP Bund 2017 und legt fest, welche konkreten Sicherheitsanforderungen und -maßnahmen mindestens umzusetzen sind, um an den NdB (Netze des Bundes) als Nutzer teilnehmen zu können. Der Mindeststandard konsolidiert und ersetzt damit die seit 2009 geltenden NdB (Netze des Bundes)- Nutzerpflichten (V1.2) und Anforderungen aus ca. (ungefähr) 35 Nutzerinformationsbriefen."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 501.44999418625,
+            "r": 538.2871184963692,
+            "b": 477.4042809024404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            116
+          ]
+        }
+      ],
+      "orig": "Aktualisierung Januar 2025: Der Mindeststandard wurde vollständig überarbeitet und liegt nun in der Version 3.0 vor.",
+      "text": "Aktualisierung Januar 2025: Der Mindeststandard wurde vollständig überarbeitet und liegt nun in der Version 3.0 vor."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 429.60749717968747,
+            "r": 256.4132112411157,
+            "b": 420.16106900186014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard",
+      "text": "Download Mindeststandard",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 394.19999865499994,
+            "r": 538.4589058392114,
+            "b": 334.1542868711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            340
+          ]
+        }
+      ],
+      "orig": "Der Mindeststandard ist nach der Verschlusssachenanweisung (VSA (Verschlusssachenanweisung)) als 'VS (Verschlusssache) - NUR FÜR DEN DIENSTGEBRAUCH\" eingestuft und wird daher hier nicht veröffentlicht . Dieses Dokument sowie die Referenztabelle können registrierte Teilnehmer der Bundesverwaltung über den herunterladen. geschützten Bereich",
+      "text": "Der Mindeststandard ist nach der Verschlusssachenanweisung (VSA (Verschlusssachenanweisung)) als 'VS (Verschlusssache) - NUR FÜR DEN DIENSTGEBRAUCH\" eingestuft und wird daher hier nicht veröffentlicht . Dieses Dokument sowie die Referenztabelle können registrierte Teilnehmer der Bundesverwaltung über den herunterladen. geschützten Bereich"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 299.05500261937505,
+            "r": 110.21553305768592,
+            "b": 290.74214582288687,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Hinweise:",
+      "text": "Hinweise:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 265.20000402999995,
+            "r": 507.22512984061865,
+            "b": 223.15429149619058,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            243
+          ]
+        }
+      ],
+      "orig": "Der Zugang zu diesem geschützten Bereich wird über die Sicherheitsberatung des BSI erteilt. Zugangsberechtigt sind in der Regel die Informationssicherheitsbeauftragten bzw. IT (Informationstechnik)-Sicherheitsbeauftragten der Bundesverwaltung.",
+      "text": "Der Zugang zu diesem geschützten Bereich wird über die Sicherheitsberatung des BSI erteilt. Zugangsberechtigt sind in der Regel die Informationssicherheitsbeauftragten bzw. IT (Informationstechnik)-Sicherheitsbeauftragten der Bundesverwaltung.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 211.20000628000003,
+            "r": 504.90571481226084,
+            "b": 169.15429374619043,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            238
+          ]
+        }
+      ],
+      "orig": "Anfragen von anderen Organisationseinheiten in Bundesbehörden sind bitte an das jeweilige Informationssicherheitsmanagement (ISB (Informationssicherheitsbeauftragter), IT-SiBe (Informationssicherheitsbeauftragter)) der Behörde zu stellen.",
+      "text": "Anfragen von anderen Organisationseinheiten in Bundesbehörden sind bitte an das jeweilige Informationssicherheitsmanagement (ISB (Informationssicherheitsbeauftragter), IT-SiBe (Informationssicherheitsbeauftragter)) der Behörde zu stellen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 157.2000085300001,
+            "r": 357.3178608367551,
+            "b": 133.1542952461905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            115
+          ]
+        }
+      ],
+      "orig": "Anfragen von Ländern und Kommunen richten Sie bitte an die Informationssicherheitsberatung für Länder und Kommunen.",
+      "text": "Anfragen von Ländern und Kommunen richten Sie bitte an die Informationssicherheitsberatung für Länder und Kommunen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 121.20001002999993,
+            "r": 549.1515171686858,
+            "b": 25.154299746190645,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            546
+          ]
+        }
+      ],
+      "orig": "Die gemäß der Verschlusssachenanweisung (VSA (Verschlusssachenanweisung)) als VS-NfD (Verschlusssache - Nur für den Dienstgebrauch) eingestufte Dokumente unterliegen streng dem \"Need-to-Know\"-Prinzip. Anfragen von außerhalb der Bundesverwaltung (Länder, Kommunen, Wirtschaft, Privatpersonen) müssen daher konkret begründet werden, über die Freigabe entscheidet das zuständige Fachreferat im BSI (Bundesamt für Sicherheit in der Informationstechnik). Begründete Anfragen hierzu können an das Postfach mindeststandards@bsi.bund.de gerichtet werden.",
+      "text": "Die gemäß der Verschlusssachenanweisung (VSA (Verschlusssachenanweisung)) als VS-NfD (Verschlusssache - Nur für den Dienstgebrauch) eingestufte Dokumente unterliegen streng dem \"Need-to-Know\"-Prinzip. Anfragen von außerhalb der Bundesverwaltung (Länder, Kommunen, Wirtschaft, Privatpersonen) müssen daher konkret begründet werden, über die Freigabe entscheidet das zuständige Fachreferat im BSI (Bundesamt für Sicherheit in der Informationstechnik). Begründete Anfragen hierzu können an das Postfach mindeststandards@bsi.bund.de gerichtet werden.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 176.75390263525372,
+            "t": 783.6074824296875,
+            "r": 468.5600032266656,
+            "b": 774.1610542518602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Weitere empfehlenswerte Dokumente",
+      "text": "Weitere empfehlenswerte Dokumente",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 199.25390169775372,
+            "t": 748.199983905,
+            "r": 437.39358142526686,
+            "b": 724.1542706211906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "Umsetzungsplan Bund Kundenportal der BDBOS (Intranet des Bundes)",
+      "text": "Umsetzungsplan Bund Kundenportal der BDBOS (Intranet des Bundes)"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 616.3574893984376,
+            "r": 385.34051271914456,
+            "b": 606.91106122061,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 109.80468292480468,
+            "t": 511.9499937487499,
+            "r": 221.1765933843082,
+            "b": 505.9042797149407,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Externe Cloud-Dienste",
+      "text": "Externe Cloud-Dienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Externe_Cloud-Dienste/Externe_Cloud-Dienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/pictures/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 104.77733938427734,
+            "t": 384.44999906124986,
+            "r": 226.2052427497811,
+            "b": 378.40428502744044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "HV-Benchmark kompakt",
+      "text": "HV-Benchmark kompakt"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 90.84374621484375,
+            "t": 256.95000437374983,
+            "r": 240.1476085188492,
+            "b": 250.90429033994042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Protokollierung und Detektion",
+      "text": "Protokollierung und Detektion",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/PDCA/PDCA_node.html"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 109.30077669580078,
+            "t": 129.4500096862498,
+            "r": 221.69267608780476,
+            "b": 123.4042956524404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Videokonferenzdienste",
+      "text": "Videokonferenzdienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Videokonferenzdienste/Videokonferenzdienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 361.6171724326172,
+            "t": 511.9499937487499,
+            "r": 498.3810736591212,
+            "b": 505.9042797149407,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Mobile Device Management",
+      "text": "Mobile Device Management",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Mobile_Device_Management/Mobile_Device_Management_node.html"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/pictures/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 357.1874851171875,
+            "t": 384.44999906124986,
+            "r": 502.80735027469274,
+            "b": 378.40428502744044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Transport Layer Security (TLS)",
+      "text": "Transport Layer Security (TLS)",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 371.01560954101564,
+            "t": 129.4500096862498,
+            "r": 488.97552505101896,
+            "b": 123.4042956524404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Schnittstellenkontrollen",
+      "text": "Schnittstellenkontrollen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Schnittstellenkontrollen/Schnittstellenkontrollen_node.html"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 398.9648308764647,
+            "t": 256.95000437374983,
+            "r": 461.02879446546626,
+            "b": 250.90429033994042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Webbrowser",
+      "text": "Webbrowser"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 81.89062158789062,
+            "t": 754.1999836549999,
+            "r": 249.0984784208963,
+            "b": 748.1542696211909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Nutzerpflichten Netze des Bundes",
+      "text": "Nutzerpflichten Netze des Bundes"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 403.00779570800785,
+            "t": 754.1999836549999,
+            "r": 456.9837696840088,
+            "b": 748.1542696211909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "ISMS ITKB",
+      "text": "ISMS ITKB"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 109.42968294042969,
+            "t": 626.6999889675003,
+            "r": 221.55757506843398,
+            "b": 620.6542749336909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 225.71483809521467,
+            "t": 555.4499919362502,
+            "r": 381.7747231427191,
+            "b": 549.4042779024408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Zurück zu Staat und Verwaltung",
+      "text": "Zurück zu Staat und Verwaltung"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 453.44999618625025,
+            "r": 97.09206240449723,
+            "b": 447.4042821524408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Kurz-URL:",
+      "text": "Kurz-URL:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 115.85155767285156,
+            "t": 453.44999618625025,
+            "r": 294.1834081923576,
+            "b": 447.4042821524408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "https:/ /www.bsi.bund.de/dok/MST",
+      "text": "https:/ /www.bsi.bund.de/dok/MST",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 337.2000010300003,
+            "r": 158.39995432500166,
+            "b": 277.15428924619073,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 246.45000481124998,
+            "r": 313.9438494440058,
+            "b": 240.40429077744056,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 186.39750731343793,
+            "r": 509.74872171046906,
+            "b": 181.48536466096766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.30286427926456,
+            "t": 553.0114650910787,
+            "r": 170.6436520215921,
+            "b": 491.30791806276153,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.69769081965188,
+            "t": 574.3325892668017,
+            "r": 190.47239569898179,
+            "b": 519.5573083043245,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 104.89523866605153,
+            "t": 447.70134486133855,
+            "r": 226.2484456608456,
+            "b": 373.53285707082284,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 140.68192328819364,
+            "t": 320.147672258611,
+            "r": 189.8047160235452,
+            "b": 264.3332749707031,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 140.29233158726592,
+            "t": 193.0277963164515,
+            "r": 190.55826638484461,
+            "b": 136.57021064844707,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.1230716189683,
+            "t": 573.605271919824,
+            "r": 454.330630218233,
+            "b": 517.9685921158177,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.71601877497415,
+            "t": 447.50794283301275,
+            "r": 454.6457030084013,
+            "b": 390.89744811421303,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 398.31740154169063,
+            "t": 320.762359929579,
+            "r": 461.09189394433594,
+            "b": 248.47058585728587,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/22"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.1613075711311,
+            "t": 193.63632002249028,
+            "r": 455.46388525053135,
+            "b": 136.4330776861094,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 42.77709705038273,
+            "t": 830.0927797943148,
+            "r": 551.9589476599265,
+            "b": 527.2286678055998,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    }
+  }
+}

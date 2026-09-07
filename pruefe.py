@@ -63,6 +63,10 @@ def bekannte_faelle() -> set[str]:
     return {e.get("slug", "") for e in d.get("teilweise_erfasst", {}).get("eintraege", [])}
 
 
+# Unter so vielen Zeichen eigenem Text gilt ein Extrakt als strukturlos.
+STRUKTUR_MIN_ZEICHEN = 200
+
+
 @dataclass
 class Bericht:
     befunde: list[Befund] = field(default_factory=list)
@@ -123,9 +127,24 @@ def pruefe_korpus(register: Path, b: Bericht) -> None:
             b.melde("Korpus", slug,
                     "keine Deckungszahl, aber nicht als 'nicht woertlich' markiert",
                     str(d.get("woertlich")), "false")
-        if d.get("ocr") and d.get("woertlich"):
-            b.melde("Korpus", slug, "als OCR und zugleich als woertlich gefuehrt",
-                    "ocr=true, woertlich=true", "sich ausschliessend")
+        # Frueher stand hier: ocr und woertlich schliessen sich aus. Das ist
+        # falsch. OCR laeuft schon bei einem duennen Textlayer an, nicht erst
+        # bei gar keinem -- und gegen diesen duennen Layer ist die Deckung
+        # gueltig. Die Regel meldete ein gesundes Dokument als Befund.
+        # Was wirklich auffallen muss: ein Extrakt, dessen Text vollstaendig
+        # aus dem woertlichen Nachtrag stammt. Dann hat das Layoutmodell
+        # nichts zugeordnet, der Extrakt traegt keine Struktur, und ein Zitat
+        # mit Ueberschrift ist unmoeglich.
+        if d.get("angehaengte_quellzeilen") and md.exists():
+            roh = md.read_text(encoding="utf-8", errors="replace")
+            kopf, _, rest = roh.partition("## Nachtrag: nicht zugeordneter Quelltext")
+            eigen = re.sub(r"<!--.*?-->", " ", re.sub(r"^---\n.*?\n---\n", "", kopf, flags=re.S),
+                           flags=re.S).strip()
+            if rest and len(eigen) < STRUKTUR_MIN_ZEICHEN:
+                b.melde("Korpus", slug,
+                        "der gesamte Text stammt aus dem Nachtrag — das Layoutmodell hat "
+                        "nichts zugeordnet, der Extrakt traegt keine Struktur",
+                        f"{len(eigen)} Zeichen eigener Text", f">= {STRUKTUR_MIN_ZEICHEN}")
 
         if seiten and woerter:
             je_seite = woerter * 6 / seiten     # grob Zeichen je Seite
@@ -150,6 +169,19 @@ def pruefe_korpus(register: Path, b: Bericht) -> None:
                         "oder Endlos-Abschnitt",
                         f"{je_seite_md/1000:.1f} kB/Seite",
                         f"<= {EXTRAKT_UEBERHANG} kB")
+            # Jede Seite der Quelle muss im Extrakt eine Marke haben. Fehlt
+            # eine, ist ihr Inhalt entweder verloren oder einer Nachbarseite
+            # zugeschlagen -- beides unsichtbar fuer Laenge und Deckung, weil
+            # die Woerter ja da sind, nur nicht dort, wo das Zitat sie sucht.
+            marken = {int(m) for m in re.findall(
+                r"<!-- page: (\d+) -->", md.read_text(encoding="utf-8", errors="replace"))}
+            fehlend = sorted(set(range(1, seiten + 1)) - marken)
+            if fehlend:
+                b.melde("Korpus", slug,
+                        "Seiten ohne Marke im Extrakt — Zitate mit Seitenzahl sind "
+                        "dort nicht belegbar",
+                        f"{len(fehlend)} von {seiten} Seiten, z. B. {fehlend[:5]}",
+                        "0")
 
 
 def pruefe_vault(vault: Path, b: Bericht) -> None:

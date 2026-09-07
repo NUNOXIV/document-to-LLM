@@ -1,0 +1,1505 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Hilfsmittel_Empfehlungen_App-Stores_v1",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 3201867673340831345,
+    "filename": "Hilfsmittel_Empfehlungen_App-Stores_v1.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.63999999999996,
+            "t": 632.5476000000001,
+            "r": 475.17852,
+            "b": 566.3033496774194,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Hilfsmittel: Empfehlungen zu App-Stores",
+      "text": "IT-Grundschutz-Hilfsmittel: Empfehlungen zu App-Stores",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 525.04368,
+            "r": 536.19552,
+            "b": 494.8646494117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "Betrachtungen zur Vertrauensstellung von App Stores am Beispiel des Google Play Store Datum: 2021-10-19, Version: 1.0",
+      "text": "Betrachtungen zur Vertrauensstellung von App Stores am Beispiel des Google Play Store Datum: 2021-10-19, Version: 1.0"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 477.18,
+            "r": 157.512,
+            "b": 461.52812903225805,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "1. Sachlage",
+      "text": "1. Sachlage",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.58480000000009,
+            "t": 445.4976,
+            "r": 539.8409279999998,
+            "b": 67.64112941176472,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2562
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.59584000000024,
+            "t": 782.3376000000001,
+            "r": 540.0606239999995,
+            "b": 627.6295554098359,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            2563,
+            3678
+          ]
+        }
+      ],
+      "orig": "Bei der Installation von Apps auf Geräten mit dem mobilen Betriebssystem Android werden die notwendigen Installationsdateien auf die Geräte geladen und anschließend vom zuständigen Dienst, dem sogenannten PacketManager, geprüft und installiert. Android-basierte Geräte können Apps jedoch nur dann installieren oder updaten, wenn die entsprechenden Installationspakete mit einem digitalen Zertifikat signiert sind. Siehe dazu Exkurs: Digitale Zertifikate und PKI . Der PacketManager vertraut bei der Installation einer App implizit dem Herausgeberzertifikat und prüft nur, ob das Installationspaket nicht verändert wurde. Bei einem Update prüft der PacketManager zusätzlich, ob das Update-Paket vom gleichen Herausgeberzertifikat signiert worden ist. Das heißt, es wird nicht geprüft, ob dem Zertifikat bzw. Aussteller des Zertifikats vertraut werden kann - dieses Vertrauen wird implizit vorausgesetzt. Weiterhin sind diese Prüfungen auf den PacketManager bei der Installation beschränkt; weder das Betriebssystem noch Nutzer nutzen zu einem späteren Zeitpunkt die Signatur eines Installationspaketes. Google stellt mit dem sogenannten Android App Bundle (AAB) ein spezielles Upload-Format für Entwickler bereit die Apps über den Play Store vertreiben wollen. AABs sind Pakete, die sämtlichen Programmcode sowie alle verfügbaren Ressourcen enthalten. Damit unterscheiden sie sich zunächst nicht grundsätzlich vom App-Installationspaket APK, sind intern jedoch modularer aufgebaut. Der Play Store will Nutzern aus diesen Bundles künftig nur die für ihre Geräte notwendigen AppBestandteile (als APK) ausliefern. Android App Bundles wurden von Google 2018 als neues 'Publishing Format' vorgestellt und sind ab August 2021 für neue Apps verpflichtend (vgl. Google-Blog). Da im Android-Betriebssystem jedoch nur Apps installiert werden können, die digital signiert sind, muss der Play Store ein neu zusammengestelltes Installationspaket auch digital signieren (Google Play App Signing). Dazu verlangt Google von Entwicklern die Zurverfügungstellung ihrer privaten Signaturschlüssel. Dies bedeutet für die Entwickler den Verlust der Vertraulichkeit ihrer Signaturschlüssel. Aus Anwendersicht ist sowohl die Signatur selbst als auch die Verwendung der Signatur während der Installation vollständig unsichtbar. Anwender, die Apps im Play Store auswählen und installieren, vertrauen dem Play Store und damit auch Google. Für Anwender ist nicht der Entwickler, sondern der Play Store der Lieferant und damit die Quelle der Software. Mit diesem grundsätzlichen Vertrauen in den Play Store bekommt die Signatur des Installationspaketes jedoch eine andere Gewichtung. Sie sichert nun sozusagen nur den Transportweg vom Play Store zum Gerät ab und ist (in einer Übergangsphase) dazu da, die Lieferkette bei Updates nicht zu brechen. Daher ist die Herausgabe des privaten Entwickler-Signaturschlüssels an Google - trotz der grundsätzlichen sicherheitstechnischen Bedenken gegen die Herausgabe eines Geheimnisses - von geringer Bedeutung, solange dieser Signaturschlüssel nicht anderweitig verwendet wird (siehe dazu auch die Handlungs-Empfehlungen unten). Die Vertrauenswürdigkeit der Software wird an dieser Stelle nicht betrachtet. Eine Bewertung, ob die Software (nur) die beschriebene Funktion bereitstellt, die zugewiesenen Berechtigungen nicht missbraucht, unerwünscht Informationen abfließen lässt oder auf andere Weise das IT-System des Anwenders kompromittiert, muss unabhängig erfolgen. Das IT-Grundschutz-Kompendium behandelt diese Aspekte unter anderem in den Anforderungen APP.1.4.A5 Minimierung und Kontrolle von AppBerechtigungen sowie APP.1.4.A8 Verhinderung von Datenabfluss .",
+      "text": "Bei der Installation von Apps auf Geräten mit dem mobilen Betriebssystem Android werden die notwendigen Installationsdateien auf die Geräte geladen und anschließend vom zuständigen Dienst, dem sogenannten PacketManager, geprüft und installiert. Android-basierte Geräte können Apps jedoch nur dann installieren oder updaten, wenn die entsprechenden Installationspakete mit einem digitalen Zertifikat signiert sind. Siehe dazu Exkurs: Digitale Zertifikate und PKI . Der PacketManager vertraut bei der Installation einer App implizit dem Herausgeberzertifikat und prüft nur, ob das Installationspaket nicht verändert wurde. Bei einem Update prüft der PacketManager zusätzlich, ob das Update-Paket vom gleichen Herausgeberzertifikat signiert worden ist. Das heißt, es wird nicht geprüft, ob dem Zertifikat bzw. Aussteller des Zertifikats vertraut werden kann - dieses Vertrauen wird implizit vorausgesetzt. Weiterhin sind diese Prüfungen auf den PacketManager bei der Installation beschränkt; weder das Betriebssystem noch Nutzer nutzen zu einem späteren Zeitpunkt die Signatur eines Installationspaketes. Google stellt mit dem sogenannten Android App Bundle (AAB) ein spezielles Upload-Format für Entwickler bereit die Apps über den Play Store vertreiben wollen. AABs sind Pakete, die sämtlichen Programmcode sowie alle verfügbaren Ressourcen enthalten. Damit unterscheiden sie sich zunächst nicht grundsätzlich vom App-Installationspaket APK, sind intern jedoch modularer aufgebaut. Der Play Store will Nutzern aus diesen Bundles künftig nur die für ihre Geräte notwendigen AppBestandteile (als APK) ausliefern. Android App Bundles wurden von Google 2018 als neues 'Publishing Format' vorgestellt und sind ab August 2021 für neue Apps verpflichtend (vgl. Google-Blog). Da im Android-Betriebssystem jedoch nur Apps installiert werden können, die digital signiert sind, muss der Play Store ein neu zusammengestelltes Installationspaket auch digital signieren (Google Play App Signing). Dazu verlangt Google von Entwicklern die Zurverfügungstellung ihrer privaten Signaturschlüssel. Dies bedeutet für die Entwickler den Verlust der Vertraulichkeit ihrer Signaturschlüssel. Aus Anwendersicht ist sowohl die Signatur selbst als auch die Verwendung der Signatur während der Installation vollständig unsichtbar. Anwender, die Apps im Play Store auswählen und installieren, vertrauen dem Play Store und damit auch Google. Für Anwender ist nicht der Entwickler, sondern der Play Store der Lieferant und damit die Quelle der Software. Mit diesem grundsätzlichen Vertrauen in den Play Store bekommt die Signatur des Installationspaketes jedoch eine andere Gewichtung. Sie sichert nun sozusagen nur den Transportweg vom Play Store zum Gerät ab und ist (in einer Übergangsphase) dazu da, die Lieferkette bei Updates nicht zu brechen. Daher ist die Herausgabe des privaten Entwickler-Signaturschlüssels an Google - trotz der grundsätzlichen sicherheitstechnischen Bedenken gegen die Herausgabe eines Geheimnisses - von geringer Bedeutung, solange dieser Signaturschlüssel nicht anderweitig verwendet wird (siehe dazu auch die Handlungs-Empfehlungen unten). Die Vertrauenswürdigkeit der Software wird an dieser Stelle nicht betrachtet. Eine Bewertung, ob die Software (nur) die beschriebene Funktion bereitstellt, die zugewiesenen Berechtigungen nicht missbraucht, unerwünscht Informationen abfließen lässt oder auf andere Weise das IT-System des Anwenders kompromittiert, muss unabhängig erfolgen. Das IT-Grundschutz-Kompendium behandelt diese Aspekte unter anderem in den Anforderungen APP.1.4.A5 Minimierung und Kontrolle von AppBerechtigungen sowie APP.1.4.A8 Verhinderung von Datenabfluss ."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 273.36,
+            "t": 43.889999999999986,
+            "r": 321.42,
+            "b": 36.064064516129065,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 1 von 4",
+      "text": "Seite 1 von 4"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 417.84,
+            "t": 803.97,
+            "r": 540.15,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "BSI IT-Grundschutz Hilfsmittel",
+      "text": "BSI IT-Grundschutz Hilfsmittel"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.606880000000274,
+            "t": 617.8967999999999,
+            "r": 231.11616000000026,
+            "b": 608.2969858064514,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Exkurs: Digitale Zertifikate und PKI",
+      "text": "Exkurs: Digitale Zertifikate und PKI",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.606880000000274,
+            "t": 598.6982399999998,
+            "r": 526.772879999999,
+            "b": 549.6518494117645,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            374
+          ]
+        }
+      ],
+      "orig": "Das Prinzip einer PKI basiert auf asymmetrischer Kryptographie. Bei asymmetrischer Kryptographie besitzt jeder Teilnehmer ein Schlüsselpaar aus einem öffentlichen und einem privaten Schlüssel. Mit dem öffentlichen Schlüssel können Daten verschlüsselt und Signaturen geprüft werden und nur mit dem privaten Schlüssel können Daten entschlüsselt und Signaturen erstellt werden.",
+      "text": "Das Prinzip einer PKI basiert auf asymmetrischer Kryptographie. Bei asymmetrischer Kryptographie besitzt jeder Teilnehmer ein Schlüsselpaar aus einem öffentlichen und einem privaten Schlüssel. Mit dem öffentlichen Schlüssel können Daten verschlüsselt und Signaturen geprüft werden und nur mit dem privaten Schlüssel können Daten entschlüsselt und Signaturen erstellt werden."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.6068800000002,
+            "t": 539.8881599999997,
+            "r": 536.5874399999987,
+            "b": 490.84176941176435,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            319
+          ]
+        }
+      ],
+      "orig": "Wenn zwei Kommunikationspartner einander sicher Nachrichten übermitteln möchten, tauschen sie ihre öffentlichen Schlüssel aus und erhalten damit die Möglichkeit, Nachrichten so zu verschlüsseln, dass sie nur der jeweils andere entschlüsseln kann. Zusätzlich können sie auch die digitale Signatur des Anderen überprüfen.",
+      "text": "Wenn zwei Kommunikationspartner einander sicher Nachrichten übermitteln möchten, tauschen sie ihre öffentlichen Schlüssel aus und erhalten damit die Möglichkeit, Nachrichten so zu verschlüsseln, dass sie nur der jeweils andere entschlüsseln kann. Zusätzlich können sie auch die digitale Signatur des Anderen überprüfen."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.6068800000002,
+            "t": 481.07807999999966,
+            "r": 499.98984000000036,
+            "b": 445.23552941176433,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            191
+          ]
+        }
+      ],
+      "orig": "Um Kommunikation zu vereinfachen und auch dann zu ermöglichen, wenn die Kommunikationspartner sich vorher nicht persönlich kennen, werden so genannte Public Key Infrastructures (PKI) genutzt.",
+      "text": "Um Kommunikation zu vereinfachen und auch dann zu ermöglichen, wenn die Kommunikationspartner sich vorher nicht persönlich kennen, werden so genannte Public Key Infrastructures (PKI) genutzt."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.56272000000034,
+            "t": 435.47183999999964,
+            "r": 539.5461599999985,
+            "b": 241.1832094117642,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1429
+          ]
+        }
+      ],
+      "orig": "Bei einer Public Key Infrastructure wird ein Schlüsselpaar bei einer für alle Teilnehmer vertrauenswürdigen Stelle, einer so genannten Certificate Authority (Zertifikats-Autorität, CA) erstellt. Dieses Schlüsselpaar bzw. ein damit erzeugtes (selbstsigniertes) Wurzelzertifikat kann als Vertrauensanker benutzt werden, welches auf einem sicheren Weg auf den Endgeräten verfügbar gemacht werden muss. Häufig erfolgt die Verteilung der Wurzelzertifikate über die Anbieter der Betriebssysteme. Darüber hinaus veröffentlichen die Zertifikatsaussteller oft auf ihren Webseiten ihre Wurzelzertifikate oder deren Hashwerte. Die CA beglaubigt öffentliche Schlüssel von Teilnehmer durch das Ausstellen von digitalen Zertifikaten. Ein digitales Zertifikat beinhaltet den öffentlichen Schlüssel eines Schlüsselpaares und zudem weitere Angaben, wie z.B. wer das Zertifikat ausgestellt hat, für wen es ausgestellt wurde (= der Besitzer des passenden privaten Schlüssels) und den Gültigkeitszeitraum. Die ausgestellten Zertifikate werden zudem für Certificate Transparency Server verfügbar gemacht. Bei der Prüfung von Signaturen kann daher immer auch die Besitzer-ID des Zertifikats dargestellt werden. So kann beispielsweise bei einer signierten ausführbaren Datei überprüft werden, ob diese von einem bestimmten Entwickler/Unternehmen erstellt worden ist. Durch die Vertrauenskette wird dann auch transitiv dem Entwicklerzertifikat vertraut.",
+      "text": "Bei einer Public Key Infrastructure wird ein Schlüsselpaar bei einer für alle Teilnehmer vertrauenswürdigen Stelle, einer so genannten Certificate Authority (Zertifikats-Autorität, CA) erstellt. Dieses Schlüsselpaar bzw. ein damit erzeugtes (selbstsigniertes) Wurzelzertifikat kann als Vertrauensanker benutzt werden, welches auf einem sicheren Weg auf den Endgeräten verfügbar gemacht werden muss. Häufig erfolgt die Verteilung der Wurzelzertifikate über die Anbieter der Betriebssysteme. Darüber hinaus veröffentlichen die Zertifikatsaussteller oft auf ihren Webseiten ihre Wurzelzertifikate oder deren Hashwerte. Die CA beglaubigt öffentliche Schlüssel von Teilnehmer durch das Ausstellen von digitalen Zertifikaten. Ein digitales Zertifikat beinhaltet den öffentlichen Schlüssel eines Schlüsselpaares und zudem weitere Angaben, wie z.B. wer das Zertifikat ausgestellt hat, für wen es ausgestellt wurde (= der Besitzer des passenden privaten Schlüssels) und den Gültigkeitszeitraum. Die ausgestellten Zertifikate werden zudem für Certificate Transparency Server verfügbar gemacht. Bei der Prüfung von Signaturen kann daher immer auch die Besitzer-ID des Zertifikats dargestellt werden. So kann beispielsweise bei einer signierten ausführbaren Datei überprüft werden, ob diese von einem bestimmten Entwickler/Unternehmen erstellt worden ist. Durch die Vertrauenskette wird dann auch transitiv dem Entwicklerzertifikat vertraut."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.56272000000034,
+            "t": 231.41951999999947,
+            "r": 533.4322079999988,
+            "b": 182.37312941176424,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            322
+          ]
+        }
+      ],
+      "orig": "Daneben werden auch selbstsignierte Zertifikate direkt verwendet. Um den Aussteller/Besitzer des Zertifikats zu prüfen, müssen diese wie Wurzelzertifikate behandelt werden. Das heißt, sie müssen auf einem sicheren Weg auf den Endgeräten verfügbar gemacht werden oder die entsprechenden Informationen veröffentlicht werden.",
+      "text": "Daneben werden auch selbstsignierte Zertifikate direkt verwendet. Um den Aussteller/Besitzer des Zertifikats zu prüfen, müssen diese wie Wurzelzertifikate behandelt werden. Das heißt, sie müssen auf einem sicheren Weg auf den Endgeräten verfügbar gemacht werden oder die entsprechenden Informationen veröffentlicht werden."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.562720000000354,
+            "t": 172.6094399999995,
+            "r": 528.8649600000003,
+            "b": 163.1745694117642,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            109
+          ]
+        }
+      ],
+      "orig": "-------------------------------------------------------------------------------------------------------------",
+      "text": "-------------------------------------------------------------------------------------------------------------"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.56272000000041,
+            "t": 153.5376,
+            "r": 536.26464,
+            "b": 78.08736941176471,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            514
+          ]
+        }
+      ],
+      "orig": "Im IT-Grundschutz-Kompendium (vgl. Download-Seite) wird in Baustein APP.6 Allgemeine Software die sichere Beschaffung von Software gefordert (APP.6.A3). ' Die ausgewählte Software MUSS aus vertrauenswürdigen Quellen beschafft werden. Die vertrauenswürdige Quelle SOLLTE eine Möglichkeit bereitstellen, die Software auf Integrität zu überprüfen. ' Bei normalem Schutzbedarf bedeutet dies, dass ein Anwender, der Apps aus einer vertrauenswürdigen Quelle bezieht, nicht jede zu installierende App einzeln prüfen muss.",
+      "text": "Im IT-Grundschutz-Kompendium (vgl. Download-Seite) wird in Baustein APP.6 Allgemeine Software die sichere Beschaffung von Software gefordert (APP.6.A3). ' Die ausgewählte Software MUSS aus vertrauenswürdigen Quellen beschafft werden. Die vertrauenswürdige Quelle SOLLTE eine Möglichkeit bereitstellen, die Software auf Integrität zu überprüfen. ' Bei normalem Schutzbedarf bedeutet dies, dass ein Anwender, der Apps aus einer vertrauenswürdigen Quelle bezieht, nicht jede zu installierende App einzeln prüfen muss."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 273.363,
+            "t": 43.89300000000003,
+            "r": 321.423,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 2 von 4",
+      "text": "Seite 2 von 4"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 417.84,
+            "t": 803.97,
+            "r": 540.15,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "BSI IT-Grundschutz Hilfsmittel",
+      "text": "BSI IT-Grundschutz Hilfsmittel"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.617920000000055,
+            "t": 782.3376000000001,
+            "r": 528.4443359999993,
+            "b": 733.2912094117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            365
+          ]
+        }
+      ],
+      "orig": "Da aus Anwendersicht nicht der Entwickler, sondern der Play Store die Software-Quelle ist, verlagert sich die Betrachtung auch aus der Sichtweise des IT-Grundschutzes auf den Google Play Store. Nicht der Entwickler, sondern der Play Store muss gegenüber dem Anwender die Authentizität und Integrität der App sicherstellen. Um dies zu erfüllen, braucht ein App Store",
+      "text": "Da aus Anwendersicht nicht der Entwickler, sondern der Play Store die Software-Quelle ist, verlagert sich die Betrachtung auch aus der Sichtweise des IT-Grundschutzes auf den Google Play Store. Nicht der Entwickler, sondern der Play Store muss gegenüber dem Anwender die Authentizität und Integrität der App sicherstellen. Um dies zu erfüllen, braucht ein App Store"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 106.17648000000003,
+            "t": 723.52752,
+            "r": 321.92016,
+            "b": 714.0926494117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "· eine Prüfung der Identität der Entwickler,",
+      "text": "eine Prüfung der Identität der Entwickler,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 106.17648000000003,
+            "t": 710.32368,
+            "r": 445.27008,
+            "b": 700.8888094117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "· klare, öffentliche Anforderungen an Software-Qualität und Prozesse",
+      "text": "klare, öffentliche Anforderungen an Software-Qualität und Prozesse",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 106.16544000000005,
+            "t": 697.11984,
+            "r": 292.62,
+            "b": 687.6849694117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "· und muss deren Einhaltung prüfen.",
+      "text": "und muss deren Einhaltung prüfen.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.573759999999936,
+            "t": 677.9212799999999,
+            "r": 538.4807999999999,
+            "b": 417.64512941176446,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1802
+          ]
+        }
+      ],
+      "orig": "Um sich beim Google Play Store als Entwickler anzumelden, wird ein gewöhnliches Google-Konto benötigt, welches mit einem beliebigen zweiten Faktor geschützt ist. Die für Entwickler geltenden Richtlinien werden von Google veröffentlicht und sind Bestandteil der Nutzungsbedingungen des Play Stores für Entwickler (vgl. Play Policy). Art und Umfang der Prüfung auf Einhaltung der Nutzungsbedingungen veröffentlicht Google nicht. Demnach kann Google nicht vollständig sicherstellen, dass alle Entwickler sich an die Nutzungsbestimmungen halten, was sich auch daran zeigt, das immer wieder öffentlich wird, dass Entwickler dagegen verstoßen haben. Bei dem Bekanntwerden von Verstößen gegen die Nutzungsbestimmungen ist Google in der Vergangenheit regelmäßig dagegen vorgegangen und hat Entwickler/Hersteller selbst von populären Apps gesperrt. Insbesondere hat Google es dadurch erreicht, den Anteil von Schadprogrammen im Play Store gering zu halten, die Softwarequalität zu verbessern und damit das diesbezügliche Vertrauen in die Software zu erhöhen. Mit den genannten Maßnahmen (kontrollierte Entwicklerbeziehung, Google Play App Signing) kann der Play Store für den normalen Schutzbedarf als vertrauenswürdiger SoftwareLieferant sowie zusätzlich über die vertrauensvolle Beziehung zu den Entwicklern als vertrauenswürdige Quelle für die App-Installation angesehen werden. Auf Anwenderseite muss beachtet werden, dass das Gerät selbst und das darauf installierte Betriebssystem Android aus einer sicheren Quelle stammen. Damit ist sichergestellt, dass die integrierten Google Play Dienste auch die Originalen sind. Ergänzend muss der Anwender bei der App-Auswahl anhand der im Play Store vorhandenen Information beachten/prüfen, dass diese seinen Anforderungen an Funktionalität und Datenschutz genügt.",
+      "text": "Um sich beim Google Play Store als Entwickler anzumelden, wird ein gewöhnliches Google-Konto benötigt, welches mit einem beliebigen zweiten Faktor geschützt ist. Die für Entwickler geltenden Richtlinien werden von Google veröffentlicht und sind Bestandteil der Nutzungsbedingungen des Play Stores für Entwickler (vgl. Play Policy). Art und Umfang der Prüfung auf Einhaltung der Nutzungsbedingungen veröffentlicht Google nicht. Demnach kann Google nicht vollständig sicherstellen, dass alle Entwickler sich an die Nutzungsbestimmungen halten, was sich auch daran zeigt, das immer wieder öffentlich wird, dass Entwickler dagegen verstoßen haben. Bei dem Bekanntwerden von Verstößen gegen die Nutzungsbestimmungen ist Google in der Vergangenheit regelmäßig dagegen vorgegangen und hat Entwickler/Hersteller selbst von populären Apps gesperrt. Insbesondere hat Google es dadurch erreicht, den Anteil von Schadprogrammen im Play Store gering zu halten, die Softwarequalität zu verbessern und damit das diesbezügliche Vertrauen in die Software zu erhöhen. Mit den genannten Maßnahmen (kontrollierte Entwicklerbeziehung, Google Play App Signing) kann der Play Store für den normalen Schutzbedarf als vertrauenswürdiger SoftwareLieferant sowie zusätzlich über die vertrauensvolle Beziehung zu den Entwicklern als vertrauenswürdige Quelle für die App-Installation angesehen werden. Auf Anwenderseite muss beachtet werden, dass das Gerät selbst und das darauf installierte Betriebssystem Android aus einer sicheren Quelle stammen. Damit ist sichergestellt, dass die integrierten Google Play Dienste auch die Originalen sind. Ergänzend muss der Anwender bei der App-Auswahl anhand der im Play Store vorhandenen Information beachten/prüfen, dass diese seinen Anforderungen an Funktionalität und Datenschutz genügt."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.615040000000306,
+            "t": 407.88143999999977,
+            "r": 529.8435360000008,
+            "b": 358.83504941176443,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            299
+          ]
+        }
+      ],
+      "orig": "Bei erhöhtem Schutzbedarf muss zusätzlich das Risiko betrachtet werden, dass Apps auf dem Weg vom Entwickler zum Endgerät verändert werden. Nutzer beziehungsweise Unternehmen müssen die Integrität und Authentizität prüfen sowie die Verfügbarkeit sicherstellen. Dazu ist eine Risikoanalyse notwendig.",
+      "text": "Bei erhöhtem Schutzbedarf muss zusätzlich das Risiko betrachtet werden, dass Apps auf dem Weg vom Entwickler zum Endgerät verändert werden. Nutzer beziehungsweise Unternehmen müssen die Integrität und Authentizität prüfen sowie die Verfügbarkeit sicherstellen. Dazu ist eine Risikoanalyse notwendig."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.61504000000028,
+            "t": 349.07135999999974,
+            "r": 534.913104,
+            "b": 273.6912094117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            562
+          ]
+        }
+      ],
+      "orig": "Für die Integritätsprüfung stellt Google mit dem AAB-Format ein neues Prüfverfahren bereit. Bei dem sogenannten Code Transparency -Mechanismus (vgl. Dev-Guide) wird dem Installationspaket eine zusätzliche Datei mit Hashwerten über bestimmte Programmbestandteile (sogenannte DEX-Files) sowie Bibliotheken beigelegt. Dies bietet die Möglichkeit, die Integrität dieser App-Bestandteile zu prüfen, wobei diese Art der Absicherung wieder der klassischen Verwendung von Signaturen entspricht. Voraussetzung ist hierbei die Veröffentlichung des öffentlichen Schlüssels.",
+      "text": "Für die Integritätsprüfung stellt Google mit dem AAB-Format ein neues Prüfverfahren bereit. Bei dem sogenannten Code Transparency -Mechanismus (vgl. Dev-Guide) wird dem Installationspaket eine zusätzliche Datei mit Hashwerten über bestimmte Programmbestandteile (sogenannte DEX-Files) sowie Bibliotheken beigelegt. Dies bietet die Möglichkeit, die Integrität dieser App-Bestandteile zu prüfen, wobei diese Art der Absicherung wieder der klassischen Verwendung von Signaturen entspricht. Voraussetzung ist hierbei die Veröffentlichung des öffentlichen Schlüssels."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 256.02,
+            "r": 291.324,
+            "b": 240.36812903225803,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "2. Handlungsempfehlungen",
+      "text": "2. Handlungsempfehlungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 223.05239999999992,
+            "r": 303.52524,
+            "b": 209.1744077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "2.1. Grundsätzliche Empfehlungen",
+      "text": "2.1. Grundsätzliche Empfehlungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 193.13760000000002,
+            "r": 527.0212799999999,
+            "b": 170.4988894117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            193
+          ]
+        }
+      ],
+      "orig": "Private Signaturschlüssel, die möglicherweise auch zu weiteren Zwecken verwendet werden, sollten nicht an Dritte weitergegeben, sondern geheim gehalten und eigenverantwortlich verwaltet werden.",
+      "text": "Private Signaturschlüssel, die möglicherweise auch zu weiteren Zwecken verwendet werden, sollten nicht an Dritte weitergegeben, sondern geheim gehalten und eigenverantwortlich verwaltet werden."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 160.73520000000008,
+            "r": 444.2212799999999,
+            "b": 151.30032941176478,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": "Sicherungskopien von Schlüsselmaterial sollte erzeugt und sicher gelagert werden.",
+      "text": "Sicherungskopien von Schlüsselmaterial sollte erzeugt und sicher gelagert werden."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 141.53664000000003,
+            "r": 538.2920159999984,
+            "b": 118.89792941176472,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            188
+          ]
+        }
+      ],
+      "orig": "Schlüsselmaterial sollte nur gewechselt werden, wenn dafür eine Notwendigkeit besteht. Beispiele sind Kompromittierung des Schlüsselmaterials oder eine entsprechende Unternehmensstrategie.",
+      "text": "Schlüsselmaterial sollte nur gewechselt werden, wenn dafür eine Notwendigkeit besteht. Beispiele sind Kompromittierung des Schlüsselmaterials oder eine entsprechende Unternehmensstrategie."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 109.13424000000009,
+            "r": 506.0231999999994,
+            "b": 86.49552941176478,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            141
+          ]
+        }
+      ],
+      "orig": "Die öffentlichen Teile von Schlüsselmaterial sollten für die Überprüfung der Signatur auf einem vertrauenswürdigen Weg bereitgestellt werden.",
+      "text": "Die öffentlichen Teile von Schlüsselmaterial sollten für die Überprüfung der Signatur auf einem vertrauenswürdigen Weg bereitgestellt werden."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 273.363,
+            "t": 43.89300000000003,
+            "r": 321.423,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 3 von 4",
+      "text": "Seite 3 von 4"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 417.84,
+            "t": 803.97,
+            "r": 540.15,
+            "b": 796.2785294117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "BSI IT-Grundschutz Hilfsmittel",
+      "text": "BSI IT-Grundschutz Hilfsmittel"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 781.0523999999999,
+            "r": 416.68163999999996,
+            "b": 767.1744077419354,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "2.2. Empfehlungen für den normalen Schutzbedarf",
+      "text": "2.2. Empfehlungen für den normalen Schutzbedarf",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 750.3276,
+            "r": 130.23767999999998,
+            "b": 738.1191406451612,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "2.2.1 Nutzer",
+      "text": "2.2.1 Nutzer",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.61792000000014,
+            "t": 728.3376000000001,
+            "r": 540.2030400000001,
+            "b": 626.4758494117647,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            765
+          ]
+        }
+      ],
+      "orig": "Durch die Vertrauensstellung des Play Stores und damit dem transitiven Vertrauen in den Entwickler kann trotz fehlender Überprüfungsmöglichkeit beim Installationsprozess eine Einzelprüfung der AppIntegrität bei der Installation unterbleiben. Die für die Nutzung des Play Stores benötigten PlayDienste sind in der Regel in den ausgelieferten Geräten enthalten. Bisher ist noch kein Fall von veränderten Play-Diensten öffentlich geworden, weshalb bei neuen Geräten für normalen Schutzbedarf davon ausgegangen werden kann, dass die Geräte auf dem Lieferweg nicht verändert worden sind. Dennoch ist immer auch ein Grundvertrauen in den Produkthersteller, App-Entwickler und Betreiber des App-Shops erforderlich, dass die Geräte keine unerwünschten Funktionen enthalten.",
+      "text": "Durch die Vertrauensstellung des Play Stores und damit dem transitiven Vertrauen in den Entwickler kann trotz fehlender Überprüfungsmöglichkeit beim Installationsprozess eine Einzelprüfung der AppIntegrität bei der Installation unterbleiben. Die für die Nutzung des Play Stores benötigten PlayDienste sind in der Regel in den ausgelieferten Geräten enthalten. Bisher ist noch kein Fall von veränderten Play-Diensten öffentlich geworden, weshalb bei neuen Geräten für normalen Schutzbedarf davon ausgegangen werden kann, dass die Geräte auf dem Lieferweg nicht verändert worden sind. Dennoch ist immer auch ein Grundvertrauen in den Produkthersteller, App-Entwickler und Betreiber des App-Shops erforderlich, dass die Geräte keine unerwünschten Funktionen enthalten."
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.6068800000001,
+            "t": 616.7121599999999,
+            "r": 496.9096799999989,
+            "b": 594.0734494117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            153
+          ]
+        }
+      ],
+      "orig": "Bei nicht-vertrauenswürdigen Quellen müssen weitere Maßnahmen ergriffen werden, um die Integrität der App und die Authentizität der Quelle zu überprüfen.",
+      "text": "Bei nicht-vertrauenswürdigen Quellen müssen weitere Maßnahmen ergriffen werden, um die Integrität der App und die Authentizität der Quelle zu überprüfen."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 583.5276,
+            "r": 155.67816,
+            "b": 571.3191406451613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "2.2.2 Entwickler",
+      "text": "2.2.2 Entwickler",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.628960000000006,
+            "t": 561.5376,
+            "r": 531.5675519999988,
+            "b": 486.0835294117646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            485
+          ]
+        }
+      ],
+      "orig": "Neben der Beachtung der grundsätzlichen Empfehlungen zum Umgang mit Schlüsselmaterial sollten Entwickler für das Google Play App Signing exklusiv einen Signaturschlüssel erzeugen. Dieses Schlüsselmaterial wird dann an Google übergeben und sollte anderweitig nicht mehr verwendet werden. Aus dem zugehörigen öffentlichen Zertifikat sollte zudem erkennbar sein, dass das Zertifikat nicht vom Entwickler, sondern von Google verwendet wird (z. B. durch Angabe von Google als Organisation).",
+      "text": "Neben der Beachtung der grundsätzlichen Empfehlungen zum Umgang mit Schlüsselmaterial sollten Entwickler für das Google Play App Signing exklusiv einen Signaturschlüssel erzeugen. Dieses Schlüsselmaterial wird dann an Google übergeben und sollte anderweitig nicht mehr verwendet werden. Aus dem zugehörigen öffentlichen Zertifikat sollte zudem erkennbar sein, dass das Zertifikat nicht vom Entwickler, sondern von Google verwendet wird (z. B. durch Angabe von Google als Organisation)."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 469.05240000000003,
+            "r": 412.61184000000003,
+            "b": 455.1744077419355,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "2.3. Empfehlungen für den erhöhten Schutzbedarf",
+      "text": "2.3. Empfehlungen für den erhöhten Schutzbedarf",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 438.32759999999996,
+            "r": 175.10952,
+            "b": 426.1191406451613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "2.3.1 Unternehmen",
+      "text": "2.3.1 Unternehmen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.628960000000006,
+            "t": 416.3376,
+            "r": 539.4225119999985,
+            "b": 340.88352941176464,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            534
+          ]
+        }
+      ],
+      "orig": "Unternehmen müssen die Integrität, Authentizität sowie Verfügbarkeit von Apps selbst sicherstellen. Dazu müssen sie durch eine Risikoanalyse abwägen, ob Apps, die sensible/kritische Geschäftsprozesse verarbeiten, über einen fremdkontrollierten App Store verteilt werden können und wer als AppEntwickler/-Herausgeber über das erforderliche Vertrauen im Sinne des Unternehmens verfügt. Ist das Risiko einer Bereitstellung durch den Play Store nicht tragbar, muss ein sicherer alternativer Weg zur Bereitstellung von Apps genutzt werden.",
+      "text": "Unternehmen müssen die Integrität, Authentizität sowie Verfügbarkeit von Apps selbst sicherstellen. Dazu müssen sie durch eine Risikoanalyse abwägen, ob Apps, die sensible/kritische Geschäftsprozesse verarbeiten, über einen fremdkontrollierten App Store verteilt werden können und wer als AppEntwickler/-Herausgeber über das erforderliche Vertrauen im Sinne des Unternehmens verfügt. Ist das Risiko einer Bereitstellung durch den Play Store nicht tragbar, muss ein sicherer alternativer Weg zur Bereitstellung von Apps genutzt werden."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 330.32759999999996,
+            "r": 155.67816,
+            "b": 318.11914064516134,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "2.3.2 Entwickler",
+      "text": "2.3.2 Entwickler",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 308.33759999999995,
+            "r": 502.78516800000057,
+            "b": 285.69888941176475,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            182
+          ]
+        }
+      ],
+      "orig": "Um die Anforderung APP.6.A3 des IT-Grundschutz-Bausteins durch den Anwender vollständig erfüllbar zu machen, sollten Entwickler die Prüfbarkeit der Integrität ihrer Apps ermöglichen.",
+      "text": "Um die Anforderung APP.6.A3 des IT-Grundschutz-Bausteins durch den Anwender vollständig erfüllbar zu machen, sollten Entwickler die Prüfbarkeit der Integrität ihrer Apps ermöglichen."
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 268.02,
+            "r": 363.576,
+            "b": 252.36812903225803,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "3. Anwendung auf andere App-Stores",
+      "text": "3. Anwendung auf andere App-Stores",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 236.33759999999995,
+            "r": 526.0574879999984,
+            "b": 200.49504941176474,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            203
+          ]
+        }
+      ],
+      "orig": "Diese Empfehlungen sind nicht ausschließlich an den Google Play Store gebunden, sondern gelten auch für andere App-Stores sowie grundsätzlich auch für andere Ökosysteme mit deren integrierten App-Stores.",
+      "text": "Diese Empfehlungen sind nicht ausschließlich an den Google Play Store gebunden, sondern gelten auch für andere App-Stores sowie grundsätzlich auch für andere Ökosysteme mit deren integrierten App-Stores."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 273.363,
+            "t": 43.89300000000003,
+            "r": 321.423,
+            "b": 36.067064516128994,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 4 von 4",
+      "text": "Seite 4 von 4"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 28.89549536440553,
+            "t": 785.8266171228404,
+            "r": 157.29258661863184,
+            "b": 723.017571409683,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.96,
+        "height": 841.92
+      },
+      "page_no": 4
+    }
+  }
+}

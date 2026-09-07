@@ -1,0 +1,6318 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Personalsicherheit-und-Schulungen-in-KRITIS-und-NIS2-OpenKRITIS",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 2690716458448022272,
+    "filename": "Personalsicherheit-und-Schulungen-in-KRITIS-und-NIS2-OpenKRITIS.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/tables/2"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/texts/69"
+      },
+      {
+        "$ref": "#/texts/70"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/groups/7"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/groups/8"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/groups/9"
+      },
+      {
+        "$ref": "#/texts/99"
+      },
+      {
+        "$ref": "#/texts/100"
+      },
+      {
+        "$ref": "#/texts/101"
+      },
+      {
+        "$ref": "#/texts/102"
+      },
+      {
+        "$ref": "#/texts/103"
+      },
+      {
+        "$ref": "#/texts/104"
+      },
+      {
+        "$ref": "#/texts/105"
+      },
+      {
+        "$ref": "#/texts/106"
+      },
+      {
+        "$ref": "#/texts/107"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        },
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/87"
+        },
+        {
+          "$ref": "#/texts/88"
+        },
+        {
+          "$ref": "#/texts/89"
+        },
+        {
+          "$ref": "#/texts/90"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/92"
+        },
+        {
+          "$ref": "#/texts/93"
+        },
+        {
+          "$ref": "#/texts/94"
+        },
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        },
+        {
+          "$ref": "#/texts/98"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:19",
+      "text": "10.08.26, 17:19"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 344.9531106269531,
+            "t": 577.7496212324044,
+            "r": 577.2253604738197,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS",
+      "text": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 138.3960246421712,
+            "r": 115.15931112836819,
+            "b": 133.79973003723484,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 126.67292925863353,
+            "r": 81.01274292136625,
+            "b": 122.07663465369717,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "NIS2",
+      "text": "NIS2",
+      "hyperlink": "https://www.openkritis.de/it-sicherheitsgesetz/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 114.9498338750958,
+            "r": 89.1028999178277,
+            "b": 110.3535392701595,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Europa",
+      "text": "Europa",
+      "hyperlink": "https://www.openkritis.de/eu/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 103.22673849155814,
+            "r": 97.77819411878673,
+            "b": 98.63044388662183,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Betreiber",
+      "text": "Betreiber",
+      "hyperlink": "https://www.openkritis.de/betreiber/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 91.50364310802047,
+            "r": 93.73820370446569,
+            "b": 86.90734850308417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Security",
+      "text": "Security",
+      "hyperlink": "https://www.openkritis.de/massnahmen/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 79.78054772448274,
+            "r": 87.95806639730475,
+            "b": 75.1842531195465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "School",
+      "text": "School",
+      "hyperlink": "https://www.openkritis.de/school/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 51.80081620363205,
+            "r": 259.97312041675974,
+            "b": 42.41148517885415,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Personal und Schulungen",
+      "text": "Personal und Schulungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 303.9299036994287,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "text": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "1/7",
+      "text": "1/7"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:19",
+      "text": "10.08.26, 17:19"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 344.9531106269531,
+            "t": 577.7496212324044,
+            "r": 577.2253604738197,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS",
+      "text": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 564.9864618755688,
+            "r": 207.19883906361207,
+            "b": 560.3901672706324,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Cybersecurity in KRITIS und NIS2",
+      "text": "Cybersecurity in KRITIS und NIS2",
+      "hyperlink": "https://www.openkritis.de/massnahmen/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 553.2633664920312,
+            "r": 83.33802701870374,
+            "b": 548.6670718870948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "ISMS",
+      "text": "ISMS",
+      "hyperlink": "https://www.openkritis.de/massnahmen/information_security_management-isms-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 541.5402711084935,
+            "r": 87.97333090954704,
+            "b": 536.9439765035571,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "BCMS",
+      "text": "BCMS",
+      "hyperlink": "https://www.openkritis.de/massnahmen/business_continuity_management-bcms-kritis.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 529.8171757249559,
+            "r": 139.4653992782494,
+            "b": 525.2208811200195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Risikomanagement",
+      "text": "Risikomanagement",
+      "hyperlink": "https://www.openkritis.de/massnahmen/kritis_risiko_management_assets.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 518.0940803414181,
+            "r": 91.42309587915284,
+            "b": 513.4977857364818,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Leitung",
+      "text": "Leitung",
+      "hyperlink": "https://www.openkritis.de/massnahmen/kritis_organisation_management.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 506.3709849578804,
+            "r": 94.89830173723092,
+            "b": 501.77469035294416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Personal",
+      "text": "Personal",
+      "hyperlink": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 494.6478895743428,
+            "r": 116.03956095101807,
+            "b": 490.05159496940644,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Supply Chain",
+      "text": "Supply Chain",
+      "hyperlink": "https://www.openkritis.de/massnahmen/lieferanten_supply-chain_sicherheit-kritis-nis2.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 482.9247941908051,
+            "r": 92.384756073385,
+            "b": 478.3284995858688,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Vorfälle",
+      "text": "Vorfälle",
+      "hyperlink": "https://www.openkritis.de/massnahmen/vorfallsmanagement.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 471.20169880726746,
+            "r": 138.1170396920014,
+            "b": 466.6054042023311,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Angriffserkennung",
+      "text": "Angriffserkennung",
+      "hyperlink": "https://www.openkritis.de/massnahmen/orientierungshilfe_angriffserkennung_oh_sza.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 459.47860342372974,
+            "r": 113.60742569783142,
+            "b": 454.8823088187934,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "IT-Sicherheit",
+      "text": "IT-Sicherheit",
+      "hyperlink": "https://www.openkritis.de/massnahmen/it-sicherheit.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 447.7555080401921,
+            "r": 100.10856635213653,
+            "b": 443.15921343525577,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Standards",
+      "text": "Standards",
+      "hyperlink": "https://www.openkritis.de/massnahmen/kritis-security-standards.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 303.9299036994287,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "text": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "2/7",
+      "text": "2/7"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:19",
+      "text": "10.08.26, 17:19"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 344.9531106269531,
+            "t": 577.7496212324044,
+            "r": 577.2253604738197,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS",
+      "text": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 303.9299036994287,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "text": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "3/7",
+      "text": "3/7"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:19",
+      "text": "10.08.26, 17:19"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 344.9531106269531,
+            "t": 577.7496212324044,
+            "r": 577.2253604738197,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS",
+      "text": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.9863616515731,
+            "r": 805.9009873893223,
+            "b": 548.6669716630988,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            345
+          ]
+        }
+      ],
+      "orig": "Betreiber (KRITIS) und Einrichtungen (NIS2) müssen in ihrem Geltungsbereich der regulierten Dienstleistungen Personalprozesse im Sinne der Informations­ sicherheit schützen und das Personal durch Schulungen und Awareness fortbilden. Diese Vorgaben werden üblicherweise durch das ISMS definiert und gesteuert - die Umsetzung dann in HR-Prozessen.",
+      "text": "Betreiber (KRITIS) und Einrichtungen (NIS2) müssen in ihrem Geltungsbereich der regulierten Dienstleistungen Personalprozesse im Sinne der Informations­ sicherheit schützen und das Personal durch Schulungen und Awareness fortbilden. Diese Vorgaben werden üblicherweise durch das ISMS definiert und gesteuert - die Umsetzung dann in HR-Prozessen."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 531.1196416546866,
+            "r": 135.40505631987904,
+            "b": 526.5233470497499,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit",
+      "text": "Personalsicherheit",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 519.3965462711487,
+            "r": 173.2456207675414,
+            "b": 514.8002516662123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Schulungen und Awareness",
+      "text": "Schulungen und Awareness",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 507.6734508876111,
+            "r": 138.87517404194477,
+            "b": 503.07715628267465,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Geschäftsleitungen",
+      "text": "Geschäftsleitungen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 485.5298262742622,
+            "r": 791.1148228721889,
+            "b": 457.48734090225025,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            376
+          ]
+        }
+      ],
+      "orig": "NIS2 und das KRITIS-Dachgesetz vertiefen die Vorgaben für Schulungen und Awareness (Cyberhygiene) bei regulierten Einrichtungen und Betreibern seit 2026. Die folgende Ausarbeitung führt die Kernkomponenten der Personalsicherheit anhand der neuen Anforderungen von NIS2 für Einrichtungen und KRITIS-Dachgesetz für Betreiber sowie der alten KRITIS-Anforderungen von RUN-KdA aus.",
+      "text": "NIS2 und das KRITIS-Dachgesetz vertiefen die Vorgaben für Schulungen und Awareness (Cyberhygiene) bei regulierten Einrichtungen und Betreibern seit 2026. Die folgende Ausarbeitung führt die Kernkomponenten der Personalsicherheit anhand der neuen Anforderungen von NIS2 für Einrichtungen und KRITIS-Dachgesetz für Betreiber sowie der alten KRITIS-Anforderungen von RUN-KdA aus."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 343.310972552375,
+            "r": 156.2435707114954,
+            "b": 336.2689742837915,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit",
+      "text": "Personalsicherheit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 312.97753912958206,
+            "r": 122.102406758027,
+            "b": 307.4877149394488,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Prozesse und HR",
+      "text": "Prozesse und HR",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 286.888487830985,
+            "r": 798.6758127855206,
+            "b": 270.5690978425107,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            223
+          ]
+        }
+      ],
+      "orig": "Informationssicherheit und Sicherheitsanforderungen für KRITIS müssen in den Personal- und HR-Prozessen ab der Einstellung berücksichtigt und kontinuierlich durch entsprechende Trainings-Maßnahmen vom ISMS begleitet werden.",
+      "text": "Informationssicherheit und Sicherheitsanforderungen für KRITIS müssen in den Personal- und HR-Prozessen ab der Einstellung berücksichtigt und kontinuierlich durch entsprechende Trainings-Maßnahmen vom ISMS begleitet werden."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 117.05116113086751,
+            "r": 70.9636488188161,
+            "b": 112.35649561847822,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Prozesse",
+      "text": "Prozesse",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 91.50356477202376,
+            "r": 770.894522007925,
+            "b": 86.90727016708706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            169
+          ]
+        }
+      ],
+      "orig": "In mindestens den folgenden Personalprozessen von von Betreibern (KRITIS) und Einrichtungen (NIS2) sollten die Anforderungen an Personalsicherheit berücksichtigt werden:",
+      "text": "In mindestens den folgenden Personalprozessen von von Betreibern (KRITIS) und Einrichtungen (NIS2) sollten die Anforderungen an Personalsicherheit berücksichtigt werden:"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 69.5074965198537,
+            "r": 447.42562011543896,
+            "b": 64.76364555373812,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "Einstellung : Dokumentierte Vorgaben für Informationssicherheit in Einstellungsdokumenten",
+      "text": "Einstellung : Dokumentierte Vorgaben für Informationssicherheit in Einstellungsdokumenten",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 57.784401136315864,
+            "r": 686.2328071037164,
+            "b": 53.04055017020073,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            143
+          ]
+        }
+      ],
+      "orig": "Sicherheitsüberprüfung: Mögliche weitergehende Überprüfungen vor der Einstellung von Personal in sensiblen Sicherheits- oder Betriebsbereichen.",
+      "text": "Sicherheitsüberprüfung: Mögliche weitergehende Überprüfungen vor der Einstellung von Personal in sensiblen Sicherheits- oder Betriebsbereichen.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 44.763239355211226,
+            "r": 337.5474177259804,
+            "b": 40.93395144119995,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "* In der NIS2-Umsetzung nicht aufgeführt, teilweise in Sektorgesetzen (EnWG)",
+      "text": "In der NIS2-Umsetzung nicht aufgeführt, teilweise in Sektorgesetzen (EnWG)",
+      "enumerated": false,
+      "marker": "*"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 303.9299036994287,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "text": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "4/7",
+      "text": "4/7"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:19",
+      "text": "10.08.26, 17:19"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 344.9531106269531,
+            "t": 577.7496212324044,
+            "r": 577.2253604738197,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS",
+      "text": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 422.35548570652645,
+            "r": 43.3807926884669,
+            "b": 417.7591911015902,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 398.2957400866567,
+            "r": 174.74163364180728,
+            "b": 392.8059158965234,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Schulungen und Awareness",
+      "text": "Schulungen und Awareness",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 372.2066887880601,
+            "r": 798.6758127855206,
+            "b": 355.88729879958555,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            223
+          ]
+        }
+      ],
+      "orig": "Informationssicherheit und Sicherheitsanforderungen für KRITIS müssen in den Personal- und HR-Prozessen ab der Einstellung berücksichtigt und kontinuierlich durch entsprechende Trainings-Maßnahmen vom ISMS begleitet werden.",
+      "text": "Informationssicherheit und Sicherheitsanforderungen für KRITIS müssen in den Personal- und HR-Prozessen ab der Einstellung berücksichtigt und kontinuierlich durch entsprechende Trainings-Maßnahmen vom ISMS begleitet werden."
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 210.1847590103007,
+            "r": 142.78796079544426,
+            "b": 205.49009349791186,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Schulungen für Personal",
+      "text": "Schulungen für Personal",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 183.98587957459404,
+            "r": 791.4659034755002,
+            "b": 167.6664895861195,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            201
+          ]
+        }
+      ],
+      "orig": "Das Personal muss regelmäßig in Informationssicherheit geschult und sensibilisiert werden. Schulungsprogramme sollten mit dem Onboarding beginnen und in festen Zyklen Wissen und Fähigkeiten vermitteln.",
+      "text": "Das Personal muss regelmäßig in Informationssicherheit geschult und sensibilisiert werden. Schulungsprogramme sollten mit dem Onboarding beginnen und in festen Zyklen Wissen und Fähigkeiten vermitteln."
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 147.01030055457022,
+            "r": 142.78796079544426,
+            "b": 142.31563504218093,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Schulungen für Personal",
+      "text": "Schulungen für Personal",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 121.46270419572647,
+            "r": 766.7222372828179,
+            "b": 116.86640959078977,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            167
+          ]
+        }
+      ],
+      "orig": "Awareness-Programme zur Sensibilisierung sollten regelmäßig in verschiedenen Formaten durchgeführt werden. Beides muss auch Dienstleister und weitere Externe umfassen.",
+      "text": "Awareness-Programme zur Sensibilisierung sollten regelmäßig in verschiedenen Formaten durchgeführt werden. Beides muss auch Dienstleister und weitere Externe umfassen."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 96.21022055924004,
+            "r": 161.50217251431292,
+            "b": 91.5155550468512,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "Geschäftsleitungsschulungen",
+      "text": "Geschäftsleitungsschulungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 70.01134112353338,
+            "r": 782.8007883080064,
+            "b": 53.691951135058844,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            278
+          ]
+        }
+      ],
+      "orig": "Mit NIS2 muss die Geschäftsleitung selbst verpflichtend Schulungen zu Cybersecurity und Risiko-Management absolvieren. Die Schulungen sind für Geschäftsleitungen nach § 38 Absatz 3 BSIG (NIS2) verpflichtend und müssen regelmäßig erfolgen. Es gibt dazu eine Handreichung des BSI.",
+      "text": "Mit NIS2 muss die Geschäftsleitung selbst verpflichtend Schulungen zu Cybersecurity und Risiko-Management absolvieren. Die Schulungen sind für Geschäftsleitungen nach § 38 Absatz 3 BSIG (NIS2) verpflichtend und müssen regelmäßig erfolgen. Es gibt dazu eine Handreichung des BSI."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 563.83596950318,
+            "r": 414.09211178904496,
+            "b": 560.0066815891687,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "† Im KRITIS-Dachgesetz Teil von §13 (3) Nr. 5, siehe auch Gesetzesbegründung KRITIS-Dachgesetz",
+      "text": "† Im KRITIS-Dachgesetz Teil von §13 (3) Nr. 5, siehe auch Gesetzesbegründung KRITIS-Dachgesetz",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 553.4109405172094,
+            "r": 439.4066971534068,
+            "b": 548.6670895510943,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "Beendigung : Verpflichtung für Informationssicherheit über das Beschäftigungsende hinaus",
+      "text": "Beendigung : Verpflichtung für Informationssicherheit über das Beschäftigungsende hinaus",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 541.6878451336715,
+            "r": 440.2258922225799,
+            "b": 536.9439941675564,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "Diszplinar : Dokumentierte Disziplinarverfahren für Verstöße gegen Informationssicherheit",
+      "text": "Diszplinar : Dokumentierte Disziplinarverfahren für Verstöße gegen Informationssicherheit",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 516.2878051360067,
+            "r": 79.84246882498695,
+            "b": 511.59313962361784,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Nachweise",
+      "text": "Nachweise",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 490.0889257003,
+            "r": 333.89375078699146,
+            "b": 485.4926310953633,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Nachweise für angemessene personelle Informationssicherheit sind u.a.:",
+      "text": "Nachweise für angemessene personelle Informationssicherheit sind u.a.:"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 467.9453010869511,
+            "r": 178.8171441986065,
+            "b": 463.3490064820144,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "1. Klauseln in Arbeitsverträgen",
+      "text": "Klauseln in Arbeitsverträgen",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 456.22220570341324,
+            "r": 150.4558010179567,
+            "b": 451.62591109847654,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "2. Laufzettel bei Austritt",
+      "text": "Laufzettel bei Austritt",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 444.4991103198754,
+            "r": 158.43401894399284,
+            "b": 439.90281571493915,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "3. Wirksame HR-Prozesse",
+      "text": "Wirksame HR-Prozesse",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 303.9299036994287,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "text": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "5/7",
+      "text": "5/7"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:19",
+      "text": "10.08.26, 17:19"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 344.9531106269531,
+            "t": 577.7496212324044,
+            "r": 577.2253604738197,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS",
+      "text": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 565.133817788756,
+            "r": 79.84246882498695,
+            "b": 560.4391522763676,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Nachweise",
+      "text": "Nachweise",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 539.5862214299123,
+            "r": 333.89375078699146,
+            "b": 534.989926824976,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Nachweise für angemessene personelle Informationssicherheit sind u.a.:",
+      "text": "Nachweise für angemessene personelle Informationssicherheit sind u.a.:"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 517.4425968165633,
+            "r": 156.7447537629691,
+            "b": 512.8463022116271,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "1. Auswertung Awareness",
+      "text": "Auswertung Awareness",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 505.71950143302547,
+            "r": 145.67294100039655,
+            "b": 501.1232068280892,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "2. Teilnahmeprotokolle",
+      "text": "Teilnahmeprotokolle",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 493.9964060494881,
+            "r": 145.840849853522,
+            "b": 489.40011144455184,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "3. Schulungsprogramm",
+      "text": "Schulungsprogramm",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 482.27331066595025,
+            "r": 160.42857326268117,
+            "b": 477.677016061014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "4. Teilnahmezertifikate GF",
+      "text": "Teilnahmezertifikate GF",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 460.1296860526013,
+            "r": 43.3807926884669,
+            "b": 455.53339144766505,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 435.41865735586816,
+            "r": 183.23221632965635,
+            "b": 429.9288331657349,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "Integration im Unternehmen",
+      "text": "Integration im Unternehmen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 409.3296060572716,
+            "r": 770.6706400114787,
+            "b": 404.73331145233533,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            169
+          ]
+        }
+      ],
+      "orig": "Die Personalsicherheit muss für eine nachhaltige Verbesserung der Informationssicherheit im Betrieb mit weiteren Management-Systemen beim KRITIS-Betreiber vernetzt sein.",
+      "text": "Die Personalsicherheit muss für eine nachhaltige Verbesserung der Informationssicherheit im Betrieb mit weiteren Management-Systemen beim KRITIS-Betreiber vernetzt sein."
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 387.1859814439226,
+            "r": 451.47070193521324,
+            "b": 382.5896868389864,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "Sicherheits-Management (ISMS): Austausch zu Vorgaben, Prozessen, Schulungen, Kontrollen",
+      "text": "Sicherheits-Management (ISMS): Austausch zu Vorgaben, Prozessen, Schulungen, Kontrollen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 375.4628860603848,
+            "r": 412.4242461004179,
+            "b": 370.86659145544854,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "Business Continuity (BCM): Austausch von Risiken und Maßnahmen, Notfallplänen",
+      "text": "Business Continuity (BCM): Austausch von Risiken und Maßnahmen, Notfallplänen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 353.31926144703584,
+            "r": 43.3807926884669,
+            "b": 348.7229668420996,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 327.02879540679896,
+            "r": 185.92528823535025,
+            "b": 319.98679713821593,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 296.695361984006,
+            "r": 86.46223812849735,
+            "b": 291.20553779387274,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Standards",
+      "text": "Standards",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 271.25759376227234,
+            "r": 792.4224803401892,
+            "b": 266.6612991573361,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            172
+          ]
+        }
+      ],
+      "orig": "1. ISO/IEC 27001:2013, Information technology - Security techniques - Information security management systems - Requirements, International Organization for Standardization",
+      "text": "ISO/IEC 27001:2013, Information technology - Security techniques - Information security management systems - Requirements, International Organization for Standardization",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 259.5344983787345,
+            "r": 800.7314264557436,
+            "b": 254.93820377379825,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            168
+          ]
+        }
+      ],
+      "orig": "2. DIN EN ISO/IEC 27001, Informationstechnik - Sicherheitsverfahren - Informationssicherheits­ managementsysteme - Anforderungen, Deutsche Fassung EN ISO/IEC 27001:2017",
+      "text": "DIN EN ISO/IEC 27001, Informationstechnik - Sicherheitsverfahren - Informationssicherheits­ managementsysteme - Anforderungen, Deutsche Fassung EN ISO/IEC 27001:2017",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 247.81140299519666,
+            "r": 555.8184619374658,
+            "b": 243.2151083902604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "3. IT-Grundschutz-Baustein (200-1): ORP.2 Personal, Bundesamt für Sicherheit in der Informationstechnik, Februar 2023",
+      "text": "IT-Grundschutz-Baustein (200-1): ORP.2 Personal, Bundesamt für Sicherheit in der Informationstechnik, Februar 2023",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 236.08830761165927,
+            "r": 760.1483477488048,
+            "b": 231.49201300672303,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            165
+          ]
+        }
+      ],
+      "orig": "4. IT-Grundschutz-Baustein (200-1): ORP.3 Sensibilisierung und Schulung zur Informationssicherheit, Bundesamt für Sicherheit in der Informationstechnik, Februar 2023",
+      "text": "IT-Grundschutz-Baustein (200-1): ORP.3 Sensibilisierung und Schulung zur Informationssicherheit, Bundesamt für Sicherheit in der Informationstechnik, Februar 2023",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Kompendium_Einzel_PDFs_2023/02_ORP_Organisation_und_Personal/ORP_3_Sensibilisierung_und_Schulung_Editon_2023.pdf",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 224.36521222812144,
+            "r": 542.5892711562153,
+            "b": 219.7689176231852,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "5. Handreichung Schulungen für Geschäftsleitungen, April 2026, Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Handreichung Schulungen für Geschäftsleitungen, April 2026, Bundesamt für Sicherheit in der Informationstechnik",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 212.6421168445836,
+            "r": 672.5202484813018,
+            "b": 208.04582223964735,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "6. Reife- und Umsetzungsgradbewertung (RUN) im Rahmen der Nachweisprüfung, Bundesamt für Sicherheit in der Informationstechnik, 09.01.2025",
+      "text": "Reife- und Umsetzungsgradbewertung (RUN) im Rahmen der Nachweisprüfung, Bundesamt für Sicherheit in der Informationstechnik, 09.01.2025",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 200.9190214610462,
+            "r": 798.696168403626,
+            "b": 196.32272685610997,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            166
+          ]
+        }
+      ],
+      "orig": "7. Mapping von Anforderungen aus der Konkretisierung der KRITIS-Anforderungen auf RUN-Umsetzungsgrade, Bundesamt für Sicherheit in der Informationstechnik, 09.01.2025",
+      "text": "Mapping von Anforderungen aus der Konkretisierung der KRITIS-Anforderungen auf RUN-Umsetzungsgrade, Bundesamt für Sicherheit in der Informationstechnik, 09.01.2025",
+      "enumerated": true,
+      "marker": "7."
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 176.20799276431308,
+            "r": 73.58056747768259,
+            "b": 170.7181685741798,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Quellen",
+      "text": "Quellen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 150.11894146571603,
+            "r": 659.5200240811195,
+            "b": 145.5226468607798,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            140
+          ]
+        }
+      ],
+      "orig": "1. Gesetz über das Bundesamt für Sicherheit in der Informationstechnik (BSI-Gesetz - BSIG) vom 2. Dezember 2025 (BGBl. 2025 I Nr. 301, S. 2)",
+      "text": "Gesetz über das Bundesamt für Sicherheit in der Informationstechnik (BSI-Gesetz - BSIG) vom 2. Dezember 2025 (BGBl. 2025 I Nr. 301, S. 2)",
+      "hyperlink": "https://www.gesetze-im-internet.de/bsig_2025/BJNR12D0B0025.html",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 138.39584608217865,
+            "r": 618.0312617490182,
+            "b": 133.7995514772424,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            129
+          ]
+        }
+      ],
+      "orig": "2. Dachgesetz zur Stärkung der physischen Resilienz kritischer Anlagen, KRITIS-Dachgesetz vom 11. März 2026 (BGBl. 2026 I Nr. 66)",
+      "text": "Dachgesetz zur Stärkung der physischen Resilienz kritischer Anlagen, KRITIS-Dachgesetz vom 11. März 2026 (BGBl. 2026 I Nr. 66)",
+      "hyperlink": "https://www.gesetze-im-internet.de/kritisdachg/index.html",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 48.59105730337252,
+            "t": 126.67275069864081,
+            "r": 658.8127703618627,
+            "b": 122.07645609370456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            137
+          ]
+        }
+      ],
+      "orig": "3. ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection - Information security management systems - Requirements",
+      "text": "ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection - Information security management systems - Requirements",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 104.52912608529186,
+            "r": 115.15931112836819,
+            "b": 99.93283148035562,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS",
+      "text": "OpenKRITIS",
+      "hyperlink": "https://www.openkritis.de/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 92.80603070175448,
+            "r": 207.19883906361207,
+            "b": 88.20973609681823,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Cybersecurity in KRITIS und NIS2",
+      "text": "Cybersecurity in KRITIS und NIS2",
+      "hyperlink": "https://www.openkritis.de/massnahmen/",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 81.08293531821664,
+            "r": 135.40505631987904,
+            "b": 76.4866407132804,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit",
+      "text": "Personalsicherheit",
+      "hyperlink": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 59.01158653318379,
+            "t": 69.3598399346788,
+            "r": 69.43211576299505,
+            "b": 64.76354532974256,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "up",
+      "text": "up",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 303.9299036994287,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "text": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html"
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "6/7",
+      "text": "6/7"
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 577.7496212324044,
+            "r": 74.19115018370195,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "10.08.26, 17:19",
+      "text": "10.08.26, 17:19"
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 344.9531106269531,
+            "t": 577.7496212324044,
+            "r": 577.2253604738197,
+            "b": 574.2231810358014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS",
+      "text": "Personalsicherheit und Schulungen in KRITIS und NIS2 - OpenKRITIS"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 564.9913715557946,
+            "r": 499.7419679639876,
+            "b": 548.0435360557008,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X",
+      "text": "OpenKRITIS ∙ Die gemeinnützige Informationsplattform für NIS2-Einrichtungen und Kritische Infrastrukturen. 50670 Köln ∙ info@openkritis.de ∙ ISSN 2748-565X"
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 531.1195633186899,
+            "r": 805.5041114908197,
+            "b": 514.8001733302162,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar.",
+      "text": "Paul Weissmann ist der Herausgeber von OpenKRITIS und publiziert seit 1999 das PA-RISC-Referenzwerk, und Insel Westberlin. OpenKRITIS hat keinen Anspruch auf Vollständigkeit oder Korrektheit und stellt keine Rechtsberatung dar."
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 32.96026345865563,
+            "t": 497.25793156202144,
+            "r": 354.0377355507722,
+            "b": 492.03319144546504,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt",
+      "text": "Copyright © 2021-2026 ∙ Impressum ∙ Datenschutz ∙ Über uns und Kontakt"
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 23.999999,
+            "t": 22.74964435740435,
+            "r": 303.9299036994287,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html",
+      "text": "https://www.openkritis.de/massnahmen/personalsicherheit_schulungen_kritis-nis2.html"
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 807.7616888432616,
+            "t": 22.74964435740435,
+            "r": 817.9935633419335,
+            "b": 19.223204160801515,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "7/7",
+      "text": "7/7"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 53.114107671373596,
+            "t": 544.6937238616172,
+            "r": 423.27315515576504,
+            "b": 171.0571831514677,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 525.7740636263219,
+            "t": 542.4166134667072,
+            "r": 777.2177555776187,
+            "b": 173.5532920221881,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 31.920912468276306,
+            "t": 568.5818733778606,
+            "r": 814.1269062512714,
+            "b": 45.62846002811932,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 33.88838446714705,
+            "t": 439.2190068291734,
+            "r": 369.7181866758971,
+            "b": 361.46473336094755,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 62.06447595598006,
+              "t": 162.68778966734192,
+              "r": 96.02278266160187,
+              "b": 167.38245517973098,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Bereich",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 150.07928127161185,
+              "t": 162.68778966734192,
+              "r": 208.55228996413373,
+              "b": 167.38245517973098,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Anforderung",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 251.8219094353355,
+              "t": 156.826241975573,
+              "r": 274.4082030280156,
+              "b": 173.63571403986032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "NIS2 BSIG",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 293.37173122317733,
+              "t": 156.826241975573,
+              "r": 329.85884803975904,
+              "b": 173.63571403986032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "KRITIS DachG",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 340.2742923118194,
+              "t": 156.826241975573,
+              "r": 362.8504096324748,
+              "b": 173.63571403986032,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "RUN KdA",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 188.8866691030488,
+              "r": 232.85837496180486,
+              "b": 193.48296370798528,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "Personelle Sicherheit Personalprozesse und HR",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 235.46859517080813,
+              "t": 188.73911274186992,
+              "r": 261.8150308634886,
+              "b": 193.43377825425898,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "NS.22",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 293.37173122317733,
+              "t": 188.73911274186992,
+              "r": 322.02818660515834,
+              "b": 193.43377825425898,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "DG.15",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 332.46906843112157,
+              "t": 183.02512141127988,
+              "r": 370.6708913562762,
+              "b": 199.3445113997542,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "2 (57,70) 3 (56,69)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 209.0764444858081,
+              "r": 84.11651391269643,
+              "b": 213.67273909074459,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Schulungen",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 125.77827820973818,
+              "t": 209.0764444858081,
+              "r": 226.33028000657208,
+              "b": 213.67273909074459,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Training und Awareness",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 235.46859517080813,
+              "t": 208.92888812462922,
+              "r": 290.7666021460886,
+              "b": 213.6235536370183,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "NS.19 NS.20",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 293.37173122317733,
+              "t": 208.92888812462922,
+              "r": 322.02818660515834,
+              "b": 213.6235536370183,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "DG.16",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 332.46906843112157,
+              "t": 209.0764444858081,
+              "r": 357.6452298190122,
+              "b": 213.67273909074459,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "3 (68)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 223.4046721767985,
+              "r": 84.11651391269643,
+              "b": 228.00096678173497,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Schulungen",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 125.77827820973818,
+              "t": 223.4046721767985,
+              "r": 205.64186571849913,
+              "b": 228.00096678173497,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Geschäftsleitungen",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 235.46859517080813,
+              "t": 223.25711581561984,
+              "r": 261.8150308634886,
+              "b": 227.9517813280089,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "NS.38",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 4,
+        "num_cols": 5,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 62.06447595598006,
+                "t": 162.68778966734192,
+                "r": 96.02278266160187,
+                "b": 167.38245517973098,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Bereich",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 150.07928127161185,
+                "t": 162.68778966734192,
+                "r": 208.55228996413373,
+                "b": 167.38245517973098,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Anforderung",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 251.8219094353355,
+                "t": 156.826241975573,
+                "r": 274.4082030280156,
+                "b": 173.63571403986032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "NIS2 BSIG",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 293.37173122317733,
+                "t": 156.826241975573,
+                "r": 329.85884803975904,
+                "b": 173.63571403986032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "KRITIS DachG",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 340.2742923118194,
+                "t": 156.826241975573,
+                "r": 362.8504096324748,
+                "b": 173.63571403986032,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "RUN KdA",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 188.8866691030488,
+                "r": 232.85837496180486,
+                "b": 193.48296370798528,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Personelle Sicherheit Personalprozesse und HR",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 188.8866691030488,
+                "r": 232.85837496180486,
+                "b": 193.48296370798528,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Personelle Sicherheit Personalprozesse und HR",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 235.46859517080813,
+                "t": 188.73911274186992,
+                "r": 261.8150308634886,
+                "b": 193.43377825425898,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "NS.22",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 293.37173122317733,
+                "t": 188.73911274186992,
+                "r": 322.02818660515834,
+                "b": 193.43377825425898,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "DG.15",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 332.46906843112157,
+                "t": 183.02512141127988,
+                "r": 370.6708913562762,
+                "b": 199.3445113997542,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "2 (57,70) 3 (56,69)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 209.0764444858081,
+                "r": 84.11651391269643,
+                "b": 213.67273909074459,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Schulungen",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 125.77827820973818,
+                "t": 209.0764444858081,
+                "r": 226.33028000657208,
+                "b": 213.67273909074459,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Training und Awareness",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 235.46859517080813,
+                "t": 208.92888812462922,
+                "r": 290.7666021460886,
+                "b": 213.6235536370183,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "NS.19 NS.20",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 293.37173122317733,
+                "t": 208.92888812462922,
+                "r": 322.02818660515834,
+                "b": 213.6235536370183,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "DG.16",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 332.46906843112157,
+                "t": 209.0764444858081,
+                "r": 357.6452298190122,
+                "b": 213.67273909074459,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "3 (68)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 223.4046721767985,
+                "r": 84.11651391269643,
+                "b": 228.00096678173497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Schulungen",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 125.77827820973818,
+                "t": 223.4046721767985,
+                "r": 205.64186571849913,
+                "b": 228.00096678173497,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Geschäftsleitungen",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 235.46859517080813,
+                "t": 223.25711581561984,
+                "r": 261.8150308634886,
+                "b": 227.9517813280089,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "NS.38",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 33.50815250924117,
+            "t": 252.86320115468465,
+            "r": 388.3738232251941,
+            "b": 134.55481793389538,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 105.80220508657459,
+              "t": 349.60603272708147,
+              "r": 164.27521377909648,
+              "b": 354.3006982394703,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Anforderung",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 237.77861809047266,
+              "t": 343.74448503531255,
+              "r": 271.85219560141326,
+              "b": 360.55395709959987,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "NIS2 DVO-EU",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 274.46416939799246,
+              "t": 343.74448503531255,
+              "r": 310.95128621457417,
+              "b": 360.55395709959987,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "KRITIS DachG",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 313.5615066059367,
+              "t": 343.74448503531255,
+              "r": 360.174039929972,
+              "b": 360.55395709959987,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "ISO 27001 2022",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 364.07665025513893,
+              "t": 343.74448503531255,
+              "r": 386.65276757579437,
+              "b": 360.55395709959987,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "RUN KdA",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 369.94336447101944,
+              "r": 232.27832597147358,
+              "b": 374.5396590759559,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Einstellung und Beschäftigungsvereinbarungen",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 237.77861809047266,
+              "t": 369.94336447101944,
+              "r": 263.82994116500083,
+              "b": 374.5396590759559,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "10.1.1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 274.46416939799246,
+              "t": 369.7958081098408,
+              "r": 303.1206247799734,
+              "b": 374.49047362222984,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "DG.15",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 313.5615066059367,
+              "t": 369.94336447101944,
+              "r": 336.71767289087205,
+              "b": 374.5396590759559,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "A.6.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 362.7842636559039,
+              "t": 369.94336447101944,
+              "r": 387.96042504379443,
+              "b": 374.5396590759559,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "2 (57)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 390.13313985377874,
+              "r": 186.55621874211278,
+              "b": 394.7294344587152,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Screenings und Background-Checks",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 237.77861809047266,
+              "t": 384.2715921620098,
+              "r": 263.82994116500083,
+              "b": 400.59098215048414,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "10.2.1 10.2.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 274.46416939799246,
+              "t": 389.9855834926001,
+              "r": 303.1206247799734,
+              "b": 394.68024900498915,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "DG.15",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 313.5615066059367,
+              "t": 390.13313985377874,
+              "r": 336.71767289087205,
+              "b": 394.7294344587152,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "A.6.1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 362.7842636559039,
+              "t": 390.13313985377874,
+              "r": 387.96042504379443,
+              "b": 394.7294344587152,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "3 (56)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 410.32291523653805,
+              "r": 235.16839452084878,
+              "b": 414.9192098414745,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Sicherheits- und Zuverlässigkeitsüberprüfungen",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 237.77861809047266,
+              "t": 410.32291523653805,
+              "r": 246.45900032323877,
+              "b": 414.9192098414745,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "-*",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 274.46416939799246,
+              "t": 410.1753588753594,
+              "r": 308.3308893948791,
+              "b": 414.9192098414745,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "DG.15 †",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 313.5615066059367,
+              "t": 410.32291523653805,
+              "r": 336.71767289087205,
+              "b": 414.9192098414745,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "A.6.1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 430.51269061929736,
+              "r": 121.13279822922948,
+              "b": 435.10898522423383,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Disziplinarverfahren",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 237.77861809047266,
+              "t": 424.65114292752844,
+              "r": 263.82994116500083,
+              "b": 440.97053291600275,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "10.4.1 10.4.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 274.46416939799246,
+              "t": 430.3651342581187,
+              "r": 303.1206247799734,
+              "b": 435.05979977050777,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "DG.15",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 313.5615066059367,
+              "t": 430.51269061929736,
+              "r": 336.71767289087205,
+              "b": 435.10898522423383,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "A.6.4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 362.7842636559039,
+              "t": 430.51269061929736,
+              "r": 387.96042504379443,
+              "b": 435.10898522423383,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "3 (69)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 450.70246600205667,
+              "r": 222.44802229058277,
+              "b": 455.29876060699337,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Beendigung des Beschäftigungsverhältnisses",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 237.77861809047266,
+              "t": 450.70246600205667,
+              "r": 263.82994116500083,
+              "b": 455.29876060699337,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "10.3.1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 274.46416939799246,
+              "t": 450.554909640878,
+              "r": 303.1206247799734,
+              "b": 455.2495751532671,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "DG.15",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 313.5615066059367,
+              "t": 450.70246600205667,
+              "r": 336.71767289087205,
+              "b": 455.29876060699337,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "A.6.5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 362.7842636559039,
+              "t": 450.70246600205667,
+              "r": 387.96042504379443,
+              "b": 455.29876060699337,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "2 (70)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 6,
+        "num_cols": 5,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 105.80220508657459,
+                "t": 349.60603272708147,
+                "r": 164.27521377909648,
+                "b": 354.3006982394703,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Anforderung",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 237.77861809047266,
+                "t": 343.74448503531255,
+                "r": 271.85219560141326,
+                "b": 360.55395709959987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "NIS2 DVO-EU",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 274.46416939799246,
+                "t": 343.74448503531255,
+                "r": 310.95128621457417,
+                "b": 360.55395709959987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "KRITIS DachG",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.5615066059367,
+                "t": 343.74448503531255,
+                "r": 360.174039929972,
+                "b": 360.55395709959987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "ISO 27001 2022",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 364.07665025513893,
+                "t": 343.74448503531255,
+                "r": 386.65276757579437,
+                "b": 360.55395709959987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "RUN KdA",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 369.94336447101944,
+                "r": 232.27832597147358,
+                "b": 374.5396590759559,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Einstellung und Beschäftigungsvereinbarungen",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 237.77861809047266,
+                "t": 369.94336447101944,
+                "r": 263.82994116500083,
+                "b": 374.5396590759559,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "10.1.1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 274.46416939799246,
+                "t": 369.7958081098408,
+                "r": 303.1206247799734,
+                "b": 374.49047362222984,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "DG.15",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.5615066059367,
+                "t": 369.94336447101944,
+                "r": 336.71767289087205,
+                "b": 374.5396590759559,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "A.6.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 362.7842636559039,
+                "t": 369.94336447101944,
+                "r": 387.96042504379443,
+                "b": 374.5396590759559,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "2 (57)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 390.13313985377874,
+                "r": 186.55621874211278,
+                "b": 394.7294344587152,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Screenings und Background-Checks",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 237.77861809047266,
+                "t": 384.2715921620098,
+                "r": 263.82994116500083,
+                "b": 400.59098215048414,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "10.2.1 10.2.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 274.46416939799246,
+                "t": 389.9855834926001,
+                "r": 303.1206247799734,
+                "b": 394.68024900498915,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "DG.15",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.5615066059367,
+                "t": 390.13313985377874,
+                "r": 336.71767289087205,
+                "b": 394.7294344587152,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "A.6.1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 362.7842636559039,
+                "t": 390.13313985377874,
+                "r": 387.96042504379443,
+                "b": 394.7294344587152,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "3 (56)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 410.32291523653805,
+                "r": 235.16839452084878,
+                "b": 414.9192098414745,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Sicherheits- und Zuverlässigkeitsüberprüfungen",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 237.77861809047266,
+                "t": 410.32291523653805,
+                "r": 246.45900032323877,
+                "b": 414.9192098414745,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "-*",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 274.46416939799246,
+                "t": 410.1753588753594,
+                "r": 308.3308893948791,
+                "b": 414.9192098414745,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "DG.15 †",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.5615066059367,
+                "t": 410.32291523653805,
+                "r": 336.71767289087205,
+                "b": 414.9192098414745,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "A.6.1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 430.51269061929736,
+                "r": 121.13279822922948,
+                "b": 435.10898522423383,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Disziplinarverfahren",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 237.77861809047266,
+                "t": 424.65114292752844,
+                "r": 263.82994116500083,
+                "b": 440.97053291600275,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "10.4.1 10.4.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 274.46416939799246,
+                "t": 430.3651342581187,
+                "r": 303.1206247799734,
+                "b": 435.05979977050777,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "DG.15",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.5615066059367,
+                "t": 430.51269061929736,
+                "r": 336.71767289087205,
+                "b": 435.10898522423383,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "A.6.4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 362.7842636559039,
+                "t": 430.51269061929736,
+                "r": 387.96042504379443,
+                "b": 435.10898522423383,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "3 (69)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 450.70246600205667,
+                "r": 222.44802229058277,
+                "b": 455.29876060699337,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Beendigung des Beschäftigungsverhältnisses",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 237.77861809047266,
+                "t": 450.70246600205667,
+                "r": 263.82994116500083,
+                "b": 455.29876060699337,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "10.3.1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 274.46416939799246,
+                "t": 450.554909640878,
+                "r": 303.1206247799734,
+                "b": 455.2495751532671,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "DG.15",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 313.5615066059367,
+                "t": 450.70246600205667,
+                "r": 336.71767289087205,
+                "b": 455.29876060699337,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "A.6.5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 362.7842636559039,
+                "t": 450.70246600205667,
+                "r": 387.96042504379443,
+                "b": 455.29876060699337,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "2 (70)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 33.70099383036117,
+            "t": 337.837310393009,
+            "r": 309.69670023568415,
+            "b": 229.608815215648,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 66.59292859979453,
+              "t": 264.2878317700064,
+              "r": 125.06593729231642,
+              "b": 268.9824972823957,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Anforderung",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.36006511691252,
+              "t": 258.4262840782375,
+              "r": 193.43364262785315,
+              "b": 275.235756142525,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "NIS2 DVO-EU",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 196.0456164244323,
+              "t": 258.4262840782375,
+              "r": 232.532733241014,
+              "b": 275.235756142525,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "KRITIS DachG",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 235.14295363237653,
+              "t": 258.4262840782375,
+              "r": 281.75548695641186,
+              "b": 275.235756142525,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "ISO 27001 2022",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 285.65809728157876,
+              "t": 258.4262840782375,
+              "r": 308.2342146022342,
+              "b": 275.235756142525,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "RUN KdA",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 290.4867112057135,
+              "r": 149.14814692360284,
+              "b": 295.08300581064975,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Schulungen und Awareness",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.36006511691252,
+              "t": 284.6251635139446,
+              "r": 172.3857266541766,
+              "b": 300.94455350241867,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "8.1 8.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 196.0456164244323,
+              "t": 290.3391548445346,
+              "r": 224.70207180641327,
+              "b": 295.0338203569239,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "DG.16",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 235.14295363237653,
+              "t": 284.6251635139446,
+              "r": 258.2991199173119,
+              "b": 300.94455350241867,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "A.6.3 7.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 284.3657106823437,
+              "t": 290.4867112057135,
+              "r": 309.5418720702344,
+              "b": 295.08300581064975,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "3 (68)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 34.91411268924524,
+              "t": 334.12267735554803,
+              "r": 156.7498415993913,
+              "b": 338.71897196048474,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Schulungen Geschäftsleitung",
+            "column_header": false,
+            "row_header": true,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 159.36006511691252,
+              "t": 328.1135733026007,
+              "r": 185.706500809593,
+              "b": 344.5805196522532,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "NS.38 8.2.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 235.14295363237653,
+              "t": 322.3995819720102,
+              "r": 263.5093845322175,
+              "b": 362.16516272755996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "7.3 A.5.2 A.5.31 A.6.3",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 284.3657106823437,
+              "t": 334.12267735554803,
+              "r": 309.5418720702344,
+              "b": 338.71897196048474,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 4,
+            "end_col_offset_idx": 5,
+            "text": "3 (68)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 5,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 66.59292859979453,
+                "t": 264.2878317700064,
+                "r": 125.06593729231642,
+                "b": 268.9824972823957,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Anforderung",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.36006511691252,
+                "t": 258.4262840782375,
+                "r": 193.43364262785315,
+                "b": 275.235756142525,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "NIS2 DVO-EU",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 196.0456164244323,
+                "t": 258.4262840782375,
+                "r": 232.532733241014,
+                "b": 275.235756142525,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "KRITIS DachG",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 235.14295363237653,
+                "t": 258.4262840782375,
+                "r": 281.75548695641186,
+                "b": 275.235756142525,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "ISO 27001 2022",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 285.65809728157876,
+                "t": 258.4262840782375,
+                "r": 308.2342146022342,
+                "b": 275.235756142525,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "RUN KdA",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 290.4867112057135,
+                "r": 149.14814692360284,
+                "b": 295.08300581064975,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Schulungen und Awareness",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.36006511691252,
+                "t": 284.6251635139446,
+                "r": 172.3857266541766,
+                "b": 300.94455350241867,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "8.1 8.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 196.0456164244323,
+                "t": 290.3391548445346,
+                "r": 224.70207180641327,
+                "b": 295.0338203569239,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "DG.16",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 235.14295363237653,
+                "t": 284.6251635139446,
+                "r": 258.2991199173119,
+                "b": 300.94455350241867,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "A.6.3 7.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 284.3657106823437,
+                "t": 290.4867112057135,
+                "r": 309.5418720702344,
+                "b": 295.08300581064975,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "3 (68)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 34.91411268924524,
+                "t": 334.12267735554803,
+                "r": 156.7498415993913,
+                "b": 338.71897196048474,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Schulungen Geschäftsleitung",
+              "column_header": false,
+              "row_header": true,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 159.36006511691252,
+                "t": 328.1135733026007,
+                "r": 185.706500809593,
+                "b": 344.5805196522532,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "NS.38 8.2.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 235.14295363237653,
+                "t": 322.3995819720102,
+                "r": 263.5093845322175,
+                "b": 362.16516272755996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "7.3 A.5.2 A.5.31 A.6.3",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 284.3657106823437,
+                "t": 334.12267735554803,
+                "r": 309.5418720702344,
+                "b": 338.71897196048474,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 4,
+              "end_col_offset_idx": 5,
+              "text": "3 (68)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 841.91998,
+        "height": 594.95996
+      },
+      "page_no": 7
+    }
+  }
+}

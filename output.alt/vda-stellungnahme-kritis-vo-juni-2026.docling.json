@@ -1,0 +1,3379 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "VDA-Stellungnahme-KRITIS-VO_Juni-2026",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 18087179312334702905,
+    "filename": "VDA-Stellungnahme-KRITIS-VO_Juni-2026.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/texts/69"
+      },
+      {
+        "$ref": "#/texts/70"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/texts/72"
+      },
+      {
+        "$ref": "#/texts/73"
+      },
+      {
+        "$ref": "#/texts/74"
+      },
+      {
+        "$ref": "#/texts/75"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/texts/80"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/pictures/2"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/36"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/tables/0"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 45.36,
+            "t": 658.9240000000001,
+            "r": 169.214,
+            "b": 642.7792928176796,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Stellungnahme",
+      "text": "Stellungnahme"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 45.36,
+            "t": 633.5108799999999,
+            "r": 549.30888,
+            "b": 505.7196300552487,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS- Dachgesetz (KritisV)",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS- Dachgesetz (KritisV)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 45.36,
+            "t": 485.37687999999997,
+            "r": 146.88488,
+            "b": 465.68033723756906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Juni 2026",
+      "text": "Juni 2026"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 282.91,
+            "t": 802.46688,
+            "r": 531.85488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 547.92,
+            "t": 802.46688,
+            "r": 553.45488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "2",
+      "text": "2"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.664,
+            "t": 745.27888,
+            "r": 221.32688,
+            "b": 730.9639062983425,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "1. Executive Summary",
+      "text": "1. Executive Summary",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.664,
+            "t": 715.3508800000001,
+            "r": 466.42835999999994,
+            "b": 617.257475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            645
+          ]
+        }
+      ],
+      "orig": "Der Verband der Automobilindustrie (VDA) unterstützt die Zielsetzung der Bundesregierung, mit dem KRITIS-Dachgesetz und der darauf aufbauenden KRITIS-Verordnung die Resilienz kritischer Anlagen in Deutschland angesichts einer verschärften Sicherheits- und Bedrohungslage nachhaltig zu stärken. Physische und digitale Resilienz sind zentrale Voraussetzungen für Versorgungssicherheit, Wettbewerbsfähigkeit und technologische Souveränität. Die zunehmende Digitalisierung industrieller Wertschöpfung, vernetzter Produktionssysteme sowie globaler Lieferketten erfordert einen kohärenten, verhältnismäßigen und praxisgerechten regulatorischen Rahmen.",
+      "text": "Der Verband der Automobilindustrie (VDA) unterstützt die Zielsetzung der Bundesregierung, mit dem KRITIS-Dachgesetz und der darauf aufbauenden KRITIS-Verordnung die Resilienz kritischer Anlagen in Deutschland angesichts einer verschärften Sicherheits- und Bedrohungslage nachhaltig zu stärken. Physische und digitale Resilienz sind zentrale Voraussetzungen für Versorgungssicherheit, Wettbewerbsfähigkeit und technologische Souveränität. Die zunehmende Digitalisierung industrieller Wertschöpfung, vernetzter Produktionssysteme sowie globaler Lieferketten erfordert einen kohärenten, verhältnismäßigen und praxisgerechten regulatorischen Rahmen."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.664,
+            "t": 600.6008800000001,
+            "r": 469.3366799999997,
+            "b": 489.78747535911606,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            702
+          ]
+        }
+      ],
+      "orig": "Mit dem vorliegenden Referentenentwurf für eine KRITIS-Verordnung konkretisiert das Bundesministerium des Innern erstmals sektorenübergreifend die Bestimmung kritischer Anlagen im Sinne des KRITIS-Dachgesetzes und schafft zugleich die Grundlage für den zukünftigen Anwendungsbereich zentraler IT-Sicherheitsanforderungen nach dem BSIGesetz. Der Referentenentwurf verfolgt ausdrücklich das Ziel, eine möglichst hohe Kohärenz zwischen physischer Resilienz und IT-Sicherheit herzustellen. Gleichzeitig bestimmt die Verordnung künftig nicht nur den Kreis der Betreiber kritischer Anlagen nach dem KRITISDachgesetz, sondern faktisch auch den Adressatenkreis wesentlicher Verpflichtungen nach dem BSI-Gesetz.",
+      "text": "Mit dem vorliegenden Referentenentwurf für eine KRITIS-Verordnung konkretisiert das Bundesministerium des Innern erstmals sektorenübergreifend die Bestimmung kritischer Anlagen im Sinne des KRITIS-Dachgesetzes und schafft zugleich die Grundlage für den zukünftigen Anwendungsbereich zentraler IT-Sicherheitsanforderungen nach dem BSIGesetz. Der Referentenentwurf verfolgt ausdrücklich das Ziel, eine möglichst hohe Kohärenz zwischen physischer Resilienz und IT-Sicherheit herzustellen. Gleichzeitig bestimmt die Verordnung künftig nicht nur den Kreis der Betreiber kritischer Anlagen nach dem KRITISDachgesetz, sondern faktisch auch den Adressatenkreis wesentlicher Verpflichtungen nach dem BSI-Gesetz."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.664,
+            "t": 473.16088,
+            "r": 472.48359999999997,
+            "b": 400.48747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            483
+          ]
+        }
+      ],
+      "orig": "Aus Sicht des VDA ist insbesondere relevant, dass der Entwurf den KRITIS-Begriff erheblich über klassische physische Infrastrukturen hinaus erweitert und zunehmend zentrale digitale Steuerungs-, Überwachungs- und Plattformsysteme einbezieht. Dies betrifft insbesondere die in den Anlagen definierten zentralen standortübergreifenden Steuerungs- und Überwachungssysteme, digitale Energiedienste, Aggregatoren, kommerzielle Steuerungssysteme sowie cloudbasierte Kollaborationslösungen.",
+      "text": "Aus Sicht des VDA ist insbesondere relevant, dass der Entwurf den KRITIS-Begriff erheblich über klassische physische Infrastrukturen hinaus erweitert und zunehmend zentrale digitale Steuerungs-, Überwachungs- und Plattformsysteme einbezieht. Dies betrifft insbesondere die in den Anlagen definierten zentralen standortübergreifenden Steuerungs- und Überwachungssysteme, digitale Energiedienste, Aggregatoren, kommerzielle Steuerungssysteme sowie cloudbasierte Kollaborationslösungen."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.664,
+            "t": 383.98088,
+            "r": 447.75256000000024,
+            "b": 298.48747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            570
+          ]
+        }
+      ],
+      "orig": "Die Automobilindustrie betreibt heute hochvernetzte Produktions-, Entwicklungs- und Betriebsumgebungen mit umfangreicher OT- und IT-Infrastruktur. Produktionsstandorte, Energieversorgungssysteme, Speicher- und Ladeinfrastrukturen, zentrale Leitwarten, Logistikplattformen sowie softwaredefinierte Betriebsmodelle sind integraler Bestandteil moderner industrieller Wertschöpfung. Der Entwurf der KRITIS-Verordnung kann daher erhebliche unmittelbare und mittelbare Auswirkungen auf Hersteller, Zulieferer sowie industrielle Plattform- und Infrastrukturbetreiber entfalten.",
+      "text": "Die Automobilindustrie betreibt heute hochvernetzte Produktions-, Entwicklungs- und Betriebsumgebungen mit umfangreicher OT- und IT-Infrastruktur. Produktionsstandorte, Energieversorgungssysteme, Speicher- und Ladeinfrastrukturen, zentrale Leitwarten, Logistikplattformen sowie softwaredefinierte Betriebsmodelle sind integraler Bestandteil moderner industrieller Wertschöpfung. Der Entwurf der KRITIS-Verordnung kann daher erhebliche unmittelbare und mittelbare Auswirkungen auf Hersteller, Zulieferer sowie industrielle Plattform- und Infrastrukturbetreiber entfalten."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.664,
+            "t": 294.70088,
+            "r": 469.66888,
+            "b": 274.24747535911604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            108
+          ]
+        }
+      ],
+      "orig": "Der VDA sieht im Referentenentwurf insbesondere in folgenden Bereichen Konkretisierungsund Anpassungsbedarf:",
+      "text": "Der VDA sieht im Referentenentwurf insbesondere in folgenden Bereichen Konkretisierungsund Anpassungsbedarf:"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.664,
+            "t": 259.51088000000004,
+            "r": 442.42888000000005,
+            "b": 250.57747535911608,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "· klare und verhältnismäßige Definition zentraler Steuerungs- und Plattformsysteme,",
+      "text": "klare und verhältnismäßige Definition zentraler Steuerungs- und Plattformsysteme,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.664,
+            "t": 247.27088000000003,
+            "r": 433.42888000000005,
+            "b": 238.33747535911607,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "· rechtssichere Abgrenzung industrieller Produktions- und Unternehmenssysteme,",
+      "text": "rechtssichere Abgrenzung industrieller Produktions- und Unternehmenssysteme,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.664,
+            "t": 235.15088000000003,
+            "r": 454.97668000000004,
+            "b": 203.297475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            169
+          ]
+        }
+      ],
+      "orig": "· konsequente Vermeidung von Doppelregulierungen mit der NIS-2-Richtlinie, dem BSIGesetz, dem Cyber Resilience Act sowie bestehenden sektoralen Sicherheitsanforderungen,",
+      "text": "konsequente Vermeidung von Doppelregulierungen mit der NIS-2-Richtlinie, dem BSIGesetz, dem Cyber Resilience Act sowie bestehenden sektoralen Sicherheitsanforderungen,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.664,
+            "t": 199.99088000000006,
+            "r": 373.39888,
+            "b": 191.0574753591161,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "· lebenszyklusgerechte Übergangs- und Bestandsschutzregelungen,",
+      "text": "lebenszyklusgerechte Übergangs- und Bestandsschutzregelungen,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.664,
+            "t": 187.75088000000005,
+            "r": 388.42888000000005,
+            "b": 178.8174753591161,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "· verhältnismäßige Schwellenwerte und praktikable Aggregationsregeln,",
+      "text": "verhältnismäßige Schwellenwerte und praktikable Aggregationsregeln,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.664,
+            "t": 175.63087999999993,
+            "r": 297.79888,
+            "b": 166.69747535911597,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "· Schutz globaler Betriebs- und Sicherheitsmodelle,",
+      "text": "Schutz globaler Betriebs- und Sicherheitsmodelle,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.664,
+            "t": 163.39087999999992,
+            "r": 383.83888,
+            "b": 154.45747535911596,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "· klare Berücksichtigung industrieller Konzern- und Plattformstrukturen.",
+      "text": "klare Berücksichtigung industrieller Konzern- und Plattformstrukturen.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.664,
+            "t": 139.27088000000003,
+            "r": 463.06888000000004,
+            "b": 104.77747535911601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            269
+          ]
+        }
+      ],
+      "orig": "Der VDA ist überzeugt, dass die KRITIS-Verordnung einen wichtigen Beitrag zur Stärkung der Resilienz kritischer Infrastrukturen leisten kann, wenn hohe Sicherheitsstandards mit Rechts-, Investitions- und Planungssicherheit für die Industrie in Einklang gebracht werden.",
+      "text": "Der VDA ist überzeugt, dass die KRITIS-Verordnung einen wichtigen Beitrag zur Stärkung der Resilienz kritischer Infrastrukturen leisten kann, wenn hohe Sicherheitsstandards mit Rechts-, Investitions- und Planungssicherheit für die Industrie in Einklang gebracht werden."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 282.91,
+            "t": 802.46688,
+            "r": 531.85488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 547.92,
+            "t": 802.46688,
+            "r": 553.45488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "3",
+      "text": "3"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.664,
+            "t": 774.81888,
+            "r": 159.97688,
+            "b": 760.5039062983426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "2.  Einführung",
+      "text": "2.  Einführung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.664,
+            "t": 744.9908800000001,
+            "r": 461.9264399999999,
+            "b": 685.057475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            423
+          ]
+        }
+      ],
+      "orig": "Der VDA begrüßt ausdrücklich die Zielsetzung des Bundesministeriums des Innern, mit der KRITIS-Verordnung einen sektorenübergreifenden Rahmen zur Identifizierung kritischer Anlagen und zur Stärkung physischer Resilienz zu schaffen. Die zunehmende Vernetzung kritischer Infrastrukturen sowie die wachsende Abhängigkeit von digitalen Steuerungs- und Betriebsmodellen erfordern einen modernen und integrierten Resilienzansatz.",
+      "text": "Der VDA begrüßt ausdrücklich die Zielsetzung des Bundesministeriums des Innern, mit der KRITIS-Verordnung einen sektorenübergreifenden Rahmen zur Identifizierung kritischer Anlagen und zur Stärkung physischer Resilienz zu schaffen. Die zunehmende Vernetzung kritischer Infrastrukturen sowie die wachsende Abhängigkeit von digitalen Steuerungs- und Betriebsmodellen erfordern einen modernen und integrierten Resilienzansatz."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.664,
+            "t": 668.55088,
+            "r": 470.8506,
+            "b": 570.307475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            682
+          ]
+        }
+      ],
+      "orig": "Die Betroffenheit der Automobilindustrie ergibt sich nicht nur mittelbar über Energie- und ITInfrastrukturen, sondern zunehmend unmittelbar über den Sektor Transport und Verkehr. Der Referentenentwurf erfasst ausdrücklich intelligente Verkehrssysteme, verkehrsträgerübergreifende Verkehrsmanagementsysteme, Logistikzentren sowie digitale Steuerungs- und Leitsysteme. Moderne automotive Wertschöpfung basiert auf hochdigitalisierten und vernetzten Mobilitäts-, Logistik- und Betriebsstrukturen. Dies betrifft insbesondere Werkslogistik, Ersatzteilversorgung, Flotten- und Verkehrssteuerung, Ladeinfrastruktur, Telematiksysteme sowie softwarebasierte Mobilitäts- und Plattformdienste.",
+      "text": "Die Betroffenheit der Automobilindustrie ergibt sich nicht nur mittelbar über Energie- und ITInfrastrukturen, sondern zunehmend unmittelbar über den Sektor Transport und Verkehr. Der Referentenentwurf erfasst ausdrücklich intelligente Verkehrssysteme, verkehrsträgerübergreifende Verkehrsmanagementsysteme, Logistikzentren sowie digitale Steuerungs- und Leitsysteme. Moderne automotive Wertschöpfung basiert auf hochdigitalisierten und vernetzten Mobilitäts-, Logistik- und Betriebsstrukturen. Dies betrifft insbesondere Werkslogistik, Ersatzteilversorgung, Flotten- und Verkehrssteuerung, Ladeinfrastruktur, Telematiksysteme sowie softwarebasierte Mobilitäts- und Plattformdienste."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.664,
+            "t": 553.80088,
+            "r": 472.37704000000014,
+            "b": 481.147475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            479
+          ]
+        }
+      ],
+      "orig": "Der Referentenentwurf vom 26.05.2026 stellt ausdrücklich klar, dass das KRITIS-Dachgesetz neben die bestehenden Regelungen zur IT-Sicherheit kritischer Infrastrukturen tritt, gleichzeitig jedoch eine größtmögliche Kohärenz zwischen physischer Resilienz und ITSicherheit hergestellt werden soll. Die KRITIS-Verordnung bestimmt damit künftig zugleich den Anwendungsbereich des KRITIS-Dachgesetzes sowie faktisch den Adressatenkreis wesentlicher Verpflichtungen nach dem BSI-Gesetz.",
+      "text": "Der Referentenentwurf vom 26.05.2026 stellt ausdrücklich klar, dass das KRITIS-Dachgesetz neben die bestehenden Regelungen zur IT-Sicherheit kritischer Infrastrukturen tritt, gleichzeitig jedoch eine größtmögliche Kohärenz zwischen physischer Resilienz und ITSicherheit hergestellt werden soll. Die KRITIS-Verordnung bestimmt damit künftig zugleich den Anwendungsbereich des KRITIS-Dachgesetzes sowie faktisch den Adressatenkreis wesentlicher Verpflichtungen nach dem BSI-Gesetz."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.664,
+            "t": 464.52088,
+            "r": 465.85872,
+            "b": 366.407475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            680
+          ]
+        }
+      ],
+      "orig": "Aus Sicht der Automobilindustrie ist dies von erheblicher praktischer Relevanz. Die Automobilindustrie ist heute nicht mehr ausschließlich Hersteller physischer Produkte, sondern zugleich Betreiber hochkomplexer digitaler Produktions-, Entwicklungs- und Betriebsumgebungen. Moderne industrielle Wertschöpfung basiert auf vernetzten Produktionssystemen, cloudbasierten Plattformen, digitalen Leitstellen, zentralen Energieund Logistiksystemen sowie umfangreicher OT- und IT-Infrastruktur. Moderne Fahrzeuge und Produktionsanlagen sind softwaredefinierte, hochvernetzte Systeme mit kontinuierlicher Datenverarbeitung, zentralen Steuerungsarchitekturen und globalen Betriebsmodellen.",
+      "text": "Aus Sicht der Automobilindustrie ist dies von erheblicher praktischer Relevanz. Die Automobilindustrie ist heute nicht mehr ausschließlich Hersteller physischer Produkte, sondern zugleich Betreiber hochkomplexer digitaler Produktions-, Entwicklungs- und Betriebsumgebungen. Moderne industrielle Wertschöpfung basiert auf vernetzten Produktionssystemen, cloudbasierten Plattformen, digitalen Leitstellen, zentralen Energieund Logistiksystemen sowie umfangreicher OT- und IT-Infrastruktur. Moderne Fahrzeuge und Produktionsanlagen sind softwaredefinierte, hochvernetzte Systeme mit kontinuierlicher Datenverarbeitung, zentralen Steuerungsarchitekturen und globalen Betriebsmodellen."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.664,
+            "t": 349.78087999999997,
+            "r": 468.2423599999997,
+            "b": 315.407475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            223
+          ]
+        }
+      ],
+      "orig": "Der Entwurf der KRITIS-Verordnung entfaltet daher erhebliche Auswirkungen auf industrielle Strukturen der Automobilindustrie - insbesondere durch die weitreichende Einbeziehung zentraler Steuerungs- und Überwachungssysteme.",
+      "text": "Der Entwurf der KRITIS-Verordnung entfaltet daher erhebliche Auswirkungen auf industrielle Strukturen der Automobilindustrie - insbesondere durch die weitreichende Einbeziehung zentraler Steuerungs- und Überwachungssysteme."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.664,
+            "t": 263.03888000000006,
+            "r": 388.65688,
+            "b": 248.7239062983425,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "3. Zentrale Steuerungs- und Plattformsysteme",
+      "text": "3. Zentrale Steuerungs- und Plattformsysteme",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.664,
+            "t": 227.47087999999997,
+            "r": 450.12588,
+            "b": 195.61747535911604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            217
+          ]
+        }
+      ],
+      "orig": "Besonders relevant sind aus Sicht des VDA die in den Anlagen des Referentenentwurfs enthaltenen neuen Kategorien zentraler standortübergreifender Steuerungs- und Überwachungssysteme. Der Entwurf erfasst unter anderem:",
+      "text": "Besonders relevant sind aus Sicht des VDA die in den Anlagen des Referentenentwurfs enthaltenen neuen Kategorien zentraler standortübergreifender Steuerungs- und Überwachungssysteme. Der Entwurf erfasst unter anderem:"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.664,
+            "t": 180.79088000000002,
+            "r": 486.07959999999997,
+            "b": 160.45747535911596,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        }
+      ],
+      "orig": "· Anlagen zur zentralen standortübergreifenden Steuerung der Gasförderung oder -erzeugung gemäß Anlage 1 Teil 1 Nummer 2.9,",
+      "text": "Anlagen zur zentralen standortübergreifenden Steuerung der Gasförderung oder -erzeugung gemäß Anlage 1 Teil 1 Nummer 2.9,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.664,
+            "t": 157.15088000000003,
+            "r": 434.0567999999999,
+            "b": 136.69747535911597,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            133
+          ]
+        }
+      ],
+      "orig": "· Anlagen zur zentralen standortübergreifenden Steuerung der Erdölförderung und Produktherstellung gemäß Anlage 1 Teil 1 Nummer 2.23,",
+      "text": "Anlagen zur zentralen standortübergreifenden Steuerung der Erdölförderung und Produktherstellung gemäß Anlage 1 Teil 1 Nummer 2.23,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.664,
+            "t": 133.39088000000004,
+            "r": 458.33668,
+            "b": 113.05747535911598,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "· Anlagen zur zentralen standortübergreifenden Steuerung des Erdöltransports und der - lagerung gemäß Anlage 1 Teil 1 Nummer 2.26,",
+      "text": "Anlagen zur zentralen standortübergreifenden Steuerung des Erdöltransports und der - lagerung gemäß Anlage 1 Teil 1 Nummer 2.26,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.664,
+            "t": 109.75088000000005,
+            "r": 485.42535999999984,
+            "b": 89.39747535911602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "· Anlagen zur zentralen standortübergreifenden Steuerung der Kraftstoff- und Heizölverteilung gemäß Anlage 1 Teil 1 Nummer 2.30,",
+      "text": "Anlagen zur zentralen standortübergreifenden Steuerung der Kraftstoff- und Heizölverteilung gemäß Anlage 1 Teil 1 Nummer 2.30,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.664,
+            "t": 86.09087999999997,
+            "r": 457.4229599999997,
+            "b": 65.75747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "· Anlagen oder Systeme zur zentralen kommerziellen Steuerung gemäß Anlage 1 Teil 1 Nummer 2.31,",
+      "text": "Anlagen oder Systeme zur zentralen kommerziellen Steuerung gemäß Anlage 1 Teil 1 Nummer 2.31,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 282.91,
+            "t": 802.46688,
+            "r": 531.85488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 547.92,
+            "t": 802.46688,
+            "r": 553.45488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "4",
+      "text": "4"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.664,
+            "t": 775.37088,
+            "r": 425.46856,
+            "b": 755.017475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            131
+          ]
+        }
+      ],
+      "orig": "· Anlagen zur zentralen standortübergreifenden Steuerung der Fernwärme- oder Fernkälteversorgung gemäß Anlage 1 Teil 1 Nummer 2.37.",
+      "text": "Anlagen zur zentralen standortübergreifenden Steuerung der Fernwärme- oder Fernkälteversorgung gemäß Anlage 1 Teil 1 Nummer 2.37.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.664,
+            "t": 740.91088,
+            "r": 492.72479999999996,
+            "b": 686.017475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            441
+          ]
+        }
+      ],
+      "orig": "Insbesondere die Definition der 'Anlage oder Systeme zur zentralen kommerziellen Steuerung' in Anlage 1 Teil 1 Nummer 2.31 geht sehr weit. Danach können bereits Systeme zur zentralen Steuerung oder Koordinierung der Betriebsplanung oder kommerziellen Abwicklung erfasst sein. Der Referentenentwurf stellt ausdrücklich klar, dass hierzu auch Clearing-Instanzen oder Kollaborationslösungen zählen können, die als Cloud-Lösung betrieben werden.",
+      "text": "Insbesondere die Definition der 'Anlage oder Systeme zur zentralen kommerziellen Steuerung' in Anlage 1 Teil 1 Nummer 2.31 geht sehr weit. Danach können bereits Systeme zur zentralen Steuerung oder Koordinierung der Betriebsplanung oder kommerziellen Abwicklung erfasst sein. Der Referentenentwurf stellt ausdrücklich klar, dass hierzu auch Clearing-Instanzen oder Kollaborationslösungen zählen können, die als Cloud-Lösung betrieben werden."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.664,
+            "t": 671.91088,
+            "r": 493.3090000000001,
+            "b": 594.097475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            543
+          ]
+        }
+      ],
+      "orig": "Diese Definitionen erzeugen aus Sicht des VDA erhebliche Rechtsunsicherheit. Moderne industrielle Wertschöpfung basiert typischerweise auf zentralen digitalen Plattformen, cloudbasierten Betriebsmodellen und standortübergreifender Produktions- und Logistiksteuerung. Konzernweite OT- und IT-Systeme, digitale Produktionsplattformen, zentrale Leitwarten oder cloudbasierte Entwicklungsumgebungen dürfen jedoch nicht allein aufgrund zentraler Koordinierungsfunktionen oder theoretischer Konnektivität automatisch unter den KRITIS-Begriff fallen.",
+      "text": "Diese Definitionen erzeugen aus Sicht des VDA erhebliche Rechtsunsicherheit. Moderne industrielle Wertschöpfung basiert typischerweise auf zentralen digitalen Plattformen, cloudbasierten Betriebsmodellen und standortübergreifender Produktions- und Logistiksteuerung. Konzernweite OT- und IT-Systeme, digitale Produktionsplattformen, zentrale Leitwarten oder cloudbasierte Entwicklungsumgebungen dürfen jedoch nicht allein aufgrund zentraler Koordinierungsfunktionen oder theoretischer Konnektivität automatisch unter den KRITIS-Begriff fallen."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.664,
+            "t": 579.9608800000001,
+            "r": 476.01192000000003,
+            "b": 525.067475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            384
+          ]
+        }
+      ],
+      "orig": "Die Einstufung als kritische Anlage muss sich ausschließlich an realer Kritikalität orientieren. Maßgeblich sollten insbesondere reale Angriffspfade, privilegierte Zugriffsrechte, systemische Kritikalität sowie tatsächliche Auswirkungen auf die Versorgungssicherheit sein. Nicht jede zentrale oder cloudbasierte Koordinierungsfunktion darf automatisch eine KRITIS-Einstufung auslösen.",
+      "text": "Die Einstufung als kritische Anlage muss sich ausschließlich an realer Kritikalität orientieren. Maßgeblich sollten insbesondere reale Angriffspfade, privilegierte Zugriffsrechte, systemische Kritikalität sowie tatsächliche Auswirkungen auf die Versorgungssicherheit sein. Nicht jede zentrale oder cloudbasierte Koordinierungsfunktion darf automatisch eine KRITIS-Einstufung auslösen."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 59.664,
+            "t": 510.96088,
+            "r": 465.03599999999983,
+            "b": 490.50747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            140
+          ]
+        }
+      ],
+      "orig": "Der VDA hält daher eine klarere und engere gesetzliche Eingrenzung der Begriffe zentraler Steuerungs- und Plattformsysteme für erforderlich.",
+      "text": "Der VDA hält daher eine klarere und engere gesetzliche Eingrenzung der Begriffe zentraler Steuerungs- und Plattformsysteme für erforderlich."
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.664,
+            "t": 450.88888,
+            "r": 449.00224000000003,
+            "b": 416.1539062983426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "4. Verhältnis zum BSI-Gesetz, zur NIS-2-Richtlinie und zu sektoralen Sicherheitsregimen",
+      "text": "4. Verhältnis zum BSI-Gesetz, zur NIS-2-Richtlinie und zu sektoralen Sicherheitsregimen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.664,
+            "t": 398.62088,
+            "r": 457.92679999999996,
+            "b": 287.687475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            696
+          ]
+        }
+      ],
+      "orig": "Der Referentenentwurf verfolgt ausdrücklich das Ziel, eine gemeinsame regulatorische Grundlage für physische Resilienzpflichten nach dem KRITIS-Dachgesetz sowie für ITSicherheitsanforderungen nach dem BSI-Gesetz zu schaffen. Dies ergibt sich insbesondere aus Abschnitt B des Referentenentwurfs, wonach Betreiber kritischer Anlagen nach Inkrafttreten der Verordnung 'nur noch durch das KRITIS -Dachgesetz und diese Verordnung bestimmt' werden sollen und die Verordnung 'auch den Adressatenkreis für Verpflichtungen für Betreiber kritischer Anlagen nach dem BSIG bestimmen' soll. Demnach entfaltet die KRITIS-Verordnung erhebliche Auswirkungen weit über klassische physische Schutzpflichten hinaus.",
+      "text": "Der Referentenentwurf verfolgt ausdrücklich das Ziel, eine gemeinsame regulatorische Grundlage für physische Resilienzpflichten nach dem KRITIS-Dachgesetz sowie für ITSicherheitsanforderungen nach dem BSI-Gesetz zu schaffen. Dies ergibt sich insbesondere aus Abschnitt B des Referentenentwurfs, wonach Betreiber kritischer Anlagen nach Inkrafttreten der Verordnung 'nur noch durch das KRITIS -Dachgesetz und diese Verordnung bestimmt' werden sollen und die Verordnung 'auch den Adressatenkreis für Verpflichtungen für Betreiber kritischer Anlagen nach dem BSIG bestimmen' soll. Demnach entfaltet die KRITIS-Verordnung erhebliche Auswirkungen weit über klassische physische Schutzpflichten hinaus."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.664,
+            "t": 271.1508799999999,
+            "r": 454.06888000000004,
+            "b": 198.49747535911604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            444
+          ]
+        }
+      ],
+      "orig": "Aus Sicht des VDA ist daher eine klare regulatorische Abgrenzung zwingend erforderlich. Für die Automobilindustrie bestehen bereits heute umfangreiche regulatorische und technische Sicherheitsanforderungen, insbesondere über die UNECE-Regelung R155, den Standard ISO/SAE 21434 sowie bestehende Typgenehmigungs- und Auditprozesse. Zusätzliche parallele Nachweis-, Audit- oder Meldepflichten ohne zusätzlichen Sicherheitsgewinn sind zu vermeiden.",
+      "text": "Aus Sicht des VDA ist daher eine klare regulatorische Abgrenzung zwingend erforderlich. Für die Automobilindustrie bestehen bereits heute umfangreiche regulatorische und technische Sicherheitsanforderungen, insbesondere über die UNECE-Regelung R155, den Standard ISO/SAE 21434 sowie bestehende Typgenehmigungs- und Auditprozesse. Zusätzliche parallele Nachweis-, Audit- oder Meldepflichten ohne zusätzlichen Sicherheitsgewinn sind zu vermeiden."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 282.91,
+            "t": 802.46688,
+            "r": 531.85488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 547.92,
+            "t": 802.46688,
+            "r": 553.45488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "5",
+      "text": "5"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.664,
+            "t": 776.2108800000001,
+            "r": 405.4831199999997,
+            "b": 754.417475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "Bereits heute bestehen umfangreiche sektorale Sicherheitsanforderungen und internationale Standards, insbesondere:",
+      "text": "Bereits heute bestehen umfangreiche sektorale Sicherheitsanforderungen und internationale Standards, insbesondere:"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.664,
+            "t": 737.1908800000001,
+            "r": 168.77888,
+            "b": 728.257475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "· die NIS-2-Richtlinie,",
+      "text": "die NIS-2-Richtlinie,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.664,
+            "t": 711.03088,
+            "r": 149.30888,
+            "b": 702.097475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "· das BSI-Gesetz,",
+      "text": "das BSI-Gesetz,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.664,
+            "t": 684.87088,
+            "r": 189.29888,
+            "b": 675.937475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "· der Cyber Resilience Act,",
+      "text": "der Cyber Resilience Act,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.664,
+            "t": 658.7108800000001,
+            "r": 203.33888,
+            "b": 649.777475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "· die UNECE-Regelung R155,",
+      "text": "die UNECE-Regelung R155,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.664,
+            "t": 632.55088,
+            "r": 210.53888,
+            "b": 623.6174753591159,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "· der Standard ISO/SAE 21434,",
+      "text": "der Standard ISO/SAE 21434,",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 59.664,
+            "t": 606.39088,
+            "r": 326.71888,
+            "b": 597.457475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "· bestehende industrielle Sicherheits- und Auditstandards.",
+      "text": "bestehende industrielle Sicherheits- und Auditstandards.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.664,
+            "t": 580.80088,
+            "r": 447.916,
+            "b": 495.42747535911604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            566
+          ]
+        }
+      ],
+      "orig": "Die KRITIS-Verordnung darf nicht zu einer faktischen Doppelregulierung führen, insbesondere dort nicht, wo bereits etablierte sektorale Sicherheitsregime bestehen und angewendet werden. Parallele Audit-, Nachweis- oder Meldepflichten ohne zusätzlichen Sicherheitsgewinn sind konsequent zu vermeiden. Dies gilt insbesondere für Unternehmen, die bereits umfangreiche Cybersecurity-, Risikomanagement- und Compliance-Strukturen implementiert haben. Bestehende sektorale Anforderungen und Nachweise müssen ausdrücklich berücksichtigt und soweit möglich anerkannt werden.",
+      "text": "Die KRITIS-Verordnung darf nicht zu einer faktischen Doppelregulierung führen, insbesondere dort nicht, wo bereits etablierte sektorale Sicherheitsregime bestehen und angewendet werden. Parallele Audit-, Nachweis- oder Meldepflichten ohne zusätzlichen Sicherheitsgewinn sind konsequent zu vermeiden. Dies gilt insbesondere für Unternehmen, die bereits umfangreiche Cybersecurity-, Risikomanagement- und Compliance-Strukturen implementiert haben. Bestehende sektorale Anforderungen und Nachweise müssen ausdrücklich berücksichtigt und soweit möglich anerkannt werden."
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.664,
+            "t": 452.08888,
+            "r": 375.67888000000005,
+            "b": 437.7739062983426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "5. Schwellenwerte und gemeinsame Anlagen",
+      "text": "5. Schwellenwerte und gemeinsame Anlagen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.664,
+            "t": 420.22088,
+            "r": 458.1799999999996,
+            "b": 347.56747535911603,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            432
+          ]
+        }
+      ],
+      "orig": "Der Referentenentwurf sieht in § 1 Absatz 2 sowie in den sektorspezifischen Anlagenregelungen vor, dass mehrere Anlagen derselben Kategorie, die durch einen betriebstechnischen Zusammenhang verbunden sind, gemeinsam als kritische Anlage gelten können. Ergänzend enthalten insbesondere Anlage 1 Teil 1 Nummer 8 sowie die weiteren Anlagen weitreichende Aggregationsmechanismen für gemeinsame Anlagen und zentrale Steuerungsstrukturen.",
+      "text": "Der Referentenentwurf sieht in § 1 Absatz 2 sowie in den sektorspezifischen Anlagenregelungen vor, dass mehrere Anlagen derselben Kategorie, die durch einen betriebstechnischen Zusammenhang verbunden sind, gemeinsam als kritische Anlage gelten können. Ergänzend enthalten insbesondere Anlage 1 Teil 1 Nummer 8 sowie die weiteren Anlagen weitreichende Aggregationsmechanismen für gemeinsame Anlagen und zentrale Steuerungsstrukturen."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.664,
+            "t": 331.06088,
+            "r": 441.01043999999996,
+            "b": 283.84747535911606,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            312
+          ]
+        }
+      ],
+      "orig": "Diese Regelungen können erhebliche Auswirkungen auf industrielle Campus- und Produktionsstrukturen entfalten. Insbesondere für große Produktionsstandorte, Werksverbünde, Energiecampus, standortübergreifende Leitwarten oder konzernweite Plattformstrukturen besteht das Risiko unbeabsichtigter KRITIS-Einstufungen.",
+      "text": "Diese Regelungen können erhebliche Auswirkungen auf industrielle Campus- und Produktionsstrukturen entfalten. Insbesondere für große Produktionsstandorte, Werksverbünde, Energiecampus, standortübergreifende Leitwarten oder konzernweite Plattformstrukturen besteht das Risiko unbeabsichtigter KRITIS-Einstufungen."
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.664,
+            "t": 267.31088,
+            "r": 445.4127599999998,
+            "b": 194.537475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            410
+          ]
+        }
+      ],
+      "orig": "Die Kriterien für räumlichen Zusammenhang, betriebstechnische Verbindung, gemeinsame Leitung und vergleichbare technische Zwecke müssen daher klar definiert und verhältnismäßig ausgestaltet werden. Es muss ausgeschlossen werden, dass komplexe industrielle Wertschöpfungsstrukturen allein aufgrund organisatorischer oder technischer Verknüpfungen pauschal aggregiert und als kritische Anlagen eingestuft werden.",
+      "text": "Die Kriterien für räumlichen Zusammenhang, betriebstechnische Verbindung, gemeinsame Leitung und vergleichbare technische Zwecke müssen daher klar definiert und verhältnismäßig ausgestaltet werden. Es muss ausgeschlossen werden, dass komplexe industrielle Wertschöpfungsstrukturen allein aufgrund organisatorischer oder technischer Verknüpfungen pauschal aggregiert und als kritische Anlagen eingestuft werden."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.664,
+            "t": 178.03088000000002,
+            "r": 455.43251999999984,
+            "b": 143.537475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            251
+          ]
+        }
+      ],
+      "orig": "Darüber hinaus müssen Schwellenwerte und Aggregationsregeln den realen industriellen Betriebsmodellen Rechnung tragen. Insbesondere industrielle Mehrzweckplattformen und konzernweite Steuerungsstrukturen dürfen nicht unverhältnismäßig belastet werden.",
+      "text": "Darüber hinaus müssen Schwellenwerte und Aggregationsregeln den realen industriellen Betriebsmodellen Rechnung tragen. Insbesondere industrielle Mehrzweckplattformen und konzernweite Steuerungsstrukturen dürfen nicht unverhältnismäßig belastet werden."
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 282.91,
+            "t": 802.46688,
+            "r": 531.85488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 547.92,
+            "t": 802.46688,
+            "r": 553.45488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "6",
+      "text": "6"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 774.93888,
+            "r": 386.97688,
+            "b": 760.6239062983426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "6. Übergangs- und Bestandsschutzregelungen",
+      "text": "6. Übergangs- und Bestandsschutzregelungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 742.9508800000001,
+            "r": 460.6888,
+            "b": 695.8574753591159,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            311
+          ]
+        }
+      ],
+      "orig": "Die Automobilindustrie arbeitet mit langen Entwicklungs-, Produktions- und Betriebszyklen. Produktionsplattformen, Energie- und OT-Infrastrukturen sowie industrielle Steuerungssysteme werden über lange Zeiträume betrieben und können nur mit erheblichem technischem und wirtschaftlichem Aufwand angepasst werden.",
+      "text": "Die Automobilindustrie arbeitet mit langen Entwicklungs-, Produktions- und Betriebszyklen. Produktionsplattformen, Energie- und OT-Infrastrukturen sowie industrielle Steuerungssysteme werden über lange Zeiträume betrieben und können nur mit erheblichem technischem und wirtschaftlichem Aufwand angepasst werden."
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 679.2308800000001,
+            "r": 447.6935999999999,
+            "b": 619.297475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            347
+          ]
+        }
+      ],
+      "orig": "Der Referentenentwurf enthält bereits Regelungen zur zeitlichen Einordnung kritischer Anlagen, insbesondere in Anlage 1 Teil 1 Nummer 3 bis 6 sowie in den entsprechenden sektorspezifischen Anlagenregelungen. Danach gelten Anlagen grundsätzlich ab dem 1. April des auf die Schwellenwertüberschreitung folgenden Kalenderjahres als kritische Anlagen.",
+      "text": "Der Referentenentwurf enthält bereits Regelungen zur zeitlichen Einordnung kritischer Anlagen, insbesondere in Anlage 1 Teil 1 Nummer 3 bis 6 sowie in den entsprechenden sektorspezifischen Anlagenregelungen. Danach gelten Anlagen grundsätzlich ab dem 1. April des auf die Schwellenwertüberschreitung folgenden Kalenderjahres als kritische Anlagen."
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 602.79088,
+            "r": 451.3489199999998,
+            "b": 555.547475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            324
+          ]
+        }
+      ],
+      "orig": "Fahrzeugplattformen, industrielle Steuerungssysteme und Produktionsarchitekturen werden typischerweise über sehr lange Zeiträume entwickelt, homologiert und betrieben. Kurzfristige regulatorische Anpassungen können erhebliche Auswirkungen auf Serienproduktion, Aftermarket-Versorgung und industrielle Lieferketten entfalten.",
+      "text": "Fahrzeugplattformen, industrielle Steuerungssysteme und Produktionsarchitekturen werden typischerweise über sehr lange Zeiträume entwickelt, homologiert und betrieben. Kurzfristige regulatorische Anpassungen können erhebliche Auswirkungen auf Serienproduktion, Aftermarket-Versorgung und industrielle Lieferketten entfalten."
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 539.04088,
+            "r": 414.1881599999998,
+            "b": 517.387475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            153
+          ]
+        }
+      ],
+      "orig": "Aus Sicht des VDA sind darüber hinaus jedoch verbindliche, praxistaugliche und lebenszyklusgerechte Übergangs- und Bestandsschutzregelungen erforderlich.",
+      "text": "Aus Sicht des VDA sind darüber hinaus jedoch verbindliche, praxistaugliche und lebenszyklusgerechte Übergangs- und Bestandsschutzregelungen erforderlich."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 500.76088,
+            "r": 458.18147999999974,
+            "b": 440.827475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            385
+          ]
+        }
+      ],
+      "orig": "Laufende Produktionsprogramme, bestehende Plattformarchitekturen und langfristige Lieferketten dürfen nicht durch kurzfristige regulatorische Anpassungen gefährdet werden. Regulatorische Anforderungen müssen ausreichend Vorlaufzeiten sowie praktikable Übergangsmechanismen vorsehen, um Versorgungssicherheit, Innovationsfähigkeit und industrielle Wettbewerbsfähigkeit zu gewährleisten.",
+      "text": "Laufende Produktionsprogramme, bestehende Plattformarchitekturen und langfristige Lieferketten dürfen nicht durch kurzfristige regulatorische Anpassungen gefährdet werden. Regulatorische Anforderungen müssen ausreichend Vorlaufzeiten sowie praktikable Übergangsmechanismen vorsehen, um Versorgungssicherheit, Innovationsfähigkeit und industrielle Wettbewerbsfähigkeit zu gewährleisten."
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 397.58888,
+            "r": 369.06687999999997,
+            "b": 383.2739062983426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "7. Globale Betriebs- und Sicherheitsmodelle",
+      "text": "7. Globale Betriebs- und Sicherheitsmodelle",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 365.62088,
+            "r": 440.9506800000001,
+            "b": 318.407475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            287
+          ]
+        }
+      ],
+      "orig": "Die Automobilindustrie betreibt zunehmend globale Sicherheits-, Leitstellen- und Betriebsmodelle. Internationale Security Operations Center, cloudbasierte Betriebsplattformen und globale Entwicklungsnetzwerke sind wesentliche Bestandteile moderner industrieller Sicherheitsarchitekturen.",
+      "text": "Die Automobilindustrie betreibt zunehmend globale Sicherheits-, Leitstellen- und Betriebsmodelle. Internationale Security Operations Center, cloudbasierte Betriebsplattformen und globale Entwicklungsnetzwerke sind wesentliche Bestandteile moderner industrieller Sicherheitsarchitekturen."
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 301.9008799999999,
+            "r": 454.6687599999999,
+            "b": 241.93747535911598,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            406
+          ]
+        }
+      ],
+      "orig": "Die im Referentenentwurf enthaltenen weitreichenden Definitionen zentraler Steuerungsund Kollaborationssysteme dürfen nicht dazu führen, dass internationale Sicherheits- und Betriebsmodelle faktisch erschwert oder eingeschränkt werden. Vielmehr muss ausreichend Raum für sichere und kontrollierte globale Betriebsmodelle verbleiben, die dem internationalen Charakter der Automobilindustrie Rechnung tragen.",
+      "text": "Die im Referentenentwurf enthaltenen weitreichenden Definitionen zentraler Steuerungsund Kollaborationssysteme dürfen nicht dazu führen, dass internationale Sicherheits- und Betriebsmodelle faktisch erschwert oder eingeschränkt werden. Vielmehr muss ausreichend Raum für sichere und kontrollierte globale Betriebsmodelle verbleiben, die dem internationalen Charakter der Automobilindustrie Rechnung tragen."
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.664,
+            "t": 225.43088,
+            "r": 430.67944,
+            "b": 203.777475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            166
+          ]
+        }
+      ],
+      "orig": "Soweit regulatorische Anforderungen an zentrale Steuerungs- oder Betriebsmodelle gestellt werden, müssen diese klar, risikobasiert und rechtssicher ausgestaltet sein.",
+      "text": "Soweit regulatorische Anforderungen an zentrale Steuerungs- oder Betriebsmodelle gestellt werden, müssen diese klar, risikobasiert und rechtssicher ausgestaltet sein."
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 282.91,
+            "t": 802.46688,
+            "r": 531.85488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 547.92,
+            "t": 802.46688,
+            "r": 553.45488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "7",
+      "text": "7"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.664,
+            "t": 774.93888,
+            "r": 112.81688,
+            "b": 760.6239062983426,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "8. Fazit",
+      "text": "8. Fazit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.664,
+            "t": 742.9508800000001,
+            "r": 452.98875999999996,
+            "b": 593.8574753591159,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            920
+          ]
+        }
+      ],
+      "orig": "Der Verband der Automobilindustrie unterstützt die strategische Zielsetzung der Bundesregierung, die Resilienz kritischer Anlagen in Deutschland zu stärken und den Schutz kritischer Infrastrukturen an neue Bedrohungslagen anzupassen. Aus Sicht der Automobilindustrie ist der Referentenentwurf dabei von unmittelbarer praktischer Relevanz. Moderne automotive Wertschöpfung basiert auf hochvernetzten Produktions-, Energie-, Logistik- und Mobilitätsstrukturen mit umfangreicher OT- und IT-Infrastruktur, zentralen Leit- und Steuerungssystemen sowie digitalen Verkehrs- und Betriebsplattformen. Der Referentenentwurf erfasst mit den vorgesehenen Regelungen zu zentralen standortübergreifenden Steuerungs- und Überwachungssystemen, Aggregatoren, kommerziellen Steuerungssystemen, intelligenten Verkehrssystemen sowie Logistik- und Energieinfrastrukturen zunehmend auch solche industriellen Betriebs- und Plattformstrukturen.",
+      "text": "Der Verband der Automobilindustrie unterstützt die strategische Zielsetzung der Bundesregierung, die Resilienz kritischer Anlagen in Deutschland zu stärken und den Schutz kritischer Infrastrukturen an neue Bedrohungslagen anzupassen. Aus Sicht der Automobilindustrie ist der Referentenentwurf dabei von unmittelbarer praktischer Relevanz. Moderne automotive Wertschöpfung basiert auf hochvernetzten Produktions-, Energie-, Logistik- und Mobilitätsstrukturen mit umfangreicher OT- und IT-Infrastruktur, zentralen Leit- und Steuerungssystemen sowie digitalen Verkehrs- und Betriebsplattformen. Der Referentenentwurf erfasst mit den vorgesehenen Regelungen zu zentralen standortübergreifenden Steuerungs- und Überwachungssystemen, Aggregatoren, kommerziellen Steuerungssystemen, intelligenten Verkehrssystemen sowie Logistik- und Energieinfrastrukturen zunehmend auch solche industriellen Betriebs- und Plattformstrukturen."
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.664,
+            "t": 577.3208800000001,
+            "r": 459.58888,
+            "b": 453.66747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            790
+          ]
+        }
+      ],
+      "orig": "Damit die KRITIS-Verordnung ihre Ziele auch für die industrielle Praxis wirksam und verhältnismäßig erreicht, sind aus Sicht der Automobilindustrie jedoch zentrale Präzisierungen erforderlich. Dies betrifft insbesondere klare und rechtssichere Definitionen zentraler Steuerungs- und Plattformsysteme, verhältnismäßige und risikobasierte Schwellenwerte sowie eine klare Abgrenzung zwischen kritischen Infrastrukturen und allgemeinen industriellen Produktions- und Unternehmenssystemen. Nicht jede zentrale oder cloudbasierte Koordinierungsfunktion darf automatisch zu einer KRITIS-Einstufung führen. Maßgeblich sollten vielmehr reale Angriffspfade, tatsächliche Kritikalität, privilegierte Zugriffsrechte sowie konkrete Auswirkungen auf Versorgungssicherheit und öffentliche Sicherheit sein.",
+      "text": "Damit die KRITIS-Verordnung ihre Ziele auch für die industrielle Praxis wirksam und verhältnismäßig erreicht, sind aus Sicht der Automobilindustrie jedoch zentrale Präzisierungen erforderlich. Dies betrifft insbesondere klare und rechtssichere Definitionen zentraler Steuerungs- und Plattformsysteme, verhältnismäßige und risikobasierte Schwellenwerte sowie eine klare Abgrenzung zwischen kritischen Infrastrukturen und allgemeinen industriellen Produktions- und Unternehmenssystemen. Nicht jede zentrale oder cloudbasierte Koordinierungsfunktion darf automatisch zu einer KRITIS-Einstufung führen. Maßgeblich sollten vielmehr reale Angriffspfade, tatsächliche Kritikalität, privilegierte Zugriffsrechte sowie konkrete Auswirkungen auf Versorgungssicherheit und öffentliche Sicherheit sein."
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.664,
+            "t": 437.04088,
+            "r": 460.58871999999997,
+            "b": 338.92747535911604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            599
+          ]
+        }
+      ],
+      "orig": "Darüber hinaus muss eine konsequente Vermeidung von Doppelregulierungen sichergestellt werden. Für die Automobilindustrie bestehen bereits heute umfangreiche regulatorische und technische Sicherheitsanforderungen, insbesondere über die NIS-2Richtlinie, das BSI-Gesetz, den Cyber Resilience Act, die UNECE-Regelung R155 sowie den Standard ISO/SAE 21434. Zusätzliche parallele Audit-, Nachweis- oder Meldepflichten ohne zusätzlichen Sicherheitsgewinn sind zu vermeiden. Bestehende sektorale Sicherheitsregime und etablierte Audit- und Typgenehmigungsprozesse müssen ausdrücklich berücksichtigt werden.",
+      "text": "Darüber hinaus muss eine konsequente Vermeidung von Doppelregulierungen sichergestellt werden. Für die Automobilindustrie bestehen bereits heute umfangreiche regulatorische und technische Sicherheitsanforderungen, insbesondere über die NIS-2Richtlinie, das BSI-Gesetz, den Cyber Resilience Act, die UNECE-Regelung R155 sowie den Standard ISO/SAE 21434. Zusätzliche parallele Audit-, Nachweis- oder Meldepflichten ohne zusätzlichen Sicherheitsgewinn sind zu vermeiden. Bestehende sektorale Sicherheitsregime und etablierte Audit- und Typgenehmigungsprozesse müssen ausdrücklich berücksichtigt werden."
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.664,
+            "t": 322.30088,
+            "r": 445.3729199999998,
+            "b": 224.177475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            617
+          ]
+        }
+      ],
+      "orig": "Besondere Bedeutung haben zudem lebenszyklusgerechte Übergangs- und Bestandsschutzregelungen. Fahrzeugplattformen, industrielle Steuerungssysteme, Energie- und Ladeinfrastrukturen sowie Produktionsarchitekturen werden über sehr lange Zeiträume entwickelt, homologiert und betrieben. Kurzfristige regulatorische Anpassungen können erhebliche Auswirkungen auf Serienproduktion, Werkslogistik, Ersatzteilversorgung, industrielle Lieferketten und internationale Betriebsmodelle entfalten. Übergangsregelungen müssen daher ausreichend Vorlaufzeiten sowie praktikable und technologieneutrale Anpassungsmechanismen vorsehen.",
+      "text": "Besondere Bedeutung haben zudem lebenszyklusgerechte Übergangs- und Bestandsschutzregelungen. Fahrzeugplattformen, industrielle Steuerungssysteme, Energie- und Ladeinfrastrukturen sowie Produktionsarchitekturen werden über sehr lange Zeiträume entwickelt, homologiert und betrieben. Kurzfristige regulatorische Anpassungen können erhebliche Auswirkungen auf Serienproduktion, Werkslogistik, Ersatzteilversorgung, industrielle Lieferketten und internationale Betriebsmodelle entfalten. Übergangsregelungen müssen daher ausreichend Vorlaufzeiten sowie praktikable und technologieneutrale Anpassungsmechanismen vorsehen."
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.664,
+            "t": 207.67088,
+            "r": 442.55424,
+            "b": 147.61747535911604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            333
+          ]
+        }
+      ],
+      "orig": "Nur wenn diese Aspekte im weiteren Gesetzgebungsverfahren präzisiert werden, kann sichergestellt werden, dass hohe Sicherheits- und Resilienzstandards mit Innovationsfähigkeit, Investitionssicherheit, Versorgungssicherheit und internationaler Wettbewerbsfähigkeit der deutschen und europäischen Automobilindustrie in Einklang stehen.",
+      "text": "Nur wenn diese Aspekte im weiteren Gesetzgebungsverfahren präzisiert werden, kann sichergestellt werden, dass hohe Sicherheits- und Resilienzstandards mit Innovationsfähigkeit, Investitionssicherheit, Versorgungssicherheit und internationaler Wettbewerbsfähigkeit der deutschen und europäischen Automobilindustrie in Einklang stehen."
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 282.91,
+            "t": 802.46688,
+            "r": 531.85488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz",
+      "text": "Verordnung zur Bestimmung kritischer Anlagen nach dem KRITIS-Dachgesetz"
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 547.92,
+            "t": 802.46688,
+            "r": 553.45488,
+            "b": 796.2242598895027,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "8",
+      "text": "8"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.664,
+            "t": 514.92088,
+            "r": 131.90887999999998,
+            "b": 505.98747535911605,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Ansprechpartner",
+      "text": "Ansprechpartner",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.784,
+            "t": 483.12088,
+            "r": 140.26724,
+            "b": 474.18747535911604,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Dr. Marcus Bollig",
+      "text": "Dr. Marcus Bollig",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.784,
+            "t": 472.00311999999997,
+            "r": 137.12912,
+            "b": 455.0450329281768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Geschäftsführer marcus.bollig@vda.de",
+      "text": "Geschäftsführer marcus.bollig@vda.de",
+      "hyperlink": "mailto:marcus.bollig@vda.de"
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.784,
+            "t": 440.52088,
+            "r": 127.94888,
+            "b": 431.587475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Martin Lorenz",
+      "text": "Martin Lorenz",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.784,
+            "t": 429.38311999999996,
+            "r": 170.36083999999988,
+            "b": 403.3050329281768,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Abteilungsleiter Security, Daten & Digitalisierung martin.lorenz@vda.de",
+      "text": "Abteilungsleiter Security, Daten & Digitalisierung martin.lorenz@vda.de"
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.784,
+            "t": 388.78087999999997,
+            "r": 127.34888,
+            "b": 379.847475359116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Arlina Benson",
+      "text": "Arlina Benson",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.784,
+            "t": 377.66312,
+            "r": 170.37311999999983,
+            "b": 351.58503292817676,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        },
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 39.72,
+            "t": 545.20312,
+            "r": 289.4504399999997,
+            "b": 502.11181745856356,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            66,
+            315
+          ]
+        }
+      ],
+      "orig": "Referentin Security, Daten & Digitalisierung arlina.benson@vda.de Der Verband der Automobilindustrie (VDA) vereint rund 620 Hersteller und Zulieferer unter einem Dach. Die Mitglieder entwickeln und produzieren Pkw und Lkw, Software, Anhänger, Aufbauten, Busse, Teile und Zubehör sowie immer neue Mobilitätsangebote.",
+      "text": "Referentin Security, Daten & Digitalisierung arlina.benson@vda.de Der Verband der Automobilindustrie (VDA) vereint rund 620 Hersteller und Zulieferer unter einem Dach. Die Mitglieder entwickeln und produzieren Pkw und Lkw, Software, Anhänger, Aufbauten, Busse, Teile und Zubehör sowie immer neue Mobilitätsangebote."
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 39.72,
+            "t": 485.44311999999996,
+            "r": 294.62512,
+            "b": 442.3518174585635,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            269
+          ]
+        }
+      ],
+      "orig": "Wir sind die Interessenvertretung der Automobilindustrie und stehen für eine moderne, zukunftsorientierte multimodale Mobilität auf dem Weg zur Klimaneutralität. Der VDA vertritt die Interessen seiner Mitglieder gegenüber Politik, Medien und gesellschaftlichen Gruppen.",
+      "text": "Wir sind die Interessenvertretung der Automobilindustrie und stehen für eine moderne, zukunftsorientierte multimodale Mobilität auf dem Weg zur Klimaneutralität. Der VDA vertritt die Interessen seiner Mitglieder gegenüber Politik, Medien und gesellschaftlichen Gruppen."
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 39.72,
+            "t": 425.54312,
+            "r": 297.1447199999997,
+            "b": 346.57181745856354,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            401
+          ]
+        }
+      ],
+      "orig": "Wir arbeiten für Elektromobilität, klimaneutrale Antriebe, die Umsetzung der Klimaziele, Rohstoffsicherung, Digitalisierung und Vernetzung sowie German Engineering. Wir setzen uns dabei für einen wettbewerbsfähigen Wirtschafts- und Innovationsstandort ein. Unsere Industrie sichert Wohlstand in Deutschland: Mehr als 730.000 Menschen (2025) sind direkt in der deutschen Automobilindustrie beschäftigt.",
+      "text": "Wir arbeiten für Elektromobilität, klimaneutrale Antriebe, die Umsetzung der Klimaziele, Rohstoffsicherung, Digitalisierung und Vernetzung sowie German Engineering. Wir setzen uns dabei für einen wettbewerbsfähigen Wirtschafts- und Innovationsstandort ein. Unsere Industrie sichert Wohlstand in Deutschland: Mehr als 730.000 Menschen (2025) sind direkt in der deutschen Automobilindustrie beschäftigt."
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 39.72,
+            "t": 329.90311999999994,
+            "r": 294.62512,
+            "b": 298.8118174585636,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "Der VDA ist Veranstalter der größten internationalen Mobilitätsplattform IAA MOBILITY und der IAA TRANSPORTATION, der weltweit wichtigsten",
+      "text": "Der VDA ist Veranstalter der größten internationalen Mobilitätsplattform IAA MOBILITY und der IAA TRANSPORTATION, der weltweit wichtigsten"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 39.72,
+            "t": 294.02312000000006,
+            "r": 223.32512,
+            "b": 286.8118174585636,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "Plattform für die Zukunft der Nutzfahrzeugindustrie.",
+      "text": "Plattform für die Zukunft der Nutzfahrzeugindustrie."
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 46.81511008832278,
+            "t": 451.8438363745204,
+            "r": 543.4513421385079,
+            "b": 125.5967378207713,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 381.8724744922202,
+            "t": 761.2352739414201,
+            "r": 528.89331099747,
+            "b": 731.8593565135154,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 491.8245365362999,
+            "t": 48.18346990727866,
+            "r": 558.602379990136,
+            "b": 24.92495249249339,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 38.35548634394703,
+            "t": 224.72590930653632,
+            "r": 301.73776935756604,
+            "b": 76.67095015882171,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 39.72,
+              "t": 619.80688,
+              "r": 84.85655999999999,
+              "b": 627.0181825414364,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Herausgeber",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 111.74,
+              "t": 619.32688,
+              "r": 287.94728000000003,
+              "b": 683.5381825414364,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Verband der Automobilindustrie e. V. (VDA) Behrenstraße 35, 10117 Berlin www.vda.de Deutscher Bundestag Lobbyregister-Nr.: R001243 EU-Transparenz-Register-Nr.: 9557 4664 768-90",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 39.72,
+              "t": 696.8468799999999,
+              "r": 73.02167999999998,
+              "b": 704.0581825414364,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Copyright",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 111.74,
+              "t": 696.36688,
+              "r": 262.64732000000004,
+              "b": 704.0581825414364,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Verband der Automobilindustrie e. V. (VDA)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 39.72,
+              "t": 756.8668799999999,
+              "r": 66.26808,
+              "b": 764.0781825414365,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Version",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 111.74,
+              "t": 756.8668799999999,
+              "r": 146.57035999999994,
+              "b": 764.0781825414365,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Juni 2026",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 3,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 39.72,
+                "t": 619.80688,
+                "r": 84.85655999999999,
+                "b": 627.0181825414364,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Herausgeber",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 111.74,
+                "t": 619.32688,
+                "r": 287.94728000000003,
+                "b": 683.5381825414364,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Verband der Automobilindustrie e. V. (VDA) Behrenstraße 35, 10117 Berlin www.vda.de Deutscher Bundestag Lobbyregister-Nr.: R001243 EU-Transparenz-Register-Nr.: 9557 4664 768-90",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 39.72,
+                "t": 696.8468799999999,
+                "r": 73.02167999999998,
+                "b": 704.0581825414364,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Copyright",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 111.74,
+                "t": 696.36688,
+                "r": 262.64732000000004,
+                "b": 704.0581825414364,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Verband der Automobilindustrie e. V. (VDA)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 39.72,
+                "t": 756.8668799999999,
+                "r": 66.26808,
+                "b": 764.0781825414365,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Version",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 111.74,
+                "t": 756.8668799999999,
+                "r": 146.57035999999994,
+                "b": 764.0781825414365,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Juni 2026",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 7
+    },
+    "8": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 8
+    },
+    "9": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 9
+    }
+  }
+}

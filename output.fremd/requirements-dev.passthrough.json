@@ -1,0 +1,12 @@
+{
+  "format": "acsos-passthrough/1",
+  "hinweis": "Woertlich uebernommener Inhalt. Kein DoclingDocument: fuer dieses Format bringt Docling keinen Reader mit. Es gibt keine abgeleiteten Ueberschriften, Tabellen oder Seitenmarken; zitiert wird ueber den Schluesselpfad in der Quelle.",
+  "source_file": "requirements-dev.txt",
+  "source_sha256": "ef0b2efbd74087bd247ffa047bd0e0d3ed730e0927fe83e1f8a35e5f628e9ff6",
+  "source_bytes": 580,
+  "converter": "ACSOS Passthrough (woertlich, kein Parser)",
+  "lines": 16,
+  "characters": 614,
+  "text_coverage_percent": 100.0,
+  "text": "# Nur fuer Tests und Pruefungen, nicht zur Laufzeit.\n\n# Erzeugt das Norm-aehnliche Fixture-PDF aus fixtures/ground-truth/.\nreportlab>=4.0\n\n# Testlauf. Ohne pytest laufen die Tests mit Fixtures (tmp_path) nicht mit —\n# der Skriptpfad von tests/test_units.py sagt das dann ausdruecklich.\npytest>=8.0\n\n# Eigenschaftstests: sucht die Kennungsformen, die in keiner Beispielliste\n# stehen. Genau daran ist die Ueberschriftenerkennung zweimal zerbrochen.\nhypothesis>=6.100\n\n# Linter. Konfiguration in pyproject.toml, damit lokal, im Hook und in CI\n# dieselben Regeln gelten.\nruff>=0.6\n"
+}

@@ -1,0 +1,1953 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Weg_in_die_Basis_Absicherung_Empfohlene_Bearbeitungsreihenfolge",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10003332702810534110,
+    "filename": "Weg_in_die_Basis_Absicherung_Empfohlene_Bearbeitungsreihenfolge.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 503.58000488199997,
+            "r": 539.8739993889996,
+            "b": 477.94176958788233,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Weg in die Basis-Absicherung (WiBA)",
+      "text": "Weg in die Basis-Absicherung (WiBA)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 444.20758901299996,
+            "r": 282.88055606152,
+            "b": 432.20889489535296,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.629439389,
+            "t": 767.246421972,
+            "r": 331.5590393970677,
+            "b": 688.2512031484705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            35,
+            233
+          ]
+        }
+      ],
+      "orig": "Empfohlene Bearbeitungsreihenfolge Bundesamt für Sicherheit in der Informationstechnik Postfach 20 03 63 53133 Bonn E-Mail: wiba@bsi.bund.de Internet: https://www.bsi.bund.de © Bundesamt für Sicherheit in der Informationstechnik 2023",
+      "text": "Empfohlene Bearbeitungsreihenfolge Bundesamt für Sicherheit in der Informationstechnik Postfach 20 03 63 53133 Bonn E-Mail: wiba@bsi.bund.de Internet: https://www.bsi.bund.de © Bundesamt für Sicherheit in der Informationstechnik 2023"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 779.5475707029999,
+            "r": 284.655119389,
+            "b": 762.4212295265294,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "1 Ziel der Priorisierung",
+      "text": "1 Ziel der Priorisierung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639996886279945,
+            "t": 751.2864,
+            "r": 512.5225889124999,
+            "b": 700.2540611764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            366
+          ]
+        }
+      ],
+      "orig": "Die Prüffragen wurden auf Grundlage des IT-Grundschutz-Profils 'Basis-Absicherung Kommunalverwaltung' erstellt. Sie bilden die wesentlichen Aspekte ab, die bei einer Absicherung im kommunalen Bereich vorrangig betrachtet und tatsächlich umgesetzt werden müssen. Der Weg in die Basis-Absicherung kommt dabei jedoch ohne eine Methodik wie beispielsweise ISO 27001 aus.",
+      "text": "Die Prüffragen wurden auf Grundlage des IT-Grundschutz-Profils 'Basis-Absicherung Kommunalverwaltung' erstellt. Sie bilden die wesentlichen Aspekte ab, die bei einer Absicherung im kommunalen Bereich vorrangig betrachtet und tatsächlich umgesetzt werden müssen. Der Weg in die Basis-Absicherung kommt dabei jedoch ohne eine Methodik wie beispielsweise ISO 27001 aus."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.67167349652004,
+            "t": 689.2358399999999,
+            "r": 526.4734015408927,
+            "b": 652.2483011764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            239
+          ]
+        }
+      ],
+      "orig": "Grundsätzlich ist jede Checkliste in sich geschlossen, sodass eine unabhängige Bearbeitung möglich ist. Aufgrund von thematischer Nähe oder inhaltlichen Überschneidungen kann es jedoch sinnvoll sein, eine bestimmte Reihenfolge einzuhalten.",
+      "text": "Grundsätzlich ist jede Checkliste in sich geschlossen, sodass eine unabhängige Bearbeitung möglich ist. Aufgrund von thematischer Nähe oder inhaltlichen Überschneidungen kann es jedoch sinnvoll sein, eine bestimmte Reihenfolge einzuhalten."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.67167349652004,
+            "t": 641.2300799999999,
+            "r": 538.8233173223524,
+            "b": 548.1900611764704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            695
+          ]
+        }
+      ],
+      "orig": "Die vorgeschlagene Reihenfolge zur Bearbeitung der Checklisten beginnt mit grundlegenden allgemeinen und organisatorischen Maßnahmen und berücksichtigt speziellere Themen im weiteren Verlauf. Die Reihenfolge ist nicht verbindlich und kann bei Bedarf an die individuellen Gegebenheiten angepasst werden. Auch eine parallele Bearbeitung der Checklisten ist möglich. Insbesondere durch die Zuordnung bestimmter Themen zu unterschiedlichen Rollen in der Institution wird eine parallele Bearbeitung der Checklisten ermöglicht (z. B. zeitgleiche Bearbeitung der Checkliste 'Backup' durch die IT und der Checkliste 'Arbeit innerhalb der Institution / Haustechnik' durch die Haustechnik/Innerer Dienst).",
+      "text": "Die vorgeschlagene Reihenfolge zur Bearbeitung der Checklisten beginnt mit grundlegenden allgemeinen und organisatorischen Maßnahmen und berücksichtigt speziellere Themen im weiteren Verlauf. Die Reihenfolge ist nicht verbindlich und kann bei Bedarf an die individuellen Gegebenheiten angepasst werden. Auch eine parallele Bearbeitung der Checklisten ist möglich. Insbesondere durch die Zuordnung bestimmter Themen zu unterschiedlichen Rollen in der Institution wird eine parallele Bearbeitung der Checklisten ermöglicht (z. B. zeitgleiche Bearbeitung der Checkliste 'Backup' durch die IT und der Checkliste 'Arbeit innerhalb der Institution / Haustechnik' durch die Haustechnik/Innerer Dienst)."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.6822654827601,
+            "t": 537.2985599999998,
+            "r": 518.2070780350414,
+            "b": 514.2291011764704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            122
+          ]
+        }
+      ],
+      "orig": "Das BSI empfiehlt die im folgenden Kapitel dargestellte Bearbeitungsreihenfolge. Dabei liegen folgende Kriterien zugrunde:",
+      "text": "Das BSI empfiehlt die im folgenden Kapitel dargestellte Bearbeitungsreihenfolge. Dabei liegen folgende Kriterien zugrunde:"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.6870654827601,
+            "t": 503.24639145500004,
+            "r": 331.800949013,
+            "b": 494.18622117647044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "a) Die Gefährdungslage für kommunale Einrichtungen 1",
+      "text": "Die Gefährdungslage für kommunale Einrichtungen 1",
+      "enumerated": true,
+      "marker": "a)"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 74.64383240275995,
+            "t": 490.28927145500006,
+            "r": 328.44286990004,
+            "b": 481.26461263147064,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "b) Zweckdienliche Reihenfolge (allgemein vor konkret)",
+      "text": "Zweckdienliche Reihenfolge (allgemein vor konkret)",
+      "enumerated": true,
+      "marker": "b)"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639029900039986,
+            "t": 464.36447145500006,
+            "r": 518.7594139585307,
+            "b": 441.1817546034706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            173
+          ]
+        }
+      ],
+      "orig": "Mit 'Bearbeitungsreihenfolge' ist NICHT gemeint, dass alle Maßnahmen der Checklisten der Priorität 1 umgesetzt sein müssen, bevor sich den anderen Checklisten gewidmet wird.",
+      "text": "Mit 'Bearbeitungsreihenfolge' ist NICHT gemeint, dass alle Maßnahmen der Checklisten der Priorität 1 umgesetzt sein müssen, bevor sich den anderen Checklisten gewidmet wird."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999388999996,
+            "t": 427.166404882,
+            "r": 529.6878714172373,
+            "b": 390.05214605847056,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            215
+          ]
+        }
+      ],
+      "orig": "Es kann auch sinnvoll sein, zunächst Anforderungen aus eigentlich niedriger priorisierten Checklisten umzusetzen, wenn sie bspw. einen Quick Win darstellen oder offensichtliche, gravierende Schwachstellen schließen.",
+      "text": "Es kann auch sinnvoll sein, zunächst Anforderungen aus eigentlich niedriger priorisierten Checklisten umzusetzen, wenn sie bspw. einen Quick Win darstellen oder offensichtliche, gravierende Schwachstellen schließen."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.62943768884003,
+            "t": 379.160644882,
+            "r": 535.2065249024149,
+            "b": 328.12830605847057,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            373
+          ]
+        }
+      ],
+      "orig": "Innerhalb der Checklisten beginnen die Prüffragen in der Regel ebenfalls mit grundlegenden, allgemeinen Maßnahmen, die aufeinander aufbauend formuliert sind. Sie führen damit mit einer Art roter Faden durch die Thematik der jeweiligen Checkliste. So ergibt sich innerhalb der jeweiligen Checkliste eine natürliche Priorisierung durch die aufeinander aufbauenden Prüffragen.",
+      "text": "Innerhalb der Checklisten beginnen die Prüffragen in der Regel ebenfalls mit grundlegenden, allgemeinen Maßnahmen, die aufeinander aufbauend formuliert sind. Sie führen damit mit einer Art roter Faden durch die Thematik der jeweiligen Checkliste. So ergibt sich innerhalb der jeweiligen Checkliste eine natürliche Priorisierung durch die aufeinander aufbauenden Prüffragen."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.61888268372002,
+            "t": 317.110084882,
+            "r": 540.4632986917878,
+            "b": 280.12254605847056,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            206
+          ]
+        }
+      ],
+      "orig": "Beispiel: Die Checkliste 'Backup' fragt zunächst, ob festgelegt wurde, welche Daten gesichert werden sollen und im Anschluss, ob festgelegt wurde, in welchem zeitlichen Abstand diese Daten gesichert werden.",
+      "text": "Beispiel: Die Checkliste 'Backup' fragt zunächst, ob festgelegt wurde, welche Daten gesichert werden sollen und im Anschluss, ob festgelegt wurde, in welchem zeitlichen Abstand diese Daten gesichert werden."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.61888437332004,
+            "t": 269.104324882,
+            "r": 505.5477163571844,
+            "b": 232.11678605847055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            246
+          ]
+        }
+      ],
+      "orig": "Auch innerhalb der Checklisten kann es zweckmäßig sein, von der vorgegebenen Reihenfolge der Prüffragen abzuweichen. Das ist bspw. der Fall, wenn eine Prüffrage schnell und mit wenig Aufwand umgesetzt werden kann (Quick Win, Aufwandskategorie 1).",
+      "text": "Auch innerhalb der Checklisten kann es zweckmäßig sein, von der vorgegebenen Reihenfolge der Prüffragen abzuweichen. Das ist bspw. der Fall, wenn eine Prüffrage schnell und mit wenig Aufwand umgesetzt werden kann (Quick Win, Aufwandskategorie 1)."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "footnote",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 66.63119984699995,
+            "r": 334.92097464799997,
+            "b": 57.421741023470645,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "1 Vgl. Die Lage der IT-Sicherheit in Deutschland 2023, BSI, 2023, Seite 68.",
+      "text": "1 Vgl. Die Lage der IT-Sicherheit in Deutschland 2023, BSI, 2023, Seite 68."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 36.747600000000034,
+            "r": 240.29771938899995,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 534.6019125147999,
+            "t": 36.747600000000034,
+            "r": 540.3022725147998,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "3",
+      "text": "3"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 779.5475707029999,
+            "r": 461.88887035095996,
+            "b": 762.4212295265294,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "2 Empfohlene Priorisierung der Checklisten",
+      "text": "2 Empfohlene Priorisierung der Checklisten",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.62943938900001,
+            "t": 751.2864,
+            "r": 527.1576954051352,
+            "b": 714.1721411764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "Aus den in Kapitel 1 genannten Kriterien folgt die folgende Bearbeitungsreihenfolge. Wie beschrieben, ist diese jedoch von den jeweiligen Rahmenbedingungen vor Ort abhängig und damit entsprechend von der Organisation anpassbar.",
+      "text": "Aus den in Kapitel 1 genannten Kriterien folgt die folgende Bearbeitungsreihenfolge. Wie beschrieben, ist diese jedoch von den jeweiligen Rahmenbedingungen vor Ort abhängig und damit entsprechend von der Organisation anpassbar."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 696.692392675,
+            "r": 168.12059938899998,
+            "b": 682.9511490626652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "2.1 Priorität 1",
+      "text": "2.1 Priorität 1",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 672.086387792,
+            "r": 532.0797114434571,
+            "b": 634.9721289684705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            250
+          ]
+        }
+      ],
+      "orig": "Folgende Checklisten sollten als erstes bearbeitet werden. Diese sind die Grundlage für die weiteren Checklisten und haben entsprechend große Auswirkungen auf diese. Die Maßnahmen dienen zudem dazu die größten Cyberrisiken für Kommunen zu reduzieren.",
+      "text": "Folgende Checklisten sollten als erstes bearbeitet werden. Diese sind die Grundlage für die weiteren Checklisten und haben entsprechend große Auswirkungen auf diese. Die Maßnahmen dienen zudem dazu die größten Cyberrisiken für Kommunen zu reduzieren."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.64479938900001,
+            "t": 624.756467792,
+            "r": 128.39519938900003,
+            "b": 614.9254484371613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": " Backup",
+      "text": " Backup",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.63423938900002,
+            "t": 610.711667792,
+            "r": 177.58367688628002,
+            "b": 600.8806484371613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": " IT-Administration",
+      "text": " IT-Administration",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.62367688628001,
+            "t": 596.7935877919999,
+            "r": 214.41695518612002,
+            "b": 586.9625684371613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": " Organisation und Personal",
+      "text": " Organisation und Personal",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.61311768884002,
+            "t": 582.7487877919999,
+            "r": 286.53119770497557,
+            "b": 572.9177684371613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": " Rollen / Berechtigungen / Authentisierung",
+      "text": " Rollen / Berechtigungen / Authentisierung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.61311768884002,
+            "t": 568.7039877919999,
+            "r": 256.53023770295863,
+            "b": 558.8729684371613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": " Vorbereitung für Sicherheitsvorfälle",
+      "text": " Vorbereitung für Sicherheitsvorfälle",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 541.4124244139999,
+            "r": 168.12059938899998,
+            "b": 527.6711808016652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "2.2 Priorität 2",
+      "text": "2.2 Priorität 2",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.63999938899997,
+            "t": 516.926414648,
+            "r": 523.326527364797,
+            "b": 479.81215582447055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            241
+          ]
+        }
+      ],
+      "orig": "Nachfolgend zu den unter 2.1 genannten Checklisten, wird seitens des BSI empfohlen, danach möglichst diese Checklisten zu bearbeiten, um insbesondere die am meisten sensitiven IT-Systeme, die regelmäßig Ziele von Angriffen sind, zu schützen.",
+      "text": "Nachfolgend zu den unter 2.1 genannten Checklisten, wird seitens des BSI empfohlen, danach möglichst diese Checklisten zu bearbeiten, um insbesondere die am meisten sensitiven IT-Systeme, die regelmäßig Ziele von Angriffen sind, zu schützen."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.63423938899997,
+            "t": 469.596494648,
+            "r": 155.62943938899997,
+            "b": 459.7654752931613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": " Bürosoftware",
+      "text": " Bürosoftware",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.62367938899997,
+            "t": 455.55169464799997,
+            "r": 122.01695938899998,
+            "b": 445.72067529316126,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": " Client",
+      "text": " Client",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.61312189171998,
+            "t": 441.50689464799996,
+            "r": 120.5702418957539,
+            "b": 431.67587529316125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": " Netze",
+      "text": " Netze",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.61312189171998,
+            "t": 427.588814648,
+            "r": 159.56832189978786,
+            "b": 417.7577952931613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": " Serversysteme",
+      "text": " Serversysteme",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.60256189171999,
+            "t": 413.544014648,
+            "r": 251.84160189777083,
+            "b": 403.71299529316127,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": " Serverraum und Datenträgerarchiv",
+      "text": " Serverraum und Datenträgerarchiv",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.60256189171999,
+            "t": 399.49921464799996,
+            "r": 207.67968190180477,
+            "b": 389.66819529316126,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": " Sicherheitsmechanismen",
+      "text": " Sicherheitsmechanismen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.60256189171999,
+            "t": 385.45441464799995,
+            "r": 250.03584019156,
+            "b": 375.62339529316125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": " Webserver und Webanwendungen",
+      "text": " Webserver und Webanwendungen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.59776358132001,
+            "t": 364.86241464799997,
+            "r": 538.3977635813201,
+            "b": 341.79295582447054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            195
+          ]
+        }
+      ],
+      "orig": "Sinnvollerweise sollten die Checklisten 'Client', 'Sicherheitsmechanismen' und 'Bürosoftware' zusammen bearbeitet werden. Gleiches gilt für 'Serversysteme' und 'Serverraum und Datenträgerarchiv'.",
+      "text": "Sinnvollerweise sollten die Checklisten 'Client', 'Sicherheitsmechanismen' und 'Bürosoftware' zusammen bearbeitet werden. Gleiches gilt für 'Serversysteme' und 'Serverraum und Datenträgerarchiv'."
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 324.21241220700006,
+            "r": 168.12059938899998,
+            "b": 310.4711685946652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "2.3 Priorität 3",
+      "text": "2.3 Priorität 3",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 299.726402441,
+            "r": 537.2329880234427,
+            "b": 262.61214361747057,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            210
+          ]
+        }
+      ],
+      "orig": "Nachdem die wichtigsten organisatorischen und technischen Checklisten bearbeitet wurden, sollte sich mit der Absicherung der innerhalb und außerhalb der Organisation bearbeitenden Informationen gewidmet werden:",
+      "text": "Nachdem die wichtigsten organisatorischen und technischen Checklisten bearbeitet wurden, sollte sich mit der Absicherung der innerhalb und außerhalb der Organisation bearbeitenden Informationen gewidmet werden:"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.63423938900002,
+            "t": 252.396482441,
+            "r": 238.07135940110166,
+            "b": 242.56546308616123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": " Arbeit außerhalb der Institution",
+      "text": " Arbeit außerhalb der Institution",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.63423938900002,
+            "t": 238.35168244099998,
+            "r": 302.03327941520973,
+            "b": 228.52066308616122,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": " Arbeit innerhalb der Institution / Haustechnik",
+      "text": " Arbeit innerhalb der Institution / Haustechnik",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.63423938900002,
+            "t": 224.30688244099997,
+            "r": 173.86655938900003,
+            "b": 214.4758630861612,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": " Mobile Endgeräte",
+      "text": " Mobile Endgeräte",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.62367938900003,
+            "t": 210.38880244099994,
+            "r": 200.38271938900004,
+            "b": 200.5577830861613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": " Outsourcing und Cloud",
+      "text": " Outsourcing und Cloud",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.62368108916004,
+            "t": 196.34400244099993,
+            "r": 219.93983689684006,
+            "b": 186.51298308616117,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": " Umgang mit Informationen",
+      "text": " Umgang mit Informationen",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.61887689684002,
+            "t": 175.62528244099997,
+            "r": 516.9356129412018,
+            "b": 152.55582361747054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            130
+          ]
+        }
+      ],
+      "orig": "Hier sollten sinnvollerweise die Checklisten 'Arbeit außerhalb der Institution' und 'Mobile Endgeräte' zusammen bearbeitet werden.",
+      "text": "Hier sollten sinnvollerweise die Checklisten 'Arbeit außerhalb der Institution' und 'Mobile Endgeräte' zusammen bearbeitet werden."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 135.09240183100007,
+            "r": 168.12059938899998,
+            "b": 121.3511582186652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "2.4 Priorität 4",
+      "text": "2.4 Priorität 4",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 110.48639694799999,
+            "r": 277.079999389,
+            "b": 101.46173812447057,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Die Checklisten mit der geringsten Priorität sind:",
+      "text": "Die Checklisten mit der geringsten Priorität sind:"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.63423938900004,
+            "t": 91.11935694800002,
+            "r": 236.50847938900006,
+            "b": 81.28833759316126,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": " Drucker / Multifunktionsgeräte",
+      "text": " Drucker / Multifunktionsgeräte",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.62367938900005,
+            "t": 77.07455694800001,
+            "r": 175.3027193950509,
+            "b": 67.24353759316125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": " Telefonie und Fax",
+      "text": " Telefonie und Fax",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 36.747600000000034,
+            "r": 64.13327938900001,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "4",
+      "text": "4"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 356.63651717799996,
+            "t": 36.747600000000034,
+            "r": 540.2942371779999,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 781.2864,
+            "r": 274.92575940513547,
+            "b": 772.2617411764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            45
+          ]
+        }
+      ],
+      "orig": "Diese können daher am Ende bearbeitet werden.",
+      "text": "Diese können daher am Ende bearbeitet werden."
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 754.652414648,
+            "r": 419.3948335316801,
+            "b": 740.9111710356652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "2.5 Grafische Übersicht der Bearbeitungsreihenfolge",
+      "text": "2.5 Grafische Übersicht der Bearbeitungsreihenfolge",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.639999389,
+            "t": 36.747600000000034,
+            "r": 240.29771938899995,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 534.6019125147999,
+            "t": 36.747600000000034,
+            "r": 540.3022725147998,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "5",
+      "text": "5"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.962938796689855,
+            "t": 788.4578291998566,
+            "r": 194.90075857482503,
+            "b": 718.6220006164406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 375.46419512243085,
+            "t": 786.7520548521934,
+            "r": 538.0299094099007,
+            "b": 746.2191326454869,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 12.912976037671903,
+            "t": 286.71225829498223,
+            "r": 581.70554612947,
+            "b": 13.689495110228677,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.532298364063244,
+            "t": 725.1435290672321,
+            "r": 531.5615288282562,
+            "b": 218.01230429316365,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 5
+    }
+  }
+}

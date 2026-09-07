@@ -39,12 +39,43 @@ def normalize(text: str) -> str:
     return text.casefold()
 
 
+# Formate, die als Text gelesen werden (Zweitleser ohne Docling und ohne
+# Office-Bibliothek): die Datei selbst ist die Vergleichsgrundlage.
+TEXT_QUELLEN = {".md", ".markdown", ".txt", ".yml", ".yaml", ".json", ".xml", ".mm", ".csv"}
+
+
 def tokenize(text: str) -> list[str]:
     """Woerter und Zahlen; Satzzeichen und Layout-Artefakte fallen weg."""
     text = normalize(text)
     # Am Zeilenende getrennte Woerter zusammenfuehren (Silbentrennung im PDF).
     text = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", text)
     return re.findall(r"[0-9a-zA-ZÀ-ɏ]+(?:[.,][0-9]+)*", text)
+
+
+def tokenize_lines(text: str) -> list[str]:
+    """Wie tokenize(), aber zeilenweise.
+
+    Die Silbentrennungsregel in tokenize() fuehrt "Soft-\nware" zusammen — das
+    ist im PDF richtig, wo ein Zeilenumbruch mitten im Wort steht. In einer
+    Office-Zelle trennt derselbe Umbruch aber zwei Absaetze: aus "Software-"
+    am Absatzende und "This" am Anfang des naechsten wurde das Wort
+    "softwarethis", das es nirgends gibt. Es fehlte dann im Extrakt und drueckte
+    die Deckung.
+    """
+    return [t for line in text.splitlines() for t in tokenize(line)]
+
+
+def text_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
+    """Quelltext aus Textformaten (.md, .txt, .yml, .json, .xml, .mm).
+
+    Auch diese Quellen brauchen einen zweiten Leser: acht Markdown-Dateien
+    liefen durch Docling und trugen im Register den Befund "nicht
+    gegengeprueft (Format)" — ein ungepruefter Extrakt neben gepruefeten.
+    Gelesen wird die Datei roh, ohne Markdown-Deutung; verglichen wird auf
+    Wortebene, also stoert die Auszeichnung nicht.
+    """
+    roh = path.read_text(encoding="utf-8", errors="replace")
+    return {1: tokenize_lines(roh)}, {}
 
 
 def markdown_tokens(md_path: Path) -> list[str]:
@@ -95,7 +126,7 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     n = len(lines_by_page)
     seen: Counter[str] = Counter()
     for lines in lines_by_page.values():
-        seen.update({_mask(l) for l in lines if _mask(l) and len(tokenize(l)) <= 12})
+        seen.update({_mask(z) for z in lines if _mask(z) and len(tokenize(z)) <= 12})
     threshold = max(2, int(0.6 * n))
     running = {m for m, c in seen.items() if c >= threshold} if n >= 2 else set()
 
@@ -108,6 +139,214 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
         content[page_no] = tokenize(" ".join(keep))
         boiler[page_no] = tokenize(" ".join(drop))
     return content, boiler
+
+
+# --------------------------------------------------------------------------
+# Verlorene Bindestriche
+# --------------------------------------------------------------------------
+# Docling loest die Silbentrennung am Zeilenende auf, indem es den Trennstrich
+# entfernt. Das ist richtig fuer ein Wort, das nur der Umbruch getrennt hat
+# ("Informations-\nsicherheit"), und falsch fuer ein Wort, das den Bindestrich
+# selbst traegt ("IKT-\nSysteme"). Aus "IKT-Systemen" wird dann "IKTSystemen".
+#
+# Die Deckungspruefung sah das nicht: tokenize() entfernt denselben Trennstrich
+# auf der Quellseite, beide Seiten hiessen "iktsystemen", die Deckung blieb
+# 100 %. Gefunden hat es erst der Abgleich gegen den amtlichen Gesetzestext.
+#
+# Repariert wird nur mit Beleg. Ein Wort wird angefasst, wenn seine Form ohne
+# Bindestrich in der Quelle NICHT vorkommt und die Form mit Bindestrich dort
+# vorkommt. Damit bleibt echtes Binnenmajuskel ("OpenLDAP", "PowerShell")
+# unangetastet: es steht so in der Quelle.
+_WORT = re.compile(r"[A-Za-zÄÖÜäöüß0-9]+")
+
+# Kuerzere Woerter bleiben unangetastet: bei drei, vier Zeichen ist die Gefahr
+# eines zufaelligen Belegtreffers zu gross.
+MIN_WORTLAENGE = 6
+
+
+# Zeichen, die im Textlayer stehen, aber keinen Text bedeuten: Nichtzeichen und
+# das Ersatzzeichen. Sie entstehen, wenn die Schrift des PDF einen Codepunkt
+# nicht abbildet — im BSIG-Druck trifft es den geschuetzten Bindestrich U+2011,
+# der als U+FFFE ankommt. Docling wirft das Zeichen weg, und aus "IKT-Systemen"
+# wird "IKTSystemen": ein Wort, das es nirgends gibt.
+UNLESBAR = "\ufffe\uffff\ufffd"
+_UNLESBAR_IM_WORT = re.compile(rf"(?<=\w)[{UNLESBAR}](?=\w)")
+
+
+def quelltext(pdf_path: Path) -> str:
+    """Roher Textlayer der Quelle (Docling-unabhaengig, ohne ML-Modelle)."""
+    import pypdfium2
+
+    doc = pypdfium2.PdfDocument(pdf_path)
+    try:
+        return "".join(doc[i].get_textpage().get_text_range() for i in range(len(doc)))
+    finally:
+        doc.close()
+
+
+def unlesbar_im_wort(text: str) -> int:
+    """Zahl der unlesbaren Zeichen, die zwischen zwei Wortzeichen stehen."""
+    return len(_UNLESBAR_IM_WORT.findall(text))
+
+
+def quelle_kompakt(pdf_path: Path | str, text: str | None = None) -> str:
+    """Textlayer der Quelle ohne jeden Zwischenraum.
+
+    Dient dem ersten Beleg: kommt ein Wort hier vor, ist es richtig, egal wie
+    es aussieht.
+
+    Unlesbare Zeichen werden NICHT zu Bindestrichen gemacht. Der erste Anlauf
+    tat das — mit dem Argument, im BSIG-Druck seien alle 24 solchen Stellen
+    laut amtlichem XML Bindestriche. Das stimmte fuer das BSIG und nur dafuer:
+    in einer anderen Datei desselben Bestandes stehen 1639 solche Zeichen, und
+    dort sind es Trennstriche am Zeilenende ("Ab-nahme"). Dasselbe Zeichen,
+    zwei Bedeutungen, kein Merkmal, das sie unterscheidet. Also wird geraten
+    nicht — sondern gemeldet (siehe unlesbar_im_wort).
+    """
+    roh = text if text is not None else quelltext(Path(pdf_path))
+    return re.sub(r"\s+", "", roh)
+
+
+def verlorene_bindestriche(body: str, kompakt: str, zusammenhaengend: str = "") -> dict[str, str]:
+    """Woerter im Extrakt, denen ein Bindestrich der Quelle fehlt.
+
+    Rueckgabe: {"IKTSystemen": "IKT-Systemen", ...} — jeder Eintrag doppelt
+    belegt.
+
+    Zwei Belege, und der zweite ist der entscheidende:
+
+    1. Die Form OHNE Bindestrich kommt in der Quelle nirgends vor. Sonst waere
+       sie richtig — auch Binnenmajuskel wie "OpenLDAP" faellt darunter.
+    2. Die Form MIT Bindestrich steht in der Quelle ZUSAMMENHAENGEND, also
+       ohne Zeilenumbruch dazwischen.
+
+    Ohne Beleg 2 kehrt die Reparatur die Silbentrennung um: in einem Dokument
+    stand "Ab-\nnahme", der Extrakt hatte richtig "Abnahme" daraus gemacht, und
+    die erste Fassung dieser Funktion haette daraus wieder "Ab-nahme" gemacht —
+    93 solcher Fehlalarme in einer einzigen Datei. Der Unterschied ist genau
+    die Zusammenhaengendheit: ein Bindestrich, der zum Wort gehoert, steht
+    irgendwo auch mitten in der Zeile; ein Trennstrich steht nur am Zeilenende.
+    """
+    zusammenhaengend = zusammenhaengend or kompakt
+    treffer: dict[str, str] = {}
+    for wort in set(_WORT.findall(body)):
+        if len(wort) < MIN_WORTLAENGE or wort in kompakt:
+            continue
+        # Jede Trennstelle wird geprueft, nicht nur der Wechsel von klein zu
+        # gross: "IKTSystemen" und "Beratungsoder" haben keinen solchen
+        # Wechsel und waeren sonst unsichtbar.
+        for i in range(1, len(wort)):
+            mit = wort[:i] + "-" + wort[i:]
+            if mit in zusammenhaengend:
+                treffer[wort] = mit
+                break
+    return treffer
+
+
+def zweitleser_zeilen(pdf_path: Path) -> str:
+    """Textzeilen der Quelle ueber das Docling-PDF-Backend, mit Umbruechen.
+
+    Ein zweiter, unabhaengiger Leser neben pypdfium. Er wird gebraucht, wo der
+    erste ein unlesbares Zeichen liefert: pypdfium liest "TISAX\ufffeAssessment",
+    dieser Leser liest "TISAX-\nAssessment". Erst damit ist belegt, dass dort
+    eine Trennung am Zeilenende stand — vorher war es eine Vermutung, und
+    Vermutungen werden hier nicht gedruckt (Nr. 16).
+    """
+    from docling.backend.docling_parse_backend import DoclingParseDocumentBackend
+    from docling.datamodel.base_models import InputFormat
+    from docling.datamodel.document import InputDocument
+    from docling_core.types.doc.page import TextCellUnit
+
+    in_doc = InputDocument(path_or_stream=Path(pdf_path), format=InputFormat.PDF,
+                           backend=DoclingParseDocumentBackend, filename=Path(pdf_path).name)
+    backend = in_doc._backend
+    zeilen: list[str] = []
+    try:
+        for i in range(backend.page_count()):
+            for cell in backend.load_page(i).get_segmented_page().iterate_cells(TextCellUnit.LINE):
+                if cell.text:
+                    zeilen.append(cell.text.rstrip())
+    finally:
+        backend.unload()
+    return "\n".join(zeilen)
+
+
+# Beide Teile einer Trennung muessen so lang sein, sonst ist der Fund Rauschen.
+MIN_TEIL = 2
+
+
+def verlorene_trennungen(body: str, zweitleser: str) -> dict[str, str]:
+    """Woerter im Extrakt, die eine Trennung der Quelle verloren haben.
+
+    Rueckgabe: {"TISAXAssessment": "TISAX Assessment", "IKTSystem": "IKT-System"}
+
+    Zwei Belege, beide aus dem Dokument, keiner geraten:
+
+    1. Der zweite Leser hat an dieser Stelle "A-\nB" — am Zeilenende getrennt.
+       Der erste Leser liefert dort nur ein unlesbares Zeichen, deshalb greift
+       die aeltere Bindestrich-Regel hier nicht.
+    2. Dasselbe Wortpaar steht anderswo im Dokument ungetrennt, und zwar
+       entweder als "A B" oder als "A-B". Welche Form dort steht, entscheidet,
+       was eingesetzt wird.
+
+    Findet sich das Paar nirgends sonst, war es eine Silbentrennung ("Ab-\nnahme"):
+    dann ist die zusammengezogene Form des Extrakts richtig und es wird nichts
+    geaendert. Genau diese Unterscheidung fehlte der ersten Fassung der
+    Bindestrich-Reparatur, die 93-mal die Silbentrennung umkehrte.
+    """
+    treffer: dict[str, str] = {}
+    for m in re.finditer(r"(\w{%d,})-\n(\w{%d,})" % (MIN_TEIL, MIN_TEIL), zweitleser):
+        a, b = m.group(1), m.group(2)
+        geklebt = a + b
+        if len(geklebt) < MIN_WORTLAENGE or geklebt in treffer:
+            continue
+        if not re.search(rf"\b{re.escape(geklebt)}\b", body):
+            continue
+        # Dritter Beleg, und der entscheidende: die zusammengeschriebene Form
+        # darf im Dokument nirgends als eigenes Wort stehen. Sonst ist sie ein
+        # Wort und die Trennstelle war eine Silbentrennung. "wer-\nden" ist
+        # eine solche: "wer" und "den" sind beide gebraeuchlich, das Paar
+        # "wer den" steht anderswo, und "werden" steht ueberall. Ohne diese
+        # Pruefung wurde "werden" im Grundschutz-Kompendium 4880-mal zu
+        # "wer den" — die Regel hat mehr zerstoert als sie berichtigte.
+        if re.search(rf"\b{re.escape(geklebt)}\b", zweitleser):
+            continue
+        mit_leer = f"{a} {b}"
+        mit_strich = f"{a}-{b}"
+        # Der Beleg darf nicht die Fundstelle selbst sein: gesucht wird das
+        # Paar ungetrennt, also ohne den Umbruch dazwischen.
+        if mit_leer in zweitleser:
+            treffer[geklebt] = mit_leer
+        elif mit_strich in zweitleser:
+            treffer[geklebt] = mit_strich
+    return treffer
+
+
+def repariere_trennungen(body: str, zweitleser: str) -> tuple[str, dict[str, str]]:
+    """Setzt belegte Trennungen zurueck. Ohne Beleg bleibt alles, wie es ist."""
+    treffer = verlorene_trennungen(body, zweitleser)
+    for falsch, richtig in treffer.items():
+        body = re.sub(rf"\b{re.escape(falsch)}\b", richtig, body)
+    return body, treffer
+
+
+def zusammenhaengende_quelle(pdf_path: Path | str, text: str | None = None) -> str:
+    """Quelltext unveraendert, mit erhaltenen Umbruechen.
+
+    Der zweite Beleg beruht genau darauf: ein am Zeilenende getrenntes Wort ist
+    hier NICHT zusammenhaengend zu finden, ein Wort mit eigenem Bindestrich
+    schon. Deshalb wird hier nichts ersetzt — auch kein unlesbares Zeichen.
+    """
+    return text if text is not None else quelltext(Path(pdf_path))
+
+
+def repariere_bindestriche(body: str, kompakt: str,
+                           zusammenhaengend: str = "") -> tuple[str, dict[str, str]]:
+    """Setzt belegte Bindestriche zurueck. Ohne Beleg bleibt alles, wie es ist."""
+    treffer = verlorene_bindestriche(body, kompakt, zusammenhaengend)
+    for falsch, richtig in treffer.items():
+        body = re.sub(rf"\b{re.escape(falsch)}\b", richtig, body)
+    return body, treffer
 
 
 def normalize_ooxml_styles(src: Path, workdir: Path) -> Path | None:
@@ -192,7 +431,7 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
                 for row in ws.iter_rows(values_only=True):
                     for cell in row:
                         if cell is not None:
-                            words.extend(tokenize(str(cell)))
+                            words.extend(tokenize_lines(str(cell)))
                 pages[i] = words
         finally:
             wb.close()
@@ -201,13 +440,31 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
         from docx import Document as DocxDocument
 
         doc = DocxDocument(str(path))
+
+        def absatz_woerter(para) -> list[str]:
+            """Runweise lesen, nicht ueber den zusammengesetzten Absatztext.
+
+            Word speichert einen Absatz als Folge von Runs. Wo eine
+            Aenderungsmarkierung Text herausgenommen hat, stossen zwei Runs
+            ohne Leerzeichen aneinander: aus "…each environment" und "new "
+            wurde das Wort "environmentnew", das im Extrakt zu Recht fehlt.
+            Ein Wort, das die Formatierung ueber zwei Runs teilt ("Ver"+"trag"),
+            faengt die Zusammenfuehrung in compare() ab — der umgekehrte Fall
+            ist also abgedeckt, dieser war es nicht.
+            """
+            laeufe = [r.text for r in para.runs if r.text]
+            if not laeufe:
+                return tokenize_lines(para.text)
+            return [t for lauf in laeufe for t in tokenize_lines(lauf)]
+
         words = []
         for para in doc.paragraphs:
-            words.extend(tokenize(para.text))
+            words.extend(absatz_woerter(para))
         for table in doc.tables:
             for row in table.rows:
                 for cell in row.cells:
-                    words.extend(tokenize(cell.text))
+                    for para in cell.paragraphs:
+                        words.extend(absatz_woerter(para))
         pages[1] = words
 
     elif suffix == ".pptx":
@@ -218,11 +475,11 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
             words = []
             for shape in slide.shapes:
                 if shape.has_text_frame:
-                    words.extend(tokenize(shape.text_frame.text))
+                    words.extend(tokenize_lines(shape.text_frame.text))
                 if getattr(shape, "has_table", False):
                     for row in shape.table.rows:
                         for cell in row.cells:
-                            words.extend(tokenize(cell.text))
+                            words.extend(tokenize_lines(cell.text))
             pages[i] = words
 
     return pages, {p: [] for p in pages}
@@ -230,8 +487,11 @@ def office_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]
 
 def source_pages(path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
     """Quelltext je Seite (PDF) bzw. je Blatt/Folie (Office)."""
-    if path.suffix.lower() == ".pdf":
+    suffix = path.suffix.lower()
+    if suffix == ".pdf":
         return pdf_pages(path)
+    if suffix in TEXT_QUELLEN:
+        return text_pages(path)
     return office_pages(path)
 
 

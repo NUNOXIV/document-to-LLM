@@ -1,0 +1,7968 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "CISM_Strategic_Blueprint",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 6007960654904105236,
+    "filename": "CISM_Strategic_Blueprint.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/texts/69"
+      },
+      {
+        "$ref": "#/texts/70"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/73"
+      },
+      {
+        "$ref": "#/texts/74"
+      },
+      {
+        "$ref": "#/texts/75"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/texts/80"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/pictures/7"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/pictures/8"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/pictures/9"
+      },
+      {
+        "$ref": "#/texts/91"
+      },
+      {
+        "$ref": "#/texts/92"
+      },
+      {
+        "$ref": "#/pictures/10"
+      },
+      {
+        "$ref": "#/texts/94"
+      },
+      {
+        "$ref": "#/texts/95"
+      },
+      {
+        "$ref": "#/texts/96"
+      },
+      {
+        "$ref": "#/texts/97"
+      },
+      {
+        "$ref": "#/texts/98"
+      },
+      {
+        "$ref": "#/pictures/11"
+      },
+      {
+        "$ref": "#/texts/111"
+      },
+      {
+        "$ref": "#/texts/112"
+      },
+      {
+        "$ref": "#/texts/113"
+      },
+      {
+        "$ref": "#/texts/114"
+      },
+      {
+        "$ref": "#/texts/115"
+      },
+      {
+        "$ref": "#/texts/116"
+      },
+      {
+        "$ref": "#/texts/117"
+      },
+      {
+        "$ref": "#/texts/118"
+      },
+      {
+        "$ref": "#/texts/119"
+      },
+      {
+        "$ref": "#/texts/120"
+      },
+      {
+        "$ref": "#/texts/121"
+      },
+      {
+        "$ref": "#/texts/122"
+      },
+      {
+        "$ref": "#/texts/123"
+      },
+      {
+        "$ref": "#/texts/124"
+      },
+      {
+        "$ref": "#/texts/125"
+      },
+      {
+        "$ref": "#/texts/126"
+      },
+      {
+        "$ref": "#/texts/127"
+      },
+      {
+        "$ref": "#/texts/128"
+      },
+      {
+        "$ref": "#/pictures/12"
+      },
+      {
+        "$ref": "#/texts/135"
+      },
+      {
+        "$ref": "#/texts/136"
+      },
+      {
+        "$ref": "#/texts/137"
+      },
+      {
+        "$ref": "#/texts/138"
+      },
+      {
+        "$ref": "#/texts/139"
+      },
+      {
+        "$ref": "#/texts/140"
+      },
+      {
+        "$ref": "#/pictures/13"
+      },
+      {
+        "$ref": "#/texts/148"
+      },
+      {
+        "$ref": "#/texts/149"
+      },
+      {
+        "$ref": "#/texts/150"
+      },
+      {
+        "$ref": "#/texts/151"
+      },
+      {
+        "$ref": "#/pictures/14"
+      },
+      {
+        "$ref": "#/texts/170"
+      },
+      {
+        "$ref": "#/texts/171"
+      },
+      {
+        "$ref": "#/texts/172"
+      },
+      {
+        "$ref": "#/pictures/15"
+      },
+      {
+        "$ref": "#/texts/188"
+      },
+      {
+        "$ref": "#/texts/189"
+      },
+      {
+        "$ref": "#/texts/190"
+      },
+      {
+        "$ref": "#/groups/10"
+      },
+      {
+        "$ref": "#/texts/193"
+      },
+      {
+        "$ref": "#/texts/194"
+      },
+      {
+        "$ref": "#/texts/195"
+      },
+      {
+        "$ref": "#/texts/196"
+      },
+      {
+        "$ref": "#/texts/197"
+      },
+      {
+        "$ref": "#/texts/198"
+      },
+      {
+        "$ref": "#/texts/199"
+      },
+      {
+        "$ref": "#/texts/200"
+      },
+      {
+        "$ref": "#/texts/201"
+      },
+      {
+        "$ref": "#/pictures/16"
+      },
+      {
+        "$ref": "#/texts/210"
+      },
+      {
+        "$ref": "#/texts/211"
+      },
+      {
+        "$ref": "#/texts/212"
+      },
+      {
+        "$ref": "#/texts/213"
+      },
+      {
+        "$ref": "#/texts/214"
+      },
+      {
+        "$ref": "#/pictures/17"
+      },
+      {
+        "$ref": "#/pictures/18"
+      },
+      {
+        "$ref": "#/pictures/19"
+      },
+      {
+        "$ref": "#/pictures/20"
+      },
+      {
+        "$ref": "#/texts/215"
+      },
+      {
+        "$ref": "#/texts/216"
+      },
+      {
+        "$ref": "#/texts/217"
+      },
+      {
+        "$ref": "#/texts/218"
+      },
+      {
+        "$ref": "#/texts/219"
+      },
+      {
+        "$ref": "#/texts/220"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/12"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/72"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/174"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/178"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/184"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/185"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/186"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/187"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/191"
+        },
+        {
+          "$ref": "#/texts/192"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 354.0,
+            "t": 653.0,
+            "r": 490.69759114583337,
+            "b": 569.125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "Der",
+      "text": "Der",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 390.6666666666667,
+            "t": 544.3333333333334,
+            "r": 984.0,
+            "b": 448.6666666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "Ein detaillierter Guide zu Inhalten, Kosten, Lernstrategien und Karriere-Impact der Certified Information Security Manager Zertifizierung.",
+      "text": "Ein detaillierter Guide zu Inhalten, Kosten, Lernstrategien und Karriere-Impact der Certified Information Security Manager Zertifizierung."
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 494.6666666666667,
+            "t": 414.0,
+            "r": 881.0,
+            "b": 345.3333333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "Vom technischen Experten zum strategischen Security-Leader.",
+      "text": "Vom technischen Experten zum strategischen Security-Leader."
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 1280.3333333333333,
+            "t": 23.66666666666663,
+            "r": 1367.6666666666667,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 295.0100809733073,
+            "t": 737.0,
+            "r": 1096.1829427083335,
+            "b": 670.59375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Der strategische Perspektivenwechsel",
+      "text": "Der strategische Perspektivenwechsel",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 206.91532262166342,
+            "t": 685.2421875,
+            "r": 1168.616455078125,
+            "b": 617.859375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            173
+          ]
+        }
+      ],
+      "orig": "Die größte Lücke in der heutigen Cybersicherheit sind nicht fehlende Tools, sondern Führungskräfte, die technische Risiken in geschäftliche Entscheidungen übersetzen können.",
+      "text": "Die größte Lücke in der heutigen Cybersicherheit sind nicht fehlende Tools, sondern Führungskräfte, die technische Risiken in geschäftliche Entscheidungen übersetzen können."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 163.32459513346356,
+            "t": 602.3874994913737,
+            "r": 520.9354654947917,
+            "b": 563.0562489827474,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "Die technische Perspektive",
+      "text": "Die technische Perspektive",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 860.9908854166666,
+            "t": 601.7531248728434,
+            "r": 1197.7953287760417,
+            "b": 564.3249969482422,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Die Business-Perspektive",
+      "text": "Die Business-Perspektive",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 965.67333984375,
+            "t": 542.7562459309895,
+            "r": 1015.7388509114584,
+            "b": 533.875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Fiuanciol",
+      "text": "Fiuanciol"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 965.023193359375,
+            "t": 528.7999979654949,
+            "r": 1017.6895345052084,
+            "b": 520.5531209309895,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "agod",
+      "text": "agod"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 1082.7096354166665,
+            "t": 528.7999979654949,
+            "r": 1118.470703125,
+            "b": 524.9937489827473,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "veaihs",
+      "text": "veaihs"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 1081.4092610677085,
+            "t": 513.5750020345051,
+            "r": 1114.5694986979167,
+            "b": 512.9406229654949,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "ROOK",
+      "text": "ROOK"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 465.6683349609375,
+            "t": 177.9906005859375,
+            "r": 914.9576822916666,
+            "b": 129.14375813802076,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            105
+          ]
+        }
+      ],
+      "orig": "• Das Problem: Unternehmen investieren in Technologie, scheitern aber an Governance und Risikomanagement.",
+      "text": "Das Problem: Unternehmen investieren in Technologie, scheitern aber an Governance und Risikomanagement.",
+      "enumerated": false,
+      "marker": "•"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 340.8296305338542,
+            "t": 120.26249186197924,
+            "r": 1040.446533203125,
+            "b": 72.68436686197913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            172
+          ]
+        }
+      ],
+      "orig": "· Das CISM-Versprechen: Validiert die Fähigkeit, Informationssicherheit als strategische Managementfunktion zu leiten – nicht nur als Sammlung von Firewalls und Kontrollen.",
+      "text": "Das CISM-Versprechen: Validiert die Fähigkeit, Informationssicherheit als strategische Managementfunktion zu leiten – nicht nur als Sammlung von Firewalls und Kontrollen.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 379.1915283203125,
+            "t": 63.16874186197913,
+            "r": 1001.4344889322916,
+            "b": 36.52498372395837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "· Der Fokus: Weg vom technischen 'Wie' hin zum geschäftskritischen 'Warum'.",
+      "text": "Der Fokus: Weg vom technischen 'Wie' hin zum geschäftskritischen 'Warum'.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 1268.01708984375,
+            "t": 23.83748372395837,
+            "r": 1367.4979654947917,
+            "b": 7.978108723958371,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.510080655415855,
+            "t": 711.1051136652628,
+            "r": 1027.008544921875,
+            "b": 648.5738627115885,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "Karriere-Impact und Return on Investment",
+      "text": "Karriere-Impact und Return on Investment",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 65.02016131083171,
+            "t": 654.8901519775391,
+            "r": 882.0514322916666,
+            "b": 589.2007548014324,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Die CISM-Zertifizierung positioniert Fachkräfte für Rollen, bei denen die Kommunikation mit dem Vorstand im Mittelpunkt steht.",
+      "text": "Die CISM-Zertifizierung positioniert Fachkräfte für Rollen, bei denen die Kommunikation mit dem Vorstand im Mittelpunkt steht."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 86.0,
+            "t": 543.6666666666666,
+            "r": 327.33333333333337,
+            "b": 513.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "Gehalts-Benchmark: Gehalts-Benchmark:",
+      "text": "Gehalts-Benchmark: Gehalts-Benchmark:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 83.66666666666667,
+            "t": 507.3333333333333,
+            "r": 532.6666666666667,
+            "b": 406.6600341796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            355
+          ]
+        }
+      ],
+      "orig": "Globale Durchschnittsgehälter für CISM-Inhaber liegen bei über $149.000 (Nordamerika: ~$130k$165k+), oft angetrieben durch regulierte Branchen wie Finanzen und Gesundheitswesen. Globale Durchschnittsgehälter für CISM-Inhaber liegen bei über $149.000 (Nordamerika: ~$130k$165k+), oft angetrieben durch regulierte Branchen wie Finanzen und Gesundheitswesen.",
+      "text": "Globale Durchschnittsgehälter für CISM-Inhaber liegen bei über $149.000 (Nordamerika: ~$130k$165k+), oft angetrieben durch regulierte Branchen wie Finanzen und Gesundheitswesen. Globale Durchschnittsgehälter für CISM-Inhaber liegen bei über $149.000 (Nordamerika: ~$130k$165k+), oft angetrieben durch regulierte Branchen wie Finanzen und Gesundheitswesen."
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 83.66666666666667,
+            "t": 368.3333333333333,
+            "r": 315.33333333333337,
+            "b": 333.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "Typische Zielrollen: Typische Zielrollen:",
+      "text": "Typische Zielrollen: Typische Zielrollen:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 86.0,
+            "t": 332.6666666666667,
+            "r": 456.3333333333333,
+            "b": 298.6666666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "Chief Information Security Officer (CISO) Chief Information Security Officer (CISO)",
+      "text": "Chief Information Security Officer (CISO) Chief Information Security Officer (CISO)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 85.0,
+            "t": 281.6666666666667,
+            "r": 511.6666666666667,
+            "b": 248.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            87
+          ]
+        }
+      ],
+      "orig": "Head of Governance, Risk & Compliance (GRC) Head of Governance, Risk & Compliance (GRC)",
+      "text": "Head of Governance, Risk & Compliance (GRC) Head of Governance, Risk & Compliance (GRC)",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 86.33333333333333,
+            "t": 305.0,
+            "r": 451.0,
+            "b": 273.6666666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            79
+          ]
+        }
+      ],
+      "orig": "Information Security Manager / Director Information Security Manager / Director",
+      "text": "Information Security Manager / Director Information Security Manager / Director",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 83.33333333333333,
+            "t": 207.66666666666663,
+            "r": 264.33333333333337,
+            "b": 173.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "Marktdynamik: Marktdynamik:",
+      "text": "Marktdynamik: Marktdynamik:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 83.66666666666667,
+            "t": 170.66666666666663,
+            "r": 518.3333333333333,
+            "b": 91.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            245
+          ]
+        }
+      ],
+      "orig": "Die Nachfrage nach Führungskräften mit einem tiefen Verständnis für Business-Alignment wächst branchenübergreifend rasant. Die Nachfrage nach Führungskräften mit einem tiefen Verständnis für Business-Alignment wächst branchenübergreifend rasant.",
+      "text": "Die Nachfrage nach Führungskräften mit einem tiefen Verständnis für Business-Alignment wächst branchenübergreifend rasant. Die Nachfrage nach Führungskräften mit einem tiefen Verständnis für Business-Alignment wächst branchenübergreifend rasant."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 1056.5020345052085,
+            "t": 670.0492401123047,
+            "r": 1293.7046712239583,
+            "b": 592.3588968912761,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "$149k+ Globaler Durchschnitt",
+      "text": "$149k+ Globaler Durchschnitt",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 1099.1734212239583,
+            "t": 589.2007548014324,
+            "r": 1249.7782389322917,
+            "b": 540.5653483072916,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "Nordamerika: ~$130k-$165k+",
+      "text": "Nordamerika: ~$130k-$165k+"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 1050.8543294270835,
+            "t": 528.5643920898438,
+            "r": 1298.0972493489583,
+            "b": 488.77176920572913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "CISM Salary Benchmark (abhängig von Erfahrung & Branche)",
+      "text": "CISM Salary Benchmark (abhängig von Erfahrung & Branche)"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 1270.6666666666667,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 8.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "A Gemini Notebook",
+      "text": "A Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 53.0,
+            "t": 732.0,
+            "r": 1214.414306640625,
+            "b": 638.1875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "Das Zertifizierungs-Ökosystem im Vergleich",
+      "text": "Das Zertifizierungs-Ökosystem im Vergleich",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 55.34274196624756,
+            "t": 654.8125,
+            "r": 1047.4939778645835,
+            "b": 599.59375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Wo positioniert sich CISM im Vergleich zu anderen Branchenstandards?",
+      "text": "Wo positioniert sich CISM im Vergleich zu anderen Branchenstandards?"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 68.0,
+            "t": 94.5625,
+            "r": 1226.4158528645833,
+            "b": 53.59375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            101
+          ]
+        }
+      ],
+      "orig": "Pro-Tipp: Viele Top-Führungskräfte kombinieren CISSP (technische Breite) mit CISM (Management-Tiefe).",
+      "text": "Pro-Tipp: Viele Top-Führungskräfte kombinieren CISSP (technische Breite) mit CISM (Management-Tiefe)."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 1270.3333333333333,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "A Gemini Notebook",
+      "text": "A Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 47.85080655415853,
+            "t": 730.0,
+            "r": 1230.51611328125,
+            "b": 658.4500020345052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "Voraussetzungen und Zulassungs-Algorithmus",
+      "text": "Voraussetzungen und Zulassungs-Algorithmus",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 53.40322621663412,
+            "t": 671.7000020345052,
+            "r": 1265.0645345052083,
+            "b": 625.3250020345051,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "Der CISM erfordert nachgewiesene Führungserfahrung. Die Prüfung kann jedoch im Voraus abgelegt werden.",
+      "text": "Der CISM erfordert nachgewiesene Führungserfahrung. Die Prüfung kann jedoch im Voraus abgelegt werden."
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1117.8115234375,
+            "t": 579.6458333333334,
+            "r": 1276.95263671875,
+            "b": 556.3958333333334,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "ZULASSUNG ZUR",
+      "text": "ZULASSUNG ZUR"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 793.6592610677084,
+            "t": 569.9583333333334,
+            "r": 824.3134765625,
+            "b": 542.8333333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "Ja",
+      "text": "Ja"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1093.0272623697917,
+            "t": 557.0416666666666,
+            "r": 1302.38916015625,
+            "b": 535.7291666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "CISM-ZERTIFIZIERUNG",
+      "text": "CISM-ZERTIFIZIERUNG"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 708.8709716796875,
+            "t": 513.7708333333333,
+            "r": 878.4475911458334,
+            "b": 486.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Erfahrungs-Waiver",
+      "text": "Erfahrungs-Waiver"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 711.4798583984375,
+            "t": 488.5833333333333,
+            "r": 946.930419921875,
+            "b": 462.75,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "(max. 2 Jahre anrechenbar):",
+      "text": "(max. 2 Jahre anrechenbar):"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.78528340657553,
+            "t": 477.60416666666663,
+            "r": 289.49495442708337,
+            "b": 449.83333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Die Grundregel: 5 Jahre",
+      "text": "Die Grundregel: 5 Jahre"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 82.74193572998047,
+            "t": 451.125,
+            "r": 284.2772216796875,
+            "b": 427.22916666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Gesamterfahrung in der",
+      "text": "Gesamterfahrung in der"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 712.132080078125,
+            "t": 456.9375,
+            "r": 1003.0211588541666,
+            "b": 433.6875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "- 2 Jahre: Aktiver CISSP / CISA oder",
+      "text": "- 2 Jahre: Aktiver CISSP / CISA oder"
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 488.42138671875,
+            "t": 444.66666666666663,
+            "r": 573.2096761067709,
+            "b": 420.77083333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "5 JAHRE",
+      "text": "5 JAHRE"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 82.089719136556,
+            "t": 427.875,
+            "r": 279.0594685872396,
+            "b": 403.97916666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Informationssicherheit,",
+      "text": "Informationssicherheit,"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 433.6350911458333,
+            "t": 422.0625,
+            "r": 628.648193359375,
+            "b": 398.8125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "GESAMTERFAHRUNG",
+      "text": "GESAMTERFAHRUNG"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 734.3074544270834,
+            "t": 433.6875,
+            "r": 953.45263671875,
+            "b": 412.375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "relevanter Masterabschluss.",
+      "text": "relevanter Masterabschluss."
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 82.089719136556,
+            "t": 404.625,
+            "r": 305.148193359375,
+            "b": 380.72916666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "davon mindestens 3 Jahre",
+      "text": "davon mindestens 3 Jahre"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 483.20361328125,
+            "t": 400.75,
+            "r": 578.4274088541666,
+            "b": 376.20833333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "ERFÜLLT?",
+      "text": "ERFÜLLT?"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 712.132080078125,
+            "t": 403.97916666666663,
+            "r": 1014.10888671875,
+            "b": 380.72916666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "- 1 Jahr: Security+ Zertifizierung oder",
+      "text": "- 1 Jahr: Security+ Zertifizierung oder"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 82.089719136556,
+            "t": 380.08333333333337,
+            "r": 297.3215738932292,
+            "b": 356.1875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "im Security-Management",
+      "text": "im Security-Management"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 733.0030110677084,
+            "t": 382.02083333333337,
+            "r": 999.7600911458334,
+            "b": 356.83333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "generelle Management-Erfahrung.",
+      "text": "generelle Management-Erfahrung."
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 81.4375,
+            "t": 357.47916666666663,
+            "r": 265.3628946940104,
+            "b": 332.9375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "(verteilt auf 3+ CISM-",
+      "text": "(verteilt auf 3+ CISM-"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.13306427001953,
+            "t": 334.875,
+            "r": 179.2701619466146,
+            "b": 305.8125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Domänen).",
+      "text": "Domänen)."
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1029.7621256510415,
+            "t": 340.0416666666667,
+            "r": 1060.4163411458335,
+            "b": 312.9166666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "Ja",
+      "text": "Ja"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 736.9163411458334,
+            "t": 311.625,
+            "r": 874.5342610677084,
+            "b": 287.7291666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "ERFAHRUNGS-",
+      "text": "ERFAHRUNGS-"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 996.4990234375,
+            "t": 305.8125,
+            "r": 1093.0272623697917,
+            "b": 279.3333333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "(Mit Waiver)",
+      "text": "(Mit Waiver)"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 566.0352783203125,
+            "t": 283.8541666666667,
+            "r": 648.2147216796875,
+            "b": 252.20833333333326,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "X Nein",
+      "text": "X Nein"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 767.570556640625,
+            "t": 289.0208333333333,
+            "r": 845.1844889322916,
+            "b": 266.4166666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "WAIVER",
+      "text": "WAIVER"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 738.8729654947916,
+            "t": 266.4166666666667,
+            "r": 873.2298177083334,
+            "b": 244.45833333333326,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "ANWENDBAR?",
+      "text": "ANWENDBAR?"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 749.960693359375,
+            "t": 244.45833333333326,
+            "r": 861.4899088541666,
+            "b": 220.5625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "(max. 2 Jahre)",
+      "text": "(max. 2 Jahre)"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 958.6703287760416,
+            "t": 205.0625,
+            "r": 1042.8064778645835,
+            "b": 175.35416666666674,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "XNein",
+      "text": "XNein"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 271.23286946614587,
+            "t": 152.75,
+            "r": 871.9253743489584,
+            "b": 127.5625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Das Zeitfenster: Erfahrungen müssen innerhalb der letzten 10 Jahre vor",
+      "text": "Das Zeitfenster: Erfahrungen müssen innerhalb der letzten 10 Jahre vor"
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1100.8538411458333,
+            "t": 151.45833333333326,
+            "r": 1294.5625,
+            "b": 128.20833333333326,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "VORAUSSETZUNGEN",
+      "text": "VORAUSSETZUNGEN"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 269.92842610677087,
+            "t": 128.85416666666674,
+            "r": 886.9264322916666,
+            "b": 101.72916666666674,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "der Bewerbung gesammelt worden sein. Nach bestandener Prüfung haben",
+      "text": "der Bewerbung gesammelt worden sein. Nach bestandener Prüfung haben"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1123.6814778645833,
+            "t": 130.14583333333326,
+            "r": 1270.430419921875,
+            "b": 106.25,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "NICHT ERFÜLLT",
+      "text": "NICHT ERFÜLLT"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 269.92842610677087,
+            "t": 105.60416666666674,
+            "r": 727.7853190104166,
+            "b": 78.47916666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "Sie 5 Jahre Zeit, die fehlende Erfahrung nachzuweisen.",
+      "text": "Sie 5 Jahre Zeit, die fehlende Erfahrung nachzuweisen."
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/pictures/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1086.5050455729167,
+            "t": 106.25,
+            "r": 1307.6068522135417,
+            "b": 82.35416666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "(Weitere Erfahrung sammeln)",
+      "text": "(Weitere Erfahrung sammeln)"
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 1280.6666666666667,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 50.319052378336586,
+            "t": 730.0505514144897,
+            "r": 1288.9894205729167,
+            "b": 661.8198496500651,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "Die Architektur der Prüfung: Die 4 CISM-Domänen",
+      "text": "Die Architektur der Prüfung: Die 4 CISM-Domänen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 53.63810475667318,
+            "t": 667.6681976318359,
+            "r": 1304.9208984375,
+            "b": 631.9283040364583,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            105
+          ]
+        }
+      ],
+      "orig": "Das CISM-Examen basiert auf einer detaillierten Job-Practice-Analyse realer Management-Herausforderungen.",
+      "text": "Das CISM-Examen basiert auf einer detaillierten Job-Practice-Analyse realer Management-Herausforderungen."
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 53.63810475667318,
+            "t": 451.27939860026044,
+            "r": 310.5327555338542,
+            "b": 397.9944661458333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Domäne 1: InfoSec Governance (17%)",
+      "text": "Domäne 1: InfoSec Governance (17%)"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 54.96572621663412,
+            "t": 393.4457600911458,
+            "r": 361.64617919921875,
+            "b": 318.7169189453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            93
+          ]
+        }
+      ],
+      "orig": "Aufbau von Frameworks (COBIT, ISO 27001), Abstimmung mit der Geschäftsführung und Compliance.",
+      "text": "Aufbau von Frameworks (COBIT, ISO 27001), Abstimmung mit der Geschäftsführung und Compliance."
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 53.0,
+            "t": 228.33333333333337,
+            "r": 249.33333333333334,
+            "b": 170.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            63
+          ]
+        }
+      ],
+      "orig": "Domäne 2: Risk Management (20%) Domäne 2: Risk Management (20%)",
+      "text": "Domäne 2: Risk Management (20%) Domäne 2: Risk Management (20%)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 54.96572621663412,
+            "t": 169.0,
+            "r": 329.3333333333333,
+            "b": 67.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            211
+          ]
+        }
+      ],
+      "orig": "Risiken identifizieren, bewerten und Behandlungsstrategien (Mitigate, Transfer, Avoid, Àccept) festlegen. Risiken identifizieren, bewerten und Behandlungsstrategien (Mitigate, Transfer, Avoid, Àccept) festlegen.",
+      "text": "Risiken identifizieren, bewerten und Behandlungsstrategien (Mitigate, Transfer, Avoid, Àccept) festlegen. Risiken identifizieren, bewerten und Behandlungsstrategien (Mitigate, Transfer, Avoid, Àccept) festlegen."
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 1045.3710123697915,
+            "t": 447.38051350911456,
+            "r": 1317.5332845052083,
+            "b": 393.4457600911458,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Domäne 4: Incident Management (30%)",
+      "text": "Domäne 4: Incident Management (30%)"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 1046.0347493489585,
+            "t": 389.546875,
+            "r": 1356.0342610677083,
+            "b": 314.8179931640625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            93
+          ]
+        }
+      ],
+      "orig": "Reaktionspläne, Business Continuity (BCP), Disaster Recovery (DRP) und Post-Incident-Reviews.",
+      "text": "Reaktionspläne, Business Continuity (BCP), Disaster Recovery (DRP) und Post-Incident-Reviews."
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 1102.6666666666667,
+            "t": 227.33333333333337,
+            "r": 1297.6666666666667,
+            "b": 170.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Domäne 4: Incident Management (30%) Domäne 4: Incident Management (30%)",
+      "text": "Domäne 4: Incident Management (30%) Domäne 4: Incident Management (30%)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 871.45263671875,
+            "t": 89.98160807291663,
+            "r": 1085.8634440104167,
+            "b": 35.39705403645837,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "Die grö8te Säule. Umsetzung der Strategie durch Architektur, Kontrollen, Budgets und Metriken.",
+      "text": "Die grö8te Säule. Umsetzung der Strategie durch Architektur, Kontrollen, Budgets und Metriken."
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 1103.1224772135417,
+            "t": 169.2591552734375,
+            "r": 1333.4647623697917,
+            "b": 70.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            187
+          ]
+        }
+      ],
+      "orig": "Reaktionspläne, Business Continuity (BCP), Disaster Recovery (DRP) und Post-Incident-Reviews. Reaktionspläne, Business Continuity (BCP), Disaster Recovery (DRP) und Post-Incident-Reviews.",
+      "text": "Reaktionspläne, Business Continuity (BCP), Disaster Recovery (DRP) und Post-Incident-Reviews. Reaktionspläne, Business Continuity (BCP), Disaster Recovery (DRP) und Post-Incident-Reviews."
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/pictures/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 607.9198811848959,
+            "t": 532.5064290364584,
+            "r": 814.3649088541666,
+            "b": 477.921875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "Unternehmensziele / Business Objectives",
+      "text": "Unternehmensziele / Business Objectives"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/pictures/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 870.788818359375,
+            "t": 168.609375,
+            "r": 1063.2938639322915,
+            "b": 89.98160807291663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "Domäne 3: Program Development & Management (33%)",
+      "text": "Domäne 3: Program Development & Management (33%)"
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 1280.6666666666667,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 79.0,
+            "t": 704.0,
+            "r": 960.4939778645834,
+            "b": 626.4652811686199,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Prüfungsmechanik und F Parameter",
+      "text": "Prüfungsmechanik und F Parameter",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 81.6940523783366,
+            "t": 633.4166666666667,
+            "r": 1140.4567057291667,
+            "b": 555.8819478352865,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            127
+          ]
+        }
+      ],
+      "orig": "Harte Fakten für den Testtag. Die Prüfung testet keine reine Auswendiglern-Fähigkeit, sondern das Urteilsvermögen in Szenarien.",
+      "text": "Harte Fakten für den Testtag. Die Prüfung testet keine reine Auswendiglern-Fähigkeit, sondern das Urteilsvermögen in Szenarien."
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 83.33333333333333,
+            "t": 264.3333333333333,
+            "r": 282.66666666666663,
+            "b": 205.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "Format: 150 Multiple-Choice-",
+      "text": "Format: 150 Multiple-Choice-"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 157.0,
+            "t": 433.6666666666667,
+            "r": 201.66666666666669,
+            "b": 345.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "?",
+      "text": "?"
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 84.33333333333333,
+            "t": 210.0,
+            "r": 243.0,
+            "b": 153.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        }
+      ],
+      "orig": "Fragen (stark szenariobasiert).",
+      "text": "Fragen (stark szenariobasiert)."
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 417.0,
+            "t": 264.0,
+            "r": 644.3333333333334,
+            "b": 151.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "Zeitansatz: 4 Stunden (Verfügbar in Testzentren oder via Online-Proctoring).",
+      "text": "Zeitansatz: 4 Stunden (Verfügbar in Testzentren oder via Online-Proctoring)."
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/pictures/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 870.0,
+            "t": 327.0,
+            "r": 932.0,
+            "b": 308.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "450/800",
+      "text": "450/800"
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 750.6666666666666,
+            "t": 264.0,
+            "r": 918.0,
+            "b": 233.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Scoring-System:",
+      "text": "Scoring-System:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 751.0,
+            "t": 237.0,
+            "r": 982.6666666666666,
+            "b": 128.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "Skalierte Bewertung von 200 bis 800 Punkten. Bestehensgrenze: 450 Punkte.",
+      "text": "Skalierte Bewertung von 200 bis 800 Punkten. Bestehensgrenze: 450 Punkte."
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/pictures/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 1177.6666666666667,
+            "t": 369.6666666666667,
+            "r": 1210.6666666666667,
+            "b": 337.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "%",
+      "text": "%"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 1085.0,
+            "t": 263.6666666666667,
+            "r": 1222.3333333333333,
+            "b": 233.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Erfolgsquote:",
+      "text": "Erfolgsquote:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 1085.0,
+            "t": 236.66666666666663,
+            "r": 1330.6666666666667,
+            "b": 100.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            107
+          ]
+        }
+      ],
+      "orig": "Geschätzt 50-60% im ersten Versuch – die Hürde liegt in der zwingend erforderlichen Management-Perspektive.",
+      "text": "Geschätzt 50-60% im ersten Versuch – die Hürde liegt in der zwingend erforderlichen Management-Perspektive."
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 1280.6666666666667,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 196.5040283203125,
+            "t": 721.0,
+            "r": 1178.7666015625,
+            "b": 656.28125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Die Geheimwaffe: Das \"ISACA Mindset\"",
+      "text": "Die Geheimwaffe: Das \"ISACA Mindset\"",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 64.09274196624756,
+            "t": 654.9187469482422,
+            "r": 1316.2706705729167,
+            "b": 616.0874938964844,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            104
+          ]
+        }
+      ],
+      "orig": "Um zu bestehen, müssen Sie aufhören wie ein Techniker zu denken und anfangen, wie einManager zu handeln.",
+      "text": "Um zu bestehen, müssen Sie aufhören wie ein Techniker zu denken und anfangen, wie einManager zu handeln."
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 67.42641194661459,
+            "t": 558.0901438395182,
+            "r": 276.0504150390625,
+            "b": 489.6298014322917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Regel 1: Business First.",
+      "text": "Regel 1: Business First.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1042.3296712239585,
+            "t": 556.0961532592773,
+            "r": 1302.6129557291667,
+            "b": 485.64182535807294,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Regel 2: Policy vor Technologie.",
+      "text": "Regel 2: Policy vor Technologie.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 505.8679606119792,
+            "t": 528.8449503580729,
+            "r": 870.132080078125,
+            "b": 482.98317464192706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Business Objectives",
+      "text": "Business Objectives",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 68.08870951334634,
+            "t": 480.3245137532552,
+            "r": 323.07358805338544,
+            "b": 369.9903767903646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": "Geschäftsziele treiben die Sicherheit an – niemals umgekehrt. Sicherheit ist ein Enabler.",
+      "text": "Geschäftsziele treiben die Sicherheit an – niemals umgekehrt. Sicherheit ist ein Enabler."
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1041.6673990885415,
+            "t": 479.65985107421875,
+            "r": 1311.2228190104167,
+            "b": 342.07452392578125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            132
+          ]
+        }
+      ],
+      "orig": "Wenn Sie ein Problem lösen, aktualisieren Sie zuerst die Richtlinie (Policy) und den Prozess, bevor Sie ein technisches Tool kaufen.",
+      "text": "Wenn Sie ein Problem lösen, aktualisieren Sie zuerst die Richtlinie (Policy) und den Prozess, bevor Sie ein technisches Tool kaufen."
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 629.7177734375,
+            "t": 415.1875,
+            "r": 746.2823079427084,
+            "b": 361.3497517903646,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Policy",
+      "text": "Policy",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 612.4980061848959,
+            "t": 290.8954264322917,
+            "r": 763.5020345052084,
+            "b": 251.015625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "Process",
+      "text": "Process",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 68.08870951334634,
+            "t": 266.96754964192706,
+            "r": 313.80141194661456,
+            "b": 197.17789713541674,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Regel 3: Die Rolle des Managers.",
+      "text": "Regel 3: Die Rolle des Managers.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 631.0423583984375,
+            "t": 205.81852213541674,
+            "r": 744.29541015625,
+            "b": 154.639404296875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Tool / Technologie",
+      "text": "Tool / Technologie"
+    },
+    {
+      "self_ref": "#/texts/108",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 992.6573079427084,
+            "t": 204.48917643229174,
+            "r": 1301.9506022135417,
+            "b": 167.26802571614576,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Regel 4: Die Leitfrage.",
+      "text": "Regel 4: Die Leitfrage.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/109",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 68.08870951334634,
+            "t": 186.54325358072924,
+            "r": 387.9788411458333,
+            "b": 76.873779296875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            125
+          ]
+        }
+      ],
+      "orig": "Risikoeigentümer (Risk Owners / Business) akzeptieren das Risiko, nicht der Security Manager. Sie liefern nur die Datenbasis.",
+      "text": "Risikoeigentümer (Risk Owners / Business) akzeptieren das Risiko, nicht der Security Manager. Sie liefern nur die Datenbasis."
+    },
+    {
+      "self_ref": "#/texts/110",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 991.9949544270834,
+            "t": 162.61539713541674,
+            "r": 1311.2228190104167,
+            "b": 79.53243001302076,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            83
+          ]
+        }
+      ],
+      "orig": "Fragen Sie sich bei jeder Antwortmöglichkeit: \"Was würde ein Senior Executive tun?\"",
+      "text": "Fragen Sie sich bei jeder Antwortmöglichkeit: \"Was würde ein Senior Executive tun?\""
+    },
+    {
+      "self_ref": "#/texts/111",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 1280.6666666666667,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/112",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 61.0,
+            "t": 569.3333333333334,
+            "r": 107.66666666666666,
+            "b": 500.3333333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "high",
+      "text": "high"
+    },
+    {
+      "self_ref": "#/texts/113",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 59.0,
+            "t": 383.0,
+            "r": 102.66666666666666,
+            "b": 287.3333333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        }
+      ],
+      "orig": "PRICE",
+      "text": "PRICE"
+    },
+    {
+      "self_ref": "#/texts/114",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 72.66666666666667,
+            "t": 121.66666666666663,
+            "r": 97.33333333333334,
+            "b": 74.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "ow",
+      "text": "ow"
+    },
+    {
+      "self_ref": "#/texts/115",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 250.0,
+            "t": 717.0,
+            "r": 1127.5574544270835,
+            "b": 650.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Lernressourcen: Die ROl-Matrix",
+      "text": "Lernressourcen: Die ROl-Matrix",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/116",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 209.0,
+            "t": 647.0,
+            "r": 1163.5186360677085,
+            "b": 596.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Navigieren Sie effizient durch den Markt der Vorbereitungsmaterialien.",
+      "text": "Navigieren Sie effizient durch den Markt der Vorbereitungsmaterialien."
+    },
+    {
+      "self_ref": "#/texts/117",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 158.0,
+            "t": 552.3333333333334,
+            "r": 640.0,
+            "b": 511.3333333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Das Must-Have (Der Goldstandard):",
+      "text": "Das Must-Have (Der Goldstandard):",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/118",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 157.66666666666666,
+            "t": 514.3333333333334,
+            "r": 541.6666666666667,
+            "b": 472.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "ISACA QAE Database (~$299).",
+      "text": "ISACA QAE Database (~$299)."
+    },
+    {
+      "self_ref": "#/texts/119",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 158.66666666666666,
+            "t": 472.0,
+            "r": 644.6666666666667,
+            "b": 369.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "Hoher Preis, aber absolut essenziell für die authentische Fragestruktur der echten Prüfung.",
+      "text": "Hoher Preis, aber absolut essenziell für die authentische Fragestruktur der echten Prüfung."
+    },
+    {
+      "self_ref": "#/texts/120",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 158.66666666666666,
+            "t": 319.6666666666667,
+            "r": 568.3333333333333,
+            "b": 278.6666666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "Premium Video & Bootcamps:",
+      "text": "Premium Video & Bootcamps:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/121",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 160.0,
+            "t": 277.3333333333333,
+            "r": 594.3333333333333,
+            "b": 178.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "Destination Certification (Masterclass/Bootcamp) & Cybrary (Abo-Modell).",
+      "text": "Destination Certification (Masterclass/Bootcamp) & Cybrary (Abo-Modell)."
+    },
+    {
+      "self_ref": "#/texts/122",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 159.66666666666666,
+            "t": 173.66666666666663,
+            "r": 503.6666666666667,
+            "b": 106.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            54
+          ]
+        }
+      ],
+      "orig": "Ideal für visuelle Lerner und strukturierte Zeitpläne.",
+      "text": "Ideal für visuelle Lerner und strukturierte Zeitpläne."
+    },
+    {
+      "self_ref": "#/texts/123",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 734.3333333333334,
+            "t": 553.0,
+            "r": 1041.6666666666667,
+            "b": 509.3333333333333,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Kl-gestützte Effizienz:",
+      "text": "Kl-gestützte Effizienz:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/124",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 736.0,
+            "t": 474.0,
+            "r": 1251.3333333333335,
+            "b": 371.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "Analysiert Schwächen durch KI und passt Fragen dynamisch an die 2022+ Syllabus-Struktur an.",
+      "text": "Analysiert Schwächen durch KI und passt Fragen dynamisch an die 2022+ Syllabus-Struktur an."
+    },
+    {
+      "self_ref": "#/texts/125",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 735.0,
+            "t": 514.0,
+            "r": 1036.3333333333333,
+            "b": 472.6666666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "NexusGRC ($240/Jahr).",
+      "text": "NexusGRC ($240/Jahr)."
+    },
+    {
+      "self_ref": "#/texts/126",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 736.6666666666666,
+            "t": 318.0,
+            "r": 1019.6666666666667,
+            "b": 281.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Klassische Literatur:",
+      "text": "Klassische Literatur:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/127",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 736.0,
+            "t": 278.3333333333333,
+            "r": 1048.0,
+            "b": 175.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "Sybex Study Guide (Mike Chapple) oder AIO Exam Guide (Peter Gregory).",
+      "text": "Sybex Study Guide (Mike Chapple) oder AIO Exam Guide (Peter Gregory)."
+    },
+    {
+      "self_ref": "#/texts/128",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 738.0,
+            "t": 172.0,
+            "r": 1065.6666666666667,
+            "b": 108.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            55
+          ]
+        }
+      ],
+      "orig": "Starkes Fundament, erfordert aber hohe Selbstdisziplin.",
+      "text": "Starkes Fundament, erfordert aber hohe Selbstdisziplin."
+    },
+    {
+      "self_ref": "#/texts/129",
+      "parent": {
+        "$ref": "#/pictures/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1125.0,
+            "t": 297.0,
+            "r": 1194.0,
+            "b": 288.6666666666667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "PRTER L COCODOY",
+      "text": "PRTER L COCODOY"
+    },
+    {
+      "self_ref": "#/texts/130",
+      "parent": {
+        "$ref": "#/pictures/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1134.3333333333333,
+            "t": 202.33333333333337,
+            "r": 1185.3333333333333,
+            "b": 195.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "ELCCHG LELILAA",
+      "text": "ELCCHG LELILAA"
+    },
+    {
+      "self_ref": "#/texts/131",
+      "parent": {
+        "$ref": "#/pictures/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1129.0,
+            "t": 194.33333333333337,
+            "r": 1190.6666666666667,
+            "b": 186.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "ESVR GUTBE",
+      "text": "ESVR GUTBE"
+    },
+    {
+      "self_ref": "#/texts/132",
+      "parent": {
+        "$ref": "#/pictures/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1096.0,
+            "t": 179.0,
+            "r": 1222.3333333333333,
+            "b": 170.66666666666663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Onghy proncesmue rosoccty, ypondleo",
+      "text": "Onghy proncesmue rosoccty, ypondleo"
+    },
+    {
+      "self_ref": "#/texts/133",
+      "parent": {
+        "$ref": "#/pictures/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1129.3333333333333,
+            "t": 135.66666666666663,
+            "r": 1190.0,
+            "b": 125.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "ALL-1B-ONE",
+      "text": "ALL-1B-ONE"
+    },
+    {
+      "self_ref": "#/texts/134",
+      "parent": {
+        "$ref": "#/pictures/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1107.3333333333333,
+            "t": 122.33333333333337,
+            "r": 1210.6666666666667,
+            "b": 113.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "S  s   po p",
+      "text": "S  s   po p"
+    },
+    {
+      "self_ref": "#/texts/135",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 103.0,
+            "t": 55.0,
+            "r": 166.66666666666669,
+            "b": 22.33333333333337,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "Low",
+      "text": "Low"
+    },
+    {
+      "self_ref": "#/texts/136",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 572.0,
+            "t": 57.0,
+            "r": 802.6666666666666,
+            "b": 14.333333333333371,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "FEATURE-DEPTH",
+      "text": "FEATURE-DEPTH"
+    },
+    {
+      "self_ref": "#/texts/137",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1204.6666666666667,
+            "t": 60.66666666666663,
+            "r": 1275.3333333333333,
+            "b": 13.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "High",
+      "text": "High"
+    },
+    {
+      "self_ref": "#/texts/138",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1267.3333333333333,
+            "t": 27.0,
+            "r": 1368.0,
+            "b": 3.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/139",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 153.0,
+            "t": 717.0,
+            "r": 1224.459716796875,
+            "b": 636.6428527832031,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "Budgetplanung: Total Cost of Ownership",
+      "text": "Budgetplanung: Total Cost of Ownership",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/140",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 246.47580973307294,
+            "t": 649.4776763916016,
+            "r": 1127.741943359375,
+            "b": 592.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "Eine transparente Aufschlüsselung der Zertifizierungskosten.",
+      "text": "Eine transparente Aufschlüsselung der Zertifizierungskosten."
+    },
+    {
+      "self_ref": "#/texts/141",
+      "parent": {
+        "$ref": "#/pictures/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 73.1839714050293,
+            "t": 551.5749994913737,
+            "r": 338.21875,
+            "b": 509.5,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Prüfungsgebühr:",
+      "text": "Prüfungsgebühr:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/142",
+      "parent": {
+        "$ref": "#/pictures/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 938.7963053385416,
+            "t": 553.4312496185303,
+            "r": 1309.5931803385417,
+            "b": 374.61248779296875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "ISACA-Mitgliedschaft: ~$135 jährlich. (Refinanziert sich fast immer sofort durch die Rabatte auf Prüfungen und Lernmaterialien).",
+      "text": "ISACA-Mitgliedschaft: ~$135 jährlich. (Refinanziert sich fast immer sofort durch die Rabatte auf Prüfungen und Lernmaterialien)."
+    },
+    {
+      "self_ref": "#/texts/143",
+      "parent": {
+        "$ref": "#/pictures/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 75.07258033752441,
+            "t": 513.2124989827474,
+            "r": 403.6905110677083,
+            "b": 437.72499593098956,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "~$575 (ISACA-Mitglieder) / ~$760 (Nicht-Mitglieder).",
+      "text": "~$575 (ISACA-Mitglieder) / ~$760 (Nicht-Mitglieder)."
+    },
+    {
+      "self_ref": "#/texts/144",
+      "parent": {
+        "$ref": "#/pictures/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 75.07258033752441,
+            "t": 316.44999186197913,
+            "r": 401.17236328125,
+            "b": 275.61248779296875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "Vorbereitungsmaterial:",
+      "text": "Vorbereitungsmaterial:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/145",
+      "parent": {
+        "$ref": "#/pictures/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 959.571044921875,
+            "t": 317.6875,
+            "r": 1249.7872721354167,
+            "b": 274.9937337239583,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Zertifikatserhaltung:",
+      "text": "Zertifikatserhaltung:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/146",
+      "parent": {
+        "$ref": "#/pictures/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 78.84979756673177,
+            "t": 279.3249918619792,
+            "r": 372.2137044270833,
+            "b": 171.6624755859375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            66
+          ]
+        }
+      ],
+      "orig": "~$300-$500 (Beispiel- Kalkulation: NexusGRC + ISACA QAE Database).",
+      "text": "~$300-$500 (Beispiel- Kalkulation: NexusGRC + ISACA QAE Database)."
+    },
+    {
+      "self_ref": "#/texts/147",
+      "parent": {
+        "$ref": "#/pictures/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 962.0891927083334,
+            "t": 279.94374593098956,
+            "r": 1278.1163736979167,
+            "b": 171.04374186197924,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "$45-$85 jährliche Gebühr zzgl. Kosten für Weiterbildungen (CPEs).",
+      "text": "$45-$85 jährliche Gebühr zzgl. Kosten für Weiterbildungen (CPEs)."
+    },
+    {
+      "self_ref": "#/texts/148",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 206.4863912264506,
+            "t": 130.0625,
+            "r": 1184.5318196614585,
+            "b": 45.6875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "Förderung: Sprechen Sie mit Ihrem Arbeitgeber. CISM-Zertifizierungen erleichtern Unternehmens-Audits (z.B. ISO 27001) und werden oft vollständig erstattet.",
+      "text": "Förderung: Sprechen Sie mit Ihrem Arbeitgeber. CISM-Zertifizierungen erleichtern Unternehmens-Audits (z.B. ISO 27001) und werden oft vollständig erstattet."
+    },
+    {
+      "self_ref": "#/texts/149",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 1280.6666666666667,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/150",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 71.0,
+            "t": 714.0,
+            "r": 778.7460123697916,
+            "b": 631.28515625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Der 12-Wochen Studienplan",
+      "text": "Der 12-Wochen Studienplan",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/151",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 71.0,
+            "t": 653.97265625,
+            "r": 1054.5040690104165,
+            "b": 593.47265625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "Ein realistischer Fahrplan für Berufstätige (ca. 8–10 Stunden pro Woche).",
+      "text": "Ein realistischer Fahrplan für Berufstätige (ca. 8–10 Stunden pro Woche)."
+    },
+    {
+      "self_ref": "#/texts/152",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 125.35836791992188,
+            "t": 535.6274998982748,
+            "r": 143.36290486653644,
+            "b": 508.92750040690106,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "1",
+      "text": "1"
+    },
+    {
+      "self_ref": "#/texts/153",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 222.71622721354166,
+            "t": 536.9624989827474,
+            "r": 246.7222696940104,
+            "b": 506.2574971516927,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "2",
+      "text": "2"
+    },
+    {
+      "self_ref": "#/texts/154",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 322.74143473307294,
+            "t": 537.6299997965494,
+            "r": 347.414306640625,
+            "b": 506.9249979654948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "3",
+      "text": "3"
+    },
+    {
+      "self_ref": "#/texts/155",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 426.7676188151042,
+            "t": 537.6299997965494,
+            "r": 446.1058349609375,
+            "b": 506.2574971516927,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "4",
+      "text": "4"
+    },
+    {
+      "self_ref": "#/texts/156",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 524.7923177083333,
+            "t": 536.9624989827474,
+            "r": 548.7983805338541,
+            "b": 506.9249979654948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "5",
+      "text": "5"
+    },
+    {
+      "self_ref": "#/texts/157",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 626.8180338541666,
+            "t": 536.2949981689453,
+            "r": 648.8235677083334,
+            "b": 507.5924987792969,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "6",
+      "text": "6"
+    },
+    {
+      "self_ref": "#/texts/158",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 726.84326171875,
+            "t": 536.9624989827474,
+            "r": 748.8487955729166,
+            "b": 507.5924987792969,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "7",
+      "text": "7"
+    },
+    {
+      "self_ref": "#/texts/159",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 827.5352376302084,
+            "t": 536.2949981689453,
+            "r": 849.5408528645834,
+            "b": 507.5924987792969,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "8",
+      "text": "8"
+    },
+    {
+      "self_ref": "#/texts/160",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 927.5604654947916,
+            "t": 536.2949981689453,
+            "r": 949.5659993489584,
+            "b": 506.9249979654948,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "9",
+      "text": "9"
+    },
+    {
+      "self_ref": "#/texts/161",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1023.5846354166666,
+            "t": 537.6299997965494,
+            "r": 1056.2596028645833,
+            "b": 505.5899963378906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "10",
+      "text": "10"
+    },
+    {
+      "self_ref": "#/texts/162",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1126.9440104166667,
+            "t": 536.9624989827474,
+            "r": 1154.9510904947917,
+            "b": 506.2574971516927,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "11",
+      "text": "11"
+    },
+    {
+      "self_ref": "#/texts/163",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1224.96875,
+            "t": 537.6299997965494,
+            "r": 1258.3104654947917,
+            "b": 505.5899963378906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "12",
+      "text": "12"
+    },
+    {
+      "self_ref": "#/texts/164",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 94.01713562011719,
+            "t": 336.71248372395837,
+            "r": 320.7409261067708,
+            "b": 272.6324869791667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Phase 1: Fundament (Woche 1-4)",
+      "text": "Phase 1: Fundament (Woche 1-4)"
+    },
+    {
+      "self_ref": "#/texts/165",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 492.7842610677083,
+            "t": 338.0474853515625,
+            "r": 710.8391927083334,
+            "b": 272.6324869791667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Phase 2: Deep Dive (Woche 5-9)",
+      "text": "Phase 2: Deep Dive (Woche 5-9)"
+    },
+    {
+      "self_ref": "#/texts/166",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 984.241455078125,
+            "t": 338.0474853515625,
+            "r": 1249.6416015625,
+            "b": 272.6324869791667,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Phase 3: Prüfungshärte (Woche 10-12)",
+      "text": "Phase 3: Prüfungshärte (Woche 10-12)"
+    },
+    {
+      "self_ref": "#/texts/167",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 92.68346659342448,
+            "t": 251.272481282552,
+            "r": 472.7792154947917,
+            "b": 139.79996744791674,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            135
+          ]
+        }
+      ],
+      "orig": "Fokus auf das Kernmaterial (Review Manual oder Sybex Guide) und Zuweisung der Inhalte zu den vier CISM- Domänen. Verständnis vor Tempo.",
+      "text": "Fokus auf das Kernmaterial (Review Manual oder Sybex Guide) und Zuweisung der Inhalte zu den vier CISM- Domänen. Verständnis vor Tempo."
+    },
+    {
+      "self_ref": "#/texts/168",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 493.4510904947917,
+            "t": 250.605000813802,
+            "r": 874.8805338541666,
+            "b": 140.46748860677076,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            145
+          ]
+        }
+      ],
+      "orig": "Domänenspezifische Übungsblöcke. Der Schlüssel liegt in der Analyse: Warum ist eine Antwort falsch? Wenden Sie das \"ISACA Mindset\" konsequent an.",
+      "text": "Domänenspezifische Übungsblöcke. Der Schlüssel liegt in der Analyse: Warum ist eine Antwort falsch? Wenden Sie das \"ISACA Mindset\" konsequent an."
+    },
+    {
+      "self_ref": "#/texts/169",
+      "parent": {
+        "$ref": "#/pictures/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 984.241455078125,
+            "t": 251.272481282552,
+            "r": 1306.3225911458333,
+            "b": 114.43497721354174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            153
+          ]
+        }
+      ],
+      "orig": "Durchführung vollständiger, simulierter Prüfungen (150 Fragen in 4 Stunden, ohne Pausen) aus der ISACA QAE. Identifikation und Schließung letzter Lücken.",
+      "text": "Durchführung vollständiger, simulierter Prüfungen (150 Fragen in 4 Stunden, ohne Pausen) aus der ISACA QAE. Identifikation und Schließung letzter Lücken."
+    },
+    {
+      "self_ref": "#/texts/170",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 1268.3333333333333,
+            "t": 23.33333333333337,
+            "r": 1367.6666666666667,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/171",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 61.0,
+            "t": 727.0,
+            "r": 1178.3709309895833,
+            "b": 629.5758870442708,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "Die richtige Nutzung von Übungsfragen",
+      "text": "Die richtige Nutzung von Übungsfragen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/172",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 61.588709672292076,
+            "t": 648.1919606526693,
+            "r": 1226.6451822916667,
+            "b": 588.0,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "Der größte Fehler: Mustererkennung und Auswendiglernen der QAE-Datenbank.",
+      "text": "Der größte Fehler: Mustererkennung und Auswendiglernen der QAE-Datenbank."
+    },
+    {
+      "self_ref": "#/texts/173",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 106.45564778645834,
+            "t": 530.620371500651,
+            "r": 739.3104654947916,
+            "b": 506.43055725097656,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "DOMAIN 3—INFORMATION SECURITY PROGRAM DEVELOPMENT AND MANAGEMENT (33%)",
+      "text": "DOMAIN 3—INFORMATION SECURITY PROGRAM DEVELOPMENT AND MANAGEMENT (33%)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/174",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 107.74193318684897,
+            "t": 458.6875,
+            "r": 702.008056640625,
+            "b": 432.58796183268225,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            76
+          ]
+        }
+      ],
+      "orig": "4. Which of the following is the MOST cost-effective type of access control?",
+      "text": "Which of the following is the MOST cost-effective type of access control?",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/175",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 157.2641092936198,
+            "t": 430.6782430013021,
+            "r": 270.4576619466146,
+            "b": 407.125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "A. Centralized",
+      "text": "A. Centralized"
+    },
+    {
+      "self_ref": "#/texts/176",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 157.90725708007812,
+            "t": 407.125,
+            "r": 273.03023274739587,
+            "b": 385.48148600260413,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "B. Role-based",
+      "text": "B. Role-based"
+    },
+    {
+      "self_ref": "#/texts/177",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 382.36492919921875,
+            "t": 411.5810241699219,
+            "r": 757.3185221354166,
+            "b": 380.3888956705729,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "Distractor (Technisch falsch/unvollständig)",
+      "text": "Distractor (Technisch falsch/unvollständig)"
+    },
+    {
+      "self_ref": "#/texts/178",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 158.55040486653644,
+            "t": 384.84490966796875,
+            "r": 285.89314778645837,
+            "b": 363.2013956705729,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "C. Decentralized",
+      "text": "Decentralized",
+      "enumerated": true,
+      "marker": "C."
+    },
+    {
+      "self_ref": "#/texts/179",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 158.55040486653644,
+            "t": 362.5648193359375,
+            "r": 283.96370442708337,
+            "b": 339.0115763346354,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "D. Discretionary",
+      "text": "D. Discretionary"
+    },
+    {
+      "self_ref": "#/texts/180",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 561.1592610677084,
+            "t": 341.5578816731771,
+            "r": 756.0322265625,
+            "b": 316.09490966796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Management Answer",
+      "text": "Management Answer"
+    },
+    {
+      "self_ref": "#/texts/181",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 106.45564778645834,
+            "t": 327.5532430013021,
+            "r": 292.96773274739587,
+            "b": 303.36342366536456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "B is the correct answer.",
+      "text": "B is the correct answer.",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/182",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 562.445556640625,
+            "t": 314.82175699869794,
+            "r": 810.0564778645834,
+            "b": 287.44907633463544,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "(Strategisch/Kosteneffizient)",
+      "text": "(Strategisch/Kosteneffizient)"
+    },
+    {
+      "self_ref": "#/texts/183",
+      "parent": {
+        "$ref": "#/pictures/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 107.09879048665366,
+            "t": 291.90509033203125,
+            "r": 213.21774291992188,
+            "b": 266.442138671875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Justification:",
+      "text": "Justification:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/184",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 157.2641092936198,
+            "t": 264.53240966796875,
+            "r": 786.2600911458334,
+            "b": 238.432881673177,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "A. Centralized access control is not a type of access control but a form of administration.",
+      "text": "Centralized access control is not a type of access control but a form of administration.",
+      "enumerated": true,
+      "marker": "A."
+    },
+    {
+      "self_ref": "#/texts/185",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 157.90725708007812,
+            "t": 240.97916666666674,
+            "r": 826.1350911458334,
+            "b": 171.59261067708326,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            244
+          ]
+        }
+      ],
+      "orig": "B. Role-based access control allows users to be grouped into job-related categories, which significantly eases the required administrative overhead. In most enterprises there are fewer roles than employees, and roles change far less frequently.",
+      "text": "Role-based access control allows users to be grouped into job-related categories, which significantly eases the required administrative overhead. In most enterprises there are fewer roles than employees, and roles change far less frequently.",
+      "enumerated": true,
+      "marker": "B."
+    },
+    {
+      "self_ref": "#/texts/186",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 157.2641092936198,
+            "t": 174.77547200520826,
+            "r": 822.2762044270834,
+            "b": 149.3125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "C. Decentralized access control is not a type of access control but an administrative approach.",
+      "text": "Decentralized access control is not a type of access control but an administrative approach.",
+      "enumerated": true,
+      "marker": "C."
+    },
+    {
+      "self_ref": "#/texts/187",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 158.55040486653644,
+            "t": 150.58565266927076,
+            "r": 793.334716796875,
+            "b": 105.38887532552076,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            166
+          ]
+        }
+      ],
+      "orig": "D. Discretionary access control would require a greater degree of administrative overhead because it is based on each individual rather than on groups of individuals.",
+      "text": "Discretionary access control would require a greater degree of administrative overhead because it is based on each individual rather than on groups of individuals.",
+      "enumerated": true,
+      "marker": "D."
+    },
+    {
+      "self_ref": "#/texts/188",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 914.8890787760416,
+            "t": 536.9861119588217,
+            "r": 1120.695556640625,
+            "b": 508.34027608235675,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "3-Schichten-Analyse:",
+      "text": "3-Schichten-Analyse:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/189",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 914.8890787760416,
+            "t": 508.9768524169922,
+            "r": 1298.20361328125,
+            "b": 397.5763956705729,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            150
+          ]
+        }
+      ],
+      "orig": "Starten Sie mit einzelnen Fragen (langsame Analyse) -> gehen Sie zu Themenblöcken (Muster erkennen) -> enden Sie mit VollExamen (Ausdauer trainieren).",
+      "text": "Starten Sie mit einzelnen Fragen (langsame Analyse) -> gehen Sie zu Themenblöcken (Muster erkennen) -> enden Sie mit VollExamen (Ausdauer trainieren)."
+    },
+    {
+      "self_ref": "#/texts/190",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 916.1753743489584,
+            "t": 370.84027099609375,
+            "r": 1281.4818522135417,
+            "b": 343.46759033203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "Die Analyse-Fragen (Bei jedem Fehler):",
+      "text": "Die Analyse-Fragen (Bei jedem Fehler):",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/191",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 912.959716796875,
+            "t": 290.63193766276044,
+            "r": 1284.054443359375,
+            "b": 233.97684733072924,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "2. Welches übergeordnete Geschäftsziel habe ich ignoriert?",
+      "text": "Welches übergeordnete Geschäftsziel habe ich ignoriert?",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/192",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 915.5322265625,
+            "t": 344.10416666666663,
+            "r": 1276.9798177083333,
+            "b": 289.99538167317706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "1. Welche Annahme habe ich getroffen, die nicht im Text stand?",
+      "text": "Welche Annahme habe ich getroffen, die nicht im Text stand?",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/193",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 914.8890787760416,
+            "t": 208.51387532552076,
+            "r": 1004.929443359375,
+            "b": 176.04862467447924,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Achtung:",
+      "text": "Achtung:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/194",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 915.5322265625,
+            "t": 178.59493001302076,
+            "r": 1266.6895345052083,
+            "b": 68.46761067708326,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "Es gibt oft mehrere \"technisch\" richtige Antworten. Die Prüfung verlangt jedoch die kosteneffizienteste oder strategisch beste Lösung aus Management-Sicht.",
+      "text": "Es gibt oft mehrere \"technisch\" richtige Antworten. Die Prüfung verlangt jedoch die kosteneffizienteste oder strategisch beste Lösung aus Management-Sicht."
+    },
+    {
+      "self_ref": "#/texts/195",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 1280.6666666666667,
+            "t": 23.33333333333337,
+            "r": 1367.3333333333333,
+            "b": 7.666666666666629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/196",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 358.36692301432294,
+            "t": 697.6801503499349,
+            "r": 1017.9132486979166,
+            "b": 626.7729797363281,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "Der Certification Lifecycle",
+      "text": "Der Certification Lifecycle",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/197",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 195.70159912109375,
+            "t": 630.9034932454426,
+            "r": 1168.276123046875,
+            "b": 590.2867635091146,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "Die Reise endet nicht am Testtag. CISM ist eine kontinuierliche Verpflichtung.",
+      "text": "Die Reise endet nicht am Testtag. CISM ist eine kontinuierliche Verpflichtung."
+    },
+    {
+      "self_ref": "#/texts/198",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 108.90120442708333,
+            "t": 523.5101114908854,
+            "r": 285.91933186848956,
+            "b": 457.421875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        }
+      ],
+      "orig": "Endorsement (Bestätigung):",
+      "text": "Endorsement (Bestätigung):",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/199",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 108.21773274739583,
+            "t": 455.35662841796875,
+            "r": 374.7701416015625,
+            "b": 347.2748209635417,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            103
+          ]
+        }
+      ],
+      "orig": "Nach bestandener Prüfung reichen Sie Ihre verifizierte Berufserfahrung ein (Zeitfenster: max. 5 Jahre).",
+      "text": "Nach bestandener Prüfung reichen Sie Ihre verifizierte Berufserfahrung ein (Zeitfenster: max. 5 Jahre)."
+    },
+    {
+      "self_ref": "#/texts/200",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 108.21773274739583,
+            "t": 286.0055338541667,
+            "r": 414.4112548828125,
+            "b": 249.51932779947924,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Maintenance (Erhaltung):",
+      "text": "Maintenance (Erhaltung):",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/201",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 107.53427124023438,
+            "t": 242.6351318359375,
+            "r": 418.5120849609375,
+            "b": 110.45865885416663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Sammeln und melden Sie 120 CPEs (Continuing Professional Education) über einen Zeitraum von 3 Jahren (mindestens 20 pro Jahr).",
+      "text": "Sammeln und melden Sie 120 CPEs (Continuing Professional Education) über einen Zeitraum von 3 Jahren (mindestens 20 pro Jahr)."
+    },
+    {
+      "self_ref": "#/texts/202",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 574.3427327473959,
+            "t": 504.92279052734375,
+            "r": 663.8769938151041,
+            "b": 473.94394938151044,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Register",
+      "text": "Register"
+    },
+    {
+      "self_ref": "#/texts/203",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 763.6632486979166,
+            "t": 497.35017903645837,
+            "r": 808.0887044270834,
+            "b": 455.35662841796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "Pay",
+      "text": "Pay"
+    },
+    {
+      "self_ref": "#/texts/204",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 473.1894938151042,
+            "t": 362.4200439453125,
+            "r": 531.9677327473959,
+            "b": 330.7527669270833,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "CPEs",
+      "text": "CPEs"
+    },
+    {
+      "self_ref": "#/texts/205",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 843.6289876302084,
+            "t": 360.3547770182292,
+            "r": 901.040283203125,
+            "b": 330.7527669270833,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        }
+      ],
+      "orig": "Pass",
+      "text": "Pass"
+    },
+    {
+      "self_ref": "#/texts/206",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 784.8507486979166,
+            "t": 221.29410807291663,
+            "r": 874.385009765625,
+            "b": 191.00370279947913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "Certified",
+      "text": "Certified"
+    },
+    {
+      "self_ref": "#/texts/207",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 508.7298177083333,
+            "t": 208.902587890625,
+            "r": 601.6814371744791,
+            "b": 180.67740885416663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Maintain",
+      "text": "Maintain"
+    },
+    {
+      "self_ref": "#/texts/208",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 654.3084309895834,
+            "t": 173.10477701822913,
+            "r": 762.2963053385416,
+            "b": 145.56803385416663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Document",
+      "text": "Document"
+    },
+    {
+      "self_ref": "#/texts/209",
+      "parent": {
+        "$ref": "#/pictures/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 651.5745442708334,
+            "t": 149.0101318359375,
+            "r": 765.0301920572916,
+            "b": 120.78495279947913,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Experience",
+      "text": "Experience"
+    },
+    {
+      "self_ref": "#/texts/210",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 1024.7479654947915,
+            "t": 405.7904459635417,
+            "r": 1264.6451009114583,
+            "b": 374.8116048177083,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Community & Ethik:",
+      "text": "Community & Ethik:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/211",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 943.415283203125,
+            "t": 367.2389729817708,
+            "r": 1267.3789876302083,
+            "b": 235.0625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            137
+          ]
+        }
+      ],
+      "orig": "Einhaltung des ISACA Code of Ethics, Engagement in lokalen ISACA-Chaptern und kontinuierliche Weiterentwicklung in der InfoSec-Community.",
+      "text": "Einhaltung des ISACA Code of Ethics, Engagement in lokalen ISACA-Chaptern und kontinuierliche Weiterentwicklung in der InfoSec-Community."
+    },
+    {
+      "self_ref": "#/texts/212",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 1268.7459309895833,
+            "t": 23.71785481770837,
+            "r": 1367.8487141927083,
+            "b": 7.884195963541629,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    },
+    {
+      "self_ref": "#/texts/213",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 57.5226796468099,
+            "t": 723.4866078694662,
+            "r": 1187.1849772135417,
+            "b": 637.8839213053385,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Zusammenfassung & Nächste Schritte",
+      "text": "Zusammenfassung & Nächste Schritte",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/214",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 65.1461690266927,
+            "t": 639.2535705566406,
+            "r": 619.5816243489584,
+            "b": 597.4794616699219,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "Ihr Masterplan vom Start bis zum Ziel.",
+      "text": "Ihr Masterplan vom Start bis zum Ziel."
+    },
+    {
+      "self_ref": "#/texts/215",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 367.3135172526042,
+            "t": 561.1839192708334,
+            "r": 1122.038818359375,
+            "b": 482.42946370442706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "Erfahrung prüfen: Verifizieren Sie Ihre Zulassung anhand der 5-Jahres-Regel und sammeln Sie Nachweise.",
+      "text": "Erfahrung prüfen: Verifizieren Sie Ihre Zulassung anhand der 5-Jahres-Regel und sammeln Sie Nachweise."
+    },
+    {
+      "self_ref": "#/texts/216",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 367.3135172526042,
+            "t": 456.40625,
+            "r": 1162.2353515625,
+            "b": 379.0214029947917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "Budget & Termin: Beantragen Sie ggf. Arbeitgeber-Förderung und fixieren Sie ein Prüfungsdatum als harten Meilenstein.",
+      "text": "Budget & Termin: Beantragen Sie ggf. Arbeitgeber-Förderung und fixieren Sie ein Prüfungsdatum als harten Meilenstein."
+    },
+    {
+      "self_ref": "#/texts/217",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 366.6204427083333,
+            "t": 351.6285807291667,
+            "r": 1190.650146484375,
+            "b": 274.9285481770833,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            125
+          ]
+        }
+      ],
+      "orig": "Werkzeuge sichern: Investieren Sie in die ISACA QAE Database und ergänzen Sie diese (z.B. mit NexusGRC, DestCert oder Sybex).",
+      "text": "Werkzeuge sichern: Investieren Sie in die ISACA QAE Database und ergänzen Sie diese (z.B. mit NexusGRC, DestCert oder Sybex)."
+    },
+    {
+      "self_ref": "#/texts/218",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 366.6204427083333,
+            "t": 250.27498372395837,
+            "r": 1181.640625,
+            "b": 170.15087890625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "ISACA Mindset verinnerlichen: Denken Sie ab Tag 1 als Führungsskraft, nicht als Ingenieur.",
+      "text": "ISACA Mindset verinnerlichen: Denken Sie ab Tag 1 als Führungsskraft, nicht als Ingenieur."
+    },
+    {
+      "self_ref": "#/texts/219",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 352.7595621744792,
+            "t": 54.416015625,
+            "r": 1019.46826171875,
+            "b": 9.902669270833371,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "Starten Sie Ihren Weg zur Security-Führungskraft.",
+      "text": "Starten Sie Ihren Weg zur Security-Führungskraft."
+    },
+    {
+      "self_ref": "#/texts/220",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 1268.2711588541667,
+            "t": 23.59912109375,
+            "r": 1365.9903971354167,
+            "b": 8.533040364583371,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Gemini Notebook",
+      "text": "Gemini Notebook"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/groups/0"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 93.28929138183594,
+            "t": 557.9376068115234,
+            "r": 1319.633544921875,
+            "b": 137.922119140625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 608.4684448242188,
+            "t": 659.4237442016602,
+            "r": 1260.882568359375,
+            "b": 55.7738037109375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 228.0094757080078,
+            "t": 556.1444396972656,
+            "r": 291.31488037109375,
+            "b": 434.0785827636719,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 1058.6650390625,
+            "t": 554.4589538574219,
+            "r": 1161.952392578125,
+            "b": 435.9428405761719,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 634.6465454101562,
+            "t": 552.6140747070312,
+            "r": 739.9939575195312,
+            "b": 438.537841796875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 50.0982780456543,
+            "t": 600.86181640625,
+            "r": 1325.2642822265625,
+            "b": 61.71441650390625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/81"
+        },
+        {
+          "$ref": "#/texts/82"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 360.9225158691406,
+            "t": 620.7274932861328,
+            "r": 1051.410400390625,
+            "b": 72.83087158203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/87"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 84.96472930908203,
+            "t": 477.2526550292969,
+            "r": 281.3185119628906,
+            "b": 292.06109619140625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/86"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 423.3133239746094,
+            "t": 477.34600830078125,
+            "r": 616.4622192382812,
+            "b": 291.78521728515625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/90"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 760.617919921875,
+            "t": 477.2487487792969,
+            "r": 955.4618530273438,
+            "b": 292.1217041015625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/93"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 1095.331787109375,
+            "t": 477.2160339355469,
+            "r": 1290.142333984375,
+            "b": 292.0543212890625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        },
+        {
+          "$ref": "#/texts/103"
+        },
+        {
+          "$ref": "#/texts/104"
+        },
+        {
+          "$ref": "#/texts/105"
+        },
+        {
+          "$ref": "#/texts/106"
+        },
+        {
+          "$ref": "#/texts/107"
+        },
+        {
+          "$ref": "#/texts/108"
+        },
+        {
+          "$ref": "#/texts/109"
+        },
+        {
+          "$ref": "#/texts/110"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 40.3792610168457,
+            "t": 579.0438842773438,
+            "r": 1335.43212890625,
+            "b": 45.3851318359375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/129"
+        },
+        {
+          "$ref": "#/texts/130"
+        },
+        {
+          "$ref": "#/texts/131"
+        },
+        {
+          "$ref": "#/texts/132"
+        },
+        {
+          "$ref": "#/texts/133"
+        },
+        {
+          "$ref": "#/texts/134"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 1079.141357421875,
+            "t": 314.97125244140625,
+            "r": 1237.5565185546875,
+            "b": 105.3966064453125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/141"
+        },
+        {
+          "$ref": "#/texts/142"
+        },
+        {
+          "$ref": "#/texts/143"
+        },
+        {
+          "$ref": "#/texts/144"
+        },
+        {
+          "$ref": "#/texts/145"
+        },
+        {
+          "$ref": "#/texts/146"
+        },
+        {
+          "$ref": "#/texts/147"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 10,
+          "bbox": {
+            "l": 74.15980529785156,
+            "t": 549.5806274414062,
+            "r": 1302.9041748046875,
+            "b": 172.9608154296875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/152"
+        },
+        {
+          "$ref": "#/texts/153"
+        },
+        {
+          "$ref": "#/texts/154"
+        },
+        {
+          "$ref": "#/texts/155"
+        },
+        {
+          "$ref": "#/texts/156"
+        },
+        {
+          "$ref": "#/texts/157"
+        },
+        {
+          "$ref": "#/texts/158"
+        },
+        {
+          "$ref": "#/texts/159"
+        },
+        {
+          "$ref": "#/texts/160"
+        },
+        {
+          "$ref": "#/texts/161"
+        },
+        {
+          "$ref": "#/texts/162"
+        },
+        {
+          "$ref": "#/texts/163"
+        },
+        {
+          "$ref": "#/texts/164"
+        },
+        {
+          "$ref": "#/texts/165"
+        },
+        {
+          "$ref": "#/texts/166"
+        },
+        {
+          "$ref": "#/texts/167"
+        },
+        {
+          "$ref": "#/texts/168"
+        },
+        {
+          "$ref": "#/texts/169"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 11,
+          "bbox": {
+            "l": 35.38813781738281,
+            "t": 558.47900390625,
+            "r": 1338.636474609375,
+            "b": 42.87890625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/173"
+        },
+        {
+          "$ref": "#/groups/4"
+        },
+        {
+          "$ref": "#/texts/175"
+        },
+        {
+          "$ref": "#/texts/176"
+        },
+        {
+          "$ref": "#/texts/177"
+        },
+        {
+          "$ref": "#/groups/5"
+        },
+        {
+          "$ref": "#/texts/179"
+        },
+        {
+          "$ref": "#/texts/180"
+        },
+        {
+          "$ref": "#/texts/181"
+        },
+        {
+          "$ref": "#/texts/182"
+        },
+        {
+          "$ref": "#/texts/183"
+        },
+        {
+          "$ref": "#/groups/6"
+        },
+        {
+          "$ref": "#/groups/7"
+        },
+        {
+          "$ref": "#/groups/8"
+        },
+        {
+          "$ref": "#/groups/9"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 12,
+          "bbox": {
+            "l": 59.81996154785156,
+            "t": 568.5428466796875,
+            "r": 872.3785400390625,
+            "b": 39.165283203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/202"
+        },
+        {
+          "$ref": "#/texts/203"
+        },
+        {
+          "$ref": "#/texts/204"
+        },
+        {
+          "$ref": "#/texts/205"
+        },
+        {
+          "$ref": "#/texts/206"
+        },
+        {
+          "$ref": "#/texts/207"
+        },
+        {
+          "$ref": "#/texts/208"
+        },
+        {
+          "$ref": "#/texts/209"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 13,
+          "bbox": {
+            "l": 458.6581115722656,
+            "t": 569.8796539306641,
+            "r": 941.9742431640625,
+            "b": 78.35552978515625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 247.2451171875,
+            "t": 570.52392578125,
+            "r": 350.5847473144531,
+            "b": 482.8952331542969,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 248.19647216796875,
+            "t": 468.0947265625,
+            "r": 351.9883117675781,
+            "b": 379.3195495605469,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 249.7728729248047,
+            "t": 364.2342529296875,
+            "r": 352.3286437988281,
+            "b": 274.914794921875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 14,
+          "bbox": {
+            "l": 246.37120056152344,
+            "t": 260.7263488769531,
+            "r": 353.7111511230469,
+            "b": 171.2109375,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 58.80021667480469,
+            "t": 583.4613342285156,
+            "r": 1319.7366943359375,
+            "b": 107.7060546875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 77.09677378336589,
+              "t": 366.39583333333337,
+              "r": 443.5483805338542,
+              "b": 399.84375,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "CISM (Der Architekt & Stratege)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 490.6451416015625,
+              "t": 366.39583333333337,
+              "r": 882.9032389322916,
+              "b": 399.84375,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "CISSP (Der Ingenieur & Techniker)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 928.064453125,
+              "t": 367.0390625,
+              "r": 1242.258056640625,
+              "b": 398.55729166666663,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "CISA (Der Prüfer & Auditor)",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 84.19354756673178,
+              "t": 428.7890625,
+              "r": 450.0,
+              "b": 627.546875,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "• Fokus: Management, Strategie & Governance • Ziel: Aufbau und Leitung von Sicherheitsprogrammen. • Zielgruppe: Zukünftige CISOs und InfoSec Manager.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 499.0322265625,
+              "t": 428.14583333333337,
+              "r": 876.4515787760416,
+              "b": 626.9036458333333,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "• Fokus: Technische & operative Tiefe • Ziel: Design und Implementierung von Sicherheitskontrollen. • Zielgruppe: Security Architects und Engineers.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 935.806396484375,
+              "t": 428.14583333333337,
+              "r": 1310.6451009114583,
+              "b": 626.2604166666667,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "• Fokus: Audit, Compliance & Kontrolle • Ziel: Bewertung und Verifizierung bestehender Systeme. • Zielgruppe: IT-Auditoren und Compliance-Officer.",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 77.09677378336589,
+                "t": 366.39583333333337,
+                "r": 443.5483805338542,
+                "b": 399.84375,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "CISM (Der Architekt & Stratege)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 490.6451416015625,
+                "t": 366.39583333333337,
+                "r": 882.9032389322916,
+                "b": 399.84375,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "CISSP (Der Ingenieur & Techniker)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 928.064453125,
+                "t": 367.0390625,
+                "r": 1242.258056640625,
+                "b": 398.55729166666663,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "CISA (Der Prüfer & Auditor)",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 84.19354756673178,
+                "t": 428.7890625,
+                "r": 450.0,
+                "b": 627.546875,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "• Fokus: Management, Strategie & Governance • Ziel: Aufbau und Leitung von Sicherheitsprogrammen. • Zielgruppe: Zukünftige CISOs und InfoSec Manager.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 499.0322265625,
+                "t": 428.14583333333337,
+                "r": 876.4515787760416,
+                "b": 626.9036458333333,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "• Fokus: Technische & operative Tiefe • Ziel: Design und Implementierung von Sicherheitskontrollen. • Zielgruppe: Security Architects und Engineers.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 935.806396484375,
+                "t": 428.14583333333337,
+                "r": 1310.6451009114583,
+                "b": 626.2604166666667,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "• Fokus: Audit, Compliance & Kontrolle • Ziel: Bewertung und Verifizierung bestehender Systeme. • Zielgruppe: IT-Auditoren und Compliance-Officer.",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 7
+    },
+    "8": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 8
+    },
+    "9": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 9
+    },
+    "10": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 10
+    },
+    "11": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 11
+    },
+    "12": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 12
+    },
+    "13": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 13
+    },
+    "14": {
+      "size": {
+        "width": 1376.0,
+        "height": 768.0
+      },
+      "page_no": 14
+    }
+  }
+}

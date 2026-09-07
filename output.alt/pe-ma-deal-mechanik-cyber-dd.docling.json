@@ -1,0 +1,2525 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "pe-ma-deal-mechanik-cyber-dd",
+  "origin": {
+    "mimetype": "text/markdown",
+    "binary_hash": 13704769680388593701,
+    "filename": "pe-ma-deal-mechanik-cyber-dd.md"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/groups/18"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/groups/19"
+      },
+      {
+        "$ref": "#/texts/72"
+      },
+      {
+        "$ref": "#/groups/24"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/49"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/texts/7"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/texts/10"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/texts/16"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/texts/19"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/8",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/9",
+      "parent": {
+        "$ref": "#/texts/25"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/10",
+      "parent": {
+        "$ref": "#/texts/28"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/11",
+      "parent": {
+        "$ref": "#/texts/31"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/12",
+      "parent": {
+        "$ref": "#/texts/34"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/13",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/14",
+      "parent": {
+        "$ref": "#/texts/40"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/15",
+      "parent": {
+        "$ref": "#/texts/43"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/16",
+      "parent": {
+        "$ref": "#/texts/46"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/17",
+      "parent": {
+        "$ref": "#/texts/49"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/69"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/20",
+      "parent": {
+        "$ref": "#/texts/60"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/21",
+      "parent": {
+        "$ref": "#/texts/63"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/22",
+      "parent": {
+        "$ref": "#/texts/66"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/23",
+      "parent": {
+        "$ref": "#/texts/69"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "title",
+      "prov": [],
+      "orig": "PE/M&A-Deal-Mechanik für Cyber Due Diligence",
+      "text": "PE/M&A-Deal-Mechanik für Cyber Due Diligence"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Zweck: Das PE-Vokabular und die Deal-Logik beherrschen, in die eine Cyber-DD eingebettet ist. Das ist die Sprache von intcube-Kunden (Investoren, M&A-Berater), nicht die von CISOs. Wer sie spricht, wird als Deal-Team-Mitglied wahrgenommen, nicht als IT-Prüfer. Stand 08/2026.",
+      "text": "Zweck: Das PE-Vokabular und die Deal-Logik beherrschen, in die eine Cyber-DD eingebettet ist. Das ist die Sprache von intcube-Kunden (Investoren, M&A-Berater), nicht die von CISOs. Wer sie spricht, wird als Deal-Team-Mitglied wahrgenommen, nicht als IT-Prüfer. Stand 08/2026."
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1. Der Deal-Ablauf und wo die Cyber-DD sitzt",
+      "text": "1. Der Deal-Ablauf und wo die Cyber-DD sitzt",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "2. Vokabular, das im Raum fällt (und was es für Cyber heißt)",
+      "text": "2. Vokabular, das im Raum fällt (und was es für Cyber heißt)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/2"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Buy-side / Sell-side",
+      "text": "Buy-side / Sell-side",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": für wen die DD arbeitet. intcube: buy-side. Vendor-DD (sell-side) ist das Spiegelprodukt: Findings vorab beheben oder transparent machen.",
+      "text": ": für wen die DD arbeitet. intcube: buy-side. Vendor-DD (sell-side) ist das Spiegelprodukt: Findings vorab beheben oder transparent machen."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/3"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "VDR (Virtual Data Room)",
+      "text": "VDR (Virtual Data Room)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Datenraum (Datasite, Intralinks, Drooms, iDeals). Cyber bekommt oft nur einen Unterordner. Q&A-Prozess ist formalisiert, Fragenkontingent begrenzt: Fragen präzise stellen.",
+      "text": ": Datenraum (Datasite, Intralinks, Drooms, iDeals). Cyber bekommt oft nur einen Unterordner. Q&A-Prozess ist formalisiert, Fragenkontingent begrenzt: Fragen präzise stellen."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/4"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Red Flag Report vs. Full Scope",
+      "text": "Red Flag Report vs. Full Scope",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Red-Flag = nur Dealbreaker und große Risiken, 5 bis 15 Seiten, schnell. Full Scope = vollständige Domänenprüfung. Preis- und Zeitrahmen unterscheiden sich um Faktor 2 bis 4.",
+      "text": ": Red-Flag = nur Dealbreaker und große Risiken, 5 bis 15 Seiten, schnell. Full Scope = vollständige Domänenprüfung. Preis- und Zeitrahmen unterscheiden sich um Faktor 2 bis 4."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/5"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Reps & Warranties (R&W)",
+      "text": "Reps & Warranties (R&W)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Garantien des Verkäufers im SPA (\"keine wesentlichen Sicherheitsvorfälle in den letzten 3 Jahren\", \"Einhaltung DSGVO\"). Cyber-Findings entscheiden, welche Reps der Käufer fordern muss.",
+      "text": ": Garantien des Verkäufers im SPA (\"keine wesentlichen Sicherheitsvorfälle in den letzten 3 Jahren\", \"Einhaltung DSGVO\"). Cyber-Findings entscheiden, welche Reps der Käufer fordern muss."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/6"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "W&I-Versicherung (Warranty & Indemnity)",
+      "text": "W&I-Versicherung (Warranty & Indemnity)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": versichert Garantieverletzungen. Achtung: Cyber ist häufig ausgeschlossen oder nur nach separater Cyber-DD versicherbar; bekannte Findings (disclosed) sind nie gedeckt. Eine saubere Cyber-DD kann die W&I-Deckung für Cyber-Reps erst ermöglichen: das ist ein Verkaufsargument für die DD selbst.",
+      "text": ": versichert Garantieverletzungen. Achtung: Cyber ist häufig ausgeschlossen oder nur nach separater Cyber-DD versicherbar; bekannte Findings (disclosed) sind nie gedeckt. Eine saubere Cyber-DD kann die W&I-Deckung für Cyber-Reps erst ermöglichen: das ist ein Verkaufsargument für die DD selbst."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/7"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Indemnity (Freistellung)",
+      "text": "Indemnity (Freistellung)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": verschuldensunabhängige Freistellung für ein bekanntes, konkretes Risiko (z. B. laufendes DSGVO-Verfahren). Für identifizierte Cyber-Altlasten das schärfere Instrument gegenüber der Rep.",
+      "text": ": verschuldensunabhängige Freistellung für ein bekanntes, konkretes Risiko (z. B. laufendes DSGVO-Verfahren). Für identifizierte Cyber-Altlasten das schärfere Instrument gegenüber der Rep."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/8"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Condition Precedent (CP)",
+      "text": "Condition Precedent (CP)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/groups/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Vollzugsbedingung. Selten für Cyber, aber möglich (z. B. MFA auf Admin-Zugängen vor Closing).",
+      "text": ": Vollzugsbedingung. Selten für Cyber, aber möglich (z. B. MFA auf Admin-Zugängen vor Closing)."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/9"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Purchase Price Adjustment / Escrow / Holdback",
+      "text": "Purchase Price Adjustment / Escrow / Holdback",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/9"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Kaufpreisanpassung oder Einbehalt auf Treuhandkonto. Cyber-Findings mit bezifferbarem Remediation-Aufwand landen hier: deshalb muss der DD-Report in EUR sprechen.",
+      "text": ": Kaufpreisanpassung oder Einbehalt auf Treuhandkonto. Cyber-Findings mit bezifferbarem Remediation-Aufwand landen hier: deshalb muss der DD-Report in EUR sprechen."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/10"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Locked Box vs. Closing Accounts",
+      "text": "Locked Box vs. Closing Accounts",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/10"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Kaufpreismechanik. Für Cyber nur relevant, weil bei Locked Box nach dem Stichtag entstandene Schäden (Vorfall zwischen Signing und Closing!) Streitfall werden: MAC-Klausel prüfen.",
+      "text": ": Kaufpreismechanik. Für Cyber nur relevant, weil bei Locked Box nach dem Stichtag entstandene Schäden (Vorfall zwischen Signing und Closing!) Streitfall werden: MAC-Klausel prüfen."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/11"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "MAC-Klausel (Material Adverse Change)",
+      "text": "MAC-Klausel (Material Adverse Change)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Rücktrittsrecht bei wesentlicher Verschlechterung. Ein Ransomware-Vorfall in der Exklusivität ist der Klassiker.",
+      "text": ": Rücktrittsrecht bei wesentlicher Verschlechterung. Ein Ransomware-Vorfall in der Exklusivität ist der Klassiker."
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/12"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "EBITDA-Multiple",
+      "text": "EBITDA-Multiple",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Bewertungslogik. Wiederkehrende Cyber-Kosten (Lizenzen, Personal, MSSP) drücken EBITDA und wirken über den Multiple gehebelt auf den Preis; einmalige Remediation ist CapEx-artig und wird separat verhandelt. Deshalb trennen: run-rate vs. one-off.",
+      "text": ": Bewertungslogik. Wiederkehrende Cyber-Kosten (Lizenzen, Personal, MSSP) drücken EBITDA und wirken über den Multiple gehebelt auf den Preis; einmalige Remediation ist CapEx-artig und wird separat verhandelt. Deshalb trennen: run-rate vs. one-off."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/13"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Add-on / Buy-and-Build / Carve-out",
+      "text": "Add-on / Buy-and-Build / Carve-out",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Add-on = Zukauf zu bestehender Plattform (Cyber-Frage: Integration zweier IT-Landschaften, Identität, Alt-Tenant). Carve-out = Herauslösung aus Konzern (Cyber-Frage: TSA-Abhängigkeiten, eigene Security-Funktion ab Tag 1 aufbauen).",
+      "text": ": Add-on = Zukauf zu bestehender Plattform (Cyber-Frage: Integration zweier IT-Landschaften, Identität, Alt-Tenant). Carve-out = Herauslösung aus Konzern (Cyber-Frage: TSA-Abhängigkeiten, eigene Security-Funktion ab Tag 1 aufbauen)."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/14"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "TSA (Transitional Service Agreement)",
+      "text": "TSA (Transitional Service Agreement)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/14"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Übergangsleistungen des Verkäufers (oft IT und Security). Rote Fahne: Security-Monitoring liegt beim alten Konzern, endet nach 12 Monaten, kein Aufbauplan.",
+      "text": ": Übergangsleistungen des Verkäufers (oft IT und Security). Rote Fahne: Security-Monitoring liegt beim alten Konzern, endet nach 12 Monaten, kein Aufbauplan."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/15"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "100-Tage-Plan",
+      "text": "100-Tage-Plan",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/15"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Standard-PE-Instrument nach Closing. Cyber-Anteil: die 5 bis 10 Maßnahmen mit Preis, Owner und Termin, die aus der DD kommen. Muss ohne Vollzeit-CISO umsetzbar sein.",
+      "text": ": Standard-PE-Instrument nach Closing. Cyber-Anteil: die 5 bis 10 Maßnahmen mit Preis, Owner und Termin, die aus der DD kommen. Muss ohne Vollzeit-CISO umsetzbar sein."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/16"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Value Creation Plan",
+      "text": "Value Creation Plan",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/16"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": der mehrjährige Wertsteigerungsplan des Fonds. Cyber taucht dort als Risikominderung, zunehmend als Exit-Asset auf (saubere Security-Story erhöht Käufervertrauen beim Weiterverkauf).",
+      "text": ": der mehrjährige Wertsteigerungsplan des Fonds. Cyber taucht dort als Risikominderung, zunehmend als Exit-Asset auf (saubere Security-Story erhöht Käufervertrauen beim Weiterverkauf)."
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/17"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Fund-Level-Begriffe",
+      "text": "Fund-Level-Begriffe",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": LP (Investoren des Fonds), GP (Fondsmanager), IC (Investment Committee, entscheidet über den Deal; der DD-Report wird für das IC geschrieben), DPI/IRR (Renditemaße). Der Cyber-Report hat genau einen Leser, der zählt: das IC. Drei Seiten Substanz schlagen dreißig Seiten Vollständigkeit.",
+      "text": ": LP (Investoren des Fonds), GP (Fondsmanager), IC (Investment Committee, entscheidet über den Deal; der DD-Report wird für das IC geschrieben), DPI/IRR (Renditemaße). Der Cyber-Report hat genau einen Leser, der zählt: das IC. Drei Seiten Substanz schlagen dreißig Seiten Vollständigkeit."
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "3. Was Cyber-Findings im Deal bewirken (Eskalationsleiter)",
+      "text": "3. Was Cyber-Findings im Deal bewirken (Eskalationsleiter)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Kein Effekt: Finding wird 100-Tage-Plan-Punkt mit Budget.",
+      "text": "Kein Effekt: Finding wird 100-Tage-Plan-Punkt mit Budget.",
+      "enumerated": true,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Preis: bezifferter Remediation-Aufwand wird verhandelt (Abschlag, Escrow, Holdback).",
+      "text": "Preis: bezifferter Remediation-Aufwand wird verhandelt (Abschlag, Escrow, Holdback).",
+      "enumerated": true,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Vertrag: Rep, Indemnity oder CP im SPA; W&I-Ausschlüsse.",
+      "text": "Vertrag: Rep, Indemnity oder CP im SPA; W&I-Ausschlüsse.",
+      "enumerated": true,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Struktur: Asset- statt Share-Deal (Altlasten bleiben beim Verkäufer), Carve-out-Perimeter ändern.",
+      "text": "Struktur: Asset- statt Share-Deal (Altlasten bleiben beim Verkäufer), Carve-out-Perimeter ändern.",
+      "enumerated": true,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/groups/18"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Dealbreaker: selten, real bei aktivem, nicht eingedämmtem Incident, systematischer Compliance-Täuschung oder nicht sanierbarer Produkt-Security bei Software-Targets.",
+      "text": "Dealbreaker: selten, real bei aktivem, nicht eingedämmtem Incident, systematischer Compliance-Täuschung oder nicht sanierbarer Produkt-Security bei Software-Targets.",
+      "enumerated": true,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Merksatz für den Report: Jedes Finding braucht eine Adresse: Plan (Punkt 1), Preis (2), Vertrag (3) oder Struktur (4). Ein Finding ohne Adresse ist eine Beobachtung, kein Ergebnis.",
+      "text": "Merksatz für den Report: Jedes Finding braucht eine Adresse: Plan (Punkt 1), Preis (2), Vertrag (3) oder Struktur (4). Ein Finding ohne Adresse ist eine Beobachtung, kein Ergebnis."
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "4. Regulatorik im Deal (deine Dimension, deal-spezifisch)",
+      "text": "4. Regulatorik im Deal (deine Dimension, deal-spezifisch)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/20"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Betroffenheit ändert sich durch den Deal selbst",
+      "text": "Betroffenheit ändert sich durch den Deal selbst",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/20"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Das Target kann durch Konzernzugehörigkeit über Schwellenwerte rutschen (BSIG-Größenschwellen zählen verbundene Unternehmen mit; DORA erfasst ICT-Dienstleister von Finanzunternehmen). Prüfung immer für Ist und für Post-Closing-Struktur.",
+      "text": ": Das Target kann durch Konzernzugehörigkeit über Schwellenwerte rutschen (BSIG-Größenschwellen zählen verbundene Unternehmen mit; DORA erfasst ICT-Dienstleister von Finanzunternehmen). Prüfung immer für Ist und für Post-Closing-Struktur."
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/21"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "CRA bei Produkt-Targets",
+      "text": "CRA bei Produkt-Targets",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/21"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Übergangsfristen sind CapEx mit Termin; fehlende SBOM- und Update-Prozesse sind bezifferbarer Investitionsbedarf, kein weiches Risiko.",
+      "text": ": Übergangsfristen sind CapEx mit Termin; fehlende SBOM- und Update-Prozesse sind bezifferbarer Investitionsbedarf, kein weiches Risiko."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/22"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "DSGVO-Altlasten",
+      "text": "DSGVO-Altlasten",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/groups/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": laufende Verfahren und nicht gemeldete Breaches sind Indemnity-Kandidaten; Bußgeldrahmen skaliert mit Konzernumsatz des Käufers: derselbe Verstoß wird durch den Deal teurer.",
+      "text": ": laufende Verfahren und nicht gemeldete Breaches sind Indemnity-Kandidaten; Bußgeldrahmen skaliert mit Konzernumsatz des Käufers: derselbe Verstoß wird durch den Deal teurer."
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/groups/19"
+      },
+      "children": [
+        {
+          "$ref": "#/groups/23"
+        }
+      ],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "",
+      "text": "",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Exportkontrolle/Geheimschutz",
+      "text": "Exportkontrolle/Geheimschutz",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/23"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": bei Targets mit VS-Bezug oder Dual-Use entscheidet das über Käuferkreis und Freigaben (Investitionsprüfung AWV §55 ff.).",
+      "text": ": bei Targets mit VS-Bezug oder Dual-Use entscheidet das über Käuferkreis und Freigaben (Investitionsprüfung AWV §55 ff.)."
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "5. Formulierungen für Investor-Ohren",
+      "text": "5. Formulierungen für Investor-Ohren",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "\"Das kostet einmalig X, senkt das EBITDA nicht und ist in 100 Tagen erledigt.\"",
+      "text": "\"Das kostet einmalig X, senkt das EBITDA nicht und ist in 100 Tagen erledigt.\"",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "\"Das ist kein IT-Problem, das ist eine ungedeckte Garantie im SPA.\"",
+      "text": "\"Das ist kein IT-Problem, das ist eine ungedeckte Garantie im SPA.\"",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "\"Ohne diese drei Maßnahmen ist die Cyber-Rep nicht versicherbar.\"",
+      "text": "\"Ohne diese drei Maßnahmen ist die Cyber-Rep nicht versicherbar.\"",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "\"Regulatorische Exposure ändert sich durch den Deal: Post-Closing gilt BSIG-Registrierungspflicht.\"",
+      "text": "\"Regulatorische Exposure ändert sich durch den Deal: Post-Closing gilt BSIG-Registrierungspflicht.\"",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/24"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "\"Der Vorfall von 2024 ist eingepreist, wenn er gelernt wurde. Wir haben keine Lektion gefunden.\"",
+      "text": "\"Der Vorfall von 2024 ist eingepreist, wenn er gelernt wurde. Wir haben keine Lektion gefunden.\"",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Phase",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Was passiert",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Cyber-Rolle",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Teaser / IM",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Verkäufer (Sell-side, meist über M&A-Advisor) streut anonymes Kurzprofil, dann Information Memorandum",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Noch keine. Höchstens Outside-in-Scan auf eigene Rechnung des Interessenten",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "NDA + indikatives Angebot (NBO)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Käufer signalisiert Preisspanne auf Basis IM",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Red-Flag-Scan outside-in möglich (ASM, Leaks, Breach-Historie): ohne Zugang, ohne Wissen des Targets",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "LOI / Exklusivität",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Letter of Intent, oft mit Exklusivitätsfenster (4 bis 12 Wochen)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Jetzt startet die DD formal. Zeitfenster ist hart, alle DD-Streams laufen parallel",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Due Diligence",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Financial, Legal, Tax, Commercial, Tech, HR, ESG, Cyber parallel; Datenraum (VDR), Q&A-Prozess, Management-Sessions",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Kernarbeit: Datenraum, Interviews, Scans. Cyber ist oft der kleinste und späteste Stream, Zeitbudget 1 bis 3 Wochen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "SPA-Verhandlung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Kaufvertrag (Share/Asset Purchase Agreement)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Findings werden zu Klauseln: Reps & Warranties, Indemnities, Conditions Precedent, Preisanpassung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Signing → Closing",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Vertragsunterschrift, dann Vollzug (kartellrechtliche Freigaben etc.)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Zwischen Signing und Closing: Interim-Covenants (keine wesentlichen IT-Änderungen), Vorbereitung Tag-1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Post-Closing / 100 Tage",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Integration oder Stand-alone-Stabilisierung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "100-Tage-Plan aus der DD wird Umsetzungsauftrag, oft mit Budget aus dem Deal-Modell",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Hold (3 bis 7 Jahre) → Exit",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Wertsteigerung, dann Verkauf/IPO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Portfolio-Reporting, Kohorten; bei Exit: Vendor DD (Verkäufer lässt sich selbst prüfen, um Überraschungen zu vermeiden)",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 9,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Phase",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Was passiert",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Cyber-Rolle",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Teaser / IM",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Verkäufer (Sell-side, meist über M&A-Advisor) streut anonymes Kurzprofil, dann Information Memorandum",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Noch keine. Höchstens Outside-in-Scan auf eigene Rechnung des Interessenten",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "NDA + indikatives Angebot (NBO)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Käufer signalisiert Preisspanne auf Basis IM",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Red-Flag-Scan outside-in möglich (ASM, Leaks, Breach-Historie): ohne Zugang, ohne Wissen des Targets",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "LOI / Exklusivität",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Letter of Intent, oft mit Exklusivitätsfenster (4 bis 12 Wochen)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Jetzt startet die DD formal. Zeitfenster ist hart, alle DD-Streams laufen parallel",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Due Diligence",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Financial, Legal, Tax, Commercial, Tech, HR, ESG, Cyber parallel; Datenraum (VDR), Q&A-Prozess, Management-Sessions",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Kernarbeit: Datenraum, Interviews, Scans. Cyber ist oft der kleinste und späteste Stream, Zeitbudget 1 bis 3 Wochen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "SPA-Verhandlung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Kaufvertrag (Share/Asset Purchase Agreement)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Findings werden zu Klauseln: Reps & Warranties, Indemnities, Conditions Precedent, Preisanpassung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Signing → Closing",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Vertragsunterschrift, dann Vollzug (kartellrechtliche Freigaben etc.)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Zwischen Signing und Closing: Interim-Covenants (keine wesentlichen IT-Änderungen), Vorbereitung Tag-1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Post-Closing / 100 Tage",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Integration oder Stand-alone-Stabilisierung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "100-Tage-Plan aus der DD wird Umsetzungsauftrag, oft mit Budget aus dem Deal-Modell",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Hold (3 bis 7 Jahre) → Exit",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Wertsteigerung, dann Verkauf/IPO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Portfolio-Reporting, Kohorten; bei Exit: Vendor DD (Verkäufer lässt sich selbst prüfen, um Überraschungen zu vermeiden)",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}

@@ -26,7 +26,6 @@ from __future__ import annotations
 import hashlib
 import html
 import re
-import sys
 import urllib.parse
 import urllib.request
 from http.cookiejar import CookieJar

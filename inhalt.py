@@ -62,6 +62,9 @@ class Bericht:
     geprueft: int = 0
     ohne_ueberschrift: int = 0
     frameworks: int = 0
+    entfallen: int = 0
+    wortlaut_belegt: int = 0
+    ohne_quelle: int = 0
 
     def melde(self, *a: str) -> None:
         self.befunde.append(Befund(*a))
@@ -108,6 +111,73 @@ def extrakte_zu(d: dict, fw: str, vault: Path | None,
     return [idx[n] for n in sorted(namen) if n in idx]
 
 
+# So viele Woerter am Stueck muessen aus dem Wortlaut in der Quelle stehen.
+# Kuerzere Texte (Titelzeilen, "Diese Anforderung ist entfallen.") sagen zu
+# wenig, um daraus einen Befund zu machen.
+PROBE_WOERTER = 8
+
+
+def wortlaut_in_quelle(text: str, quelle: str) -> bool:
+    """Steht der Wortlaut ueberhaupt in der Quelle?
+
+    Die Zuordnungspruefung braucht die Ueberschrift der Anforderung im Extrakt;
+    fehlt sie, galt die Anforderung als "dort nicht pruefbar" — 422 von 3855
+    blieben so ganz ungeprueft. Diese Probe kommt ohne Ueberschrift aus: sie
+    nimmt den laengsten zusammenhaengenden Ausschnitt des Wortlauts und sucht
+    ihn im Quellextrakt. Sie belegt nicht, dass der Text unter der richtigen
+    Kennung steht -- das kann nur die Zuordnungspruefung. Sie belegt, dass er
+    aus der Quelle stammt und nicht erfunden ist.
+    """
+    # Eine Gruppen-ID wird aus ihren Unterpunkten zusammengesetzt, und die
+    # dabei eingefuegten Zwischenueberschriften ("### 4.1 Devices") stehen so
+    # in keiner Quelle. Sie sind Struktur dieses Werkzeugs, nicht Wortlaut des
+    # Dokuments — geprueft wird der Text zwischen ihnen. Acht Gruppen von CIS
+    # und TISAX wurden sonst gemeldet, obwohl ihr Text vollstaendig aus der
+    # Quelle stammt.
+    q = normtext(quelle)
+    abschnitte = [a for a in re.split(r"(?m)^#{1,6}\s+.*$", text) if a.strip()]
+    for abschnitt in sorted(abschnitte, key=len, reverse=True):
+        worte = normtext(abschnitt).split()
+        if len(worte) < PROBE_WOERTER:
+            continue
+        # Mehrere Ausschnitte, damit ein einzelner Bindestrich oder ein
+        # Tabellentrenner in der Mitte nicht den ganzen Befund erzeugt.
+        for start in (0, max(0, (len(worte) - PROBE_WOERTER) // 2), len(worte) - PROBE_WOERTER):
+            if " ".join(worte[start:start + PROBE_WOERTER]) in q:
+                return True
+        return False
+    return True
+
+
+def ueberhaenge(reqs: list[dict]) -> list[tuple[str, str]]:
+    """Zeilen, die den vollen Text einer anderen Anforderung enthalten.
+
+    Doppelter Text hat volle Wortdeckung und faellt keiner Deckungspruefung
+    auf. Das Aufnahmetor des Auftraggebers fand so 12 Zeilen (DSGVO Art.21
+    mit Art.22 und Art.23, DORA Art.30 mit Art.31 ...), die hier niemand sah.
+    Eine Oberklausel, die aus ihren Unterpunkten zusammengesetzt ist (9.2 aus
+    9.2.1), enthaelt deren Text zu Recht und zaehlt nicht.
+    """
+    norm = {str(r.get("id", "")): normtext(str(r.get("text", ""))) for r in reqs}
+    treffer: list[tuple[str, str]] = []
+    for a, ta in norm.items():
+        if len(ta) < 200:
+            continue
+        # Woertlich gleiche Texte zweier Anforderungen (das Kompendium fuehrt
+        # SYS.1.1.A31 und SYS.2.1.A33 identisch) sind kein Ueberhang; sie
+        # gehoeren auch nicht in eine Oberklausel hineingerechnet, die aus
+        # ihrem Unterpunkt besteht.
+        kinder = {t for k, t in norm.items() if k.startswith(a + ".") or k.startswith(a + "-")}
+        for bb, tb in norm.items():
+            if bb == a or len(tb) < 200 or len(tb) >= len(ta):
+                continue
+            if bb.startswith(a + ".") or bb.startswith(a + "-") or tb in kinder:
+                continue
+            if tb[:60] in ta and tb in ta:
+                treffer.append((a, bb))
+    return sorted(treffer)
+
+
 def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
                     vault: Path | None, idx: dict[str, Path]) -> None:
     d = json.loads(pfad.read_text(encoding="utf-8"))
@@ -128,13 +198,23 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
         # Ohne ihn galten alle 796 C5-Anforderungen als "ohne Ueberschrift"
         # und blieben ungeprueft -- die Pruefung lief, sah aber nichts.
         q_meta, body = publish.split_front_matter(roh)
-        abschnitte.update(publish.sections_from_headings(body))
-        abschnitte.update(publish.sections_from_tables(body))
-        abschnitte.update(publish.sections_from_yaml(body, q_meta))
+        for k, sec in publish.abschnitte_zusammen(body, q_meta).items():
+            prev = abschnitte.get(k)
+            if prev is None or not prev.text.strip():
+                abschnitte[k] = sec
+
+    # Volltext aller Quellextrakte: Grundlage der Wortlautprobe fuer
+    # Anforderungen, die keine eigene Ueberschrift im Extrakt haben.
+    quelltext_gesamt = normtext(" ".join(
+        publish.split_front_matter(q.read_text(encoding="utf-8", errors="replace"))[1]
+        for q in quellen))
 
     # Leckage: eine fremde Anforderungsueberschrift im eigenen Text.
     fremde = re.compile(r"^#{1,6}\s+([A-Z]{2,6}(?:\.\d+)+\.A\d+|\d+(?:\.\d+)+)\s",
                         re.M)
+
+    for a, bb in ueberhaenge(reqs):
+        b.melde("Ueberhang", fw, a, f"enthaelt den vollen Text von {bb}")
 
     vorher: tuple[str, str] | None = None
     for r in reqs:
@@ -168,7 +248,15 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
 
         sec = abschnitte.get(publish.norm_key(ident))
         if sec is None:
+            # Ohne Ueberschrift ist die Zuordnung nicht pruefbar, der Wortlaut
+            # aber schon: er muss in der Quelle ueberhaupt vorkommen.
             b.ohne_ueberschrift += 1
+            if not wortlaut_in_quelle(text, quelltext_gesamt):
+                b.melde("Wortlaut", fw, ident,
+                        "steht so nicht im Quellextrakt — weder unter dieser noch "
+                        "unter einer anderen Ueberschrift")
+            else:
+                b.wortlaut_belegt += 1
             continue
         b.geprueft += 1
 
@@ -185,6 +273,31 @@ def pruefe_framework(pfad: Path, out_dir: Path, b: Bericht,
                     f"Export '{titel[:45]}' vs Quelle '{sec.title[:45]}'")
 
 
+def register_ohne_quelle(fw: str) -> set[str]:
+    """Kennungen des Registers, zu denen es im Bestand keinen Primaertext gibt.
+
+    Nachgewiesen und begruendet in mappings/vault-ausnahmen.json. Sie fehlen im
+    Export zu Recht: ohne Quelle wird kein Wortlaut abgelegt. Als offener Befund
+    gefuehrt zu werden waere falsch — es gibt nichts zu beheben, ausser die
+    Quelle zu beschaffen. Sichtbar bleiben sie trotzdem.
+    """
+    p = Path(__file__).parent / "mappings" / "vault-ausnahmen.json"
+    if not p.exists():
+        return set()
+    d = json.loads(p.read_text(encoding="utf-8")).get("register_ohne_quelle", {})
+    return {k for e in d.get("eintraege", []) if e.get("framework") == fw
+            for k in e.get("kennungen", [])}
+
+
+def entfallen_belegt(vault: Path, fw: str, ident: str) -> bool:
+    """Liegt fuer diese ID eine Entfallen-Notiz aus publish.py --mark-withdrawn vor?"""
+    notiz = vault / "Normen (lizenziert)" / fw / f"{fw} {ident} (Normtext).md"
+    if not notiz.is_file():
+        return False
+    return re.search(r"^status:\s*entfallen\s*$",
+                     notiz.read_text(encoding="utf-8", errors="replace")[:600], re.M) is not None
+
+
 def pruefe_kennungen(pfad: Path, vault: Path, b: Bericht) -> None:
     """Keine ID darf auf dem Weg in den Export verlorengehen oder sich aendern.
 
@@ -199,7 +312,27 @@ def pruefe_kennungen(pfad: Path, vault: Path, b: Bericht) -> None:
     except Exception:
         return
     export = {r.get("id", "") for r in d.get("requirements", [])}
-    fehlend = sorted(register - export)
+    # Eine ID, fuer die im Vault eine Entfallen-Notiz liegt, ist kein Verlust
+    # auf dem Weg in den Export: die Quelle wurde gelesen, und sie kennt die
+    # ID nicht. Das steht in der Notiz, mit Quelldatei und Hash.
+    entfallen = sorted(i for i in register - export if entfallen_belegt(vault, fw, i))
+    if entfallen:
+        b.entfallen += len(entfallen)
+        print(f"  {fw}: {len(entfallen)} ID(s) des Registers als entfallen belegt: "
+              + ", ".join(entfallen[:8]) + (" ..." if len(entfallen) > 8 else ""))
+    zurueckgezogen = sorted((register - export - set(entfallen))
+                            & publish.vault_withdrawn(vault, fw))
+    if zurueckgezogen:
+        b.entfallen += len(zurueckgezogen)
+        print(f"  {fw}: {len(zurueckgezogen)} ID(s) im Register als withdrawn gefuehrt und im "
+              "Dokument nicht mehr vorhanden: " + ", ".join(zurueckgezogen[:8]))
+    ohne_quelle = sorted((register - export) & register_ohne_quelle(fw))
+    if ohne_quelle:
+        b.ohne_quelle += len(ohne_quelle)
+        print(f"  {fw}: {len(ohne_quelle)} Kennung(en) des Registers ohne Primaerquelle im "
+              f"Bestand, dokumentiert in mappings/vault-ausnahmen.json: "
+              + ", ".join(ohne_quelle[:6]) + (" ..." if len(ohne_quelle) > 6 else ""))
+    fehlend = sorted(register - export - set(entfallen) - set(zurueckgezogen) - set(ohne_quelle))
     fremd = sorted(export - register)
     if fehlend:
         b.melde("Kennung", fw, "—",
@@ -233,9 +366,10 @@ def main(export_dir: Path, out_dir: Path, vault: Path | None,
         if vault:
             pruefe_kennungen(pfad, vault, b)
 
-    click.echo(f"Geprueft: {b.geprueft} Anforderungen gegen die Quelle "
-               f"({b.frameworks} Frameworks); {b.ohne_ueberschrift} ohne "
-               f"Ueberschrift im Extrakt, dort nicht pruefbar.")
+    click.echo(f"Geprueft: {b.geprueft} Anforderungen Wort fuer Wort unter ihrer "
+               f"Kennung ({b.frameworks} Frameworks); {b.ohne_ueberschrift} ohne "
+               f"eigene Ueberschrift im Extrakt, davon {b.wortlaut_belegt} mit "
+               f"Wortlaut in der Quelle belegt.")
     if not b.befunde:
         click.secho("Keine Abweichung: jeder Wortlaut steht unter seiner Kennung.",
                     fg="green")

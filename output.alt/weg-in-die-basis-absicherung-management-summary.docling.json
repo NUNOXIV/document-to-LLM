@@ -1,0 +1,2406 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Weg_in_die_Basis_Absicherung_Management_Summary",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 17681813772181299211,
+    "filename": "Weg_in_die_Basis_Absicherung_Management_Summary.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/45"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 503.58,
+            "r": 469.3139999999997,
+            "b": 441.94176470588235,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            55
+          ]
+        }
+      ],
+      "orig": "Weg in die Basis-Absicherung (WiBA): Management Summary",
+      "text": "Weg in die Basis-Absicherung (WiBA): Management Summary",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.64,
+            "t": 408.20759999999996,
+            "r": 229.34604,
+            "b": 396.20890588235295,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            26
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.62944000000002,
+            "t": 767.2464,
+            "r": 331.55903999999987,
+            "b": 688.2511811764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            27,
+            225
+          ]
+        }
+      ],
+      "orig": "Aufgaben der Leitungsebene Bundesamt für Sicherheit in der Informationstechnik Postfach 20 03 63 53133 Bonn E-Mail: wiba@bsi.bund.de Internet: https://www.bsi.bund.de © Bundesamt für Sicherheit in der Informationstechnik 2023",
+      "text": "Aufgaben der Leitungsebene Bundesamt für Sicherheit in der Informationstechnik Postfach 20 03 63 53133 Bonn E-Mail: wiba@bsi.bund.de Internet: https://www.bsi.bund.de © Bundesamt für Sicherheit in der Informationstechnik 2023"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 517.92,
+            "t": 807.8676,
+            "r": 540.29532,
+            "b": 800.9965529411766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Inhalt",
+      "text": "Inhalt"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 767.5476,
+            "r": 112.69188,
+            "b": 750.4212588235295,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Inhalt",
+      "text": "Inhalt",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.64,
+            "t": 36.747600000000034,
+            "r": 240.29771999999994,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 534.6019199999998,
+            "t": 36.747600000000034,
+            "r": 540.3022799999998,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "3",
+      "text": "3"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 807.8676,
+            "r": 99.654,
+            "b": 800.9965529411766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "1 Einleitung",
+      "text": "1 Einleitung"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 773.5476,
+            "r": 192.6114,
+            "b": 756.4212588235295,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "1 Einleitung",
+      "text": "1 Einleitung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.62943999999999,
+            "t": 745.2864,
+            "r": 536.2709759999997,
+            "b": 708.1721411764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            260
+          ]
+        }
+      ],
+      "orig": "Die Abhängigkeit der Verwaltungen von IT-gestützten Verfahren ist groß, der Grad an digitaler Vernetzung in Städten und Gemeinden wächst stetig. Gleichzeitig verschärfen sich Bedrohungslagen. Cyber-Angriffe nehmen zu und treffen regelmäßig die kommunale Ebene.",
+      "text": "Die Abhängigkeit der Verwaltungen von IT-gestützten Verfahren ist groß, der Grad an digitaler Vernetzung in Städten und Gemeinden wächst stetig. Gleichzeitig verschärfen sich Bedrohungslagen. Cyber-Angriffe nehmen zu und treffen regelmäßig die kommunale Ebene."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.629440000000045,
+            "t": 697.28064,
+            "r": 540.5974079999996,
+            "b": 576.1510211764704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            831
+          ]
+        }
+      ],
+      "orig": "Umso wichtiger ist die Informationssicherheit für die Kommunen. Informationssicherheit zielt darauf ab, Daten, Informationen und Infrastrukturen angemessen vor allen denkbaren Gefahren zu schützen. Ohne Informationssicherheit gibt es kein verlässliches und nachvollziehbares Verwaltungshandeln in Städten und Gemeinden, keine erfolgreiche Digitalisierung und letztendlich keine kommunale Daseinsvorsorge. Denn die Folgen von Angriffen auf die Informationssicherheit der Städte und Gemeinden können immens sein: Handlungsunfähige Behörden, enorme wirtschaftliche Schäden, veröffentlichte sensible Datensätze, Desinformation etc. Die Angebote der kommunalen Daseinsvorsorge und die gesamte Arbeitsfähigkeit der Kommunen werden durch Sicherheitsvorfälle so massiv bedroht, dass das Gemeinwesen dadurch stark eingeschränkt werden kann.",
+      "text": "Umso wichtiger ist die Informationssicherheit für die Kommunen. Informationssicherheit zielt darauf ab, Daten, Informationen und Infrastrukturen angemessen vor allen denkbaren Gefahren zu schützen. Ohne Informationssicherheit gibt es kein verlässliches und nachvollziehbares Verwaltungshandeln in Städten und Gemeinden, keine erfolgreiche Digitalisierung und letztendlich keine kommunale Daseinsvorsorge. Denn die Folgen von Angriffen auf die Informationssicherheit der Städte und Gemeinden können immens sein: Handlungsunfähige Behörden, enorme wirtschaftliche Schäden, veröffentlichte sensible Datensätze, Desinformation etc. Die Angebote der kommunalen Daseinsvorsorge und die gesamte Arbeitsfähigkeit der Kommunen werden durch Sicherheitsvorfälle so massiv bedroht, dass das Gemeinwesen dadurch stark eingeschränkt werden kann."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.64,
+            "t": 36.747600000000034,
+            "r": 64.13328,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "4",
+      "text": "4"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 356.63651999999996,
+            "t": 36.747600000000034,
+            "r": 540.2942399999998,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 493.8,
+            "t": 807.8676,
+            "r": 540.29532,
+            "b": 800.9965529411766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "2 Zielsetzung",
+      "text": "2 Zielsetzung"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.64,
+            "t": 779.5476,
+            "r": 201.24864,
+            "b": 762.4212588235295,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "2 Zielsetzung",
+      "text": "2 Zielsetzung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.64,
+            "t": 751.2864,
+            "r": 536.8750079999992,
+            "b": 714.1721411764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            240
+          ]
+        }
+      ],
+      "orig": "Um Kommunen bei der systematischen Umsetzung von Informationssicherheitsmaßnahmen zu unterstützen und die Risiken von Cybervorfällen zu minimieren, hat das BSI das Konzept der Einstiegsstufe 'Weg in die Basis-Absicherung' (WiBA) entwickelt.",
+      "text": "Um Kommunen bei der systematischen Umsetzung von Informationssicherheitsmaßnahmen zu unterstützen und die Risiken von Cybervorfällen zu minimieren, hat das BSI das Konzept der Einstiegsstufe 'Weg in die Basis-Absicherung' (WiBA) entwickelt."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.63999999999996,
+            "t": 703.28064,
+            "r": 537.0070079999996,
+            "b": 666.1663811764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            266
+          ]
+        }
+      ],
+      "orig": "Das vorliegende Dokument richtet sich an die Leitungsebene von Behörden und öffentlichen Institutionen. Ziel ist es, die Wichtigkeit des Informationssicherheitsprozesses auf oberster Ebene zu unterstreichen und ihr den Einstieg in den IT-Grundschutz zu vereinfachen.",
+      "text": "Das vorliegende Dokument richtet sich an die Leitungsebene von Behörden und öffentlichen Institutionen. Ziel ist es, die Wichtigkeit des Informationssicherheitsprozesses auf oberster Ebene zu unterstreichen und ihr den Einstieg in den IT-Grundschutz zu vereinfachen."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 655.2748799999999,
+            "r": 526.5705599999999,
+            "b": 604.2425411764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            372
+          ]
+        }
+      ],
+      "orig": "WiBA führt noch nicht zur Etablierung eines Managementsystems für Informationssicherheit (ISMS). Vielmehr bietet WiBA einen Einstieg in das Thema und gibt konkrete Maßnahmenempfehlungen. Damit werden Gefährdungen für Kommunen effizient und effektiv minimiert und der Weg für eine Umsetzung des IT-Grundschutz-Profils 'Basis-Absicherung Kommunalverwaltung' [1] vorbereitet.",
+      "text": "WiBA führt noch nicht zur Etablierung eines Managementsystems für Informationssicherheit (ISMS). Vielmehr bietet WiBA einen Einstieg in das Thema und gibt konkrete Maßnahmenempfehlungen. Damit werden Gefährdungen für Kommunen effizient und effektiv minimiert und der Weg für eine Umsetzung des IT-Grundschutz-Profils 'Basis-Absicherung Kommunalverwaltung' [1] vorbereitet."
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.64,
+            "t": 36.747600000000034,
+            "r": 240.29771999999997,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 534.60192,
+            "t": 36.747600000000034,
+            "r": 540.3022799999999,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "5",
+      "text": "5"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 807.8676,
+            "r": 174.53051999999997,
+            "b": 800.9965529411766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "3 Funktion der Institutionsleitung",
+      "text": "3 Funktion der Institutionsleitung"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 779.5476,
+            "r": 379.56456,
+            "b": 762.4212588235295,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "3 Funktion der Institutionsleitung",
+      "text": "3 Funktion der Institutionsleitung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 751.2864,
+            "r": 539.4041280000001,
+            "b": 714.1721411764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            301
+          ]
+        }
+      ],
+      "orig": "Als Voraussetzung für effektive Informationssicherheit ist es unabdingbar, dass die Leitung einer Institution sich ihren Aufgaben und Pflichten bewusst ist. Nachfolgend werden die grundlegenden Aufgaben für die Führungsspitze aufgezeigt, damit der Einstieg in die Informationssicherheit gelingen kann.",
+      "text": "Als Voraussetzung für effektive Informationssicherheit ist es unabdingbar, dass die Leitung einer Institution sich ihren Aufgaben und Pflichten bewusst ist. Nachfolgend werden die grundlegenden Aufgaben für die Führungsspitze aufgezeigt, damit der Einstieg in die Informationssicherheit gelingen kann."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 696.6923999999999,
+            "r": 354.96432000000004,
+            "b": 682.9511563876652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "3.1 Übernahme der Gesamtverantwortung",
+      "text": "3.1 Übernahme der Gesamtverantwortung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.618879999999876,
+            "t": 672.0863999999999,
+            "r": 537.8116799999996,
+            "b": 579.0463811764704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            716
+          ]
+        }
+      ],
+      "orig": "Die Leitung einer Institution trägt stets die Gesamtverantwortung für die Informationssicherheit (IS). Entsprechend wichtig ist es, dass diese sich dessen bewusst ist, zu ihren Pflichten steht und positiv zur Informationssicherheit beiträgt. Gängige ISMS-Standards wie der BSI-Standard 200-2 (Kapitel 3.1) [2] und die DIN EN ISO/IEC 27001:2017 (Kapitel 5) [4] setzen eine aktive Rolle der Leitung daher fest voraus. Dafür muss sich die Institutionsleitung regelmäßig über den Status der Informationssicherheit informieren lassen und die möglichen Risiken kennen, die insbesondere aufgrund fehlender Maßnahmen drohen [3]. Die Kontrolle und Steuerung des Sicherheitsprozesses obliegt ebenfalls der Institutionsleitung.",
+      "text": "Die Leitung einer Institution trägt stets die Gesamtverantwortung für die Informationssicherheit (IS). Entsprechend wichtig ist es, dass diese sich dessen bewusst ist, zu ihren Pflichten steht und positiv zur Informationssicherheit beiträgt. Gängige ISMS-Standards wie der BSI-Standard 200-2 (Kapitel 3.1) [2] und die DIN EN ISO/IEC 27001:2017 (Kapitel 5) [4] setzen eine aktive Rolle der Leitung daher fest voraus. Dafür muss sich die Institutionsleitung regelmäßig über den Status der Informationssicherheit informieren lassen und die möglichen Risiken kennen, die insbesondere aufgrund fehlender Maßnahmen drohen [3]. Die Kontrolle und Steuerung des Sicherheitsprozesses obliegt ebenfalls der Institutionsleitung."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.61887999999993,
+            "t": 568.0281599999998,
+            "r": 540.6977279999993,
+            "b": 531.0406211764704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            316
+          ]
+        }
+      ],
+      "orig": "Darüber hinaus hat die Leitung eine Vorbildfunktion gegenüber ihren Mitarbeitenden. Wird sie dieser nicht gerecht, sinkt in der Folge das allgemeine Bewusstsein für Informationssicherheit in der Institution. Sie wird damit z. B. anfälliger für Social Engineering und andere Angriffe, die den Faktor Mensch ausnutzen.",
+      "text": "Darüber hinaus hat die Leitung eine Vorbildfunktion gegenüber ihren Mitarbeitenden. Wird sie dieser nicht gerecht, sinkt in der Folge das allgemeine Bewusstsein für Informationssicherheit in der Institution. Sie wird damit z. B. anfälliger für Social Engineering und andere Angriffe, die den Faktor Mensch ausnutzen."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.60831999999988,
+            "t": 520.0223999999998,
+            "r": 502.29523199999994,
+            "b": 483.0348611764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            218
+          ]
+        }
+      ],
+      "orig": "Zusammengefasst zeigt sich: Informationssicherheit ist Chefinnen- und Chefsache! Ein deutliches Engagement der Leitung hat in der Praxis einen erheblichen Effekt auf die positive Entwicklung der Informationssicherheit.",
+      "text": "Zusammengefasst zeigt sich: Informationssicherheit ist Chefinnen- und Chefsache! Ein deutliches Engagement der Leitung hat in der Praxis einen erheblichen Effekt auf die positive Entwicklung der Informationssicherheit."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 465.4524,
+            "r": 486.25128000000007,
+            "b": 451.7111563876652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "3.2 Festlegung der Informationssicherheitsstrategie und -ziele",
+      "text": "3.2 Festlegung der Informationssicherheitsstrategie und -ziele",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.63999999999993,
+            "t": 440.8464,
+            "r": 531.8399999999997,
+            "b": 361.8511811764706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            600
+          ]
+        }
+      ],
+      "orig": "Die oberste Leitungsebene muss den Sicherheitsprozess initiieren, steuern und überwachen. Die Aufgabe der Institutionsleitung umfasst zudem die Festlegung der Strategie zur Informationssicherheit und der Sicherheitsziele. Diese könnten beispielweise eine kurzfristige Umsetzung der vorliegenden Einstiegsstufe, mittelfristig die Anwendung des IT-Grundschutz-Profils 'Basis-Absicherung Kommunalverwaltung' und langfristig die vollständige IT-Grundschutz-Methodik mit einer optionalen Zertifizierung vorsehen. Dabei muss immer der Bezug zu den Zielen und Aufgaben der Institution berücksichtigt werden.",
+      "text": "Die oberste Leitungsebene muss den Sicherheitsprozess initiieren, steuern und überwachen. Die Aufgabe der Institutionsleitung umfasst zudem die Festlegung der Strategie zur Informationssicherheit und der Sicherheitsziele. Diese könnten beispielweise eine kurzfristige Umsetzung der vorliegenden Einstiegsstufe, mittelfristig die Anwendung des IT-Grundschutz-Profils 'Basis-Absicherung Kommunalverwaltung' und langfristig die vollständige IT-Grundschutz-Methodik mit einer optionalen Zertifizierung vorsehen. Dabei muss immer der Bezug zu den Zielen und Aufgaben der Institution berücksichtigt werden."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 344.2524,
+            "r": 418.67664,
+            "b": 330.5111563876652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "3.3 Aufgaben verteilen und Ressourcen bereitstellen",
+      "text": "3.3 Aufgaben verteilen und Ressourcen bereitstellen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 319.64639999999997,
+            "r": 528.2390399999999,
+            "b": 268.6140611764706,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            334
+          ]
+        }
+      ],
+      "orig": "Die Leitung einer Institution ist für die Aufgabenverteilung innerhalb des Sicherheitsprozesses verantwortlich. Insbesondere muss sie festlegen, wer dabei die Koordination dieses Prozesses übernimmt. Die Aufgaben in der Informationssicherheit erfordern eine Kommunikation über verschiedene Fachabteilungen und Hierarchiestufen hinweg.",
+      "text": "Die Leitung einer Institution ist für die Aufgabenverteilung innerhalb des Sicherheitsprozesses verantwortlich. Insbesondere muss sie festlegen, wer dabei die Koordination dieses Prozesses übernimmt. Die Aufgaben in der Informationssicherheit erfordern eine Kommunikation über verschiedene Fachabteilungen und Hierarchiestufen hinweg."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 257.72256000000004,
+            "r": 537.7134719999997,
+            "b": 164.55582117647054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            608
+          ]
+        }
+      ],
+      "orig": "Informationssicherheit betrifft ohne Ausnahme alle Mitarbeitenden. Um Sicherheitsmaßnahmen wie geplant umsetzen zu können, müssen bei den Mitarbeitenden die erforderlichen Grundlagen vorhanden sein. Dazu gehört neben den Kenntnissen, wie Sicherheitsmechanismen bedient werden müssen, auch das Wissen über den Sinn und Zweck von Sicherheitsmaßnahmen und wie mögliche Risiken verringert werden können, wenn Sicherheitsmaßnahmen eingehalten werden (Sensibilisierung). Auch das Arbeitsklima, gemeinsame Wertvorstellungen und das Engagement der Mitarbeitenden beeinflussen die Informationssicherheit entscheidend.",
+      "text": "Informationssicherheit betrifft ohne Ausnahme alle Mitarbeitenden. Um Sicherheitsmaßnahmen wie geplant umsetzen zu können, müssen bei den Mitarbeitenden die erforderlichen Grundlagen vorhanden sein. Dazu gehört neben den Kenntnissen, wie Sicherheitsmechanismen bedient werden müssen, auch das Wissen über den Sinn und Zweck von Sicherheitsmaßnahmen und wie mögliche Risiken verringert werden können, wenn Sicherheitsmaßnahmen eingehalten werden (Sensibilisierung). Auch das Arbeitsklima, gemeinsame Wertvorstellungen und das Engagement der Mitarbeitenden beeinflussen die Informationssicherheit entscheidend."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.639999999999986,
+            "t": 153.66431999999998,
+            "r": 540.0092159999997,
+            "b": 74.54238117647049,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            585
+          ]
+        }
+      ],
+      "orig": "Zudem sollten von der Leitung geeignete organisatorische Rahmenbedingungen geschaffen werden. Alle Personen mit Aufgaben im Kontext der Informationssicherheit müssen entsprechend qualifiziert sein. Diesen Personen müssen die notwendigen Ressourcen (zeitlich und finanziell) zur Verfügung stehen. Hierzu zählen neben dem Personalbedarf beispielsweise auch Investitionen in erforderliche Software, Hardware und Infrastruktur. Auch die Teilnahme an Schulungen, um das Wissen der Fachkräfte (z. B. Administratoren und Administratorinnen) zu erhalten und auszubauen, muss ermöglicht werden.",
+      "text": "Zudem sollten von der Leitung geeignete organisatorische Rahmenbedingungen geschaffen werden. Alle Personen mit Aufgaben im Kontext der Informationssicherheit müssen entsprechend qualifiziert sein. Diesen Personen müssen die notwendigen Ressourcen (zeitlich und finanziell) zur Verfügung stehen. Hierzu zählen neben dem Personalbedarf beispielsweise auch Investitionen in erforderliche Software, Hardware und Infrastruktur. Auch die Teilnahme an Schulungen, um das Wissen der Fachkräfte (z. B. Administratoren und Administratorinnen) zu erhalten und auszubauen, muss ermöglicht werden."
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.64,
+            "t": 36.747600000000034,
+            "r": 64.13328,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "6",
+      "text": "6"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 356.63651999999996,
+            "t": 36.747600000000034,
+            "r": 540.29424,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 422.4,
+            "t": 807.8676,
+            "r": 540.2905199999999,
+            "b": 800.9965529411766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "3 Funktion der Institutionsleitung",
+      "text": "3 Funktion der Institutionsleitung"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.64,
+            "t": 780.6923999999999,
+            "r": 209.28144,
+            "b": 766.9511563876652,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "3.4 Vorgehensweise",
+      "text": "3.4 Vorgehensweise",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.62943999999993,
+            "t": 756.0863999999999,
+            "r": 533.050176,
+            "b": 649.0015811764704,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            733
+          ]
+        }
+      ],
+      "orig": "Informationssicherheit ist kein Projekt, sondern sollte von der Institutionsleitung als ein dauerhafter Prozess verstanden werden. Um wesentliche Sicherheitsmaßnahmen bereits zu Beginn umzusetzen, ist die vorliegende Vorgehensweise die geeignete Wahl. Mit der Einstiegsstufe können Institutionen ohne tiefergehende methodische Kenntnisse einen Sachstand anhand einfacher Checklisten erheben und wesentliche, effektive Sicherheitsmaßnahmen umsetzen. So kann durch den effizienten Einsatz von Ressourcen ein gesteigertes Sicherheitsniveau erreicht werden. Aufbauend auf diesem Sicherheitsniveau kann dann nahtlos das IT-Grundschutz-Profil 'Basis-Absicherung Kommunalverwaltung' sowie die gesamte Basis-Absicherung umgesetzt werden [1].",
+      "text": "Informationssicherheit ist kein Projekt, sondern sollte von der Institutionsleitung als ein dauerhafter Prozess verstanden werden. Um wesentliche Sicherheitsmaßnahmen bereits zu Beginn umzusetzen, ist die vorliegende Vorgehensweise die geeignete Wahl. Mit der Einstiegsstufe können Institutionen ohne tiefergehende methodische Kenntnisse einen Sachstand anhand einfacher Checklisten erheben und wesentliche, effektive Sicherheitsmaßnahmen umsetzen. So kann durch den effizienten Einsatz von Ressourcen ein gesteigertes Sicherheitsniveau erreicht werden. Aufbauend auf diesem Sicherheitsniveau kann dann nahtlos das IT-Grundschutz-Profil 'Basis-Absicherung Kommunalverwaltung' sowie die gesamte Basis-Absicherung umgesetzt werden [1]."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.62943999999993,
+            "t": 637.9833599999998,
+            "r": 282.40223999999995,
+            "b": 628.800929032258,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            52
+          ]
+        }
+      ],
+      "orig": "Der erste Schritt ist der wichtigste, fangen Sie an.",
+      "text": "Der erste Schritt ist der wichtigste, fangen Sie an."
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.62943999999993,
+            "t": 618.0671999999998,
+            "r": 110.44319999999993,
+            "b": 608.884769032258,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Viel Erfolg!",
+      "text": "Viel Erfolg!"
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.64,
+            "t": 36.747600000000034,
+            "r": 240.29771999999997,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 534.60192,
+            "t": 36.747600000000034,
+            "r": 540.3022799999999,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "7",
+      "text": "7"
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.64,
+            "t": 807.8676,
+            "r": 128.40745200000003,
+            "b": 800.876430967742,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Literaturverzeichnis",
+      "text": "Literaturverzeichnis"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.64,
+            "t": 767.5476,
+            "r": 233.05212,
+            "b": 750.4212588235295,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Literaturverzeichnis",
+      "text": "Literaturverzeichnis",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.64,
+            "t": 739.2864,
+            "r": 538.5434880000003,
+            "b": 688.2540611764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            320
+          ]
+        }
+      ],
+      "orig": "[1] Arbeitsgruppe Kommunales Basis-Profil der Kommunalen Spitzenverbände und Bundesamt für Sicherheit in der Informationstechnik, 'IT-Grundschutz-Profil: Basis-Absicherung Kommunalverwaltung,' https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Profile/Basis_Absicher ung_Kommunalverwaltung.html.",
+      "text": "[1] Arbeitsgruppe Kommunales Basis-Profil der Kommunalen Spitzenverbände und Bundesamt für Sicherheit in der Informationstechnik, 'IT-Grundschutz-Profil: Basis-Absicherung Kommunalverwaltung,' https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Profile/Basis_Absicher ung_Kommunalverwaltung.html."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.6400000000001,
+            "t": 677.2358399999999,
+            "r": 507.41472000000016,
+            "b": 654.1663811764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            146
+          ]
+        }
+      ],
+      "orig": "[2] Bundesamt für Sicherheit in der Informationstechnik, 'BSI-Standard 200-2: IT-GrundschutzMethodik', 2017. https://www.bsi.bund.de/dok/10027846.",
+      "text": "[2] Bundesamt für Sicherheit in der Informationstechnik, 'BSI-Standard 200-2: IT-GrundschutzMethodik', 2017. https://www.bsi.bund.de/dok/10027846."
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.6400000000001,
+            "t": 643.2748799999999,
+            "r": 463.4259839999997,
+            "b": 620.2054211764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            138
+          ]
+        }
+      ],
+      "orig": "[3] Deutscher Landkreistag und Bundesamt für Sicherheit in der Informationstechnik, 'Informationssicherheit für Landrätinnen und Landräte'",
+      "text": "Deutscher Landkreistag und Bundesamt für Sicherheit in der Informationstechnik, 'Informationssicherheit für Landrätinnen und Landräte'",
+      "enumerated": true,
+      "marker": "[3]"
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.64000000000013,
+            "t": 615.3119999999999,
+            "r": 474.41471999999965,
+            "b": 592.2425411764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            104
+          ]
+        }
+      ],
+      "orig": "https://landkreistag.de/images/stories/themen/ITSicherheit/211217_Handlungsleitfaden_IT-Grundschutz.pdf.",
+      "text": "https://landkreistag.de/images/stories/themen/ITSicherheit/211217_Handlungsleitfaden_IT-Grundschutz.pdf."
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.629440000000216,
+            "t": 581.2243199999999,
+            "r": 540.8297280000003,
+            "b": 544.2367811764705,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            188
+          ]
+        }
+      ],
+      "orig": "[4] Deutsches Institut für Normung, DIN EN ISO/IEC 27001, Informationstechnik - Sicherheitsverfahren - Informationssicherheitsmanagementsysteme - Anforderungen, Berlin: Beuth-Verlag, 2017.",
+      "text": "[4] Deutsches Institut für Normung, DIN EN ISO/IEC 27001, Informationstechnik - Sicherheitsverfahren - Informationssicherheitsmanagementsysteme - Anforderungen, Berlin: Beuth-Verlag, 2017."
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.64,
+            "t": 36.747600000000034,
+            "r": 64.13328,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "8",
+      "text": "8"
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 356.63651999999996,
+            "t": 36.747600000000034,
+            "r": 540.2942399999998,
+            "b": 29.876552941176442,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Bundesamt für Sicherheit in der Informationstechnik"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.925083019845445,
+            "t": 788.4691043735966,
+            "r": 194.90453843699208,
+            "b": 718.5908069862492,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 375.35095167121636,
+            "t": 786.7365724671424,
+            "r": 538.0997758944724,
+            "b": 746.2076972696843,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 13.016518350703606,
+            "t": 286.7148825573412,
+            "r": 581.6138539891596,
+            "b": 13.758458283847972,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "document_index",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 55.94561038279694,
+            "t": 740.6695729945674,
+            "r": 538.0413709274395,
+            "b": 598.5103744862029,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 56.64,
+              "t": 102.5136,
+              "r": 61.92,
+              "b": 111.53825882352942,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.64,
+              "t": 102.5136,
+              "r": 538.07712,
+              "b": 111.53825882352942,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Einleitung ............................................................................................................................................................................................ 4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.64,
+              "t": 121.59360000000004,
+              "r": 61.92,
+              "b": 130.61825882352946,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.64,
+              "t": 121.59360000000004,
+              "r": 538.07712,
+              "b": 130.61825882352946,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Zielsetzung .......................................................................................................................................................................................... 5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.64,
+              "t": 140.55359999999996,
+              "r": 61.92,
+              "b": 149.57825882352938,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 77.64,
+              "t": 140.55359999999996,
+              "r": 538.0929600000001,
+              "b": 149.57825882352938,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Funktion der Institutionsleitung .............................................................................................................................................. 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 67.2,
+              "t": 159.5136,
+              "r": 79.920576,
+              "b": 168.53825882352942,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 100.68,
+              "t": 159.5136,
+              "r": 538.0752000000001,
+              "b": 168.53825882352942,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Übernahme der Gesamtverantwortung ...................................................................................................................... 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 67.2,
+              "t": 178.59360000000004,
+              "r": 79.920576,
+              "b": 187.61825882352946,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 100.68,
+              "t": 178.59360000000004,
+              "r": 538.0783680000002,
+              "b": 187.61825882352946,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Festlegung der Informationssicherheitsstrategie und -ziele .............................................................................. 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 67.2,
+              "t": 197.55359999999996,
+              "r": 79.920576,
+              "b": 206.57825882352938,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.3",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 100.68,
+              "t": 197.55359999999996,
+              "r": 538.0752000000001,
+              "b": 206.57825882352938,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Aufgaben verteilen und Ressourcen bereitstellen ................................................................................................... 6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 67.2,
+              "t": 216.5136,
+              "r": 79.920576,
+              "b": 225.53825882352942,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 100.68,
+              "t": 216.5136,
+              "r": 538.0752000000001,
+              "b": 225.53825882352942,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Vorgehensweise ..................................................................................................................................................................... 7",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.64,
+              "t": 235.59360000000004,
+              "r": 538.0872959999997,
+              "b": 244.61825882352946,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "Literaturverzeichnis ................................................................................................................................................................................. 8",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 8,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 56.64,
+                "t": 102.5136,
+                "r": 61.92,
+                "b": 111.53825882352942,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 77.64,
+                "t": 102.5136,
+                "r": 538.07712,
+                "b": 111.53825882352942,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Einleitung ............................................................................................................................................................................................ 4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.64,
+                "t": 121.59360000000004,
+                "r": 61.92,
+                "b": 130.61825882352946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 77.64,
+                "t": 121.59360000000004,
+                "r": 538.07712,
+                "b": 130.61825882352946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Zielsetzung .......................................................................................................................................................................................... 5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.64,
+                "t": 140.55359999999996,
+                "r": 61.92,
+                "b": 149.57825882352938,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 77.64,
+                "t": 140.55359999999996,
+                "r": 538.0929600000001,
+                "b": 149.57825882352938,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Funktion der Institutionsleitung .............................................................................................................................................. 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 67.2,
+                "t": 159.5136,
+                "r": 79.920576,
+                "b": 168.53825882352942,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 100.68,
+                "t": 159.5136,
+                "r": 538.0752000000001,
+                "b": 168.53825882352942,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Übernahme der Gesamtverantwortung ...................................................................................................................... 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 67.2,
+                "t": 178.59360000000004,
+                "r": 79.920576,
+                "b": 187.61825882352946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 100.68,
+                "t": 178.59360000000004,
+                "r": 538.0783680000002,
+                "b": 187.61825882352946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Festlegung der Informationssicherheitsstrategie und -ziele .............................................................................. 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 67.2,
+                "t": 197.55359999999996,
+                "r": 79.920576,
+                "b": 206.57825882352938,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.3",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 100.68,
+                "t": 197.55359999999996,
+                "r": 538.0752000000001,
+                "b": 206.57825882352938,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Aufgaben verteilen und Ressourcen bereitstellen ................................................................................................... 6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 67.2,
+                "t": 216.5136,
+                "r": 79.920576,
+                "b": 225.53825882352942,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 100.68,
+                "t": 216.5136,
+                "r": 538.0752000000001,
+                "b": 225.53825882352942,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Vorgehensweise ..................................................................................................................................................................... 7",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.64,
+                "t": 235.59360000000004,
+                "r": 538.0872959999997,
+                "b": 244.61825882352946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Literaturverzeichnis ................................................................................................................................................................................. 8",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 56.64,
+                "t": 235.59360000000004,
+                "r": 538.0872959999997,
+                "b": 244.61825882352946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Literaturverzeichnis ................................................................................................................................................................................. 8",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 7
+    },
+    "8": {
+      "size": {
+        "width": 595.32,
+        "height": 841.92
+      },
+      "page_no": 8
+    }
+  }
+}

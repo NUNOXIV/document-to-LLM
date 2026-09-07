@@ -1,0 +1,1641 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---WiBA---Weg-in-die-Basis-Absicherung",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 1751839426420217451,
+    "filename": "BSI---WiBA---Weg-in-die-Basis-Absicherung.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/39"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/38"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 204.92289188654578,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 236.14452516064435,
+            "t": 465.91499566687503,
+            "r": 396.9308444612141,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            15,
+            50
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz WiBA - Weg in die Basis-Absicherung",
+      "text": "IT-Grundschutz WiBA - Weg in die Basis-Absicherung"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 490.6053469081098,
+            "b": 371.41107103311015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Weg in die Basis-Absicherung (WiBA (Weg in die BasisAbsicherung))",
+      "text": "Weg in die Basis-Absicherung (WiBA (Weg in die BasisAbsicherung))",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 259.20000428000003,
+            "r": 534.2516569645134,
+            "b": 199.15429249619046,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            356
+          ]
+        }
+      ],
+      "orig": "Das Projekt 'Weg in die Basis-Absicherung' wurde initiiert, um den Einstieg in den IT (Informationstechnik)-Grundschutz weiter zu vereinfachen. Dies geschieht insbesondere mit Blick darauf, dass auch die Basis-Absicherung weiterhin als zu aufwändig für den Einstieg empfunden wird und in kleineren Kommunen ausreichende Ressourcen für die Umsetzung fehlen.",
+      "text": "Das Projekt 'Weg in die Basis-Absicherung' wurde initiiert, um den Einstieg in den IT (Informationstechnik)-Grundschutz weiter zu vereinfachen. Dies geschieht insbesondere mit Blick darauf, dass auch die Basis-Absicherung weiterhin als zu aufwändig für den Einstieg empfunden wird und in kleineren Kommunen ausreichende Ressourcen für die Umsetzung fehlen."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 175.95000774874995,
+            "r": 546.7097985204241,
+            "b": 151.90429446494045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            188
+          ]
+        }
+      ],
+      "orig": "Ziel ist es, den Einstieg in den IT (Informationstechnik)-Grundschutz noch praxisnäher zu gestalten, um die Aufwände für die Umsetzung weiter zu verringern. Dabei stehen Kommunen im Fokus.",
+      "text": "Ziel ist es, den Einstieg in den IT (Informationstechnik)-Grundschutz noch praxisnäher zu gestalten, um die Aufwände für die Umsetzung weiter zu verringern. Dabei stehen Kommunen im Fokus."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 128.70000971749994,
+            "r": 548.5076594455131,
+            "b": 86.65429718369046,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            250
+          ]
+        }
+      ],
+      "orig": "Mittels Prüffragen, zusammengefasst in themenspezifischen Checklisten, soll die Möglichkeit geschaffen werden, auch ohne tiefere Kenntnis der Methodik, Sachstände zur Informationssicherheit zu erheben und umzusetzende Anforderungen zu identifizieren.",
+      "text": "Mittels Prüffragen, zusammengefasst in themenspezifischen Checklisten, soll die Möglichkeit geschaffen werden, auch ohne tiefere Kenntnis der Methodik, Sachstände zur Informationssicherheit zu erheben und umzusetzende Anforderungen zu identifizieren."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 541.1999925299999,
+            "r": 341.0070304163732,
+            "b": 535.1542784961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "Quelle: Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "Quelle: Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 498.44999431125007,
+            "r": 550.8957639710087,
+            "b": 438.4042825274405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            355
+          ]
+        }
+      ],
+      "orig": "Die Prüffragen auf Grundlage des IT (Informationstechnik)-Grundschutz-Profils Basis-Absicherung Kommunalverwaltung bilden dabei die wesentlichen Aspekte ab, die bei der Absicherung vorrangig betrachtet und tatsächlich umgesetzt werden müssen. Im Anschluss daran kann nahtlos die vollständige Realisierung des o.g. (oben genannt) Profils angegangen werden.",
+      "text": "Die Prüffragen auf Grundlage des IT (Informationstechnik)-Grundschutz-Profils Basis-Absicherung Kommunalverwaltung bilden dabei die wesentlichen Aspekte ab, die bei der Absicherung vorrangig betrachtet und tatsächlich umgesetzt werden müssen. Im Anschluss daran kann nahtlos die vollständige Realisierung des o.g. (oben genannt) Profils angegangen werden."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 390.60749880468757,
+            "r": 452.29444550439723,
+            "b": 381.16107062686024,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            49
+          ]
+        }
+      ],
+      "orig": "WiBA (Weg in die Basis-Absicherung)-Dokumente 2.0",
+      "text": "WiBA (Weg in die Basis-Absicherung)-Dokumente 2.0",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 355.20000028000004,
+            "r": 524.3578881517537,
+            "b": 349.1542862461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            91
+          ]
+        }
+      ],
+      "orig": "Im Folgenden finden Sie die WiBA (Weg in die Basis-Absicherung)-Dokumente 2.0 zum Download.",
+      "text": "Im Folgenden finden Sie die WiBA (Weg in die Basis-Absicherung)-Dokumente 2.0 zum Download."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 325.95000149875,
+            "r": 140.3159911535001,
+            "b": 319.9042874649406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Vorgehensweise",
+      "text": "Vorgehensweise",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/Weg_in_die_Basis_Absicherung_Vorgehensweise.pdf?__blob=publicationFile&v=3#download=1"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 296.70000271749996,
+            "r": 246.73184991950583,
+            "b": 290.65428868369054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Empfohlene Bearbeitungsreihenfolge",
+      "text": "Empfohlene Bearbeitungsreihenfolge",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/Weg_in_die_Basis_Absicherung_Empfohlene_Bearbeitungsreihenfolge.pdf?__blob=publicationFile&v=3#download=1"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 267.4500039362499,
+            "r": 175.39383889192308,
+            "b": 261.4042899024405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Management Summary",
+      "text": "Management Summary",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/Weg_in_die_Basis_Absicherung_Management_Summary.pdf?__blob=publicationFile&v=3#download=1"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 238.2000051550001,
+            "r": 109.17599957599982,
+            "b": 232.15429112119045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Checklisten:",
+      "text": "Checklisten:"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 124.18358857568359,
+            "t": 238.2000051550001,
+            "r": 523.7037965290074,
+            "b": 232.15429112119045,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "Weg in die Basis-Absicherung (WiBA (Weg in die Basis-Absicherung)) (ZIP-Datei)",
+      "text": "Weg in die Basis-Absicherung (WiBA (Weg in die Basis-Absicherung)) (ZIP-Datei)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/WiBA_Checklisten_ZIP-Datei_2023.zip?__blob=publicationFile&v=5#download=1"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 208.95000637375006,
+            "r": 129.2760011384997,
+            "b": 202.9042923399404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Mappingtabelle:",
+      "text": "Mappingtabelle:"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 144.28124398828123,
+            "t": 208.95000637375006,
+            "r": 525.1607995682991,
+            "b": 202.9042923399404,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "WiBA auf IT-Grundschutz-Profil 'Basis-Absicherung Kommunalverwaltung'",
+      "text": "WiBA auf IT-Grundschutz-Profil 'Basis-Absicherung Kommunalverwaltung'",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/WiBA_Mapping_2023.xlsx?__blob=publicationFile&v=3#download=1"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 179.70000759250001,
+            "r": 329.44772272301105,
+            "b": 173.6542935586906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Übersicht weiterführende Dokumente und Hilfsmittel",
+      "text": "Übersicht weiterführende Dokumente und Hilfsmittel",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/Uebersicht_weiterfuehrende_Dokumente.xlsx?__blob=publicationFile&v=1#download=1"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 150.45000881124997,
+            "r": 241.0078598330054,
+            "b": 144.40429477744055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht WiBA 1.0 vs. 2.0",
+      "text": "Änderungsübersicht WiBA 1.0 vs. 2.0",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/WiBA_Aenderungsdokument.xlsx?__blob=publicationFile&v=1#download=1"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 121.20001002999993,
+            "r": 537.563718101511,
+            "b": 97.15429674619077,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            143
+          ]
+        }
+      ],
+      "orig": "Wir freuen uns über Anmerkungen, Anregungen und Fragen an die E-Mail-Adresse der Projektgruppe 'Weg in die Basis-Absicherung': wiba@bsi.bund.de",
+      "text": "Wir freuen uns über Anmerkungen, Anregungen und Fragen an die E-Mail-Adresse der Projektgruppe 'Weg in die Basis-Absicherung': wiba@bsi.bund.de"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 798.6074818046875,
+            "r": 374.7069780622086,
+            "b": 789.1610536268602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "WiBA (Weg in die Basis-Absicherung)-Tools",
+      "text": "WiBA (Weg in die Basis-Absicherung)-Tools",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 763.19998328,
+            "r": 543.5276964030115,
+            "b": 739.1542699961906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            118
+          ]
+        }
+      ],
+      "orig": "Das WiBA-Webtool steht im internen Bereich der Sicherheitsberatung für Länder und Kommunen zum Download zur Verfügung.",
+      "text": "Das WiBA-Webtool steht im internen Bereich der Sicherheitsberatung für Länder und Kommunen zum Download zur Verfügung."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 715.94998524875,
+            "r": 305.42186132408864,
+            "b": 709.9042712149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            48
+          ]
+        }
+      ],
+      "orig": "WiBA (Weg in die Basis-Absicherung)-Tool (Excel)",
+      "text": "WiBA (Weg in die Basis-Absicherung)-Tool (Excel)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/WiBA_Tool_Excel.xlsx?__blob=publicationFile&v=2#download=1"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 662.1074874921874,
+            "r": 305.3553184768612,
+            "b": 652.66105931436,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "FAQ (Frequently Asked Questions)",
+      "text": "FAQ (Frequently Asked Questions)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 626.6999889674998,
+            "r": 405.76174121826006,
+            "b": 602.6542756836907,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            107
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen zu WiBA (Weg in die Basis-Absicherung) liefern die . FAQ (Frequently Asked Questions)",
+      "text": "Weitere Informationen zu WiBA (Weg in die Basis-Absicherung) liefern die . FAQ (Frequently Asked Questions)"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 554.8574919609375,
+            "r": 369.03266872363815,
+            "b": 545.4110637831102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            41
+          ]
+        }
+      ],
+      "orig": "Flyer WiBA (Weg in die Basis-Absicherung)",
+      "text": "Flyer WiBA (Weg in die Basis-Absicherung)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 519.44999343625,
+            "r": 222.17992796750266,
+            "b": 513.4042794024406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Einen guten Überblick finden Sie im",
+      "text": "Einen guten Überblick finden Sie im"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 237.18749011718748,
+            "t": 519.44999343625,
+            "r": 264.9047739623006,
+            "b": 513.4042794024406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": ". Flyer",
+      "text": ". Flyer",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/WiBA/Flyer_WIBA.html?nn=1091538"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 230.60155289160156,
+            "t": 465.6074956796874,
+            "r": 364.8889830212916,
+            "b": 456.1610675018601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Ähnliche Themen",
+      "text": "Ähnliche Themen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 355.710922678711,
+            "t": 361.20000002999996,
+            "r": 504.28279461321597,
+            "b": 355.15428599619054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Kompendium",
+      "text": "IT-Grundschutz-Kompendium",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/it-grundschutz-kompendium_node.html"
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 344.4023331499022,
+            "t": 233.70000534249994,
+            "r": 515.59413499191,
+            "b": 227.65429130869052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": "Zertifizierte Informationssicherheit",
+      "text": "Zertifizierte Informationssicherheit",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/Zertifizierte-Informationssicherheit/zertifizierte-informationssicherheit_node.html"
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 334.0898335795897,
+            "t": 106.20001065499991,
+            "r": 528.1511528687009,
+            "b": 84.40429727744049,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "IT (Informationstechnik) -GrundschutzHilfsmittel und Anwenderbeiträge",
+      "text": "IT (Informationstechnik) -GrundschutzHilfsmittel und Anwenderbeiträge",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/Hilfsmittel_und_Anwenderbeitraege/Hilfsmittel_Anwenderbeitraege_node.html"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 130.47655706347658,
+            "t": 361.20000002999996,
+            "r": 200.50852617047775,
+            "b": 355.15428599619054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "BSI-Standards",
+      "text": "BSI-Standards",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/BSI-Standards/bsi-standards_node.html"
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/pictures/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 109.26562044726562,
+            "t": 233.70000534249994,
+            "r": 221.7295334112691,
+            "b": 227.65429130869052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Drafts",
+      "text": "IT-Grundschutz-Drafts",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Drafts/it-grundschutz-drafts_node.html"
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/pictures/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 108.16405799316405,
+            "t": 106.20001065499991,
+            "r": 222.82395871566806,
+            "b": 100.1542966211905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Profile",
+      "text": "IT-Grundschutz-Profile",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Profile/it-grundschutz-profile_node.html"
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 239.44921252294904,
+            "t": 810.4499813112502,
+            "r": 368.0291100404531,
+            "b": 804.4042672774408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Zurück zu IT-Grundschutz",
+      "text": "Zurück zu IT-Grundschutz",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html"
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 708.4499855612503,
+            "r": 300.77139614285807,
+            "b": 702.4042715274409,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/WIBA",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/WIBA",
+      "hyperlink": "https://www.bsi.bund.de/dok/WIBA",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 592.1999904049999,
+            "r": 158.39995432500166,
+            "b": 532.1542786211908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 501.44999418625,
+            "r": 313.9438494440058,
+            "b": 495.4042801524406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 441.3974966884375,
+            "r": 509.74872171046906,
+            "b": 436.48535403596725,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.23592466189575,
+            "t": 553.0452448394783,
+            "r": 170.64948048676615,
+            "b": 491.16370569515857,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.608676739742506,
+            "t": 825.4358327714629,
+            "r": 443.1964613198386,
+            "b": 562.6265485431742,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.77076362587604,
+            "t": 424.51491945691544,
+            "r": 454.52455637624945,
+            "b": 368.9019190429347,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.4999078306669,
+            "t": 297.13991029310364,
+            "r": 455.3081340136288,
+            "b": 241.3906313277655,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 404.2538611568532,
+            "t": 169.3512746707944,
+            "r": 454.9685267417854,
+            "b": 113.369473860104,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.14490209385053,
+            "t": 424.6262980311327,
+            "r": 190.75663255167166,
+            "b": 367.6426698313661,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.39520568332807,
+            "t": 297.2554998928666,
+            "r": 190.23615976628562,
+            "b": 241.40655998961245,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/33"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 139.74267070272288,
+            "t": 169.52465907043893,
+            "r": 189.79530198424575,
+            "b": 113.95175494317641,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "$ref": "#/texts/34"
+        }
+      ],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    }
+  }
+}

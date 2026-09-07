@@ -1,0 +1,4074 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "A11_Abgrenzung_des_Informationsverbunds",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 9254186964992535528,
+    "filename": "A11_Abgrenzung_des_Informationsverbunds.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/tables/2"
+      },
+      {
+        "$ref": "#/tables/3"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/tables/4"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/pictures/7"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/pictures/8"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/pictures/9"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/pictures/10"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/pictures/11"
+      },
+      {
+        "$ref": "#/texts/55"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 143.7,
+            "t": 483.565,
+            "r": 451.668,
+            "b": 408.17528331584475,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Abgrenzung des Informationsverbunds",
+      "text": "Abgrenzung des Informationsverbunds",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 497.2,
+            "t": 81.58900000000006,
+            "r": 538.5,
+            "b": 72.2710566631689,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 1 von 9",
+      "text": "Seite 1 von 9"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.8,
+            "t": 767.914,
+            "r": 206.53750000000005,
+            "b": 753.2760146904512,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Dokumenteneigenschaften",
+      "text": "Dokumenteneigenschaften",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.80000000000001,
+            "t": 565.3140000000001,
+            "r": 236.37500000000003,
+            "b": 550.6760146904513,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Dokumentenstatus und Freigabe",
+      "text": "Dokumentenstatus und Freigabe",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.79999999999998,
+            "t": 419.4140000000001,
+            "r": 172.625,
+            "b": 404.7760146904513,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Dokumentenhistorie",
+      "text": "Dokumentenhistorie",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.8,
+            "t": 767.6890000000001,
+            "r": 218.73999999999998,
+            "b": 744.268223504722,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Inhaltsverzeichnis",
+      "text": "Inhaltsverzeichnis",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.80000000000001,
+            "t": 595.8280000000001,
+            "r": 538.25,
+            "b": 583.6907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            156
+          ]
+        }
+      ],
+      "orig": "Abbildung 2: Vereinfachter Netzplan der RECPLAST GmbH..................................................................................................... 8",
+      "text": "Abbildung 2: Vereinfachter Netzplan der RECPLAST GmbH..................................................................................................... 8"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 497.2,
+            "t": 81.58900000000006,
+            "r": 538.5,
+            "b": 72.27105666316902,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 3 von 9",
+      "text": "Seite 3 von 9"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 764.649,
+            "r": 238.19999999999996,
+            "b": 741.530427072403,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "1 Geltungsbereich",
+      "text": "1 Geltungsbereich",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 732.428,
+            "r": 336.7719999999999,
+            "b": 720.2907492130115,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Der Informationsverbund der RECPLAST ist wie folgt definiert:",
+      "text": "Der Informationsverbund der RECPLAST ist wie folgt definiert:"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.8,
+            "t": 714.5415,
+            "r": 256.6,
+            "b": 701.4907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": " Kurzbezeichnung: RECPLAST GmbH",
+      "text": " Kurzbezeichnung: RECPLAST GmbH",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 74.8,
+            "t": 692.8415,
+            "r": 511.3719999999997,
+            "b": 667.1907492130115,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            124
+          ]
+        }
+      ],
+      "orig": " Langbezeichnung: Die RECPLAST GmbH mit allen Geschäftsprozessen, Anwendungen und ITSystemen zur Erbringung der Produktion.",
+      "text": " Langbezeichnung: Die RECPLAST GmbH mit allen Geschäftsprozessen, Anwendungen und ITSystemen zur Erbringung der Produktion.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 56.8,
+            "t": 658.228,
+            "r": 532.8174999999993,
+            "b": 540.7907492130115,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            650
+          ]
+        }
+      ],
+      "orig": "Der Informationsverbund erstreckt sich auf die gesamte RECPLAST GmbH. Die RECPLAST GmbH produziert und vertreibt etwa 400 unterschiedliche, aus Recyclingmaterialien gefertigte Kunststoffprodukte, zum Beispiel Bauelemente wie Rund- und Brettprofile, Zäune, Blumenkübel oder Abfallbehälter, teils in größeren Serien für Endkunden, teils spezifisch für einzelne Geschäftskunden. Das Auftragsvolumen, die Häufigkeit der Aufträge und die Kunden variieren: Es gibt einige wenige Stammund Großkunden und zahlreiche Einzelkunden. Der jährliche Gesamtumsatz des Unternehmens beläuft sich auf ca. 50 Millionen Euro bei einem Gewinn von etwa einer Million Euro.",
+      "text": "Der Informationsverbund erstreckt sich auf die gesamte RECPLAST GmbH. Die RECPLAST GmbH produziert und vertreibt etwa 400 unterschiedliche, aus Recyclingmaterialien gefertigte Kunststoffprodukte, zum Beispiel Bauelemente wie Rund- und Brettprofile, Zäune, Blumenkübel oder Abfallbehälter, teils in größeren Serien für Endkunden, teils spezifisch für einzelne Geschäftskunden. Das Auftragsvolumen, die Häufigkeit der Aufträge und die Kunden variieren: Es gibt einige wenige Stammund Großkunden und zahlreiche Einzelkunden. Der jährliche Gesamtumsatz des Unternehmens beläuft sich auf ca. 50 Millionen Euro bei einem Gewinn von etwa einer Million Euro."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 497.2,
+            "t": 81.58899999999994,
+            "r": 538.5,
+            "b": 72.2710566631689,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 4 von 9",
+      "text": "Seite 4 von 9"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.8,
+            "t": 764.649,
+            "r": 343.2600000000001,
+            "b": 741.530427072403,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "2 Organisatorische Gliederung",
+      "text": "2 Organisatorische Gliederung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.8,
+            "t": 732.4689999999999,
+            "r": 535.4699999999997,
+            "b": 720.9097135362015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            106
+          ]
+        }
+      ],
+      "orig": "Die organisatorische Gliederung der RECPLAST GmbH gibt das in Abbildung 1 dargestellte Organigramm wieder:",
+      "text": "Die organisatorische Gliederung der RECPLAST GmbH gibt das in Abbildung 1 dargestellte Organigramm wieder:"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 56.8,
+            "t": 324.40700000000004,
+            "r": 224.99800000000005,
+            "b": 314.68863693599167,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "Abbildung 1: Organigramm der RECPLAST GmbH",
+      "text": "Abbildung 1: Organigramm der RECPLAST GmbH"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 497.2,
+            "t": 81.58900000000006,
+            "r": 538.5,
+            "b": 72.2710566631689,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 5 von 9",
+      "text": "Seite 5 von 9"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.8,
+            "t": 764.649,
+            "r": 321.96000000000004,
+            "b": 741.530427072403,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "3 Standorte und Mitarbeiter",
+      "text": "3 Standorte und Mitarbeiter",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 56.799999999999955,
+            "t": 732.428,
+            "r": 531.9884999999996,
+            "b": 614.9907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            717
+          ]
+        }
+      ],
+      "orig": "Die Geschäftsführung hat zusammen mit den Verwaltungsabteilungen und den Abteilungen für Einkauf, Marketing und Vertrieb ein neues Gebäude in Bad Godesberg bezogen, während Entwicklung, Produktion, Material- und Auslieferungslager am ursprünglichen Firmensitz im Bonner Stadtteil Beuel verblieben sind. Zusätzlich gibt es Vertriebsbüros in Berlin, München und Paderborn. Darüber hinaus nutzen Mitarbeiter ihre Laptops und verbinden sich remote mit dem Firmennetzwerk. Das Unternehmen beschäftigt insgesamt rund 500 Mitarbeiter, von denen 175 in der Verwaltung in Bad Godesberg, 310 in der Produktion und im Lager in Beuel und jeweils drei Mitarbeiter in den Vertriebsbüros in Berlin, München und Paderborn tätig sind.",
+      "text": "Die Geschäftsführung hat zusammen mit den Verwaltungsabteilungen und den Abteilungen für Einkauf, Marketing und Vertrieb ein neues Gebäude in Bad Godesberg bezogen, während Entwicklung, Produktion, Material- und Auslieferungslager am ursprünglichen Firmensitz im Bonner Stadtteil Beuel verblieben sind. Zusätzlich gibt es Vertriebsbüros in Berlin, München und Paderborn. Darüber hinaus nutzen Mitarbeiter ihre Laptops und verbinden sich remote mit dem Firmennetzwerk. Das Unternehmen beschäftigt insgesamt rund 500 Mitarbeiter, von denen 175 in der Verwaltung in Bad Godesberg, 310 in der Produktion und im Lager in Beuel und jeweils drei Mitarbeiter in den Vertriebsbüros in Berlin, München und Paderborn tätig sind."
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 497.19999999999993,
+            "t": 81.58900000000006,
+            "r": 538.4999999999999,
+            "b": 72.27105666316902,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 6 von 9",
+      "text": "Seite 6 von 9"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.8,
+            "t": 764.649,
+            "r": 426.09999999999985,
+            "b": 741.530427072403,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "4 Vereinfachter Netzplan der RECPLAST",
+      "text": "4 Vereinfachter Netzplan der RECPLAST",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.8,
+            "t": 732.4689999999999,
+            "r": 509.5399999999998,
+            "b": 720.9097135362015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "In der untenstehenden Darstellung wird der Aufbau des Netzes der RECPLAST vereinfacht veranschaulicht.",
+      "text": "In der untenstehenden Darstellung wird der Aufbau des Netzes der RECPLAST vereinfacht veranschaulicht."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 56.8,
+            "t": 185.707,
+            "r": 254.06800000000013,
+            "b": 175.98863693599162,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "Abbildung 2: Vereinfachter Netzplan der RECPLAST GmbH",
+      "text": "Abbildung 2: Vereinfachter Netzplan der RECPLAST GmbH"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 497.2,
+            "t": 81.58900000000006,
+            "r": 538.5,
+            "b": 72.2710566631689,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 7 von 9",
+      "text": "Seite 7 von 9"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.8,
+            "t": 764.649,
+            "r": 276.7800000000001,
+            "b": 741.530427072403,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "5 Informationstechnik",
+      "text": "5 Informationstechnik",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.8,
+            "t": 732.5889999999999,
+            "r": 525.1599999999999,
+            "b": 636.2907492130115,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            700
+          ]
+        }
+      ],
+      "orig": "Am Standort Bad Godesberg ist im Zuge des Umzugs ein zentral administriertes Windows-Netz mit insgesamt 126 angeschlossenen Arbeitsplätzen eingerichtet worden. Die Arbeitsplatzrechner sind einheitlich mit dem Betriebssystem Windows 10, den üblichen Büro-Anwendungen (Standardsoftware für Textverarbeitung, Tabellenkalkulation und für die Erstellung von Präsentationen) und Client-Software zur E-Mail-Nutzung ausgestattet. Zusätzlich ist je nach Aufgabengebiet auf verschiedenen Rechnern Spezialsoftware installiert. Den Mitarbeitern des Standorts Bad Godesberg stehen zusätzlich 42 Laptops zur Verfügung. Im Netz des Standorts Bad Godesberg werden die folgenden Server für folgende Zwecke eingesetzt:",
+      "text": "Am Standort Bad Godesberg ist im Zuge des Umzugs ein zentral administriertes Windows-Netz mit insgesamt 126 angeschlossenen Arbeitsplätzen eingerichtet worden. Die Arbeitsplatzrechner sind einheitlich mit dem Betriebssystem Windows 10, den üblichen Büro-Anwendungen (Standardsoftware für Textverarbeitung, Tabellenkalkulation und für die Erstellung von Präsentationen) und Client-Software zur E-Mail-Nutzung ausgestattet. Zusätzlich ist je nach Aufgabengebiet auf verschiedenen Rechnern Spezialsoftware installiert. Den Mitarbeitern des Standorts Bad Godesberg stehen zusätzlich 42 Laptops zur Verfügung. Im Netz des Standorts Bad Godesberg werden die folgenden Server für folgende Zwecke eingesetzt:"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 630.544,
+            "r": 282.9829999999999,
+            "b": 616.9907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": " Zwei Server dienen als Virtualisierungshosts,",
+      "text": " Zwei Server dienen als Virtualisierungshosts,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 608.3439999999999,
+            "r": 419.23099999999977,
+            "b": 594.7907492130115,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": " Ein virtueller Server dient als Domänen-Controller (Virtualisierungshost 1),",
+      "text": " Ein virtueller Server dient als Domänen-Controller (Virtualisierungshost 1),",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 586.2439999999999,
+            "r": 378.2494999999999,
+            "b": 572.6907492130115,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": " ein virtueller Server dient der Dateiablage (Virtualisierungshost 1),",
+      "text": " ein virtueller Server dient der Dateiablage (Virtualisierungshost 1),",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 564.0439999999999,
+            "r": 378.21799999999985,
+            "b": 550.4907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": " ein virtueller Server dient als Druckserver (Virtualisierungshost 1),",
+      "text": " ein virtueller Server dient als Druckserver (Virtualisierungshost 1),",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 541.9439999999998,
+            "r": 376.52749999999986,
+            "b": 528.3907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": " ein virtueller Server dient als Wiki-Server (Virtualisierungshost 2),",
+      "text": " ein virtueller Server dient als Wiki-Server (Virtualisierungshost 2),",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 519.7439999999999,
+            "r": 420.5854999999999,
+            "b": 506.19074921301143,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": " ein virtueller Server dient als internes Ticketsystem (Virtualisierungshost 2),",
+      "text": " ein virtueller Server dient als internes Ticketsystem (Virtualisierungshost 2),",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 497.6439999999999,
+            "r": 234.1684999999999,
+            "b": 484.0907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            36
+          ]
+        }
+      ],
+      "orig": " ein Server dient als Backupserver,",
+      "text": " ein Server dient als Backupserver,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 475.4439999999999,
+            "r": 434.0674999999999,
+            "b": 461.8907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            81
+          ]
+        }
+      ],
+      "orig": " ein virtueller Server dient als Windows-Update-Server (Virtualisierungshost 2),",
+      "text": " ein virtueller Server dient als Windows-Update-Server (Virtualisierungshost 2),",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 453.3439999999999,
+            "r": 413.61349999999993,
+            "b": 439.7907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": " ein virtueller Sever dient als Linux-Update-Server (Virtualisierungshost 2),",
+      "text": " ein virtueller Sever dient als Linux-Update-Server (Virtualisierungshost 2),",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 431.1439999999999,
+            "r": 227.6584999999999,
+            "b": 417.5907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": " ein Server dient als Cloudserver,",
+      "text": " ein Server dient als Cloudserver,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 409.04399999999987,
+            "r": 404.32099999999963,
+            "b": 395.4907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": " ein Server dient als Datenbankserver für die Personal- und Finanzdaten,",
+      "text": " ein Server dient als Datenbankserver für die Personal- und Finanzdaten,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 386.8439999999999,
+            "r": 417.0994999999997,
+            "b": 373.2907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": " ein weiterer Datenbankserver dient der Kunden- und Auftragsbearbeitung,",
+      "text": " ein weiterer Datenbankserver dient der Kunden- und Auftragsbearbeitung,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 364.74399999999986,
+            "r": 360.3574999999999,
+            "b": 351.1907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": " ein weiterer Datenbankserver dient dem Systemmanagement,",
+      "text": " ein weiterer Datenbankserver dient dem Systemmanagement,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.0,
+            "t": 342.54399999999987,
+            "r": 487.2604999999996,
+            "b": 328.9907492130113,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            89
+          ]
+        }
+      ],
+      "orig": " ein Server dient als Kommunikations-Server (Mail-Server, Termin- und Adressverwaltung).",
+      "text": " ein Server dient als Kommunikations-Server (Mail-Server, Termin- und Adressverwaltung).",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 56.8,
+            "t": 320.0279999999999,
+            "r": 536.4189999999996,
+            "b": 174.6907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            940
+          ]
+        }
+      ],
+      "orig": "Die beiden Virtualisierungshosts sind unabhängig voneinander konfiguriert und betreiben unterschiedliche virtuelle Maschinen. Alle IT-Systeme auf den Virtualisierungsservern werden als einzelne virtuelle Maschinen betrieben. Der Standort Beuel verfügt über weitere IT-Systeme. Die Produktion erfolgt durch zwei leistungsfähige, speicherprogrammierbare Maschinen, die über den Server zur Produktionssteuerung kontrolliert und konfiguriert werden. Darüber hinaus werden die Produktionsprozesse durch ein SCADA-System (Supervisory Control and Data Acquisition-System) überwacht. Die Programme und Konfigurationen werden in der Entwicklungsabteilung erstellt. Die Arbeitsplatzrechner in Beuel haben die gleiche Grundausstattung wie die Rechner in der Verwaltung in Bad Godesberg. Zusätzlich ist auf mehreren PCs CAD/CAM-Software (CAD/CAM: Computer Aided Design/Computer Aided Manufacturing) installiert. Am Standort Beul gibt es weitere Server:",
+      "text": "Die beiden Virtualisierungshosts sind unabhängig voneinander konfiguriert und betreiben unterschiedliche virtuelle Maschinen. Alle IT-Systeme auf den Virtualisierungsservern werden als einzelne virtuelle Maschinen betrieben. Der Standort Beuel verfügt über weitere IT-Systeme. Die Produktion erfolgt durch zwei leistungsfähige, speicherprogrammierbare Maschinen, die über den Server zur Produktionssteuerung kontrolliert und konfiguriert werden. Darüber hinaus werden die Produktionsprozesse durch ein SCADA-System (Supervisory Control and Data Acquisition-System) überwacht. Die Programme und Konfigurationen werden in der Entwicklungsabteilung erstellt. Die Arbeitsplatzrechner in Beuel haben die gleiche Grundausstattung wie die Rechner in der Verwaltung in Bad Godesberg. Zusätzlich ist auf mehreren PCs CAD/CAM-Software (CAD/CAM: Computer Aided Design/Computer Aided Manufacturing) installiert. Am Standort Beul gibt es weitere Server:"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 71.00000000000001,
+            "t": 168.94400000000007,
+            "r": 183.51650000000004,
+            "b": 155.39074921301153,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": " Virtualisierungsserver",
+      "text": " Virtualisierungsserver",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 85.10000000000001,
+            "t": 146.74400000000003,
+            "r": 284.81399999999996,
+            "b": 133.1907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": " Virtueller Server 1.1 Domänen-Controller",
+      "text": " Virtueller Server 1.1 Domänen-Controller",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 85.10000000000001,
+            "t": 124.644,
+            "r": 240.76649999999998,
+            "b": 111.09074921301158,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": " Virtueller Server 1.2 Dateiserver",
+      "text": " Virtueller Server 1.2 Dateiserver",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 85.10000000000001,
+            "t": 102.44400000000007,
+            "r": 244.85100000000003,
+            "b": 88.89074921301153,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": " Virtueller Server 1.3 Druckserver",
+      "text": " Virtueller Server 1.3 Druckserver",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 497.2,
+            "t": 81.58900000000006,
+            "r": 538.5,
+            "b": 72.2710566631689,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 8 von 9",
+      "text": "Seite 8 von 9"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 71.0,
+            "t": 768.144,
+            "r": 247.2514999999999,
+            "b": 754.5907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": " Server für die Produktionssteuerung",
+      "text": " Server für die Produktionssteuerung",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 71.0,
+            "t": 746.044,
+            "r": 253.74049999999988,
+            "b": 732.4907492130116,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": " Server für die Betriebsdatenerfassung.",
+      "text": " Server für die Betriebsdatenerfassung.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 56.8,
+            "t": 724.075,
+            "r": 511.7269999999996,
+            "b": 710.457,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            98
+          ]
+        }
+      ],
+      "orig": "· Den Mitarbeitern des Standorts Beuel stehen 80 Arbeitsplatzrechner und 19 Laptops zur Verfügung.",
+      "text": "Den Mitarbeitern des Standorts Beuel stehen 80 Arbeitsplatzrechner und 19 Laptops zur Verfügung.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 56.799999999999955,
+            "t": 702.428,
+            "r": 539.06,
+            "b": 558.2907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            845
+          ]
+        }
+      ],
+      "orig": "Die beiden Standorte Bad Godesberg und Beuel sind über eine angemietete Standleitung miteinander verbunden. Die Vertriebsbüros sind jeweils mit einem PC ausgestattet (Betriebssystem ist ebenfalls Windows 10) und über DSL an das Internet angebunden. Der Zugriff auf das Unternehmensnetz erfolgt mittels Authentisierung und VPN. Den Mitarbeitern der Vertriebsbüros stehen je 3 Laptops zur Verfügung Von unterwegs aus erfolgt der Remote-Zugriff auf das Unternehmensnetz über VPN. Das Unternehmensnetz ist über DSL an das Internet angebunden. Der Internet-Zugang ist über eine Firewall und einen Switch mit Paketfilter abgesichert. Alle Clients haben E-Mail-Zugang sowie die Möglichkeit zur freien Internetrecherche. Die Webseite des Unternehmens wird auf einem Webserver des Providers vorgehalten. Weitere, zu berücksichtigende Informationstechnik:",
+      "text": "Die beiden Standorte Bad Godesberg und Beuel sind über eine angemietete Standleitung miteinander verbunden. Die Vertriebsbüros sind jeweils mit einem PC ausgestattet (Betriebssystem ist ebenfalls Windows 10) und über DSL an das Internet angebunden. Der Zugriff auf das Unternehmensnetz erfolgt mittels Authentisierung und VPN. Den Mitarbeitern der Vertriebsbüros stehen je 3 Laptops zur Verfügung Von unterwegs aus erfolgt der Remote-Zugriff auf das Unternehmensnetz über VPN. Das Unternehmensnetz ist über DSL an das Internet angebunden. Der Internet-Zugang ist über eine Firewall und einen Switch mit Paketfilter abgesichert. Alle Clients haben E-Mail-Zugang sowie die Möglichkeit zur freien Internetrecherche. Die Webseite des Unternehmens wird auf einem Webserver des Providers vorgehalten. Weitere, zu berücksichtigende Informationstechnik:"
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 70.99999999999996,
+            "t": 552.4439999999998,
+            "r": 345.63649999999996,
+            "b": 538.8907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            55
+          ]
+        }
+      ],
+      "orig": " Telekommunikationsanlagen in Bad Godesberg und Beuel,",
+      "text": " Telekommunikationsanlagen in Bad Godesberg und Beuel,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 70.99999999999996,
+            "t": 530.3439999999998,
+            "r": 401.0029999999997,
+            "b": 516.7907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": " Alarmanlagen zur Sicherung der Gebäude in Bad Godesberg und Beuel,",
+      "text": " Alarmanlagen zur Sicherung der Gebäude in Bad Godesberg und Beuel,",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 70.99999999999996,
+            "t": 508.1439999999999,
+            "r": 517.7839999999998,
+            "b": 494.5907492130114,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            101
+          ]
+        }
+      ],
+      "orig": " acht Faxgeräte (davon vier in Bad Godesberg, jeweils eins in den Vertriebsbüros und eins in Beuel).",
+      "text": " acht Faxgeräte (davon vier in Bad Godesberg, jeweils eins in den Vertriebsbüros und eins in Beuel).",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 56.799999999999955,
+            "t": 485.6279999999999,
+            "r": 538.3865000000003,
+            "b": 429.9907492130113,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            336
+          ]
+        }
+      ],
+      "orig": "Für den reibungslosen Betrieb der Informationstechnik an allen Standorten ist die zentrale IT-Abteilung in Bad Godesberg verantwortlich. Eine Anweisung regelt den Umgang mit der betrieblichen Informationstechnik, diese darf ausschließlich für Firmenzwecke genutzt werden und das Einbringen von privater Hard- und Software ist untersagt.",
+      "text": "Für den reibungslosen Betrieb der Informationstechnik an allen Standorten ist die zentrale IT-Abteilung in Bad Godesberg verantwortlich. Eine Anweisung regelt den Umgang mit der betrieblichen Informationstechnik, diese darf ausschließlich für Firmenzwecke genutzt werden und das Einbringen von privater Hard- und Software ist untersagt."
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 497.19999999999993,
+            "t": 81.58899999999983,
+            "r": 538.4999999999999,
+            "b": 72.27105666316868,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Seite 9 von 9",
+      "text": "Seite 9 von 9"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 27.97285819730394,
+            "t": 787.7548347895402,
+            "r": 160.04120330381184,
+            "b": 719.9403005093142,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 517.1103921730863,
+            "t": 826.4026530433898,
+            "r": 586.7878934704174,
+            "b": 769.2901237870387,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 516.7158949454365,
+            "t": 826.6626545138836,
+            "r": 587.0275424585013,
+            "b": 769.1762547247741,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 517.1217314536215,
+            "t": 826.333075399973,
+            "r": 586.7256493552219,
+            "b": 769.5764785039469,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 111.42995912566319,
+            "t": 660.3440009019932,
+            "r": 176.50385731492943,
+            "b": 624.1883652124459,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 385.72394704674326,
+            "t": 651.3637924843378,
+            "r": 467.2693466293188,
+            "b": 616.6921391193416,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 516.7305872390331,
+            "t": 826.7939678099616,
+            "r": 587.0251648674214,
+            "b": 769.2239855965227,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 516.9505448958652,
+            "t": 826.4475432912982,
+            "r": 586.8968359129781,
+            "b": 769.5915979841778,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 63.36818234247787,
+            "t": 704.2598204318463,
+            "r": 550.0042428364176,
+            "b": 201.67921976204434,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 516.8453822134828,
+            "t": 826.6757448408647,
+            "r": 586.9637132825859,
+            "b": 769.3145041396211,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 8,
+          "bbox": {
+            "l": 516.6328621492598,
+            "t": 826.7049406182178,
+            "r": 587.0247381203045,
+            "b": 769.4804980295439,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 9,
+          "bbox": {
+            "l": 516.8551364332981,
+            "t": 826.5080383761125,
+            "r": 586.9264643556667,
+            "b": 769.5170685584175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.62469968615165,
+            "t": 747.7419656674849,
+            "r": 538.5997919201413,
+            "b": 576.6696696613274,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 62.2,
+              "t": 97.93576377950001,
+              "r": 132.92800000000003,
+              "b": 110.23167143952094,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Verantwortung",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 210.8,
+              "t": 98.06176377949998,
+              "r": 373.1510000000002,
+              "b": 110.19901456648847,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Informationssicherheitsbeauftragter",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.20000000000002,
+              "t": 126.33576377949998,
+              "r": 130.51300000000003,
+              "b": 138.63167143952091,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Klassifizierung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 210.8,
+              "t": 126.46176377949996,
+              "r": 251.309,
+              "b": 138.59901456648845,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "S2 intern",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.20000000000002,
+              "t": 154.63576377949994,
+              "r": 129.8095,
+              "b": 166.93167143952087,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Gültigkeitszeit",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 210.8,
+              "t": 154.76176377949992,
+              "r": 263.111,
+              "b": 166.8990145664884,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Unbegrenzt",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.20000000000002,
+              "t": 183.03576377949992,
+              "r": 173.90950000000012,
+              "b": 195.33167143952085,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Überarbeitungsintervall",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 210.8,
+              "t": 183.1617637794999,
+              "r": 245.45,
+              "b": 195.29901456648838,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Jährlich",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.20000000000002,
+              "t": 211.33576377949987,
+              "r": 168.88000000000002,
+              "b": 223.6316714395208,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Nächste Überarbeitung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 210.8,
+              "t": 211.46176377949985,
+              "r": 265.484,
+              "b": 223.59901456648834,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "August 2019",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.20000000000002,
+              "t": 239.73576377949985,
+              "r": 112.71550000000002,
+              "b": 252.03167143952078,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Dateiname",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 210.8,
+              "t": 239.86176377949982,
+              "r": 415.73899999999963,
+              "b": 251.9990145664883,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "A.1.1_Abgrenzung_des_Informationsverbunds",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 6,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 62.2,
+                "t": 97.93576377950001,
+                "r": 132.92800000000003,
+                "b": 110.23167143952094,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Verantwortung",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 210.8,
+                "t": 98.06176377949998,
+                "r": 373.1510000000002,
+                "b": 110.19901456648847,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Informationssicherheitsbeauftragter",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.20000000000002,
+                "t": 126.33576377949998,
+                "r": 130.51300000000003,
+                "b": 138.63167143952091,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Klassifizierung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 210.8,
+                "t": 126.46176377949996,
+                "r": 251.309,
+                "b": 138.59901456648845,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "S2 intern",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.20000000000002,
+                "t": 154.63576377949994,
+                "r": 129.8095,
+                "b": 166.93167143952087,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Gültigkeitszeit",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 210.8,
+                "t": 154.76176377949992,
+                "r": 263.111,
+                "b": 166.8990145664884,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Unbegrenzt",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.20000000000002,
+                "t": 183.03576377949992,
+                "r": 173.90950000000012,
+                "b": 195.33167143952085,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Überarbeitungsintervall",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 210.8,
+                "t": 183.1617637794999,
+                "r": 245.45,
+                "b": 195.29901456648838,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Jährlich",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.20000000000002,
+                "t": 211.33576377949987,
+                "r": 168.88000000000002,
+                "b": 223.6316714395208,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Nächste Überarbeitung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 210.8,
+                "t": 211.46176377949985,
+                "r": 265.484,
+                "b": 223.59901456648834,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "August 2019",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.20000000000002,
+                "t": 239.73576377949985,
+                "r": 112.71550000000002,
+                "b": 252.03167143952078,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Dateiname",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 210.8,
+                "t": 239.86176377949982,
+                "r": 415.73899999999963,
+                "b": 251.9990145664883,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "A.1.1_Abgrenzung_des_Informationsverbunds",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.75002616980813,
+            "t": 545.2167263113233,
+            "r": 538.9859980609483,
+            "b": 430.7816676011391,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 62.2,
+              "t": 300.5357637794999,
+              "r": 86.896,
+              "b": 312.83167143952085,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Staus",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 158.5,
+              "t": 300.5357637794999,
+              "r": 193.822,
+              "b": 312.83167143952085,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Version",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 254.7,
+              "t": 300.5357637794999,
+              "r": 286.80899999999997,
+              "b": 312.83167143952085,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Datum",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 351.0,
+              "t": 300.5357637794999,
+              "r": 478.37549999999993,
+              "b": 312.83167143952085,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "Name und Abteilung/Firma",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.19999999999999,
+              "t": 329.06176377949987,
+              "r": 94.03600000000003,
+              "b": 341.19901456648836,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Erstellt",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 158.5,
+              "t": 329.06176377949987,
+              "r": 171.03699999999998,
+              "b": 341.19901456648836,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "1.0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 254.7,
+              "t": 329.06176377949987,
+              "r": 294.99899999999997,
+              "b": 341.19901456648836,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "tt.mm.jjjj",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 4,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 62.2,
+                "t": 300.5357637794999,
+                "r": 86.896,
+                "b": 312.83167143952085,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Staus",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 158.5,
+                "t": 300.5357637794999,
+                "r": 193.822,
+                "b": 312.83167143952085,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Version",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 254.7,
+                "t": 300.5357637794999,
+                "r": 286.80899999999997,
+                "b": 312.83167143952085,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Datum",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 351.0,
+                "t": 300.5357637794999,
+                "r": 478.37549999999993,
+                "b": 312.83167143952085,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "Name und Abteilung/Firma",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.19999999999999,
+                "t": 329.06176377949987,
+                "r": 94.03600000000003,
+                "b": 341.19901456648836,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Erstellt",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 158.5,
+                "t": 329.06176377949987,
+                "r": 171.03699999999998,
+                "b": 341.19901456648836,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "1.0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 254.7,
+                "t": 329.06176377949987,
+                "r": 294.99899999999997,
+                "b": 341.19901456648836,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "tt.mm.jjjj",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 55.575894294896756,
+            "t": 399.29814964126314,
+            "r": 538.7895114955464,
+            "b": 284.7513501912082,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 62.2,
+              "t": 446.43576377949995,
+              "r": 97.41700000000002,
+              "b": 458.73167143952094,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Version",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 182.60000000000002,
+              "t": 446.43576377949995,
+              "r": 229.14650000000003,
+              "b": 458.73167143952094,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Änderung",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 338.40000000000003,
+              "t": 446.43576377949995,
+              "r": 370.509,
+              "b": 458.73167143952094,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Datum",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 423.30000000000007,
+              "t": 446.43576377949995,
+              "r": 450.27450000000016,
+              "b": 458.73167143952094,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 3,
+            "end_col_offset_idx": 4,
+            "text": "Autor",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 62.200000000000045,
+              "t": 474.9617637794999,
+              "r": 74.73700000000005,
+              "b": 487.0990145664884,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "1.0",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 338.40000000000003,
+              "t": 474.9617637794999,
+              "r": 378.699,
+              "b": 487.0990145664884,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "tt.mm.jjjj",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 2,
+        "num_cols": 4,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 62.2,
+                "t": 446.43576377949995,
+                "r": 97.41700000000002,
+                "b": 458.73167143952094,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Version",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 182.60000000000002,
+                "t": 446.43576377949995,
+                "r": 229.14650000000003,
+                "b": 458.73167143952094,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Änderung",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 338.40000000000003,
+                "t": 446.43576377949995,
+                "r": 370.509,
+                "b": 458.73167143952094,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Datum",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 423.30000000000007,
+                "t": 446.43576377949995,
+                "r": 450.27450000000016,
+                "b": 458.73167143952094,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "Autor",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 62.200000000000045,
+                "t": 474.9617637794999,
+                "r": 74.73700000000005,
+                "b": 487.0990145664884,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1.0",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 338.40000000000003,
+                "t": 474.9617637794999,
+                "r": 378.699,
+                "b": 487.0990145664884,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "tt.mm.jjjj",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 3,
+              "end_col_offset_idx": 4,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 56.17409849675691,
+            "t": 82.90186463766224,
+            "r": 539.4293273515478,
+            "b": 56.465140689509326,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 497.20000000000005,
+              "t": 760.3007637794999,
+              "r": 538.5,
+              "b": 769.618707116331,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Seite 2 von 9",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 1,
+        "num_cols": 1,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 497.20000000000005,
+                "t": 760.3007637794999,
+                "r": 538.5,
+                "b": 769.618707116331,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Seite 2 von 9",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    },
+    {
+      "self_ref": "#/tables/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "document_index",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 56.067987064087895,
+            "t": 739.5950145379799,
+            "r": 538.4170222263547,
+            "b": 586.4015191617892,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 56.8,
+              "t": 103.7007637795,
+              "r": 68.41,
+              "b": 115.76076377949994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "1 .",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 85.2,
+              "t": 103.7007637795,
+              "r": 538.75,
+              "b": 115.76076377949994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Geltungsbereich.............................................................................................................................4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.8,
+              "t": 121.7007637795,
+              "r": 68.41,
+              "b": 133.76076377949994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "2 .",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 85.2,
+              "t": 121.7007637795,
+              "r": 538.75,
+              "b": 133.76076377949994,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Organisatorische Gliederung...........................................................................................................5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.8,
+              "t": 139.8007637794999,
+              "r": 68.41,
+              "b": 151.86076377949985,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3 .",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 85.2,
+              "t": 139.8007637794999,
+              "r": 538.75,
+              "b": 151.86076377949985,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Standorte und Mitarbeiter...............................................................................................................6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.8,
+              "t": 157.8007637794999,
+              "r": 68.41,
+              "b": 169.86076377949985,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "4 .",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 85.2,
+              "t": 157.8007637794999,
+              "r": 538.75,
+              "b": 169.86076377949985,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Vereinfachter Netzplan der RECPLAST.............................................................................................7",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.8,
+              "t": 175.90076377949993,
+              "r": 68.41,
+              "b": 187.96076377949987,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "5 .",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 85.2,
+              "t": 175.90076377949993,
+              "r": 538.75,
+              "b": 187.96076377949987,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Informationstechnik........................................................................................................................8",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "bbox": {
+              "l": 56.799999999999955,
+              "t": 205.26876377949998,
+              "r": 199.344,
+              "b": 224.78876377949996,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 2,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 2,
+            "text": "Abbildungsverzeichnis",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 6,
+        "num_cols": 2,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 56.8,
+                "t": 103.7007637795,
+                "r": 68.41,
+                "b": 115.76076377949994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1 .",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 85.2,
+                "t": 103.7007637795,
+                "r": 538.75,
+                "b": 115.76076377949994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Geltungsbereich.............................................................................................................................4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.8,
+                "t": 121.7007637795,
+                "r": 68.41,
+                "b": 133.76076377949994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2 .",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 85.2,
+                "t": 121.7007637795,
+                "r": 538.75,
+                "b": 133.76076377949994,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Organisatorische Gliederung...........................................................................................................5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.8,
+                "t": 139.8007637794999,
+                "r": 68.41,
+                "b": 151.86076377949985,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3 .",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 85.2,
+                "t": 139.8007637794999,
+                "r": 538.75,
+                "b": 151.86076377949985,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Standorte und Mitarbeiter...............................................................................................................6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.8,
+                "t": 157.8007637794999,
+                "r": 68.41,
+                "b": 169.86076377949985,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4 .",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 85.2,
+                "t": 157.8007637794999,
+                "r": 538.75,
+                "b": 169.86076377949985,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Vereinfachter Netzplan der RECPLAST.............................................................................................7",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.8,
+                "t": 175.90076377949993,
+                "r": 68.41,
+                "b": 187.96076377949987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "5 .",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 85.2,
+                "t": 175.90076377949993,
+                "r": 538.75,
+                "b": 187.96076377949987,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Informationstechnik........................................................................................................................8",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 56.799999999999955,
+                "t": 205.26876377949998,
+                "r": 199.344,
+                "b": 224.78876377949996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Abbildungsverzeichnis",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 56.799999999999955,
+                "t": 205.26876377949998,
+                "r": 199.344,
+                "b": 224.78876377949996,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 2,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 2,
+              "text": "Abbildungsverzeichnis",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 7
+    },
+    "8": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 8
+    },
+    "9": {
+      "size": {
+        "width": 595.3039370078,
+        "height": 841.8897637795
+      },
+      "page_no": 9
+    }
+  }
+}

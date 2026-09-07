@@ -78,7 +78,7 @@ def legende(md: Path) -> tuple[dict[int, str], list[str]]:
     Dokument ist die Reihenfolge R1, R2, R3.
     """
     text = md.read_text(encoding="utf-8")
-    zeilen = [l[2:].strip() for l in text.splitlines() if l.startswith("> ")]
+    zeilen = [z[2:].strip() for z in text.splitlines() if z.startswith("> ")]
     erklaerungen = [z.lstrip(": ").strip() for z in zeilen if z.startswith(":")]
     fuss = [z for z in zeilen if z.startswith(("Farben", "Stand"))]
     return dict(zip((1, 2, 3), erklaerungen)), fuss

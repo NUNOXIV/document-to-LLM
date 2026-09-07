@@ -69,6 +69,18 @@ class Doc:
         return "unvollstaendig"
 
 
+def extrakte(out: Path) -> list[Path]:
+    """Die echten Extrakte eines Ausgabeordners.
+
+    Nicht jede .md-Datei dort ist ein Dokument: "_TRACKER.md" ist ein Bericht,
+    und Dateien mit fuehrendem Punkt sind Arbeitsreste. Ein abgebrochener Lauf
+    liess ".fluchs-ma-profil.tmp.md" liegen, und der Tracker fuehrte sie als
+    Dokument ohne Deckung — ein erfundener Eintrag im Bestandsregister.
+    """
+    return sorted(p for p in out.glob("*.md")
+                  if not p.name.startswith("_") and not p.name.startswith("."))
+
+
 def read_doc(md: Path) -> Doc:
     text = md.read_text(encoding="utf-8")
     doc = Doc(slug=md.stem)
@@ -278,7 +290,9 @@ def render(docs: list[Doc], vault: Path | None) -> str:
             slug, neu = a.get("slug", ""), a.get("gilt_stattdessen", "")
             # Ein Verweis auf einen Slug, den es im Bestand nicht gibt, waere ein
             # toter Beleg — das gehoert benannt, nicht stillschweigend gedruckt.
-            mark = lambda s: s if s in bekannt else f"{s} ⚠ nicht im Bestand"
+            def mark(s: str) -> str:
+                return s if s in bekannt else f"{s} ⚠ nicht im Bestand"
+
             out.append(f"| {mark(slug)} | {mark(neu)} | {a.get('grund', '')} |")
         out.append("")
 
@@ -301,8 +315,8 @@ def render(docs: list[Doc], vault: Path | None) -> str:
         out += ["", "## Lizenzgrundlagen", "",
                 "Der Bestand enthaelt Text, der nicht frei verteilbar ist. "
                 "Hier steht, worauf sich der Besitz stuetzt.", ""]
-        for l in lizenzen:
-            out.append(f"- **{l.get('betrifft', '?')}**: {l.get('grundlage', '')}")
+        for eintrag in lizenzen:
+            out.append(f"- **{eintrag.get('betrifft', '?')}**: {eintrag.get('grundlage', '')}")
         out.append("")
 
     fehlend = not_ingested()
@@ -463,7 +477,7 @@ def main(out_dir: str, src_dir: str, targets: tuple[str, ...], vault: str | None
     """Schreibt das Aufnahmeprotokoll aller Extrakte."""
     out = Path(out_dir)
     docs = []
-    for md in sorted(out.glob("*.md")):
+    for md in extrakte(out):
         if md.name.startswith("_"):
             continue
         doc = read_doc(md)

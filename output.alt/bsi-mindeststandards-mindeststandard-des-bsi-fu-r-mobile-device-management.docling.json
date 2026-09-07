@@ -1,0 +1,1417 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Mindeststandards---Mindeststandard-des-BSI-fu-r-Mobile-Device-Management",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 16549098121696511583,
+    "filename": "BSI---Mindeststandards---Mindeststandard-des-BSI-fu-r-Mobile-Device-Management.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/pictures/7"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/pictures/8"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/pictures/9"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/pictures/10"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/pictures/11"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/pictures/5"
+        },
+        {
+          "$ref": "#/texts/18"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "key_value_area"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 189.55723362678157,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Staat und Verwaltung",
+      "text": "Staat und Verwaltung",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/oeffentliche-verwaltung_node.html"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 447.914996416875,
+            "r": 102.18303766737324,
+            "b": 442.6249966372917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Management",
+      "text": "Management"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 389.10749886718753,
+            "r": 516.8341887652414,
+            "b": 353.4110717831101,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            106
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Mobile Device Management",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Mobile Device Management",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 241.20000502999994,
+            "r": 548.8436976065117,
+            "b": 127.15429549619046,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            644
+          ]
+        }
+      ],
+      "orig": "In den letzten Jahren haben Smartphones, Phablets und Tablets vermehrt Einzug in die Geschäftswelt gehalten. Auch in der Bundesverwaltung besteht ein erhöhter Bedarf zur Nutzung mobiler Endgeräte, der auch die Speicherung und Verarbeitung sensibler Informationen umfasst. Aufgrund von Art und Umfang der anfallenden Daten können daher vielfältige Bedrohungen und Risiken entstehen. Aber auch die Komplexität - verursacht durch eine Vielzahl von installierten Applikationen und zahlreichen Ökosystemen - bildet einen entscheidenden Einflussfaktor für die potenzielle Bedrohungslage. Dieser muss auch mit technischen Hilfsmitteln begegnet werden.",
+      "text": "In den letzten Jahren haben Smartphones, Phablets und Tablets vermehrt Einzug in die Geschäftswelt gehalten. Auch in der Bundesverwaltung besteht ein erhöhter Bedarf zur Nutzung mobiler Endgeräte, der auch die Speicherung und Verarbeitung sensibler Informationen umfasst. Aufgrund von Art und Umfang der anfallenden Daten können daher vielfältige Bedrohungen und Risiken entstehen. Aber auch die Komplexität - verursacht durch eine Vielzahl von installierten Applikationen und zahlreichen Ökosystemen - bildet einen entscheidenden Einflussfaktor für die potenzielle Bedrohungslage. Dieser muss auch mit technischen Hilfsmitteln begegnet werden."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 103.95001074874995,
+            "r": 539.5916571170135,
+            "b": 25.90429971494052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            475
+          ]
+        }
+      ],
+      "orig": "Mithilfe von Systemen für Mobile Device Management (MDM (Mobile Device Management)) können mobile Endgeräte in die IT (Informationstechnik)-Infrastruktur einer Stelle des Bundes integriert und zentral verwaltet werden. Mit Blick auf die Sicherheit ist die Kernfunktion des MDM (Mobile Device Management)-Systems die wirksame Durchsetzung definierter Sicherheitsrichtlinien und Konfigurationsparameter auf die mobilen Endgeräte. Der Mindeststandard definiert daher funktionale",
+      "text": "Mithilfe von Systemen für Mobile Device Management (MDM (Mobile Device Management)) können mobile Endgeräte in die IT (Informationstechnik)-Infrastruktur einer Stelle des Bundes integriert und zentral verwaltet werden. Mit Blick auf die Sicherheit ist die Kernfunktion des MDM (Mobile Device Management)-Systems die wirksame Durchsetzung definierter Sicherheitsrichtlinien und Konfigurationsparameter auf die mobilen Endgeräte. Der Mindeststandard definiert daher funktionale"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 220.78124080078123,
+            "t": 465.91499566687503,
+            "r": 324.96212740991075,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 356.19139515869125,
+            "t": 465.91499566687503,
+            "r": 545.4326564986383,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            63
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 539.1356911860119,
+            "b": 781.1542682461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            64,
+            323
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund Mindeststandard des BSI für Mobile Device und nicht-funktionale Mindestsicherheitsanforderungen, die ein MDM (Mobile Device Management)- System zu erfüllen hat, wenn es in einer Stelle des Bundes eingesetzt werden soll. Diese können somit bereits im Rahmen eines Vergabeverfahrens herangezogen werden.",
+      "text": "Mindeststandards Bund Mindeststandard des BSI für Mobile Device und nicht-funktionale Mindestsicherheitsanforderungen, die ein MDM (Mobile Device Management)- System zu erfüllen hat, wenn es in einer Stelle des Bundes eingesetzt werden soll. Diese können somit bereits im Rahmen eines Vergabeverfahrens herangezogen werden."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 757.94998349875,
+            "r": 529.0314071320238,
+            "b": 697.9042717149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            327
+          ]
+        }
+      ],
+      "orig": "Darüber hinaus stellt der Mindeststandard auch Sicherheitsanforderungen an den Betrieb des MDM (Mobile Device Management). Durch die Umsetzung sowohl technischer als auch organisatorischer Maßnahmen ermöglicht der Mindeststandard die Erreichung eines Mindestsicherheitsniveaus beim Einsatz eines MDM (Mobile Device Management).",
+      "text": "Darüber hinaus stellt der Mindeststandard auch Sicherheitsanforderungen an den Betrieb des MDM (Mobile Device Management). Durch die Umsetzung sowohl technischer als auch organisatorischer Maßnahmen ermöglicht der Mindeststandard die Erreichung eines Mindestsicherheitsniveaus beim Einsatz eines MDM (Mobile Device Management)."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 674.6999869675,
+            "r": 543.91941718669,
+            "b": 542.6542781836904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            649
+          ]
+        }
+      ],
+      "orig": "Aktualisierung September 2022: Der Mindeststandard wurde auf die Version 2.0 aktualisiert. Dabei wurde die Struktur von Grund auf neu gestaltet. Die vorgenommenen Anpassungen werden in der aufgelistet. Ebenso wurde eine Referenztabelle neu erstellt, die Bezug nimmt auf das IT (Informationstechnik)- Grundschutz-Kompendium (Edition 2022). Diese Referenztabelle berücksichtigt die im Mindeststandard erwähnten IT (Informationstechnik)-Grundschutz-Bausteine. Alle Dokumente stehen Ihnen im Downloadbereich zur Verfügung. Die ältere Version des Mindeststandards finden Sie im . Änderungsübersicht zum Mindeststandard für Mobile Device Management Archiv",
+      "text": "Aktualisierung September 2022: Der Mindeststandard wurde auf die Version 2.0 aktualisiert. Dabei wurde die Struktur von Grund auf neu gestaltet. Die vorgenommenen Anpassungen werden in der aufgelistet. Ebenso wurde eine Referenztabelle neu erstellt, die Bezug nimmt auf das IT (Informationstechnik)- Grundschutz-Kompendium (Edition 2022). Diese Referenztabelle berücksichtigt die im Mindeststandard erwähnten IT (Informationstechnik)-Grundschutz-Bausteine. Alle Dokumente stehen Ihnen im Downloadbereich zur Verfügung. Die ältere Version des Mindeststandards finden Sie im . Änderungsübersicht zum Mindeststandard für Mobile Device Management Archiv"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 519.44999343625,
+            "r": 549.1368441692974,
+            "b": 405.4042839024405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            539
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 357.6075001796876,
+            "r": 256.4132112411157,
+            "b": 348.16107200186025,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard",
+      "text": "Download Mindeststandard",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 322.20000165500005,
+            "r": 401.1836535090136,
+            "b": 316.1542876211904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI für Mobile Device Management Version 2.0",
+      "text": "Mindeststandard des BSI für Mobile Device Management Version 2.0",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_Mobile-Device-ManagementV2_0.pdf?__blob=publicationFile&v=2"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 268.35750389843747,
+            "r": 246.85540341435774,
+            "b": 258.91107572061014,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Referenztabelle",
+      "text": "Download Referenztabelle",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 232.95000537374995,
+            "r": 528.5994904750204,
+            "b": 208.90429208994055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            170
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Mobile Device Management Version 2.0 (IT-Grundschutz-Kompendium - Edition 2022)",
+      "text": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Mobile Device Management Version 2.0 (IT-Grundschutz-Kompendium - Edition 2022)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Referenztabelle_Mindeststandard_MDM_V2_0-Grundschutz2022.xlsx?__blob=publicationFile&v=4"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 798.6074818046875,
+            "r": 385.34051271914456,
+            "b": 789.1610536268602,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 109.80468292480468,
+            "t": 754.1999836549999,
+            "r": 221.1765933843082,
+            "b": 748.1542696211909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Externe Cloud-Dienste",
+      "text": "Externe Cloud-Dienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Externe_Cloud-Dienste/Externe_Cloud-Dienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 104.77733938427734,
+            "t": 626.6999889675003,
+            "r": 226.2052427497811,
+            "b": 620.6542749336909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "HV-Benchmark kompakt",
+      "text": "HV-Benchmark kompakt",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/HV-Benchmark-kompakt/HV-Benchmark-kompakt_node.html"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 90.84374621484375,
+            "t": 499.1999942800003,
+            "r": 240.1476085188492,
+            "b": 493.15428024619087,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "Protokollierung und Detektion",
+      "text": "Protokollierung und Detektion",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/PDCA/PDCA_node.html"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 109.30077669580078,
+            "t": 371.69999959250026,
+            "r": 221.69267608780476,
+            "b": 365.65428555869084,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Videokonferenzdienste",
+      "text": "Videokonferenzdienste",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Videokonferenzdienste/Videokonferenzdienste_node.html"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 81.89062158789062,
+            "t": 244.20000490500024,
+            "r": 249.0984784208963,
+            "b": 238.15429087119082,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Nutzerpflichten Netze des Bundes",
+      "text": "Nutzerpflichten Netze des Bundes",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/NdB/NdB_node.html"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 109.42968294042969,
+            "t": 116.70001021750022,
+            "r": 221.55757506843398,
+            "b": 110.65429618369035,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Weitere_Informationen/Weitere_Informationen_node.html"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 361.6171724326172,
+            "t": 754.1999836549999,
+            "r": 498.3810736591212,
+            "b": 748.1542696211909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Mobile Device Management",
+      "text": "Mobile Device Management",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Mobile_Device_Management/Mobile_Device_Management_node.html"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 357.1874851171875,
+            "t": 626.6999889675003,
+            "r": 502.80735027469274,
+            "b": 620.6542749336909,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Transport Layer Security (TLS)",
+      "text": "Transport Layer Security (TLS)",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/TLS-Protokoll/TLS-Protokoll_node.html"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 398.9648308764647,
+            "t": 499.1999942800003,
+            "r": 461.02879446546626,
+            "b": 493.15428024619087,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "Webbrowser",
+      "text": "Webbrowser",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Webbrowser/Webbrowser_node.html"
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 371.01560954101564,
+            "t": 371.69999959250026,
+            "r": 488.97552505101896,
+            "b": 365.65428555869084,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Schnittstellenkontrollen",
+      "text": "Schnittstellenkontrollen",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Schnittstellenkontrollen/Schnittstellenkontrollen_node.html"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/pictures/11"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "caption",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 403.00779570800785,
+            "t": 244.20000490500024,
+            "r": 456.9837696840088,
+            "b": 238.15429087119082,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "ISMS ITKB",
+      "text": "ISMS ITKB"
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 225.71483809521467,
+            "t": 45.45001318625009,
+            "r": 381.7747231427191,
+            "b": 39.40429915244022,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Zurück zu Staat und Verwaltung",
+      "text": "Zurück zu Staat und Verwaltung",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/oeffentliche-verwaltung_node.html"
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 808.199981405,
+            "r": 294.1834081923576,
+            "b": 802.1542673711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            42
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 691.9499862487501,
+            "r": 158.39995432500166,
+            "b": 631.9042744649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 601.1999900300002,
+            "r": 313.9438494440058,
+            "b": 595.1542759961903,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 541.1474925321882,
+            "r": 509.74872171046906,
+            "b": 536.2353498797179,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.26843895322014,
+            "t": 553.0879959031711,
+            "r": 170.70448471962604,
+            "b": 491.2085317569463,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 139.77498664313822,
+            "t": 816.6930686012381,
+            "r": 190.5094873189769,
+            "b": 761.9101742266328,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 140.15006821217975,
+            "t": 689.1642807183116,
+            "r": 190.0337502924661,
+            "b": 633.9130165531142,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 140.66913728344008,
+            "t": 562.1548831673723,
+            "r": 189.60677707406077,
+            "b": 506.6681524904084,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 140.43616651186235,
+            "t": 435.1021700311997,
+            "r": 190.6032004946289,
+            "b": 378.8594076953843,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 139.5020710500273,
+            "t": 307.64507638392365,
+            "r": 190.6666575277674,
+            "b": 251.55452126131252,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 139.6974466954561,
+            "t": 179.82116579399928,
+            "r": 190.75048367349063,
+            "b": 123.40654479243267,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 404.20262559126553,
+            "t": 816.0580142899606,
+            "r": 454.37600680312215,
+            "b": 760.8448534215833,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 404.81293608069564,
+            "t": 689.0585626168388,
+            "r": 454.5700550232364,
+            "b": 633.3845175897836,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 405.3832102020192,
+            "t": 562.3602164347444,
+            "r": 456.6572558660386,
+            "b": 506.65451242940145,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 404.2092474600758,
+            "t": 435.358218693188,
+            "r": 455.341609543974,
+            "b": 378.5736682518306,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/24"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 402.45387243037686,
+            "t": 307.8384173828937,
+            "r": 456.81257988559855,
+            "b": 235.71667109567966,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 5
+    }
+  }
+}

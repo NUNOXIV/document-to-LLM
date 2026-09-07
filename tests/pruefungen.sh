@@ -52,16 +52,54 @@ kaputt["requirements"][0]["text"] = "Die Institution SOLLTE das andere tun."
     json.dumps(kaputt, ensure_ascii=False, indent=2), encoding="utf-8")
 PY
 
-echo "1/3 gesunder Datensatz -> Inhaltspruefung muss schweigen"
+echo "1/6 gesunder Datensatz -> Inhaltspruefung muss schweigen"
 "${PY:-python}" inhalt.py --export "$tmp/export" --output "$tmp/output" --strict
 
-echo "2/3 Versatz eingebaut -> Inhaltspruefung muss anschlagen"
+echo "2/6 Versatz eingebaut -> Inhaltspruefung muss anschlagen"
 if "${PY:-python}" inhalt.py --export "$tmp/kaputt" --output "$tmp/output" --strict 2>/dev/null; then
   echo "FEHLER: Der Versatz blieb unbemerkt. Der Waechter ist blind." >&2
   exit 1
 fi
 
-echo "3/3 Plausibilitaetspruefung laeuft und meldet nichts Falsches"
+echo "3/6 Plausibilitaetspruefung laeuft und meldet nichts Falsches"
 "${PY:-python}" pruefe.py --export "$tmp/export" --korpus "$tmp/fehlt.json" --strict
 
-echo "Beide Waechter belegt: sie schweigen bei gesunden und schlagen bei kaputten Daten an."
+# --- Fundstellen-Resolver ------------------------------------------------
+# Die Ebene, die den anderen Waechtern fehlt: Abgleich gegen einen Primaertext,
+# den niemand aus dem Ergebnis abgeleitet hat. Auch hier beide Richtungen.
+mkdir -p "$tmp/gt"
+cat > "$tmp/gt/muster.json" <<'GT'
+{
+  "quelle": "Muster-Primaertext",
+  "kurzname": "muster",
+  "fundstellen": [
+    {"id": "1.1", "art": "abschnitt", "titel": "Erste Anforderung",
+     "text": "Die Institution MUSS das eine tun."},
+    {"id": "1.2", "art": "abschnitt", "titel": "Zweite Anforderung",
+     "text": "Die Institution SOLLTE das andere tun."}
+  ]
+}
+GT
+
+echo "4/6 Extrakt stimmt mit dem Primaertext ueberein -> Resolver muss schweigen"
+"${PY:-python}" fundstellen.py --ground-truth "$tmp/gt" --bestand "$tmp/output/muster.md" --strict
+
+echo "5/6 Woertlaut im Extrakt veraendert -> Resolver muss anschlagen"
+sed 's/das eine tun/das eine unterlassen/' "$tmp/output/muster.md" > "$tmp/verdreht.md"
+if "${PY:-python}" fundstellen.py --ground-truth "$tmp/gt" --bestand "$tmp/verdreht.md" \
+     --strict >/dev/null 2>&1; then
+  echo "FEHLER: veraenderter Woertlaut galt als verifiziert. Der Resolver ist blind." >&2
+  exit 1
+fi
+
+echo "6/6 Versatz im Export -> Resolver muss die Kennung als abweichend melden"
+# Der Export ordnet Text einer Kennung zu. Steht unter 1.1 der Satz von 1.2,
+# ist die Kennung da und der Woertlaut falsch -- der Fall, den Laenge und
+# Schema nicht sehen.
+if "${PY:-python}" fundstellen.py --ground-truth "$tmp/gt" \
+     --bestand "$tmp/kaputt/muster.json" --strict >/dev/null 2>&1; then
+  echo "FEHLER: Versatz im Export galt als verifiziert. Der Resolver ist blind." >&2
+  exit 1
+fi
+
+echo "Drei Waechter belegt: sie schweigen bei gesunden und schlagen bei kaputten Daten an."

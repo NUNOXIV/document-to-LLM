@@ -1,0 +1,1597 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "intcube-servicebereiche-fachbasis",
+  "origin": {
+    "mimetype": "text/markdown",
+    "binary_hash": 6775660300365175587,
+    "filename": "intcube-servicebereiche-fachbasis.md"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/groups/7"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "inline"
+    },
+    {
+      "self_ref": "#/groups/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "title",
+      "prov": [],
+      "orig": "intcube-Servicebereiche: Fachbasis",
+      "text": "intcube-Servicebereiche: Fachbasis"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Zweck: Pro Servicebereich in 2 Minuten sattelfest sein: was es ist, wie es methodisch läuft, welche Regulatorik dranhängt, welche Fallstricke drohen. Ergänzt die Drive-Ablage (dort fehlen DD-Methodik, ASM und IR-Readiness bislang komplett). Stand 08/2026. Interne intcube-Templates ab Woche 1 gegen dieses Dokument abgleichen und es korrigieren.",
+      "text": "Zweck: Pro Servicebereich in 2 Minuten sattelfest sein: was es ist, wie es methodisch läuft, welche Regulatorik dranhängt, welche Fallstricke drohen. Ergänzt die Drive-Ablage (dort fehlen DD-Methodik, ASM und IR-Readiness bislang komplett). Stand 08/2026. Interne intcube-Templates ab Woche 1 gegen dieses Dokument abgleichen und es korrigieren."
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "1. Cyber Due Diligence (PE/M&A, buy-side)",
+      "text": "1. Cyber Due Diligence (PE/M&A, buy-side)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Was",
+      "text": "Was",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Bewertung der Cyber-Lage eines Targets vor Investment. Output: fokussierter Report mit Red Flags, Investitionsbedarf (EUR), Stärken, 100-Tage-Plan. intcube: 50+ Projekte, kein Onboarding-Vorlauf.",
+      "text": ": Bewertung der Cyber-Lage eines Targets vor Investment. Output: fokussierter Report mit Red Flags, Investitionsbedarf (EUR), Stärken, 100-Tage-Plan. intcube: 50+ Projekte, kein Onboarding-Vorlauf."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Die 10 intcube-Prüfdomänen mit Leitfrage",
+      "text": "Die 10 intcube-Prüfdomänen mit Leitfrage",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Regulatorik-Dimension (eigenes Modul)",
+      "text": "Regulatorik-Dimension (eigenes Modul)",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Betroffenheit als Bewertungsfaktor: BSIG-Einstufung (besonders wichtig/wichtig/KRITIS) mit Registrier- und Nachweispflichten; DORA bei Finanzbezug (auch als ICT-Dienstleister eines Finanzunternehmens!); CRA bei Produkten mit digitalen Elementen (Übergangsfristen = CapEx nach Closing); AI Act bei KI-Komponenten (Anbieter- vs. Betreiberrolle); DSGVO-Altlasten als Contingent Liability. Übersetzung immer in EUR und Zeit bis Pflichttermin.",
+      "text": ": Betroffenheit als Bewertungsfaktor: BSIG-Einstufung (besonders wichtig/wichtig/KRITIS) mit Registrier- und Nachweispflichten; DORA bei Finanzbezug (auch als ICT-Dienstleister eines Finanzunternehmens!); CRA bei Produkten mit digitalen Elementen (Übergangsfristen = CapEx nach Closing); AI Act bei KI-Komponenten (Anbieter- vs. Betreiberrolle); DSGVO-Altlasten als Contingent Liability. Übersetzung immer in EUR und Zeit bis Pflichttermin."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Fallstricke",
+      "text": "Fallstricke",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Zeitfenster 1 bis 3 Wochen, Datenraum lückenhaft, Management schönt, kein Systemzugriff. Gegenmittel: Evidenzhierarchie (Konfiguration > Ticket > Policy > Aussage), externe Sicht (ASM-Scan geht ohne Zugang), Fragen nach dem letzten Vorfall statt nach der Policy.",
+      "text": ": Zeitfenster 1 bis 3 Wochen, Datenraum lückenhaft, Management schönt, kein Systemzugriff. Gegenmittel: Evidenzhierarchie (Konfiguration > Ticket > Policy > Aussage), externe Sicht (ASM-Scan geht ohne Zugang), Fragen nach dem letzten Vorfall statt nach der Policy."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "2. Unconsulting in Kohorten (6 bis 8 Wochen, Mittelstand/PE-Portfolio)",
+      "text": "2. Unconsulting in Kohorten (6 bis 8 Wochen, Mittelstand/PE-Portfolio)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Mechanik",
+      "text": "Mechanik",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Mehrere Firmen, ein Thema, wöchentliche Expertensessions, individuelle Umsetzung zwischen den Sessions, KPI vorher/nachher, Abschlussreport mit Benchmark. Preis ca. 1/3 unter klassischer Beratung. Referenz: 19 Firmen, minus 68 % externe Angriffsfläche in 8 Wochen.",
+      "text": ": Mehrere Firmen, ein Thema, wöchentliche Expertensessions, individuelle Umsetzung zwischen den Sessions, KPI vorher/nachher, Abschlussreport mit Benchmark. Preis ca. 1/3 unter klassischer Beratung. Referenz: 19 Firmen, minus 68 % externe Angriffsfläche in 8 Wochen."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Warum es funktioniert",
+      "text": "Warum es funktioniert",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Peer-Druck ersetzt Berater-Druck, Benchmark erzeugt Wettbewerb, fester Endtermin erzwingt Priorisierung, Manifesto-Logik (befähigen statt abhängig machen).",
+      "text": ": Peer-Druck ersetzt Berater-Druck, Benchmark erzeugt Wettbewerb, fester Endtermin erzwingt Priorisierung, Manifesto-Logik (befähigen statt abhängig machen)."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Woran es scheitert",
+      "text": "Woran es scheitert",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      }
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": ": Dropout ab Woche 4 (Alltag schlägt zurück), heterogene Reifegrade (die Schwächsten bremsen, die Stärksten langweilen sich), KPI-Kosmetik (Zahl sinkt, Risiko nicht).",
+      "text": ": Dropout ab Woche 4 (Alltag schlägt zurück), heterogene Reifegrade (die Schwächsten bremsen, die Stärksten langweilen sich), KPI-Kosmetik (Zahl sinkt, Risiko nicht)."
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "2a. Attack Surface Management (Kohortenthema)",
+      "text": "2a. Attack Surface Management (Kohortenthema)",
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Kern: Inventar aller internetexponierten Assets (Domains, Subdomains, IPs, Zertifikate, Dienste, Cloud-Ressourcen, Schatten-IT), kontinuierlich statt einmalig. Ablauf: Discovery (passiv: DNS, CT-Logs, ASN; aktiv: Portscan, Service-Fingerprinting) → Bewertung (Kritikalität, Exploitability) → Reduktion (abschalten, patchen, hinter VPN/WAF) → Wiederholungsmessung. KPI-Kandidaten: exponierte Dienste gesamt, kritische Findings, mittlere Zeit bis Schließung, Anteil unbekannter Assets. Messfrage, die Profis stellen: Wie wird über unterschiedlich große Firmen normalisiert und wie werden False Positives behandelt? Regulatorik-Anker: NIS2 Art. 21(2)e (Schwachstellenmanagement), §8a BSIG SzA-Bezug, CIS Controls 1/2/7, Grundschutz OPS.1.1.3.",
+      "text": "Kern: Inventar aller internetexponierten Assets (Domains, Subdomains, IPs, Zertifikate, Dienste, Cloud-Ressourcen, Schatten-IT), kontinuierlich statt einmalig. Ablauf: Discovery (passiv: DNS, CT-Logs, ASN; aktiv: Portscan, Service-Fingerprinting) → Bewertung (Kritikalität, Exploitability) → Reduktion (abschalten, patchen, hinter VPN/WAF) → Wiederholungsmessung. KPI-Kandidaten: exponierte Dienste gesamt, kritische Findings, mittlere Zeit bis Schließung, Anteil unbekannter Assets. Messfrage, die Profis stellen: Wie wird über unterschiedlich große Firmen normalisiert und wie werden False Positives behandelt? Regulatorik-Anker: NIS2 Art. 21(2)e (Schwachstellenmanagement), §8a BSIG SzA-Bezug, CIS Controls 1/2/7, Grundschutz OPS.1.1.3."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "2b. Incident Response Readiness (Kohortenthema)",
+      "text": "2b. Incident Response Readiness (Kohortenthema)",
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Kern: Nicht Vorfall verhindern, sondern Reaktionsfähigkeit herstellen. Bausteine: IR-Plan (Rollen, Eskalation, Erreichbarkeit 24/7), Meldeprozesse (NIS2: 24h Frühwarnung, 72h Meldung, 1 Monat Abschlussbericht; DSGVO 72h; DORA eigene Taktung; Versicherer-Obliegenheiten), Logging-Mindeststand (kann man einen Vorfall überhaupt rekonstruieren?), Tabletop-Übung als Abschluss-KPI. Referenzrahmen: BSI 200-4 (BCM-Anbindung), NIST SP 800-61, Grundschutz DER.2. KPI-Kandidaten: Zeit bis Erstentscheidung im Tabletop, Vollständigkeit Kontaktkette, Log-Abdeckung kritischer Systeme. Fallstrick: Plan ohne Übung ist Papier; Übung ohne Management-Beteiligung ist Theater.",
+      "text": "Kern: Nicht Vorfall verhindern, sondern Reaktionsfähigkeit herstellen. Bausteine: IR-Plan (Rollen, Eskalation, Erreichbarkeit 24/7), Meldeprozesse (NIS2: 24h Frühwarnung, 72h Meldung, 1 Monat Abschlussbericht; DSGVO 72h; DORA eigene Taktung; Versicherer-Obliegenheiten), Logging-Mindeststand (kann man einen Vorfall überhaupt rekonstruieren?), Tabletop-Übung als Abschluss-KPI. Referenzrahmen: BSI 200-4 (BCM-Anbindung), NIST SP 800-61, Grundschutz DER.2. KPI-Kandidaten: Zeit bis Erstentscheidung im Tabletop, Vollständigkeit Kontaktkette, Log-Abdeckung kritischer Systeme. Fallstrick: Plan ohne Übung ist Papier; Übung ohne Management-Beteiligung ist Theater."
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "2c. NIS-2 Quick Wins (Kohortenthema)",
+      "text": "2c. NIS-2 Quick Wins (Kohortenthema)",
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Kern: In 6 bis 8 Wochen von Nichts zu belastbarem Fundament: Betroffenheitsanalyse und Registrierung, Verantwortlichkeiten und Leitungs-Governance (Billigung, Schulung), Risikoanalyse light, Meldeprozess, MFA/Backup/Patch-Basishygiene, Lieferantenüberblick. Abgrenzung: Quick Wins schaffen Meldefähigkeit und Startpunkt, kein vollständiges Art.-21-Programm; die Linie ehrlich ziehen ist Manifesto-Pflicht. Conversion-Logik: aus Kohorte wird Einzelmandat (ISMS-Aufbau, Nachweisvorbereitung).",
+      "text": "Kern: In 6 bis 8 Wochen von Nichts zu belastbarem Fundament: Betroffenheitsanalyse und Registrierung, Verantwortlichkeiten und Leitungs-Governance (Billigung, Schulung), Risikoanalyse light, Meldeprozess, MFA/Backup/Patch-Basishygiene, Lieferantenüberblick. Abgrenzung: Quick Wins schaffen Meldefähigkeit und Startpunkt, kein vollständiges Art.-21-Programm; die Linie ehrlich ziehen ist Manifesto-Pflicht. Conversion-Logik: aus Kohorte wird Einzelmandat (ISMS-Aufbau, Nachweisvorbereitung)."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "3. Consulting (klassisch)",
+      "text": "3. Consulting (klassisch)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Themen laut Referenzen: Cybersecurity-Strategie, ISMS (ISO 27001, IT-Grundschutz, NIST, CIS), NIS2-Compliance (Stromnetz Berlin: KRITIS/Energie), Threat-Intel-Auswahl, BCM, Team-Building, DORA/CRA-Beratung, Interim Security Management. Arbeitsweise laut Selbstbeschreibung: zuhören, co-kreieren, funktionierende statt papierkonformer Lösungen. Eigene Heimzone (Bechtle/IONOS-Profil): ISMS-Aufbau, Nachweisstrukturen, Behörden/KRITIS, C5, Geheimschutz-Nähe.",
+      "text": "Themen laut Referenzen: Cybersecurity-Strategie, ISMS (ISO 27001, IT-Grundschutz, NIST, CIS), NIS2-Compliance (Stromnetz Berlin: KRITIS/Energie), Threat-Intel-Auswahl, BCM, Team-Building, DORA/CRA-Beratung, Interim Security Management. Arbeitsweise laut Selbstbeschreibung: zuhören, co-kreieren, funktionierende statt papierkonformer Lösungen. Eigene Heimzone (Bechtle/IONOS-Profil): ISMS-Aufbau, Nachweisstrukturen, Behörden/KRITIS, C5, Geheimschutz-Nähe."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "4. Cybersecurity für PE-Portfolios",
+      "text": "4. Cybersecurity für PE-Portfolios",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [],
+      "orig": "Kern: Investor kauft Sicherheit als Portfolio-Steuerung: jährliche KPI-Berichte über alle Beteiligungen, Vergleichbarkeit zwischen Firmen, ESG-Reporting-Tauglichkeit, Kohorten als Umsetzungsvehikel. Politisches Kernproblem: Mandat kommt vom Investor, Umsetzung braucht die Geschäftsführung der Portfoliofirma; ohne deren Eigeninteresse wird es Compliance-Theater (Manifesto-Konflikt: Fairness/Transparenz). Wertlogik für den Investor: Cyber-Reife als Werttreiber beim Exit, DD-Findings des Einkaufs werden 100-Tage-Plan der Beteiligung.",
+      "text": "Kern: Investor kauft Sicherheit als Portfolio-Steuerung: jährliche KPI-Berichte über alle Beteiligungen, Vergleichbarkeit zwischen Firmen, ESG-Reporting-Tauglichkeit, Kohorten als Umsetzungsvehikel. Politisches Kernproblem: Mandat kommt vom Investor, Umsetzung braucht die Geschäftsführung der Portfoliofirma; ohne deren Eigeninteresse wird es Compliance-Theater (Manifesto-Konflikt: Fairness/Transparenz). Wertlogik für den Investor: Cyber-Reife als Werttreiber beim Exit, DD-Findings des Einkaufs werden 100-Tage-Plan der Beteiligung."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [],
+      "orig": "5. Servicebereich-übergreifende Verbindungen",
+      "text": "5. Servicebereich-übergreifende Verbindungen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "DD → 100-Tage-Plan → Kohorte oder Einzelmandat: der Umsatzmotor; Übergänge aktiv steuern.",
+      "text": "DD → 100-Tage-Plan → Kohorte oder Einzelmandat: der Umsatzmotor; Übergänge aktiv steuern.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "ASM-Kohorte liefert die External-Attack-Surface-Daten, die in DD und Portfolio-Reporting wiederverwendet werden: ein Tooling, drei Produkte.",
+      "text": "ASM-Kohorte liefert die External-Attack-Surface-Daten, die in DD und Portfolio-Reporting wiederverwendet werden: ein Tooling, drei Produkte.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "IR-Readiness bedient gleichzeitig NIS2-Meldepflicht, DORA-Anforderungen, Versicherungs-Obliegenheiten und DD-Domäne 7: ein Deliverable, vier Nachweise.",
+      "text": "IR-Readiness bedient gleichzeitig NIS2-Meldepflicht, DORA-Anforderungen, Versicherungs-Obliegenheiten und DD-Domäne 7: ein Deliverable, vier Nachweise.",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/7"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [],
+      "orig": "Regulatorik-Schnellreferenz (separates Dokument) liefert die Brücken-Sätze für alle Bereiche.",
+      "text": "Regulatorik-Schnellreferenz (separates Dokument) liefert die Brücken-Sätze für alle Bereiche.",
+      "enumerated": false,
+      "marker": ""
+    }
+  ],
+  "pictures": [],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Domäne",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Leitfrage",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Typische Red Flag",
+            "column_header": true,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Governance",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Wer wacht nachts wegen Cyber-Risiko auf?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Verantwortung outgesourct, keine Roadmap, keine Board-Berichte",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "IAM",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Trust is not a control: wer kommt an Prod, Finanzen, Code, Kundendaten?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Kein MFA auf Admin, geteilte Accounts, Ex-Mitarbeiter aktiv",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "External Attack Surface",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Was ist wirklich exponiert (nicht: was glaubt man)?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Kein Inventar, RDP/VPN ungeschützt, vergessene Subdomains",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Vulnerability Management",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Wird gefunden UND geschlossen?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Scans ohne Remediation-Ownership, Ausnahmen ohne Ablauf",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Produkt-/Tech-Security",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Kann man dem Kernprodukt trauen?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Keine Secrets-Verwaltung, kein Pentest, keine Mandantentrennung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Datenschutz",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Welche Daten, wo, wer, wie lange?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Unverschlüsselte Backups, keine Datenflüsse dokumentiert",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Incident Response",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Plan getestet? Scar with no lesson?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Vorfall ohne Konsequenzen, Logging reicht nicht für Forensik",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Third Party / Supply Chain",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Outsourcing transfers tasks, rarely risk",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Kritischer Einzeldienstleister, Verträge ohne Security-Klauseln",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Backups & Resilience",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Wiederherstellung geprobt oder gewünscht?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Backups im Admin-Zugriff, nie restauriert, keine RTO/RPO",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Versicherung & Compliance",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Deckt die Police, was behauptet wird?",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          },
+          {
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "Obliegenheiten nicht erfüllt, Zertifikat ohne gelebte Controls",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false,
+            "fillable": false
+          }
+        ],
+        "num_rows": 11,
+        "num_cols": 3,
+        "orientation": "rot_0",
+        "grid": [
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Domäne",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Leitfrage",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Typische Red Flag",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Governance",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Wer wacht nachts wegen Cyber-Risiko auf?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Verantwortung outgesourct, keine Roadmap, keine Board-Berichte",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "IAM",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Trust is not a control: wer kommt an Prod, Finanzen, Code, Kundendaten?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Kein MFA auf Admin, geteilte Accounts, Ex-Mitarbeiter aktiv",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "External Attack Surface",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Was ist wirklich exponiert (nicht: was glaubt man)?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Kein Inventar, RDP/VPN ungeschützt, vergessene Subdomains",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Vulnerability Management",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Wird gefunden UND geschlossen?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Scans ohne Remediation-Ownership, Ausnahmen ohne Ablauf",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Produkt-/Tech-Security",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Kann man dem Kernprodukt trauen?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Keine Secrets-Verwaltung, kein Pentest, keine Mandantentrennung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Datenschutz",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Welche Daten, wo, wer, wie lange?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Unverschlüsselte Backups, keine Datenflüsse dokumentiert",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Incident Response",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Plan getestet? Scar with no lesson?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Vorfall ohne Konsequenzen, Logging reicht nicht für Forensik",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Third Party / Supply Chain",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Outsourcing transfers tasks, rarely risk",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Kritischer Einzeldienstleister, Verträge ohne Security-Klauseln",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Backups & Resilience",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Wiederherstellung geprobt oder gewünscht?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Backups im Admin-Zugriff, nie restauriert, keine RTO/RPO",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Versicherung & Compliance",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Deckt die Police, was behauptet wird?",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "Obliegenheiten nicht erfüllt, Zertifikat ohne gelebte Controls",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ]
+        ]
+      },
+      "annotations": []
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}

@@ -1,0 +1,1579 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Recplast",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10237182360246418956,
+    "filename": "BSI---Recplast.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 221.27134050536037,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Hilfsmittel vom BSI",
+      "text": "Hilfsmittel vom BSI",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/Hilfsmittel_und_Anwenderbeitraege/Hilfsmittel_vom_BSI/Hilfsmittel_vom_BSI_node.html"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 252.49217697949217,
+            "t": 465.91499566687503,
+            "r": 290.10313116236904,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Recplast",
+      "text": "Recplast"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 458.64130403994506,
+            "b": 371.41107103311015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "Arbeitsbeispiel RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "text": "Arbeitsbeispiel RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 234.6075053046875,
+            "r": 524.4515406478515,
+            "b": 198.9110782206102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "Die RECPLAST GmbH (Gesellschaft mit beschränkter Haftung): Beschreibung und Vorgehensweise",
+      "text": "Die RECPLAST GmbH (Gesellschaft mit beschränkter Haftung): Beschreibung und Vorgehensweise",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 172.95000787375,
+            "r": 549.2761859884913,
+            "b": 130.90429533994052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            270
+          ]
+        }
+      ],
+      "orig": "In diesem Dokument wird zunächst das fiktive Beispielunternehmen 'RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)' beschrieben. Die RECPLAST GmbH (Gesellschaft mit beschränkter Haftung) ist ein mittelständisches Unternehmen mit einem typischen Informationsverbund.",
+      "text": "In diesem Dokument wird zunächst das fiktive Beispielunternehmen 'RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)' beschrieben. Die RECPLAST GmbH (Gesellschaft mit beschränkter Haftung) ist ein mittelständisches Unternehmen mit einem typischen Informationsverbund."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 107.7000105925,
+            "r": 550.2746245718896,
+            "b": 29.654299558690468,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            447
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 823.19998078,
+            "r": 550.4648448139637,
+            "b": 781.1542682461904,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            448,
+            737
+          ]
+        }
+      ],
+      "orig": "Anhand dieses Beispiels wird die IT (Informationstechnik)-Grundschutz-Methodik gemäß BSI (Bundesamt für Sicherheit in der Informationstechnik)-Standard 200-2 dargestellt. Dabei werden Auszüge aus den sogenannten Referenzdokumenten verwendet, die im Rahmen der IT (Informationstechnik)-Grundschutz-Methodik erstellt werden. Die Referenzdokumente sind elementarer Bestandteil der IT (Informationstechnik)-Grundschutz-Methodik und werden insbesondere für eine Zertifizierung nach ISO (International Organization for Standardization) 27001 auf der Basis von IT (Informationstechnik)-Grundschutz benötigt. Die vollständigen Referenzdokumente der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung) sind ebenfalls auf dieser Seite verfügbar.",
+      "text": "Anhand dieses Beispiels wird die IT (Informationstechnik)-Grundschutz-Methodik gemäß BSI (Bundesamt für Sicherheit in der Informationstechnik)-Standard 200-2 dargestellt. Dabei werden Auszüge aus den sogenannten Referenzdokumenten verwendet, die im Rahmen der IT (Informationstechnik)-Grundschutz-Methodik erstellt werden. Die Referenzdokumente sind elementarer Bestandteil der IT (Informationstechnik)-Grundschutz-Methodik und werden insbesondere für eine Zertifizierung nach ISO (International Organization for Standardization) 27001 auf der Basis von IT (Informationstechnik)-Grundschutz benötigt. Die vollständigen Referenzdokumente der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung) sind ebenfalls auf dieser Seite verfügbar."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 757.94998349875,
+            "r": 440.93257155280895,
+            "b": 751.9042694649405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Beschreibung der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "text": "Beschreibung der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Beschreibung_Recplast.pdf?__blob=publicationFile&v=1"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 704.1074857421876,
+            "r": 502.0288113821321,
+            "b": 668.4110586581102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            75
+          ]
+        }
+      ],
+      "orig": "Referenzdokumente der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "text": "Referenzdokumente der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 642.44998831125,
+            "r": 549.1695147679359,
+            "b": 600.4042757774405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            256
+          ]
+        }
+      ],
+      "orig": "Die folgenden Dokumente zeigen beispielhaft auf, wie die Referenzdokumente aufgebaut sein können, die für eine Zertifizierung nach ISO (International Organization for Standardization) 27001 auf Basis von IT (Informationstechnik)-Grundschutz notwendig sind.",
+      "text": "Die folgenden Dokumente zeigen beispielhaft auf, wie die Referenzdokumente aufgebaut sein können, die für eine Zertifizierung nach ISO (International Organization for Standardization) 27001 auf Basis von IT (Informationstechnik)-Grundschutz notwendig sind."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 565.3049915256252,
+            "r": 296.7479442855019,
+            "b": 556.992134729137,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "Richtlinien für Informationssicherheit",
+      "text": "Richtlinien für Informationssicherheit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 531.44999293625,
+            "r": 548.0156587910134,
+            "b": 435.40428265244054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            509
+          ]
+        }
+      ],
+      "orig": "Die Leitung einer Institution muss die Informationssicherheit steuern. Dazu ist es unter anderem erforderlich, grundlegende Aspekte der Informationssicherheit zu regeln, Informationssicherheitsziele zu definieren und festzulegen, wie überprüft werden kann, dass die Ziele erreicht wurden. Informationssicherheit ist ein Prozess und muss kontinuierlich aufrechterhalten und verbessert werden. Die IT (Informationstechnik)-Grundschutz-Methodik sieht dazu vor, dass es mindestens folgende Richtlinien geben muss:",
+      "text": "Die Leitung einer Institution muss die Informationssicherheit steuern. Dazu ist es unter anderem erforderlich, grundlegende Aspekte der Informationssicherheit zu regeln, Informationssicherheitsziele zu definieren und festzulegen, wie überprüft werden kann, dass die Ziele erreicht wurden. Informationssicherheit ist ein Prozess und muss kontinuierlich aufrechterhalten und verbessert werden. Die IT (Informationstechnik)-Grundschutz-Methodik sieht dazu vor, dass es mindestens folgende Richtlinien geben muss:"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 412.1999979049999,
+            "r": 164.86196493075113,
+            "b": 406.1542838711905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            20
+          ]
+        }
+      ],
+      "orig": "Sicherheitsleitlinie",
+      "text": "Sicherheitsleitlinie",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A01_Sicherheitsleitlinie.pdf?__blob=publicationFile&v=2",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 394.19999865499994,
+            "r": 207.74992166875296,
+            "b": 388.1542846211905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "Richtlinie zur Risikoanalyse",
+      "text": "Richtlinie zur Risikoanalyse",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A02_Richtlinie_Risikoanalyse.pdf?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 376.19999940499997,
+            "r": 378.2576685642631,
+            "b": 370.15428537119055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "Richtlinie zur Lenkung von Dokumenten und Aufzeichnungen",
+      "text": "Richtlinie zur Lenkung von Dokumenten und Aufzeichnungen",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A03_Richtlinie_Lenkung_Dokumenten_und_Aufzeichnungen.pdf?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 358.200000155,
+            "r": 499.824387398983,
+            "b": 352.1542861211906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "Richtlinie zur internen ISMS (Information Security Management System) -Auditierung",
+      "text": "Richtlinie zur internen ISMS (Information Security Management System) -Auditierung",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A04_Richtlinie_internen_ISMS_Auditierung.pdf?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 339.45000093625004,
+            "r": 412.9496531687638,
+            "b": 333.4042869024406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "Richtlinie zur Lenkung von Korrektur- und Vorbeugungsmaßnahmen",
+      "text": "Richtlinie zur Lenkung von Korrektur- und Vorbeugungsmaßnahmen",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A05_Richtlinie_Lenkung_Korrektur_Vorbeugungsm.pdf?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 298.30500265062506,
+            "r": 149.53501581937405,
+            "b": 289.9921458541369,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Strukturanalyse",
+      "text": "Strukturanalyse",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 264.45000406124996,
+            "r": 535.4876414630139,
+            "b": 240.40429077744056,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            124
+          ]
+        }
+      ],
+      "orig": "Die Strukturanalyse beschreibt den Informationsverbund und seine Einbindung in die Institution. Zur Strukturanalyse gehören:",
+      "text": "Die Strukturanalyse beschreibt den Informationsverbund und seine Einbindung in die Institution. Zur Strukturanalyse gehören:"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 217.20000602999994,
+            "r": 266.2498501562558,
+            "b": 211.15429199619052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "Abgrenzung des Informationsverbunds",
+      "text": "Abgrenzung des Informationsverbunds",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A11_Abgrenzung_des_Informationsverbunds.pdf?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 199.20000677999997,
+            "r": 463.6903831045667,
+            "b": 193.15429274619055,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "Strukturanalyse der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "text": "Strukturanalyse der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A1_Strukturanalyse_RECPLAST_GmbH.xlsx?__blob=publicationFile&v=2",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 180.45000756125,
+            "r": 544.7372547276135,
+            "b": 174.4042935274406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            88
+          ]
+        }
+      ],
+      "orig": "Strukturanalyse Abhängigkeiten der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "text": "Strukturanalyse Abhängigkeiten der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A1_Strukturanalyse-Abhaengigkeiten_RECPLAST_GmbH.xlsx?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 161.70000834250004,
+            "r": 180.5699222012529,
+            "b": 155.65429430869062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "Liste der Dienstleister",
+      "text": "Liste der Dienstleister",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A18_Liste_der_Dienstleister.xlsx?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 143.70000909250007,
+            "r": 245.82586540725524,
+            "b": 137.65429505869042,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            32
+          ]
+        }
+      ],
+      "orig": "Zuordnung Prozesse zu Standorten",
+      "text": "Zuordnung Prozesse zu Standorten",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Zuordnung_Prozesse_Standort.xlsx?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 102.55501080687486,
+            "r": 218.96697722637558,
+            "b": 94.24215401038668,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Schutzbedarfsfeststellung",
+      "text": "Schutzbedarfsfeststellung",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 69.45001218624998,
+            "r": 529.0316969320112,
+            "b": 27.404299652440613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            270
+          ]
+        }
+      ],
+      "orig": "Bei der Schutzbedarfsfeststellung wird zunächst der Schutzbedarf der Geschäftsprozesse bestimmt. Darauf aufbauend wird der Schutzbedarf der Anwendungen, IT (Informationstechnik)-Systeme und aller weiteren Zielobjekte abgeleitet. Eventuelle Abweichungen werden begründet.",
+      "text": "Bei der Schutzbedarfsfeststellung wird zunächst der Schutzbedarf der Geschäftsprozesse bestimmt. Darauf aufbauend wird der Schutzbedarf der Anwendungen, IT (Informationstechnik)-Systeme und aller weiteren Zielobjekte abgeleitet. Eventuelle Abweichungen werden begründet."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 823.19998078,
+            "r": 268.6258370072563,
+            "b": 817.1542667461906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "Definition der Schutzbedarfskategorien",
+      "text": "Definition der Schutzbedarfskategorien",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A21_Definition_Schutzbedarfskategorien.pdf?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 805.1999815299998,
+            "r": 202.6259095072534,
+            "b": 799.1542674961906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "Schutzbedarfsfeststellung",
+      "text": "Schutzbedarfsfeststellung",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Schutzbedarfsfeststellung.xlsx?__blob=publicationFile&v=3",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 764.0549832443749,
+            "r": 314.6834160131905,
+            "b": 755.7421264478867,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            37
+          ]
+        }
+      ],
+      "orig": "Modellierung des Informationsverbunds",
+      "text": "Modellierung des Informationsverbunds",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 730.199984655,
+            "r": 540.0541814227416,
+            "b": 670.1542728711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            314
+          ]
+        }
+      ],
+      "orig": "Die Modellierung listet alle Bausteine auf, die einem Zielobjekt zugeordnet wurden. Außerdem gibt es eine Liste von IT (Informationstechnik)-Grundschutz-Bausteinen, die bei einem externen Dienstleister umgesetzt werden und eine Liste mit IT (Informationstechnik)-Grundschutz-Bausteinen, die nicht verwendet werden.",
+      "text": "Die Modellierung listet alle Bausteine auf, die einem Zielobjekt zugeordnet wurden. Außerdem gibt es eine Liste von IT (Informationstechnik)-Grundschutz-Bausteinen, die bei einem externen Dienstleister umgesetzt werden und eine Liste mit IT (Informationstechnik)-Grundschutz-Bausteinen, die nicht verwendet werden."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 646.94998812375,
+            "r": 451.97163359284804,
+            "b": 640.9042740899406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Modellierung der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "text": "Modellierung der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/A3_Modellierung_Recplast_GmbH.xlsx?__blob=publicationFile&v=2",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 628.1999889049998,
+            "r": 267.6898316462566,
+            "b": 622.1542748711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            38
+          ]
+        }
+      ],
+      "orig": "Bausteine, die nicht verwendet wurden.",
+      "text": "Bausteine, die nicht verwendet wurden.",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Nicht_modellierte_Bausteine.xlsx?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 587.0549906193748,
+            "r": 444.93327711111266,
+            "b": 578.7421338228867,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "Ergebnis des IT (Informationstechnik)-Grundschutz-Checks",
+      "text": "Ergebnis des IT (Informationstechnik)-Grundschutz-Checks",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 553.19999203,
+            "r": 544.9306530195549,
+            "b": 493.15428024619064,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            355
+          ]
+        }
+      ],
+      "orig": "Im IT (Informationstechnik)-Grundschutz-Check wird für jedes Zielobjekt geprüft, ob die Anforderungen aus den relevanten IT (Informationstechnik)-Grundschutz-Bausteinen umgesetzt sind. Aus Gründen der Übersichtlichkeit ist der IT (Informationstechnik)-Grundschutz-Check der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung) nur auszugsweise enthalten.",
+      "text": "Im IT (Informationstechnik)-Grundschutz-Check wird für jedes Zielobjekt geprüft, ob die Anforderungen aus den relevanten IT (Informationstechnik)-Grundschutz-Bausteinen umgesetzt sind. Aus Gründen der Übersichtlichkeit ist der IT (Informationstechnik)-Grundschutz-Check der RECPLAST GmbH (Gesellschaft mit beschränkter Haftung) nur auszugsweise enthalten."
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 469.94999549875,
+            "r": 245.651870439505,
+            "b": 463.9042814649406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Ergebnis des IT-Grundschutz-Checks",
+      "text": "Ergebnis des IT-Grundschutz-Checks",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Ergebnis_des_IT-Grundschutz-Checks.xlsx?__blob=publicationFile&v=2",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 428.8049972131248,
+            "r": 134.02502179062387,
+            "b": 420.49214041663663,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Risikoanalyse",
+      "text": "Risikoanalyse",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 395.6999985924999,
+            "r": 526.4397004900114,
+            "b": 335.6542868086908,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            313
+          ]
+        }
+      ],
+      "orig": "Eine Risikoanalyse muss für alle Zielobjekte durchgeführt werden, die einen erhöhten Schutzbedarf haben, die unter besonderen Bedingungen eingesetzt werden oder für die es keinen IT (Informationstechnik)-Grundschutz-Baustein gibt. Die Risikoanalyse muss gemäß der Richtlinie für Risikoanalyse durchgeführt werden.",
+      "text": "Eine Risikoanalyse muss für alle Zielobjekte durchgeführt werden, die einen erhöhten Schutzbedarf haben, die unter besonderen Bedingungen eingesetzt werden oder für die es keinen IT (Informationstechnik)-Grundschutz-Baustein gibt. Die Risikoanalyse muss gemäß der Richtlinie für Risikoanalyse durchgeführt werden."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 312.45000206124996,
+            "r": 138.29401471274917,
+            "b": 306.40428802744054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "Risikoanalyse",
+      "text": "Risikoanalyse",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Risikoanalyse.xlsx?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 70.74609080224609,
+            "t": 294.45000281124976,
+            "r": 276.8698301387567,
+            "b": 288.4042887774408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "Risikoanalyse auf Geschäftsprozessebene",
+      "text": "Risikoanalyse auf Geschäftsprozessebene",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Risikoanalyse_GP_Ebene.xlsx?__blob=publicationFile&v=1",
+      "enumerated": false,
+      "marker": ""
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 253.305004525625,
+            "r": 162.27299406362496,
+            "b": 244.99214772913683,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Realisierungsplan",
+      "text": "Realisierungsplan",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 219.4500059362499,
+            "r": 547.4277076405114,
+            "b": 159.4042941524408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            311
+          ]
+        }
+      ],
+      "orig": "In den Realisierungsplan werden alle Anforderungen aufgenommen, die noch nicht (ausreichend) umgesetzt sind. Außerdem werden Maßnahmen, die sich aus der Risikoanalyse ergeben haben, im Realisierungsplan aufgenommen. Der Realisierungsplan soll darstellen, welche Maßnahmen durch wen, bis wann durchzuführen sind.",
+      "text": "In den Realisierungsplan werden alle Anforderungen aufgenommen, die noch nicht (ausreichend) umgesetzt sind. Außerdem werden Maßnahmen, die sich aus der Risikoanalyse ergeben haben, im Realisierungsplan aufgenommen. Der Realisierungsplan soll darstellen, welche Maßnahmen durch wen, bis wann durchzuführen sind."
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 136.20000940499995,
+            "r": 148.2719791220006,
+            "b": 130.15429537119053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Realisierungsplan",
+      "text": "Realisierungsplan",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Recplast/Realisierungsplan.xlsx?__blob=publicationFile&v=1",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 802.1999816550001,
+            "r": 158.39995432500166,
+            "b": 742.1542698711905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 711.4499854362502,
+            "r": 313.9438494440058,
+            "b": 705.4042714024408,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        },
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 651.3974879384373,
+            "r": 509.74872171046906,
+            "b": 646.4853452859675,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            54,
+            57
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik TOP",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.2417721992726,
+            "t": 552.9377416293502,
+            "r": 170.63387179599897,
+            "b": 491.2122545476461,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 4
+    }
+  }
+}

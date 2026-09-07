@@ -1,0 +1,849 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "BSI---Webbrowser",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 1717606621083788264,
+    "filename": "BSI---Webbrowser.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 95.21483978271483,
+            "t": 465.91499566687503,
+            "r": 103.50983943708984,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "…",
+      "text": "…"
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 134.73046313623047,
+            "t": 465.91499566687503,
+            "r": 238.91134974535996,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 270.14061374414064,
+            "t": 465.91499566687503,
+            "r": 325.2655477722684,
+            "b": 460.6249958872917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            22,
+            32
+          ]
+        }
+      ],
+      "orig": "Mindeststandards Bund Webbrowser",
+      "text": "Mindeststandards Bund Webbrowser"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 55.74609142724609,
+            "t": 407.1074981171875,
+            "r": 516.8341887652414,
+            "b": 371.41107103311015,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            92
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Webbrowser",
+      "text": "Mindeststandard des BSI (Bundesamt für Sicherheit in der Informationstechnik) für Webbrowser",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 259.20000428000003,
+            "r": 548.6657230639273,
+            "b": 163.15429399619052,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            588
+          ]
+        }
+      ],
+      "orig": "Bei Nutzung eines Webbrowsers werden Daten in der Regel auch aus nicht vertrauenswürdigen Quellen geladen. Diese Daten können schädlichen Code (Viren, Trojaner, Spyware etc. (und so weiter)) enthalten und das IT (Informationstechnik)-Gerät unbemerkt infizieren, so dass ein sicherer Betrieb nicht mehr möglich ist. Dies kann zum Verlust der Verfügbarkeit, Vertraulichkeit und Integrität von schützenswerten Daten führen. Somit stellt eine Nutzung von Webbrowsern erst einmal ein Risiko dar. Durch die Umsetzung und Einhaltung dieses Mindeststandards sollen diese Risiken minimiert werden.",
+      "text": "Bei Nutzung eines Webbrowsers werden Daten in der Regel auch aus nicht vertrauenswürdigen Quellen geladen. Diese Daten können schädlichen Code (Viren, Trojaner, Spyware etc. (und so weiter)) enthalten und das IT (Informationstechnik)-Gerät unbemerkt infizieren, so dass ein sicherer Betrieb nicht mehr möglich ist. Dies kann zum Verlust der Verfügbarkeit, Vertraulichkeit und Integrität von schützenswerten Daten führen. Somit stellt eine Nutzung von Webbrowsern erst einmal ein Risiko dar. Durch die Umsetzung und Einhaltung dieses Mindeststandards sollen diese Risiken minimiert werden."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 139.95000924875,
+            "r": 508.3076833205124,
+            "b": 97.90429671494053,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            260
+          ]
+        }
+      ],
+      "orig": "Dieser Mindeststandard beschreibt Sicherheitsanforderungen an Webbrowser, die auf Arbeitsplatzrechnern oder mobilen Geräten der Bundesverwaltung eingesetzt werden. Diese Anforderungen sind zum Erreichen eines Mindestmaßes an Informationssicherheit einzuhalten.",
+      "text": "Dieser Mindeststandard beschreibt Sicherheitsanforderungen an Webbrowser, die auf Arbeitsplatzrechnern oder mobilen Geräten der Bundesverwaltung eingesetzt werden. Diese Anforderungen sind zum Erreichen eines Mindestmaßes an Informationssicherheit einzuhalten."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 74.70001196750002,
+            "r": 541.8869338463768,
+            "b": 32.65429943369054,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            281
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 823.19998078,
+            "r": 548.6192556908634,
+            "b": 799.1542674961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            282,
+            428
+          ]
+        }
+      ],
+      "orig": "Aktualisierung 2024: Der Mindeststandard für Webbrowser wurde überarbeitet und in der Version 3.0 veröffentlicht. Auch die ergänzende Browser-Abgleichstabelle und die Referenztabelle zum IT (Informationstechnik)-Grundschutz wurden entsprechend aktualisiert. Die aktuellen Dokumente stehen nun zum Download bereit. Eine Liste mit den wichtigsten Änderungen des Mindeststandards gegenüber seiner Vorgängerversion finden Sie unter:",
+      "text": "Aktualisierung 2024: Der Mindeststandard für Webbrowser wurde überarbeitet und in der Version 3.0 veröffentlicht. Auch die ergänzende Browser-Abgleichstabelle und die Referenztabelle zum IT (Informationstechnik)-Grundschutz wurden entsprechend aktualisiert. Die aktuellen Dokumente stehen nun zum Download bereit. Eine Liste mit den wichtigsten Änderungen des Mindeststandards gegenüber seiner Vorgängerversion finden Sie unter:"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 787.19998228,
+            "r": 494.7961649334924,
+            "b": 763.1542689961905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            121
+          ]
+        }
+      ],
+      "orig": ". Die älteren Versionen des Mindeststandards finden Sie im . Änderungsübersicht zum Mindeststandard für Webbrowser Archiv",
+      "text": ". Die älteren Versionen des Mindeststandards finden Sie im . Änderungsübersicht zum Mindeststandard für Webbrowser Archiv"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.49609114599609,
+            "t": 739.94998424875,
+            "r": 549.1368441692974,
+            "b": 625.9042747149405,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            539
+          ]
+        }
+      ],
+      "orig": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)",
+      "text": "Hinweis : Mit Inkrafttreten des am 06.12.2025 wurde die bisherige Verankerung der Mindeststandards in § 8 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen) aufgehoben und durch die neue Rechtsgrundlage in ersetzt. NIS2 (Network and Information Security Directive 2)- Umsetzungsgesetz (NIS2UmsuCG) § 44 BSIG (Gesetz über das Bundesamt für Sicherheit in der Informationstechnik und über die Sicherheit in der Informationstechnik von Einrichtungen)"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 578.1074909921874,
+            "r": 256.4132112411157,
+            "b": 568.6610628143601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Download Mindeststandard",
+      "text": "Download Mindeststandard",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 542.6999924674999,
+            "r": 403.21166324951326,
+            "b": 536.6542784336905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            66
+          ]
+        }
+      ],
+      "orig": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Webbrowser",
+      "text": "Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Webbrowser",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Mindeststandard_Webbrowser_V3_0.pdf?__blob=publicationFile&v=4"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 488.85749471093754,
+            "r": 323.8147584827178,
+            "b": 479.4110665331102,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            33
+          ]
+        }
+      ],
+      "orig": "Download Browser-Abgleichstabelle",
+      "text": "Download Browser-Abgleichstabelle",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 453.44999618625,
+            "r": 450.1676395430143,
+            "b": 447.4042821524406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            71
+          ]
+        }
+      ],
+      "orig": "Abgleichstabelle von Webbrowsern mit dem Mindeststandard für Webbrowser",
+      "text": "Abgleichstabelle von Webbrowsern mit dem Mindeststandard für Webbrowser",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Browser-Abgleich_Mindeststandard_Webbrowser_V3.pdf?__blob=publicationFile&v=7"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 399.60749842968744,
+            "r": 543.5131959036161,
+            "b": 390.1610702518601,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "Download Referenztabelle IT (Informationstechnik)-Grundschutz",
+      "text": "Download Referenztabelle IT (Informationstechnik)-Grundschutz",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 59.49609127099609,
+            "t": 364.1999999049999,
+            "r": 528.5994904750204,
+            "b": 340.1542866211905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Webbrowser (IT-Grundschutz-Kompendium - Edition 2023)",
+      "text": "IT-Grundschutz-Referenztabelle zum Mindeststandard des BSI nach § 8 Abs. 1 Satz 1 BSIG für Webbrowser (IT-Grundschutz-Kompendium - Edition 2023)",
+      "hyperlink": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Mindeststandards/Referenztabelle_Mindeststandard_Webbrowser_V3_0-Grundschutz2023.xlsx?__blob=publicationFile&v=6"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 210.1406162441406,
+            "t": 258.6075043046876,
+            "r": 385.34051271914456,
+            "b": 249.16107612686028,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "Weitere Informationen",
+      "text": "Weitere Informationen",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 116.24999515625,
+            "t": 154.20000865499992,
+            "r": 214.73392565275267,
+            "b": 148.1542946211905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Änderungsübersicht",
+      "text": "Änderungsübersicht"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 332.4492086479491,
+            "t": 154.20000865499992,
+            "r": 527.5450801439542,
+            "b": 148.1542946211905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "FAQ zum Mindeststandard Webbrowser",
+      "text": "FAQ zum Mindeststandard Webbrowser",
+      "hyperlink": "https://www.bsi.bund.de/DE/Themen/Oeffentliche-Verwaltung/Mindeststandards/Webbrowser/FAQ_MST_Webbrowser/faq_mst_Webbrowser_node.html"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 220.34765081884748,
+            "t": 82.95001162375002,
+            "r": 387.1355325693521,
+            "b": 76.9042975899406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            31
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 689.6999863424999,
+            "r": 158.39995432500166,
+            "b": 647.6542738086905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            32,
+            93
+          ]
+        },
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 635.6999885925,
+            "r": 121.33199186950014,
+            "b": 629.6542745586905,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            94,
+            118
+          ]
+        }
+      ],
+      "orig": "Zurück zu Mindeststandards Bund Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit",
+      "text": "Zurück zu Mindeststandards Bund Im­ pres­ s­ um Da­ ten­ schutz Nut­ zungs­ be­ din­ gun­ gen Bar­ rie­ re­ frei­ heit"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 808.199981405,
+            "r": 339.35134488536016,
+            "b": 802.1542673711906,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Browser",
+      "text": "Kurz-URL: https:/ /www.bsi.bund.de/dok/MST-Browser",
+      "hyperlink": "https://www.bsi.bund.de/dok/MST-Browser"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 44.496091895996095,
+            "t": 598.94999012375,
+            "r": 313.9438494440058,
+            "b": 592.9042760899406,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            53
+          ]
+        }
+      ],
+      "orig": "© Bundesamt für Sicherheit in der Informationstechnik",
+      "text": "© Bundesamt für Sicherheit in der Informationstechnik"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 491.9062295039063,
+            "t": 538.8974926259373,
+            "r": 509.74872171046906,
+            "b": 533.9853499734672,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            3
+          ]
+        }
+      ],
+      "orig": "TOP",
+      "text": "TOP"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 43.20348665938254,
+            "t": 553.1020021403123,
+            "r": 170.6261666260699,
+            "b": 491.1461292407067,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 43.62585966247379,
+            "t": 228.70043121354706,
+            "r": 286.61944380954156,
+            "b": 115.4361109333754,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 404.20769116832776,
+            "t": 216.87886191951213,
+            "r": 455.685458473719,
+            "b": 161.89556239801038,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 594.95996,
+        "height": 841.91998
+      },
+      "page_no": 3
+    }
+  }
+}
