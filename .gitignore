@@ -228,5 +228,13 @@ input/*
 output/*
 !output/.gitkeep
 
+# Arbeitsstaende neben dem Bestand: output.alt/, output.duplikate/,
+# output.fremd/ und was sonst noch danebenfaellt. 987 solcher Dateien lagen
+# einmal oeffentlich im Repo, weil hier nur "output/" stand und ein
+# "git add -A" den Rest mitnahm.
+input.*/
+output.*/
+export.*/
+
 # Anforderungs-Exporte: abgeleiteter lizenzierter Normtext, bleibt lokal.
 export/

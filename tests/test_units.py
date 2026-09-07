@@ -1888,6 +1888,36 @@ def test_seitenmarken_muessen_lueckenlos_sein(tmp_path: Path) -> None:
     assert treffer and "[2]" in treffer[0].zahl, b.befunde
 
 
+
+def test_kein_lizenztext_im_repo():
+    """Kein verfolgter Pfad liegt in einem Bestands- oder Arbeitsverzeichnis.
+
+    987 Dateien aus output.alt/, output.duplikate/ und output.fremd/ lagen
+    einmal im oeffentlichen Repo, darunter Extrakte lizenzierter Normen. Die
+    .gitignore kannte nur "output/", der Rest kam ueber ein "git add -A" rein.
+    """
+    import subprocess
+
+    wurzel = Path(__file__).resolve().parent.parent
+    try:
+        roh = subprocess.run(["git", "ls-files", "-z"], cwd=wurzel, check=True,
+                             capture_output=True, text=True).stdout
+    except (OSError, subprocess.CalledProcessError):  # kein Git, kein Urteil
+        return
+
+    verboten = ("input", "output", "export")
+    treffer = []
+    for pfad in roh.split("\0"):
+        if not pfad:
+            continue
+        if "/" not in pfad:  # export.py ist Quellcode, kein Verzeichnis
+            continue
+        kopf = pfad.split("/", 1)[0]
+        if kopf.split(".", 1)[0] in verboten and not pfad.endswith(".gitkeep"):
+            treffer.append(pfad)
+    assert not treffer, f"{len(treffer)} verfolgte Dateien, z. B. {treffer[:3]}"
+
+
 # Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
 # Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
 # definierte existierte noch nicht und lief im Skriptpfad nie mit.

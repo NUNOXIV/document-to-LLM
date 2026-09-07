@@ -98,7 +98,9 @@ Selbstbestätigung. `test_ground_truth_deckt_das_fixture` hält das fest.
 
 Der einzige Primärtext im Repo ist frei erfunden. Lizenzierter Normtext (ISO,
 DIN, TISAX) bleibt draußen: `input/`, `output/` und `export/` sind ignoriert,
-der Vault liegt außerhalb des Repos.
+der Vault liegt außerhalb des Repos. Ignoriert sind auch die
+Arbeitsstände daneben (`output.alt/` und Geschwister) — `test_kein_lizenztext_im_repo`
+hält das fest, weil einmal 987 solcher Dateien öffentlich lagen.
 
 ## Datenregeln
 
