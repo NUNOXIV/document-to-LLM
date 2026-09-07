@@ -302,6 +302,15 @@ def verlorene_trennungen(body: str, zweitleser: str) -> dict[str, str]:
             continue
         if not re.search(rf"\b{re.escape(geklebt)}\b", body):
             continue
+        # Dritter Beleg, und der entscheidende: die zusammengeschriebene Form
+        # darf im Dokument nirgends als eigenes Wort stehen. Sonst ist sie ein
+        # Wort und die Trennstelle war eine Silbentrennung. "wer-\nden" ist
+        # eine solche: "wer" und "den" sind beide gebraeuchlich, das Paar
+        # "wer den" steht anderswo, und "werden" steht ueberall. Ohne diese
+        # Pruefung wurde "werden" im Grundschutz-Kompendium 4880-mal zu
+        # "wer den" — die Regel hat mehr zerstoert als sie berichtigte.
+        if re.search(rf"\b{re.escape(geklebt)}\b", zweitleser):
+            continue
         mit_leer = f"{a} {b}"
         mit_strich = f"{a}-{b}"
         # Der Beleg darf nicht die Fundstelle selbst sein: gesucht wird das

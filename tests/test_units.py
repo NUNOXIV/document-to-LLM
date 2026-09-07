@@ -492,15 +492,28 @@ def test_wortlaut_muss_in_der_quelle_stehen() -> None:
     galten als 'dort nicht pruefbar' und blieben damit ganz ungeprueft."""
     import inhalt
 
-    quelle = ("Die Organisation MUSS ein Inventar aller Assets fuehren und dieses "
+    quelle = ("Die Organisation MUSS ein Inventar aller Assets fuehren. Sie MUSS dieses "
               "regelmaessig auf Aktualitaet pruefen. Weitere Absaetze folgen hier.")
-    echt = {"id": "AM-01", "text": "Die Organisation MUSS ein Inventar aller Assets fuehren"
-                                   " und dieses regelmaessig auf Aktualitaet pruefen."}
+    echt = {"id": "AM-01", "text": "Die Organisation MUSS ein Inventar aller Assets fuehren."
+                                   " Sie MUSS dieses regelmaessig auf Aktualitaet pruefen."}
     erfunden = {"id": "AM-02", "text": "Die Organisation MUSS jaehrlich eine Zertifizierung"
                                        " durch eine akkreditierte Stelle nachweisen lassen."}
     check("Wortlaut aus der Quelle wird gefunden", inhalt.wortlaut_in_quelle(echt["text"], quelle))
     check("erfundener Wortlaut faellt auf", not inhalt.wortlaut_in_quelle(erfunden["text"], quelle))
     check("kurzer Wortlaut wird nicht bewertet", inhalt.wortlaut_in_quelle("Zu kurz.", quelle))
+    # Eine Gruppen-ID wird aus ihren Unterpunkten zusammengesetzt; die dabei
+    # eingefuegten Zwischenueberschriften stehen nirgends in der Quelle und
+    # duerfen keinen Befund erzeugen. Acht Gruppen von CIS und TISAX wurden so
+    # gemeldet, obwohl ihr Text vollstaendig aus der Quelle stammt.
+    zusammengesetzt = "\n\n".join(
+        f"### 4.{i} Punkt {i}\n\n{teil}" for i, teil in enumerate(
+            ["Die Organisation MUSS ein Inventar aller Assets fuehren.",
+             "Sie MUSS dieses regelmaessig auf Aktualitaet pruefen.",
+             "Weitere Absaetze folgen hier."], 1))
+    check("zusammengesetzte Gruppe ist kein Befund",
+          inhalt.wortlaut_in_quelle(zusammengesetzt, quelle))
+    check("erfundene Gruppe faellt weiter auf",
+          not inhalt.wortlaut_in_quelle("### 9.9 Fremd\n\n" + erfunden["text"], quelle))
 
 
 def test_register_ohne_quelle_ist_dokumentiert() -> None:
@@ -539,7 +552,16 @@ def test_verlorene_trennung_ueber_zweitleser() -> None:
             "Das IKT-\nSystem und das IKT-System sind gemeint\n")
     body = ("Bearbeitung Ihrer TISAXAssessment Scope Angaben. "
             "Die Abnahme erfolgt spaeter. Das IKTSystem ist gemeint.")
+    # "werden" am Zeilenende getrennt: "wer" und "den" sind beide gebraeuchliche
+    # Woerter, das Paar "wer den" steht anderswo im Dokument — und trotzdem darf
+    # "werden" nicht getrennt werden. Der Beleg dafuer ist, dass die
+    # zusammengeschriebene Form selbst im Dokument vorkommt. Ohne diese Pruefung
+    # wurde "werden" im Grundschutz-Kompendium 4880-mal zu "wer den".
+    zeit += ("Die Unterlagen SOLLTEN dokumentiert wer-\nden und geprueft werden.\n"
+             "Es ist zu klaeren, wer den Zugang erhaelt.\n")
+    body += " Die Unterlagen SOLLTEN dokumentiert werden."
     treffer = V2.verlorene_trennungen(body, zeit)
+    check("gebraeuchliches Wort bleibt zusammen", "werden" not in treffer, str(treffer))
     check("Leerzeichen belegt, weil das Paar sonst mit Leerzeichen steht",
           treffer.get("TISAXAssessment") == "TISAX Assessment", str(treffer))
     check("Bindestrich belegt, weil das Paar sonst zusammenhaengend steht",

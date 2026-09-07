@@ -128,16 +128,25 @@ def wortlaut_in_quelle(text: str, quelle: str) -> bool:
     Kennung steht -- das kann nur die Zuordnungspruefung. Sie belegt, dass er
     aus der Quelle stammt und nicht erfunden ist.
     """
-    worte = normtext(text).split()
-    if len(worte) < PROBE_WOERTER:
-        return True
+    # Eine Gruppen-ID wird aus ihren Unterpunkten zusammengesetzt, und die
+    # dabei eingefuegten Zwischenueberschriften ("### 4.1 Devices") stehen so
+    # in keiner Quelle. Sie sind Struktur dieses Werkzeugs, nicht Wortlaut des
+    # Dokuments — geprueft wird der Text zwischen ihnen. Acht Gruppen von CIS
+    # und TISAX wurden sonst gemeldet, obwohl ihr Text vollstaendig aus der
+    # Quelle stammt.
     q = normtext(quelle)
-    # Mehrere Ausschnitte, damit ein einzelner Bindestrich oder ein
-    # Tabellentrenner in der Mitte nicht den ganzen Befund erzeugt.
-    for start in (0, max(0, (len(worte) - PROBE_WOERTER) // 2), len(worte) - PROBE_WOERTER):
-        if " ".join(worte[start:start + PROBE_WOERTER]) in q:
-            return True
-    return False
+    abschnitte = [a for a in re.split(r"(?m)^#{1,6}\s+.*$", text) if a.strip()]
+    for abschnitt in sorted(abschnitte, key=len, reverse=True):
+        worte = normtext(abschnitt).split()
+        if len(worte) < PROBE_WOERTER:
+            continue
+        # Mehrere Ausschnitte, damit ein einzelner Bindestrich oder ein
+        # Tabellentrenner in der Mitte nicht den ganzen Befund erzeugt.
+        for start in (0, max(0, (len(worte) - PROBE_WOERTER) // 2), len(worte) - PROBE_WOERTER):
+            if " ".join(worte[start:start + PROBE_WOERTER]) in q:
+                return True
+        return False
+    return True
 
 
 def ueberhaenge(reqs: list[dict]) -> list[tuple[str, str]]:
