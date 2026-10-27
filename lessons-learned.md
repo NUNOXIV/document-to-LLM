@@ -515,6 +515,23 @@ stand nur neben vier anderen und wäre in einem Lauf über 600 Dokumente
 untergegangen. Ein Wächter, der ausfallen kann, braucht eine Zählung seiner
 Ausfälle, nicht nur eine Zeile im Kopf der Datei.
 
+**Nachtrag, ein eigener Fehler im Fix:** Die erste Fassung zählte die
+Durchläufe von `iter_pages()` und nahm die Zählung als Seitenzahl. Das Backend
+heißt *threaded* und arbeitet nebenläufig: es liefert die Seiten in der
+Reihenfolge ihrer Fertigstellung. Im Fixture trug der erste Durchlauf
+`page_no=2`, also wurde die Deckung der falschen Seite zugeschrieben — die CI
+meldete `assert not ['Seite lokalisiert']`. Mein erster Regressionstest konnte
+das nicht sehen, weil seine Attrappe die Seiten brav der Reihe nach lieferte.
+Die Nummer kommt jetzt aus `page_no` der Seite, `zweitleser_zeilen` sortiert
+vor dem Zusammenfügen, und `per_page` wird nach Seitenzahl gefüllt. Beleg für
+die Richtung: pypdfium als erster Leser verortet die Wörter auf Seite 2, der
+zweite Leser tut es jetzt auch. Die Attrappe im Test liefert in der Reihenfolge
+2, 3, 1.
+
+**Zweite Lehre:** Eine Attrappe, die sich wohlverhält, prüft nichts. Wer ein
+nebenläufiges Gegenstück nachbaut, muss es unsortiert liefern lassen — sonst
+testet man die eigene Annahme, nicht den Code.
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -548,3 +565,6 @@ Ausfälle, nicht nur eine Zeile im Kopf der Datei.
 13. **Der Ausfall einer Prüfung darf nicht wie ihr Bestehen aussehen.** Nr. 26:
     der Zweitleser fiel an einer neuen Docling-API aus, und der Extrakt trug
     statt der Deckungszahl eine Warnung zwischen vier anderen.
+14. **Eine Attrappe, die sich wohlverhält, prüft nichts.** Nr. 26, Nachtrag:
+    der Test ließ die Seiten der Reihe nach kommen und übersah damit genau den
+    Fehler, den er sichern sollte — die unsortierte Lieferung.
