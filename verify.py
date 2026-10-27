@@ -93,6 +93,25 @@ def _mask(line: str) -> str:
     return re.sub(r"\d+", "#", normalize(line)).strip()
 
 
+def backend_seiten(backend):
+    """Seiten eines Docling-PDF-Backends, mit und ohne Zufallszugriff.
+
+    Docling 2.143 laesst DoclingParseDocumentBackend von der threaded Fassung
+    erben: load_page(i) wirft dort "only supports iter_pages()", und damit fiel
+    der ganze Zweitleser aus — die Deckungspruefung meldete sich als "nicht
+    durchfuehrbar", und ein Extrakt ohne Deckungszahl sieht aus wie einer mit.
+    Aeltere Fassungen kennen iter_pages() nicht. Also beide Wege bedienen.
+
+    Liefert (Seitennummer ab 1, Seiten-Backend).
+    """
+    if getattr(backend, "supports_random_page_access", True):
+        for i in range(backend.page_count()):
+            yield i + 1, backend.load_page(i)
+        return
+    for nr, seite in enumerate(backend.iter_pages(), start=1):
+        yield nr, seite
+
+
 def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
     """Textlayer des PDFs ueber das Docling-Backend (keine ML-Modelle noetig).
 
@@ -114,10 +133,9 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     backend = in_doc._backend
     lines_by_page: dict[int, list[str]] = {}
     try:
-        n = backend.page_count()
-        for i in range(n):
-            seg = backend.load_page(i).get_segmented_page()
-            lines_by_page[i + 1] = [c.text for c in seg.iterate_cells(TextCellUnit.LINE)]
+        for nr, seite in backend_seiten(backend):
+            seg = seite.get_segmented_page()
+            lines_by_page[nr] = [c.text for c in seg.iterate_cells(TextCellUnit.LINE)]
     finally:
         backend.unload()
 
@@ -262,8 +280,8 @@ def zweitleser_zeilen(pdf_path: Path) -> str:
     backend = in_doc._backend
     zeilen: list[str] = []
     try:
-        for i in range(backend.page_count()):
-            for cell in backend.load_page(i).get_segmented_page().iterate_cells(TextCellUnit.LINE):
+        for _nr, seite in backend_seiten(backend):
+            for cell in seite.get_segmented_page().iterate_cells(TextCellUnit.LINE):
                 if cell.text:
                     zeilen.append(cell.text.rstrip())
     finally:
@@ -712,8 +730,8 @@ def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
     backend = in_doc._backend
     picked: list[tuple[int, str]] = []
     try:
-        for i in range(backend.page_count()):
-            seg = backend.load_page(i).get_segmented_page()
+        for nr, seite in backend_seiten(backend):
+            seg = seite.get_segmented_page()
             for cell in seg.iterate_cells(TextCellUnit.LINE):
                 text = (cell.text or "").strip()
                 if not text or _mask(text) == "":
@@ -723,7 +741,7 @@ def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
                     for t in toks:
                         if missing.get(t, 0) > 0:
                             missing[t] -= 1
-                    picked.append((i + 1, text))
+                    picked.append((nr, text))
     finally:
         backend.unload()
     return picked

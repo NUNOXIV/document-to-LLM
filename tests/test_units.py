@@ -1918,6 +1918,55 @@ def test_kein_lizenztext_im_repo():
     assert not treffer, f"{len(treffer)} verfolgte Dateien, z. B. {treffer[:3]}"
 
 
+
+class _NurIterPages:
+    """Backend nach Art von Docling 2.143: kein Zufallszugriff auf Seiten."""
+
+    supports_random_page_access = False
+
+    def __init__(self, seiten):
+        self._seiten = seiten
+
+    def page_count(self):
+        return len(self._seiten)
+
+    def load_page(self, page_no):
+        raise RuntimeError("ThreadedDoclingParseDocumentBackend only supports iter_pages().")
+
+    def iter_pages(self):
+        yield from self._seiten
+
+
+class _MitLoadPage:
+    """Backend nach Art aelterer Docling-Fassungen: iter_pages gibt es nicht."""
+
+    def __init__(self, seiten):
+        self._seiten = seiten
+
+    def page_count(self):
+        return len(self._seiten)
+
+    def load_page(self, page_no):
+        return self._seiten[page_no]
+
+
+def test_zweitleser_liest_beide_backend_arten():
+    """Der Zweitleser darf an keiner der beiden Docling-APIs ausfallen.
+
+    Docling 2.143 laesst DoclingParseDocumentBackend von der threaded Fassung
+    erben; load_page(i) wirft dort. Vorher fiel damit die ganze
+    Deckungspruefung aus ("Abweichungspruefung nicht durchfuehrbar"), und ein
+    Extrakt ohne Deckungszahl sieht aus wie einer mit.
+    """
+    seiten = ["S1", "S2", "S3"]
+
+    neu = list(V.backend_seiten(_NurIterPages(seiten)))
+    assert neu == [(1, "S1"), (2, "S2"), (3, "S3")], neu
+
+    alt = list(V.backend_seiten(_MitLoadPage(seiten)))
+    assert alt == [(1, "S1"), (2, "S2"), (3, "S3")], alt
+
+
 # Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
 # Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
 # definierte existierte noch nicht und lief im Skriptpfad nie mit.
