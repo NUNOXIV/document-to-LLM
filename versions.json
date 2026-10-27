@@ -152,6 +152,13 @@
       "dokument_version": "Ausfertigung 11.03.2026",
       "quelle": "https://www.gesetze-im-internet.de/kritisdachg/xml.zip",
       "anmerkung": "Primaertext, aus dem fixtures/ground-truth/kritisdachg.json erzeugt wird."
+    },
+    "standard-300-1": {
+      "titel": "BSI-Standard 300-1 — Methodik zum Grundschutz++",
+      "dokument_version": "Veroeffentlichung 26.10.2026",
+      "quelle": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/BSI_Standards/standard_300-1.pdf",
+      "pruefsumme_sha256": "64cc0733610e850c550993b4ff0bb3455a8516391b4ae776b8992764de1e9d4d",
+      "anmerkung": "Aufnahme am 27.10.2026 gegen die amtliche Datei geprueft: byteidentisch, gleiche Pruefsumme. Steht am Aufnahmetag nicht in der Uebersichtsliste der BSI-Standards (die fuehrt nur 200-1 bis 200-4), sondern nur ueber Direktlink, Suche und Pressemeldung vom 26.10.2026. Mit xberg gewandelt, weil Docling seine Layoutmodelle in dieser Umgebung nicht laden kann."
     }
   }
 }

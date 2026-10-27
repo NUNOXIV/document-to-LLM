@@ -93,6 +93,42 @@ def _mask(line: str) -> str:
     return re.sub(r"\d+", "#", normalize(line)).strip()
 
 
+def backend_seiten(backend):
+    """Seiten eines Docling-PDF-Backends, mit und ohne Zufallszugriff.
+
+    Docling 2.143 laesst DoclingParseDocumentBackend von der threaded Fassung
+    erben: load_page(i) wirft dort "only supports iter_pages()", und damit fiel
+    der ganze Zweitleser aus — die Deckungspruefung meldete sich als "nicht
+    durchfuehrbar", und ein Extrakt ohne Deckungszahl sieht aus wie einer mit.
+    Aeltere Fassungen kennen iter_pages() nicht. Also beide Wege bedienen.
+
+    Liefert (Seitennummer, Seiten-Backend). Die Nummer kommt beim threaded
+    Backend aus `page_no` der Seite, NICHT aus der Zaehlung der Schleife: das
+    Backend arbeitet nebenlaeufig und liefert die Seiten in der Reihenfolge
+    ihrer Fertigstellung. Eine Zaehlung vertauschte deshalb die Seiten (im
+    Fixture trug der erste Durchlauf page_no=2), und die Deckung wurde der
+    falschen Seite zugeschrieben. Die REIHENFOLGE der Rueckgabe ist damit
+    unbestimmt — wer Text in Dokumentreihenfolge braucht, sortiert nach der
+    Nummer.
+    """
+    if getattr(backend, "supports_random_page_access", True):
+        for i in range(backend.page_count()):
+            yield i + 1, backend.load_page(i)
+        return
+    for i, seite in enumerate(backend.iter_pages(), start=1):
+        nr = getattr(seite, "page_no", None)
+        if not isinstance(nr, int) or isinstance(nr, bool):
+            nr = i          # kein page_no: Zaehlung ist das Beste, was es gibt
+        elif nr < 1:
+            # 0-basiert waere eine stille Verschiebung um eine Seite. Lieber
+            # abbrechen als eine falsche Seitenzahl drucken.
+            raise ValueError(
+                f"Seiten-Backend meldet page_no={nr}; erwartet wird ab 1 gezaehlt. "
+                "Seitenzahlen werden hier nicht geraten."
+            )
+        yield nr, seite
+
+
 def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]]]:
     """Textlayer des PDFs ueber das Docling-Backend (keine ML-Modelle noetig).
 
@@ -114,10 +150,9 @@ def pdf_pages(pdf_path: Path) -> tuple[dict[int, list[str]], dict[int, list[str]
     backend = in_doc._backend
     lines_by_page: dict[int, list[str]] = {}
     try:
-        n = backend.page_count()
-        for i in range(n):
-            seg = backend.load_page(i).get_segmented_page()
-            lines_by_page[i + 1] = [c.text for c in seg.iterate_cells(TextCellUnit.LINE)]
+        for nr, seite in backend_seiten(backend):
+            seg = seite.get_segmented_page()
+            lines_by_page[nr] = [c.text for c in seg.iterate_cells(TextCellUnit.LINE)]
     finally:
         backend.unload()
 
@@ -260,14 +295,19 @@ def zweitleser_zeilen(pdf_path: Path) -> str:
     in_doc = InputDocument(path_or_stream=Path(pdf_path), format=InputFormat.PDF,
                            backend=DoclingParseDocumentBackend, filename=Path(pdf_path).name)
     backend = in_doc._backend
-    zeilen: list[str] = []
+    # Nach Seitennummer sammeln, nicht nach Ankunft: das threaded Backend
+    # liefert nebenlaeufig, und dieser Leser belegt Trennungen am Zeilenende —
+    # eine vertauschte Seite erzeugt dort Zeilenpaare, die es nie gab.
+    je_seite: dict[int, list[str]] = {}
     try:
-        for i in range(backend.page_count()):
-            for cell in backend.load_page(i).get_segmented_page().iterate_cells(TextCellUnit.LINE):
+        for nr, seite in backend_seiten(backend):
+            ziel = je_seite.setdefault(nr, [])
+            for cell in seite.get_segmented_page().iterate_cells(TextCellUnit.LINE):
                 if cell.text:
-                    zeilen.append(cell.text.rstrip())
+                    ziel.append(cell.text.rstrip())
     finally:
         backend.unload()
+    zeilen = [z for nr in sorted(je_seite) for z in je_seite[nr]]
     return "\n".join(zeilen)
 
 
@@ -609,14 +649,21 @@ def verify(pdf_path: Path, md_path: Path) -> VerifyResult:
     # Seitenweise Deckung, jede Seite unabhaengig bewertet: zeigt, ob eine
     # Spalte, Tabelle oder ganze Seite im Extrakt fehlt.
     rejoined_total = res.rejoined_tokens
-    for page_no, toks in pages.items():
+    # Nach Seitenzahl, nicht nach Eintragsreihenfolge: das threaded
+    # Docling-Backend liefert die Seiten nebenlaeufig, und eine Ausgabe wie
+    # "schwaechste Seiten: S.2, S.1, S.4" sieht nach Befund aus, wo nur die
+    # Fertigstellung durchschlaegt.
+    for page_no in sorted(pages):
+        toks = pages[page_no]
         if not toks:
             res.per_page[page_no] = 100.0
             continue
         page_missing, _ = compare(toks)
         res.per_page[page_no] = round(100.0 * (1 - page_missing / len(toks)), 2)
     res.rejoined_tokens = rejoined_total
-    res.worst_pages = sorted(res.per_page.items(), key=lambda kv: kv[1])[:5]
+    # Bei gleicher Deckung entscheidet die Seitenzahl, damit zwei Laeufe
+    # dasselbe melden.
+    res.worst_pages = sorted(res.per_page.items(), key=lambda kv: (kv[1], kv[0]))[:5]
     return res
 
 
@@ -712,8 +759,8 @@ def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
     backend = in_doc._backend
     picked: list[tuple[int, str]] = []
     try:
-        for i in range(backend.page_count()):
-            seg = backend.load_page(i).get_segmented_page()
+        for nr, seite in backend_seiten(backend):
+            seg = seite.get_segmented_page()
             for cell in seg.iterate_cells(TextCellUnit.LINE):
                 text = (cell.text or "").strip()
                 if not text or _mask(text) == "":
@@ -723,9 +770,10 @@ def unassigned_lines(pdf_path: Path, md_path: Path) -> list[tuple[int, str]]:
                     for t in toks:
                         if missing.get(t, 0) > 0:
                             missing[t] -= 1
-                    picked.append((i + 1, text))
+                    picked.append((nr, text))
     finally:
         backend.unload()
+    picked.sort(key=lambda p: p[0])
     return picked
 
 
