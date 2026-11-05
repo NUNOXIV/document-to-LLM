@@ -490,6 +490,48 @@ Zeile, die auf ein Verzeichnis zeigt. Und: `git add -A` in einem Repo, dessen
 Arbeitsverzeichnis danebenliegt, ist ein Schreibvorgang über alles, ohne die
 Zusage vorab aus Nr. 17.
 
+## 26 Der Zweitleser fiel aus, und der Extrakt sah dadurch besser aus
+
+**Ursache:** `requirements.txt` fordert `docling>=2.26.0`. In einem neuen
+Container löste das auf 2.143.1 auf, und dort erbt
+`DoclingParseDocumentBackend` von der threaded Fassung: `load_page(i)` wirft
+„only supports iter_pages()". Der Zweitleser aus `verify.py` ruft genau diese
+Methode. Folge: Wortdeckung und Abweichungsprüfung meldeten sich als „nicht
+durchführbar", und der Extrakt trug statt einer Deckungszahl eine Warnung.
+Genau die Lage aus Verifikationsregel 1 — ein ungeprüftes Ergebnis, das neben
+einem geprüften steht und auf den ersten Blick gleich aussieht.
+
+**Fix:** `verify.backend_seiten()` liefert die Seiten über `iter_pages()`, wenn
+das Backend keinen Zufallszugriff anbietet, und sonst über `load_page()`. Beide
+Docling-Generationen werden bedient, drei Aufrufstellen nutzen denselben
+Helfer. Danach: 100,0 % Deckung, 10845 von 10845 Wörtern.
+Regressionstest `test_zweitleser_liest_beide_backend_arten` mit zwei
+Attrappen-Backends; Gegenprobe gemacht, ohne den Fix rot.
+
+**Lehre:** Eine untere Versionsgrenze ohne obere ist eine Wette darauf, dass
+fremde APIs sich nicht ändern. Wichtiger aber: der Ausfall einer Prüfung darf
+nicht wie ihr Bestehen aussehen. Die Warnung im Front Matter war ehrlich — sie
+stand nur neben vier anderen und wäre in einem Lauf über 600 Dokumente
+untergegangen. Ein Wächter, der ausfallen kann, braucht eine Zählung seiner
+Ausfälle, nicht nur eine Zeile im Kopf der Datei.
+
+**Nachtrag, ein eigener Fehler im Fix:** Die erste Fassung zählte die
+Durchläufe von `iter_pages()` und nahm die Zählung als Seitenzahl. Das Backend
+heißt *threaded* und arbeitet nebenläufig: es liefert die Seiten in der
+Reihenfolge ihrer Fertigstellung. Im Fixture trug der erste Durchlauf
+`page_no=2`, also wurde die Deckung der falschen Seite zugeschrieben — die CI
+meldete `assert not ['Seite lokalisiert']`. Mein erster Regressionstest konnte
+das nicht sehen, weil seine Attrappe die Seiten brav der Reihe nach lieferte.
+Die Nummer kommt jetzt aus `page_no` der Seite, `zweitleser_zeilen` sortiert
+vor dem Zusammenfügen, und `per_page` wird nach Seitenzahl gefüllt. Beleg für
+die Richtung: pypdfium als erster Leser verortet die Wörter auf Seite 2, der
+zweite Leser tut es jetzt auch. Die Attrappe im Test liefert in der Reihenfolge
+2, 3, 1.
+
+**Zweite Lehre:** Eine Attrappe, die sich wohlverhält, prüft nichts. Wer ein
+nebenläufiges Gegenstück nachbaut, muss es unsortiert liefern lassen — sonst
+testet man die eigene Annahme, nicht den Code.
+
 ## Muster über alle Fälle
 
 1. **Sechs von sieben Fehlern waren Abgleichsfehler gegen eine externe
@@ -520,3 +562,9 @@ Zusage vorab aus Nr. 17.
 12. **Eine Regel auf einem Pfadnamen schützt nur diesen Pfadnamen.** Nr. 25:
     `output/` war ignoriert, `output.alt/` nicht — 987 Dateien im öffentlichen
     Repo. Datenregeln brauchen einen Wächter, keine Zeile in einer Ignore-Liste.
+13. **Der Ausfall einer Prüfung darf nicht wie ihr Bestehen aussehen.** Nr. 26:
+    der Zweitleser fiel an einer neuen Docling-API aus, und der Extrakt trug
+    statt der Deckungszahl eine Warnung zwischen vier anderen.
+14. **Eine Attrappe, die sich wohlverhält, prüft nichts.** Nr. 26, Nachtrag:
+    der Test ließ die Seiten der Reihe nach kommen und übersah damit genau den
+    Fehler, den er sichern sollte — die unsortierte Lieferung.

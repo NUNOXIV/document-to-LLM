@@ -1918,6 +1918,103 @@ def test_kein_lizenztext_im_repo():
     assert not treffer, f"{len(treffer)} verfolgte Dateien, z. B. {treffer[:3]}"
 
 
+
+class _Seite:
+    """Seiten-Backend-Attrappe: traegt ihre eigene Nummer, wie Docling 2.143."""
+
+    def __init__(self, page_no, text):
+        self.page_no = page_no
+        self.text = text
+
+    def __repr__(self):
+        return f"_Seite({self.page_no}, {self.text!r})"
+
+
+class _NurIterPages:
+    """Backend nach Art von Docling 2.143: threaded, kein Zufallszugriff.
+
+    Liefert die Seiten in der Reihenfolge ihrer Fertigstellung, also bewusst
+    NICHT in Dokumentreihenfolge — genau daran ist der erste Fix zerbrochen.
+    """
+
+    supports_random_page_access = False
+
+    def __init__(self, seiten, reihenfolge=None):
+        self._seiten = seiten
+        self._reihenfolge = reihenfolge if reihenfolge is not None else list(range(len(seiten)))
+
+    def page_count(self):
+        return len(self._seiten)
+
+    def load_page(self, page_no):
+        raise RuntimeError("ThreadedDoclingParseDocumentBackend only supports iter_pages().")
+
+    def iter_pages(self):
+        for i in self._reihenfolge:
+            yield self._seiten[i]
+
+
+class _MitLoadPage:
+    """Backend nach Art aelterer Docling-Fassungen: iter_pages gibt es nicht."""
+
+    def __init__(self, seiten):
+        self._seiten = seiten
+
+    def page_count(self):
+        return len(self._seiten)
+
+    def load_page(self, page_no):
+        return self._seiten[page_no]
+
+
+def test_zweitleser_liest_beide_backend_arten():
+    """Der Zweitleser darf an keiner der beiden Docling-APIs ausfallen.
+
+    Docling 2.143 laesst DoclingParseDocumentBackend von der threaded Fassung
+    erben; load_page(i) wirft dort. Vorher fiel damit die ganze
+    Deckungspruefung aus ("Abweichungspruefung nicht durchfuehrbar"), und ein
+    Extrakt ohne Deckungszahl sieht aus wie einer mit.
+    """
+    seiten = [_Seite(1, "S1"), _Seite(2, "S2"), _Seite(3, "S3")]
+
+    neu = [(nr, s.text) for nr, s in V.backend_seiten(_NurIterPages(seiten))]
+    assert neu == [(1, "S1"), (2, "S2"), (3, "S3")], neu
+
+    alt = [(nr, s.text) for nr, s in V.backend_seiten(_MitLoadPage(seiten))]
+    assert alt == [(1, "S1"), (2, "S2"), (3, "S3")], alt
+
+
+def test_seitennummer_kommt_von_der_seite_nicht_vom_zaehler():
+    """Das threaded Backend liefert nebenlaeufig, also unsortiert.
+
+    Der erste Fix zaehlte die Durchlaeufe und schrieb die Deckung damit der
+    falschen Seite zu: im Fixture trug der erste Durchlauf page_no=2, und
+    'Seite lokalisiert' schlug in der CI fehl. Die Nummer muss von der Seite
+    kommen.
+    """
+    seiten = [_Seite(1, "S1"), _Seite(2, "S2"), _Seite(3, "S3")]
+    # Fertigstellung in der Reihenfolge 2, 3, 1 — so wie es nebenlaeufig passiert.
+    backend = _NurIterPages(seiten, reihenfolge=[1, 2, 0])
+
+    paare = [(nr, s.text) for nr, s in V.backend_seiten(backend)]
+    assert paare == [(2, "S2"), (3, "S3"), (1, "S1")], paare
+
+    # Jede Seite traegt ihren eigenen Text, egal wann sie fertig wurde.
+    zuordnung = dict(paare)
+    assert zuordnung == {1: "S1", 2: "S2", 3: "S3"}, zuordnung
+
+
+def test_seitennummer_null_wird_nicht_geraten():
+    """Ein 0-basiertes page_no waere eine stille Verschiebung um eine Seite."""
+    backend = _NurIterPages([_Seite(0, "S1"), _Seite(1, "S2")])
+    try:
+        list(V.backend_seiten(backend))
+    except ValueError as e:
+        assert "page_no=0" in str(e), str(e)
+    else:
+        raise AssertionError("page_no=0 muss auffallen, nicht stillschweigend verschieben")
+
+
 # Muss am Dateiende stehen. Stand dieser Block frueher in der Mitte, war die
 # Datei beim Aufruf von main() nur bis dorthin ausgefuehrt: alles danach
 # definierte existierte noch nicht und lief im Skriptpfad nie mit.
